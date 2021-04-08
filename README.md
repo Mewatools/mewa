@@ -1,2 +1,5 @@
 # mewa
-compositor app
+New node-graph based compositor
+Visit www.mewatools.org for more details.
+
+
