@@ -21,7 +21,8 @@ public:
     enum VaoFormat
     {
         Unknown,
-        Float_4
+        Float_4,
+        Float2_UChar4_Float2
     };
 
 

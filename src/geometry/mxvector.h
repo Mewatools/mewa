@@ -46,7 +46,63 @@ public:
 
 
 
+    void operator/=( T value )
+    {
+        for( int i=0; i<N; ++i ) {
+            pVector[i] /= value;
+        }
+    }
 
+    void operator/=( const MxVector<N,T> &other )
+    {
+        for( int i=0; i<N; ++i ) {
+            pVector[i] /= other[i];
+        }
+    }
+
+    void operator+=( T value )
+    {
+        for( int i=0; i<N; ++i ) {
+            pVector[i] += value;
+        }
+    }
+
+    void operator-=( T value )
+    {
+        for( int i=0; i<N; ++i ) {
+            pVector[i] -= value;
+        }
+    }
+
+
+    // code taken from http://stackoverflow.com/questions/2259476/rotating-a-point-about-another-point-2d
+    void rotateBy( T radians ) // rotate relative to 0,0
+    {
+        T s = sin(radians);
+        T c = cos(radians);
+
+        // rotate point
+        T tmp = pVector[0] * c - pVector[1] * s;
+        pVector[1] = pVector[0] * s + pVector[1] * c;
+        pVector[0] = tmp;
+    }
+
+
+    // \TODO make this 2 functions specialized to vec size 2
+    friend inline const MxVector<N,T> operator*(float c, const MxVector<N,T> &p)
+    {
+        return MxVector<N,T>(p[0]*c, p[1]*c);
+    }
+
+
+    friend inline const MxVector<N,T> operator/(const MxVector<N,T> &p, float divisor)
+    {
+        return MxVector<N,T>(p[0]/divisor, p[1]/divisor);
+    }
+
+
+
+    ////// data member //////
     T pVector[N];
 };
 

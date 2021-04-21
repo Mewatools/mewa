@@ -111,7 +111,7 @@ void MxColorWheelProgram::initializeGL()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc =
-        #ifdef MX_PLATFORM_ANDROID
+        #ifdef MX_OPENGL_ES
             "precision mediump float;\n"
         #endif
             "#define pi 3.141592653589793238462643383279\n"
@@ -219,7 +219,7 @@ void MxColorWheelProgram::setSmoothEdge( float threshold )
 void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
 {
 
-    GpuBuffer *vboBuffer = renderer.auxBuffer( vaoFormat() );
+    GpuBuffer *vboBuffer = renderer.newGpuBuffer( vaoFormat() );
 
     GLfloat afVertices[] = {
         rect.left(), rect.bottom(), 0.0f, 0.0f,
@@ -231,8 +231,7 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
     };
 
     vboBuffer->uploadToVbo( &renderer, (char*)afVertices, 6*4*sizeof(GLfloat) );
-    pRenderer->checkGLError(__FILE__, __LINE__);
-    enableVao(vboBuffer); // glVertexAttribPointer needs to be called everytime GL_ARRAY_BUFFER is changed
+    enableVao(vboBuffer);
 
     if( pUpdates & BackgroundColor ) {
         pRenderer->glUniform3fv(pColorUniform, 1, pBackgroundColor.constData());
@@ -247,7 +246,6 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
         pRenderer->glUniformMatrix4fv(pMatrixUniform, 1, GL_FALSE, pModelview.constData());
     }
     pUpdates = 0;
-
     glDrawArrays(GL_TRIANGLES, 0, 6);
     pRenderer->checkGLError(__FILE__, __LINE__);
     disableVao();

@@ -15,6 +15,10 @@
  */
 namespace MxThemeColors
 {
+// used in Store Window
+MxVector4UC const windowBackground = {51,51,51,255};
+
+MxVector4UC const whiteText = {179,179,179,255};
 
 MxVector4UC const mainWindowBackground = {72, 72, 72, 255};
 MxVector4UC const nodePanelBackground = {61, 61, 61, 255};

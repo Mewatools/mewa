@@ -91,8 +91,6 @@ void GpuVbo::upload( MxRenderer *renderer, char *data, int size, GLenum target, 
         renderer->glBufferData(target, size, data, usage); // GL_DYNAMIC_DRAW
         pVboSize = size;
     }
-
-    renderer->checkGLError(__FILE__, __LINE__);
 }
 
 void GpuVbo::deleteGL( MxRenderer *renderer )

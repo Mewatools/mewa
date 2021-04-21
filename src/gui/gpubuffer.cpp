@@ -105,3 +105,4 @@ void GpuBuffer::uploadGL( MxRenderer *renderer )
 {
     uploadToVbo( renderer, pData, pSize );
 }
+

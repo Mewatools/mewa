@@ -45,10 +45,35 @@ MxColorWheelProgram * MxRenderer::colorWheelProgram()
     return &pColorWheelEffect;
 }
 
-GpuBuffer *MxRenderer::auxBuffer( MxShaderProgram::VaoFormat format )
+GpuBuffer *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
 {
-    // \TODO manage list of vbos for reuse
-    pGpuBuffer.pFormat = format;
-    pGpuBuffer.pSize = 0;
-    return &pGpuBuffer;
+    // find first available buffer
+    int vboCount = pVboList.size();
+    for(int i=0; i<vboCount; ++i)
+    {
+        GpuBuffer &buffer = pVboList[i];
+        Q_ASSERT( buffer.pFormat != MxShaderProgram::Unknown );
+        if( buffer.size() == -1 && buffer.pFormat == format )
+        {
+            buffer.pSize = 0; // set as taken
+            return &buffer;
+        }
+    }
+
+    GpuBuffer *buffer = pVboList.appendAndGet();
+    buffer->pFormat = format;
+    Q_ASSERT( buffer->size() == 0 );
+    return buffer;
 }
+
+
+void MxRenderer::clearGpuBuffers()
+{
+    int vboCount = pVboList.size();
+    for(int i=0; i<vboCount; ++i)
+    {
+        GpuBuffer &buffer = pVboList[i];
+        buffer.pSize = -1;
+    }
+}
+

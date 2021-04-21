@@ -7,6 +7,7 @@
 
 #include "mxopenglfunctions.h"
 #include "mxcolorwheelprogram.h"
+#include "mxlist.h"
 #include "gpubuffer.h"
 
 class MxShaderProgram;
@@ -27,15 +28,18 @@ public:
     // shader programs
     MxColorWheelProgram * colorWheelProgram();
 
-    // \TODO rename to newGpuBuffer
-    GpuBuffer* auxBuffer( MxShaderProgram::VaoFormat format );
+    GpuBuffer* newGpuBuffer( MxShaderProgram::VaoFormat format );
+     void clearGpuBuffers();
+
+    typedef MxList<GpuBuffer, MxClassInitializer<GpuBuffer> > VboList;
 
 
+
+
+
+    VboList pVboList;
 
 protected:
-    // \TODO use a container to hold all buffers for re-use
-    GpuBuffer pGpuBuffer;
-
     MxColorWheelProgram pColorWheelEffect;
 
     unsigned int pCurrShaderProgram;
