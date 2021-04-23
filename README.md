@@ -3,7 +3,8 @@ Mewa is a new node-graph based compositor.
 
 ## why another compositor
 Mewa is a new take on compositing software that aims to:
-- Deliver higher performance
+- Always preview in full resolution
+- Imediate preview, everywhere
 - More intuitive UX/UI
 - Easier to extend/customize through scripting
 
