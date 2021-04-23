@@ -13,6 +13,6 @@ Mewa source is organized into modules so that each module can be tested and deve
 Each module can be worked on as a self contained Qt application. Current modules and respective Qt application:
 - **Color Wheel**: [src/gui/colorselector/test_colorwheel/](src/gui/colorselector/test_colorwheel/)
 - **Store buttons**: [src/storewindow/test_storebuttons/](src/storewindow/test_storebuttons/)
--- This app renders only the Store buttons (currently without text)
--- Button rendering code is within *drawButtons()* function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp) 
--- The Store buttons Look&Feel still needs work : [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5)
+  - This app renders only the Store buttons (currently without text)
+  - Button rendering code is within *drawButtons()* function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp) 
+  - The Store buttons Look&Feel still needs work : [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5)
