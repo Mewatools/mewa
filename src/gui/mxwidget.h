@@ -53,8 +53,9 @@ public:
     virtual MxVector2F sizePolicy();
 
 
-    MxVector2F mapFromGlobal(const MxVector2F &globalPos );
-    MxVector2F mapToGlobal( const MxVector2F &pos ) const;
+    MxVector2F mapFromGlobal(const MxVector2F &globalPos ); //const;
+    // Fills \a pos with this widget screen position
+    void mapToGlobal( MxVector2F *pos  ) const;
 
     /*! Requests a redraw. */
     void update();
@@ -63,7 +64,7 @@ public:
     /*! Called whenever the the widget changed its size. */
     virtual void sizeChanged(){}
     //! This function is called after setParent(). Its used to initialize fonts and style stuff.
-    virtual void dirtyCollidingWidgets(const MxRectF &collidingRect/*, MxWidgetList &list*/ );
+    virtual void dirtyCollidingWidgets(const MxRectF &collidingRect );
 
     virtual void mousePressEvent( MxMouseEvent &event );
     virtual void mouseMoveEvent( MxMouseEvent &event ); // store this item as under mouse item

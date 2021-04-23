@@ -25,6 +25,11 @@ MxStoreView::~MxStoreView()
 
 void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxStoreAddon &entry , int buttonUnderMouse, bool isMousePressed )
 {
+    // button rendering happens here
+    // \TODO set nice colors
+    // \TODO decide for buttons with rounded corners or squared corners
+    // \TODO set button border thickness and color
+
     MxVectorDraw &geometryPainter = painter.vectorDraw();
     MxTextDraw &textPainter = painter.textDraw();
 
@@ -265,7 +270,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
         char valueStr[8];
         sprintf(valueStr, "%d", entry.totalLikes() );
 
-        //textPainter.drawText( valueStr, MxVector2F(heartRect.right(), textY, WhiteColor ) );
+        //textPainter.drawText( valueStr, MxVector2F(heartRect.right(), textY, MxThemeColors::whiteText ) );
     }
 
 

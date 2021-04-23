@@ -22,8 +22,11 @@ public:
     ~MxPainter();
 
     void discardGLResources();
-    void initArrays( MxList<GpuBuffer, MxClassInitializer<GpuBuffer> > &vboList );
+    void initArrays();
     void initializeGL(MxRenderer *);
+
+    void prepareRender( MxRenderer &renderer );
+    void render(MxRenderer &renderer );
 
     void setTranslation( const MxVector2F &translation );
     void drawSvg(MxAbstractSvg *svg , const MxRectF &targetRect);

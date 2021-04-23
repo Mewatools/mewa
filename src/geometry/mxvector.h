@@ -109,8 +109,12 @@ public:
 ////////// type definitions ///////////
 typedef MxVector<2,float>  MxVector2F;
 typedef MxVector<3,float>  MxVector3F;
+typedef MxVector<4,float>  MxVector4F;
+typedef MxVector<4,int>  MxVector4I;
+typedef MxVector<3,int>  MxVector3I;
+typedef MxVector<2,int> MxVector2I;
+typedef MxVector<3,unsigned char>  MxVector3UC;
 typedef MxVector<4,unsigned char>  MxVector4UC;
-
 
 
 template<int N, typename T>

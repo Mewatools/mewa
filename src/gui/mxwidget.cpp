@@ -116,8 +116,8 @@ MxVector2F MxWidget::mapFromGlobal( const MxVector2F &globalPos ) //const
 
 /*! Maps \a pos relative to this widget coordinates to a position
   relative to the display. Usefull for drag and drop actions.
- */
-MxVector2F MxWidget::mapToGlobal( const MxVector2F &pos ) const
+Use globalOriginOffset instead. */
+void MxWidget::mapToGlobal( MxVector2F *pos ) const
 {
     MxVector2F mappedPos = pPos;
     MxWidget *parent = pParent;
@@ -127,7 +127,7 @@ MxVector2F MxWidget::mapToGlobal( const MxVector2F &pos ) const
         parent = parent->pParent;
     }
 
-    return mappedPos;
+    *pos = mappedPos;
 }
 
 void MxWidget::update()
