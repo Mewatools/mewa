@@ -6,14 +6,14 @@ Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic 
 
 Mewa is a new take on compositing software, focused on:
 
-- Fast previews in full resolution
-- Imediate preview, everywhere
-- More intuitive UX/UI
-- Extensibility and customizability
+- Faster/Imediate previews, everywhere
+- Previews in full resolution, always
+- More intuitive user interface
+- Dedicated script engine for:
+  - Faster execution of expressions/scripts
+  - Guaranteed UI responsiveness
+  - Easier extensibility and customizability
 
-## Features
-
-- Scripting and GLSL support
 
 ## Developing Mewa
 
