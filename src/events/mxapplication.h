@@ -12,9 +12,6 @@
 #include "mxpainter.h"
 
 
-#define QX_COLORBUFFER_PRESERVED
-
-
 class MxApplication
 {
 public:
