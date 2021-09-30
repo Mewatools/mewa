@@ -66,7 +66,7 @@ void CanvasWidget::paint( MxPainter &painter )
 {
     const MxVector2F &areaSize = size();
     MxRectF areaRect(areaSize);
-    MxVectorDraw &lbTriangles = painter.vectorDraw();
+    MxVectorDraw &paint = painter.vectorDraw();
 
     MxVector4UC bgColor(80, 80, 80, 255);
     MxVector4UC itemColor;
@@ -76,6 +76,6 @@ void CanvasWidget::paint( MxPainter &painter )
         itemColor = MxVector4UC(160, 160, 220, 255);
     }
 
-    lbTriangles.fillRect( areaRect, bgColor);
-    lbTriangles.fillRect( pDraggingRect, itemColor);
+    paint.fillRect( areaRect, bgColor);
+    paint.fillRect( pDraggingRect, itemColor);
 }
