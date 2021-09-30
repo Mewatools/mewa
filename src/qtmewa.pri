@@ -1,5 +1,5 @@
 
-include($$PWD/platformabstraction/platformabstraction_qt.pri)
+include($$PWD/platformabstraction/qt/platform_qt.pri)
 include($$PWD/containers/containers.pri)
 include($$PWD/geometry/geometry.pri)
 include($$PWD/events/events.pri)

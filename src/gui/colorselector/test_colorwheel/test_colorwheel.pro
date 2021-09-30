@@ -1,5 +1,5 @@
 
-include($$PWD/../../../src.pri)
+include($$PWD/../../../qtmewa.pri)
 
 
 HEADERS += $$PWD/testwindow.h

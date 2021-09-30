@@ -91,6 +91,9 @@ public:
         return MxVector2F( x1 + ((x2-x1)/2.0f), y1 + ((y2-y1)/2.0f));
     }
 
+  /*! Returns true if the given \a point is inside or on the edge of the QxRect; otherwise returns false.
+              \sa intersects(). */
+  bool contains( const MxVector<2,T> &point ) const;
 
     /*! Returns true if this MxRect intersects with the given \a MxRect (i.e. there
               is a non-empty area of overlap between them), otherwise returns false.
@@ -215,6 +218,14 @@ inline T MxRect<T>::height() const
     return (top() - bottom());
 }
 
+template<typename T>
+bool MxRect<T>::contains( const MxVector<2,T> &point ) const
+{
+    if( point.x() >= x1 && point.x() <= x2 && point.y() >= y1 && point.y() <= y2 )
+        return true;
+
+    return false;
+}
 
 template<typename T>
 void MxRect<T>::translateX( const T dx )
