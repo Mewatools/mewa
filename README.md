@@ -1,10 +1,14 @@
-# Mewa
+# Mewa Framework
 
-Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic world of motion graphics for artists. Download it at <https://www.mewatools.com/>
+Mewa framework is a C++ OpenGL based UI framework designed from ground-up to deliver higher performance applications across desktop and mobile devices.
 
-## Why another compositor?
+It holds a whole collection of reusable classes on which the Mewa application is built on.
 
-Mewa is a new take on compositing software, focused on:
+To try and know more about the Mewa framework see [framework-development.md](doc/framework-development.md).
+
+## About Mewa application
+
+Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic world of motion graphics for artists, bringing:
 
 - Faster/Imediate previews, everywhere
 - Previews in full resolution, always
@@ -14,18 +18,8 @@ Mewa is a new take on compositing software, focused on:
   - Guaranteed UI responsiveness
   - Easier extensibility and customizability
 
-
-## Developing Mewa
-
-Mewa's source code is organized into modules so that each module can be tested and developed independently from the whole application.
-
-Each module can be worked on as a self contained Qt application. Current modules and respective Qt application are as follows:
-
-| Module | Location | Notes |
-|--------|----------| ----- |
-| Color Wheel | [src/gui/colorselector/test_colorwheel/](src/gui/colorselector/test_colorwheel/) | N/A |
-| Store Buttons | [src/storewindow/test_storebuttons/](src/storewindow/test_storebuttons/) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
-
+More information about Mewa at <https://www.mewatools.com/>
 
 [![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
 [![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
+
