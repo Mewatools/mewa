@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Mewa Framework" />
 <meta name="twitter:description" content="OpenGL based UI" />
 <!-- END twitter metadata -->
-<title>Mewa Framework: Mewa</title>
+<title>Mewa Framework: Mewa Framework</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/png" href="mewa.png"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -105,13 +105,15 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Mewa </div>  </div>
+<div class="title">Mewa Framework </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic world of motion graphics for artists. Download it at <a href="https://www.mewatools.com/">https://www.mewatools.com/</a></p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Mewa framework is a C++ OpenGL based UI framework designed from ground-up to deliver higher performance applications across desktop and mobile devices.</p>
+<p>It holds a whole collection of reusable classes on which the Mewa application is built on.</p>
+<p>To try and know more about the Mewa framework see framework-development.md.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Why another compositor?</h1>
-<p>Mewa is a new take on compositing software, focused on:</p>
+About Mewa application</h1>
+<p>Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic world of motion graphics for artists, bringing:</p>
 <ul>
 <li>Faster/Imediate previews, everywhere</li>
 <li>Previews in full resolution, always</li>
@@ -123,18 +125,7 @@ Why another compositor?</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Developing Mewa</h1>
-<p>Mewa's source code is organized into modules so that each module can be tested and developed independently from the whole application.</p>
-<p>Each module can be worked on as a self contained Qt application. Current modules and respective Qt application are as follows:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Module   </th><th class="markdownTableHeadNone">Location   </th><th class="markdownTableHeadNone">Notes    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Color Wheel   </td><td class="markdownTableBodyNone"><a href="src/gui/colorselector/test_colorwheel/">src/gui/colorselector/test_colorwheel/</a>   </td><td class="markdownTableBodyNone">N/A    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Store Buttons   </td><td class="markdownTableBodyNone"><a href="src/storewindow/test_storebuttons/">src/storewindow/test_storebuttons/</a>   </td><td class="markdownTableBodyNone"><b>1)</b> This app renders only the Store buttons (currently without text). <b>2)</b> Button rendering code is within <code>drawButtons()</code> function in file <a href="src/storewindow/mxstoreview.cpp">src/storewindow/mxstoreview.cpp</a>. <b>3)</b> The Store buttons Look&amp;Feel still needs work: <a href="https://github.com/Mewatools/mewa-artwork/discussions/5">store buttons discussion</a>   </td></tr>
-</table>
+<p>More information about Mewa at <a href="https://www.mewatools.com/">https://www.mewatools.com/</a></p>
 <p><a href="https://snapcraft.io/mewa"><img src="https://snapcraft.io/mewa/badge.svg" alt="mewa" style="pointer-events: none;" class="inline"/></a> <a href="https://snapcraft.io/mewa"><img src="https://snapcraft.io/mewa/trending.svg?name=0" alt="mewa" style="pointer-events: none;" class="inline"/></a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

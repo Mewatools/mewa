@@ -246,8 +246,8 @@ var NAVTREEINDEX1 =
 "heartsvg_8h_source.html":[3,0,0,6,3],
 "hierarchy.html":[2,2],
 "index.html":[],
-"index.html":[0],
-"index.html#autotoc_md1":[0,0],
-"index.html#autotoc_md2":[0,1],
-"mxabstractsvg_8h.html":[3,0,0,3,9]
+"index.html#autotoc_md1":[0],
+"mxabstractsvg_8h.html":[3,0,0,3,9],
+"mxabstractsvg_8h_source.html":[3,0,0,3,9],
+"mxapplication_8cpp.html":[3,0,0,1,0]
 };

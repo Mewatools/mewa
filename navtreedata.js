@@ -25,10 +25,7 @@
 var NAVTREE =
 [
   [ "Mewa Framework", "index.html", [
-    [ "Mewa", "index.html", [
-      [ "Why another compositor?", "index.html#autotoc_md1", null ],
-      [ "Developing Mewa", "index.html#autotoc_md2", null ]
-    ] ],
+    [ "About Mewa application", "index.html#autotoc_md1", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -66,7 +63,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_mx_svg_painter.html#a8c09bf36c90ac6ae196c5af7919af1af",
-"mxabstractsvg_8h_source.html"
+"mxapplication_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

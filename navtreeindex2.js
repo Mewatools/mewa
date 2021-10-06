@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"mxabstractsvg_8h_source.html":[3,0,0,3,9],
-"mxapplication_8cpp.html":[3,0,0,1,0],
 "mxapplication_8h.html":[3,0,0,1,1],
 "mxapplication_8h_source.html":[3,0,0,1,1],
 "mxcolorwheelprogram_8cpp.html":[3,0,0,3,0,1],
