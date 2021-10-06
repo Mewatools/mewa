@@ -1,3 +1,7 @@
+## About the Mewa framework
+
+The Mewa framework is the framework on which the application Mewa is being developed.
+Initially, Mewa was developed using the Qt framework, but due to specific performance and usability requirements, and as we adapted Qt to match our needs, we realized that we would greatly benefit from a specialized framework solution.
 
 ## Framework Development
 
