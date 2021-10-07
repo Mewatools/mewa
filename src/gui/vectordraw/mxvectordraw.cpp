@@ -864,7 +864,7 @@ MxVector2F MxVectorDraw::bezierPoint( const MxVector2F inPoints[4], double inT )
 /*! \class MxVectorDraw
     \brief Draw Mewa triangles
 
-    A Mewa triagle draws a filled quadratic curve.
+    A Mewa triangle draws a filled quadratic curve.
      
     ![Mewa Triangle](MewaTriangle.jpg) 
     [edit image](https://docs.google.com/drawings/d/1vKxXXZlQP3m6LAMYapo90mpcexrjJIHrKk2ufZbDXZQ/edit?usp=sharing)

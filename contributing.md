@@ -7,11 +7,10 @@ Initially, Mewa was developed using the Qt framework, but due to specific perfor
 
 # Development
 
-Mewa's source code contains various test/example apps containing single functionalities of Mewa application.
-can be tested and developed independently from the whole application.
+Mewa's source code contains various example apps, some of them only purpose is to test single functionalities of the Mewa application.
+This approach allows us to test and develop single functionalities independently from the whole application.
 
-Each test/example app can be worked on as a self contained Qt application. 
-The apps are located in the examples folder:
+Each test/example app is a self-contained Qt application located in the examples folder.
 
 | App | Location | Notes |
 |--------|----------| ----- |
