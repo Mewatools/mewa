@@ -13,9 +13,7 @@
 class MxRenderer;
 
 
-/*!
- * Draws scale-invariant geometries
- * */
+
 class MxVectorDraw
 {
 public:
@@ -45,10 +43,15 @@ public:
     int pointCount() const;
 
     //! Draws rotating triangle. Used to show when something is loading
-    void loadingSymbol( const MxVector2F &center, float triangleSize );
+    void loadingSymbol(const MxVector2F &center, float radius );
 
     //! Draw a filled rectangle with rounded corners
     void roundedRect( const MxRectF &area, float radius, const MxVector4UC &color );
+
+    void addVGradientLeftTopRounded(const MxRectF &area, const MxVector4UC &color );
+    void addVGradientLeftBottomRounded(const MxRectF &area, const MxVector4UC &color );
+    void addVGradientRightTopRounded(const MxRectF &area, const MxVector4UC &color );
+    void addVGradientRightBottomRounded(const MxRectF &area, const MxVector4UC &color );
 
     // draws a circle using 4 triangles
     void addSquaredCircle(MxVector2F center, const MxVector2F &radius, const MxVector4UC &color );
@@ -62,10 +65,10 @@ public:
 
     enum TriangleFill
     {
-        InnerCurveFill,
-        OutterCurveFill,
-        FullFill,
-        FillCount // reserved
+        InnerCurveFill //! Draws the fill of the inner-side of the curve, anti-alliased
+        , OutterCurveFill //! Draws the fill of the outer-side of the curve, anti-alliased
+        , FullFill //! Draws an filled triangle, alliased
+        , FillCount //! reserved for counting purposes
     };
     //! InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve
     void triangle(const MxVector2F &posA, const MxVector4UC &colorA,
@@ -91,6 +94,7 @@ public:
 private:
     // no translation added, should be only used internally by this class
     void appendFillTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, const unsigned char *pathColor);
+    void appendColoredTriangle_p( const MxVector2F &a, const unsigned char *colorA, const MxVector2F &b, const unsigned char *colorB, const MxVector2F &c, const unsigned char *colorC );
     void appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, float direction, const unsigned char *pathColor );
     void appendRect_p(const MxVector2F &leftBottom, const MxVector2F &rightBottom, const MxVector2F &topLeft, const MxVector2F &topRight, const MxVector4UC &color );
 

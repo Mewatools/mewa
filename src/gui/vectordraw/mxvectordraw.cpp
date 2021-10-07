@@ -43,22 +43,23 @@ int MxVectorDraw::pointCount() const
 }
 
 
-void MxVectorDraw::loadingSymbol( const MxVector2F &center, float triangleSize )
+void MxVectorDraw::loadingSymbol( const MxVector2F &center, float radius )
 {
+
     // \TODO make it a private data member or pass in as argument
     static float sProgressAngle = 0.0f;
 
     MxVector2F triangleCenter = center;
     float thirdCircleAngle = 2.0944;
-    MxVector2F posA = triangleCenter + MxVector2F( triangleSize * cosf(sProgressAngle) , triangleSize * sinf(sProgressAngle) );
-    MxVector2F posB = triangleCenter + MxVector2F( triangleSize * cosf(sProgressAngle+thirdCircleAngle) , triangleSize * sinf(sProgressAngle+thirdCircleAngle) );
-    MxVector2F posC = triangleCenter + MxVector2F( triangleSize * cosf(sProgressAngle-thirdCircleAngle) , triangleSize * sinf(sProgressAngle-thirdCircleAngle) );
+    MxVector2F posA = triangleCenter + MxVector2F( radius * cosf(sProgressAngle) , radius * sinf(sProgressAngle) );
+    MxVector2F posB = triangleCenter + MxVector2F( radius * cosf(sProgressAngle+thirdCircleAngle) , radius * sinf(sProgressAngle+thirdCircleAngle) );
+    MxVector2F posC = triangleCenter + MxVector2F( radius * cosf(sProgressAngle-thirdCircleAngle) , radius * sinf(sProgressAngle-thirdCircleAngle) );
 
     MxVector4UC colorA(30, 200, 90, 255);
-    MxVector4UC colorB(230, 20, 9, 255);
-    MxVector4UC colorC(130, 120, 190, 255);
+    MxVector4UC colorB(210, 20, 9, 255);
+    MxVector4UC colorC(30, 110, 190, 255);
 
-    this->triangle(posB, colorA, posA, colorB, posC, colorC, MxVectorDraw::OutterCurveFill );
+    this->triangle(posB, colorA, posA, colorB, posC, colorC, MxVectorDraw::FullFill /*MxVectorDraw::OutterCurveFill*/ );
     sProgressAngle += 0.01f;
 }
 
@@ -217,7 +218,7 @@ void MxVectorDraw::strokeRect( MxRectF outerRect, float innerThickness, const Mx
 
     outerRect.translate( pTranslation->x(), pTranslation->y() );
 
-     pArray->reserveForAppend( 8 * 3*sizeof(Vertex) ); // 8 triangles
+    pArray->reserveForAppend( 8 * 3*sizeof(Vertex) ); // 8 triangles
 
     MxRectF innerRect = outerRect;
     innerRect.adjust( innerThickness, -innerThickness, innerThickness, -innerThickness );
@@ -344,8 +345,8 @@ void LoopBlinnTrianglesArray::uploadGL()
 }*/
 
 void MxVectorDraw::triangle(const MxVector2F &posA, const MxVector4UC &colorA,
-                                                   const MxVector2F &posB, const MxVector4UC &colorB,
-                                                   const MxVector2F &posC, const MxVector4UC &colorC, TriangleFill fill )
+                            const MxVector2F &posB, const MxVector4UC &colorB,
+                            const MxVector2F &posC, const MxVector4UC &colorC, TriangleFill fill )
 {
     Q_ASSERT( NULL != pArray );
     Q_ASSERT( NULL != pTranslation );
@@ -570,55 +571,55 @@ void MxVectorDraw::roundedRectV4Gradient( const MxRectF &rect, float radius, con
     float y3 = rect.top();
     float y2 = y3 - radius;
 
-// bottom-left corner
-  triangle( MxVector2F(x0, y1), colors[1],
-                            MxVector2F(x0, y0) , colors[0],
-                           MxVector2F(x1, y0), colors[0], MxVectorDraw::InnerCurveFill );
-  triangle( MxVector2F(x1, y0), colors[0],
-                         MxVector2F(x1, y1) , colors[1],
-                        MxVector2F(x0, y1), colors[1], MxVectorDraw::FullFill );
+    // bottom-left corner
+    triangle( MxVector2F(x0, y1), colors[1],
+            MxVector2F(x0, y0) , colors[0],
+            MxVector2F(x1, y0), colors[0], MxVectorDraw::InnerCurveFill );
+    triangle( MxVector2F(x1, y0), colors[0],
+            MxVector2F(x1, y1) , colors[1],
+            MxVector2F(x0, y1), colors[1], MxVectorDraw::FullFill );
 
 
-// bottom-right corner
-  triangle( MxVector2F(x2, y0), colors[0],
-                            MxVector2F(x3, y0) , colors[0],
-                           MxVector2F(x3, y1), colors[1], MxVectorDraw::InnerCurveFill );
-  triangle(  MxVector2F( x3, y1), colors[1],
-                         MxVector2F(x2, y1) , colors[1],
-                        MxVector2F( x2, y0), colors[0], MxVectorDraw::FullFill );
+    // bottom-right corner
+    triangle( MxVector2F(x2, y0), colors[0],
+            MxVector2F(x3, y0) , colors[0],
+            MxVector2F(x3, y1), colors[1], MxVectorDraw::InnerCurveFill );
+    triangle(  MxVector2F( x3, y1), colors[1],
+            MxVector2F(x2, y1) , colors[1],
+            MxVector2F( x2, y0), colors[0], MxVectorDraw::FullFill );
 
 
 
-  MxRectF bottomRect( x1, x2, y0, y1 );
-  verticalGradientRect( bottomRect, colors[0], colors[1] );
+    MxRectF bottomRect( x1, x2, y0, y1 );
+    verticalGradientRect( bottomRect, colors[0], colors[1] );
 
 
-  MxRectF bodyRect( x0 , x3 , y1, y2 );
-  verticalGradientRect( bodyRect, colors[1], colors[2] );
+    MxRectF bodyRect( x0 , x3 , y1, y2 );
+    verticalGradientRect( bodyRect, colors[1], colors[2] );
 
 
-  // TOP
-  triangle( MxVector2F(x0, y2), colors[2],
-                            MxVector2F(x0, y3), colors[3],
-                            MxVector2F(x1, y3) , colors[3], MxVectorDraw::InnerCurveFill );
-  triangle(MxVector2F(x1, y3), colors[3],
-                             MxVector2F(x1, y2) , colors[2],
-                             MxVector2F(x0, y2), colors[2], MxVectorDraw::FullFill );
+    // TOP
+    triangle( MxVector2F(x0, y2), colors[2],
+            MxVector2F(x0, y3), colors[3],
+            MxVector2F(x1, y3) , colors[3], MxVectorDraw::InnerCurveFill );
+    triangle(MxVector2F(x1, y3), colors[3],
+            MxVector2F(x1, y2) , colors[2],
+            MxVector2F(x0, y2), colors[2], MxVectorDraw::FullFill );
 
 
-  triangle( MxVector2F(x2, y3), colors[3],
-                            MxVector2F(x3, y3), colors[3],
-                            MxVector2F(x3, y2) , colors[2], MxVectorDraw::InnerCurveFill );
-  triangle(MxVector2F(x3, y2), colors[2],
-                             MxVector2F(x2, y2) , colors[2],
-                             MxVector2F(x2, y3), colors[3], MxVectorDraw::FullFill );
+    triangle( MxVector2F(x2, y3), colors[3],
+            MxVector2F(x3, y3), colors[3],
+            MxVector2F(x3, y2) , colors[2], MxVectorDraw::InnerCurveFill );
+    triangle(MxVector2F(x3, y2), colors[2],
+            MxVector2F(x2, y2) , colors[2],
+            MxVector2F(x2, y3), colors[3], MxVectorDraw::FullFill );
 
-  MxRectF topRect( x1, x2, y2, y3);
-  verticalGradientRect( topRect, colors[2], colors[3] );
+    MxRectF topRect( x1, x2, y2, y3);
+    verticalGradientRect( topRect, colors[2], colors[3] );
 }
 
 void MxVectorDraw::appendChaplinHat(float left, float right,
-                                               float bottom, float top, float radius, const MxVector4UC &color )
+                                    float bottom, float top, float radius, const MxVector4UC &color )
 {
 
     triangle(
@@ -718,6 +719,45 @@ void MxVectorDraw::appendFillTriangle_p( const MxVector2F &a, const MxVector2F &
     v->a = pathColor[3];
 }
 
+void MxVectorDraw::appendColoredTriangle_p( const MxVector2F &a, const unsigned char *colorA, const MxVector2F &b, const unsigned char *colorB, const MxVector2F &c, const unsigned char *colorC )
+{
+    Q_ASSERT( NULL != pArray );
+    Q_ASSERT( NULL != pTranslation );
+
+    //pArray->reserveForAppend( 3*sizeof(Vertex) );
+
+    const float alpha = 1.0f;
+
+    MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) ); //pArray.appendPointer();
+    v->x = a.x();
+    v->y = a.y();
+    v->u = 0.0f;
+    v->v = 0.0f;
+    v->r = colorA[0];
+    v->g = colorA[1];
+    v->b = colorA[2];
+    v->a = alpha;
+
+    v++;
+    v->x = b.x();
+    v->y = b.y();
+    v->u = 0.5f;
+    v->v = 0.0f;
+    v->r = colorB[0];
+    v->g = colorB[1];
+    v->b = colorB[2];
+    v->a = alpha;
+
+    v++;
+    v->x = c.x();
+    v->y = c.y();
+    v->u = 1.0f;
+    v->v = 1.0f;
+    v->r = colorC[0];
+    v->g = colorC[1];
+    v->b = colorC[2];
+    v->a = alpha;
+}
 
 void MxVectorDraw::appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, float direction, const unsigned char *pathColor )
 {
@@ -819,3 +859,18 @@ MxVector2F MxVectorDraw::bezierPoint( const MxVector2F inPoints[4], double inT )
             (inPoints[2] * 3.0 * ((1.0 - inT) * pow(inT, 2))) +
             (inPoints[3] * pow(inT, 3));
 }
+
+
+/*! \class MxVectorDraw
+    \brief Draw Mewa triangles
+
+    A Mewa triagle draws a filled quadratic curve.
+     
+    ![Mewa Triangle](MewaTriangle.jpg)
+
+    Why Mewa triangles?
+    Mewa triangles are an extremely efficient 
+    method for drawing scale-invariant, antialiased curves.
+
+    \sa MxPainter
+*/

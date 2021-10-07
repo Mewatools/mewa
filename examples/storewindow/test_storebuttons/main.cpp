@@ -52,7 +52,7 @@
 #include <QSurfaceFormat>
 #include <QOpenGLContext>
 
-#include "testwindow.h"
+#include "qmewawindow.h"
 #include "mxapplication.h"
 #include "teststoreview.h"
 
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     QSurfaceFormat::setDefaultFormat(fmt);
 
 
-    TestWindow glWindow;
+    QMewaWindow glWindow;
 
     ///////////// setup Mx widget ////////////
     TestStoreView *testView =  new TestStoreView();

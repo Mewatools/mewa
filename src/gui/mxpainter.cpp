@@ -86,3 +86,11 @@ MxTextDraw & MxPainter::textDraw()
 {
     return pTextDraw;
 }
+
+/*! \class MxPainter
+    \brief Holder to the different painters
+
+    MxPainter is passed as argument to MxWidget::paint() function.
+
+    \sa MxVectorDraw
+*/

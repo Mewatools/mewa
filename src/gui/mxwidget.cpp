@@ -7,7 +7,7 @@
 
 
 MxWidget::MxWidget()
-    :pParent(NULL), pFlags(DirtyFlag)
+    :pParent(NULL), pProperties(DirtyFlag)
 {}
 
 /*! Destroys the widget. */
@@ -133,7 +133,7 @@ void MxWidget::mapToGlobal( MxVector2F *pos ) const
 void MxWidget::update()
 {
     //updateWidget( this );
-    pFlags |= DirtyFlag;//pDirty = true;
+    pProperties |= DirtyFlag;//pDirty = true;
     childNeedsUpdate();
 }
 
@@ -142,7 +142,7 @@ void MxWidget::dirtyCollidingWidgets(const MxRectF &collidingRect)
     MxRectF thisRect;
     getRect( &thisRect );
     if( collidingRect.intersects( thisRect ) ) {
-        pFlags |= DirtyFlag;
+        pProperties |= DirtyFlag;
     }
 }
 
@@ -188,12 +188,12 @@ void MxWidget::collectDirtyWidgets( MxWidgetList &list )
 
 void MxWidget::resetDirtyFlag()
 {
-    pFlags &= ~(DirtyFlag);//false;
+    pProperties &= ~(DirtyFlag);
 }
 
 bool MxWidget::isDirty() const
 {
-    return (pFlags & DirtyFlag);//pDirty;
+    return (pProperties & DirtyFlag);
 }
 
 MxWidget* MxWidget::rootParent() const

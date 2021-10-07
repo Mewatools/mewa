@@ -20,7 +20,7 @@ class MxWheelEvent;
 class MxWidget
 {
 public:
-    enum CustomFlag {
+    enum PropertyFlag {
         DirtyFlag = 0x01,
         HasBackground = 0x400, // used to draw child background without the need to ask parent to redraw itself
         HasTransparency = 0x800, // set it to popup widgets when these have tranparency and need background to be redrawn
@@ -96,7 +96,7 @@ public:
 
 
     MxWidget *pParent;
-    int pFlags;
+    int pProperties;
     MxVector2F pSize;
     MxVector2F pPos;
 

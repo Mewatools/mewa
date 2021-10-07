@@ -14,7 +14,8 @@ SOURCES += $$PWD/mxpainter.cpp \
            $$PWD/gpuvbo.cpp
   
 
-HEADERS += $$PWD/mxpainter.h \
+HEADERS += $$PWD/mxorthotransform.h \
+           $$PWD/mxpainter.h \
            $$PWD/mxwidget.h \
            $$PWD/mxwidgetlist.h \
            $$PWD/mxshaderprogram.h \
