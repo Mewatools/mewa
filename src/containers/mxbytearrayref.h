@@ -93,7 +93,6 @@ public:
         }
     }
 
-
     void goTo( char c )
     {
         while( pSize > 0 && *pStringStart != c )
@@ -102,41 +101,6 @@ public:
             pSize--;
         }
     }
-
-
-
-
-    // \TODO this function needs to move to somewhere else because it depends on containers and geometry
-    // convert #FF341802 to RGB
-    /*void fromHtmlColor( QxVector3UC *color )
-    {
-        Q_ASSERT( NULL != color );
-        Q_ASSERT( *pStringStart == '#' );
-        int red = hexToDecimal( pStringStart[2] ) + (hexToDecimal( pStringStart[1] )*16);
-        int green = hexToDecimal( pStringStart[4] ) + (hexToDecimal( pStringStart[3] )*16);
-        int blue = hexToDecimal( pStringStart[6] ) + (hexToDecimal( pStringStart[5] )*16);
-        *color = QxVector3UC(red, green, blue);
-    }*/
-
-    /*
-    // return 0 if different
-    int equals( const char *str )
-    {
-        int streamSize = pSize;
-        const char *streamStart = pStringStart;
-        while( pSize > 0 && *str != '\0' && *streamStart == *str )
-        {
-            streamStart++;
-            streamSize--;
-            str++;
-            if( *str == '\0' && (*streamStart == ' ' || *streamStart == '"' ) ) {
-                return true;
-            }
-
-        }
-
-        return pSize - streamSize;
-    }*/
 
     const char & operator[]( int i ) const
     {

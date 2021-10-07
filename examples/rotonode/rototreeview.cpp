@@ -7,7 +7,7 @@
 #include "mxmouseevent.h"
 
 
-#define MARGIN 8.0f
+#define MARGIN 1.0f
 #define LINE_SEPARATOR_THICKNESS 2.0f
 
 
@@ -40,10 +40,7 @@ void RotoTreeView::removeShape(  RotoShape *shape )
 
     pRowCount--;
     sizeChanged();
-    /*
-    pPanel.setMinimumSize();
-    pPanel.parent()->update();
-    */
+
 }
 
 MxVector2F RotoTreeView::sizePolicy()

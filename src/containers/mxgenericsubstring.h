@@ -65,27 +65,6 @@ public:
         return -1;
     }
 
-    void getBaseNameFromPath()
-    {
-        int i = 0;
-        do {
-            pStringStart += ( i + 1 );
-            pSize -= (i+1);
-#ifdef QX_PLATFORM_WINDOWS
-            i = firstIndexOf('\\');
-#else
-            i = firstIndexOf( '/' );
-#endif
-        } while(i != -1);
-
-
-        // crop text after the dot
-        int dotIndex = firstIndexOf( '.' );
-        Q_ASSERT( dotIndex > 0 );
-        pSize = dotIndex;
-    }
-
-
     bool endsWith( const T *match ) const
     {
         Q_ASSERT( NULL != pStringStart );

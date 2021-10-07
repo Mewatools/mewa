@@ -27,7 +27,6 @@ void MxGenericString<char>::operator=( const char *str )
 
     memcpy(dst, str, s+1);
     dd->size = s;
-	//return *this;
 }
 
 
@@ -65,7 +64,7 @@ void MxGenericString<char>::append( const char *str )
 
     DynamicData *dd = static_cast<DynamicData*>(d);
     Q_ASSERT( dd->alloc >= (dd->size + s) );
-    char * dst = reinterpret_cast<char *>(dd) + dd->offset;//data();
+    char * dst = reinterpret_cast<char *>(dd) + dd->offset;
     dst += dd->size;
     strcpy( dst, str );
     dd->size += s;
@@ -83,9 +82,7 @@ void MxGenericString<char>::prepend( const char *str )
 
     DynamicData *dd = static_cast<DynamicData*>(d);
     Q_ASSERT( dd->alloc >= (dd->size + s) );
-    char * startPtr = reinterpret_cast<char *>(dd) + dd->offset;//data();
-    //dst += dd->size;
-    //strcpy( dst, str );
+    char * startPtr = reinterpret_cast<char *>(dd) + dd->offset;
     memmove ( startPtr+s, startPtr, s );
     memcpy( startPtr, str, s );
     dd->size += s;

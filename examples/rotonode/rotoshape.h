@@ -9,10 +9,6 @@
 #include "mxvector.h"
 #include "rototreeitem.h"
 
-#ifndef TEST_ROTOTREEVIEW
-#include "rotopoint.h"
-#include "qxpolygonrasterizereffect.h"
-#endif
 
 class MxOrthoTransform;
 class RotoTransform;
@@ -51,9 +47,6 @@ public:
 
     void endCreating() { pProperties |= Close; }
 
-#ifndef TEST_ROTOTREEVIEW
-    void fillPolygon(MxCubicBezierLineEffect::Polygon &polygon , int frame, const MxOrthoTransform &transform);
-#endif
 
     enum Operation
     {
@@ -101,10 +94,6 @@ public:
 
 
 
-#ifndef TEST_ROTOTREEVIEW
-    // it's a list, and NOT a LinkedList, because it doesn't need reordering
-    MxList<RotoPoint, MxClassInitializer<RotoPoint> > pPointList;
-#endif
 
     int pSelectionCount; // points from this shape currently selected
 

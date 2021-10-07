@@ -1,7 +1,6 @@
 
 TEMPLATE = app
 CONFIG += debug
-DEFINES += TEST_ROTOTREEVIEW
 
 include($$PWD/../../../src/qtmewa.pri)
 

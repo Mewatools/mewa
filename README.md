@@ -4,7 +4,7 @@ Mewa framework is a C++ OpenGL based UI framework designed from ground-up to del
 
 It holds a whole collection of reusable classes on which the Mewa application is built on.
 
-To know more about the Mewa framework, and to try it out, see the [contributing](contributing.md) page.
+To know more about the Mewa framework, and to try it out, see the [developers page](https://mewatools.github.io/mewa/).
 
 **About the Mewa application**
 
