@@ -1,10 +1,12 @@
 <map id="MxVectorProgram" name="MxVectorProgram">
-<area shape="rect" id="node1" title=" " alt="" coords="216,5,343,32"/>
-<area shape="rect" id="node3" href="$class_mx_renderer.html" title=" " alt="" coords="497,77,588,104"/>
-<area shape="rect" id="node2" href="$class_mx_shader_program.html" title=" " alt="" coords="699,25,828,52"/>
-<area shape="rect" id="node5" href="$class_mx_color_wheel_program.html" title=" " alt="" coords="877,61,1032,88"/>
-<area shape="rect" id="node4" title=" " alt="" coords="207,69,352,96"/>
-<area shape="rect" id="node6" href="$class_mx_list.html" title=" " alt="" coords="212,120,347,176"/>
-<area shape="rect" id="node7" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="5,127,148,169"/>
-<area shape="rect" id="node8" href="$class_mx_vector.html" title=" " alt="" coords="216,200,343,227"/>
+<area shape="rect" id="node1" title=" " alt="" coords="588,5,715,32"/>
+<area shape="rect" id="node3" href="$class_mx_renderer.html" title=" " alt="" coords="869,77,960,104"/>
+<area shape="rect" id="node2" href="$class_mx_shader_program.html" title=" " alt="" coords="1071,25,1200,52"/>
+<area shape="rect" id="node5" href="$class_mx_color_wheel_program.html" title=" " alt="" coords="1249,61,1404,88"/>
+<area shape="rect" id="node4" title=" " alt="" coords="579,69,724,96"/>
+<area shape="rect" id="node6" href="$class_mx_list.html" title=" " alt="" coords="584,120,719,176"/>
+<area shape="rect" id="node7" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="5,97,148,138"/>
+<area shape="rect" id="node8" href="$class_mx_list.html" title=" " alt="" coords="207,131,349,173"/>
+<area shape="rect" id="node9" href="$class_mx_vector.html" title=" " alt="" coords="588,200,715,227"/>
+<area shape="rect" id="node10" href="$class_mx_vector.html" title=" " alt="" coords="216,200,340,227"/>
 </map>

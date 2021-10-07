@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['customflag_808',['CustomFlag',['../class_mx_widget.html#ad8c90397ae4e0e8ccb957b5790610609',1,'MxWidget']]]
+  ['modifier_902',['Modifier',['../class_mx_mouse_event.html#a75d1e13fbf29abdd6945ff89dce72d51',1,'MxMouseEvent']]],
+  ['mousebutton_903',['MouseButton',['../class_mx_mouse_event.html#a7d9cb061c2befe54c7e1d024a486014f',1,'MxMouseEvent']]]
 ];

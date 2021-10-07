@@ -1,5 +1,5 @@
 <map id="MxVectorDraw" name="MxVectorDraw">
-<area shape="rect" id="node1" title=" " alt="" coords="71,171,178,197"/>
+<area shape="rect" id="node1" title="Draw Mewa triangles." alt="" coords="71,171,178,197"/>
 <area shape="rect" id="node2" href="$class_mx_vector.html" title=" " alt="" coords="5,81,129,108"/>
 <area shape="rect" id="node3" href="$class_gpu_buffer.html" title=" " alt="" coords="153,81,233,108"/>
 <area shape="rect" id="node4" href="$class_gpu_vbo.html" title=" " alt="" coords="158,5,227,32"/>

@@ -1,13 +1,9 @@
 <map id="src/gui/textdraw/mxtextdraw.h" name="src/gui/textdraw/mxtextdraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="674,5,869,32"/>
-<area shape="rect" id="node2" href="$mxpainter_8h.html" title=" " alt="" coords="610,80,741,107"/>
-<area shape="rect" id="node11" href="$mxtextdraw_8cpp.html" title=" " alt="" coords="765,80,973,107"/>
-<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="299,162,475,189"/>
-<area shape="rect" id="node8" href="$mxpainter_8cpp.html" title=" " alt="" coords="500,162,645,189"/>
-<area shape="rect" id="node9" href="$mxstoreview_8cpp.html" title=" " alt="" coords="670,162,889,189"/>
-<area shape="rect" id="node10" href="$teststoreview_8cpp.html" title=" " alt="" coords="913,155,1120,196"/>
-<area shape="rect" id="node4" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,251,196,278"/>
-<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="221,244,375,285"/>
-<area shape="rect" id="node6" href="$storewindow_2test__storebuttons_2main_8cpp.html" title=" " alt="" coords="399,244,557,285"/>
-<area shape="rect" id="node7" href="$storewindow_2test__storebuttons_2testwindow_8cpp.html" title=" " alt="" coords="581,244,775,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="290,5,485,32"/>
+<area shape="rect" id="node2" href="$mxpainter_8h.html" title=" " alt="" coords="226,80,357,107"/>
+<area shape="rect" id="node7" href="$mxtextdraw_8cpp.html" title=" " alt="" coords="381,80,589,107"/>
+<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="111,155,287,181"/>
+<area shape="rect" id="node6" href="$mxpainter_8cpp.html" title=" " alt="" coords="312,155,457,181"/>
+<area shape="rect" id="node4" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,237,196,263"/>
+<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="221,229,375,271"/>
 </map>

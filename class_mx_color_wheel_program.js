@@ -2,6 +2,7 @@ var class_mx_color_wheel_program =
 [
     [ "MxColorWheelProgram", "class_mx_color_wheel_program.html#a57a583d2609a4ac4cd4e7c0718016b8e", null ],
     [ "~MxColorWheelProgram", "class_mx_color_wheel_program.html#a943c386c35173c6d326eb3135811c71e", null ],
+    [ "colorAt", "class_mx_color_wheel_program.html#a333a74a918cc2bf46d3f94ba560d0168", null ],
     [ "disableAttributes", "class_mx_color_wheel_program.html#ade893da569ba9ff79fcf11e9a6a2de9b", null ],
     [ "disableVao", "class_mx_color_wheel_program.html#aeaa1e613014b5385e5e4e8665027d494", null ],
     [ "draw", "class_mx_color_wheel_program.html#a7c73712bf7c3a06bbedf96135b279418", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mewa_20framework_853',['Mewa Framework',['../index.html',1,'']]]
+  ['contributing_945',['Contributing',['../contrib_page.html',1,'']]]
 ];

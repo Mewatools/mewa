@@ -1,20 +1,15 @@
 <map id="src/gui/colorselector/mxcolorwheelprogram.h" name="src/gui/colorselector/mxcolorwheelprogram.h">
-<area shape="rect" id="node1" title=" " alt="" coords="678,5,841,47"/>
-<area shape="rect" id="node2" href="$mxcolorwheelprogram_8cpp.html" title=" " alt="" coords="289,169,465,211"/>
-<area shape="rect" id="node3" href="$mxrenderer_8h.html" title=" " alt="" coords="1047,95,1237,121"/>
-<area shape="rect" id="node4" href="$mxapplication_8h.html" title=" " alt="" coords="489,177,665,203"/>
-<area shape="rect" id="node9" href="$gui_2colorselector_2test__colorwheel_2testwindow_8h.html" title=" " alt="" coords="689,169,886,211"/>
-<area shape="rect" id="node12" href="$gpubuffer_8cpp.html" title=" " alt="" coords="911,177,1053,203"/>
-<area shape="rect" id="node13" href="$gpuvbo_8cpp.html" title=" " alt="" coords="1077,177,1207,203"/>
-<area shape="rect" id="node14" href="$mxpainter_8cpp.html" title=" " alt="" coords="1232,177,1377,203"/>
-<area shape="rect" id="node15" href="$mxshaderprogram_8cpp.html" title=" " alt="" coords="1402,177,1594,203"/>
-<area shape="rect" id="node16" href="$mxrenderer_8cpp.html" title=" " alt="" coords="1619,177,1823,203"/>
-<area shape="rect" id="node17" href="$mxvectordraw_8cpp.html" title=" " alt="" coords="1847,169,1978,211"/>
-<area shape="rect" id="node18" href="$mxvectorprogram_8cpp.html" title=" " alt="" coords="2003,169,2153,211"/>
-<area shape="rect" id="node5" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,266,196,293"/>
-<area shape="rect" id="node6" href="$qmewawindow_8cpp.html" title=" " alt="" coords="221,259,375,300"/>
-<area shape="rect" id="node7" href="$storewindow_2test__storebuttons_2main_8cpp.html" title=" " alt="" coords="399,259,557,300"/>
-<area shape="rect" id="node8" href="$storewindow_2test__storebuttons_2testwindow_8cpp.html" title=" " alt="" coords="581,259,775,300"/>
-<area shape="rect" id="node10" href="$gui_2colorselector_2test__colorwheel_2main_8cpp.html" title=" " alt="" coords="799,259,973,300"/>
-<area shape="rect" id="node11" href="$gui_2colorselector_2test__colorwheel_2testwindow_8cpp.html" title=" " alt="" coords="997,259,1207,300"/>
+<area shape="rect" id="node1" title=" " alt="" coords="365,5,528,47"/>
+<area shape="rect" id="node2" href="$mxcolorwheelprogram_8cpp.html" title=" " alt="" coords="5,169,181,211"/>
+<area shape="rect" id="node3" href="$mxrenderer_8h.html" title=" " alt="" coords="623,95,814,121"/>
+<area shape="rect" id="node4" href="$mxapplication_8h.html" title=" " alt="" coords="205,177,381,203"/>
+<area shape="rect" id="node7" href="$gpubuffer_8cpp.html" title=" " alt="" coords="406,177,549,203"/>
+<area shape="rect" id="node8" href="$gpuvbo_8cpp.html" title=" " alt="" coords="572,177,703,203"/>
+<area shape="rect" id="node9" href="$mxpainter_8cpp.html" title=" " alt="" coords="727,177,873,203"/>
+<area shape="rect" id="node10" href="$mxshaderprogram_8cpp.html" title=" " alt="" coords="897,177,1089,203"/>
+<area shape="rect" id="node11" href="$mxrenderer_8cpp.html" title=" " alt="" coords="1114,177,1318,203"/>
+<area shape="rect" id="node12" href="$mxvectordraw_8cpp.html" title=" " alt="" coords="1343,169,1473,211"/>
+<area shape="rect" id="node13" href="$mxvectorprogram_8cpp.html" title=" " alt="" coords="1498,169,1649,211"/>
+<area shape="rect" id="node5" href="$mxapplication_8cpp.html" title=" " alt="" coords="99,266,290,293"/>
+<area shape="rect" id="node6" href="$qmewawindow_8cpp.html" title=" " alt="" coords="315,259,469,300"/>
 </map>

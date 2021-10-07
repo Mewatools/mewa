@@ -16,6 +16,9 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "mxabstractsvg.h", "mxabstractsvg_8h.html", [
       [ "MxAbstractSvg", "class_mx_abstract_svg.html", "class_mx_abstract_svg" ]
     ] ],
+    [ "mxorthotransform.h", "mxorthotransform_8h.html", [
+      [ "MxOrthoTransform", "class_mx_ortho_transform.html", "class_mx_ortho_transform" ]
+    ] ],
     [ "mxpainter.cpp", "mxpainter_8cpp.html", null ],
     [ "mxpainter.h", "mxpainter_8h.html", [
       [ "MxPainter", "class_mx_painter.html", "class_mx_painter" ]

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['teststoreview_443',['TestStoreView',['../class_test_store_view.html',1,'']]],
-  ['testwindow_444',['TestWindow',['../class_test_window.html',1,'']]]
+  ['vertex_493',['Vertex',['../struct_mx_text_draw_1_1_vertex.html',1,'MxTextDraw::Vertex'],['../struct_mx_vector_draw_1_1_vertex.html',1,'MxVectorDraw::Vertex']]]
 ];

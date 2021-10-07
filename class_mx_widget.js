@@ -1,9 +1,9 @@
 var class_mx_widget =
 [
-    [ "CustomFlag", "class_mx_widget.html#ad8c90397ae4e0e8ccb957b5790610609", [
-      [ "DirtyFlag", "class_mx_widget.html#ad8c90397ae4e0e8ccb957b5790610609a58e8b67b63a7e5f520196d6cb2c621f1", null ],
-      [ "HasBackground", "class_mx_widget.html#ad8c90397ae4e0e8ccb957b5790610609aa04032a1e4b281e84c8f33120448ef52", null ],
-      [ "HasTransparency", "class_mx_widget.html#ad8c90397ae4e0e8ccb957b5790610609a6a4bcc0e2ed7bd45bfc688773287b0ed", null ]
+    [ "PropertyFlag", "class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63", [
+      [ "DirtyFlag", "class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63a58e8b67b63a7e5f520196d6cb2c621f1", null ],
+      [ "HasBackground", "class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63aa04032a1e4b281e84c8f33120448ef52", null ],
+      [ "HasTransparency", "class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63a6a4bcc0e2ed7bd45bfc688773287b0ed", null ]
     ] ],
     [ "MxWidget", "class_mx_widget.html#a28ed6f3b8aefad0d17c59d5ac3d5fc79", null ],
     [ "~MxWidget", "class_mx_widget.html#a69050977778d33ad82abae9e3ff06a44", null ],
@@ -38,8 +38,8 @@ var class_mx_widget =
     [ "textInputEvent", "class_mx_widget.html#abb60df42de6a79a4bdc0e32d510d4f99", null ],
     [ "update", "class_mx_widget.html#a4c69ab1d6dec1a6f29eb32520b6ca281", null ],
     [ "wheelEvent", "class_mx_widget.html#a711abb7f532e1fdad51fcfaeb01f4228", null ],
-    [ "pFlags", "class_mx_widget.html#af3a779fbcfaf54cd600b65a2d92f6552", null ],
     [ "pParent", "class_mx_widget.html#a0df85d170164cc287e1757ce22540f7d", null ],
     [ "pPos", "class_mx_widget.html#ab7e1eacee403698b531d54bc1ed889f7", null ],
+    [ "pProperties", "class_mx_widget.html#a84396abf194f56a105960b79fd47e8db", null ],
     [ "pSize", "class_mx_widget.html#a98eb67160efeffc5e43782c8f5be4a72", null ]
 ];
