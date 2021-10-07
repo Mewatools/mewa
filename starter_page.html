@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('starter_page.html',''); initResizable(
 Basic widget example</h1>
 <p>Compile and run the Qt project <a href="examples/canvaswidget/canvaswidget.pro">examples/canvaswidget/canvaswidget.pro</a></p>
 <p><img src="canvasExample.png" alt="" class="inline" title="CanvasWidget example"/></p>
-<p>The code of interest is in the function paint(). A copy of the CanvasWidget paint() implementation is below:</p>
+<p>The function paint() is where the drawing happens. A copy of the CanvasWidget paint() implementation is shown below:</p>
 <div class="fragment"><div class="line">void CanvasWidget::paint( MxPainter &amp;painter )</div>
 <div class="line">{</div>
 <div class="line">    const MxVector2F &amp;areaSize = size(); // get window size</div>
@@ -131,34 +131,37 @@ Basic widget example</h1>
 <div class="line">    paint.fillRect( pDraggingRect, itemColor); // draw square</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Draw with Mewa triangles</b></p>
-<p>Now lets draw a mewa triangle.</p>
-<p>To draw Mewa triangles we call <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a>.</p>
+<p>The simplest way to draw using for graphics APIs like OpenGL is using triangles. And Mewa uses triangles to draw all geometries, from rectangles to rounded shapes.</p>
+<p>To draw a Mewa triangle we call <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a>. The code below replaces the call <a class="el" href="class_mx_vector_draw.html#a40669c0c52b10124ed91547c1c1d566e" title="Draws a filled rect with color.">MxVectorDraw::fillRect()</a> with a <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a> call.</p>
 <div class="fragment"><div class="line">void CanvasWidget::paint( MxPainter &amp;painter )</div>
 <div class="line">{</div>
-<div class="line">    const MxVector2F &amp;areaSize = size(); // get window size</div>
+<div class="line">    const MxVector2F &amp;areaSize = size();</div>
 <div class="line">    MxRectF areaRect(areaSize);</div>
-<div class="line">    MxVectorDraw &amp;paint = painter.vectorDraw(); // get SVG painter</div>
+<div class="line">    MxVectorDraw &amp;paint = painter.vectorDraw();</div>
 <div class="line"> </div>
 <div class="line">    MxVector4UC bgColor(80, 80, 80, 255);</div>
 <div class="line">    MxVector4UC itemColor;</div>
-<div class="line">    if( pIsHovering ) { // pick square color</div>
+<div class="line">    if( pIsHovering ) {</div>
 <div class="line">        itemColor = MxVector4UC(180, 180, 20, 255);</div>
 <div class="line">    } else {</div>
 <div class="line">        itemColor = MxVector4UC(160, 160, 220, 255);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    paint.fillRect( areaRect, bgColor); // fill window with background color</div>
-<div class="line">    </div>
+<div class="line">    paint.fillRect( areaRect, bgColor);</div>
+<div class="line"> </div>
 <div class="line">    // draw Mewa triangle</div>
-<div class="line">    MxVector2F a(20.0f, 20.0f);</div>
-<div class="line">    MxVector2F b(180.0f, 180.0f);</div>
-<div class="line">    MxVector2F c(300.0f, 20.0f);</div>
+<div class="line">    MxVector2F a(30.0f, 30.0f);</div>
+<div class="line">    MxVector2F b(30.0f, 200.0f);</div>
+<div class="line">    MxVector2F c(200.0f, 30.0f);</div>
 <div class="line">    paint.triangle( a, itemColor,</div>
 <div class="line">                    b, itemColor,</div>
-<div class="line">                    c, itemColor, </div>
+<div class="line">                    c, itemColor,</div>
 <div class="line">                    MxVectorDraw::InnerCurveFill );</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><p>The result is a filled curve as shown below.</p>
+<p><img src="canvasExample-triangle.png" alt="" class="inline" title="Mewa triangle"/></p>
+<p>See <a class="el" href="class_mx_vector_draw.html" title="Draw Mewa triangles.">MxVectorDraw</a> for more details about Mewa triangles. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

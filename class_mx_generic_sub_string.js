@@ -9,7 +9,6 @@ var class_mx_generic_sub_string =
     [ "equals", "class_mx_generic_sub_string.html#a4259977851d06c6fa434e4f50a6de826", null ],
     [ "firstIndexOf", "class_mx_generic_sub_string.html#ae4b37a9158637be4d408a0168f44b12d", null ],
     [ "forwardCheck", "class_mx_generic_sub_string.html#a6814320e2a0e36c5b984175e4fd3b627", null ],
-    [ "getBaseNameFromPath", "class_mx_generic_sub_string.html#a17653bc43853c12ad83903ee89d3edf9", null ],
     [ "getInt", "class_mx_generic_sub_string.html#a30f4e6d54b791fb6164e5cb923582aa7", null ],
     [ "intFromString", "class_mx_generic_sub_string.html#a18330f0fff8c844fae0d45b60d24bc68", null ],
     [ "isEqual", "class_mx_generic_sub_string.html#af1e628e3bd54f8ba3420ffa96ac5d62b", null ],

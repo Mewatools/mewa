@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"struct_mx_pod_initializer.html#a5de8d068cc8af1ba1bfc18a5f3f7dfb6":[3,0,16,1],
 "struct_mx_pod_initializer.html#a6d5f15fc3ae45cb7e506a391c9c6d61f":[3,0,16,4],
 "struct_mx_pod_initializer.html#a70654f434cbae77f4d2a8d5d30333c81":[3,0,16,0],
 "struct_mx_pod_initializer.html#af1c3dab57be92a29f5b17ff1d1b58eb9":[3,0,16,2],

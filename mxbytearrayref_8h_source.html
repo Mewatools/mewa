@@ -203,162 +203,126 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">goTo</a>( <span class="keywordtype">char</span> c )</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">while</span>( pSize &gt; 0 &amp;&amp; *pStringStart != c )</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            pStringStart++;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            pSize--;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// \TODO this function needs to move to somewhere else because it depends on containers and geometry</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// convert #FF341802 to RGB</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">/*void fromHtmlColor( QxVector3UC *color )</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">        Q_ASSERT( NULL != color );</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">        Q_ASSERT( *pStringStart == &#39;#&#39; );</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">        int red = hexToDecimal( pStringStart[2] ) + (hexToDecimal( pStringStart[1] )*16);</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">        int green = hexToDecimal( pStringStart[4] ) + (hexToDecimal( pStringStart[3] )*16);</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">        int blue = hexToDecimal( pStringStart[6] ) + (hexToDecimal( pStringStart[5] )*16);</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">        *color = QxVector3UC(red, green, blue);</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">    // return 0 if different</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">    int equals( const char *str )</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">        int streamSize = pSize;</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">        const char *streamStart = pStringStart;</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">        while( pSize &gt; 0 &amp;&amp; *str != &#39;\0&#39; &amp;&amp; *streamStart == *str )</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">        {</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">            streamStart++;</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">            streamSize--;</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">            str++;</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">            if( *str == &#39;\0&#39; &amp;&amp; (*streamStart == &#39; &#39; || *streamStart == &#39;&quot;&#39; ) ) {</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">                return true;</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">            }</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">        }</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">        return pSize - streamSize;</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">  141</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> &amp; <a class="code" href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">operator[]</a>( <span class="keywordtype">int</span> i )<span class="keyword"> const</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> pStringStart[i];</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">  146</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">operator==</a>( <span class="keyword">const</span> <a class="code" href="class_mx_byte_array_ref.html">MxByteArrayRef</a> &amp;other )<span class="keyword"> const</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span>( pSize == other.pSize )</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i&lt;pSize; ++i)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keywordflow">if</span>( pStringStart[i] != other.pStringStart[i] ) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// compares with null terminated string</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">  162</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">operator==</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )<span class="keyword"> const</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">for</span>( ; i&lt;pSize; ++i)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">if</span>( pStringStart[i] != str[i] ) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">if</span>(str[i] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">goTo</a>( <span class="keywordtype">char</span> c )</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">while</span>( pSize &gt; 0 &amp;&amp; *pStringStart != c )</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            pStringStart++;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            pSize--;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">  105</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> &amp; <a class="code" href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">operator[]</a>( <span class="keywordtype">int</span> i )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> pStringStart[i];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">  110</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">operator==</a>( <span class="keyword">const</span> <a class="code" href="class_mx_byte_array_ref.html">MxByteArrayRef</a> &amp;other )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span>( pSize == other.pSize )</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i&lt;pSize; ++i)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">if</span>( pStringStart[i] != other.pStringStart[i] ) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// compares with null terminated string</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">  126</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">operator==</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">int</span> i=0;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">for</span>( ; i&lt;pSize; ++i)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span>( pStringStart[i] != str[i] ) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span>(str[i] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// advances as long this string matches str, returns true if match. This ref is incremented</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">  144</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">forwardCheck</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        Q_ASSERT( pSize &gt; (<span class="keywordtype">int</span>)strlen(str) );</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">while</span>( *str != <span class="charliteral">&#39;\0&#39;</span> )</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span>( *str != *pStringStart ) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            str++;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            pStringStart++;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            pSize--;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">  159</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">startsWith</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">int</span> strSize = strlen(str) - 1;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">while</span>( *(pStringStart+strSize) == *(str+strSize)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;               &amp;&amp; strSize &gt; 0</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;               )</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            strSize--;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> strSize == 0;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">  172</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">makeCString</a>()</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">char</span> * srcData = <a class="code" href="class_mx_byte_array_ref.html#a1ac694f1f4edc5077cc12d2c40962e7c">data</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        srcData[<a class="code" href="class_mx_byte_array_ref.html#ae5d9605fc28691449d5cb0eca071abb4">size</a>()] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// advances as long this string matches str, returns true if match. This ref is incremented</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">  180</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">forwardCheck</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        Q_ASSERT( pSize &gt; (<span class="keywordtype">int</span>)strlen(str) );</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">while</span>( *str != <span class="charliteral">&#39;\0&#39;</span> )</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span>( *str != *pStringStart ) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            str++;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            pStringStart++;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            pSize--;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">  195</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">startsWith</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">int</span> strSize = strlen(str) - 1;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">while</span>( *(pStringStart+strSize) == *(str+strSize)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;               &amp;&amp; strSize &gt; 0</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;               )</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            strSize--;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> strSize == 0;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">  208</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">makeCString</a>()</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">char</span> * srcData = <a class="code" href="class_mx_byte_array_ref.html#a1ac694f1f4edc5077cc12d2c40962e7c">data</a>();</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        srcData[<a class="code" href="class_mx_byte_array_ref.html#ae5d9605fc28691449d5cb0eca071abb4">size</a>()] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a984e3d3b0ccea80c3e3ca16b9bdc4f44">insert</a>( <span class="keywordtype">int</span> index, <span class="keyword">const</span> <span class="keywordtype">char</span> c );</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> setSize( <span class="keywordtype">int</span> newSize )</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        pSize = newSize;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;   </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">int</span> pSize; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">char</span> *pStringStart;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;};</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a984e3d3b0ccea80c3e3ca16b9bdc4f44">insert</a>( <span class="keywordtype">int</span> index, <span class="keyword">const</span> <span class="keywordtype">char</span> c );</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">void</span> setSize( <span class="keywordtype">int</span> newSize )</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        pSize = newSize;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;   </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">int</span> pSize; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">char</span> *pStringStart;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html"><div class="ttname"><a href="class_mx_byte_array_ref.html">MxByteArrayRef</a></div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:23</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a11f8922750adec0d632220644667abdf"><div class="ttname"><a href="class_mx_byte_array_ref.html#a11f8922750adec0d632220644667abdf">MxByteArrayRef::skipChars</a></div><div class="ttdeci">void skipChars(char c1, char c2)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:87</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a1ac694f1f4edc5077cc12d2c40962e7c"><div class="ttname"><a href="class_mx_byte_array_ref.html#a1ac694f1f4edc5077cc12d2c40962e7c">MxByteArrayRef::data</a></div><div class="ttdeci">char * data() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:39</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_a1cf716119d4234fd0bc6690d339e434f"><div class="ttname"><a href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">MxByteArrayRef::operator[]</a></div><div class="ttdeci">const char &amp; operator[](int i) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:141</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_a1cf716119d4234fd0bc6690d339e434f"><div class="ttname"><a href="class_mx_byte_array_ref.html#a1cf716119d4234fd0bc6690d339e434f">MxByteArrayRef::operator[]</a></div><div class="ttdeci">const char &amp; operator[](int i) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:105</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a2d3d4f7863148dea20d261b02734d057"><div class="ttname"><a href="class_mx_byte_array_ref.html#a2d3d4f7863148dea20d261b02734d057">MxByteArrayRef::readWord</a></div><div class="ttdeci">void readWord()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:59</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a38b95dbb6bb02b87d5335988681915c4"><div class="ttname"><a href="class_mx_byte_array_ref.html#a38b95dbb6bb02b87d5335988681915c4">MxByteArrayRef::MxByteArrayRef</a></div><div class="ttdeci">MxByteArrayRef(char *string, int size)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:32</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_a4a5b9cd856c2976f95d40213ac039788"><div class="ttname"><a href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">MxByteArrayRef::goTo</a></div><div class="ttdeci">void goTo(char c)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:97</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_a4a5b9cd856c2976f95d40213ac039788"><div class="ttname"><a href="class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788">MxByteArrayRef::goTo</a></div><div class="ttdeci">void goTo(char c)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:96</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a64532d781c020dcf6392fa9db8a73d04"><div class="ttname"><a href="class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04">MxByteArrayRef::advance</a></div><div class="ttdeci">void advance(int n)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:45</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a799164e0b5bf2b8da822023d06b835a9"><div class="ttname"><a href="class_mx_byte_array_ref.html#a799164e0b5bf2b8da822023d06b835a9">MxByteArrayRef::removeFirstChar</a></div><div class="ttdeci">void removeFirstChar()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:43</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a7db837af5f086c3c92f2a0c1dc0a77dc"><div class="ttname"><a href="class_mx_byte_array_ref.html#a7db837af5f086c3c92f2a0c1dc0a77dc">MxByteArrayRef::constData</a></div><div class="ttdeci">const char * constData() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:40</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a85219bb54f08868351d4091a23625565"><div class="ttname"><a href="class_mx_byte_array_ref.html#a85219bb54f08868351d4091a23625565">MxByteArrayRef::startsWithLetterOrNumber</a></div><div class="ttdeci">bool startsWithLetterOrNumber() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:77</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_a8e90d1c1d5ce93ecc783d11ed72db24f"><div class="ttname"><a href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">MxByteArrayRef::forwardCheck</a></div><div class="ttdeci">bool forwardCheck(const char *str)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:180</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_a8e90d1c1d5ce93ecc783d11ed72db24f"><div class="ttname"><a href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">MxByteArrayRef::forwardCheck</a></div><div class="ttdeci">bool forwardCheck(const char *str)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:144</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a984e3d3b0ccea80c3e3ca16b9bdc4f44"><div class="ttname"><a href="class_mx_byte_array_ref.html#a984e3d3b0ccea80c3e3ca16b9bdc4f44">MxByteArrayRef::insert</a></div><div class="ttdeci">void insert(int index, const char c)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.cpp:8</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_a99ec98c440aa11816b3a1f9bc9f81825"><div class="ttname"><a href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">MxByteArrayRef::makeCString</a></div><div class="ttdeci">void makeCString()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:208</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_a99ec98c440aa11816b3a1f9bc9f81825"><div class="ttname"><a href="class_mx_byte_array_ref.html#a99ec98c440aa11816b3a1f9bc9f81825">MxByteArrayRef::makeCString</a></div><div class="ttdeci">void makeCString()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:172</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_a9ff82f3a824ca242b78d8319f8e8b281"><div class="ttname"><a href="class_mx_byte_array_ref.html#a9ff82f3a824ca242b78d8319f8e8b281">MxByteArrayRef::startsWithLetter</a></div><div class="ttdeci">bool startsWithLetter() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:70</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_aa84a2d24320cebcfebc50e5b64999210"><div class="ttname"><a href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">MxByteArrayRef::operator==</a></div><div class="ttdeci">bool operator==(const char *str) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:162</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_aa84a2d24320cebcfebc50e5b64999210"><div class="ttname"><a href="class_mx_byte_array_ref.html#aa84a2d24320cebcfebc50e5b64999210">MxByteArrayRef::operator==</a></div><div class="ttdeci">bool operator==(const char *str) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:126</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_ac44a83b18aac2549ca5c8c3bef1f67dc"><div class="ttname"><a href="class_mx_byte_array_ref.html#ac44a83b18aac2549ca5c8c3bef1f67dc">MxByteArrayRef::firstChar</a></div><div class="ttdeci">char firstChar() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:42</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_ac6cc9aa1259e15b06ee346720b530ff8"><div class="ttname"><a href="class_mx_byte_array_ref.html#ac6cc9aa1259e15b06ee346720b530ff8">MxByteArrayRef::MxByteArrayRef</a></div><div class="ttdeci">MxByteArrayRef()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:26</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_ad5b1fdf095c567ae20b408bad4c9fcf6"><div class="ttname"><a href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">MxByteArrayRef::startsWith</a></div><div class="ttdeci">bool startsWith(const char *str)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:195</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_ad5b1fdf095c567ae20b408bad4c9fcf6"><div class="ttname"><a href="class_mx_byte_array_ref.html#ad5b1fdf095c567ae20b408bad4c9fcf6">MxByteArrayRef::startsWith</a></div><div class="ttdeci">bool startsWith(const char *str)</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:159</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_ae5d9605fc28691449d5cb0eca071abb4"><div class="ttname"><a href="class_mx_byte_array_ref.html#ae5d9605fc28691449d5cb0eca071abb4">MxByteArrayRef::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:38</div></div>
-<div class="ttc" id="aclass_mx_byte_array_ref_html_aea0122fb7966a709751feda9493ba477"><div class="ttname"><a href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">MxByteArrayRef::operator==</a></div><div class="ttdeci">bool operator==(const MxByteArrayRef &amp;other) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:146</div></div>
+<div class="ttc" id="aclass_mx_byte_array_ref_html_aea0122fb7966a709751feda9493ba477"><div class="ttname"><a href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">MxByteArrayRef::operator==</a></div><div class="ttdeci">bool operator==(const MxByteArrayRef &amp;other) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:110</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_af7b72c6568cb313cc9e158112d9c71f2"><div class="ttname"><a href="class_mx_byte_array_ref.html#af7b72c6568cb313cc9e158112d9c71f2">MxByteArrayRef::readPrintable</a></div><div class="ttdeci">MxByteArrayRef readPrintable()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:47</div></div>
 <div class="ttc" id="amxdebug_8h_html"><div class="ttname"><a href="mxdebug_8h.html">mxdebug.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
