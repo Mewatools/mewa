@@ -28,13 +28,14 @@ void CanvasWidget::paint( MxPainter &painter )
 }
 \endcode
 
-**Draw with Mewa triangles**
+**Drawing a rounded shape**
 
-The simplest way to draw using for graphics APIs like OpenGL is using triangles.
-And Mewa uses triangles to draw all geometries, from rectangles to rounded shapes.
+Mewa being a OpenGl based framework uses triangles to draw all geometries, from rectangles to rounded shapes.
+Because these triangles have the special ability to draw anti-aliased filled curves inside them 
+let's called them Mewa triangles.
 
 To draw a Mewa triangle we call MxVectorDraw::triangle(). The code below replaces
-the call MxVectorDraw::fillRect() with a MxVectorDraw::triangle() call.
+the last MxVectorDraw::fillRect() call with a MxVectorDraw::triangle() call.
 
 \code
 void CanvasWidget::paint( MxPainter &painter )

@@ -4,7 +4,7 @@ Mewa framework is a C++ OpenGL based UI framework designed from ground-up to del
 
 It holds a whole collection of reusable classes on which the Mewa application is built on.
 
-To know more about the Mewa framework, and to try it out, see the [developers page](https://mewatools.github.io/mewa/).
+To know more about the Mewa framework check the [developers page](https://mewatools.github.io/mewa/).
 
 **About the Mewa application**
 
@@ -18,9 +18,11 @@ Mewa is a new node-graph based compositor, dedicated to simplifying the chaotic 
   - Guaranteed UI responsiveness
   - Easier extensibility and customizability
 
-More information about Mewa at <https://www.mewatools.com/>
+
+You can find more information about Mewa at <https://www.mewatools.com/>.
+
+Or chat with us on [Discord](https://disboard.org/server/827792740359340103)
+
 
 [![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
 [![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
-
-You can also chat with us on [Discord](https://disboard.org/server/827792740359340103)
