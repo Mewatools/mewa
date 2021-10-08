@@ -130,9 +130,9 @@ Basic widget example</h1>
 <div class="line">    paint.fillRect( areaRect, bgColor); // fill window with background color</div>
 <div class="line">    paint.fillRect( pDraggingRect, itemColor); // draw square</div>
 <div class="line">}</div>
-</div><!-- fragment --><p><b>Draw with Mewa triangles</b></p>
-<p>The simplest way to draw using for graphics APIs like OpenGL is using triangles. And Mewa uses triangles to draw all geometries, from rectangles to rounded shapes.</p>
-<p>To draw a Mewa triangle we call <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a>. The code below replaces the call <a class="el" href="class_mx_vector_draw.html#a40669c0c52b10124ed91547c1c1d566e" title="Draws a filled rect with color.">MxVectorDraw::fillRect()</a> with a <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a> call.</p>
+</div><!-- fragment --><p><b>Drawing a rounded shape</b></p>
+<p>Mewa being a OpenGl based framework uses triangles to draw all geometries, from rectangles to rounded shapes. Because these triangles have the special ability to draw anti-aliased filled curves inside them let's called them Mewa triangles.</p>
+<p>To draw a Mewa triangle we call <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a>. The code below replaces the last <a class="el" href="class_mx_vector_draw.html#a40669c0c52b10124ed91547c1c1d566e" title="Draws a filled rect with color.">MxVectorDraw::fillRect()</a> call with a <a class="el" href="class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8" title="InnerCurveFill and OutterCurveFill options draw a triangle where 1 side is drawn as a quadratic curve...">MxVectorDraw::triangle()</a> call.</p>
 <div class="fragment"><div class="line">void CanvasWidget::paint( MxPainter &amp;painter )</div>
 <div class="line">{</div>
 <div class="line">    const MxVector2F &amp;areaSize = size();</div>
