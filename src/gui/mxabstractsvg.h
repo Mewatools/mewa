@@ -29,8 +29,13 @@ class MxAbstractSvg
 public:
     MxAbstractSvg(){}
 
+/*! Returns the size of the area being drawn. It can be any size 
+ and is used to select the area of the draw that will be rendered */ 
     virtual MxVector2F canvasSize() const = 0;
 
+/*! This method makes all the draw calls to render the SVG. Note that
+ the target area of the draw is set by the canvasSize() method.
+ */
     virtual void draw( MxSvgPainter &painter ) = 0;
 
 };
