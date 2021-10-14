@@ -1,6 +1,7 @@
 var dir_99d0482cf009f9d97a0877749b817f19 =
 [
     [ "colorselector", "dir_666b763223e2e564039666be3a39faff.html", "dir_666b763223e2e564039666be3a39faff" ],
+    [ "icondraw", "dir_c1d21909fe2780e9c989f423d6169745.html", "dir_c1d21909fe2780e9c989f423d6169745" ],
     [ "renderer", "dir_55dc9d71d206728a8556f576ce22adae.html", "dir_55dc9d71d206728a8556f576ce22adae" ],
     [ "svg", "dir_c5641c002233c40e546fb4944ecf7616.html", "dir_c5641c002233c40e546fb4944ecf7616" ],
     [ "textdraw", "dir_e58f2de49667bc7650159953bfcd60a5.html", "dir_e58f2de49667bc7650159953bfcd60a5" ],
@@ -15,6 +16,10 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     ] ],
     [ "mxabstractsvg.h", "mxabstractsvg_8h.html", [
       [ "MxAbstractSvg", "class_mx_abstract_svg.html", "class_mx_abstract_svg" ]
+    ] ],
+    [ "mxaggregation.cpp", "mxaggregation_8cpp.html", null ],
+    [ "mxaggregation.h", "mxaggregation_8h.html", [
+      [ "MxAggregation", "class_mx_aggregation.html", "class_mx_aggregation" ]
     ] ],
     [ "mxorthotransform.h", "mxorthotransform_8h.html", [
       [ "MxOrthoTransform", "class_mx_ortho_transform.html", "class_mx_ortho_transform" ]

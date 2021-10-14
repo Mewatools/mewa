@@ -3,8 +3,8 @@ var class_mx_application =
     [ "MxApplication", "class_mx_application.html#a0c70c822e01d568f7e4e583316812d90", null ],
     [ "~MxApplication", "class_mx_application.html#ad7cd82a83f38f52acfdcb7d12cc860d5", null ],
     [ "cleanupGL", "class_mx_application.html#a1cce0bbd3bd73061149e69736f22b7fb", null ],
+    [ "init", "class_mx_application.html#a84f26804a0c0eba0ea46aef1036e950e", null ],
     [ "initializeGL", "class_mx_application.html#a749f0c6683779065a449af39de882809", null ],
-    [ "instance", "class_mx_application.html#a57223f5af5ff499566b56ae9c74dba1f", null ],
     [ "isRedrawNeeded", "class_mx_application.html#ae33966db670df8738c240449e7f120e0", null ],
     [ "mainWidget", "class_mx_application.html#a2d07287a3119b5ad522ecd467ddffac9", null ],
     [ "onMouseMove", "class_mx_application.html#a85f54257941cc54765819b94b7f5d80b", null ],
@@ -15,8 +15,8 @@ var class_mx_application =
     [ "requestRedraw", "class_mx_application.html#a61826fe709ff4daa1da8051207080632", null ],
     [ "setMainWidget", "class_mx_application.html#a44e571943a9edfe713d3d0f6e5b31eca", null ],
     [ "mSizeChanged", "class_mx_application.html#ae2083f83295f320cd954dbb87e05f69d", null ],
+    [ "pGuiAggregation", "class_mx_application.html#a48a48e5541ff5ae0ad3d67f9fda42d19", null ],
     [ "pPainterBuffer", "class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb", null ],
     [ "pRenderer", "class_mx_application.html#a0f457141d6de03e289355a1fea9d9e1b", null ],
-    [ "pWidget", "class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4", null ],
-    [ "sApp", "class_mx_application.html#a87d9afd4a3ecf85951b002a4cf6b5447", null ]
+    [ "pWidget", "class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4", null ]
 ];

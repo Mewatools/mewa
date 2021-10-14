@@ -33,6 +33,8 @@ var class_mx_rect =
     [ "topRight", "class_mx_rect.html#ac3322c01345712b68381b2f81944daae", null ],
     [ "translate", "class_mx_rect.html#ab19b85158fc07090f7fd3093132376ff", null ],
     [ "translate", "class_mx_rect.html#ac6ffacc706289ff9ead4753f69499905", null ],
+    [ "translated", "class_mx_rect.html#aaf0ff43c040d6d4a7db4ad186058bbe0", null ],
+    [ "translated", "class_mx_rect.html#a918473f9bfb0019d045ffd6559d2dac6", null ],
     [ "translateX", "class_mx_rect.html#a7628148045202960b7587d197409ab7c", null ],
     [ "translateY", "class_mx_rect.html#af8fcdacddea7dc12bb203694250a6e76", null ],
     [ "width", "class_mx_rect.html#afb28d4f3c3a9d66aab64ac08d225dfd1", null ]

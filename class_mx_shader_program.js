@@ -2,6 +2,8 @@ var class_mx_shader_program =
 [
     [ "VaoFormat", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0", [
       [ "Unknown", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0a4e5867fa4a9a83b8ce8a2d64e5270a36", null ],
+      [ "Float_2_2", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0aa79786317f572a1d847927add1a8303e", null ],
+      [ "Float_3_2", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0a1c2ceb8608f41964c5ae9349c14b077c", null ],
       [ "Float_4", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0a5b69e925eb062454345c1ba07fa2356b", null ],
       [ "Float2_UChar4_Float2", "class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0ad09fde1c6d2a421ea1644239110c6cc0", null ]
     ] ],

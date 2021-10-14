@@ -13,6 +13,10 @@ var dir_0b61c55142250c0cc363383afd8075a4 =
       [ "MxList", "class_mx_list.html", "class_mx_list" ],
       [ "Data", "struct_mx_list_1_1_data.html", "struct_mx_list_1_1_data" ]
     ] ],
+    [ "mxrefcounter.cpp", "mxrefcounter_8cpp.html", null ],
+    [ "mxrefcounter.h", "mxrefcounter_8h.html", [
+      [ "MxRefCounter", "class_mx_ref_counter.html", "class_mx_ref_counter" ]
+    ] ],
     [ "mxstring.cpp", "mxstring_8cpp.html", null ],
     [ "mxstring.h", "mxstring_8h.html", "mxstring_8h" ]
 ];

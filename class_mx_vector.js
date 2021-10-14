@@ -21,6 +21,7 @@ var class_mx_vector =
     [ "width", "class_mx_vector.html#a3dac388704793344389e92a933eecea5", null ],
     [ "x", "class_mx_vector.html#a6c2ed0c18c53556b1d38a0ccad216174", null ],
     [ "y", "class_mx_vector.html#aa21c4e0bd734958d01f707398bb6a5f7", null ],
+    [ "z", "class_mx_vector.html#ab8760b6cdc3871c2de14a5f588521ff5", null ],
     [ "operator*", "class_mx_vector.html#aa645daff7ff5049e558614963a50c6be", null ],
     [ "operator/", "class_mx_vector.html#a8d92e4905a34814910c5bfe91188b41d", null ],
     [ "pVector", "class_mx_vector.html#a8337d1b47c1b0786ddcd8e6d63ec37ea", null ]

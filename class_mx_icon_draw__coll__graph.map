@@ -1,0 +1,7 @@
+<map id="MxIconDraw" name="MxIconDraw">
+<area shape="rect" id="node1" title="The MxIconDraw class draws icons from a atlas." alt="" coords="76,260,171,287"/>
+<area shape="rect" id="node2" href="$class_mx_quad_draw.html" title=" " alt="" coords="5,171,105,197"/>
+<area shape="rect" id="node3" href="$class_gpu_buffer.html" title=" " alt="" coords="15,81,95,108"/>
+<area shape="rect" id="node4" href="$class_gpu_vbo.html" title=" " alt="" coords="21,5,90,32"/>
+<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="129,171,253,197"/>
+</map>

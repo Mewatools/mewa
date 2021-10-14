@@ -117,34 +117,53 @@ $(document).ready(function(){initNavTree('qmewawindow_8h_source.html',''); initR
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QOpenGLWindow&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_q_mewa_window.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_mewa_window.html">QMewaWindow</a> : <span class="keyword">public</span> QOpenGLWindow</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_q_mewa_window.html#a50f245a1486f9154d3b3d35162bb9537">QMewaWindow</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_q_mewa_window.html#a020704e08329d8abf05193f4537d738b">~QMewaWindow</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#abb41b4f30bada10467245f8b284b9df2">initializeGL</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#ab1c4c78ce0703d62b4ed63c9d5716058">paintGL</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a60a28a41f5e61fc754f9f484c7df600d">mousePressEvent</a>( QMouseEvent * event );</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#acd75330a057dbc2df2adb5133762df08">mouseMoveEvent</a>( QMouseEvent * event );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#af14aacb9573447b5e7156519a846990e">mouseReleaseEvent</a>( QMouseEvent * event );</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_q_mewa_window_html"><div class="ttname"><a href="class_q_mewa_window.html">QMewaWindow</a></div><div class="ttdef"><b>Definition:</b> qmewawindow.h:12</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxiconatlas_8h.html">mxiconatlas.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxapplication_8h.html">mxapplication.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_widget.html">MxWidget</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_q_mewa_window.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_mewa_window.html">QMewaWindow</a> : <span class="keyword">public</span> QOpenGLWindow</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_q_mewa_window.html#a50f245a1486f9154d3b3d35162bb9537">QMewaWindow</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_q_mewa_window.html#a020704e08329d8abf05193f4537d738b">~QMewaWindow</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#abb41b4f30bada10467245f8b284b9df2">initializeGL</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#ab1c4c78ce0703d62b4ed63c9d5716058">paintGL</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a60a28a41f5e61fc754f9f484c7df600d">mousePressEvent</a>( QMouseEvent * event );</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#acd75330a057dbc2df2adb5133762df08">mouseMoveEvent</a>( QMouseEvent * event );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#af14aacb9573447b5e7156519a846990e">mouseReleaseEvent</a>( QMouseEvent * event );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a990ca8f241b32a633d5a5c6a15013db8">setMainWidget</a>( <a class="code" href="class_mx_widget.html">MxWidget</a> *widget );</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_mewa_window.html#a0b69d01accb97f0f5a5a1a8890652696">setIcon</a>( <a class="code" href="namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861">MxThemeIcons::IconName</a> name, <span class="keyword">const</span> <span class="keywordtype">char</span> *imageFileName );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mx_icon_atlas.html">MxIconAtlas</a> pIconAtlas;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_mx_application.html">MxApplication</a> pApp;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_mx_application_html"><div class="ttname"><a href="class_mx_application.html">MxApplication</a></div><div class="ttdef"><b>Definition:</b> mxapplication.h:20</div></div>
+<div class="ttc" id="aclass_mx_icon_atlas_html"><div class="ttname"><a href="class_mx_icon_atlas.html">MxIconAtlas</a></div><div class="ttdef"><b>Definition:</b> mxiconatlas.h:20</div></div>
+<div class="ttc" id="aclass_mx_widget_html"><div class="ttname"><a href="class_mx_widget.html">MxWidget</a></div><div class="ttdef"><b>Definition:</b> mxwidget.h:21</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html"><div class="ttname"><a href="class_q_mewa_window.html">QMewaWindow</a></div><div class="ttdef"><b>Definition:</b> qmewawindow.h:17</div></div>
 <div class="ttc" id="aclass_q_mewa_window_html_a020704e08329d8abf05193f4537d738b"><div class="ttname"><a href="class_q_mewa_window.html#a020704e08329d8abf05193f4537d738b">QMewaWindow::~QMewaWindow</a></div><div class="ttdeci">~QMewaWindow()</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:19</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_a0b69d01accb97f0f5a5a1a8890652696"><div class="ttname"><a href="class_q_mewa_window.html#a0b69d01accb97f0f5a5a1a8890652696">QMewaWindow::setIcon</a></div><div class="ttdeci">void setIcon(MxThemeIcons::IconName name, const char *imageFileName)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:69</div></div>
 <div class="ttc" id="aclass_q_mewa_window_html_a50f245a1486f9154d3b3d35162bb9537"><div class="ttname"><a href="class_q_mewa_window.html#a50f245a1486f9154d3b3d35162bb9537">QMewaWindow::QMewaWindow</a></div><div class="ttdeci">QMewaWindow()</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:13</div></div>
-<div class="ttc" id="aclass_q_mewa_window_html_a55bd04903d86aa9d0afa1c980efa70d6"><div class="ttname"><a href="class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6">QMewaWindow::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:31</div></div>
-<div class="ttc" id="aclass_q_mewa_window_html_a60a28a41f5e61fc754f9f484c7df600d"><div class="ttname"><a href="class_q_mewa_window.html#a60a28a41f5e61fc754f9f484c7df600d">QMewaWindow::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:41</div></div>
-<div class="ttc" id="aclass_q_mewa_window_html_ab1c4c78ce0703d62b4ed63c9d5716058"><div class="ttname"><a href="class_q_mewa_window.html#ab1c4c78ce0703d62b4ed63c9d5716058">QMewaWindow::paintGL</a></div><div class="ttdeci">void paintGL()</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:36</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_a55bd04903d86aa9d0afa1c980efa70d6"><div class="ttname"><a href="class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6">QMewaWindow::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:33</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_a60a28a41f5e61fc754f9f484c7df600d"><div class="ttname"><a href="class_q_mewa_window.html#a60a28a41f5e61fc754f9f484c7df600d">QMewaWindow::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:43</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_a990ca8f241b32a633d5a5c6a15013db8"><div class="ttname"><a href="class_q_mewa_window.html#a990ca8f241b32a633d5a5c6a15013db8">QMewaWindow::setMainWidget</a></div><div class="ttdeci">void setMainWidget(MxWidget *widget)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:64</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_ab1c4c78ce0703d62b4ed63c9d5716058"><div class="ttname"><a href="class_q_mewa_window.html#ab1c4c78ce0703d62b4ed63c9d5716058">QMewaWindow::paintGL</a></div><div class="ttdeci">void paintGL()</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:38</div></div>
 <div class="ttc" id="aclass_q_mewa_window_html_abb41b4f30bada10467245f8b284b9df2"><div class="ttname"><a href="class_q_mewa_window.html#abb41b4f30bada10467245f8b284b9df2">QMewaWindow::initializeGL</a></div><div class="ttdeci">void initializeGL()</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:24</div></div>
-<div class="ttc" id="aclass_q_mewa_window_html_acd75330a057dbc2df2adb5133762df08"><div class="ttname"><a href="class_q_mewa_window.html#acd75330a057dbc2df2adb5133762df08">QMewaWindow::mouseMoveEvent</a></div><div class="ttdeci">void mouseMoveEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:48</div></div>
-<div class="ttc" id="aclass_q_mewa_window_html_af14aacb9573447b5e7156519a846990e"><div class="ttname"><a href="class_q_mewa_window.html#af14aacb9573447b5e7156519a846990e">QMewaWindow::mouseReleaseEvent</a></div><div class="ttdeci">void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:55</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_acd75330a057dbc2df2adb5133762df08"><div class="ttname"><a href="class_q_mewa_window.html#acd75330a057dbc2df2adb5133762df08">QMewaWindow::mouseMoveEvent</a></div><div class="ttdeci">void mouseMoveEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:50</div></div>
+<div class="ttc" id="aclass_q_mewa_window_html_af14aacb9573447b5e7156519a846990e"><div class="ttname"><a href="class_q_mewa_window.html#af14aacb9573447b5e7156519a846990e">QMewaWindow::mouseReleaseEvent</a></div><div class="ttdeci">void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> qmewawindow.cpp:57</div></div>
+<div class="ttc" id="amxapplication_8h_html"><div class="ttname"><a href="mxapplication_8h.html">mxapplication.h</a></div></div>
+<div class="ttc" id="amxiconatlas_8h_html"><div class="ttname"><a href="mxiconatlas_8h.html">mxiconatlas.h</a></div></div>
+<div class="ttc" id="anamespace_mx_theme_icons_html_ad5f6dd0d4c4dabfa0ddb896289f90861"><div class="ttname"><a href="namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861">MxThemeIcons::IconName</a></div><div class="ttdeci">IconName</div><div class="ttdoc">Id used to identify each icon/image.</div><div class="ttdef"><b>Definition:</b> mxthemeicons.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

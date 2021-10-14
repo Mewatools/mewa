@@ -7,5 +7,7 @@ var class_q_mewa_window =
     [ "mousePressEvent", "class_q_mewa_window.html#a60a28a41f5e61fc754f9f484c7df600d", null ],
     [ "mouseReleaseEvent", "class_q_mewa_window.html#af14aacb9573447b5e7156519a846990e", null ],
     [ "paintGL", "class_q_mewa_window.html#ab1c4c78ce0703d62b4ed63c9d5716058", null ],
-    [ "resizeGL", "class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6", null ]
+    [ "resizeGL", "class_q_mewa_window.html#a55bd04903d86aa9d0afa1c980efa70d6", null ],
+    [ "setIcon", "class_q_mewa_window.html#a0b69d01accb97f0f5a5a1a8890652696", null ],
+    [ "setMainWidget", "class_q_mewa_window.html#a990ca8f241b32a633d5a5c6a15013db8", null ]
 ];

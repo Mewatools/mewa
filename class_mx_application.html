@@ -106,9 +106,7 @@ $(document).ready(function(){initNavTree('class_mx_application.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_mx_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MxApplication Class Reference</div>  </div>
@@ -119,7 +117,7 @@ $(document).ready(function(){initNavTree('class_mx_application.html',''); initRe
 <div class="dynheader">
 Collaboration diagram for MxApplication:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_application__coll__graph.svg" width="1412" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_application__coll__graph.svg" width="1598" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -129,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c70c822e01d568f7e4e583316812d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cd82a83f38f52acfdcb7d12cc860d5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#ad7cd82a83f38f52acfdcb7d12cc860d5">~MxApplication</a> ()</td></tr>
 <tr class="separator:ad7cd82a83f38f52acfdcb7d12cc860d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f26804a0c0eba0ea46aef1036e950e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a84f26804a0c0eba0ea46aef1036e950e">init</a> (<a class="el" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *atlas)</td></tr>
+<tr class="separator:a84f26804a0c0eba0ea46aef1036e950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749f0c6683779065a449af39de882809"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a749f0c6683779065a449af39de882809">initializeGL</a> ()</td></tr>
 <tr class="separator:a749f0c6683779065a449af39de882809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cce0bbd3bd73061149e69736f22b7fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a1cce0bbd3bd73061149e69736f22b7fb">cleanupGL</a> ()</td></tr>
@@ -152,26 +152,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae33966db670df8738c240449e7f120e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#ae33966db670df8738c240449e7f120e0">isRedrawNeeded</a> ()</td></tr>
 <tr class="separator:ae33966db670df8738c240449e7f120e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a57223f5af5ff499566b56ae9c74dba1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mx_application.html">MxApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a57223f5af5ff499566b56ae9c74dba1f">instance</a> ()</td></tr>
-<tr class="separator:a57223f5af5ff499566b56ae9c74dba1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0f457141d6de03e289355a1fea9d9e1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_renderer.html">MxRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a0f457141d6de03e289355a1fea9d9e1b">pRenderer</a></td></tr>
 <tr class="separator:a0f457141d6de03e289355a1fea9d9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a48e5541ff5ae0ad3d67f9fda42d19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_aggregation.html">MxAggregation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a48a48e5541ff5ae0ad3d67f9fda42d19">pGuiAggregation</a></td></tr>
+<tr class="separator:a48a48e5541ff5ae0ad3d67f9fda42d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf958607f428b0ae3ec9a17d8409b6f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_widget.html">MxWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4">pWidget</a></td></tr>
 <tr class="separator:adf958607f428b0ae3ec9a17d8409b6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2083f83295f320cd954dbb87e05f69d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#ae2083f83295f320cd954dbb87e05f69d">mSizeChanged</a></td></tr>
 <tr class="separator:ae2083f83295f320cd954dbb87e05f69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf4ffb6cf061185c7a8c3da7ce174fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_painter.html">MxPainter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb">pPainterBuffer</a></td></tr>
 <tr class="separator:a9bf4ffb6cf061185c7a8c3da7ce174fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a87d9afd4a3ecf85951b002a4cf6b5447"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mx_application.html">MxApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a87d9afd4a3ecf85951b002a4cf6b5447">sApp</a> = NULL</td></tr>
-<tr class="separator:a87d9afd4a3ecf85951b002a4cf6b5447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0c70c822e01d568f7e4e583316812d90"></a>
@@ -242,6 +234,24 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a84f26804a0c0eba0ea46aef1036e950e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f26804a0c0eba0ea46aef1036e950e">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxApplication::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *&#160;</td>
+          <td class="paramname"><em>atlas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a749f0c6683779065a449af39de882809"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a749f0c6683779065a449af39de882809">&#9670;&nbsp;</a></span>initializeGL()</h2>
 
@@ -261,31 +271,6 @@ Static Public Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57223f5af5ff499566b56ae9c74dba1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57223f5af5ff499566b56ae9c74dba1f">&#9670;&nbsp;</a></span>instance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mx_application.html">MxApplication</a> * MxApplication::instance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -571,6 +556,20 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a48a48e5541ff5ae0ad3d67f9fda42d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a48e5541ff5ae0ad3d67f9fda42d19">&#9670;&nbsp;</a></span>pGuiAggregation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_aggregation.html">MxAggregation</a> MxApplication::pGuiAggregation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9bf4ffb6cf061185c7a8c3da7ce174fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bf4ffb6cf061185c7a8c3da7ce174fb">&#9670;&nbsp;</a></span>pPainterBuffer</h2>
 
@@ -609,28 +608,6 @@ Static Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="class_mx_widget.html">MxWidget</a>* MxApplication::pWidget</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a87d9afd4a3ecf85951b002a4cf6b5447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87d9afd4a3ecf85951b002a4cf6b5447">&#9670;&nbsp;</a></span>sApp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mx_application.html">MxApplication</a> * MxApplication::sApp = NULL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
