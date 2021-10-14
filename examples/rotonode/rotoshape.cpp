@@ -7,6 +7,8 @@
 #include "rototransform.h"
 #include "mxpainter.h"
 #include "shapelockedsvg.h"
+#include "mxaggregation.h"
+#include "mxabstractatlas.h"
 
 
 #define ARROW_COLUMN_WIDTH 12.0f
@@ -81,12 +83,13 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     MxRectF buttonRect = drawData.rowRect;
     float buttonLeft = buttonRect.right() - buttonW;
     buttonRect.setLeft( buttonLeft );
-    qDebug("isLocked(): %d", (int)isLocked());
+   // qDebug("isLocked(): %d", (int)isLocked());
     if( isLocked() ) {
          restColor = MxVector4UC(60, 60, 160, 255);
     } else {
         restColor = MxVector4UC(80, 80, 80, 255);
     }
+
     if( drawData.isUnderMouse() && drawData.pButton == 2 ) { // hovering button
 
         lockSvg.pColor = highlightColor;
@@ -104,6 +107,10 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     } else {
         lbTriangles.fillRect( buttonRect, MxVector4UC(111, 20, 30, 255) );
     }
+    MxIconDraw &iconPainter = painter.iconDraw( MxPainter::OriginalColor );
+    const MxAbstractAtlas *atlas = MxAggregation::instance()->iconAtlas();
+    const MxRectF &visIconRect = atlas->iconRect( MxThemeIcons::NotVisible );
+    iconPainter.drawImageRect( visIconRect, buttonRect);
 
     // invert button
     buttonRect.setRight(buttonLeft);

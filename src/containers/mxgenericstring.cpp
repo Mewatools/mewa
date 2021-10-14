@@ -56,7 +56,7 @@ template <>
 void MxGenericString<char>::append( const char *str )
 {
     Q_ASSERT( NULL != d );
-    Q_ASSERT( d->refcount >= 0 );
+    Q_ASSERT( d->refCounter >= 0 );
 
     Q_ASSERT( str != NULL );
     int s = strlen(str);
@@ -74,7 +74,7 @@ template <>
 void MxGenericString<char>::prepend( const char *str )
 {
     Q_ASSERT( NULL != d );
-    Q_ASSERT( d->refcount >= 0 );
+    Q_ASSERT( d->refCounter >= 0 );
 
     Q_ASSERT( str != NULL );
     int s = strlen(str);

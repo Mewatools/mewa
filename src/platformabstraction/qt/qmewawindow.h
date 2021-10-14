@@ -7,6 +7,11 @@
 
 #include <QOpenGLWindow>
 
+#include "mxiconatlas.h"
+#include "mxapplication.h"
+
+class MxWidget;
+
 
 class QMewaWindow : public QOpenGLWindow
 {
@@ -23,6 +28,12 @@ public:
     void mouseMoveEvent( QMouseEvent * event );
     void mouseReleaseEvent( QMouseEvent * event );
 
+    void setMainWidget( MxWidget *widget );
+    void setIcon( MxThemeIcons::IconName name, const char *imageFileName );
+
+private:
+    MxIconAtlas pIconAtlas;
+    MxApplication pApp;
 };
 
 #endif

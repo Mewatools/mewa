@@ -7,6 +7,7 @@
 
 #include "mxdebug.h"
 #include "mxvectordraw.h"
+#include "mxicondraw.h"
 #include "mxtextdraw.h"
 #include "mxlist.h"
 
@@ -18,12 +19,19 @@ class MxAbstractSvg;
 class MxPainter
 {
 public:
+    enum IconColor {
+        OriginalColor = 0,
+        BlueColor,
+        LightColor,
+        ColorCount
+    };
+
     MxPainter();
     ~MxPainter();
 
     void discardGLResources();
     void initArrays();
-    void initializeGL(MxRenderer *);
+    void initializeGL( MxRenderer *renderer );
 
     void prepareRender( MxRenderer &renderer );
     void render(MxRenderer &renderer );
@@ -32,10 +40,12 @@ public:
     void drawSvg(MxAbstractSvg *svg , const MxRectF &targetRect);
 
     MxVectorDraw & vectorDraw();
+    MxIconDraw & iconDraw( IconColor color );
     MxTextDraw & textDraw();
 
 private:
     MxVectorDraw pVectorDraw;
+    MxIconDraw pIconDraw[ColorCount];
     MxTextDraw pTextDraw;
 
     MxVector2F pTranslation;

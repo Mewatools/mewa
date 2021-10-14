@@ -20,7 +20,9 @@ public:
     // name VAOs so that they can be reused
     enum VaoFormat
     {
-        Unknown,
+        Unknown = 0,
+        Float_2_2,
+        Float_3_2,
         Float_4,
         Float2_UChar4_Float2
     };

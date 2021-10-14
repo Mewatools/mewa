@@ -12,13 +12,13 @@
 
 /*!
  * \brief The MxOrthoTransform is used to map mouse coordinates to view coordinates
- * and vice-versa.
+  and vice-versa.
 \code
     pMousePressedPos = event.pos();
     pMousePressedPos = pOutputViewTransform.map(pMousePressedPos);
 \endcode
- *
- * To set the projection matrix:
+
+  To set the projection matrix:
 \code
     MxMatrix matrix;
     matrix.setToIdentity();
@@ -26,8 +26,8 @@
     matrix.scale( pOutputViewTransform.pScale.x(), pOutputViewTransform.pScale.y() );
     matrix.translate( -pOutputViewTransform.pTranslation.x(), -pOutputViewTransform.pTranslation.y() );
 \endcode
- *
- * To translate view objects, get the mouse offset and scale it:
+
+  To translate view objects, get the mouse offset and scale it:
 \code
      MxVector2F mousePosOffset = event.globalPos() - pLastMousePos;
      mousePosOffset = mousePosOffset / pOutputViewTransform.pScale;

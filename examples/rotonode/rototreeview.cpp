@@ -158,51 +158,6 @@ void RotoTreeView::paint( MxPainter &painter )
     pDrawData.rowIndex = 0;
 
     root.paint(painter, pDrawData);
-
-    /*
-    float yy = areaSize.height() - MARGIN;
-    MxVector4UC selectedColor(90, 90, 160, 255);
-    MxVector4UC separatorColor(120, 120, 90, 255);
-    MxVector4UC highlightRowColor(120, 120, 190, 255);
-
-
-
-    int count = list.size();
-    for(int i=0; i<count; ++i) {
-
-
-        yy -=  drawData.rowH;
-        drawData.rowRect.setBottom(yy);
-        drawData.rowRect.setTop(yy +  drawData.rowH);
-        if( pDrawData.pSelectedRows.contains(i) ) {
-            lbTriangles.fillRect( drawData.rowRect, selectedColor);
-        } else if( i == pDrawData.pHighlightRow ) {
-            lbTriangles.fillRect( drawData.rowRect, highlightRowColor);
-        }
-
-        MxRectF separatorLine = drawData.rowRect;
-        separatorLine.setTop( drawData.rowRect.bottom() + LINE_SEPARATOR_THICKNESS );
-        lbTriangles.fillRect( separatorLine, separatorColor);
-
-
-
-
-
-        // draw buttons
-        MxRectF buttonRect = drawData.rowRect;
-        float buttonLeft = buttonRect.right() - buttonW;
-        buttonRect.setLeft( buttonLeft );
-        lbTriangles.fillRect( buttonRect, MxVector4UC(200, 120, 30, 255) );
-
-
-        buttonRect.setRight(buttonLeft);
-        buttonLeft -= buttonW;
-        buttonRect.setLeft( buttonLeft );
-        lbTriangles.fillRect( buttonRect, MxVector4UC(100, 220, 30, 255) );
-
-    }
-*/
-
 }
 
 void RotoTreeView::clearAllSelections()

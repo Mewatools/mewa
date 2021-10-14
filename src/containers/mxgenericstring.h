@@ -6,6 +6,7 @@
 #define MXGENERICSTRING_H
 
 #include "mxdebug.h"
+#include "mxrefcounter.h"
 #include "mxbytearrayref.h"
 #include "mxgenericsubstring.h"
 
@@ -18,7 +19,7 @@
 
 template <typename T, int N>
 struct MxGenericStaticData {
-    int refcount;
+    int refCounter;
     int size;
     int offset;
     T array[N];
@@ -29,9 +30,8 @@ template <typename T>
 class MxGenericString
 {
 public:
-    struct Data
+    struct Data : MxRefCounter
     {
-        int refcount; // -1 for static strings
         int size;
         int offset;
     };
@@ -137,7 +137,7 @@ public:
     MxGenericString& operator=( const MxByteArrayRef &ref )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         int refSize= ref.size();
         //Q_ASSERT( dd->alloc >= (dd->size + refSize) );
@@ -156,7 +156,7 @@ public:
     {
         reserveTotal( ref.size() + 1 );
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         int refSize= ref.size();
         if( (dd->size + refSize) > dd->alloc )
@@ -269,7 +269,7 @@ public:
 
     bool isStatic() const
     {
-        return (d->refcount == -1);
+        return (d->refCounter == -1);
     }
 
     void resize( int size )
@@ -297,7 +297,7 @@ public:
             return;
         }
 
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
 
         DynamicData *dd = static_cast<DynamicData*>(d);
         if( size > dd->alloc )
@@ -313,7 +313,7 @@ public:
     void reserveForAppend(int size)
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         int newSize = d->size + size;
         if( newSize > dd->alloc )
@@ -329,7 +329,7 @@ public:
     {
         if( d != NULL )
         {
-            Q_ASSERT( d->refcount >= 0 );
+            Q_ASSERT( d->refCounter >= 0 );
             DynamicData *dd = static_cast<DynamicData*>(d);
             dd->size = 0;
         }
@@ -338,7 +338,7 @@ public:
     void truncate( int position )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         dd->size = position;
     }
@@ -346,7 +346,7 @@ public:
     void removeLast()
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         dd->size--;
     }
@@ -354,7 +354,7 @@ public:
     T last() const
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         const T *arrayPtr = data();
         return arrayPtr[dd->size-1];
@@ -363,7 +363,7 @@ public:
     void removeFirstChars( int n )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         T *arrayPtr = data();
         dd->size -= n;
@@ -376,7 +376,7 @@ public:
     void prepend( const T *data, int size )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         Q_ASSERT( data != NULL );
 
         DynamicData *dd = static_cast<DynamicData*>(d);
@@ -393,7 +393,7 @@ public:
     void appendNumber( int number )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
 
         DynamicData *dd = static_cast<DynamicData*>(d);
         T * dstPtr = data();
@@ -478,7 +478,7 @@ public:
         {
             reserveTotal(MXGENERICSTRING_PREALLOC);
         }
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         if( dd->alloc == dd->size )
         {
@@ -498,7 +498,7 @@ public:
         {
             reserveTotal(MXGENERICSTRING_PREALLOC);
         }
-        Q_ASSERT(d->refcount >= 0);
+        Q_ASSERT(d->refCounter >= 0);
         DynamicData* dd = static_cast<DynamicData*>(d);
         if (dd->alloc == dd->size)
         {
@@ -514,7 +514,7 @@ public:
     {
         Q_ASSERT( NULL != d );
         Q_ASSERT( other.d != NULL );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         int otherSize = other.size();
         DynamicData *dd = static_cast<DynamicData*>(d);
         Q_ASSERT( dd->alloc >= (dd->size + otherSize) );
@@ -528,7 +528,7 @@ public:
     {
         Q_ASSERT( NULL != d );
         Q_ASSERT( other.d != NULL );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         int otherSize = other.size();
         DynamicData *dd = static_cast<DynamicData*>(d);
         Q_ASSERT( dd->alloc >= (dd->size + otherSize) );
@@ -542,7 +542,7 @@ public:
     {
         Q_ASSERT( NULL != d );
         Q_ASSERT( str != NULL );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         int otherSize = size;//strlen(str);
         DynamicData *dd = static_cast<DynamicData*>(d);
         Q_ASSERT( dd->alloc >= (dd->size + otherSize) );
@@ -560,7 +560,7 @@ public:
     T* appendPointer( int size )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         Q_ASSERT( dd->alloc >= (dd->size + size) );
         T * strData = data();
@@ -572,7 +572,7 @@ public:
     void replace( char before, const char *after )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
 
         Q_ASSERT( after != NULL );
@@ -699,7 +699,7 @@ public:
     void append( const T *str )
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         Q_ASSERT( str != NULL );
         DynamicData *dd = static_cast<DynamicData*>(d);
         T* dst = data();
@@ -723,7 +723,7 @@ public:
             allocDynamicString( size * 2 * sizeof(T) );
         }
 
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         Q_ASSERT( str != NULL );
 
         DynamicData *dd = static_cast<DynamicData*>(d);
@@ -805,7 +805,7 @@ public:
     bool canAppendWithoutRealloc()
     {
         Q_ASSERT( NULL != d );
-        Q_ASSERT( d->refcount >= 0 );
+        Q_ASSERT( d->refCounter >= 0 );
         DynamicData *dd = static_cast<DynamicData*>(d);
         return dd->alloc > dd->size;
     }
@@ -829,7 +829,7 @@ private:
     inline void allocDynamicString( int size )
     {
         DynamicData *dd = (DynamicData*)malloc( sizeof(DynamicData) + (size * sizeof(T)));
-        dd->refcount = 1;
+        dd->refCounter = 1;
         dd->size = 0;
         dd->offset = sizeof(DynamicData);
         dd->alloc = size;
@@ -848,16 +848,16 @@ private:
 
 
     void ref() {
-        if (d->refcount > 0)
-            d->refcount++;
+        if (d->refCounter > 0)
+            d->refCounter++;
     }
 
     // return false to delete
     bool deref() {
-        if (d->refcount == -1)
+        if (d->refCounter == -1)
             return true;
 
-        return d->refcount--;
+        return d->refCounter--;
     }
 };
 

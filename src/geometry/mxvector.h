@@ -19,6 +19,7 @@ public:
 
     T x() const;
     T y() const;
+    T z() const;
 
     T width() const;
     T height() const;
@@ -161,6 +162,12 @@ inline T MxVector<N,T>::y() const
     return pVector[1];
 }
 
+template<int N, typename T>
+inline T MxVector<N,T>::z() const
+{
+    Q_ASSERT( 2 < N );
+    return pVector[2];
+}
 
 template<int N, typename T>
 inline T MxVector<N,T>::width() const

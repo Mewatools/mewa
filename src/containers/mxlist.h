@@ -10,6 +10,7 @@
 #define MXLIST_H
 
 #include "mxdebug.h"
+#include "mxrefcounter.h"
 #include <stdlib.h> // malloc
 #include <string.h> // memcpy
 #include <new>
@@ -89,19 +90,7 @@ class MxList
 {
 public:
     //! these members are public to allow unions
-    struct Data {
-        int refCounter;
-
-        inline void incRefCounter() {
-            if (refCounter > 0)
-                refCounter++;
-        }
-
-        inline bool decRefCounter() {
-            if (refCounter <= 0)
-                return true;
-            return refCounter--;
-        }
+    struct Data : MxRefCounter {
 
         int alloc, begin, end;
         T array[1];

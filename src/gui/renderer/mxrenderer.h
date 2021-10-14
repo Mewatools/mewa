@@ -10,8 +10,11 @@
 #include "mxvectorprogram.h"
 #include "mxlist.h"
 #include "gpubuffer.h"
+#include "mxiconprogram.h"
+
 
 class MxShaderProgram;
+class MxAbstractAtlas;
 
 
 class MxRenderer : public MxOpenGLFunctions
@@ -42,9 +45,16 @@ public:
     // shader programs
     MxColorWheelProgram * colorWheelProgram();
     MxVectorProgram * setVectorProgram();
+    MxIconProgram * setIconProgram();
+
     void setBlending( Blending blend );
+     void enableDepthTest( bool enable );
+     void bindTextureGL(GLuint textureId , GLuint activeSlot = GL_TEXTURE0 );
+
     GpuBuffer* newGpuBuffer( MxShaderProgram::VaoFormat format );
-     void clearGpuBuffers();
+    void clearGpuBuffers();
+
+    MxAbstractAtlas *pIconAtlas;
 
     typedef MxList<GpuBuffer, MxClassInitializer<GpuBuffer> > VboList;
 
@@ -54,10 +64,14 @@ public:
 protected:
     MxColorWheelProgram pColorWheelEffect;
     MxVectorProgram pVectorProgram;
+    MxIconProgram pIconProgram;
 
     unsigned int pCurrShaderProgram;
     MxVector2I pScreenSize;
     Blending pCurrBlend;
+    bool pDepthTestEnabled;
+    GLuint pCurrentTexture;
+    GLuint pCurrentActiveTextureSlot;
 };
 
 #endif

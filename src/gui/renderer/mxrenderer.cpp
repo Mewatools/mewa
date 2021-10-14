@@ -8,20 +8,33 @@
 
 MxRenderer::MxRenderer()
 {
-     pCurrBlend = NoBlending;
-     pVboList.reserve(16);
+    pCurrBlend = NoBlending;
+    pDepthTestEnabled = false;
+    pCurrentTexture = 99999; //zero is reserved
+    pCurrentActiveTextureSlot = GL_TEXTURE0;
+    pVboList.reserve(16);
 }
 
 void MxRenderer::discardGLResources()
 {
     pCurrBlend = NoBlending;
     pColorWheelEffect.discardGLResources();
+    pDepthTestEnabled = false;
+    pCurrentTexture = 99999; //zero is reserved
+    pCurrentActiveTextureSlot = GL_TEXTURE0;
+
+    pIconProgram.discardGLResources();
+    pVectorProgram.discardGLResources();
 }
 
 void MxRenderer::initializeGL()
 {
+    pIconProgram.init( this );
+    pIconProgram.initializeGL();
+
     MxVector4F windowColor = MxThemeColors::clearColor;
     glClearColor( windowColor[0], windowColor[1], windowColor[2], 1.0f );
+    enableDepthTest( pDepthTestEnabled);
 }
 
 
@@ -78,6 +91,11 @@ MxVectorProgram * MxRenderer::setVectorProgram()
     return &pVectorProgram;
 }
 
+MxIconProgram * MxRenderer::setIconProgram()
+{
+    setProgram( &pIconProgram );
+    return &pIconProgram;
+}
 
 void MxRenderer::setBlending( MxRenderer::Blending blend )
 {
@@ -109,6 +127,30 @@ void MxRenderer::setBlending( MxRenderer::Blending blend )
     pCurrBlend = blend;
 }
 
+void MxRenderer::enableDepthTest( bool enable )
+{
+    if( enable != pDepthTestEnabled ) {
+        pDepthTestEnabled = enable;
+        if( enable ) {
+            glEnable(GL_DEPTH_TEST);
+        } else {
+            glDisable(GL_DEPTH_TEST);
+        }
+    }
+}
+
+void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
+{
+    if( pCurrentTexture == textureId && activeSlot == pCurrentActiveTextureSlot )
+        return;
+
+
+    pCurrentActiveTextureSlot = activeSlot;
+    glActiveTexture(pCurrentActiveTextureSlot);
+
+    pCurrentTexture = textureId;
+    glBindTexture( GL_TEXTURE_2D, pCurrentTexture );
+}
 
 GpuBuffer *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
 {

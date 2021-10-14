@@ -7,7 +7,6 @@
 #include "mxwidget.h"
 
 
-MxApplication * MxApplication::sApp = NULL;
 
 MxApplication::MxApplication()
 {
@@ -24,12 +23,12 @@ MxApplication::~MxApplication()
 
 }
 
-MxApplication* MxApplication::instance()
+void MxApplication::init( MxAbstractAtlas *atlas )
 {
-    if( sApp == NULL ) {
-        sApp = new MxApplication();
-    }
-    return sApp;
+    pGuiAggregation.pIconAtlas = atlas;
+    pGuiAggregation.pApplication = this;
+    pRenderer.pIconAtlas = atlas;
+    MxAggregation::sAggregation = &(pGuiAggregation);
 }
 
 void MxApplication::initializeGL()

@@ -10,6 +10,7 @@
 #include "mxapplication.h"
 #include "rototreeview.h"
 #include "rototransform.h"
+//#include "mxiconatlas.h"
 
 
 int main(int argc, char *argv[])
@@ -32,22 +33,28 @@ int main(int argc, char *argv[])
     QSurfaceFormat::setDefaultFormat(fmt);
 
 
-    QMewaWindow glWindow;
+    QMewaWindow *glWindow = new QMewaWindow();
 
-    ///////////// setup Mx widget ////////////
+    // set icons
+    glWindow->setIcon(MxThemeIcons::Inverted, "../icons-ldpi/Inverted.png");
+    glWindow->setIcon(MxThemeIcons::Locked, "../icons-ldpi/Locked.png");
+    glWindow->setIcon(MxThemeIcons::NotInverted, "../icons-ldpi/NotInverted.png");
+    glWindow->setIcon(MxThemeIcons::NotVisible, "../icons-ldpi/NotVisible.png");
+
+
+    // setup Mx widget
     RotoTreeView *treeView =  new RotoTreeView();
-    RotoTransform &root = treeView->pRootTransform;
-    RotoTreeItem *shapeAtRoot = new RotoShape( &root );
-    RotoTransform *transform = new RotoTransform( &root );
-    RotoTreeItem *childShape = new RotoShape( transform );
+    RotoTransform &rootTransform = treeView->pRootTransform;
+    RotoTreeItem *child1 = new RotoShape( &rootTransform );
+    RotoTransform *transform = new RotoTransform( &rootTransform );
+    RotoTreeItem *child2 = new RotoShape( transform );
+    glWindow->setMainWidget(treeView);
 
 
-    MxApplication::instance()->setMainWidget(treeView);
-    /////////////////////////////////////////
 
-    //glWindow.showMaximized();
-    glWindow.setMinimumSize( QSize(300, 300) );
-    glWindow.showNormal();
+
+    glWindow->setMinimumSize( QSize(300, 300) );
+    glWindow->showNormal();
 
     return app.exec();
 }
