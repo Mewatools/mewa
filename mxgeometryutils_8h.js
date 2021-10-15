@@ -1,6 +1,7 @@
 var mxgeometryutils_8h =
 [
     [ "centeredRect", "mxgeometryutils_8h.html#ae164a97bc449bcfa397ea2e8bba48441", null ],
+    [ "centeredRect", "mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f", null ],
     [ "centeredRectAtPos", "mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808", null ],
     [ "cross", "mxgeometryutils_8h.html#a8e535891532693896f084105e7c22db1", null ],
     [ "crossProduct", "mxgeometryutils_8h.html#a80cf42e5a92c2559ef8c4014ae9aa37d", null ],

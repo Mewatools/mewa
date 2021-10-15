@@ -2,6 +2,7 @@ var namespaces_dup =
 [
     [ "MxGeometryUtils", "namespace_mx_geometry_utils.html", [
       [ "centeredRect", "namespace_mx_geometry_utils.html#ae164a97bc449bcfa397ea2e8bba48441", null ],
+      [ "centeredRect", "namespace_mx_geometry_utils.html#ab11ed9060ac8703979c081045f3db07f", null ],
       [ "centeredRectAtPos", "namespace_mx_geometry_utils.html#a85cbb3532ae32a1d3f92a8124c222808", null ],
       [ "cross", "namespace_mx_geometry_utils.html#a8e535891532693896f084105e7c22db1", null ],
       [ "crossProduct", "namespace_mx_geometry_utils.html#a80cf42e5a92c2559ef8c4014ae9aa37d", null ],
