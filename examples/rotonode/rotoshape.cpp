@@ -9,6 +9,7 @@
 #include "shapelockedsvg.h"
 #include "mxaggregation.h"
 #include "mxabstractatlas.h"
+#include "mxgeometryutils.h"
 
 
 #define ARROW_COLUMN_WIDTH 12.0f
@@ -39,19 +40,29 @@ void RotoShape::toggleInvert()
     pProperties ^= RotoShape::Invert;
 }
 
-void RotoShape::toggleLock()
+bool RotoShape::isInverted() const
 {
-     pProperties ^= RotoShape::Locked;
+    return pProperties & RotoShape::Invert;
 }
 
- bool RotoShape::isLocked() const
- {
-     return pProperties & RotoShape::Locked;
- }
+void RotoShape::toggleLock()
+{
+    pProperties ^= RotoShape::Locked;
+}
+
+bool RotoShape::isLocked() const
+{
+    return pProperties & RotoShape::Locked;
+}
 
 void RotoShape::toggleVisibility()
 {
-     pProperties ^= RotoShape::Visible;
+    pProperties ^= RotoShape::Visible;
+}
+
+bool RotoShape::isVisible() const
+{
+    return pProperties & RotoShape::Visible;
 }
 
 
@@ -83,9 +94,9 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     MxRectF buttonRect = drawData.rowRect;
     float buttonLeft = buttonRect.right() - buttonW;
     buttonRect.setLeft( buttonLeft );
-   // qDebug("isLocked(): %d", (int)isLocked());
+    // qDebug("isLocked(): %d", (int)isLocked());
     if( isLocked() ) {
-         restColor = MxVector4UC(60, 60, 160, 255);
+        restColor = MxVector4UC(60, 60, 160, 255);
     } else {
         restColor = MxVector4UC(80, 80, 80, 255);
     }
@@ -110,17 +121,27 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     MxIconDraw &iconPainter = painter.iconDraw( MxPainter::OriginalColor );
     const MxAbstractAtlas *atlas = MxAggregation::instance()->iconAtlas();
     const MxRectF &visIconRect = atlas->iconRect( MxThemeIcons::NotVisible );
-    iconPainter.drawImageRect( visIconRect, buttonRect);
+    iconPainter.drawImageRect( visIconRect, buttonRect );
 
     // invert button
     buttonRect.setRight(buttonLeft);
     buttonLeft -= buttonW;
     buttonRect.setLeft( buttonLeft );
-    if( drawData.isUnderMouse() && drawData.pButton == 0 ) {
+    /*if( drawData.isUnderMouse() && drawData.pButton == 0 ) {
         lbTriangles.fillRect( buttonRect, MxVector4UC(10, 220, 230, 255) );
     } else{
         lbTriangles.fillRect( buttonRect, MxVector4UC(110, 220, 130, 255) );
+    }*/
+    int invertIconName;
+    if( isInverted() ) {
+        invertIconName = MxThemeIcons::Inverted;
+    } else {
+        invertIconName = MxThemeIcons::NotInverted;
     }
+    const MxRectF &invTextureRect = atlas->iconRect( invertIconName );
+    // because the icon is smaller than the buttonRect, we center the icon inside buttonRect
+    MxRectF centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( invertIconName ) );
+    iconPainter.drawImageRect( invTextureRect, centeredIconRect );
 
 
     drawData.rowIndex++;

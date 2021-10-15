@@ -46,6 +46,8 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
         const unsigned char *pixelData = pAtlasImage.bits();
         Q_ASSERT( NULL != pixelData );
         renderer.glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, texSize[0], texSize[1], 0, GL_RGBA, GL_UNSIGNED_BYTE, pixelData );
+
+renderer.checkGLError(__FILE__, __LINE__);
     }
     else
     {

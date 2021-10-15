@@ -95,6 +95,7 @@ void MxPainter::render( MxRenderer &renderer )
             pIconDraw[i].pArray = NULL;
         }
     }
+    renderer.checkGLError(__FILE__, __LINE__);
 }
 
 

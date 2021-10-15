@@ -24,9 +24,11 @@ public:
 
 
     void toggleInvert();
+    bool isInverted() const;
     void toggleLock();
     bool isLocked() const;
     void toggleVisibility();
+    bool isVisible() const;
 
 
 

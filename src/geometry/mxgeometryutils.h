@@ -180,6 +180,19 @@ inline MxRectF centeredRect( const MxRectF &area, const MxVector2F &rectSize )
     return drawRect;
 }
 
+inline MxRectF centeredRect( const MxRectF &area, const MxVector2I &rectSize )
+{
+    float rectW = rectSize.width();
+    float rectH = rectSize.height();
+    Q_ASSERT( area.height() >= rectH && area.width() >= rectW );
+    MxVector2F thumbPos;
+    thumbPos[0] = area.left() + (area.width() - rectW)/2.0f;
+    thumbPos[1] = area.bottom() + (area.height() - rectH)/2.0f;
+    MxRectF drawRect;
+    drawRect.setRectFromPointAndSize(thumbPos, MxVector2F(rectW, rectH) );
+    return drawRect;
+}
+
 
 inline MxRectI centeredRectAtPos( const MxVector2I &pos, const MxVector2I &size )
 {

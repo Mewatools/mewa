@@ -85,7 +85,7 @@ void MxImage::pasteBitmapAtPos( const MxVector2I &pos, const unsigned char *imag
     {
         const unsigned char *src = imageBits + (srcY * imageWidth * bytesPerPixel);//image.scanLine(srcY);
         unsigned char *dst = scanLine(y);
-        dst += pos.x();
+        dst += (pos.x() * bytesPerPixel);
         memcpy(dst, src, bytesPerRow);
     }
 }
