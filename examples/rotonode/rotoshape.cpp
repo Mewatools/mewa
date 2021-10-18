@@ -85,6 +85,12 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     // draw  text
 
 
+
+    MxIconDraw &iconPainter = painter.iconDraw( MxPainter::LightColor );
+    MxIconDraw &bluePainter = painter.iconDraw( MxPainter::BlueColor );
+    const MxAbstractAtlas *atlas = MxAggregation::instance()->iconAtlas();
+
+
     // draw buttons
     const float buttonMargin = 2.0f;
     const MxVector4UC highlightColor(120, 120, 120, 255);
@@ -94,20 +100,21 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     MxRectF buttonRect = drawData.rowRect;
     float buttonLeft = buttonRect.right() - buttonW;
     buttonRect.setLeft( buttonLeft );
-    // qDebug("isLocked(): %d", (int)isLocked());
+    int lockIconName;
     if( isLocked() ) {
-        restColor = MxVector4UC(60, 60, 160, 255);
+        lockIconName = MxThemeIcons::Locked;
     } else {
-        restColor = MxVector4UC(80, 80, 80, 255);
+        lockIconName = MxThemeIcons::Unlocked;
     }
-
     if( drawData.isUnderMouse() && drawData.pButton == 2 ) { // hovering button
-
-        lockSvg.pColor = highlightColor;
-    } else {
-        lockSvg.pColor = restColor;
+        lbTriangles.fillRect( buttonRect, MxVector4UC(100, 220, 30, 255) );
     }
-    painter.drawSvg( &lockSvg , buttonRect);
+    const MxRectF &lockIconRect = atlas->iconRect( lockIconName );
+    // because the icon is smaller than the buttonRect, we center the icon inside buttonRect
+    MxRectF centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( lockIconName ) );
+    iconPainter.drawImageRect( lockIconRect, centeredIconRect );
+
+
 
     // show/hide button
     buttonRect.setRight(buttonLeft);
@@ -115,23 +122,21 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     buttonRect.setLeft( buttonLeft );
     if( drawData.isUnderMouse() && drawData.pButton == 1 ) {
         lbTriangles.fillRect( buttonRect, MxVector4UC(100, 220, 30, 255) );
-    } else {
-        lbTriangles.fillRect( buttonRect, MxVector4UC(111, 20, 30, 255) );
     }
-    MxIconDraw &iconPainter = painter.iconDraw( MxPainter::OriginalColor );
-    const MxAbstractAtlas *atlas = MxAggregation::instance()->iconAtlas();
-    const MxRectF &visIconRect = atlas->iconRect( MxThemeIcons::NotVisible );
-    iconPainter.drawImageRect( visIconRect, buttonRect );
+    int visIconName;
+    if( isVisible() ) {
+        visIconName = MxThemeIcons::Visible;
+    } else {
+        visIconName = MxThemeIcons::NotVisible;
+    }
+    const MxRectF &visIconRect = atlas->iconRect( visIconName );
+    centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( visIconName ) );
+    bluePainter.drawImageRect( visIconRect, centeredIconRect );
 
     // invert button
     buttonRect.setRight(buttonLeft);
     buttonLeft -= buttonW;
     buttonRect.setLeft( buttonLeft );
-    /*if( drawData.isUnderMouse() && drawData.pButton == 0 ) {
-        lbTriangles.fillRect( buttonRect, MxVector4UC(10, 220, 230, 255) );
-    } else{
-        lbTriangles.fillRect( buttonRect, MxVector4UC(110, 220, 130, 255) );
-    }*/
     int invertIconName;
     if( isInverted() ) {
         invertIconName = MxThemeIcons::Inverted;
@@ -139,8 +144,7 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
         invertIconName = MxThemeIcons::NotInverted;
     }
     const MxRectF &invTextureRect = atlas->iconRect( invertIconName );
-    // because the icon is smaller than the buttonRect, we center the icon inside buttonRect
-    MxRectF centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( invertIconName ) );
+    centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( invertIconName ) );
     iconPainter.drawImageRect( invTextureRect, centeredIconRect );
 
 

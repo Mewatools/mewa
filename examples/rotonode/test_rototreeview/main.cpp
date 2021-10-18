@@ -38,7 +38,9 @@ int main(int argc, char *argv[])
     // set icons
     glWindow->setIcon(MxThemeIcons::Inverted, "../icons-ldpi/Inverted.png");
     glWindow->setIcon(MxThemeIcons::Locked, "../icons-ldpi/Locked.png");
+    glWindow->setIcon(MxThemeIcons::Unlocked, "../icons-ldpi/Unlocked.png");
     glWindow->setIcon(MxThemeIcons::NotInverted, "../icons-ldpi/NotInverted.png");
+    glWindow->setIcon(MxThemeIcons::Visible, "../icons-ldpi/Visible.png");
     glWindow->setIcon(MxThemeIcons::NotVisible, "../icons-ldpi/NotVisible.png");
 
 
