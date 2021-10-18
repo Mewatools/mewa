@@ -12,7 +12,7 @@ var searchData=
   ['bottom_33',['bottom',['../class_mx_rect.html#a22116f159e2cad3f924095b487e13611',1,'MxRect']]],
   ['bottomleft_34',['bottomLeft',['../class_mx_rect.html#afa136955e4da0e9e308945fcec51fe0f',1,'MxRect']]],
   ['bottomright_35',['bottomRight',['../class_mx_rect.html#a231cbbb5a002fabb60705dd0375e26ac',1,'MxRect']]],
-  ['build_36',['build',['../class_mx_icon_atlas.html#ab080e7ec2989ae30c5de2d05c66cdcef',1,'MxIconAtlas']]],
+  ['build_36',['build',['../class_mx_icon_atlas.html#ae2e1d7cd2c62597d2d7b767259ab1e4f',1,'MxIconAtlas']]],
   ['button_37',['button',['../class_mx_mouse_event.html#abf31b922a09c81a8bb489d4acb4e2ac6',1,'MxMouseEvent']]],
   ['bytecount_38',['byteCount',['../class_mx_image.html#afe5b612b74e3bf42c9c333f6f54e4d42',1,'MxImage']]]
 ];

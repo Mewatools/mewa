@@ -1,7 +1,7 @@
 var class_mx_icon_atlas =
 [
     [ "MxIconAtlas", "class_mx_icon_atlas.html#a26f7faa990719dc6f3672c61aac4c670", null ],
-    [ "build", "class_mx_icon_atlas.html#ab080e7ec2989ae30c5de2d05c66cdcef", null ],
+    [ "build", "class_mx_icon_atlas.html#ae2e1d7cd2c62597d2d7b767259ab1e4f", null ],
     [ "iconRect", "class_mx_icon_atlas.html#af76cb2de4c47f75e8ddb56c5afefe0be", null ],
     [ "iconSize", "class_mx_icon_atlas.html#a48a6e301bda266c7ffb65507708a75cd", null ],
     [ "isLoaded", "class_mx_icon_atlas.html#a8af8ab08675061932f216182182e0c6e", null ],
