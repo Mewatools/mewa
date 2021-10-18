@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
     ///////////// setup Mx widget ////////////
     TestStoreView *testView =  new TestStoreView();
-    MxApplication::instance()->setMainWidget(testView);
+    glWindow.setMainWidget(testView);
     /////////////////////////////////////////
 
     //glWindow.showMaximized();

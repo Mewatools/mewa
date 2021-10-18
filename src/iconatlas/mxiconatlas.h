@@ -29,7 +29,7 @@ public:
 
     void setIcon( MxThemeIcons::IconName name, const char *imageFileName );
     // Generate image atlas
-    void build();
+    bool build();
 
 
 private:

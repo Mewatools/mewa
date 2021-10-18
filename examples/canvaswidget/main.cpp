@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
     ///////////// setup Mx widget ////////////
     CanvasWidget *canvas =  new CanvasWidget();
-    MxApplication::instance()->setMainWidget(canvas);
+    glWindow.setMainWidget(canvas);
     /////////////////////////////////////////
 
     //glWindow.showMaximized();

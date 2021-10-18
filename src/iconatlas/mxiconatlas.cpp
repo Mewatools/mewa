@@ -29,31 +29,31 @@ const MxVector2I & MxIconAtlas::iconSize( int name ) const
 
 void MxIconAtlas::loadGL( MxRenderer& renderer )
 {
-    build();
-
-    MxVector2I texSize = textureSize();
-    if( texSize.width() > 0 && texSize.height() > 0 )
+    if(  build() )
     {
-        Q_ASSERT( 0 == pTexture );
-        renderer.glGenTextures(1, &pTexture );
-        renderer.glBindTexture( GL_TEXTURE_2D, pTexture );
+        MxVector2I texSize = textureSize();
+        if( texSize.width() > 0 && texSize.height() > 0 )
+        {
+            Q_ASSERT( 0 == pTexture );
+            renderer.glGenTextures(1, &pTexture );
+            renderer.glBindTexture( GL_TEXTURE_2D, pTexture );
 
-        renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-        renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-        const unsigned char *pixelData = pAtlasImage.bits();
-        Q_ASSERT( NULL != pixelData );
-        renderer.glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, texSize[0], texSize[1], 0, GL_RGBA, GL_UNSIGNED_BYTE, pixelData );
+            const unsigned char *pixelData = pAtlasImage.bits();
+            Q_ASSERT( NULL != pixelData );
+            renderer.glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, texSize[0], texSize[1], 0, GL_RGBA, GL_UNSIGNED_BYTE, pixelData );
 
-renderer.checkGLError(__FILE__, __LINE__);
+            renderer.checkGLError(__FILE__, __LINE__);
+        }
+        else
+        {
+            qDebug() << "No icons set, don't load icon atlas";
+        }
     }
-    else
-    {
-        qDebug() << "No icons set, don't load icon atlas";
-    }
-
 }
 
 bool MxIconAtlas::isLoaded() const
@@ -73,7 +73,7 @@ void MxIconAtlas::setIcon( MxThemeIcons::IconName name, const char *imageFileNam
     details.iconSize = MxVector2I( iconImg.width(), iconImg.height() );
 }
 
-void MxIconAtlas::build()
+bool MxIconAtlas::build()
 {
     // \TODO use a better atlas packing algorithm
 
@@ -86,6 +86,10 @@ void MxIconAtlas::build()
         }
 
         sumW += imgSize.width();
+    }
+
+    if( biggestH == 0 || sumW == 0 ) {
+        return false;
     }
 
     MxVector2I textureSize(
@@ -107,7 +111,7 @@ void MxIconAtlas::build()
             float texX = (float)pastePos.x() / (float)textureSize.width();
             float texY = (float)pastePos.y() / (float)textureSize.height();
             float texW = (float)imgSize.width() / (float)textureSize.width();
-             float texH = (float)imgSize.height() / (float)textureSize.height();
+            float texH = (float)imgSize.height() / (float)textureSize.height();
             details.textureRect = MxRectF( texX, texX + texW, texY, texY + texH);
 
             pastePos[0] += imgSize.width();
@@ -117,6 +121,7 @@ void MxIconAtlas::build()
         }
     }
 
+    return true;
 }
 
 unsigned int MxIconAtlas::texture() const
