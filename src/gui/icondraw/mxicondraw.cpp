@@ -9,13 +9,14 @@
 
 
 MxIconDraw::MxIconDraw()
+    : MxQuadDraw(NULL)
 {
-    pArray = NULL;
     pTranslation = NULL;
 }
 
 
 MxIconDraw::MxIconDraw(MxRenderer &renderer, const MxVector2F *translation )
+    : MxQuadDraw(NULL)
 {
     pArray = renderer.newGpuBuffer( MxShaderProgram::Float_2_2 );
 
@@ -23,21 +24,6 @@ MxIconDraw::MxIconDraw(MxRenderer &renderer, const MxVector2F *translation )
 
     Q_ASSERT( pArray->size() == 0 );
 }
-
-
-int MxIconDraw::vertexCount() const
-{
-    Q_ASSERT( (NULL != pArray) && (NULL != pTranslation) );
-
-
-    int r = pArray->size() / (4 * sizeof(float));
-    return r;
-}
-
-
-
-
-
 
 void MxIconDraw::clear()
 {

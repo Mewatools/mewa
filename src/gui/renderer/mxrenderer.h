@@ -49,7 +49,7 @@ public:
 
     void setBlending( Blending blend );
      void enableDepthTest( bool enable );
-     void bindTextureGL(GLuint textureId , GLuint activeSlot = GL_TEXTURE0 );
+     void bindTextureGL(GLuint textureId , GLuint activeSlot = 0 );
 
     GpuBuffer* newGpuBuffer( MxShaderProgram::VaoFormat format );
     void clearGpuBuffers();

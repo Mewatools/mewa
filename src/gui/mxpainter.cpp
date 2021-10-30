@@ -14,6 +14,7 @@ MxPainter::MxPainter()
     pVectorDraw.pTranslation = &pTranslation;
     for( int i=0; i<ColorCount; ++i )
     {
+        new (&(pIconDraw[i])) MxIconDraw(); // call ctor because it has inherited class
         pIconDraw[i].pTranslation = &pTranslation;
     }
 }

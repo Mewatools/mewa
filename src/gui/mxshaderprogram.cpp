@@ -37,7 +37,6 @@ void MxShaderProgram::enableVao( GpuVbo *buffer )
         pRenderer->glGenVertexArrays(1, &(buffer->pVaoObject) );
         pRenderer->glBindVertexArray( buffer->pVaoObject );
         Q_ASSERT( buffer->pFormat == vaoFormat() );
-
         enableAttributes();
     }
     else

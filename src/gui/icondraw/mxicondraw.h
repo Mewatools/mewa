@@ -23,11 +23,6 @@ public:
     MxIconDraw();
     MxIconDraw(MxRenderer &renderer, const MxVector2F *translation );
 
-    int vertexCount() const;
-
-
-
-
     void clear();
 
     void drawImageRect( const MxRectF &source, const MxRectF &dest );

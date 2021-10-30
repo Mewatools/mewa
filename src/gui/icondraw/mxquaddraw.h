@@ -12,7 +12,12 @@
 class MxQuadDraw
 {
 public:
-    MxQuadDraw();
+    MxQuadDraw( GpuBuffer *buffer );
+
+    int vertexCount() const;
+
+    // used by MotionVectors
+    void drawCustomRect(const MxRectF &worldRect, const MxRectF &indexRect );
 
 
     GpuBuffer *pArray;

@@ -8,6 +8,8 @@
 
 MxRenderer::MxRenderer()
 {
+    pIconAtlas = NULL;
+    pCurrShaderProgram = 9999; // very high number because 0 is reserved
     pCurrBlend = NoBlending;
     pDepthTestEnabled = false;
     pCurrentTexture = 99999; //zero is reserved
@@ -146,8 +148,7 @@ void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
 
 
     pCurrentActiveTextureSlot = activeSlot;
-    glActiveTexture(pCurrentActiveTextureSlot);
-
+    glActiveTexture( GL_TEXTURE0 + pCurrentActiveTextureSlot);
     pCurrentTexture = textureId;
     glBindTexture( GL_TEXTURE_2D, pCurrentTexture );
 }
