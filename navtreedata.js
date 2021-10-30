@@ -73,7 +73,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_mx_icon_program.html#a8c7cb21f7256541568836a16a24a7688",
 "class_mx_vector.html#ac1fc16a2e8054c4ed98e154f0865cc8e",
-"mxiconatlas_8h_source.html"
+"mxiconatlas_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

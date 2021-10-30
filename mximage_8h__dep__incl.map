@@ -1,7 +1,7 @@
-<map id="src/iconatlas/mximage.h" name="src/iconatlas/mximage.h">
-<area shape="rect" id="node1" title=" " alt="" coords="219,5,382,32"/>
+<map id="src/image/mximage.h" name="src/image/mximage.h">
+<area shape="rect" id="node1" title=" " alt="" coords="224,5,369,32"/>
 <area shape="rect" id="node2" href="$mxiconatlas_8h.html" title=" " alt="" coords="111,80,290,107"/>
-<area shape="rect" id="node6" href="$mximage_8cpp.html" title=" " alt="" coords="314,80,490,107"/>
+<area shape="rect" id="node6" href="$mximage_8cpp.html" title=" " alt="" coords="315,80,473,107"/>
 <area shape="rect" id="node3" href="$mxiconatlas_8cpp.html" title=" " alt="" coords="5,162,199,189"/>
 <area shape="rect" id="node4" href="$qmewawindow_8h.html" title=" " alt="" coords="223,155,378,196"/>
 <area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="223,244,378,285"/>
