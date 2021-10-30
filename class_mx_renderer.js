@@ -8,7 +8,7 @@ var class_mx_renderer =
       [ "CustomBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712", null ]
     ] ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
-    [ "bindTextureGL", "class_mx_renderer.html#a969144ddc4e0392668dd11675f8ae195", null ],
+    [ "bindTextureGL", "class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7", null ],
     [ "checkGLError", "class_mx_renderer.html#a40a5255a8935c102021f0891401b96aa", null ],
     [ "clearGpuBuffers", "class_mx_renderer.html#a1089b9077cc78827b2712beb76fc946c", null ],
     [ "colorWheelProgram", "class_mx_renderer.html#a2f6a83c2af2e5de957458793cea06e6c", null ],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['b_24',['b',['../struct_mx_text_draw_1_1_vertex.html#a61cb1dbabea1c7078aa98597ff0b82a9',1,'MxTextDraw::Vertex::b()'],['../struct_mx_vector_draw_1_1_vertex.html#aabbb7fc2f33f5d3a3c2af52182fb8f08',1,'MxVectorDraw::Vertex::b()']]],
   ['begin_25',['begin',['../struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f',1,'MxList::Data']]],
-  ['bindtexturegl_26',['bindTextureGL',['../class_mx_renderer.html#a969144ddc4e0392668dd11675f8ae195',1,'MxRenderer']]],
+  ['bindtexturegl_26',['bindTextureGL',['../class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7',1,'MxRenderer']]],
   ['bits_27',['bits',['../class_mx_image.html#acc4f8ccce5612676f854b4c17ffa7bc7',1,'MxImage']]],
   ['blending_28',['Blending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88',1,'MxRenderer']]],
   ['blendingimages_29',['BlendingImages',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a4afca41b3d8e402e680efc975a3d4c55',1,'MxRenderer']]],

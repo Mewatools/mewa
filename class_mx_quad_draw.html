@@ -129,8 +129,12 @@ Collaboration diagram for MxQuadDraw:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a481a22dbd05acb3defeae0584e8e3be1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_quad_draw.html#a481a22dbd05acb3defeae0584e8e3be1">MxQuadDraw</a> ()</td></tr>
-<tr class="separator:a481a22dbd05acb3defeae0584e8e3be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6052d6c195da0d60fd319d5ac482db10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_quad_draw.html#a6052d6c195da0d60fd319d5ac482db10">MxQuadDraw</a> (<a class="el" href="class_gpu_buffer.html">GpuBuffer</a> *buffer)</td></tr>
+<tr class="separator:a6052d6c195da0d60fd319d5ac482db10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121c079f3cf5e3f614e4b2a3e29c6830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830">vertexCount</a> () const</td></tr>
+<tr class="separator:a121c079f3cf5e3f614e4b2a3e29c6830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7426e0c855b01d87b7aa2f5e3978909e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_quad_draw.html#a7426e0c855b01d87b7aa2f5e3978909e">drawCustomRect</a> (const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;worldRect, const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;indexRect)</td></tr>
+<tr class="separator:a7426e0c855b01d87b7aa2f5e3978909e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -138,8 +142,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a25253170e17aee53a99044143b6dcc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a481a22dbd05acb3defeae0584e8e3be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a481a22dbd05acb3defeae0584e8e3be1">&#9670;&nbsp;</a></span>MxQuadDraw()</h2>
+<a id="a6052d6c195da0d60fd319d5ac482db10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6052d6c195da0d60fd319d5ac482db10">&#9670;&nbsp;</a></span>MxQuadDraw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,8 +151,55 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">MxQuadDraw::MxQuadDraw </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_gpu_buffer.html">GpuBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7426e0c855b01d87b7aa2f5e3978909e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7426e0c855b01d87b7aa2f5e3978909e">&#9670;&nbsp;</a></span>drawCustomRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxQuadDraw::drawCustomRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;&#160;</td>
+          <td class="paramname"><em>worldRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;&#160;</td>
+          <td class="paramname"><em>indexRect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a121c079f3cf5e3f614e4b2a3e29c6830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121c079f3cf5e3f614e4b2a3e29c6830">&#9670;&nbsp;</a></span>vertexCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MxQuadDraw::vertexCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
