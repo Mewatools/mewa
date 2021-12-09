@@ -22,6 +22,8 @@ int MxQuadDraw::vertexCount() const
 
 void MxQuadDraw::drawCustomRect( const MxRectF &worldRect, const MxRectF &indexRect )
 {
+    Q_ASSERT( NULL != pArray );
+
     float *dst = (float*) pArray->lastDataAndIncrement( 24 * sizeof(float) );
 
     const float texBottom = indexRect.bottom();

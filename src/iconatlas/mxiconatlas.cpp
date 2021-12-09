@@ -106,7 +106,7 @@ bool MxIconAtlas::build()
         if( ! iconImg.isNull() ) {
             const QSize &imgSize = iconImg.size();
             Q_ASSERT( iconImg.format() == QImage::Format_RGBA8888 );
-            pAtlasImage.pasteBitmapAtPos( pastePos, iconImg.constBits(), iconImg.width(), iconImg.height() );
+            pAtlasImage.pasteImageAtPos( pastePos, iconImg.constBits(), iconImg.width(), iconImg.height() );
 
             float texX = (float)pastePos.x() / (float)textureSize.width();
             float texY = (float)pastePos.y() / (float)textureSize.height();

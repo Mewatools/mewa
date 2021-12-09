@@ -44,10 +44,10 @@ unsigned char *MxImage::bits()
 }
 
 
- const MxVector2I& MxImage::size() const
- {
-return pImageData.size;
- }
+const MxVector2I& MxImage::size() const
+{
+    return pImageData.size;
+}
 
 /*!
     Returns the number of bytes occupied by the image data.
@@ -69,7 +69,7 @@ unsigned char* MxImage::scanLine( int i ) const
 }
 
 
-void MxImage::pasteBitmapAtPos( const MxVector2I &pos, const unsigned char *imageBits, int imageWidth, int imageHeight )
+void MxImage::pasteImageAtPos( const MxVector2I &pos, const unsigned char *imageBits, int imageWidth, int imageHeight )
 {
     Q_ASSERT( pImageData.data != NULL );
     Q_ASSERT( pImageData.size.width() >= (pos.x() + imageWidth) );

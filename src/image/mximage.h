@@ -11,28 +11,30 @@
 class MxImage
 {
 public:
-  MxImage();
-  ~MxImage();
+    MxImage();
+    ~MxImage();
 
-  void alloc( const MxVector2I &size );
-  void fillWithBlack();
+    void alloc( const MxVector2I &size );
+    void fillWithBlack();
 
-  unsigned char* bits();
-  int width() const;
-  int height() const;
-  const MxVector2I& size() const;
-   int byteCount() const;
-  unsigned char* scanLine( int i ) const;
-void pasteBitmapAtPos( const MxVector2I &pos, const unsigned char *imageBits, int imageWidth, int imageHeight );
+    unsigned char* bits();
+    int width() const;
+    int height() const;
+    const MxVector2I& size() const;
+    int byteCount() const;
+    unsigned char* scanLine( int i ) const;
 
-////// DATA MEMBERS /////////
-  struct ImageData
-  {
-    MxVector2I size;
-    unsigned char *data;
-  };
+    // \TODO rename to replacePixelsAtPos ??
+    void pasteImageAtPos( const MxVector2I &pos, const unsigned char *imageBits, int imageWidth, int imageHeight );
 
-  ImageData pImageData;
+    ////// DATA MEMBERS /////////
+    struct ImageData
+    {
+        MxVector2I size;
+        unsigned char *data;
+    };
+
+    ImageData pImageData;
 
 
 };

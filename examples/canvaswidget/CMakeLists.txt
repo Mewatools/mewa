@@ -1,16 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 
-project (canvaswidget)
- 
-include_directories(
-../../src/containers
-../../src/events
-../../src/geometry
-../../src/gui
+project(canvaswidget)
+    
+include(${CMAKE_CURRENT_SOURCE_DIR}/../../src/mewa.cmake)
+
+add_executable( canvaswidget 
+    canvaswidget.cpp 
+    main_win.cpp
+    ${SOURCE} 
 )
-
-add_executable(canvaswidget canvaswidget.cpp main.cpp)
-
-
 
 
