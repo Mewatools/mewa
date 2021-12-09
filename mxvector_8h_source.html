@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('mxvector_8h_source.html',''); initResi
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXVECTOR_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXVECTOR_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxdebug_8h.html">mxdebug.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;mxdebug.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
@@ -259,35 +259,35 @@ $(document).ready(function(){initNavTree('mxvector_8h_source.html',''); initResi
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_mx_vector.html#a6c2ed0c18c53556b1d38a0ccad216174">  152</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_vector.html#a6c2ed0c18c53556b1d38a0ccad216174">MxVector&lt;N,T&gt;::x</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    Q_ASSERT( 0 &lt; N );</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 0 &lt; N );</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> pVector[0];</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_mx_vector.html#aa21c4e0bd734958d01f707398bb6a5f7">  159</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_vector.html#aa21c4e0bd734958d01f707398bb6a5f7">MxVector&lt;N,T&gt;::y</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Q_ASSERT( 1 &lt; N );</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 1 &lt; N );</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> pVector[1];</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_mx_vector.html#ab8760b6cdc3871c2de14a5f588521ff5">  166</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_vector.html#ab8760b6cdc3871c2de14a5f588521ff5">MxVector&lt;N,T&gt;::z</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    Q_ASSERT( 2 &lt; N );</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 2 &lt; N );</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> pVector[2];</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_mx_vector.html#a3dac388704793344389e92a933eecea5">  173</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_vector.html#a3dac388704793344389e92a933eecea5">MxVector&lt;N,T&gt;::width</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    Q_ASSERT( 0 &lt; N );</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 0 &lt; N );</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> pVector[0];</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_mx_vector.html#a3053e19e48ecc577ddb677d8024dcbd3">  180</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_vector.html#a3053e19e48ecc577ddb677d8024dcbd3">MxVector&lt;N,T&gt;::height</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Q_ASSERT( 1 &lt; N );</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 1 &lt; N );</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> pVector[1];</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
@@ -302,14 +302,14 @@ $(document).ready(function(){initNavTree('mxvector_8h_source.html',''); initResi
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_mx_vector.html#ac1fc16a2e8054c4ed98e154f0865cc8e">  195</a></span>&#160;<span class="keyword">inline</span> T &amp; <a class="code" href="class_mx_vector.html#ac1fc16a2e8054c4ed98e154f0865cc8e">MxVector&lt;N,T&gt;::operator[]</a>( <span class="keywordtype">int</span> i )</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    Q_ASSERT( i &lt; N );</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( i &lt; N );</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span>( pVector[i] );</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="class_mx_vector.html#ac70877c2d9b35840b08c7739de21379b">  202</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> T &amp; <a class="code" href="class_mx_vector.html#ac1fc16a2e8054c4ed98e154f0865cc8e">MxVector&lt;N,T&gt;::operator[]</a>( <span class="keywordtype">int</span> i )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    Q_ASSERT( i &lt; N );</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( i &lt; N );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span>( pVector[i] );</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
@@ -494,7 +494,6 @@ $(document).ready(function(){initNavTree('mxvector_8h_source.html',''); initResi
 <div class="ttc" id="aclass_mx_vector_html_adcf0adc25d347e5ace9387cac7671a71"><div class="ttname"><a href="class_mx_vector.html#adcf0adc25d347e5ace9387cac7671a71">MxVector::operator+=</a></div><div class="ttdeci">MxVector&lt; N, T &gt; &amp; operator+=(const MxVector&lt; N, S &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> mxvector.h:222</div></div>
 <div class="ttc" id="aclass_mx_vector_html_ae33e1bd6773a434dd9fd7c45941a3760"><div class="ttname"><a href="class_mx_vector.html#ae33e1bd6773a434dd9fd7c45941a3760">MxVector::operator=</a></div><div class="ttdeci">MxVector&lt; N, T &gt; &amp; operator=(const MxVector&lt; N, S &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> mxvector.h:211</div></div>
 <div class="ttc" id="aclass_mx_vector_html_ae8c8427a0221151c09b37ffef6949203"><div class="ttname"><a href="class_mx_vector.html#ae8c8427a0221151c09b37ffef6949203">MxVector::constData</a></div><div class="ttdeci">const T * constData() const</div><div class="ttdef"><b>Definition:</b> mxvector.h:188</div></div>
-<div class="ttc" id="amxdebug_8h_html"><div class="ttname"><a href="mxdebug_8h.html">mxdebug.h</a></div></div>
 <div class="ttc" id="amxvector_8h_html_a0a4a56e215f6e0e5b9dfd94918ab7d8d"><div class="ttname"><a href="mxvector_8h.html#a0a4a56e215f6e0e5b9dfd94918ab7d8d">operator*</a></div><div class="ttdeci">MxVector&lt; N, T &gt; operator*(const MxVector&lt; N, T &gt; &amp;v, S s)</div><div class="ttdef"><b>Definition:</b> mxvector.h:291</div></div>
 <div class="ttc" id="amxvector_8h_html_a1b1763df406b9f8413aa93456c5ef7d1"><div class="ttname"><a href="mxvector_8h.html#a1b1763df406b9f8413aa93456c5ef7d1">operator==</a></div><div class="ttdeci">bool operator==(const MxVector&lt; N, T &gt; &amp;v0, const MxVector&lt; N, T &gt; &amp;v1)</div><div class="ttdef"><b>Definition:</b> mxvector.h:334</div></div>
 <div class="ttc" id="amxvector_8h_html_a25ae14b6c3cfbcd1e2d72f68b5ffcda7"><div class="ttname"><a href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a></div><div class="ttdeci">MxVector&lt; 2, int &gt; MxVector2I</div><div class="ttdef"><b>Definition:</b> mxvector.h:116</div></div>
@@ -509,6 +508,7 @@ $(document).ready(function(){initNavTree('mxvector_8h_source.html',''); initResi
 <div class="ttc" id="amxvector_8h_html_ad1fee14793587302aa67a029c29ad9c2"><div class="ttname"><a href="mxvector_8h.html#ad1fee14793587302aa67a029c29ad9c2">MxVector3UC</a></div><div class="ttdeci">MxVector&lt; 3, unsigned char &gt; MxVector3UC</div><div class="ttdef"><b>Definition:</b> mxvector.h:117</div></div>
 <div class="ttc" id="amxvector_8h_html_adc78dbfcc5032e38b8bc9690be1f7763"><div class="ttname"><a href="mxvector_8h.html#adc78dbfcc5032e38b8bc9690be1f7763">MxVector4F</a></div><div class="ttdeci">MxVector&lt; 4, float &gt; MxVector4F</div><div class="ttdef"><b>Definition:</b> mxvector.h:113</div></div>
 <div class="ttc" id="amxvector_8h_html_af7ddbdda7866c363edbd2891bc6012d0"><div class="ttname"><a href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a></div><div class="ttdeci">MxVector&lt; 4, unsigned char &gt; MxVector4UC</div><div class="ttdef"><b>Definition:</b> mxvector.h:118</div></div>
+<div class="ttc" id="awindows_2mxdebug_8h_html_ac29a7ecc02f777dfeb2b68a051561c35"><div class="ttname"><a href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a></div><div class="ttdeci">#define Q_ASSERT(cond)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

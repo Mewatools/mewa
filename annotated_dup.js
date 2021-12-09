@@ -11,6 +11,7 @@ var annotated_dup =
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", "class_mx_byte_array_ref" ],
     [ "MxClassInitializer", "struct_mx_class_initializer.html", "struct_mx_class_initializer" ],
     [ "MxColorWheelProgram", "class_mx_color_wheel_program.html", "class_mx_color_wheel_program" ],
+    [ "MxDirect3DFunctions", "class_mx_direct3_d_functions.html", "class_mx_direct3_d_functions" ],
     [ "MxGenericStaticData", "struct_mx_generic_static_data.html", "struct_mx_generic_static_data" ],
     [ "MxGenericString", "class_mx_generic_string.html", "class_mx_generic_string" ],
     [ "MxGenericSubString", "class_mx_generic_sub_string.html", "class_mx_generic_sub_string" ],

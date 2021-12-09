@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Mewa Framework" />
 <meta name="twitter:description" content="OpenGL based UI" />
 <!-- END twitter metadata -->
-<title>Mewa Framework: src/platformabstraction/qt/mxdebug.h Source File</title>
+<title>Mewa Framework: src/platformabstraction/windows/mxdebug.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/png" href="mewa.png"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('mxdebug_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('windows_2mxdebug_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -108,23 +108,60 @@ $(document).ready(function(){initNavTree('mxdebug_8h_source.html',''); initResiz
 <div class="title">mxdebug.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mxdebug_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
+<a href="windows_2mxdebug_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Copyright (C) 2020-2021 Mewatools &lt;hugo@mewatools.com&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** SPDX-License-Identifier: MIT License</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">****************************************************************************/</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXDEBUG_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXDEBUG_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#a056594d83ba442233d4d6745cc48eb09">    8</a></span>&#160;<span class="preprocessor">#define MX_PLATFORM_WINDOWS</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*#include &lt;wtypes.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">#include &lt;stdio.h&gt; // , &lt;wchar.h&gt;, &lt;cstdio&gt;, or &lt;cwchar&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">static void qDebugW(const wchar_t* szFormat, ...)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    wchar_t szBuff[512];</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    va_list arg;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    va_start(arg, szFormat);</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    _vsnwprintf(szBuff, sizeof(szBuff), szFormat, arg);</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    va_end(arg);</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    OutputDebugString(szBuff);</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">}*/</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// windows predefined macros https://docs.microsoft.com/en-us/cpp/preprocessor/predefined-macros?view=msvc-170</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if defined(_DEBUG)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define MX_DEBUG</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#ae3e0ba382f26777287cd800a60502845">   30</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="windows_2mxdebug_8h.html#ae3e0ba382f26777287cd800a60502845">qt_noop</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#a16a670f515e9b0dbc7f3e21baa9872f3">   31</a></span>&#160;<span class="preprocessor">#define qDebug(...) qt_noop()</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#ac0248b6bc47350216b26218240d7a4d7">   32</a></span>&#160;<span class="preprocessor">#define qWarning printf</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#af93d0fcc4280f7ecc1835b40d77e1579">   33</a></span>&#160;<span class="preprocessor">#define qFatal printf</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#a0e44deb9d97d99cf2647bc2e88438363">   34</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="windows_2mxdebug_8h.html#a0e44deb9d97d99cf2647bc2e88438363">assert_noop</a>(<span class="keywordtype">bool</span> ) {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">   35</a></span>&#160;<span class="preprocessor">#define Q_ASSERT(cond) assert_noop(cond)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="windows_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">   36</a></span>&#160;<span class="preprocessor">#define Q_ASSERT_X(cond, where, what) qt_noop()</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="awindows_2mxdebug_8h_html_a0e44deb9d97d99cf2647bc2e88438363"><div class="ttname"><a href="windows_2mxdebug_8h.html#a0e44deb9d97d99cf2647bc2e88438363">assert_noop</a></div><div class="ttdeci">void assert_noop(bool)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:34</div></div>
+<div class="ttc" id="awindows_2mxdebug_8h_html_ae3e0ba382f26777287cd800a60502845"><div class="ttname"><a href="windows_2mxdebug_8h.html#ae3e0ba382f26777287cd800a60502845">qt_noop</a></div><div class="ttdeci">void qt_noop(void)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_79769c2014326999657a5fac8224bdec.html">platformabstraction</a></li><li class="navelem"><a class="el" href="dir_ffbadbfe2cec8b9fbf400e495e1b4bf5.html">qt</a></li><li class="navelem"><a class="el" href="mxdebug_8h.html">mxdebug.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_79769c2014326999657a5fac8224bdec.html">platformabstraction</a></li><li class="navelem"><a class="el" href="dir_e9d5f9cf66428d647badc44a5285ddf3.html">windows</a></li><li class="navelem"><a class="el" href="windows_2mxdebug_8h.html">mxdebug.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

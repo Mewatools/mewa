@@ -1,9 +1,8 @@
 <map id="src/containers/mxlist.h" name="src/containers/mxlist.h">
 <area shape="rect" id="node1" title=" " alt="" coords="201,5,353,32"/>
-<area shape="rect" id="node2" href="$mxdebug_8h.html" title=" " alt="" coords="5,80,89,107"/>
-<area shape="rect" id="node4" href="$mxrefcounter_8h.html" title=" " alt="" coords="114,80,221,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="245,80,308,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="333,80,397,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="421,80,468,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="13,155,82,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node3" href="$mxrefcounter_8h.html" title=" " alt="" coords="114,80,221,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="245,80,308,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="333,80,397,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="421,80,468,107"/>
 </map>
