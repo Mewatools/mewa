@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXBYTEARRAYREF_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXBYTEARRAYREF_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;mxdebug.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxdebug_8h.html">mxdebug.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">// strtod</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span> <span class="comment">// strlen</span></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#ac44a83b18aac2549ca5c8c3bef1f67dc">   42</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_mx_byte_array_ref.html#ac44a83b18aac2549ca5c8c3bef1f67dc">firstChar</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *pStringStart; }</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a799164e0b5bf2b8da822023d06b835a9">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a799164e0b5bf2b8da822023d06b835a9">removeFirstChar</a>(){ pStringStart++; pSize--; }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04">advance</a>( <span class="keywordtype">int</span> n ){ <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( n &lt; pSize ); pStringStart+=n; pSize-=n; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04">advance</a>( <span class="keywordtype">int</span> n ){ Q_ASSERT( n &lt; pSize ); pStringStart+=n; pSize-=n; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#af7b72c6568cb313cc9e158112d9c71f2">   47</a></span>&#160;    <a class="code" href="class_mx_byte_array_ref.html">MxByteArrayRef</a> <a class="code" href="class_mx_byte_array_ref.html#af7b72c6568cb313cc9e158112d9c71f2">readPrintable</a>()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a2d3d4f7863148dea20d261b02734d057">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_byte_array_ref.html#a2d3d4f7863148dea20d261b02734d057">readWord</a>()</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( *pStringStart != <span class="charliteral">&#39; &#39;</span> );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Q_ASSERT( *pStringStart != <span class="charliteral">&#39; &#39;</span> );</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="class_mx_byte_array_ref.html#a9ff82f3a824ca242b78d8319f8e8b281">startsWithLetter</a>() ) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_mx_byte_array_ref.html#a799164e0b5bf2b8da822023d06b835a9">removeFirstChar</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">while</span>( <a class="code" href="class_mx_byte_array_ref.html#a85219bb54f08868351d4091a23625565">startsWithLetterOrNumber</a>() ) {</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// advances as long this string matches str, returns true if match. This ref is incremented</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">  144</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_byte_array_ref.html#a8e90d1c1d5ce93ecc783d11ed72db24f">forwardCheck</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *str )</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( pSize &gt; (<span class="keywordtype">int</span>)strlen(str) );</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        Q_ASSERT( pSize &gt; (<span class="keywordtype">int</span>)strlen(str) );</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">while</span>( *str != <span class="charliteral">&#39;\0&#39;</span> )</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span>( *str != *pStringStart ) {</div>
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('mxbytearrayref_8h_source.html',''); in
 <div class="ttc" id="aclass_mx_byte_array_ref_html_ae5d9605fc28691449d5cb0eca071abb4"><div class="ttname"><a href="class_mx_byte_array_ref.html#ae5d9605fc28691449d5cb0eca071abb4">MxByteArrayRef::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:38</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_aea0122fb7966a709751feda9493ba477"><div class="ttname"><a href="class_mx_byte_array_ref.html#aea0122fb7966a709751feda9493ba477">MxByteArrayRef::operator==</a></div><div class="ttdeci">bool operator==(const MxByteArrayRef &amp;other) const</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:110</div></div>
 <div class="ttc" id="aclass_mx_byte_array_ref_html_af7b72c6568cb313cc9e158112d9c71f2"><div class="ttname"><a href="class_mx_byte_array_ref.html#af7b72c6568cb313cc9e158112d9c71f2">MxByteArrayRef::readPrintable</a></div><div class="ttdeci">MxByteArrayRef readPrintable()</div><div class="ttdef"><b>Definition:</b> mxbytearrayref.h:47</div></div>
-<div class="ttc" id="awindows_2mxdebug_8h_html_ac29a7ecc02f777dfeb2b68a051561c35"><div class="ttname"><a href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a></div><div class="ttdeci">#define Q_ASSERT(cond)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:35</div></div>
+<div class="ttc" id="amxdebug_8h_html"><div class="ttname"><a href="mxdebug_8h.html">mxdebug.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

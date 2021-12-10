@@ -1,28 +1,29 @@
 <map id="src/gui/icondraw/mxiconprogram.cpp" name="src/gui/icondraw/mxiconprogram.cpp">
 <area shape="rect" id="node1" title=" " alt="" coords="849,5,1083,32"/>
 <area shape="rect" id="node2" href="$mxiconprogram_8h.html" title=" " alt="" coords="831,304,951,331"/>
-<area shape="rect" id="node9" href="$mxrect_8h.html" title=" " alt="" coords="539,379,609,405"/>
-<area shape="rect" id="node11" href="$mxicondraw_8h.html" title=" " alt="" coords="142,155,243,181"/>
-<area shape="rect" id="node16" href="$mxrenderer_8h.html" title=" " alt="" coords="582,80,678,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="728,528,812,555"/>
-<area shape="rect" id="node4" href="$mxmatrix_8h.html" title=" " alt="" coords="635,379,719,405"/>
-<area shape="rect" id="node6" href="$mxvector_8h.html" title=" " alt="" coords="849,453,934,480"/>
-<area shape="rect" id="node7" href="$mxopengl_8h.html" title=" " alt="" coords="297,528,384,555"/>
-<area shape="rect" id="node8" href="$mxshaderprogram_8h.html" title=" " alt="" coords="327,453,461,480"/>
-<area shape="rect" id="node5" title=" " alt="" coords="687,453,773,480"/>
-<area shape="rect" id="node10" title=" " alt="" coords="537,453,611,480"/>
-<area shape="rect" id="node12" href="$mxquaddraw_8h.html" title=" " alt="" coords="5,229,111,256"/>
-<area shape="rect" id="node15" href="$mxthemeicons_8h.html" title=" " alt="" coords="135,229,251,256"/>
-<area shape="rect" id="node13" href="$gpubuffer_8h.html" title=" " alt="" coords="194,304,279,331"/>
-<area shape="rect" id="node14" href="$gpuvbo_8h.html" title=" " alt="" coords="177,379,251,405"/>
-<area shape="rect" id="node17" href="$mxopenglfunctions_8h.html" title=" " alt="" coords="1019,155,1159,181"/>
-<area shape="rect" id="node19" href="$mxcolorwheelprogram_8h.html" title=" " alt="" coords="377,304,536,331"/>
-<area shape="rect" id="node20" href="$mxvectorprogram_8h.html" title=" " alt="" coords="444,155,576,181"/>
-<area shape="rect" id="node22" href="$mxlist_8h.html" title=" " alt="" coords="794,155,861,181"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1097,229,1264,256"/>
-<area shape="rect" id="node21" href="$mxvectordraw_8h.html" title=" " alt="" coords="428,229,541,256"/>
-<area shape="rect" id="node23" href="$mxrefcounter_8h.html" title=" " alt="" coords="915,229,1022,256"/>
-<area shape="rect" id="node24" title=" " alt="" coords="668,229,731,256"/>
-<area shape="rect" id="node25" title=" " alt="" coords="755,229,819,256"/>
-<area shape="rect" id="node26" title=" " alt="" coords="844,229,891,256"/>
+<area shape="rect" id="node10" href="$mxrect_8h.html" title=" " alt="" coords="539,379,609,405"/>
+<area shape="rect" id="node12" href="$mxicondraw_8h.html" title=" " alt="" coords="142,155,243,181"/>
+<area shape="rect" id="node17" href="$mxrenderer_8h.html" title=" " alt="" coords="582,80,678,107"/>
+<area shape="rect" id="node3" href="$mxdebug_8h.html" title=" " alt="" coords="728,528,812,555"/>
+<area shape="rect" id="node5" href="$mxmatrix_8h.html" title=" " alt="" coords="635,379,719,405"/>
+<area shape="rect" id="node7" href="$mxvector_8h.html" title=" " alt="" coords="849,453,934,480"/>
+<area shape="rect" id="node8" href="$mxopengl_8h.html" title=" " alt="" coords="297,528,384,555"/>
+<area shape="rect" id="node9" href="$mxshaderprogram_8h.html" title=" " alt="" coords="327,453,461,480"/>
+<area shape="rect" id="node4" title=" " alt="" coords="735,603,805,629"/>
+<area shape="rect" id="node6" title=" " alt="" coords="687,453,773,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="537,453,611,480"/>
+<area shape="rect" id="node13" href="$mxquaddraw_8h.html" title=" " alt="" coords="5,229,111,256"/>
+<area shape="rect" id="node16" href="$mxthemeicons_8h.html" title=" " alt="" coords="135,229,251,256"/>
+<area shape="rect" id="node14" href="$gpubuffer_8h.html" title=" " alt="" coords="194,304,279,331"/>
+<area shape="rect" id="node15" href="$gpuvbo_8h.html" title=" " alt="" coords="177,379,251,405"/>
+<area shape="rect" id="node18" href="$mxopenglfunctions_8h.html" title=" " alt="" coords="1019,155,1159,181"/>
+<area shape="rect" id="node20" href="$mxcolorwheelprogram_8h.html" title=" " alt="" coords="377,304,536,331"/>
+<area shape="rect" id="node21" href="$mxvectorprogram_8h.html" title=" " alt="" coords="444,155,576,181"/>
+<area shape="rect" id="node23" href="$mxlist_8h.html" title=" " alt="" coords="794,155,861,181"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1097,229,1264,256"/>
+<area shape="rect" id="node22" href="$mxvectordraw_8h.html" title=" " alt="" coords="428,229,541,256"/>
+<area shape="rect" id="node24" href="$mxrefcounter_8h.html" title=" " alt="" coords="915,229,1022,256"/>
+<area shape="rect" id="node25" title=" " alt="" coords="668,229,731,256"/>
+<area shape="rect" id="node26" title=" " alt="" coords="755,229,819,256"/>
+<area shape="rect" id="node27" title=" " alt="" coords="844,229,891,256"/>
 </map>

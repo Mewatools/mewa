@@ -1,11 +1,12 @@
 <map id="src/gui/colorselector/mxcolorwheelprogram.h" name="src/gui/colorselector/mxcolorwheelprogram.h">
 <area shape="rect" id="node1" title=" " alt="" coords="67,5,230,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="192,244,276,271"/>
-<area shape="rect" id="node3" href="$mxopengl_8h.html" title=" " alt="" coords="28,169,115,196"/>
-<area shape="rect" id="node4" href="$mxshaderprogram_8h.html" title=" " alt="" coords="81,95,216,121"/>
-<area shape="rect" id="node5" href="$mxmatrix_8h.html" title=" " alt="" coords="240,95,324,121"/>
-<area shape="rect" id="node7" href="$mxrect_8h.html" title=" " alt="" coords="353,95,424,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="191,169,277,196"/>
-<area shape="rect" id="node8" href="$mxvector_8h.html" title=" " alt="" coords="353,169,438,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="462,169,537,196"/>
+<area shape="rect" id="node2" href="$mxdebug_8h.html" title=" " alt="" coords="192,244,276,271"/>
+<area shape="rect" id="node4" href="$mxopengl_8h.html" title=" " alt="" coords="28,169,115,196"/>
+<area shape="rect" id="node5" href="$mxshaderprogram_8h.html" title=" " alt="" coords="81,95,216,121"/>
+<area shape="rect" id="node6" href="$mxmatrix_8h.html" title=" " alt="" coords="240,95,324,121"/>
+<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="353,95,424,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="199,319,269,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="191,169,277,196"/>
+<area shape="rect" id="node9" href="$mxvector_8h.html" title=" " alt="" coords="353,169,438,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="462,169,537,196"/>
 </map>

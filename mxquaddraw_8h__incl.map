@@ -1,11 +1,12 @@
 <map id="src/gui/icondraw/mxquaddraw.h" name="src/gui/icondraw/mxquaddraw.h">
 <area shape="rect" id="node1" title=" " alt="" coords="53,5,257,32"/>
 <area shape="rect" id="node2" href="$gpubuffer_8h.html" title=" " alt="" coords="73,80,158,107"/>
-<area shape="rect" id="node7" href="$mxrect_8h.html" title=" " alt="" coords="213,155,284,181"/>
+<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="213,155,284,181"/>
 <area shape="rect" id="node3" href="$gpuvbo_8h.html" title=" " alt="" coords="66,155,141,181"/>
 <area shape="rect" id="node4" href="$mxopengl_8h.html" title=" " alt="" coords="5,304,92,331"/>
 <area shape="rect" id="node5" href="$mxshaderprogram_8h.html" title=" " alt="" coords="36,229,171,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="167,304,251,331"/>
-<area shape="rect" id="node8" href="$mxvector_8h.html" title=" " alt="" coords="246,229,331,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="355,229,430,256"/>
+<area shape="rect" id="node6" href="$mxdebug_8h.html" title=" " alt="" coords="167,304,251,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="174,379,243,405"/>
+<area shape="rect" id="node9" href="$mxvector_8h.html" title=" " alt="" coords="246,229,331,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="355,229,430,256"/>
 </map>

@@ -16,7 +16,6 @@ var hierarchy =
     [ "MxApplication", "class_mx_application.html", null ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", null ],
     [ "MxClassInitializer< T >", "struct_mx_class_initializer.html", null ],
-    [ "MxDirect3DFunctions", "class_mx_direct3_d_functions.html", null ],
     [ "MxGenericStaticData< T, N >", "struct_mx_generic_static_data.html", null ],
     [ "MxGenericString< T >", "class_mx_generic_string.html", null ],
     [ "MxGenericSubString< T >", "class_mx_generic_sub_string.html", null ],

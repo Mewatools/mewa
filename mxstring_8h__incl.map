@@ -1,10 +1,11 @@
 <map id="src/containers/mxstring.h" name="src/containers/mxstring.h">
 <area shape="rect" id="node1" title=" " alt="" coords="215,5,382,32"/>
 <area shape="rect" id="node2" href="$mxgenericstring_8h.html" title=" " alt="" coords="237,80,360,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="54,229,138,256"/>
-<area shape="rect" id="node4" href="$mxrefcounter_8h.html" title=" " alt="" coords="434,155,541,181"/>
-<area shape="rect" id="node5" href="$mxbytearrayref_8h.html" title=" " alt="" coords="192,155,308,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="234,229,296,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="350,229,414,256"/>
-<area shape="rect" id="node8" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="24,155,168,181"/>
+<area shape="rect" id="node3" href="$mxdebug_8h.html" title=" " alt="" coords="54,229,138,256"/>
+<area shape="rect" id="node5" href="$mxrefcounter_8h.html" title=" " alt="" coords="434,155,541,181"/>
+<area shape="rect" id="node6" href="$mxbytearrayref_8h.html" title=" " alt="" coords="192,155,308,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="234,229,296,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="350,229,414,256"/>
+<area shape="rect" id="node9" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="24,155,168,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="61,304,130,331"/>
 </map>
