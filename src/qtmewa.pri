@@ -5,6 +5,7 @@ include($$PWD/geometry/geometry.pri)
 include($$PWD/events/events.pri)
 include($$PWD/gui/gui.pri)
 include($$PWD/image/image.pri)
+include($$PWD/renderer/opengl/renderer.pri)
 include($$PWD/svg-drawings/svg-drawings.pri)
 include($$PWD/iconatlas/iconatlas.pri)
 
