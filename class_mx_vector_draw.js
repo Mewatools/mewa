@@ -9,7 +9,7 @@ var class_mx_vector_draw =
     ] ],
     [ "MxVectorDraw", "class_mx_vector_draw.html#a9df676a49322a2c1d7afef3dd1d7bd4b", null ],
     [ "MxVectorDraw", "class_mx_vector_draw.html#a4e57936de7869fc443d28ba38d981944", null ],
-    [ "MxVectorDraw", "class_mx_vector_draw.html#a59ffe5f7686c39c57d8b4fd25de140b1", null ],
+    [ "MxVectorDraw", "class_mx_vector_draw.html#aff42049890f88369ca1f577a81b13d3b", null ],
     [ "addSquaredCircle", "class_mx_vector_draw.html#a1d28b1929b6eff703d9fd8711b1c90fe", null ],
     [ "addVGradientLeftBottomRounded", "class_mx_vector_draw.html#aaa489b23c42e6164370363cf38bf610b", null ],
     [ "addVGradientLeftTopRounded", "class_mx_vector_draw.html#a535ed841e20fd1a5b0eb10afd29c2e26", null ],
@@ -29,6 +29,6 @@ var class_mx_vector_draw =
     [ "strokeRect", "class_mx_vector_draw.html#a28e6c463a694ded29872e3aad78db2a7", null ],
     [ "triangle", "class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8", null ],
     [ "verticalGradientRect", "class_mx_vector_draw.html#a0b3fc6faa70c9492de8f54ca13d670f6", null ],
-    [ "pArray", "class_mx_vector_draw.html#a10cfbebabd92e10437061d3cd82827ba", null ],
+    [ "pArray", "class_mx_vector_draw.html#ae33592639b8baea549ca561c2c90430f", null ],
     [ "pTranslation", "class_mx_vector_draw.html#abe367d0dabcf36a0a02cd05f594ef34c", null ]
 ];

@@ -17,11 +17,5 @@ var searchData=
   ['globalpos_149',['globalPos',['../class_mx_mouse_event.html#ac53c80be5b64567b32d3532fc05f8bab',1,'MxMouseEvent']]],
   ['gluint_150',['GLuint',['../mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b',1,'mxopengl.h']]],
   ['goto_151',['goTo',['../class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788',1,'MxByteArrayRef']]],
-  ['gpubuffer_152',['GpuBuffer',['../class_gpu_buffer.html',1,'GpuBuffer'],['../class_gpu_buffer.html#a30ac1b1ead88bea0a98e84715291db3b',1,'GpuBuffer::GpuBuffer()']]],
-  ['gpubuffer_2ecpp_153',['gpubuffer.cpp',['../gpubuffer_8cpp.html',1,'']]],
-  ['gpubuffer_2eh_154',['gpubuffer.h',['../gpubuffer_8h.html',1,'']]],
-  ['gpuvbo_155',['GpuVbo',['../class_gpu_vbo.html',1,'GpuVbo'],['../class_gpu_vbo.html#ac275ebb077630a7099e1446f08a285d2',1,'GpuVbo::GpuVbo()']]],
-  ['gpuvbo_2ecpp_156',['gpuvbo.cpp',['../gpuvbo_8cpp.html',1,'']]],
-  ['gpuvbo_2eh_157',['gpuvbo.h',['../gpuvbo_8h.html',1,'']]],
-  ['gradientrect_158',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
+  ['gradientrect_152',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
 ];

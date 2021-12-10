@@ -9,7 +9,7 @@ var searchData=
   ['updatealpha_542',['UpdateAlpha',['../class_mx_icon_program.html#a46f441cd9362a5cbb71c2038552d024caf5b1b8fac2b5c917d2d53d6c905abf45',1,'MxIconProgram']]],
   ['updatematrix_543',['UpdateMatrix',['../class_mx_icon_program.html#a46f441cd9362a5cbb71c2038552d024ca2e4fbd3157b88203ddcc4e24b2fc0efe',1,'MxIconProgram']]],
   ['updateuniformvalues_544',['updateUniformValues',['../class_mx_icon_program.html#a8c7cb21f7256541568836a16a24a7688',1,'MxIconProgram']]],
-  ['upload_545',['upload',['../class_gpu_vbo.html#a172602c3517ca5872cea19c8d04ca94d',1,'GpuVbo']]],
-  ['uploadgl_546',['uploadGL',['../class_gpu_buffer.html#a541c4631e81e7765271dac2209711098',1,'GpuBuffer']]],
-  ['uploadtovbo_547',['uploadToVbo',['../class_gpu_vbo.html#a87a56bdd350e836c23b96ec7fed538eb',1,'GpuVbo']]]
+  ['upload_545',['upload',['../class_mx_gpu_array.html#a2bcf33481fabdfa0d3442cb7b03391ba',1,'MxGpuArray']]],
+  ['uploadgl_546',['uploadGL',['../class_mx_cached_gpu_array.html#aa65dc96f869464b1a853e84a6e15bf33',1,'MxCachedGpuArray']]],
+  ['uploadtovbo_547',['uploadToVbo',['../class_mx_gpu_array.html#a7e8cbd0dc2649934ed69896f220482db',1,'MxGpuArray']]]
 ];

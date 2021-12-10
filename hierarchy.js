@@ -1,8 +1,5 @@
 var hierarchy =
 [
-    [ "GpuVbo", "class_gpu_vbo.html", [
-      [ "GpuBuffer", "class_gpu_buffer.html", null ]
-    ] ],
     [ "MxImage::ImageData", "struct_mx_image_1_1_image_data.html", null ],
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", [
       [ "MxIconAtlas", "class_mx_icon_atlas.html", null ]
@@ -19,9 +16,12 @@ var hierarchy =
     [ "MxGenericStaticData< T, N >", "struct_mx_generic_static_data.html", null ],
     [ "MxGenericString< T >", "class_mx_generic_string.html", null ],
     [ "MxGenericSubString< T >", "class_mx_generic_sub_string.html", null ],
+    [ "MxGpuArray", "class_mx_gpu_array.html", [
+      [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", null ]
+    ] ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
-    [ "MxList< GpuBuffer, MxClassInitializer< GpuBuffer > >", "class_mx_list.html", null ],
+    [ "MxList< MxCachedGpuArray, MxClassInitializer< MxCachedGpuArray >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxMouseEvent", "class_mx_mouse_event.html", null ],
     [ "MxOpenGLFunctions", null, [

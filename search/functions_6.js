@@ -8,7 +8,5 @@ var searchData=
   ['getvaoformat_814',['getVaoFormat',['../class_mx_icon_program.html#a72642a668cc60050c07e8f76d41f97df',1,'MxIconProgram::getVaoFormat()'],['../class_mx_vector_program.html#a2addecaea7274facaba8d12324cd5d70',1,'MxVectorProgram::getVaoFormat()']]],
   ['globalpos_815',['globalPos',['../class_mx_mouse_event.html#ac53c80be5b64567b32d3532fc05f8bab',1,'MxMouseEvent']]],
   ['goto_816',['goTo',['../class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788',1,'MxByteArrayRef']]],
-  ['gpubuffer_817',['GpuBuffer',['../class_gpu_buffer.html#a30ac1b1ead88bea0a98e84715291db3b',1,'GpuBuffer']]],
-  ['gpuvbo_818',['GpuVbo',['../class_gpu_vbo.html#ac275ebb077630a7099e1446f08a285d2',1,'GpuVbo']]],
-  ['gradientrect_819',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
+  ['gradientrect_817',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
 ];

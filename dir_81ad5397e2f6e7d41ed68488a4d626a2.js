@@ -1,12 +1,12 @@
 var dir_81ad5397e2f6e7d41ed68488a4d626a2 =
 [
-    [ "gpubuffer.cpp", "gpubuffer_8cpp.html", null ],
-    [ "gpubuffer.h", "gpubuffer_8h.html", [
-      [ "GpuBuffer", "class_gpu_buffer.html", "class_gpu_buffer" ]
+    [ "mxcachedgpuarray.cpp", "mxcachedgpuarray_8cpp.html", null ],
+    [ "mxcachedgpuarray.h", "mxcachedgpuarray_8h.html", [
+      [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", "class_mx_cached_gpu_array" ]
     ] ],
-    [ "gpuvbo.cpp", "gpuvbo_8cpp.html", null ],
-    [ "gpuvbo.h", "gpuvbo_8h.html", [
-      [ "GpuVbo", "class_gpu_vbo.html", "class_gpu_vbo" ]
+    [ "mxgpuarray.cpp", "mxgpuarray_8cpp.html", null ],
+    [ "mxgpuarray.h", "mxgpuarray_8h.html", [
+      [ "MxGpuArray", "class_mx_gpu_array.html", "class_mx_gpu_array" ]
     ] ],
     [ "mxrenderer.cpp", "mxrenderer_8cpp.html", null ],
     [ "mxrenderer.h", "mxrenderer_8h.html", [

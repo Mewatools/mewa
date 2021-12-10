@@ -1,6 +1,6 @@
 <map id="MxVectorDraw" name="MxVectorDraw">
-<area shape="rect" id="node1" title="Draw Mewa triangles." alt="" coords="71,171,178,197"/>
+<area shape="rect" id="node1" title="Draw Mewa triangles." alt="" coords="78,171,185,197"/>
 <area shape="rect" id="node2" href="$class_mx_vector.html" title=" " alt="" coords="5,81,129,108"/>
-<area shape="rect" id="node3" href="$class_gpu_buffer.html" title=" " alt="" coords="153,81,233,108"/>
-<area shape="rect" id="node4" href="$class_gpu_vbo.html" title=" " alt="" coords="158,5,227,32"/>
+<area shape="rect" id="node3" href="$class_mx_cached_gpu_array.html" title=" " alt="" coords="153,81,291,108"/>
+<area shape="rect" id="node4" href="$class_mx_gpu_array.html" title="The MxGpuArray class holds a graphics vertex buffer." alt="" coords="175,5,269,32"/>
 </map>

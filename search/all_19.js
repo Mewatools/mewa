@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['_7egpubuffer_570',['~GpuBuffer',['../class_gpu_buffer.html#a643a2fbee87068d916a1895c67f095be',1,'GpuBuffer']]],
-  ['_7emxabstractatlas_571',['~MxAbstractAtlas',['../class_mx_abstract_atlas.html#abfade1f192f627922c20a25c6edf46f2',1,'MxAbstractAtlas']]],
-  ['_7emxapplication_572',['~MxApplication',['../class_mx_application.html#ad7cd82a83f38f52acfdcb7d12cc860d5',1,'MxApplication']]],
+  ['_7emxabstractatlas_570',['~MxAbstractAtlas',['../class_mx_abstract_atlas.html#abfade1f192f627922c20a25c6edf46f2',1,'MxAbstractAtlas']]],
+  ['_7emxapplication_571',['~MxApplication',['../class_mx_application.html#ad7cd82a83f38f52acfdcb7d12cc860d5',1,'MxApplication']]],
+  ['_7emxcachedgpuarray_572',['~MxCachedGpuArray',['../class_mx_cached_gpu_array.html#a15f56d8598f73fd95dc1b209b5f4c1d9',1,'MxCachedGpuArray']]],
   ['_7emxcolorwheelprogram_573',['~MxColorWheelProgram',['../class_mx_color_wheel_program.html#a943c386c35173c6d326eb3135811c71e',1,'MxColorWheelProgram']]],
   ['_7emxgenericstring_574',['~MxGenericString',['../class_mx_generic_string.html#aa92e0f4c8252e71705492033377d183f',1,'MxGenericString']]],
   ['_7emxiconprogram_575',['~MxIconProgram',['../class_mx_icon_program.html#a8f4c60ad14ecd18337cc6d773d3c04c0',1,'MxIconProgram']]],

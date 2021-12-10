@@ -17,7 +17,7 @@ var searchData=
   ['replace_463',['replace',['../class_mx_generic_string.html#a31dc85772e7f6e0786a9bda93dd56792',1,'MxGenericString']]],
   ['requestredraw_464',['requestRedraw',['../class_mx_application.html#a61826fe709ff4daa1da8051207080632',1,'MxApplication']]],
   ['reserve_465',['reserve',['../class_mx_list.html#a2b6027b0fd80a509f17f8fb02a9a4db8',1,'MxList']]],
-  ['reserveforappend_466',['reserveForAppend',['../class_mx_generic_string.html#ace044cc7fff5b1777d0214c8f965b09d',1,'MxGenericString::reserveForAppend()'],['../class_gpu_buffer.html#ad1251c729ab3f565ad466cf80a018c70',1,'GpuBuffer::reserveForAppend()']]],
+  ['reserveforappend_466',['reserveForAppend',['../class_mx_generic_string.html#ace044cc7fff5b1777d0214c8f965b09d',1,'MxGenericString::reserveForAppend()'],['../class_mx_cached_gpu_array.html#a9fe25e2265e4806bb4f7bb05812a9d28',1,'MxCachedGpuArray::reserveForAppend()']]],
   ['reservetotal_467',['reserveTotal',['../class_mx_generic_string.html#af168a59fe96121bd9516b22f98bf8d56',1,'MxGenericString']]],
   ['resetdirtyflag_468',['resetDirtyFlag',['../class_mx_widget.html#a74a8be47feef141f9f043c26c77085cc',1,'MxWidget']]],
   ['resize_469',['resize',['../class_mx_generic_string.html#a2803082b6e86cff7acb550ca46a2d876',1,'MxGenericString::resize()'],['../class_mx_list.html#ab76a00290c560549e31bcbc518b4c494',1,'MxList::resize()']]],

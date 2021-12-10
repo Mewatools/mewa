@@ -1,6 +1,6 @@
 var class_mx_renderer =
 [
-    [ "VboList", "class_mx_renderer.html#ad96252c3980877800cdec8f6a38c084d", null ],
+    [ "VboList", "class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea", null ],
     [ "Blending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88", [
       [ "NoBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a82dbc41ef5c3ef459c6c5c59fc7edfde", null ],
       [ "BlendingText", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a5b6d2c6df4659d6ba7dc3dccce7a538a", null ],
@@ -15,7 +15,7 @@ var class_mx_renderer =
     [ "discardGLResources", "class_mx_renderer.html#aa82e135865d27cbebc0feeabd1977141", null ],
     [ "enableDepthTest", "class_mx_renderer.html#a0138bfde2825b1931721b737bc0696c5", null ],
     [ "initializeGL", "class_mx_renderer.html#ab794a319208e1031fcdb5040bdc15644", null ],
-    [ "newGpuBuffer", "class_mx_renderer.html#a3d7d805594c89f191db5f54b17d9e6c8", null ],
+    [ "newGpuBuffer", "class_mx_renderer.html#a717e3a20a5aabca312c3432e60e67068", null ],
     [ "setBlending", "class_mx_renderer.html#a8b871801ae38e47312817cbfea6481b8", null ],
     [ "setIconProgram", "class_mx_renderer.html#a5a67b7c843e4369c0e40daf8aae65171", null ],
     [ "setProgram", "class_mx_renderer.html#ae07c2bae877d1d2746dddf49197c5bbe", null ],

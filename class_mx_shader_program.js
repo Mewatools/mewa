@@ -16,7 +16,7 @@ var class_mx_shader_program =
     [ "discardGLResources", "class_mx_shader_program.html#a2c3fcba195c8cd4f9c820995276d5eb3", null ],
     [ "enable", "class_mx_shader_program.html#a2597eff75ed6ec5d2596ac41926ab90a", null ],
     [ "enableAttributes", "class_mx_shader_program.html#a7cf7750f5066b9743bcde152d960d2d4", null ],
-    [ "enableVao", "class_mx_shader_program.html#ab06466f2a0376b2950f4c7e0f3a5cf85", null ],
+    [ "enableVao", "class_mx_shader_program.html#a9feef7699c9d9e090d497f889ba36e1b", null ],
     [ "programId", "class_mx_shader_program.html#ac80b3bc7410a116e36cd5e4b23828515", null ],
     [ "vaoFormat", "class_mx_shader_program.html#a9a1d5631ddfdd64d4006cef032927430", null ],
     [ "mProgramId", "class_mx_shader_program.html#a14a684819e5e9c6a2d256200cc5dd696", null ],
