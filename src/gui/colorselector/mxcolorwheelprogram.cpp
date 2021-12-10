@@ -219,7 +219,7 @@ void MxColorWheelProgram::setSmoothEdge( float threshold )
 void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
 {
 
-    GpuBuffer *vboBuffer = renderer.newGpuBuffer( vaoFormat() );
+    MxCachedGpuArray *vboBuffer = renderer.newGpuBuffer( vaoFormat() );
 
     GLfloat afVertices[] = {
         rect.left(), rect.bottom(), 0.0f, 0.0f,

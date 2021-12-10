@@ -2,7 +2,7 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#include "gpuvbo.h"
+#include "mxgpuarray.h"
 #include "mxdebug.h"
 #include "mxopengl.h"
 #include "mxrenderer.h"
@@ -10,9 +10,9 @@
 /*!
  * \brief Holds an OpenGL VBO, nothing else
  */
-GpuVbo::GpuVbo()
+MxGpuArray::MxGpuArray()
 {
-    pVbo = 0;
+    pVboId = 0;
     pVboSize = 0;
 #ifndef QX_OPENGL_ES_2_0
     pVaoObject = 0;
@@ -21,17 +21,17 @@ GpuVbo::GpuVbo()
 }
 
 
-void GpuVbo::uploadToVbo( MxRenderer *renderer, char *data, int size )
+void MxGpuArray::uploadToVbo( MxRenderer *renderer, char *data, unsigned int size )
 {
 
-    if ( pVbo == 0 )
+    if ( pVboId == 0 )
     {
-        renderer->glGenBuffers( 1,&(pVbo) );
-        Q_ASSERT(pVbo);
+        renderer->glGenBuffers( 1,&(pVboId) );
+        Q_ASSERT(pVboId);
     }
 
     // make sure the buffer is bound, don't perform any checks because size may be zero
-    renderer->glBindBuffer(GL_ARRAY_BUFFER, pVbo);
+    renderer->glBindBuffer(GL_ARRAY_BUFFER, pVboId);
 
     // if the buffer has already been created, just update the data providing it fits
     if ( pVboSize > 0 )
@@ -57,17 +57,17 @@ void GpuVbo::uploadToVbo( MxRenderer *renderer, char *data, int size )
     }
 }
 
-void GpuVbo::upload( MxRenderer *renderer, char *data, int size, GLenum target, GLenum usage )
+void MxGpuArray::upload( MxRenderer *renderer, char *data, int size, GLenum target, GLenum usage )
 {
 
-    if ( pVbo == 0 )
+    if ( pVboId == 0 )
     {
-        renderer->glGenBuffers( 1,&(pVbo) );
-        Q_ASSERT(pVbo);
+        renderer->glGenBuffers( 1,&(pVboId) );
+        Q_ASSERT(pVboId);
     }
 
     // make sure the buffer is bound, don't perform any checks because size may be zero
-    renderer->glBindBuffer(target, pVbo);
+    renderer->glBindBuffer(target, pVboId);
 
     // if the buffer has already been created, just update the data providing it fits
     if ( pVboSize > 0 )
@@ -93,15 +93,15 @@ void GpuVbo::upload( MxRenderer *renderer, char *data, int size, GLenum target, 
     }
 }
 
-void GpuVbo::deleteGL( MxRenderer *renderer )
+void MxGpuArray::deleteGL( MxRenderer *renderer )
 {
     // delete VBOs first
-    renderer->glDeleteBuffers(1, &pVbo);
+    renderer->glDeleteBuffers(1, &pVboId);
 
     // delete VAO
     renderer->glDeleteVertexArrays(1, &pVaoObject);
 
-    pVbo = 0;
+    pVboId = 0;
     pVboSize = 0;
     pVaoObject = 0;
     pFormat = MxShaderProgram::Unknown;

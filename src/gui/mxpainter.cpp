@@ -44,7 +44,7 @@ void MxPainter::initializeGL(MxRenderer *)
  */
 void MxPainter::prepareRender( MxRenderer &renderer )
 {
-    GpuBuffer *vboBuffer = renderer.newGpuBuffer( MxVectorProgram::getVaoFormat() );
+    MxCachedGpuArray *vboBuffer = renderer.newGpuBuffer( MxVectorProgram::getVaoFormat() );
     vboBuffer->reserveForAppend(9500);
     pVectorDraw.pArray = vboBuffer;
 

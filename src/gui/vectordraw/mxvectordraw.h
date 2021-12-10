@@ -5,7 +5,7 @@
 #ifndef MXVECTORDRAW_H
 #define MXVECTORDRAW_H
 
-#include "gpubuffer.h"
+#include "mxcachedgpuarray.h"
 #include "mxrect.h"
 
 
@@ -37,7 +37,7 @@ public:
 
     MxVectorDraw();
     MxVectorDraw( MxRenderer &renderer, MxVector2F *translation );
-    MxVectorDraw( GpuBuffer *vbo, MxVector2F *translation );
+    MxVectorDraw( MxCachedGpuArray *vbo, MxVector2F *translation );
 
     void clear();
     int pointCount() const;
@@ -105,7 +105,7 @@ private:
 
 
 public:
-    GpuBuffer *pArray;
+    MxCachedGpuArray *pArray;
     MxVector2F *pTranslation;
 
 

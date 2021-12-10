@@ -4,7 +4,7 @@
 ****************************************************************************/
 #include "mxdebug.h"
 #include "mxshaderprogram.h"
-#include "gpuvbo.h"
+#include "mxgpuarray.h"
 #include "mxrenderer.h"
 
 
@@ -30,7 +30,7 @@ void MxShaderProgram::enable()
 }
 
 
-void MxShaderProgram::enableVao( GpuVbo *buffer )
+void MxShaderProgram::enableVao( MxGpuArray *buffer )
 {
     if( buffer->pVaoObject == 0 )
     {

@@ -10,7 +10,7 @@
 
 
 class MxRenderer;
-class GpuVbo;
+class MxGpuArray;
 
 
 class MxShaderProgram
@@ -43,7 +43,7 @@ public:
     virtual void disableAttributes(){}
 
 
-    void enableVao( GpuVbo *buffer );
+    void enableVao(MxGpuArray *buffer );
     void disableVao();
 
 

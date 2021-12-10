@@ -2,17 +2,19 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#ifndef GPUBUFFER_H
-#define GPUBUFFER_H
+#ifndef MXCACHEDGPUARRAY_H
+#define MXCACHEDGPUARRAY_H
 
-#include "gpuvbo.h"
+#include "mxgpuarray.h"
 
 
-class GpuBuffer : public GpuVbo
+/*! Keeps in RAM a copy of the data stored in vbo (MxGpuArray)
+ */
+class MxCachedGpuArray : public MxGpuArray
 {
 public:
-    GpuBuffer();
-    virtual ~GpuBuffer();
+    MxCachedGpuArray();
+    virtual ~MxCachedGpuArray();
 
     void reserveForAppend( int size );
     char* alloc( int size, int growBy );

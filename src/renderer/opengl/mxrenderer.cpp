@@ -13,7 +13,7 @@ MxRenderer::MxRenderer()
     pCurrBlend = NoBlending;
     pDepthTestEnabled = false;
     pCurrentTexture = 99999; //zero is reserved
-    pCurrentActiveTextureSlot = GL_TEXTURE0;
+    pCurrentActiveTextureSlot = 0;
     pVboList.reserve(16);
 }
 
@@ -153,13 +153,13 @@ void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
     glBindTexture( GL_TEXTURE_2D, pCurrentTexture );
 }
 
-GpuBuffer *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
+MxCachedGpuArray *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
 {
     // find first available buffer
     int vboCount = pVboList.size();
     for(int i=0; i<vboCount; ++i)
     {
-        GpuBuffer &buffer = pVboList[i];
+        MxCachedGpuArray &buffer = pVboList[i];
         Q_ASSERT( buffer.pFormat != MxShaderProgram::Unknown );
         if( buffer.size() == -1 && buffer.pFormat == format )
         {
@@ -168,7 +168,7 @@ GpuBuffer *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
         }
     }
 
-    GpuBuffer *buffer = pVboList.appendAndGet();
+    MxCachedGpuArray *buffer = pVboList.appendAndGet();
     buffer->pFormat = format;
     Q_ASSERT( buffer->size() == 0 );
     return buffer;
@@ -180,7 +180,7 @@ void MxRenderer::clearGpuBuffers()
     int vboCount = pVboList.size();
     for(int i=0; i<vboCount; ++i)
     {
-        GpuBuffer &buffer = pVboList[i];
+        MxCachedGpuArray &buffer = pVboList[i];
         buffer.pSize = -1;
     }
 }

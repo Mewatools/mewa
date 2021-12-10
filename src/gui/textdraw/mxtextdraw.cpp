@@ -3,7 +3,7 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxtextdraw.h"
-#include "gpubuffer.h"
+#include "mxcachedgpuarray.h"
 
 
 MxTextDraw::MxTextDraw()

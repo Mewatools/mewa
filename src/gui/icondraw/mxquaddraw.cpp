@@ -6,7 +6,7 @@
 
 
 
-MxQuadDraw::MxQuadDraw( GpuBuffer *buffer )
+MxQuadDraw::MxQuadDraw( MxCachedGpuArray *buffer )
 {
     pArray = buffer;
 }

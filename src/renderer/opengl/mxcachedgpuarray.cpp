@@ -2,7 +2,7 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#include "gpubuffer.h"
+#include "mxcachedgpuarray.h"
 #include "mxdebug.h"
 #include "mxopengl.h"
 #include "mxrenderer.h"
@@ -11,24 +11,24 @@
 #include <string.h>
 
 
-GpuBuffer::GpuBuffer()
+MxCachedGpuArray::MxCachedGpuArray()
+    :MxGpuArray()
 {
     pData = NULL;
     pSize = 0;
     pAlloc = 0;
-    pVbo = 0;
     pVboSize = 0;
     pVaoObject = 0;
 }
 
-GpuBuffer::~GpuBuffer()
+MxCachedGpuArray::~MxCachedGpuArray()
 {
     if(pData) {
         free(pData);
     }
 }
 
-void GpuBuffer::reserveForAppend( int size )
+void MxCachedGpuArray::reserveForAppend( int size )
 {
     int neededSize = pSize + size;
     if( neededSize > pAlloc ) {
@@ -45,7 +45,7 @@ void GpuBuffer::reserveForAppend( int size )
     }
 }
 
-char* GpuBuffer::alloc( int size, int growBy )
+char* MxCachedGpuArray::alloc( int size, int growBy )
 {
     if( pSize + size > pAlloc ) {
         pAlloc = (pSize + growBy);
@@ -56,20 +56,20 @@ char* GpuBuffer::alloc( int size, int growBy )
     return pData + pSize;
 }
 
-void GpuBuffer::clear()
+void MxCachedGpuArray::clear()
 {
     pSize = 0;
 
 }
 
-void GpuBuffer::append( char *data, int size )
+void MxCachedGpuArray::append( char *data, int size )
 {
     reserveForAppend(size);
     memcpy(pData + pSize, data, size);
     pSize += size;
 }
 
-char* GpuBuffer::lastDataAndIncrement( int size )
+char* MxCachedGpuArray::lastDataAndIncrement( int size )
 {
     reserveForAppend( size );
     char *ptr = pData + pSize;
@@ -78,30 +78,30 @@ char* GpuBuffer::lastDataAndIncrement( int size )
     return ptr;
 }
 
-int GpuBuffer::size() const
+int MxCachedGpuArray::size() const
 {
     return pSize;
 }
 
-void GpuBuffer::addToSize( int amount )
+void MxCachedGpuArray::addToSize( int amount )
 {
     Q_ASSERT( (pSize + amount) < pAlloc );
     pSize += amount;
 }
 
-const char* GpuBuffer::data() const
+const char* MxCachedGpuArray::data() const
 {
     return pData;
 }
 
-char* GpuBuffer::end()
+char* MxCachedGpuArray::end()
 {
     char *ptr = pData + pSize;
     return ptr;
 }
 
 
-void GpuBuffer::uploadGL( MxRenderer *renderer )
+void MxCachedGpuArray::uploadGL( MxRenderer *renderer )
 {
     uploadToVbo( renderer, pData, pSize );
 }

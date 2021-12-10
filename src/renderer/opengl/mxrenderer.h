@@ -9,7 +9,7 @@
 #include "mxcolorwheelprogram.h"
 #include "mxvectorprogram.h"
 #include "mxlist.h"
-#include "gpubuffer.h"
+#include "mxcachedgpuarray.h"
 #include "mxiconprogram.h"
 
 
@@ -51,12 +51,12 @@ public:
      void enableDepthTest( bool enable );
      void bindTextureGL(GLuint textureId , GLuint activeSlot = 0 );
 
-    GpuBuffer* newGpuBuffer( MxShaderProgram::VaoFormat format );
+    MxCachedGpuArray* newGpuBuffer( MxShaderProgram::VaoFormat format );
     void clearGpuBuffers();
 
     MxAbstractAtlas *pIconAtlas;
 
-    typedef MxList<GpuBuffer, MxClassInitializer<GpuBuffer> > VboList;
+    typedef MxList<MxCachedGpuArray, MxClassInitializer<MxCachedGpuArray>, 32> VboList;
 
     VboList pVboList;
     MxMatrix pScreenProjectionMatrix; // ortho view matrix

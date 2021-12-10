@@ -20,7 +20,7 @@ MxVectorDraw::MxVectorDraw( MxRenderer &renderer , MxVector2F *translation )
     Q_ASSERT( pArray->size() == 0 );
 }
 
-MxVectorDraw::MxVectorDraw( GpuBuffer *vbo, MxVector2F *translation )
+MxVectorDraw::MxVectorDraw( MxCachedGpuArray *vbo, MxVector2F *translation )
 {
     pArray = vbo;
     pTranslation = translation;
