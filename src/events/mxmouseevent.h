@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXMOUSEEVENT_H

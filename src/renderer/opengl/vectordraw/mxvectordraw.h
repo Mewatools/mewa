@@ -24,7 +24,6 @@ public:
         float x;
         float y;
 
-        // \TODO use floats as this is not OpenGL standard (misteriously just works)
         unsigned char r;
         unsigned char g;
         unsigned char b;
