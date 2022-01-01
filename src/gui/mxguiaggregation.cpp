@@ -2,36 +2,36 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#include "mxaggregation.h"
+#include "mxguiaggregation.h"
 #include "mxdebug.h"
 
-MxAggregation * MxAggregation::sAggregation = 0;
+MxGuiAggregation * MxGuiAggregation::sAggregation = 0;
 
 
-MxAggregation::MxAggregation()
+MxGuiAggregation::MxGuiAggregation()
 {
     pIconAtlas = NULL;
     pApplication = NULL;
 }
 
-MxAggregation* MxAggregation::instance()
+MxGuiAggregation* MxGuiAggregation::instance()
 {
     Q_ASSERT( 0 != sAggregation );
     return sAggregation;
 }
 
-float MxAggregation::displayScale() const
+float MxGuiAggregation::displayScale() const
 {
     return 1.0f;
 }
 
-const MxAbstractAtlas *MxAggregation::iconAtlas() const
+const MxAbstractAtlas *MxGuiAggregation::iconAtlas() const
 {
     Q_ASSERT( NULL != pIconAtlas );
     return pIconAtlas;
 }
 
-MxApplication * MxAggregation::application() const
+MxApplication * MxGuiAggregation::application() const
 {
     Q_ASSERT( NULL != pApplication );
     return pApplication;
