@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXGENERICSUBSTRING_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXGENERICSUBSTRING_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxdebug_8h.html">mxdebug.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;mxdebug.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_generic_sub_string.html">MxGenericSubString</a></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ptr++;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> = ptr - string;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Q_ASSERT( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt; 0 );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt; 0 );</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#a535cd2f04fb313b6a6b7d6824f879c27">   37</a></span>&#160;    <a class="code" href="class_mx_generic_sub_string.html#a535cd2f04fb313b6a6b7d6824f879c27">MxGenericSubString</a>( <span class="keyword">const</span> T *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> <a class="code" href="class_mx_generic_sub_string.html#a98f09b3bf12cf9c98c357863ce0da0ec">size</a>)</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> = newSize;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5">advance</a>( <span class="keywordtype">int</span> n ){ Q_ASSERT( n &lt; <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> ); <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a>+=n; <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a>-=n; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5">advance</a>( <span class="keywordtype">int</span> n ){ <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( n &lt; <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> ); <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a>+=n; <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a>-=n; }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#ae4b37a9158637be4d408a0168f44b12d">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mx_generic_sub_string.html#ae4b37a9158637be4d408a0168f44b12d">firstIndexOf</a>( T c )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">    </span>{</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#a6f0e33cd9bf243e9b21cfb1820109494">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_generic_sub_string.html#a6f0e33cd9bf243e9b21cfb1820109494">endsWith</a>( <span class="keyword">const</span> T *match )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        Q_ASSERT( NULL != <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a> );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( NULL != <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a> );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> matchSize = strlen(match);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">int</span> strSize = <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a>;</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#abfab076864dd9f9363ee9ea4bb43dac2">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_generic_sub_string.html#abfab076864dd9f9363ee9ea4bb43dac2">removeLastChars</a>( <span class="keywordtype">int</span> n )</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> -= n;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        Q_ASSERT( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt;= 0 );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt;= 0 );</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#a4259977851d06c6fa434e4f50a6de826">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_generic_sub_string.html#a4259977851d06c6fa434e4f50a6de826">equals</a>( <span class="keyword">const</span> T *other, <span class="keywordtype">int</span> otherSize )<span class="keyword"> const</span></div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_mx_generic_sub_string.html#a6814320e2a0e36c5b984175e4fd3b627">  129</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_generic_sub_string.html#a6814320e2a0e36c5b984175e4fd3b627">forwardCheck</a>( <span class="keyword">const</span> T c )</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        Q_ASSERT( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt; 0 );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a> &gt; 0 );</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a>[0] == c ){</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="class_mx_generic_sub_string.html#a9750255b17191515e5a9c46572c520bd">pStringStart</a>++; <a class="code" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">pSize</a>--;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        ptr--;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">while</span>( i &gt; 0 ) {</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = (*ptr - 48);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            Q_ASSERT( v &lt;= 9 );</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( v &lt;= 9 );</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            total += v * dec;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            dec *= 10;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            i--;</div>
@@ -329,9 +329,9 @@ $(document).ready(function(){initNavTree('mxgenericsubstring_8h_source.html','')
 <div class="ttc" id="aclass_mx_generic_sub_string_html_af1e628e3bd54f8ba3420ffa96ac5d62b"><div class="ttname"><a href="class_mx_generic_sub_string.html#af1e628e3bd54f8ba3420ffa96ac5d62b">MxGenericSubString::isEqual</a></div><div class="ttdeci">bool isEqual(const char32_t *other, int otherSize) const</div><div class="ttdef"><b>Definition:</b> mxgenericsubstring.h:111</div></div>
 <div class="ttc" id="aclass_mx_generic_sub_string_html_af3a4465114928fdb6146122dab82afaf"><div class="ttname"><a href="class_mx_generic_sub_string.html#af3a4465114928fdb6146122dab82afaf">MxGenericSubString::isSame</a></div><div class="ttdeci">bool isSame(const MxGenericSubString &amp;other) const</div><div class="ttdef"><b>Definition:</b> mxgenericsubstring.h:139</div></div>
 <div class="ttc" id="aclass_mx_generic_sub_string_html_afdc1d6369c34fd957345148614c6c0a5"><div class="ttname"><a href="class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5">MxGenericSubString::advance</a></div><div class="ttdeci">void advance(int n)</div><div class="ttdef"><b>Definition:</b> mxgenericsubstring.h:52</div></div>
-<div class="ttc" id="amxdebug_8h_html"><div class="ttname"><a href="mxdebug_8h.html">mxdebug.h</a></div></div>
 <div class="ttc" id="amxgenericsubstring_8h_html_a19c126034c45d6a48b5aa7f0148be5d8"><div class="ttname"><a href="mxgenericsubstring_8h.html#a19c126034c45d6a48b5aa7f0148be5d8">MxSubByteArray</a></div><div class="ttdeci">MxGenericSubString&lt; char &gt; MxSubByteArray</div><div class="ttdef"><b>Definition:</b> mxgenericsubstring.h:206</div></div>
 <div class="ttc" id="amxgenericsubstring_8h_html_a2839e13cede91579e684d5287d52f925"><div class="ttname"><a href="mxgenericsubstring_8h.html#a2839e13cede91579e684d5287d52f925">MxSubString</a></div><div class="ttdeci">MxGenericSubString&lt; char32_t &gt; MxSubString</div><div class="ttdef"><b>Definition:</b> mxgenericsubstring.h:207</div></div>
+<div class="ttc" id="awindows_2mxdebug_8h_html_ac29a7ecc02f777dfeb2b68a051561c35"><div class="ttname"><a href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a></div><div class="ttdeci">#define Q_ASSERT(cond)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['symbol_1141',['Symbol',['../class_plus_minus_svg.html#a154503f923a9a9de5b30bac7e5dfa6f1',1,'PlusMinusSvg']]]
+  ['modifier_1270',['Modifier',['../class_mx_mouse_event.html#a75d1e13fbf29abdd6945ff89dce72d51',1,'MxMouseEvent']]],
+  ['mousebutton_1271',['MouseButton',['../class_mx_mouse_event.html#a7d9cb061c2befe54c7e1d024a486014f',1,'MxMouseEvent']]]
 ];

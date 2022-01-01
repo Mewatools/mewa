@@ -1,14 +1,13 @@
 <map id="src/renderer/opengl/icondraw" name="src/renderer/opengl/icondraw">
-<area shape="rect" id="node1" href="dir_2ffc10c43e5d75828590a4e89e0dc64f.html" title="icondraw" alt="" coords="109,52,184,100"/>
-<area shape="rect" id="node2" href="dir_405fd32de3649961a5f009c7a3fe84df.html" title="geometry" alt="" coords="109,148,184,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000014_000003.html" title="6" alt="" coords="151,122,159,137"/>
-<area shape="rect" id="node3" href="dir_79769c2014326999657a5fac8224bdec.html" title="platformabstraction" alt="" coords="5,244,139,292"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000014_000009.html" title="2" alt="" coords="81,220,89,234"/>
-<area shape="rect" id="node4" href="dir_b47ddb3a0b86b791c0dd2682d4ed1094.html" title="iconatlas" alt="" coords="139,340,213,388"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000014_000007.html" title="2" alt="" coords="193,317,201,332"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000003_000009.html" title="3" alt="" coords="96,227,104,241"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000009_000003.html" title="1" alt="" coords="115,199,123,213"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000009_000007.html" title="1" alt="" coords="139,314,147,329"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000007_000003.html" title="2" alt="" coords="141,208,149,223"/>
-<area shape="rect" id="clust1" href="dir_81ad5397e2f6e7d41ed68488a4d626a2.html" title="opengl" alt="" coords="99,16,195,111"/>
+<area shape="rect" id="node1" href="dir_2ffc10c43e5d75828590a4e89e0dc64f.html" title="icondraw" alt="" coords="57,52,132,100"/>
+<area shape="rect" id="node2" href="dir_405fd32de3649961a5f009c7a3fe84df.html" title="geometry" alt="" coords="30,340,105,388"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000016_000003.html" title="6" alt="" coords="47,313,55,327"/>
+<area shape="rect" id="node3" href="dir_79769c2014326999657a5fac8224bdec.html" title="platformabstraction" alt="" coords="28,148,161,196"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000016_000009.html" title="1" alt="" coords="99,122,107,137"/>
+<area shape="rect" id="node4" href="dir_b47ddb3a0b86b791c0dd2682d4ed1094.html" title="iconatlas" alt="" coords="105,244,180,292"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000016_000007.html" title="2" alt="" coords="169,224,177,239"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000009_000003.html" title="1" alt="" coords="78,316,86,330"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000009_000007.html" title="1" alt="" coords="126,217,134,231"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000007_000003.html" title="2" alt="" coords="100,324,108,338"/>
+<area shape="rect" id="clust1" href="dir_81ad5397e2f6e7d41ed68488a4d626a2.html" title="opengl" alt="" coords="46,16,142,111"/>
 </map>

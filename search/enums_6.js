@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['trianglefill_1142',['TriangleFill',['../class_mx_vector_draw.html#a4126e7de0fd2a6a428ab814b86cb2e0b',1,'MxVectorDraw']]]
+  ['pixelformat_1272',['PixelFormat',['../class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346',1,'MxTexture']]],
+  ['propertyflag_1273',['PropertyFlag',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63',1,'MxWidget']]]
 ];

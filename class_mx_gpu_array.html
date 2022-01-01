@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('class_mx_gpu_array.html',''); initResi
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_mx_gpu_array-members.html">List of all members</a>  </div>
@@ -116,28 +118,67 @@ $(document).ready(function(){initNavTree('class_mx_gpu_array.html',''); initResi
 <p>The <a class="el" href="class_mx_gpu_array.html" title="The MxGpuArray class holds a graphics vertex buffer.">MxGpuArray</a> class holds a graphics vertex buffer.  
  <a href="class_mx_gpu_array.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mxgpuarray_8h_source.html">mxgpuarray.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="direct12_2mxgpuarray_8h_source.html">mxgpuarray.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MxGpuArray:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_gpu_array__inherit__graph.svg" width="148" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+<div class="dynheader">
+Collaboration diagram for MxGpuArray:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_gpu_array__coll__graph.svg" width="174" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_mx_gpu_array_1_1_buffer_view.html">BufferView</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6bff9bb98ce53e3703ea98917de7f2c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">ArrayType</a> { <a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2aeab6bbf2d9e144867909ed13fcf4788b">Undefined</a> = 0
+, <a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2a5e62147bacd8a33858eeba58ae50e95e">IndexUInt16</a>
+, <a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2a14221bdf46a52be3cbc5394d87e74765">VertexFloat</a>
+ }</td></tr>
+<tr class="separator:a6bff9bb98ce53e3703ea98917de7f2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a934911ae6e01734b63ee68510f4fed01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a934911ae6e01734b63ee68510f4fed01">MxGpuArray</a> ()</td></tr>
 <tr class="memdesc:a934911ae6e01734b63ee68510f4fed01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds an OpenGL VBO, nothing else.  <a href="class_mx_gpu_array.html#a934911ae6e01734b63ee68510f4fed01">More...</a><br /></td></tr>
 <tr class="separator:a934911ae6e01734b63ee68510f4fed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e8cbd0dc2649934ed69896f220482db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a7e8cbd0dc2649934ed69896f220482db">uploadToVbo</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> *renderer, char *data, unsigned int size)</td></tr>
+<tr class="memitem:a211b2d35ee16ace52eb5915658231a95"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a211b2d35ee16ace52eb5915658231a95">size</a> () const</td></tr>
+<tr class="separator:a211b2d35ee16ace52eb5915658231a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c3860cf0f8266a68b5bf703b1f2567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">ArrayType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a18c3860cf0f8266a68b5bf703b1f2567">type</a> () const</td></tr>
+<tr class="separator:a18c3860cf0f8266a68b5bf703b1f2567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da1113f1703ed01fba9df2f889672ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a4da1113f1703ed01fba9df2f889672ab">isTaken</a> () const</td></tr>
+<tr class="separator:a4da1113f1703ed01fba9df2f889672ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6f559ac8c8b533da6ba48efe605732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a2e6f559ac8c8b533da6ba48efe605732">setIndexData</a> (char *bytes, UINT length)</td></tr>
+<tr class="separator:a2e6f559ac8c8b533da6ba48efe605732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b208265402d32be31b89f16e455fbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a2b208265402d32be31b89f16e455fbd0">setVertexData</a> (char *bytes, UINT length, int stride)</td></tr>
+<tr class="separator:a2b208265402d32be31b89f16e455fbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934911ae6e01734b63ee68510f4fed01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a934911ae6e01734b63ee68510f4fed01">MxGpuArray</a> ()</td></tr>
+<tr class="separator:a934911ae6e01734b63ee68510f4fed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8cbd0dc2649934ed69896f220482db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a7e8cbd0dc2649934ed69896f220482db">uploadToVbo</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> *renderer, char *data, unsigned int <a class="el" href="class_mx_gpu_array.html#a211b2d35ee16ace52eb5915658231a95">size</a>)</td></tr>
 <tr class="separator:a7e8cbd0dc2649934ed69896f220482db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bcf33481fabdfa0d3442cb7b03391ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a2bcf33481fabdfa0d3442cb7b03391ba">upload</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> *renderer, char *data, int size, <a class="el" href="mxopengl_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> target=<a class="el" href="mxopengl_8h.html#a7180045dcb52b22af2cd0366026bc3ed">GL_ARRAY_BUFFER</a>, <a class="el" href="mxopengl_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> usage=<a class="el" href="mxopengl_8h.html#ac1915ebc9c952b9e7140f4bcc78319a6">GL_DYNAMIC_DRAW</a>)</td></tr>
+<tr class="memitem:a2bcf33481fabdfa0d3442cb7b03391ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a2bcf33481fabdfa0d3442cb7b03391ba">upload</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> *renderer, char *data, int <a class="el" href="class_mx_gpu_array.html#a211b2d35ee16ace52eb5915658231a95">size</a>, <a class="el" href="mxopengl_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> target=<a class="el" href="mxopengl_8h.html#a7180045dcb52b22af2cd0366026bc3ed">GL_ARRAY_BUFFER</a>, <a class="el" href="mxopengl_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> usage=<a class="el" href="mxopengl_8h.html#ac1915ebc9c952b9e7140f4bcc78319a6">GL_DYNAMIC_DRAW</a>)</td></tr>
 <tr class="separator:a2bcf33481fabdfa0d3442cb7b03391ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49b120b308bac601f19e654e8b7da2c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a49b120b308bac601f19e654e8b7da2c4">deleteGL</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> *renderer)</td></tr>
 <tr class="separator:a49b120b308bac601f19e654e8b7da2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a3ec0a48d1d20fac268e82c48cdc09f53"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="union_mx_gpu_array_1_1_buffer_view.html">MxGpuArray::BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a3ec0a48d1d20fac268e82c48cdc09f53">pView</a></td></tr>
+<tr class="separator:a3ec0a48d1d20fac268e82c48cdc09f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb12ca80306a936c9b81771272761c7d"><td class="memItemLeft" align="right" valign="top">ID3D12Resource *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#aeb12ca80306a936c9b81771272761c7d">pBuffer</a></td></tr>
+<tr class="separator:aeb12ca80306a936c9b81771272761c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e41a9618e0390256059df0b3f347ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">ArrayType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a5e41a9618e0390256059df0b3f347ba2">pType</a></td></tr>
+<tr class="separator:a5e41a9618e0390256059df0b3f347ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6bf1ef784e123f25849c0956c0d1e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a8c6bf1ef784e123f25849c0956c0d1e5">pTaken</a></td></tr>
+<tr class="separator:a8c6bf1ef784e123f25849c0956c0d1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1006a0a50b38d6924343c41bf013c586"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a1006a0a50b38d6924343c41bf013c586">pVboId</a></td></tr>
 <tr class="separator:a1006a0a50b38d6924343c41bf013c586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8208be77ee6fec4ad3d2d1e730842ffb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_array.html#a8208be77ee6fec4ad3d2d1e730842ffb">pVboSize</a></td></tr>
@@ -149,9 +190,30 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_mx_gpu_array.html" title="The MxGpuArray class holds a graphics vertex buffer.">MxGpuArray</a> class holds a graphics vertex buffer. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>DirectX 12 implementation holds a resource. This class is internal to the framework and not available to the application. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a6bff9bb98ce53e3703ea98917de7f2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bff9bb98ce53e3703ea98917de7f2c2">&#9670;&nbsp;</a></span>ArrayType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">MxGpuArray::ArrayType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bff9bb98ce53e3703ea98917de7f2c2aeab6bbf2d9e144867909ed13fcf4788b"></a>Undefined&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bff9bb98ce53e3703ea98917de7f2c2a5e62147bacd8a33858eeba58ae50e95e"></a>IndexUInt16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bff9bb98ce53e3703ea98917de7f2c2a14221bdf46a52be3cbc5394d87e74765"></a>VertexFloat&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a934911ae6e01734b63ee68510f4fed01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a934911ae6e01734b63ee68510f4fed01">&#9670;&nbsp;</a></span>MxGpuArray()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a934911ae6e01734b63ee68510f4fed01">&#9670;&nbsp;</a></span>MxGpuArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,6 +231,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a934911ae6e01734b63ee68510f4fed01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934911ae6e01734b63ee68510f4fed01">&#9670;&nbsp;</a></span>MxGpuArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MxGpuArray::MxGpuArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a49b120b308bac601f19e654e8b7da2c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49b120b308bac601f19e654e8b7da2c4">&#9670;&nbsp;</a></span>deleteGL()</h2>
@@ -182,6 +261,119 @@ Public Attributes</h2></td></tr>
           <td class="paramtype"><a class="el" href="class_mx_renderer.html">MxRenderer</a> *&#160;</td>
           <td class="paramname"><em>renderer</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4da1113f1703ed01fba9df2f889672ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da1113f1703ed01fba9df2f889672ab">&#9670;&nbsp;</a></span>isTaken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxGpuArray::isTaken </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e6f559ac8c8b533da6ba48efe605732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6f559ac8c8b533da6ba48efe605732">&#9670;&nbsp;</a></span>setIndexData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxGpuArray::setIndexData </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b208265402d32be31b89f16e455fbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b208265402d32be31b89f16e455fbd0">&#9670;&nbsp;</a></span>setVertexData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxGpuArray::setVertexData </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a211b2d35ee16ace52eb5915658231a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211b2d35ee16ace52eb5915658231a95">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int MxGpuArray::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18c3860cf0f8266a68b5bf703b1f2567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c3860cf0f8266a68b5bf703b1f2567">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">MxGpuArray::ArrayType</a> MxGpuArray::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,6 +461,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aeb12ca80306a936c9b81771272761c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb12ca80306a936c9b81771272761c7d">&#9670;&nbsp;</a></span>pBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12Resource* MxGpuArray::pBuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa48ff950e33ee259fc874956b40eaa3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa48ff950e33ee259fc874956b40eaa3e">&#9670;&nbsp;</a></span>pFormat</h2>
 
@@ -277,6 +483,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a> MxGpuArray::pFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c6bf1ef784e123f25849c0956c0d1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6bf1ef784e123f25849c0956c0d1e5">&#9670;&nbsp;</a></span>pTaken</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxGpuArray::pTaken</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e41a9618e0390256059df0b3f347ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e41a9618e0390256059df0b3f347ba2">&#9670;&nbsp;</a></span>pType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2">ArrayType</a> MxGpuArray::pType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,9 +559,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3ec0a48d1d20fac268e82c48cdc09f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec0a48d1d20fac268e82c48cdc09f53">&#9670;&nbsp;</a></span>pView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="union_mx_gpu_array_1_1_buffer_view.html">MxGpuArray::BufferView</a> MxGpuArray::pView</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/renderer/opengl/<a class="el" href="mxgpuarray_8h_source.html">mxgpuarray.h</a></li>
-<li>src/renderer/opengl/<a class="el" href="mxgpuarray_8cpp.html">mxgpuarray.cpp</a></li>
+<li>src/renderer/direct12/<a class="el" href="direct12_2mxgpuarray_8h_source.html">mxgpuarray.h</a></li>
+<li>src/renderer/direct12/<a class="el" href="direct12_2mxgpuarray_8cpp.html">mxgpuarray.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "MxGpuArray::BufferView", "union_mx_gpu_array_1_1_buffer_view.html", null ],
     [ "MxImage::ImageData", "struct_mx_image_1_1_image_data.html", null ],
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", [
       [ "MxIconAtlas", "class_mx_icon_atlas.html", null ]
@@ -18,10 +19,12 @@ var hierarchy =
     [ "MxGpuArray", "class_mx_gpu_array.html", [
       [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", null ]
     ] ],
+    [ "MxGpuProgram", "class_mx_gpu_program.html", null ],
     [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< MxCachedGpuArray, MxClassInitializer< MxCachedGpuArray >, 32 >", "class_mx_list.html", null ],
+    [ "MxList< MxGpuArray >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxMouseEvent", "class_mx_mouse_event.html", null ],
     [ "MxOpenGLFunctions", null, [
@@ -48,6 +51,7 @@ var hierarchy =
     ] ],
     [ "MxSvgPainter", "class_mx_svg_painter.html", null ],
     [ "MxTextDraw", "class_mx_text_draw.html", null ],
+    [ "MxTexture", "class_mx_texture.html", null ],
     [ "MxVector< N, T >", "class_mx_vector.html", null ],
     [ "MxVector< 2, float >", "class_mx_vector.html", null ],
     [ "MxVector< 2, int >", "class_mx_vector.html", null ],

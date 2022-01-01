@@ -115,7 +115,10 @@ $(document).ready(function(){initNavTree('class_mx_renderer.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mxrenderer_8h_source.html">mxrenderer.h</a>&gt;</code></p>
+<p>The <a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> keeps track of the rendering state and resources.  
+ <a href="class_mx_renderer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="direct12_2mxrenderer_8h_source.html">mxrenderer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MxRenderer:</div>
 <div class="dyncontent">
@@ -125,16 +128,46 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1608" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1634" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">Blending</a> { <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a82dbc41ef5c3ef459c6c5c59fc7edfde">NoBlending</a>
-, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a5b6d2c6df4659d6ba7dc3dccce7a538a">BlendingText</a>
-, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a4afca41b3d8e402e680efc975a3d4c55">BlendingImages</a>
-, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712">CustomBlending</a>
+<tr class="memitem:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">Blending</a> { <br />
+&#160;&#160;<a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92">NoBlending</a> = 0
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1">BlendingText</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be">BlendingImages</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b">CustomBlending</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92">NoBlending</a> = 0
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1">BlendingText</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be">BlendingImages</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b">CustomBlending</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5740c9b8e294252cfe512de27c9dff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dff">Filter</a> { <a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa81eb58011a74ad5ec01cf6c222bd63b4">NoFilter</a> = 0x0
+, <a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa5cab87018dacc03da95a6f0244e37625">LinearFilter</a> = 0x01
+, <a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa19fc67ca8075792660b3f0580bcaf6e2">MipmapFilter</a> = 0x02
+, <a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa6b945324edc7fa7a083231740753321c">MipmapLinearFilter</a> = 0x04
+ }</td></tr>
+<tr class="separator:a0b5740c9b8e294252cfe512de27c9dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3c99cd6d7c21fe632599e7e624be50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50">Wrap</a> { <a class="el" href="class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50a35ede1389ba80aaa407dfcf2257437a3">ClampWrap</a> = 0x0
+, <a class="el" href="class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50a1dad14caefc7718faca9143ccd929e96">RepeatWrap</a> = 0x8
+ }</td></tr>
+<tr class="separator:aca3c99cd6d7c21fe632599e7e624be50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">Blending</a> { <br />
+&#160;&#160;<a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92">NoBlending</a> = 0
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1">BlendingText</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be">BlendingImages</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b">CustomBlending</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92">NoBlending</a> = 0
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1">BlendingText</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be">BlendingImages</a>
+, <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b">CustomBlending</a>
+<br />
  }</td></tr>
 <tr class="separator:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861e24cfd4b32e81f40873cd562e53ea"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt; <a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> &gt;, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">VboList</a></td></tr>
@@ -142,6 +175,29 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a832bbe97a39dc52e59e0f89089c288d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5">MxRenderer</a> ()</td></tr>
+<tr class="separator:a832bbe97a39dc52e59e0f89089c288d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ae7cec7d163dba565670fc7e0adc03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a63ae7cec7d163dba565670fc7e0adc03">~MxRenderer</a> ()</td></tr>
+<tr class="separator:a63ae7cec7d163dba565670fc7e0adc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cde5e659854cbe46076843b63b0c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a23cde5e659854cbe46076843b63b0c46">init</a> (HWND hwnd, unsigned int windowWidth, unsigned int windowHeight)</td></tr>
+<tr class="separator:a23cde5e659854cbe46076843b63b0c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2a079dc5508f9ca42feaf387e7b417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6c2a079dc5508f9ca42feaf387e7b417">setViewport</a> (float width, float height)</td></tr>
+<tr class="memdesc:a6c2a079dc5508f9ca42feaf387e7b417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the whole window with the given color, for 1 frame only. Used for debug purposes only (to check if display fb is preserved)  <a href="class_mx_renderer.html#a6c2a079dc5508f9ca42feaf387e7b417">More...</a><br /></td></tr>
+<tr class="separator:a6c2a079dc5508f9ca42feaf387e7b417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531fca0059a8c38a7c38cb6a958617f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a531fca0059a8c38a7c38cb6a958617f7">setScissor</a> (const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;pos, const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;size)</td></tr>
+<tr class="separator:a531fca0059a8c38a7c38cb6a958617f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a702ff56f22eb32f648a237981af814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2a702ff56f22eb32f648a237981af814">newTexture</a> (const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;size, <a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346">MxTexture::PixelFormat</a> format)</td></tr>
+<tr class="separator:a2a702ff56f22eb32f648a237981af814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e497a235b266aa66e89220f9673b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#af1e497a235b266aa66e89220f9673b10">getBuffer</a> (UINT64 length)</td></tr>
+<tr class="separator:af1e497a235b266aa66e89220f9673b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9e7141aa0428738fc2139800961345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#afa9e7141aa0428738fc2139800961345">setProgram</a> (<a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a> *program)</td></tr>
+<tr class="separator:afa9e7141aa0428738fc2139800961345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b39b40973b90b300fa60bb74996000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a25b39b40973b90b300fa60bb74996000">setTexturesParameters</a> (unsigned int flags)</td></tr>
+<tr class="separator:a25b39b40973b90b300fa60bb74996000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d50148ded3964181243b56ef928707"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae3d50148ded3964181243b56ef928707">releaseGpuArrays</a> ()</td></tr>
+<tr class="separator:ae3d50148ded3964181243b56ef928707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01998ea2da5077cf3faa453f4310a4a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a01998ea2da5077cf3faa453f4310a4a9">setupPipeline</a> ()</td></tr>
+<tr class="separator:a01998ea2da5077cf3faa453f4310a4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832bbe97a39dc52e59e0f89089c288d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5">MxRenderer</a> ()</td></tr>
 <tr class="separator:a832bbe97a39dc52e59e0f89089c288d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa82e135865d27cbebc0feeabd1977141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aa82e135865d27cbebc0feeabd1977141">discardGLResources</a> ()</td></tr>
@@ -175,6 +231,48 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a2367d845bfc56ad95a88a4611fe03380"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2367d845bfc56ad95a88a4611fe03380">pEnableSRGB</a></td></tr>
+<tr class="separator:a2367d845bfc56ad95a88a4611fe03380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9cb81f2f82df72927a724a1cbaef31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a5c9cb81f2f82df72927a724a1cbaef31">pFirstTime</a></td></tr>
+<tr class="separator:a5c9cb81f2f82df72927a724a1cbaef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad829500928d7b5fb06c854361c3e000b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ad829500928d7b5fb06c854361c3e000b">pPipelineChanged</a></td></tr>
+<tr class="separator:ad829500928d7b5fb06c854361c3e000b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaede228de609c30cc2182376a39645b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#afaede228de609c30cc2182376a39645b">pCurrProgram</a></td></tr>
+<tr class="separator:afaede228de609c30cc2182376a39645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e633213f93926fd6a6e5b086d83edf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a7e633213f93926fd6a6e5b086d83edf3">pRootSignatureChanged</a></td></tr>
+<tr class="separator:a7e633213f93926fd6a6e5b086d83edf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616b7bbbe3b36217da5fcc503c387396"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a616b7bbbe3b36217da5fcc503c387396">pCurrInputTextureFlags</a></td></tr>
+<tr class="separator:a616b7bbbe3b36217da5fcc503c387396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e882389140ecdb5c9de259e8a642aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6e882389140ecdb5c9de259e8a642aa3">pBufferViews</a></td></tr>
+<tr class="separator:a6e882389140ecdb5c9de259e8a642aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962">pTextures</a> [1]</td></tr>
+<tr class="separator:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeee5698eb962d9fb1d34f03ac940983"><td class="memItemLeft" align="right" valign="top">ID3D12Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adeee5698eb962d9fb1d34f03ac940983">pDevice</a></td></tr>
+<tr class="separator:adeee5698eb962d9fb1d34f03ac940983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1a781a0eaca3d2d538720726ef860d"><td class="memItemLeft" align="right" valign="top">IDXGIFactory6 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ace1a781a0eaca3d2d538720726ef860d">pDxgiFactory</a></td></tr>
+<tr class="separator:ace1a781a0eaca3d2d538720726ef860d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa697fd88d192e4f2883c4277a842b4"><td class="memItemLeft" align="right" valign="top">ID3D12CommandAllocator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a9fa697fd88d192e4f2883c4277a842b4">pCmdAllocator</a></td></tr>
+<tr class="separator:a9fa697fd88d192e4f2883c4277a842b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa68309e4b0cfb272c9dc1999190d38"><td class="memItemLeft" align="right" valign="top">ID3D12GraphicsCommandList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#affa68309e4b0cfb272c9dc1999190d38">pCmdList</a></td></tr>
+<tr class="separator:affa68309e4b0cfb272c9dc1999190d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd399ddb75b6bfc52ed3029ca29a4fc"><td class="memItemLeft" align="right" valign="top">ID3D12CommandQueue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aebd399ddb75b6bfc52ed3029ca29a4fc">pCmdQueue</a></td></tr>
+<tr class="separator:aebd399ddb75b6bfc52ed3029ca29a4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c72be3a9927e4766ad4c53fa07c5e1"><td class="memItemLeft" align="right" valign="top">IDXGISwapChain4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a84c72be3a9927e4766ad4c53fa07c5e1">pSwapchain</a></td></tr>
+<tr class="separator:a84c72be3a9927e4766ad4c53fa07c5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811c86bbc3c5d8dd3620ca41122a658d"><td class="memItemLeft" align="right" valign="top">ID3D12DescriptorHeap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a811c86bbc3c5d8dd3620ca41122a658d">pRtvHeaps</a></td></tr>
+<tr class="separator:a811c86bbc3c5d8dd3620ca41122a658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ddfc7af265b0a1878ab7715f32eadc"><td class="memItemLeft" align="right" valign="top">ID3DBlob *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a43ddfc7af265b0a1878ab7715f32eadc">pErrorBlob</a></td></tr>
+<tr class="separator:a43ddfc7af265b0a1878ab7715f32eadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb52a38bba23b8427ff6827d91bdb26"><td class="memItemLeft" align="right" valign="top">D3D12_GRAPHICS_PIPELINE_STATE_DESC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a9bb52a38bba23b8427ff6827d91bdb26">pPipeline</a></td></tr>
+<tr class="separator:a9bb52a38bba23b8427ff6827d91bdb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29342acd4c1a93f01e98e610a0299cfb"><td class="memItemLeft" align="right" valign="top">ID3D12RootSignature *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a29342acd4c1a93f01e98e610a0299cfb">pRootSignature</a></td></tr>
+<tr class="separator:a29342acd4c1a93f01e98e610a0299cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcafca82f9926f3c5144348ced4b2c4"><td class="memItemLeft" align="right" valign="top">ID3D12DescriptorHeap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aedcafca82f9926f3c5144348ced4b2c4">pTexDescHeap</a></td></tr>
+<tr class="separator:aedcafca82f9926f3c5144348ced4b2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae800adc152ac32f36b7088ac90e9896b"><td class="memItemLeft" align="right" valign="top">ID3D12Resource *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae800adc152ac32f36b7088ac90e9896b">pBackBuffers</a> [2]</td></tr>
+<tr class="separator:ae800adc152ac32f36b7088ac90e9896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab448a78cc9928e7b2c36e2a8430b721c"><td class="memItemLeft" align="right" valign="top">ID3D12PipelineState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ab448a78cc9928e7b2c36e2a8430b721c">pPipelinestate</a></td></tr>
+<tr class="separator:ab448a78cc9928e7b2c36e2a8430b721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7dad3ee7aa92a9749d8fd08d8d6673b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ad7dad3ee7aa92a9749d8fd08d8d6673b">pIconAtlas</a></td></tr>
 <tr class="separator:ad7dad3ee7aa92a9749d8fd08d8d6673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dcd66f2a028ebaa442cea595671405b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">VboList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6dcd66f2a028ebaa442cea595671405b">pVboList</a></td></tr>
@@ -203,7 +301,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2c16478414c1c06d00d36377ec7d83ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2c16478414c1c06d00d36377ec7d83ca">pCurrentActiveTextureSlot</a></td></tr>
 <tr class="separator:a2c16478414c1c06d00d36377ec7d83ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> keeps track of the rendering state and resources. </p>
+<p>The purpose of <a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> is to separate the rendering code from the application code, in order to isolate all graphics API calls. This way we can easily support multiple graphics APIs, such as Direct12, Metal, Vulkan and OpenGL.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mx_texture.html">MxTexture</a>, <a class="el" href="class_mx_gpu_array.html" title="The MxGpuArray class holds a graphics vertex buffer.">MxGpuArray</a> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a861e24cfd4b32e81f40873cd562e53ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a861e24cfd4b32e81f40873cd562e53ea">&#9670;&nbsp;</a></span>VboList</h2>
 
@@ -220,7 +322,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae42b5ea733f1ea54d3ebec2bfc13ca88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae42b5ea733f1ea54d3ebec2bfc13ca88">&#9670;&nbsp;</a></span>Blending</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42b5ea733f1ea54d3ebec2bfc13ca88">&#9670;&nbsp;</a></span>Blending <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,17 +333,117 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a82dbc41ef5c3ef459c6c5c59fc7edfde"></a>NoBlending&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a5b6d2c6df4659d6ba7dc3dccce7a538a"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a4afca41b3d8e402e680efc975a3d4c55"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92"></a>NoBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92"></a>NoBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae42b5ea733f1ea54d3ebec2bfc13ca88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42b5ea733f1ea54d3ebec2bfc13ca88">&#9670;&nbsp;</a></span>Blending <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">MxRenderer::Blending</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92"></a>NoBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92"></a>NoBlending&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0b5740c9b8e294252cfe512de27c9dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5740c9b8e294252cfe512de27c9dff">&#9670;&nbsp;</a></span>Filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dff">MxRenderer::Filter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0b5740c9b8e294252cfe512de27c9dffa81eb58011a74ad5ec01cf6c222bd63b4"></a>NoFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5740c9b8e294252cfe512de27c9dffa5cab87018dacc03da95a6f0244e37625"></a>LinearFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5740c9b8e294252cfe512de27c9dffa19fc67ca8075792660b3f0580bcaf6e2"></a>MipmapFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5740c9b8e294252cfe512de27c9dffa6b945324edc7fa7a083231740753321c"></a>MipmapLinearFilter&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aca3c99cd6d7c21fe632599e7e624be50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3c99cd6d7c21fe632599e7e624be50">&#9670;&nbsp;</a></span>Wrap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50">MxRenderer::Wrap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aca3c99cd6d7c21fe632599e7e624be50a35ede1389ba80aaa407dfcf2257437a3"></a>ClampWrap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aca3c99cd6d7c21fe632599e7e624be50a1dad14caefc7718faca9143ccd929e96"></a>RepeatWrap&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a832bbe97a39dc52e59e0f89089c288d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a832bbe97a39dc52e59e0f89089c288d5">&#9670;&nbsp;</a></span>MxRenderer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a832bbe97a39dc52e59e0f89089c288d5">&#9670;&nbsp;</a></span>MxRenderer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MxRenderer::MxRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63ae7cec7d163dba565670fc7e0adc03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ae7cec7d163dba565670fc7e0adc03">&#9670;&nbsp;</a></span>~MxRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MxRenderer::~MxRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a832bbe97a39dc52e59e0f89089c288d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832bbe97a39dc52e59e0f89089c288d5">&#9670;&nbsp;</a></span>MxRenderer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,6 +585,58 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af1e497a235b266aa66e89220f9673b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e497a235b266aa66e89220f9673b10">&#9670;&nbsp;</a></span>getBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> * MxRenderer::getBuffer </td>
+          <td>(</td>
+          <td class="paramtype">UINT64&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23cde5e659854cbe46076843b63b0c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cde5e659854cbe46076843b63b0c46">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::init </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>hwnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>windowWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>windowHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab794a319208e1031fcdb5040bdc15644"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab794a319208e1031fcdb5040bdc15644">&#9670;&nbsp;</a></span>initializeGL()</h2>
 
@@ -426,6 +680,51 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2a702ff56f22eb32f648a237981af814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a702ff56f22eb32f648a237981af814">&#9670;&nbsp;</a></span>newTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a> * MxRenderer::newTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346">MxTexture::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3d50148ded3964181243b56ef928707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d50148ded3964181243b56ef928707">&#9670;&nbsp;</a></span>releaseGpuArrays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::releaseGpuArrays </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8b871801ae38e47312817cbfea6481b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b871801ae38e47312817cbfea6481b8">&#9670;&nbsp;</a></span>setBlending()</h2>
 
@@ -461,8 +760,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afa9e7141aa0428738fc2139800961345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9e7141aa0428738fc2139800961345">&#9670;&nbsp;</a></span>setProgram() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::setProgram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a> *&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae07c2bae877d1d2746dddf49197c5bbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae07c2bae877d1d2746dddf49197c5bbe">&#9670;&nbsp;</a></span>setProgram()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07c2bae877d1d2746dddf49197c5bbe">&#9670;&nbsp;</a></span>setProgram() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,6 +789,69 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_mx_shader_program.html">MxShaderProgram</a> *&#160;</td>
           <td class="paramname"><em>effect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a531fca0059a8c38a7c38cb6a958617f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531fca0059a8c38a7c38cb6a958617f7">&#9670;&nbsp;</a></span>setScissor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::setScissor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25b39b40973b90b300fa60bb74996000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b39b40973b90b300fa60bb74996000">&#9670;&nbsp;</a></span>setTexturesParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::setTexturesParameters </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01998ea2da5077cf3faa453f4310a4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01998ea2da5077cf3faa453f4310a4a9">&#9670;&nbsp;</a></span>setupPipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxRenderer::setupPipeline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -493,6 +873,37 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c2a079dc5508f9ca42feaf387e7b417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2a079dc5508f9ca42feaf387e7b417">&#9670;&nbsp;</a></span>setViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::setViewport </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the whole window with the given color, for 1 frame only. Used for debug purposes only (to check if display fb is preserved) </p>
+<p>sets <em>viewport</em> </p>
 
 </div>
 </div>
@@ -542,6 +953,76 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae800adc152ac32f36b7088ac90e9896b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae800adc152ac32f36b7088ac90e9896b">&#9670;&nbsp;</a></span>pBackBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12Resource* MxRenderer::pBackBuffers[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e882389140ecdb5c9de259e8a642aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e882389140ecdb5c9de259e8a642aa3">&#9670;&nbsp;</a></span>pBufferViews</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="class_mx_gpu_array.html">MxGpuArray</a>&gt; MxRenderer::pBufferViews</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fa697fd88d192e4f2883c4277a842b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa697fd88d192e4f2883c4277a842b4">&#9670;&nbsp;</a></span>pCmdAllocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12CommandAllocator* MxRenderer::pCmdAllocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affa68309e4b0cfb272c9dc1999190d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa68309e4b0cfb272c9dc1999190d38">&#9670;&nbsp;</a></span>pCmdList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12GraphicsCommandList* MxRenderer::pCmdList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebd399ddb75b6bfc52ed3029ca29a4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd399ddb75b6bfc52ed3029ca29a4fc">&#9670;&nbsp;</a></span>pCmdQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12CommandQueue* MxRenderer::pCmdQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a725e776ab37d04cd563af107e09cd31f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a725e776ab37d04cd563af107e09cd31f">&#9670;&nbsp;</a></span>pColorWheelEffect</h2>
 
@@ -630,6 +1111,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a616b7bbbe3b36217da5fcc503c387396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616b7bbbe3b36217da5fcc503c387396">&#9670;&nbsp;</a></span>pCurrInputTextureFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int MxRenderer::pCurrInputTextureFlags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaede228de609c30cc2182376a39645b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaede228de609c30cc2182376a39645b">&#9670;&nbsp;</a></span>pCurrProgram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a>* MxRenderer::pCurrProgram</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acd6fbdd1d214efd87d0614a9c878bd74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd6fbdd1d214efd87d0614a9c878bd74">&#9670;&nbsp;</a></span>pCurrShaderProgram</h2>
 
@@ -674,6 +1183,76 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adeee5698eb962d9fb1d34f03ac940983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeee5698eb962d9fb1d34f03ac940983">&#9670;&nbsp;</a></span>pDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12Device* MxRenderer::pDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace1a781a0eaca3d2d538720726ef860d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1a781a0eaca3d2d538720726ef860d">&#9670;&nbsp;</a></span>pDxgiFactory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDXGIFactory6* MxRenderer::pDxgiFactory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2367d845bfc56ad95a88a4611fe03380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2367d845bfc56ad95a88a4611fe03380">&#9670;&nbsp;</a></span>pEnableSRGB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxRenderer::pEnableSRGB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43ddfc7af265b0a1878ab7715f32eadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ddfc7af265b0a1878ab7715f32eadc">&#9670;&nbsp;</a></span>pErrorBlob</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3DBlob* MxRenderer::pErrorBlob</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c9cb81f2f82df72927a724a1cbaef31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9cb81f2f82df72927a724a1cbaef31">&#9670;&nbsp;</a></span>pFirstTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxRenderer::pFirstTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7dad3ee7aa92a9749d8fd08d8d6673b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7dad3ee7aa92a9749d8fd08d8d6673b">&#9670;&nbsp;</a></span>pIconAtlas</h2>
 
@@ -710,6 +1289,90 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9bb52a38bba23b8427ff6827d91bdb26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb52a38bba23b8427ff6827d91bdb26">&#9670;&nbsp;</a></span>pPipeline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3D12_GRAPHICS_PIPELINE_STATE_DESC MxRenderer::pPipeline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad829500928d7b5fb06c854361c3e000b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad829500928d7b5fb06c854361c3e000b">&#9670;&nbsp;</a></span>pPipelineChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxRenderer::pPipelineChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab448a78cc9928e7b2c36e2a8430b721c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab448a78cc9928e7b2c36e2a8430b721c">&#9670;&nbsp;</a></span>pPipelinestate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12PipelineState* MxRenderer::pPipelinestate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29342acd4c1a93f01e98e610a0299cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29342acd4c1a93f01e98e610a0299cfb">&#9670;&nbsp;</a></span>pRootSignature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12RootSignature* MxRenderer::pRootSignature</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e633213f93926fd6a6e5b086d83edf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e633213f93926fd6a6e5b086d83edf3">&#9670;&nbsp;</a></span>pRootSignatureChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MxRenderer::pRootSignatureChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a811c86bbc3c5d8dd3620ca41122a658d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811c86bbc3c5d8dd3620ca41122a658d">&#9670;&nbsp;</a></span>pRtvHeaps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12DescriptorHeap* MxRenderer::pRtvHeaps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf40cf1e02f64dd6be7f1dc4126c379d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf40cf1e02f64dd6be7f1dc4126c379d">&#9670;&nbsp;</a></span>pScreenProjectionMatrix</h2>
 
@@ -742,6 +1405,48 @@ Protected Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84c72be3a9927e4766ad4c53fa07c5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c72be3a9927e4766ad4c53fa07c5e1">&#9670;&nbsp;</a></span>pSwapchain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDXGISwapChain4* MxRenderer::pSwapchain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedcafca82f9926f3c5144348ced4b2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedcafca82f9926f3c5144348ced4b2c4">&#9670;&nbsp;</a></span>pTexDescHeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D12DescriptorHeap* MxRenderer::pTexDescHeap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bfc3208487c8b99b85f0d43fe85d962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfc3208487c8b99b85f0d43fe85d962">&#9670;&nbsp;</a></span>pTextures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a> MxRenderer::pTextures[1]</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -783,8 +1488,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/renderer/opengl/<a class="el" href="mxrenderer_8h_source.html">mxrenderer.h</a></li>
-<li>src/renderer/opengl/<a class="el" href="mxrenderer_8cpp.html">mxrenderer.cpp</a></li>
+<li>src/renderer/direct12/<a class="el" href="direct12_2mxrenderer_8h_source.html">mxrenderer.h</a></li>
+<li>src/renderer/direct12/<a class="el" href="direct12_2mxrenderer_8cpp.html">mxrenderer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

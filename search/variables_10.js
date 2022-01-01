@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_1111',['x',['../struct_mx_text_draw_1_1_vertex.html#abd4b0f9a168403179274d36c021db8b9',1,'MxTextDraw::Vertex::x()'],['../struct_mx_vector_draw_1_1_vertex.html#a4f3256af9906a09bb9f5ea1f25566183',1,'MxVectorDraw::Vertex::x()']]]
+  ['whitetext_1239',['whiteText',['../namespace_mx_theme_colors.html#aba7c1fbd78df6053856816fcd2b259d8',1,'MxThemeColors']]],
+  ['windowbackground_1240',['windowBackground',['../namespace_mx_theme_colors.html#af23f8b540f4b2c4eb155bf9fbc2013b3',1,'MxThemeColors']]]
 ];

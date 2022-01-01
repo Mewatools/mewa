@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blending_1134',['Blending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88',1,'MxRenderer']]]
+  ['arraytype_1264',['ArrayType',['../class_mx_gpu_array.html#a6bff9bb98ce53e3703ea98917de7f2c2',1,'MxGpuArray']]]
 ];

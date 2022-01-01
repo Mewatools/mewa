@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qmewawindow_628',['QMewaWindow',['../class_q_mewa_window.html',1,'']]]
+  ['plusminussvg_704',['PlusMinusSvg',['../class_plus_minus_svg.html',1,'']]]
 ];

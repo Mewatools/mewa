@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['colorfilter_1135',['ColorFilter',['../class_mx_icon_program.html#ab065d2614626151a7c6e298a4c90697c',1,'MxIconProgram']]]
+  ['blending_1265',['Blending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88',1,'MxRenderer::Blending()'],['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88',1,'MxRenderer::Blending()']]]
 ];

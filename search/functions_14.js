@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['vaoformat_1011',['vaoFormat',['../class_mx_color_wheel_program.html#a9459f4cd65f8e6f56d0e9b5b49a482c0',1,'MxColorWheelProgram::vaoFormat()'],['../class_mx_icon_program.html#aa7e62e217078e3d80e129351d3a6f50b',1,'MxIconProgram::vaoFormat()'],['../class_mx_shader_program.html#a9a1d5631ddfdd64d4006cef032927430',1,'MxShaderProgram::vaoFormat()'],['../class_mx_vector_program.html#acfa77d25dcea6e60d707eeb77a93005b',1,'MxVectorProgram::vaoFormat()']]],
-  ['vectordraw_1012',['vectorDraw',['../class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e',1,'MxPainter']]],
-  ['vertexcount_1013',['vertexCount',['../class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830',1,'MxQuadDraw']]],
-  ['verticalgradientrect_1014',['verticalGradientRect',['../class_mx_vector_draw.html#a0b3fc6faa70c9492de8f54ca13d670f6',1,'MxVectorDraw']]],
-  ['viewtoscene_1015',['viewToScene',['../class_mx_ortho_transform.html#a684f2c7011d8303804dc321fd2a883a2',1,'MxOrthoTransform']]],
-  ['viewtoscenerect_1016',['viewToSceneRect',['../class_mx_ortho_transform.html#ac0ef6732cca7fc9da1324492f757f142',1,'MxOrthoTransform']]],
-  ['viewtoscenex_1017',['viewToSceneX',['../class_mx_ortho_transform.html#a87aadec31943d45d571bac4e2aca8c4a',1,'MxOrthoTransform']]],
-  ['viewtosceney_1018',['viewToSceneY',['../class_mx_ortho_transform.html#afc03465ec22725398d9338376b551dc4',1,'MxOrthoTransform']]]
+  ['update_1104',['update',['../class_mx_widget.html#a4c69ab1d6dec1a6f29eb32520b6ca281',1,'MxWidget']]],
+  ['updateuniformvalues_1105',['updateUniformValues',['../class_mx_icon_program.html#a8c7cb21f7256541568836a16a24a7688',1,'MxIconProgram']]],
+  ['upload_1106',['upload',['../class_mx_gpu_array.html#a2bcf33481fabdfa0d3442cb7b03391ba',1,'MxGpuArray']]],
+  ['uploadgl_1107',['uploadGL',['../class_mx_cached_gpu_array.html#aa65dc96f869464b1a853e84a6e15bf33',1,'MxCachedGpuArray']]],
+  ['uploadtovbo_1108',['uploadToVbo',['../class_mx_gpu_array.html#a7e8cbd0dc2649934ed69896f220482db',1,'MxGpuArray']]]
 ];
