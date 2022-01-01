@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"namespacemembers_vars.html":[2,1,2],
 "namespaces.html":[2,0],
 "opengl_2mxgpuarray_8cpp.html":[4,0,0,7,1,5],
 "opengl_2mxgpuarray_8h.html":[4,0,0,7,1,6],

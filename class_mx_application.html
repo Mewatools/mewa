@@ -129,12 +129,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad7cd82a83f38f52acfdcb7d12cc860d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84f26804a0c0eba0ea46aef1036e950e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a84f26804a0c0eba0ea46aef1036e950e">init</a> (<a class="el" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *atlas)</td></tr>
 <tr class="separator:a84f26804a0c0eba0ea46aef1036e950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a749f0c6683779065a449af39de882809"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a749f0c6683779065a449af39de882809">initializeGL</a> ()</td></tr>
-<tr class="separator:a749f0c6683779065a449af39de882809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cce0bbd3bd73061149e69736f22b7fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a1cce0bbd3bd73061149e69736f22b7fb">cleanupGL</a> ()</td></tr>
-<tr class="separator:a1cce0bbd3bd73061149e69736f22b7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3005f11238b6638f46a58324481aad8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a3005f11238b6638f46a58324481aad8c">paintGL</a> ()</td></tr>
-<tr class="separator:a3005f11238b6638f46a58324481aad8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8727ffaa4c12515bd965dd840d6851f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a8727ffaa4c12515bd965dd840d6851f1">initialize</a> ()</td></tr>
+<tr class="separator:a8727ffaa4c12515bd965dd840d6851f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a56fc9a6e85643e29f677ce34ca1a3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a9a56fc9a6e85643e29f677ce34ca1a3d">onRender</a> ()</td></tr>
+<tr class="separator:a9a56fc9a6e85643e29f677ce34ca1a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa727ae2139a0f47230700ec5d7a8ecf8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#aa727ae2139a0f47230700ec5d7a8ecf8">onResizeWindow</a> (int width, int height)</td></tr>
 <tr class="separator:aa727ae2139a0f47230700ec5d7a8ecf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdcd7dd70c02420f285e56e99274420d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#acdcd7dd70c02420f285e56e99274420d">onMousePress</a> (int x, int y, unsigned int button, unsigned int modifiers)</td></tr>
@@ -209,31 +207,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1cce0bbd3bd73061149e69736f22b7fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cce0bbd3bd73061149e69736f22b7fb">&#9670;&nbsp;</a></span>cleanupGL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxApplication::cleanupGL </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a84f26804a0c0eba0ea46aef1036e950e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84f26804a0c0eba0ea46aef1036e950e">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -252,8 +225,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a749f0c6683779065a449af39de882809"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a749f0c6683779065a449af39de882809">&#9670;&nbsp;</a></span>initializeGL()</h2>
+<a id="a8727ffaa4c12515bd965dd840d6851f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8727ffaa4c12515bd965dd840d6851f1">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +235,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MxApplication::initializeGL </td>
+          <td class="memname">void MxApplication::initialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -445,6 +418,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9a56fc9a6e85643e29f677ce34ca1a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a56fc9a6e85643e29f677ce34ca1a3d">&#9670;&nbsp;</a></span>onRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxApplication::onRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa727ae2139a0f47230700ec5d7a8ecf8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa727ae2139a0f47230700ec5d7a8ecf8">&#9670;&nbsp;</a></span>onResizeWindow()</h2>
 
@@ -470,31 +468,6 @@ Public Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3005f11238b6638f46a58324481aad8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3005f11238b6638f46a58324481aad8c">&#9670;&nbsp;</a></span>paintGL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxApplication::paintGL </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>

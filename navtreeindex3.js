@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"functions_func_q.html":[3,3,1,15],
 "functions_func_r.html":[3,3,1,16],
 "functions_func_s.html":[3,3,1,17],
 "functions_func_t.html":[3,3,1,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,3],
 "namespacemembers_eval.html":[2,1,4],
-"namespacemembers_func.html":[2,1,1]
+"namespacemembers_func.html":[2,1,1],
+"namespacemembers_vars.html":[2,1,2]
 };
