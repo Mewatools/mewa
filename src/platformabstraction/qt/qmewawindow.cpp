@@ -23,7 +23,7 @@ QMewaWindow::~QMewaWindow()
 
 void QMewaWindow::initializeGL()
 {
-    MxApplication *app = MxAggregation::instance()->application();
+    MxApplication *app = MxGuiAggregation::instance()->application();
     app->pRenderer.initializeOpenGLFunctions();
     app->initializeGL();
 
@@ -32,38 +32,38 @@ void QMewaWindow::initializeGL()
 
 void QMewaWindow::resizeGL(int w, int h)
 {
-    MxAggregation::instance()->application()->onResizeWindow( w, h );
+    MxGuiAggregation::instance()->application()->onResizeWindow( w, h );
 }
 
 void QMewaWindow::paintGL()
 {
-    MxAggregation::instance()->application()->paintGL();
+    MxGuiAggregation::instance()->application()->paintGL();
 }
 
 void QMewaWindow::mousePressEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxAggregation::instance()->application()->onMousePress(p.x(), p.y(), event->button(), event->modifiers() | event->buttons() );
+    MxGuiAggregation::instance()->application()->onMousePress(p.x(), p.y(), event->button(), event->modifiers() | event->buttons() );
     update();
 }
 
 void QMewaWindow::mouseMoveEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxAggregation::instance()->application()->onMouseMove(p.x(), p.y(), event->modifiers() | event->buttons() );
+    MxGuiAggregation::instance()->application()->onMouseMove(p.x(), p.y(), event->modifiers() | event->buttons() );
     update();
 }
 
 void QMewaWindow::mouseReleaseEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxAggregation::instance()->application()->onMouseRelease(p.x(), p.y());
+    MxGuiAggregation::instance()->application()->onMouseRelease(p.x(), p.y());
     update();
 }
 
 void QMewaWindow::setMainWidget( MxWidget *widget )
 {
-    MxAggregation::instance()->application()->setMainWidget( widget );
+    MxGuiAggregation::instance()->application()->setMainWidget( widget );
 }
 
 void QMewaWindow::setIcon( MxThemeIcons::IconName name, const char *imageFileName )

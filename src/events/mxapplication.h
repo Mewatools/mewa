@@ -10,7 +10,7 @@
 #include "mxrenderer.h"
 #include "mxmouseevent.h"
 #include "mxpainter.h"
-#include "mxaggregation.h"
+#include "mxguiaggregation.h"
 
 
 class MxIconAtlas;
@@ -52,7 +52,7 @@ public:
 
 
     MxRenderer pRenderer;
-    MxAggregation pGuiAggregation;
+    MxGuiAggregation pGuiAggregation;
     MxWidget *pWidget;
 
     bool mSizeChanged;

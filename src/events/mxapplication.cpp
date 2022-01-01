@@ -28,7 +28,7 @@ void MxApplication::init( MxAbstractAtlas *atlas )
     pGuiAggregation.pIconAtlas = atlas;
     pGuiAggregation.pApplication = this;
     pRenderer.pIconAtlas = atlas;
-    MxAggregation::sAggregation = &(pGuiAggregation);
+    MxGuiAggregation::sAggregation = &(pGuiAggregation);
 }
 
 void MxApplication::initializeGL()
