@@ -9,7 +9,6 @@ var hierarchy =
       [ "HeartSvg", "class_heart_svg.html", null ],
       [ "PlusMinusSvg", "class_plus_minus_svg.html", null ]
     ] ],
-    [ "MxAggregation", "class_mx_aggregation.html", null ],
     [ "MxApplication", "class_mx_application.html", null ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", null ],
     [ "MxClassInitializer< T >", "struct_mx_class_initializer.html", null ],
@@ -19,6 +18,7 @@ var hierarchy =
     [ "MxGpuArray", "class_mx_gpu_array.html", [
       [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", null ]
     ] ],
+    [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< MxCachedGpuArray, MxClassInitializer< MxCachedGpuArray >, 32 >", "class_mx_list.html", null ],

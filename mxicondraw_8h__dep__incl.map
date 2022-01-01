@@ -1,11 +1,11 @@
-<map id="src/gui/icondraw/mxicondraw.h" name="src/gui/icondraw/mxicondraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="261,5,461,32"/>
-<area shape="rect" id="node2" href="$mxicondraw_8cpp.html" title=" " alt="" coords="5,80,220,107"/>
-<area shape="rect" id="node3" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="244,80,477,107"/>
-<area shape="rect" id="node4" href="$mxpainter_8h.html" title=" " alt="" coords="502,80,633,107"/>
-<area shape="rect" id="node5" href="$mxapplication_8h.html" title=" " alt="" coords="386,155,562,181"/>
-<area shape="rect" id="node9" href="$mxpainter_8cpp.html" title=" " alt="" coords="587,155,732,181"/>
-<area shape="rect" id="node6" href="$mxapplication_8cpp.html" title=" " alt="" coords="245,237,436,263"/>
-<area shape="rect" id="node7" href="$qmewawindow_8cpp.html" title=" " alt="" coords="454,319,609,360"/>
-<area shape="rect" id="node8" href="$qmewawindow_8h.html" title=" " alt="" coords="511,229,666,271"/>
+<map id="src/renderer/opengl/icondraw/mxicondraw.h" name="src/renderer/opengl/icondraw/mxicondraw.h">
+<area shape="rect" id="node1" title=" " alt="" coords="423,5,584,47"/>
+<area shape="rect" id="node2" href="$mxpainter_8h.html" title=" " alt="" coords="261,102,391,129"/>
+<area shape="rect" id="node8" href="$mxicondraw_8cpp.html" title=" " alt="" coords="416,95,591,136"/>
+<area shape="rect" id="node9" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="615,95,810,136"/>
+<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="146,184,322,211"/>
+<area shape="rect" id="node7" href="$mxpainter_8cpp.html" title=" " alt="" coords="347,184,492,211"/>
+<area shape="rect" id="node4" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,266,196,293"/>
+<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="214,348,369,389"/>
+<area shape="rect" id="node6" href="$qmewawindow_8h.html" title=" " alt="" coords="271,259,426,300"/>
 </map>

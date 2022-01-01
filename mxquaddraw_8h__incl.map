@@ -1,12 +1,12 @@
-<map id="src/gui/icondraw/mxquaddraw.h" name="src/gui/icondraw/mxquaddraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="55,5,259,32"/>
-<area shape="rect" id="node2" href="$mxcachedgpuarray_8h.html" title=" " alt="" coords="33,80,173,107"/>
-<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="215,155,285,181"/>
-<area shape="rect" id="node3" href="$mxgpuarray_8h.html" title=" " alt="" coords="54,155,153,181"/>
-<area shape="rect" id="node4" href="$mxopengl_8h.html" title=" " alt="" coords="5,304,92,331"/>
-<area shape="rect" id="node5" href="$mxshaderprogram_8h.html" title=" " alt="" coords="36,229,171,256"/>
-<area shape="rect" id="node6" href="$mxdebug_8h.html" title=" " alt="" coords="167,304,251,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="174,379,243,405"/>
-<area shape="rect" id="node9" href="$mxvector_8h.html" title=" " alt="" coords="246,229,331,256"/>
-<area shape="rect" id="node10" title=" " alt="" coords="355,229,430,256"/>
+<map id="src/renderer/opengl/icondraw/mxquaddraw.h" name="src/renderer/opengl/icondraw/mxquaddraw.h">
+<area shape="rect" id="node1" title=" " alt="" coords="74,5,239,47"/>
+<area shape="rect" id="node2" href="$mxcachedgpuarray_8h.html" title=" " alt="" coords="33,95,173,121"/>
+<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="215,169,285,196"/>
+<area shape="rect" id="node3" href="$mxgpuarray_8h.html" title=" " alt="" coords="54,169,153,196"/>
+<area shape="rect" id="node4" href="$mxopengl_8h.html" title=" " alt="" coords="5,319,92,345"/>
+<area shape="rect" id="node5" href="$mxshaderprogram_8h.html" title=" " alt="" coords="36,244,171,271"/>
+<area shape="rect" id="node6" href="$mxdebug_8h.html" title=" " alt="" coords="167,319,251,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="174,393,243,420"/>
+<area shape="rect" id="node9" href="$mxvector_8h.html" title=" " alt="" coords="246,244,331,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="355,244,430,271"/>
 </map>

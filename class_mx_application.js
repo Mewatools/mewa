@@ -15,7 +15,7 @@ var class_mx_application =
     [ "requestRedraw", "class_mx_application.html#a61826fe709ff4daa1da8051207080632", null ],
     [ "setMainWidget", "class_mx_application.html#a44e571943a9edfe713d3d0f6e5b31eca", null ],
     [ "mSizeChanged", "class_mx_application.html#ae2083f83295f320cd954dbb87e05f69d", null ],
-    [ "pGuiAggregation", "class_mx_application.html#a48a48e5541ff5ae0ad3d67f9fda42d19", null ],
+    [ "pGuiAggregation", "class_mx_application.html#aadae5fc3bafb78a146e8f75ba3c6f415", null ],
     [ "pPainterBuffer", "class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb", null ],
     [ "pRenderer", "class_mx_application.html#a0f457141d6de03e289355a1fea9d9e1b", null ],
     [ "pWidget", "class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4", null ]

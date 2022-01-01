@@ -1,5 +1,5 @@
-<map id="src/gui/vectordraw/mxvectorprogram.h" name="src/gui/vectordraw/mxvectorprogram.h">
-<area shape="rect" id="node1" title=" " alt="" coords="129,5,265,47"/>
+<map id="src/renderer/opengl/vectordraw/mxvectorprogram.h" name="src/renderer/opengl/vectordraw/mxvectorprogram.h">
+<area shape="rect" id="node1" title=" " alt="" coords="95,5,299,47"/>
 <area shape="rect" id="node2" href="$mxshaderprogram_8h.html" title=" " alt="" coords="5,319,140,345"/>
 <area shape="rect" id="node6" href="$mxmatrix_8h.html" title=" " alt="" coords="311,95,395,121"/>
 <area shape="rect" id="node8" href="$mxvectordraw_8h.html" title=" " alt="" coords="140,95,253,121"/>

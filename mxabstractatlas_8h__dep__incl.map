@@ -1,10 +1,10 @@
 <map id="src/iconatlas/mxabstractatlas.h" name="src/iconatlas/mxabstractatlas.h">
-<area shape="rect" id="node1" title=" " alt="" coords="318,5,521,32"/>
-<area shape="rect" id="node2" href="$mxicondraw_8cpp.html" title=" " alt="" coords="5,80,220,107"/>
-<area shape="rect" id="node3" href="$mxpainter_8cpp.html" title=" " alt="" coords="244,80,389,107"/>
-<area shape="rect" id="node4" href="$mxabstractatlas_8cpp.html" title=" " alt="" coords="414,80,630,107"/>
-<area shape="rect" id="node5" href="$mxiconatlas_8h.html" title=" " alt="" coords="654,80,833,107"/>
-<area shape="rect" id="node6" href="$mxiconatlas_8cpp.html" title=" " alt="" coords="548,162,741,189"/>
-<area shape="rect" id="node7" href="$qmewawindow_8h.html" title=" " alt="" coords="766,155,921,196"/>
-<area shape="rect" id="node8" href="$qmewawindow_8cpp.html" title=" " alt="" coords="766,244,921,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="293,5,495,32"/>
+<area shape="rect" id="node2" href="$mxpainter_8cpp.html" title=" " alt="" coords="5,87,151,114"/>
+<area shape="rect" id="node3" href="$mxabstractatlas_8cpp.html" title=" " alt="" coords="175,87,391,114"/>
+<area shape="rect" id="node4" href="$mxiconatlas_8h.html" title=" " alt="" coords="415,87,594,114"/>
+<area shape="rect" id="node8" href="$mxicondraw_8cpp.html" title=" " alt="" coords="619,80,793,121"/>
+<area shape="rect" id="node5" href="$mxiconatlas_8cpp.html" title=" " alt="" coords="309,177,503,203"/>
+<area shape="rect" id="node6" href="$qmewawindow_8h.html" title=" " alt="" coords="527,169,682,211"/>
+<area shape="rect" id="node7" href="$qmewawindow_8cpp.html" title=" " alt="" coords="527,259,682,300"/>
 </map>

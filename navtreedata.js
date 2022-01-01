@@ -73,7 +73,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_mx_icon_program.html#a8c7cb21f7256541568836a16a24a7688",
 "class_mx_vector.html#ab6423259efacd742f44281ae0604c916",
-"mxgpuarray_8h.html"
+"mxguiaggregation_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

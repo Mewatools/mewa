@@ -1,13 +1,13 @@
-<map id="src/gui/icondraw/mxquaddraw.h" name="src/gui/icondraw/mxquaddraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="375,5,579,32"/>
-<area shape="rect" id="node2" href="$mxicondraw_8h.html" title=" " alt="" coords="261,80,461,107"/>
-<area shape="rect" id="node11" href="$mxquaddraw_8cpp.html" title=" " alt="" coords="485,80,703,107"/>
-<area shape="rect" id="node3" href="$mxicondraw_8cpp.html" title=" " alt="" coords="5,155,220,181"/>
-<area shape="rect" id="node4" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="244,155,477,181"/>
-<area shape="rect" id="node5" href="$mxpainter_8h.html" title=" " alt="" coords="502,155,633,181"/>
-<area shape="rect" id="node6" href="$mxapplication_8h.html" title=" " alt="" coords="386,229,562,256"/>
-<area shape="rect" id="node10" href="$mxpainter_8cpp.html" title=" " alt="" coords="587,229,732,256"/>
-<area shape="rect" id="node7" href="$mxapplication_8cpp.html" title=" " alt="" coords="245,311,436,338"/>
-<area shape="rect" id="node8" href="$qmewawindow_8cpp.html" title=" " alt="" coords="454,393,609,435"/>
-<area shape="rect" id="node9" href="$qmewawindow_8h.html" title=" " alt="" coords="511,304,666,345"/>
+<map id="src/renderer/opengl/icondraw/mxquaddraw.h" name="src/renderer/opengl/icondraw/mxquaddraw.h">
+<area shape="rect" id="node1" title=" " alt="" coords="518,5,683,47"/>
+<area shape="rect" id="node2" href="$mxicondraw_8h.html" title=" " alt="" coords="423,95,584,136"/>
+<area shape="rect" id="node11" href="$mxquaddraw_8cpp.html" title=" " alt="" coords="609,95,787,136"/>
+<area shape="rect" id="node3" href="$mxpainter_8h.html" title=" " alt="" coords="261,191,391,218"/>
+<area shape="rect" id="node9" href="$mxicondraw_8cpp.html" title=" " alt="" coords="416,184,591,225"/>
+<area shape="rect" id="node10" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="615,184,810,225"/>
+<area shape="rect" id="node4" href="$mxapplication_8h.html" title=" " alt="" coords="146,273,322,300"/>
+<area shape="rect" id="node8" href="$mxpainter_8cpp.html" title=" " alt="" coords="347,273,492,300"/>
+<area shape="rect" id="node5" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,355,196,382"/>
+<area shape="rect" id="node6" href="$qmewawindow_8cpp.html" title=" " alt="" coords="214,437,369,479"/>
+<area shape="rect" id="node7" href="$qmewawindow_8h.html" title=" " alt="" coords="271,348,426,389"/>
 </map>
