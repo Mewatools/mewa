@@ -28,9 +28,8 @@ public:
 
 
     // graphics
-    virtual void initializeGL();
-    virtual void cleanupGL();
-    virtual void paintGL();
+    virtual void initialize();
+    virtual void onRender();
     virtual void onResizeWindow( int width, int height );
 
     // events

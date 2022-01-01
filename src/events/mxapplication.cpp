@@ -31,18 +31,13 @@ void MxApplication::init( MxAbstractAtlas *atlas )
     MxGuiAggregation::sAggregation = &(pGuiAggregation);
 }
 
-void MxApplication::initializeGL()
+void MxApplication::initialize()
 {
     pRenderer.initializeGL();
     pPainterBuffer.initializeGL( &pRenderer );
 }
 
-void MxApplication::cleanupGL()
-{
-}
-
-
-void MxApplication::paintGL()
+void MxApplication::onRender()
 {
     pRedrawRequested = false;
 

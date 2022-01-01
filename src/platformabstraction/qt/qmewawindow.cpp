@@ -25,7 +25,7 @@ void QMewaWindow::initializeGL()
 {
     MxApplication *app = MxGuiAggregation::instance()->application();
     app->pRenderer.initializeOpenGLFunctions();
-    app->initializeGL();
+    app->initialize();
 
     pIconAtlas.loadGL( app->pRenderer );
 }
@@ -37,7 +37,7 @@ void QMewaWindow::resizeGL(int w, int h)
 
 void QMewaWindow::paintGL()
 {
-    MxGuiAggregation::instance()->application()->paintGL();
+    MxGuiAggregation::instance()->application()->onRender();
 }
 
 void QMewaWindow::mousePressEvent( QMouseEvent * event )
