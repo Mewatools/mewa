@@ -255,7 +255,7 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
 void MxColorWheelProgram::enable()
 {
     pUpdates = UpdateAll;
-    MxShaderProgram::enable();
+    MxGpuProgram::enable();
 }
 
 

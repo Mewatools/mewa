@@ -5,12 +5,12 @@
 #ifndef MXVECTORPROGRAM_H
 #define MXVECTORPROGRAM_H
 
-#include "mxshaderprogram.h"
+#include "mxgpuprogram.h"
 #include "mxmatrix.h"
 #include "mxvectordraw.h"
 
 
-class MxVectorProgram : public MxShaderProgram
+class MxVectorProgram : public MxGpuProgram
 {
 public:
 
@@ -25,8 +25,8 @@ public:
     void draw( MxVectorDraw &stream );
 
 
-    static MxShaderProgram::VaoFormat getVaoFormat();
-    virtual MxShaderProgram::VaoFormat vaoFormat();
+    static MxGpuProgram::VaoFormat getVaoFormat();
+    virtual MxGpuProgram::VaoFormat vaoFormat();
     virtual void enableAttributes();
     virtual void disableAttributes();
 

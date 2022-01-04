@@ -3,34 +3,34 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxdebug.h"
-#include "mxshaderprogram.h"
+#include "mxgpuprogram.h"
 #include "mxgpuarray.h"
 #include "mxrenderer.h"
 
 
-MxShaderProgram::MxShaderProgram( MxRenderer *renderer )
+MxGpuProgram::MxGpuProgram( MxRenderer *renderer )
     :pRenderer(renderer)
 {
     mProgramId = 0;
 }
 
 //! Destroys
-MxShaderProgram::~MxShaderProgram()
+MxGpuProgram::~MxGpuProgram()
 {}
 
-void MxShaderProgram::discardGLResources()
+void MxGpuProgram::discardGLResources()
 {
     mProgramId = 0;
 }
 
-void MxShaderProgram::enable()
+void MxGpuProgram::enable()
 {
     Q_ASSERT( 0 != mProgramId );
     pRenderer->glUseProgram(mProgramId);
 }
 
 
-void MxShaderProgram::enableVao( MxGpuArray *buffer )
+void MxGpuProgram::enableVao( MxGpuArray *buffer )
 {
     if( buffer->pVaoObject == 0 )
     {
@@ -44,13 +44,13 @@ void MxShaderProgram::enableVao( MxGpuArray *buffer )
         pRenderer->glBindVertexArray( buffer->pVaoObject );
     }
 
-    Q_ASSERT( (buffer->pFormat != MxShaderProgram::Unknown) && (buffer->pFormat == vaoFormat()) );
+    Q_ASSERT( (buffer->pFormat != MxGpuProgram::Unknown) && (buffer->pFormat == vaoFormat()) );
 
     pRenderer->checkGLError(__FILE__, __LINE__);
 }
 
 
-void MxShaderProgram::disableVao()
+void MxGpuProgram::disableVao()
 {
 
     // glBindVertexArray(0);

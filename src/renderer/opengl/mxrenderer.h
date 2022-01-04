@@ -14,7 +14,7 @@
 #include "mxgpuarray.h"
 
 
-class MxShaderProgram;
+class MxGpuProgram;
 class MxAbstractAtlas;
 
 
@@ -41,7 +41,7 @@ public:
 
     void checkGLError(const char *fileName, int lineNumber);
 
-    void setProgram( MxShaderProgram *effect );
+    void setProgram( MxGpuProgram *effect );
 
     // shader programs
     MxColorWheelProgram * colorWheelProgram();
@@ -52,9 +52,9 @@ public:
      void enableDepthTest( bool enable );
      void bindTextureGL(GLuint textureId , GLuint activeSlot = 0 );
 
-    MxGpuArray * uploadToGpu(MxShaderProgram::VaoFormat format, const char *data , unsigned int size);
+    MxGpuArray * uploadToGpu(MxGpuProgram::VaoFormat format, const char *data , unsigned int size);
     // \TODO make it private
-    MxGpuArray *newGpuArray( MxShaderProgram::VaoFormat format, unsigned int size );
+    MxGpuArray *newGpuArray( MxGpuProgram::VaoFormat format, unsigned int size );
     //! The returned buffer is automatically deleted after render.
     MxBuffer *getTemporaryBuffer( int sizeEstimate = 1024 );
     void recycleALl();

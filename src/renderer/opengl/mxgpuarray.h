@@ -6,7 +6,7 @@
 #define MXGPUARRAY_H
 
 //#include "mxopengl.h"
-#include "mxshaderprogram.h"
+#include "mxgpuprogram.h"
 
 
 /*!
@@ -30,7 +30,7 @@ public:
 
 
     // needed to be able for the renderer to reuse buffers
-    MxShaderProgram::VaoFormat pFormat;
+    MxGpuProgram::VaoFormat pFormat;
 };
 
 

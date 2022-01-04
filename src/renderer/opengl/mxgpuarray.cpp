@@ -17,7 +17,7 @@ MxGpuArray::MxGpuArray()
 #ifndef QX_OPENGL_ES_2_0
     pVaoObject = 0;
 #endif
-    pFormat = MxShaderProgram::Unknown;
+    pFormat = MxGpuProgram::Unknown;
 }
 
 
@@ -104,5 +104,5 @@ void MxGpuArray::deleteGL( MxRenderer *renderer )
     pVboId = 0;
     pVboSize = 0;
     pVaoObject = 0;
-    pFormat = MxShaderProgram::Unknown;
+    pFormat = MxGpuProgram::Unknown;
 }

@@ -148,14 +148,14 @@ void MxVectorProgram::draw( MxVectorDraw &stream )
     disableVao();
 }
 
-MxShaderProgram::VaoFormat MxVectorProgram::getVaoFormat()
+MxGpuProgram::VaoFormat MxVectorProgram::getVaoFormat()
 {
-    return MxShaderProgram::Float2_UChar4_Float2;
+    return MxGpuProgram::Float2_UChar4_Float2;
 }
 
-MxShaderProgram::VaoFormat MxVectorProgram::vaoFormat()
+MxGpuProgram::VaoFormat MxVectorProgram::vaoFormat()
 {
-    return MxShaderProgram::Float2_UChar4_Float2;
+    return MxGpuProgram::Float2_UChar4_Float2;
 }
 
 void MxVectorProgram::enableAttributes()

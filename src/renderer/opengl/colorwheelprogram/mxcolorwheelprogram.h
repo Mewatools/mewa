@@ -7,7 +7,7 @@
 
 #include "mxdebug.h"
 //#include "mxopengl.h"
-#include "mxshaderprogram.h"
+#include "mxgpuprogram.h"
 #include "mxmatrix.h"
 #include "mxrect.h"
 
@@ -15,7 +15,7 @@
 class MxRenderer;
 
 
-class MxColorWheelProgram : public MxShaderProgram
+class MxColorWheelProgram : public MxGpuProgram
 {
 public:
 

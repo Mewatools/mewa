@@ -58,7 +58,7 @@ void MxRenderer::checkGLError( const char *fileName, int lineNumber )
     }
 }
 
-void MxRenderer::setProgram( MxShaderProgram *effect )
+void MxRenderer::setProgram( MxGpuProgram *effect )
 {
     Q_ASSERT( NULL != effect );
     if( effect->programId() != pCurrShaderProgram )
@@ -153,14 +153,14 @@ void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
 }
 
 
-MxGpuArray *MxRenderer::uploadToGpu( MxShaderProgram::VaoFormat format, const char *data, unsigned int size )
+MxGpuArray *MxRenderer::uploadToGpu( MxGpuProgram::VaoFormat format, const char *data, unsigned int size )
 {
     MxGpuArray *gpuArray = newGpuArray( format, size );
     gpuArray->uploadToVbo( this, data, size );
     return gpuArray;
 }
 
-MxGpuArray *MxRenderer::newGpuArray( MxShaderProgram::VaoFormat format, unsigned int size )
+MxGpuArray *MxRenderer::newGpuArray( MxGpuProgram::VaoFormat format, unsigned int size )
 {
     // find first available buffer
     int vboCount = pReusableVbos.size();
@@ -168,7 +168,7 @@ MxGpuArray *MxRenderer::newGpuArray( MxShaderProgram::VaoFormat format, unsigned
     {
         ReusableVbo &reusableEntry = pReusableVbos[i];
         MxGpuArray &buffer = reusableEntry.gpuArray;
-        Q_ASSERT( buffer.pFormat != MxShaderProgram::Unknown );
+        Q_ASSERT( buffer.pFormat != MxGpuProgram::Unknown );
         if( !reusableEntry.inUse && buffer.pFormat == format )
         {
             //buffer.pSize = 0; // set as taken

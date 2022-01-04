@@ -1,9 +1,9 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#ifndef MXSHADERPROGRAM_H
-#define MXSHADERPROGRAM_H
+#ifndef MXGPUPROGRAM_H
+#define MXGPUPROGRAM_H
 
 #include "mxdebug.h"
 #include "mxopengl.h"
@@ -13,7 +13,7 @@ class MxRenderer;
 class MxGpuArray;
 
 
-class MxShaderProgram
+class MxGpuProgram
 {
 public:
 
@@ -30,8 +30,8 @@ public:
     };
 
 
-    MxShaderProgram( MxRenderer *renderer = NULL );
-    virtual ~MxShaderProgram();
+    MxGpuProgram( MxRenderer *renderer = NULL );
+    virtual ~MxGpuProgram();
 
     virtual void discardGLResources();
 

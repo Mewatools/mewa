@@ -9,7 +9,7 @@
 #include "mxmatrix.h"
 #include "mxvector.h"
 #include "mxopengl.h"
-#include "mxshaderprogram.h"
+#include "mxgpuprogram.h"
 #include "mxrect.h"
 
 
@@ -18,7 +18,7 @@ class MxIconDraw;
 
 
 
-class MxIconProgram : public MxShaderProgram
+class MxIconProgram : public MxGpuProgram
 {
 public:
     MxIconProgram();

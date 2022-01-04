@@ -132,9 +132,9 @@ void MxIconProgram::draw( MxIconDraw &rectsArray )
     disableVao();
 }
 
-MxShaderProgram::VaoFormat MxIconProgram::vaoFormat()
+MxGpuProgram::VaoFormat MxIconProgram::vaoFormat()
 {
-    return MxShaderProgram::Float_2_2;
+    return MxGpuProgram::Float_2_2;
 }
 
 void MxIconProgram::enableAttributes()
