@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxpainter.h"
@@ -7,6 +7,7 @@
 #include "mxsvgpainter.h"
 #include "mxrenderer.h"
 #include "mxabstractatlas.h"
+#include "mxiconprogram.h"
 
 
 MxPainter::MxPainter()
@@ -134,10 +135,10 @@ MxIconDraw & MxPainter::iconDraw(IconColor color)
  return pIconDraw[color];
 }
 
-MxTextDraw & MxPainter::textDraw()
+/*MxTextDraw& MxPainter::textDraw()
 {
     return pTextDraw;
-}
+}*/
 
 /*! \class MxPainter
     \brief Holder to the different painters

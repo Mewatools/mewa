@@ -3,9 +3,9 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxvectordraw.h"
-#include "mxopengl.h"
 #include "mxrenderer.h"
 #include "mxbuffer.h"
+
 #include <cmath> // sqrt and pow
 
 

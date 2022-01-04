@@ -5,15 +5,12 @@
 #ifndef RANDOMTEXTUREAPP_H
 #define RANDOMTEXTUREAPP_H
 
-#include "mxrenderer.h"
 #include "testshaderprogram.h"
-
-// tmp
-#include "mxrenderer.h"
+#include "mxapplication.h"
 
 
-// Cross-platform interface
-class RandomTextureApp
+
+class RandomTextureApp : public MxApplication
 {
 public:
 	RandomTextureApp();
@@ -38,8 +35,6 @@ public:
 	MxTexture* pTexture;
 
 
-	// MxApplication data members
-	MxRenderer pRenderer;
 
 };
 

@@ -182,8 +182,8 @@ inline MxRectF centeredRect( const MxRectF &area, const MxVector2F &rectSize )
 
 inline MxRectF centeredRect( const MxRectF &area, const MxVector2I &rectSize )
 {
-    float rectW = rectSize.width();
-    float rectH = rectSize.height();
+    float rectW = (float)rectSize.width();
+    float rectH = (float)rectSize.height();
     Q_ASSERT( area.height() >= rectH && area.width() >= rectW );
     MxVector2F thumbPos;
     thumbPos[0] = area.left() + (area.width() - rectW)/2.0f;

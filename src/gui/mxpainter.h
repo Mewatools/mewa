@@ -8,7 +8,7 @@
 #include "mxdebug.h"
 #include "mxvectordraw.h"
 #include "mxicondraw.h"
-#include "mxtextdraw.h"
+//#include "mxtextdraw.h"
 #include "mxlist.h"
 
 
@@ -41,12 +41,12 @@ public:
 
     MxVectorDraw & vectorDraw();
     MxIconDraw & iconDraw( IconColor color );
-    MxTextDraw & textDraw();
+   // MxTextDraw & textDraw();
 
 private:
     MxVectorDraw pVectorDraw;
     MxIconDraw pIconDraw[ColorCount];
-    MxTextDraw pTextDraw;
+   // MxTextDraw pTextDraw;
 
     MxVector2F pTranslation;
 

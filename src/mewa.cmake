@@ -33,6 +33,15 @@ include_directories(
 
 list(APPEND SOURCE
     ${CMAKE_CURRENT_LIST_DIR}/events/mxmouseevent.cpp
+###### GUI #######
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxbuffer.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxguiaggregation.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxpainter.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxquaddraw.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxsvgpainter.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxtextdraw.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxvectordraw.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/gui/mxicondraw.cpp
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxwidget.cpp
 )
 
