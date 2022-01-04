@@ -130,6 +130,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>begin
 : <a class="el" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">MxList&lt; T, Initializer, Prealloc &gt;::Data</a>
 </li>
+<li>buffer
+: <a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html#ab55ba884f93407598976506d6b5adba5">MxRenderer::ReusableBuffer</a>
+</li>
 </ul>
 
 
@@ -156,12 +159,19 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c">MxTextDraw::Vertex</a>
 , <a class="el" href="struct_mx_vector_draw_1_1_vertex.html#ae53faea88ed1c928fc7154144192728b">MxVectorDraw::Vertex</a>
 </li>
+<li>gpuArray
+: <a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html#aec3240f4d4824b06f75055112ba8988c">MxRenderer::ReusableVbo</a>
+</li>
 </ul>
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>indexBufferView
 : <a class="el" href="union_mx_gpu_array_1_1_buffer_view.html#a2a4cddff98279b0eb5da5fc81b23e385">MxGpuArray::BufferView</a>
+</li>
+<li>inUse
+: <a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html#a6521415cab4e439e0c5c2ec0411925b3">MxRenderer::ReusableBuffer</a>
+, <a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html#a9915f6a1a1dcd8247a2da7c48423a160">MxRenderer::ReusableVbo</a>
 </li>
 </ul>
 
@@ -192,12 +202,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="class_mx_mouse_event.html#a8411d00dcc7147cd581571dbac3f317b">MxMouseEvent</a>
 </li>
 <li>pAlloc
-: <a class="el" href="class_mx_cached_gpu_array.html#a073c5f0d6ad1a1779be1b7de664cc90e">MxCachedGpuArray</a>
+: <a class="el" href="class_mx_buffer.html#a35eba053a19f4d3287d61d7d5db835b5">MxBuffer</a>
 </li>
 <li>pArray
-: <a class="el" href="class_mx_quad_draw.html#ac6ec703e59482bd348acc56b591bb3d9">MxQuadDraw</a>
-, <a class="el" href="class_mx_text_draw.html#ada79045a95028120e17a92ebf48572bf">MxTextDraw</a>
-, <a class="el" href="class_mx_vector_draw.html#ae33592639b8baea549ca561c2c90430f">MxVectorDraw</a>
+: <a class="el" href="class_mx_quad_draw.html#abb90facdd5a447de084f9ab9581ddc5d">MxQuadDraw</a>
+, <a class="el" href="class_mx_text_draw.html#ab5fa4b3d5304356b7ddb24e9a18d8fd7">MxTextDraw</a>
+, <a class="el" href="class_mx_vector_draw.html#a7a362e4318d08b1536948545e26f09e2">MxVectorDraw</a>
 </li>
 <li>pBackBuffers
 : <a class="el" href="class_mx_renderer.html#ae800adc152ac32f36b7088ac90e9896b">MxRenderer</a>
@@ -248,7 +258,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="class_mx_renderer.html#acd6fbdd1d214efd87d0614a9c878bd74">MxRenderer</a>
 </li>
 <li>pData
-: <a class="el" href="class_mx_cached_gpu_array.html#aeaa1d21e50063fd862a0242ca6c57eb7">MxCachedGpuArray</a>
+: <a class="el" href="class_mx_buffer.html#a25d3cc8f2b70dc449095a6830bf49349">MxBuffer</a>
 </li>
 <li>pDepthTestEnabled
 : <a class="el" href="class_mx_renderer.html#ac306982a1bc165480911ecd724207300">MxRenderer</a>
@@ -327,9 +337,16 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="class_mx_application.html#a0f457141d6de03e289355a1fea9d9e1b">MxApplication</a>
 , <a class="el" href="class_mx_gpu_program.html#a26c014ae9bee51fc1b9929243979d4b9">MxGpuProgram</a>
 , <a class="el" href="class_mx_shader_program.html#a52e7c2a3b2050b163798401e2e7449bd">MxShaderProgram</a>
+, <a class="el" href="class_test_window.html#a4711feae35568807bf5ac70143deeece">TestWindow</a>
 </li>
 <li>pResDesc
 : <a class="el" href="class_mx_texture.html#a3f001101c5c3f9602459952cb8532f47">MxTexture</a>
+</li>
+<li>pReusableMem
+: <a class="el" href="class_mx_renderer.html#a041a0422b510ddfb15e90f996e45c19e">MxRenderer</a>
+</li>
+<li>pReusableVbos
+: <a class="el" href="class_mx_renderer.html#a08b829a0080f473f57b1a2369d4d86c2">MxRenderer</a>
 </li>
 <li>pRootSignature
 : <a class="el" href="class_mx_renderer.html#a29342acd4c1a93f01e98e610a0299cfb">MxRenderer</a>
@@ -350,7 +367,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2">MxRenderer</a>
 </li>
 <li>pSize
-: <a class="el" href="class_mx_cached_gpu_array.html#a708d393bba69791d9c9d6581358c223c">MxCachedGpuArray</a>
+: <a class="el" href="class_mx_buffer.html#ae2a369662125fba06288049a8b5df4fb">MxBuffer</a>
 , <a class="el" href="class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009">MxGenericSubString&lt; T &gt;</a>
 , <a class="el" href="class_mx_widget.html#a98eb67160efeffc5e43782c8f5be4a72">MxWidget</a>
 </li>
@@ -392,9 +409,6 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>pVboId
 : <a class="el" href="class_mx_gpu_array.html#a1006a0a50b38d6924343c41bf013c586">MxGpuArray</a>
-</li>
-<li>pVboList
-: <a class="el" href="class_mx_renderer.html#a6dcd66f2a028ebaa442cea595671405b">MxRenderer</a>
 </li>
 <li>pVboSize
 : <a class="el" href="class_mx_gpu_array.html#a8208be77ee6fec4ad3d2d1e730842ffb">MxGpuArray</a>

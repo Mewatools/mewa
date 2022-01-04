@@ -115,33 +115,36 @@ $(document).ready(function(){initNavTree('mxquaddraw_8h_source.html',''); initRe
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXQUADDRAW_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXQUADDRAW_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxcachedgpuarray_8h.html">mxcachedgpuarray.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxrect_8h.html">mxrect.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxrect_8h.html">mxrect.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_buffer.html">MxBuffer</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_mx_quad_draw.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_quad_draw.html">MxQuadDraw</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_mx_quad_draw.html#ab559995882573aab23162c2ff16ab9a3">MxQuadDraw</a>( <a class="code" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> *buffer );</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830">vertexCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// used by MotionVectors</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_quad_draw.html#a7426e0c855b01d87b7aa2f5e3978909e">drawCustomRect</a>(<span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;worldRect, <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;indexRect );</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_mx_quad_draw.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_quad_draw.html">MxQuadDraw</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_mx_quad_draw.html#a481a22dbd05acb3defeae0584e8e3be1">MxQuadDraw</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_mx_quad_draw.html#a481a22dbd05acb3defeae0584e8e3be1">MxQuadDraw</a>( <a class="code" href="class_mx_buffer.html">MxBuffer</a> *buffer );</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_mx_quad_draw.html#ae3cb5458b809ebaa2f3eb132aa5314a8">~MxQuadDraw</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830">vertexCount</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_mx_quad_draw.html#ac6ec703e59482bd348acc56b591bb3d9">   23</a></span>&#160;    <a class="code" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> *<a class="code" href="class_mx_quad_draw.html#ac6ec703e59482bd348acc56b591bb3d9">pArray</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// used by MotionVectors</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_quad_draw.html#a7426e0c855b01d87b7aa2f5e3978909e">drawCustomRect</a>(<span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;worldRect, <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;indexRect );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXQUADDRAW_H</span></div>
-<div class="ttc" id="aclass_mx_cached_gpu_array_html"><div class="ttname"><a href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a></div><div class="ttdef"><b>Definition:</b> mxcachedgpuarray.h:14</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html"><div class="ttname"><a href="class_mx_quad_draw.html">MxQuadDraw</a></div><div class="ttdef"><b>Definition:</b> mxquaddraw.h:13</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html_a121c079f3cf5e3f614e4b2a3e29c6830"><div class="ttname"><a href="class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830">MxQuadDraw::vertexCount</a></div><div class="ttdeci">int vertexCount() const</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:14</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html_a7426e0c855b01d87b7aa2f5e3978909e"><div class="ttname"><a href="class_mx_quad_draw.html#a7426e0c855b01d87b7aa2f5e3978909e">MxQuadDraw::drawCustomRect</a></div><div class="ttdeci">void drawCustomRect(const MxRectF &amp;worldRect, const MxRectF &amp;indexRect)</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:23</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html_ab559995882573aab23162c2ff16ab9a3"><div class="ttname"><a href="class_mx_quad_draw.html#ab559995882573aab23162c2ff16ab9a3">MxQuadDraw::MxQuadDraw</a></div><div class="ttdeci">MxQuadDraw(MxCachedGpuArray *buffer)</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:9</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html_ac6ec703e59482bd348acc56b591bb3d9"><div class="ttname"><a href="class_mx_quad_draw.html#ac6ec703e59482bd348acc56b591bb3d9">MxQuadDraw::pArray</a></div><div class="ttdeci">MxCachedGpuArray * pArray</div><div class="ttdef"><b>Definition:</b> mxquaddraw.h:23</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_mx_quad_draw.html#abb90facdd5a447de084f9ab9581ddc5d">   26</a></span>&#160;    <a class="code" href="class_mx_buffer.html">MxBuffer</a> *<a class="code" href="class_mx_quad_draw.html#abb90facdd5a447de084f9ab9581ddc5d">pArray</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXQUADDRAW_H</span></div>
+<div class="ttc" id="aclass_mx_buffer_html"><div class="ttname"><a href="class_mx_buffer.html">MxBuffer</a></div><div class="ttdef"><b>Definition:</b> mxbuffer.h:14</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html"><div class="ttname"><a href="class_mx_quad_draw.html">MxQuadDraw</a></div><div class="ttdef"><b>Definition:</b> mxquaddraw.h:14</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html_a121c079f3cf5e3f614e4b2a3e29c6830"><div class="ttname"><a href="class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830">MxQuadDraw::vertexCount</a></div><div class="ttdeci">int vertexCount() const</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:25</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html_a481a22dbd05acb3defeae0584e8e3be1"><div class="ttname"><a href="class_mx_quad_draw.html#a481a22dbd05acb3defeae0584e8e3be1">MxQuadDraw::MxQuadDraw</a></div><div class="ttdeci">MxQuadDraw()</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:9</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html_a7426e0c855b01d87b7aa2f5e3978909e"><div class="ttname"><a href="class_mx_quad_draw.html#a7426e0c855b01d87b7aa2f5e3978909e">MxQuadDraw::drawCustomRect</a></div><div class="ttdeci">void drawCustomRect(const MxRectF &amp;worldRect, const MxRectF &amp;indexRect)</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:34</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html_abb90facdd5a447de084f9ab9581ddc5d"><div class="ttname"><a href="class_mx_quad_draw.html#abb90facdd5a447de084f9ab9581ddc5d">MxQuadDraw::pArray</a></div><div class="ttdeci">MxBuffer * pArray</div><div class="ttdef"><b>Definition:</b> mxquaddraw.h:26</div></div>
+<div class="ttc" id="aclass_mx_quad_draw_html_ae3cb5458b809ebaa2f3eb132aa5314a8"><div class="ttname"><a href="class_mx_quad_draw.html#ae3cb5458b809ebaa2f3eb132aa5314a8">MxQuadDraw::~MxQuadDraw</a></div><div class="ttdeci">virtual ~MxQuadDraw()</div><div class="ttdef"><b>Definition:</b> mxquaddraw.cpp:19</div></div>
 <div class="ttc" id="aclass_mx_rect_html"><div class="ttname"><a href="class_mx_rect.html">MxRect&lt; float &gt;</a></div></div>
-<div class="ttc" id="amxcachedgpuarray_8h_html"><div class="ttname"><a href="mxcachedgpuarray_8h.html">mxcachedgpuarray.h</a></div></div>
 <div class="ttc" id="amxrect_8h_html"><div class="ttname"><a href="mxrect_8h.html">mxrect.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

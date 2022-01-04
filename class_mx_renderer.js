@@ -1,6 +1,7 @@
 var class_mx_renderer =
 [
-    [ "VboList", "class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea", null ],
+    [ "ReusableBuffer", "struct_mx_renderer_1_1_reusable_buffer.html", "struct_mx_renderer_1_1_reusable_buffer" ],
+    [ "ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", "struct_mx_renderer_1_1_reusable_vbo" ],
     [ "Blending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88", [
       [ "NoBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92", null ],
       [ "BlendingText", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1", null ],
@@ -36,15 +37,16 @@ var class_mx_renderer =
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
     [ "bindTextureGL", "class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7", null ],
     [ "checkGLError", "class_mx_renderer.html#a40a5255a8935c102021f0891401b96aa", null ],
-    [ "clearGpuBuffers", "class_mx_renderer.html#a1089b9077cc78827b2712beb76fc946c", null ],
     [ "colorWheelProgram", "class_mx_renderer.html#a2f6a83c2af2e5de957458793cea06e6c", null ],
     [ "discardGLResources", "class_mx_renderer.html#aa82e135865d27cbebc0feeabd1977141", null ],
     [ "enableDepthTest", "class_mx_renderer.html#a0138bfde2825b1931721b737bc0696c5", null ],
     [ "getBuffer", "class_mx_renderer.html#af1e497a235b266aa66e89220f9673b10", null ],
+    [ "getTemporaryBuffer", "class_mx_renderer.html#adddb07220f283dbf03f6f4396be8119c", null ],
     [ "init", "class_mx_renderer.html#a23cde5e659854cbe46076843b63b0c46", null ],
     [ "initializeGL", "class_mx_renderer.html#ab794a319208e1031fcdb5040bdc15644", null ],
-    [ "newGpuBuffer", "class_mx_renderer.html#a717e3a20a5aabca312c3432e60e67068", null ],
+    [ "newGpuArray", "class_mx_renderer.html#a890ea57c859a5e32e14d86e5be820e53", null ],
     [ "newTexture", "class_mx_renderer.html#a2a702ff56f22eb32f648a237981af814", null ],
+    [ "recycleALl", "class_mx_renderer.html#a5b7f4b8bb92562ca41f5b952543c0a7e", null ],
     [ "releaseGpuArrays", "class_mx_renderer.html#ae3d50148ded3964181243b56ef928707", null ],
     [ "setBlending", "class_mx_renderer.html#a8b871801ae38e47312817cbfea6481b8", null ],
     [ "setIconProgram", "class_mx_renderer.html#a5a67b7c843e4369c0e40daf8aae65171", null ],
@@ -56,6 +58,7 @@ var class_mx_renderer =
     [ "setVectorProgram", "class_mx_renderer.html#aad0fa569388b8b048ed07dab78a4a062", null ],
     [ "setViewport", "class_mx_renderer.html#a6c2a079dc5508f9ca42feaf387e7b417", null ],
     [ "setWindowSize", "class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a", null ],
+    [ "uploadToGpu", "class_mx_renderer.html#afe45cf5c4d9dc9fa3eeeb66df44de5d4", null ],
     [ "windowSize", "class_mx_renderer.html#acb68f80c171c622673324dcd1acf7297", null ],
     [ "pBackBuffers", "class_mx_renderer.html#ae800adc152ac32f36b7088ac90e9896b", null ],
     [ "pBufferViews", "class_mx_renderer.html#a6e882389140ecdb5c9de259e8a642aa3", null ],
@@ -80,6 +83,8 @@ var class_mx_renderer =
     [ "pPipeline", "class_mx_renderer.html#a9bb52a38bba23b8427ff6827d91bdb26", null ],
     [ "pPipelineChanged", "class_mx_renderer.html#ad829500928d7b5fb06c854361c3e000b", null ],
     [ "pPipelinestate", "class_mx_renderer.html#ab448a78cc9928e7b2c36e2a8430b721c", null ],
+    [ "pReusableMem", "class_mx_renderer.html#a041a0422b510ddfb15e90f996e45c19e", null ],
+    [ "pReusableVbos", "class_mx_renderer.html#a08b829a0080f473f57b1a2369d4d86c2", null ],
     [ "pRootSignature", "class_mx_renderer.html#a29342acd4c1a93f01e98e610a0299cfb", null ],
     [ "pRootSignatureChanged", "class_mx_renderer.html#a7e633213f93926fd6a6e5b086d83edf3", null ],
     [ "pRtvHeaps", "class_mx_renderer.html#a811c86bbc3c5d8dd3620ca41122a658d", null ],
@@ -88,6 +93,5 @@ var class_mx_renderer =
     [ "pSwapchain", "class_mx_renderer.html#a84c72be3a9927e4766ad4c53fa07c5e1", null ],
     [ "pTexDescHeap", "class_mx_renderer.html#aedcafca82f9926f3c5144348ced4b2c4", null ],
     [ "pTextures", "class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962", null ],
-    [ "pVboList", "class_mx_renderer.html#a6dcd66f2a028ebaa442cea595671405b", null ],
     [ "pVectorProgram", "class_mx_renderer.html#abd039e86a5b54924cfcd6e922b73e444", null ]
 ];

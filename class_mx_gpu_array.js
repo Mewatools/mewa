@@ -15,7 +15,7 @@ var class_mx_gpu_array =
     [ "size", "class_mx_gpu_array.html#a211b2d35ee16ace52eb5915658231a95", null ],
     [ "type", "class_mx_gpu_array.html#a18c3860cf0f8266a68b5bf703b1f2567", null ],
     [ "upload", "class_mx_gpu_array.html#a2bcf33481fabdfa0d3442cb7b03391ba", null ],
-    [ "uploadToVbo", "class_mx_gpu_array.html#a7e8cbd0dc2649934ed69896f220482db", null ],
+    [ "uploadToVbo", "class_mx_gpu_array.html#a421d050a27bca7e661e4d6180e8ba459", null ],
     [ "pBuffer", "class_mx_gpu_array.html#aeb12ca80306a936c9b81771272761c7d", null ],
     [ "pFormat", "class_mx_gpu_array.html#aa48ff950e33ee259fc874956b40eaa3e", null ],
     [ "pTaken", "class_mx_gpu_array.html#a8c6bf1ef784e123f25849c0956c0d1e5", null ],

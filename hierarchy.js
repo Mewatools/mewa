@@ -11,20 +11,20 @@ var hierarchy =
       [ "PlusMinusSvg", "class_plus_minus_svg.html", null ]
     ] ],
     [ "MxApplication", "class_mx_application.html", null ],
+    [ "MxBuffer", "class_mx_buffer.html", null ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", null ],
     [ "MxClassInitializer< T >", "struct_mx_class_initializer.html", null ],
     [ "MxGenericStaticData< T, N >", "struct_mx_generic_static_data.html", null ],
     [ "MxGenericString< T >", "class_mx_generic_string.html", null ],
     [ "MxGenericSubString< T >", "class_mx_generic_sub_string.html", null ],
-    [ "MxGpuArray", "class_mx_gpu_array.html", [
-      [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", null ]
-    ] ],
+    [ "MxGpuArray", "class_mx_gpu_array.html", null ],
     [ "MxGpuProgram", "class_mx_gpu_program.html", null ],
     [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
-    [ "MxList< MxCachedGpuArray, MxClassInitializer< MxCachedGpuArray >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxGpuArray >", "class_mx_list.html", null ],
+    [ "MxList< MxRenderer::ReusableBuffer, MxClassInitializer< MxRenderer::ReusableBuffer >, 32 >", "class_mx_list.html", null ],
+    [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxMouseEvent", "class_mx_mouse_event.html", null ],
     [ "MxOpenGLFunctions", null, [
@@ -59,8 +59,11 @@ var hierarchy =
     [ "MxVectorDraw", "class_mx_vector_draw.html", null ],
     [ "MxWidget", "class_mx_widget.html", null ],
     [ "QOpenGLWindow", null, [
-      [ "QMewaWindow", "class_q_mewa_window.html", null ]
+      [ "QMewaWindow", "class_q_mewa_window.html", null ],
+      [ "TestWindow", "class_test_window.html", null ]
     ] ],
+    [ "MxRenderer::ReusableBuffer", "struct_mx_renderer_1_1_reusable_buffer.html", null ],
+    [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
     [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ]
 ];

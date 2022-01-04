@@ -5,6 +5,10 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "mxabstractsvg.h", "mxabstractsvg_8h.html", [
       [ "MxAbstractSvg", "class_mx_abstract_svg.html", "class_mx_abstract_svg" ]
     ] ],
+    [ "mxbuffer.cpp", "mxbuffer_8cpp.html", null ],
+    [ "mxbuffer.h", "mxbuffer_8h.html", [
+      [ "MxBuffer", "class_mx_buffer.html", "class_mx_buffer" ]
+    ] ],
     [ "mxguiaggregation.cpp", "mxguiaggregation_8cpp.html", null ],
     [ "mxguiaggregation.h", "mxguiaggregation_8h.html", [
       [ "MxGuiAggregation", "class_mx_gui_aggregation.html", "class_mx_gui_aggregation" ]

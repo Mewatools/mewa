@@ -1,7 +1,7 @@
 var searchData=
 [
   ['last_206',['last',['../class_mx_generic_string.html#aae2eaa9e8e7ed8c7b671f6c1a1b4332b',1,'MxGenericString::last()'],['../class_mx_list.html#a50ecee709dec8764326b404040854643',1,'MxList::last()']]],
-  ['lastdataandincrement_207',['lastDataAndIncrement',['../class_mx_cached_gpu_array.html#af261a0ac53d4567cb613d32380c238cf',1,'MxCachedGpuArray']]],
+  ['lastdataandincrement_207',['lastDataAndIncrement',['../class_mx_buffer.html#af72ff552a1b183e6fc43b0c75ed9f1c7',1,'MxBuffer']]],
   ['lastindexof_208',['lastIndexOf',['../class_mx_generic_string.html#ac0def77df4ba27db68a359b651773ad5',1,'MxGenericString']]],
   ['leaveevent_209',['leaveEvent',['../class_mx_widget.html#a7517c3a69b34ad7c4630fe143b2d573b',1,'MxWidget']]],
   ['left_210',['left',['../class_mx_rect.html#a57b88e2afe70507dc3676984507e2f32',1,'MxRect']]],

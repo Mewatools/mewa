@@ -1,18 +1,14 @@
 <map id="src/renderer/opengl/icondraw/mxicondraw.cpp" name="src/renderer/opengl/icondraw/mxicondraw.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="268,5,443,47"/>
-<area shape="rect" id="node2" href="$mxicondraw_8h.html" title=" " alt="" coords="118,95,219,121"/>
-<area shape="rect" id="node13" href="$mxgeometryutils_8h.html" title=" " alt="" coords="344,169,471,196"/>
-<area shape="rect" id="node15" title=" " alt="" coords="443,95,539,121"/>
-<area shape="rect" id="node16" href="$mxabstractatlas_8h.html" title=" " alt="" coords="244,95,368,121"/>
-<area shape="rect" id="node3" href="$mxquaddraw_8h.html" title=" " alt="" coords="23,169,128,196"/>
-<area shape="rect" id="node12" href="$mxthemeicons_8h.html" title=" " alt="" coords="152,169,268,196"/>
-<area shape="rect" id="node4" href="$mxcachedgpuarray_8h.html" title=" " alt="" coords="5,244,145,271"/>
-<area shape="rect" id="node9" href="$mxrect_8h.html" title=" " alt="" coords="271,244,341,271"/>
-<area shape="rect" id="node5" href="$opengl_2mxgpuarray_8h.html" title=" " alt="" coords="26,319,125,345"/>
-<area shape="rect" id="node6" href="$mxopengl_8h.html" title=" " alt="" coords="27,468,113,495"/>
-<area shape="rect" id="node7" href="$mxshaderprogram_8h.html" title=" " alt="" coords="57,393,192,420"/>
-<area shape="rect" id="node8" title=" " alt="" coords="188,468,272,495"/>
-<area shape="rect" id="node10" href="$mxvector_8h.html" title=" " alt="" coords="366,319,451,345"/>
-<area shape="rect" id="node11" title=" " alt="" coords="267,319,342,345"/>
-<area shape="rect" id="node14" title=" " alt="" coords="445,244,506,271"/>
+<area shape="rect" id="node1" title=" " alt="" coords="185,5,360,47"/>
+<area shape="rect" id="node2" href="$mxicondraw_8h.html" title=" " alt="" coords="161,95,262,121"/>
+<area shape="rect" id="node9" href="$mxgeometryutils_8h.html" title=" " alt="" coords="363,169,489,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="286,95,382,121"/>
+<area shape="rect" id="node12" href="$mxabstractatlas_8h.html" title=" " alt="" coords="5,95,129,121"/>
+<area shape="rect" id="node3" href="$mxquaddraw_8h.html" title=" " alt="" coords="233,169,339,196"/>
+<area shape="rect" id="node8" href="$mxthemeicons_8h.html" title=" " alt="" coords="93,169,209,196"/>
+<area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="251,244,321,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="284,393,368,420"/>
+<area shape="rect" id="node6" href="$mxvector_8h.html" title=" " alt="" coords="323,319,409,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="174,319,249,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="403,244,465,271"/>
 </map>

@@ -12,8 +12,9 @@ var searchData=
   ['bottom_35',['bottom',['../class_mx_rect.html#a22116f159e2cad3f924095b487e13611',1,'MxRect']]],
   ['bottomleft_36',['bottomLeft',['../class_mx_rect.html#afa136955e4da0e9e308945fcec51fe0f',1,'MxRect']]],
   ['bottomright_37',['bottomRight',['../class_mx_rect.html#a231cbbb5a002fabb60705dd0375e26ac',1,'MxRect']]],
-  ['bufferview_38',['BufferView',['../union_mx_gpu_array_1_1_buffer_view.html',1,'MxGpuArray']]],
-  ['build_39',['build',['../class_mx_icon_atlas.html#ae2e1d7cd2c62597d2d7b767259ab1e4f',1,'MxIconAtlas']]],
-  ['button_40',['button',['../class_mx_mouse_event.html#abf31b922a09c81a8bb489d4acb4e2ac6',1,'MxMouseEvent']]],
-  ['bytecount_41',['byteCount',['../class_mx_image.html#afe5b612b74e3bf42c9c333f6f54e4d42',1,'MxImage']]]
+  ['buffer_38',['buffer',['../struct_mx_renderer_1_1_reusable_buffer.html#ab55ba884f93407598976506d6b5adba5',1,'MxRenderer::ReusableBuffer']]],
+  ['bufferview_39',['BufferView',['../union_mx_gpu_array_1_1_buffer_view.html',1,'MxGpuArray']]],
+  ['build_40',['build',['../class_mx_icon_atlas.html#ae2e1d7cd2c62597d2d7b767259ab1e4f',1,'MxIconAtlas']]],
+  ['button_41',['button',['../class_mx_mouse_event.html#abf31b922a09c81a8bb489d4acb4e2ac6',1,'MxMouseEvent']]],
+  ['bytecount_42',['byteCount',['../class_mx_image.html#afe5b612b74e3bf42c9c333f6f54e4d42',1,'MxImage']]]
 ];

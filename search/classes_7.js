@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertex_707',['Vertex',['../struct_mx_text_draw_1_1_vertex.html',1,'MxTextDraw::Vertex'],['../struct_mx_vector_draw_1_1_vertex.html',1,'MxVectorDraw::Vertex']]]
+  ['reusablebuffer_720',['ReusableBuffer',['../struct_mx_renderer_1_1_reusable_buffer.html',1,'MxRenderer']]],
+  ['reusablevbo_721',['ReusableVbo',['../struct_mx_renderer_1_1_reusable_vbo.html',1,'MxRenderer']]]
 ];

@@ -5,8 +5,8 @@ var annotated_dup =
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", "class_mx_abstract_atlas" ],
     [ "MxAbstractSvg", "class_mx_abstract_svg.html", "class_mx_abstract_svg" ],
     [ "MxApplication", "class_mx_application.html", "class_mx_application" ],
+    [ "MxBuffer", "class_mx_buffer.html", "class_mx_buffer" ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", "class_mx_byte_array_ref" ],
-    [ "MxCachedGpuArray", "class_mx_cached_gpu_array.html", "class_mx_cached_gpu_array" ],
     [ "MxClassInitializer", "struct_mx_class_initializer.html", "struct_mx_class_initializer" ],
     [ "MxColorWheelProgram", "class_mx_color_wheel_program.html", "class_mx_color_wheel_program" ],
     [ "MxGenericStaticData", "struct_mx_generic_static_data.html", "struct_mx_generic_static_data" ],
@@ -37,5 +37,6 @@ var annotated_dup =
     [ "MxVectorProgram", "class_mx_vector_program.html", "class_mx_vector_program" ],
     [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ],
     [ "PlusMinusSvg", "class_plus_minus_svg.html", "class_plus_minus_svg" ],
-    [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ]
+    [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ],
+    [ "TestWindow", "class_test_window.html", "class_test_window" ]
 ];

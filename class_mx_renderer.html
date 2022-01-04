@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_mx_renderer.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -128,10 +129,17 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1634" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1679" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html">ReusableBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">Blending</a> { <br />
@@ -170,8 +178,6 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861e24cfd4b32e81f40873cd562e53ea"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt; <a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> &gt;, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">VboList</a></td></tr>
-<tr class="separator:a861e24cfd4b32e81f40873cd562e53ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -224,10 +230,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0138bfde2825b1931721b737bc0696c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab00857e2355d54f93fd1c34d9debd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7">bindTextureGL</a> (<a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> textureId, <a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> activeSlot=0)</td></tr>
 <tr class="separator:a0ab00857e2355d54f93fd1c34d9debd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717e3a20a5aabca312c3432e60e67068"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a717e3a20a5aabca312c3432e60e67068">newGpuBuffer</a> (<a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a> format)</td></tr>
-<tr class="separator:a717e3a20a5aabca312c3432e60e67068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1089b9077cc78827b2712beb76fc946c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a1089b9077cc78827b2712beb76fc946c">clearGpuBuffers</a> ()</td></tr>
-<tr class="separator:a1089b9077cc78827b2712beb76fc946c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe45cf5c4d9dc9fa3eeeb66df44de5d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#afe45cf5c4d9dc9fa3eeeb66df44de5d4">uploadToGpu</a> (<a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a> format, const char *data, unsigned int size)</td></tr>
+<tr class="separator:afe45cf5c4d9dc9fa3eeeb66df44de5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890ea57c859a5e32e14d86e5be820e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a890ea57c859a5e32e14d86e5be820e53">newGpuArray</a> (<a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a> format, unsigned int size)</td></tr>
+<tr class="separator:a890ea57c859a5e32e14d86e5be820e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddb07220f283dbf03f6f4396be8119c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_buffer.html">MxBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adddb07220f283dbf03f6f4396be8119c">getTemporaryBuffer</a> (int sizeEstimate=1024)</td></tr>
+<tr class="memdesc:adddb07220f283dbf03f6f4396be8119c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The returned buffer is automatically deleted after render.  <a href="class_mx_renderer.html#adddb07220f283dbf03f6f4396be8119c">More...</a><br /></td></tr>
+<tr class="separator:adddb07220f283dbf03f6f4396be8119c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7f4b8bb92562ca41f5b952543c0a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a5b7f4b8bb92562ca41f5b952543c0a7e">recycleALl</a> ()</td></tr>
+<tr class="separator:a5b7f4b8bb92562ca41f5b952543c0a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -273,10 +284,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae800adc152ac32f36b7088ac90e9896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab448a78cc9928e7b2c36e2a8430b721c"><td class="memItemLeft" align="right" valign="top">ID3D12PipelineState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ab448a78cc9928e7b2c36e2a8430b721c">pPipelinestate</a></td></tr>
 <tr class="separator:ab448a78cc9928e7b2c36e2a8430b721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b829a0080f473f57b1a2369d4d86c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt; <a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a> &gt;, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a08b829a0080f473f57b1a2369d4d86c2">pReusableVbos</a></td></tr>
+<tr class="separator:a08b829a0080f473f57b1a2369d4d86c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041a0422b510ddfb15e90f996e45c19e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html">ReusableBuffer</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt; <a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html">ReusableBuffer</a> &gt;, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a041a0422b510ddfb15e90f996e45c19e">pReusableMem</a></td></tr>
+<tr class="separator:a041a0422b510ddfb15e90f996e45c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7dad3ee7aa92a9749d8fd08d8d6673b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ad7dad3ee7aa92a9749d8fd08d8d6673b">pIconAtlas</a></td></tr>
 <tr class="separator:ad7dad3ee7aa92a9749d8fd08d8d6673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcd66f2a028ebaa442cea595671405b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">VboList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6dcd66f2a028ebaa442cea595671405b">pVboList</a></td></tr>
-<tr class="separator:a6dcd66f2a028ebaa442cea595671405b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf40cf1e02f64dd6be7f1dc4126c379d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxmatrix_8h.html#a4fbfefdb2fab88ec856ddb19dc4d469a">MxMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adf40cf1e02f64dd6be7f1dc4126c379d">pScreenProjectionMatrix</a></td></tr>
 <tr class="separator:adf40cf1e02f64dd6be7f1dc4126c379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -305,22 +318,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> keeps track of the rendering state and resources. </p>
 <p>The purpose of <a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> is to separate the rendering code from the application code, in order to isolate all graphics API calls. This way we can easily support multiple graphics APIs, such as Direct12, Metal, Vulkan and OpenGL.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mx_texture.html">MxTexture</a>, <a class="el" href="class_mx_gpu_array.html" title="The MxGpuArray class holds a graphics vertex buffer.">MxGpuArray</a> </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a861e24cfd4b32e81f40873cd562e53ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861e24cfd4b32e81f40873cd562e53ea">&#9670;&nbsp;</a></span>VboList</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt;<a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a>&gt;, 32&gt; <a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">MxRenderer::VboList</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae42b5ea733f1ea54d3ebec2bfc13ca88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae42b5ea733f1ea54d3ebec2bfc13ca88">&#9670;&nbsp;</a></span>Blending <span class="overload">[1/2]</span></h2>
 
@@ -516,23 +514,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1089b9077cc78827b2712beb76fc946c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1089b9077cc78827b2712beb76fc946c">&#9670;&nbsp;</a></span>clearGpuBuffers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxRenderer::clearGpuBuffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2f6a83c2af2e5de957458793cea06e6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f6a83c2af2e5de957458793cea06e6c">&#9670;&nbsp;</a></span>colorWheelProgram()</h2>
 
@@ -603,6 +584,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adddb07220f283dbf03f6f4396be8119c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddb07220f283dbf03f6f4396be8119c">&#9670;&nbsp;</a></span>getTemporaryBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_buffer.html">MxBuffer</a> * MxRenderer::getTemporaryBuffer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeEstimate</em> = <code>1024</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The returned buffer is automatically deleted after render. </p>
+
+</div>
+</div>
 <a id="a23cde5e659854cbe46076843b63b0c46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23cde5e659854cbe46076843b63b0c46">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -662,18 +663,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a717e3a20a5aabca312c3432e60e67068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717e3a20a5aabca312c3432e60e67068">&#9670;&nbsp;</a></span>newGpuBuffer()</h2>
+<a id="a890ea57c859a5e32e14d86e5be820e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890ea57c859a5e32e14d86e5be820e53">&#9670;&nbsp;</a></span>newGpuArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mx_cached_gpu_array.html">MxCachedGpuArray</a> * MxRenderer::newGpuBuffer </td>
+          <td class="memname"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> * MxRenderer::newGpuArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em></td><td>)</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -702,6 +713,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b7f4b8bb92562ca41f5b952543c0a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7f4b8bb92562ca41f5b952543c0a7e">&#9670;&nbsp;</a></span>recycleALl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::recycleALl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -924,6 +952,40 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe45cf5c4d9dc9fa3eeeb66df44de5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe45cf5c4d9dc9fa3eeeb66df44de5d4">&#9670;&nbsp;</a></span>uploadToGpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> * MxRenderer::uploadToGpu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mx_shader_program.html#a70a6301c018fdaea2fa02c03861101a0">MxShaderProgram::VaoFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1331,6 +1393,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a041a0422b510ddfb15e90f996e45c19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041a0422b510ddfb15e90f996e45c19e">&#9670;&nbsp;</a></span>pReusableMem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html">ReusableBuffer</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_buffer.html">ReusableBuffer</a>&gt;, 32&gt; MxRenderer::pReusableMem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b829a0080f473f57b1a2369d4d86c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b829a0080f473f57b1a2369d4d86c2">&#9670;&nbsp;</a></span>pReusableVbos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a>&gt;, 32&gt; MxRenderer::pReusableVbos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a29342acd4c1a93f01e98e610a0299cfb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29342acd4c1a93f01e98e610a0299cfb">&#9670;&nbsp;</a></span>pRootSignature</h2>
 
@@ -1445,20 +1535,6 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a> MxRenderer::pTextures[1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6dcd66f2a028ebaa442cea595671405b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dcd66f2a028ebaa442cea595671405b">&#9670;&nbsp;</a></span>pVboList</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mx_renderer.html#a861e24cfd4b32e81f40873cd562e53ea">VboList</a> MxRenderer::pVboList</td>
         </tr>
       </table>
 </div><div class="memdoc">
