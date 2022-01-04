@@ -1,7 +1,7 @@
 var searchData=
 [
   ['canappendwithoutrealloc_43',['canAppendWithoutRealloc',['../class_mx_generic_string.html#ae4443c106ef7ba13cc5ed53a7d470207',1,'MxGenericString']]],
-  ['canvassize_44',['canvasSize',['../class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40',1,'MxAbstractSvg::canvasSize() const =0'],['../class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40',1,'MxAbstractSvg::canvasSize() const =0'],['../class_down_arrow_svg.html#a6bc5a8ee415e630b4dd00738f5fc39f0',1,'DownArrowSvg::canvasSize()'],['../class_heart_svg.html#adaf7c4e59ac2e4ed61064addf54582e5',1,'HeartSvg::canvasSize()'],['../class_plus_minus_svg.html#a6d64a96b42d4f1ff88b618527e7dccdb',1,'PlusMinusSvg::canvasSize()']]],
+  ['canvassize_44',['canvasSize',['../class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40',1,'MxAbstractSvg::canvasSize()'],['../class_down_arrow_svg.html#a6bc5a8ee415e630b4dd00738f5fc39f0',1,'DownArrowSvg::canvasSize()'],['../class_heart_svg.html#adaf7c4e59ac2e4ed61064addf54582e5',1,'HeartSvg::canvasSize()'],['../class_plus_minus_svg.html#a6d64a96b42d4f1ff88b618527e7dccdb',1,'PlusMinusSvg::canvasSize()']]],
   ['center_45',['center',['../class_mx_rect.html#a4d845164f6f5e10b87b589c58a135572',1,'MxRect']]],
   ['centeredrect_46',['centeredRect',['../namespace_mx_geometry_utils.html#ae164a97bc449bcfa397ea2e8bba48441',1,'MxGeometryUtils::centeredRect(const MxRectF &amp;area, const MxVector2F &amp;rectSize)'],['../namespace_mx_geometry_utils.html#ab11ed9060ac8703979c081045f3db07f',1,'MxGeometryUtils::centeredRect(const MxRectF &amp;area, const MxVector2I &amp;rectSize)']]],
   ['centeredrectatpos_47',['centeredRectAtPos',['../namespace_mx_geometry_utils.html#a85cbb3532ae32a1d3f92a8124c222808',1,'MxGeometryUtils']]],

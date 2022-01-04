@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Mewa Framework" />
 <meta name="twitter:description" content="OpenGL based UI" />
 <!-- END twitter metadata -->
-<title>Mewa Framework: src/gui/svg/mxabstractsvg.h Source File</title>
+<title>Mewa Framework: src/gui -&gt; renderer Relation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/png" href="mewa.png"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('svg_2mxabstractsvg_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('dir_99d0482cf009f9d97a0877749b817f19.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,52 +103,14 @@ $(document).ready(function(){initNavTree('svg_2mxabstractsvg_8h_source.html','')
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">mxabstractsvg.h</div>  </div>
-</div><!--header-->
 <div class="contents">
-<a href="svg_2mxabstractsvg_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Copyright (C) 2020-2021 Mewatools &lt;hugo@mewatools.com&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** SPDX-License-Identifier: MIT License</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">****************************************************************************/</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXABSTRACTSVG_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXABSTRACTSVG_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxvector_8h.html">mxvector.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_svg_painter.html">MxSvgPainter</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_svg.html">MxAbstractSvg</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_mx_abstract_svg.html#a327335d4d8f656df696dac5a11927ee1">   21</a></span>&#160;    <a class="code" href="class_mx_abstract_svg.html#a327335d4d8f656df696dac5a11927ee1">MxAbstractSvg</a>(){}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40">   23</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> <a class="code" href="class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40">canvasSize</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_mx_abstract_svg.html#a7a921eb4a0ec0f3de114e05cd85a5752">   25</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_abstract_svg.html#a7a921eb4a0ec0f3de114e05cd85a5752">draw</a>( <a class="code" href="class_mx_svg_painter.html">MxSvgPainter</a> &amp;painter ) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="ttc" id="aclass_mx_abstract_svg_html"><div class="ttname"><a href="class_mx_abstract_svg.html">MxAbstractSvg</a></div><div class="ttdef"><b>Definition:</b> mxabstractsvg.h:28</div></div>
-<div class="ttc" id="aclass_mx_abstract_svg_html_a327335d4d8f656df696dac5a11927ee1"><div class="ttname"><a href="class_mx_abstract_svg.html#a327335d4d8f656df696dac5a11927ee1">MxAbstractSvg::MxAbstractSvg</a></div><div class="ttdeci">MxAbstractSvg()</div><div class="ttdef"><b>Definition:</b> mxabstractsvg.h:21</div></div>
-<div class="ttc" id="aclass_mx_abstract_svg_html_a7a921eb4a0ec0f3de114e05cd85a5752"><div class="ttname"><a href="class_mx_abstract_svg.html#a7a921eb4a0ec0f3de114e05cd85a5752">MxAbstractSvg::draw</a></div><div class="ttdeci">virtual void draw(MxSvgPainter &amp;painter)=0</div></div>
-<div class="ttc" id="aclass_mx_abstract_svg_html_ac70963a6106ed0eb8526930bc27cde40"><div class="ttname"><a href="class_mx_abstract_svg.html#ac70963a6106ed0eb8526930bc27cde40">MxAbstractSvg::canvasSize</a></div><div class="ttdeci">virtual MxVector2F canvasSize() const =0</div></div>
-<div class="ttc" id="aclass_mx_svg_painter_html"><div class="ttname"><a href="class_mx_svg_painter.html">MxSvgPainter</a></div><div class="ttdef"><b>Definition:</b> mxsvgpainter.h:16</div></div>
-<div class="ttc" id="aclass_mx_vector_html"><div class="ttname"><a href="class_mx_vector.html">MxVector&lt; 2, float &gt;</a></div></div>
-<div class="ttc" id="amxvector_8h_html"><div class="ttname"><a href="mxvector_8h.html">mxvector.h</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+<h3>gui &rarr; renderer Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/gui</th><th class="dirtab">Includes file in src/renderer</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="mxpainter_8cpp.html">mxpainter.cpp</a></td><td class="dirtab"><a class="el" href="dir_81ad5397e2f6e7d41ed68488a4d626a2.html">opengl</a>&#160;/&#160;<a class="el" href="dir_6728cb4d06bfad248c1327bbff1836c0.html">iconprogram</a>&#160;/&#160;<a class="el" href="mxiconprogram_8h.html">mxiconprogram.h</a></td></tr></table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_99d0482cf009f9d97a0877749b817f19.html">gui</a></li><li class="navelem"><a class="el" href="dir_c5641c002233c40e546fb4944ecf7616.html">svg</a></li><li class="navelem"><a class="el" href="svg_2mxabstractsvg_8h.html">mxabstractsvg.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_99d0482cf009f9d97a0877749b817f19.html">gui</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

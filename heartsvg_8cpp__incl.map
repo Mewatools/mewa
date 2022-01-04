@@ -1,11 +1,11 @@
 <map id="src/svg&#45;drawings/heartsvg.cpp" name="src/svg&#45;drawings/heartsvg.cpp">
 <area shape="rect" id="node1" title=" " alt="" coords="25,5,223,32"/>
 <area shape="rect" id="node2" href="$heartsvg_8h.html" title=" " alt="" coords="23,80,105,107"/>
-<area shape="rect" id="node4" href="$mxsvgpainter_8h.html" title=" " alt="" coords="129,80,239,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,123,181"/>
-<area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="136,304,221,331"/>
-<area shape="rect" id="node7" href="$mxvectordraw_8h.html" title=" " alt="" coords="210,155,323,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="177,379,261,405"/>
-<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="227,229,298,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="296,304,371,331"/>
+<area shape="rect" id="node6" href="$mxsvgpainter_8h.html" title=" " alt="" coords="129,80,239,107"/>
+<area shape="rect" id="node3" href="$mxabstractsvg_8h.html" title=" " alt="" coords="5,229,123,256"/>
+<area shape="rect" id="node4" href="$mxvector_8h.html" title=" " alt="" coords="117,304,203,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="158,379,242,405"/>
+<area shape="rect" id="node7" href="$mxvectordraw_8h.html" title=" " alt="" coords="198,155,311,181"/>
+<area shape="rect" id="node8" href="$mxrect_8h.html" title=" " alt="" coords="213,229,283,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="277,304,352,331"/>
 </map>

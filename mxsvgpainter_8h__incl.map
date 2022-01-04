@@ -1,8 +1,8 @@
-<map id="src/gui/svg/mxsvgpainter.h" name="src/gui/svg/mxsvgpainter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,183,32"/>
-<area shape="rect" id="node2" href="$mxvector_8h.html" title=" " alt="" coords="11,229,97,256"/>
-<area shape="rect" id="node4" href="$mxvectordraw_8h.html" title=" " alt="" coords="85,80,199,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="52,304,136,331"/>
-<area shape="rect" id="node5" href="$mxrect_8h.html" title=" " alt="" coords="103,155,173,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="171,229,246,256"/>
+<map id="src/gui/mxsvgpainter.h" name="src/gui/mxsvgpainter.h">
+<area shape="rect" id="node1" title=" " alt="" coords="12,5,164,32"/>
+<area shape="rect" id="node2" href="$mxvector_8h.html" title=" " alt="" coords="5,229,91,256"/>
+<area shape="rect" id="node4" href="$mxvectordraw_8h.html" title=" " alt="" coords="79,80,193,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="46,304,130,331"/>
+<area shape="rect" id="node5" href="$mxrect_8h.html" title=" " alt="" coords="97,155,167,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="165,229,240,256"/>
 </map>

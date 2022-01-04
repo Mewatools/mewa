@@ -1,5 +1,5 @@
-<map id="src/renderer/opengl/icondraw/mxiconprogram.h" name="src/renderer/opengl/icondraw/mxiconprogram.h">
-<area shape="rect" id="node1" title=" " alt="" coords="143,5,323,47"/>
+<map id="src/renderer/opengl/iconprogram/mxiconprogram.h" name="src/renderer/opengl/iconprogram/mxiconprogram.h">
+<area shape="rect" id="node1" title=" " alt="" coords="133,5,332,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="299,244,383,271"/>
 <area shape="rect" id="node3" href="$mxmatrix_8h.html" title=" " alt="" coords="8,95,92,121"/>
 <area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="339,169,425,196"/>

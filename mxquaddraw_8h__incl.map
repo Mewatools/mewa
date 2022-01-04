@@ -1,7 +1,7 @@
-<map id="src/renderer/opengl/icondraw/mxquaddraw.h" name="src/renderer/opengl/icondraw/mxquaddraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,47"/>
-<area shape="rect" id="node2" href="$mxrect_8h.html" title=" " alt="" coords="53,95,123,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="6,244,90,271"/>
-<area shape="rect" id="node4" href="$mxvector_8h.html" title=" " alt="" coords="45,169,131,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="155,169,229,196"/>
+<map id="src/gui/mxquaddraw.h" name="src/gui/mxquaddraw.h">
+<area shape="rect" id="node1" title=" " alt="" coords="13,5,161,32"/>
+<area shape="rect" id="node2" href="$mxrect_8h.html" title=" " alt="" coords="52,80,123,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,89,256"/>
+<area shape="rect" id="node4" href="$mxvector_8h.html" title=" " alt="" coords="45,155,130,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="154,155,229,181"/>
 </map>
