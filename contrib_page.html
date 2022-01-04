@@ -114,14 +114,14 @@ About the Mewa framework</h1>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Development</h1>
 <p>Mewa's source code contains various example apps, some of them only purpose is to test single functionalities of the Mewa application. This approach allows us to test and develop single functionalities independently from the whole application.</p>
-<p>Each test/example app is a self-contained Qt application located in the examples folder.</p>
+<p>Each test/example app is a self-contained Qt application.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">App   </th><th class="markdownTableHeadNone">Location   </th><th class="markdownTableHeadNone">Notes    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Canvas Widget   </td><td class="markdownTableBodyNone"><a href="examples/canvaswidget">examples/canvaswidget</a>   </td><td class="markdownTableBodyNone">Example of a <a class="el" href="class_mx_widget.html">MxWidget</a> drawing a rectangle. See <a class="el" href="class_mx_widget.html#aec62c154f7a5f93e45080e202c0e7d7d">MxWidget::paint()</a> for more information about widget painting    </td></tr>
+<td class="markdownTableBodyNone">Canvas Widget   </td><td class="markdownTableBodyNone"><a href="examples/simplewidget">examples/simplewidget</a>   </td><td class="markdownTableBodyNone">Example of a <a class="el" href="class_mx_widget.html">MxWidget</a> drawing a rectangle. See <a class="el" href="class_mx_widget.html#aec62c154f7a5f93e45080e202c0e7d7d">MxWidget::paint()</a> for more information about widget painting    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Color Wheel   </td><td class="markdownTableBodyNone"><a href="examples/test_colorwheel/">examples/test_colorwheel/</a>   </td><td class="markdownTableBodyNone">Test app running the ColorWheel shader    </td></tr>
+<td class="markdownTableBodyNone">Color Wheel   </td><td class="markdownTableBodyNone"><a href="src/renderer/opengl/colorwheelprogram/test_colorwheel">src/renderer/opengl/colorwheelprogram/test_colorwheel</a>   </td><td class="markdownTableBodyNone">OpenGL app to test the ColorWheel shader    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Store Buttons   </td><td class="markdownTableBodyNone"><a href="examples/storewindow/test_storebuttons/">examples/storewindow/test_storebuttons/</a>   </td><td class="markdownTableBodyNone"><b>1)</b> This app renders only the Store buttons (currently without text). <b>2)</b> Button rendering code is within <code>drawButtons()</code> function in file <a href="src/storewindow/mxstoreview.cpp">src/storewindow/mxstoreview.cpp</a>. <b>3)</b> The Store buttons Look&amp;Feel still needs work: <a href="https://github.com/Mewatools/mewa-artwork/discussions/5">store buttons discussion</a>    </td></tr>
 <tr class="markdownTableRowEven">

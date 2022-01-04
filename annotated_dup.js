@@ -28,7 +28,6 @@ var annotated_dup =
     [ "MxRect", "class_mx_rect.html", "class_mx_rect" ],
     [ "MxRefCounter", "class_mx_ref_counter.html", "class_mx_ref_counter" ],
     [ "MxRenderer", "class_mx_renderer.html", "class_mx_renderer" ],
-    [ "MxShaderProgram", "class_mx_shader_program.html", "class_mx_shader_program" ],
     [ "MxSvgPainter", "class_mx_svg_painter.html", "class_mx_svg_painter" ],
     [ "MxTextDraw", "class_mx_text_draw.html", "class_mx_text_draw" ],
     [ "MxTexture", "class_mx_texture.html", "class_mx_texture" ],

@@ -18,7 +18,11 @@ var hierarchy =
     [ "MxGenericString< T >", "class_mx_generic_string.html", null ],
     [ "MxGenericSubString< T >", "class_mx_generic_sub_string.html", null ],
     [ "MxGpuArray", "class_mx_gpu_array.html", null ],
-    [ "MxGpuProgram", "class_mx_gpu_program.html", null ],
+    [ "MxGpuProgram", "class_mx_gpu_program.html", [
+      [ "MxColorWheelProgram", "class_mx_color_wheel_program.html", null ],
+      [ "MxIconProgram", "class_mx_icon_program.html", null ],
+      [ "MxVectorProgram", "class_mx_vector_program.html", null ]
+    ] ],
     [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
@@ -43,11 +47,6 @@ var hierarchy =
         [ "MxGenericString< T >::DynamicData", "struct_mx_generic_string_1_1_dynamic_data.html", null ]
       ] ],
       [ "MxList< T, Initializer, Prealloc >::Data", "struct_mx_list_1_1_data.html", null ]
-    ] ],
-    [ "MxShaderProgram", "class_mx_shader_program.html", [
-      [ "MxColorWheelProgram", "class_mx_color_wheel_program.html", null ],
-      [ "MxIconProgram", "class_mx_icon_program.html", null ],
-      [ "MxVectorProgram", "class_mx_vector_program.html", null ]
     ] ],
     [ "MxSvgPainter", "class_mx_svg_painter.html", null ],
     [ "MxTextDraw", "class_mx_text_draw.html", null ],

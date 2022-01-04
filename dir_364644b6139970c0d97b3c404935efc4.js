@@ -5,8 +5,8 @@ var dir_364644b6139970c0d97b3c404935efc4 =
       [ "MxGpuArray", "class_mx_gpu_array.html", "class_mx_gpu_array" ],
       [ "BufferView", "union_mx_gpu_array_1_1_buffer_view.html", "union_mx_gpu_array_1_1_buffer_view" ]
     ] ],
-    [ "mxgpuprogram.cpp", "mxgpuprogram_8cpp.html", null ],
-    [ "mxgpuprogram.h", "mxgpuprogram_8h.html", [
+    [ "mxgpuprogram.cpp", "direct12_2mxgpuprogram_8cpp.html", null ],
+    [ "mxgpuprogram.h", "direct12_2mxgpuprogram_8h.html", [
       [ "MxGpuProgram", "class_mx_gpu_program.html", "class_mx_gpu_program" ]
     ] ],
     [ "mxrenderer.cpp", "direct12_2mxrenderer_8cpp.html", null ],

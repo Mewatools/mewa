@@ -21,9 +21,9 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="mxshaderprogram_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="22,-56.5 22,-75.5 123,-75.5 123,-56.5 22,-56.5"/>
-<text text-anchor="middle" x="72.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">mxshaderprogram.h</text>
+<g id="a_node2"><a xlink:href="opengl_2mxgpuprogram_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="28.5,-56.5 28.5,-75.5 116.5,-75.5 116.5,-56.5 28.5,-56.5"/>
+<text text-anchor="middle" x="72.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">mxgpuprogram.h</text>
 </a>
 </g>
 </g>

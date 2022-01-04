@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Mewa Framework" />
 <meta name="twitter:description" content="OpenGL based UI" />
 <!-- END twitter metadata -->
-<title>Mewa Framework: src/renderer/direct12/mxgpuprogram.cpp File Reference</title>
+<title>Mewa Framework: src/renderer/direct12/mxgpuprogram.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/png" href="mewa.png"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('mxgpuprogram_8cpp.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('direct12_2mxgpuprogram_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -105,24 +105,49 @@ $(document).ready(function(){initNavTree('mxgpuprogram_8cpp.html',''); initResiz
 
 <div class="header">
   <div class="headertitle">
-<div class="title">mxgpuprogram.cpp File Reference</div>  </div>
+<div class="title">mxgpuprogram.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mxgpuprogram_8h_source.html">mxgpuprogram.h</a>&quot;</code><br />
-<code>#include &quot;mxdebug.h&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for mxgpuprogram.cpp:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mxgpuprogram_8cpp__incl.svg" width="238" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</div></div><!-- contents -->
+<a href="direct12_2mxgpuprogram_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Copyright (C) 2021-2022 Mewatools &lt;hugo@mewatools.com&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** SPDX-License-Identifier: MIT License</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">****************************************************************************/</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXGPUPROGRAM_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXGPUPROGRAM_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_renderer.html">MxRenderer</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct </span>D3D12_GRAPHICS_PIPELINE_STATE_DESC;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_gpu_program.html">MxGpuProgram</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_mx_gpu_program.html#addee82fa134d15d23f5356c7334a97c7">MxGpuProgram</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">   19</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">setToPipeline</a>(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline) = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">init</a>(<a class="code" href="class_mx_renderer.html">MxRenderer</a>* renderer);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">   24</a></span>&#160;    <a class="code" href="class_mx_renderer.html">MxRenderer</a>* <a class="code" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">pRenderer</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="ttc" id="aclass_mx_gpu_program_html"><div class="ttname"><a href="class_mx_gpu_program.html">MxGpuProgram</a></div><div class="ttdef"><b>Definition:</b> mxgpuprogram.h:15</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_a02ff7d81dff918453edbf25a390f72ee"><div class="ttname"><a href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">MxGpuProgram::init</a></div><div class="ttdeci">void init(MxRenderer *renderer)</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:14</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_a313496a383692beda624217ac783a553"><div class="ttname"><a href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">MxGpuProgram::setToPipeline</a></div><div class="ttdeci">virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC *pipeline)=0</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_a37097679f3ed91f475ad74973d0a087c"><div class="ttname"><a href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">MxGpuProgram::pRenderer</a></div><div class="ttdeci">MxRenderer * pRenderer</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.h:24</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_addee82fa134d15d23f5356c7334a97c7"><div class="ttname"><a href="class_mx_gpu_program.html#addee82fa134d15d23f5356c7334a97c7">MxGpuProgram::MxGpuProgram</a></div><div class="ttdeci">MxGpuProgram()</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:9</div></div>
+<div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdoc">The MxRenderer keeps track of the rendering state and resources.</div><div class="ttdef"><b>Definition:</b> mxrenderer.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7bc5e25958a2fb25a8561f3aa0def6c5.html">renderer</a></li><li class="navelem"><a class="el" href="dir_364644b6139970c0d97b3c404935efc4.html">direct12</a></li><li class="navelem"><a class="el" href="mxgpuprogram_8cpp.html">mxgpuprogram.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7bc5e25958a2fb25a8561f3aa0def6c5.html">renderer</a></li><li class="navelem"><a class="el" href="dir_364644b6139970c0d97b3c404935efc4.html">direct12</a></li><li class="navelem"><a class="el" href="direct12_2mxgpuprogram_8h.html">mxgpuprogram.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

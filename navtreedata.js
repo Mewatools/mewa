@@ -70,10 +70,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_mx_icon_program.html#a46f441cd9362a5cbb71c2038552d024c",
-"class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be",
-"functions_func_v.html",
-"opengl_2mxgpuarray_8h_source.html"
+"class_mx_icon_atlas.html#a8af8ab08675061932f216182182e0c6e",
+"class_mx_renderer.html#ad7dad3ee7aa92a9749d8fd08d8d6673b",
+"functions_func_u.html",
+"opengl_2mxrenderer_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

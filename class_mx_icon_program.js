@@ -21,7 +21,7 @@ var class_mx_icon_program =
     [ "setColorFilter", "class_mx_icon_program.html#a30ee426e4654710743f176f0f8a5e699", null ],
     [ "setModelViewMatrix", "class_mx_icon_program.html#a5baacbfcc6882a157ecc3826ea7f561a", null ],
     [ "updateUniformValues", "class_mx_icon_program.html#a8c7cb21f7256541568836a16a24a7688", null ],
-    [ "vaoFormat", "class_mx_icon_program.html#aa7e62e217078e3d80e129351d3a6f50b", null ],
+    [ "vaoFormat", "class_mx_icon_program.html#a93e8828f127bbab3f706d0355740b4b8", null ],
     [ "matrixUniform2", "class_mx_icon_program.html#a75345c10891b25fd1ff85b19a8f93e1d", null ],
     [ "pColorFilter", "class_mx_icon_program.html#a1330a429f642002e7f47ce2fa0d00991", null ],
     [ "pColorUniform", "class_mx_icon_program.html#a63ff5264e5aafbcf24ac00f60e359de4", null ],
