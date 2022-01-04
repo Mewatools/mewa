@@ -47,6 +47,9 @@ void MxApplication::onRender()
         onResizeGL();
     }
     onDrawGL();
+
+    pRenderer.recycleALl();
+
 }
 
 void MxApplication::onResizeWindow( int width, int height )
@@ -173,8 +176,6 @@ void MxApplication::drawWidgetList()
         widget->paint(pPainterBuffer);
     }
     pPainterBuffer.render( pRenderer );
-
-    pRenderer.clearGpuBuffers();
 }
 
 void MxApplication::setMainWidget( MxWidget *widget )

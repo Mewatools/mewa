@@ -2,7 +2,7 @@
 
 # Basic widget example
 
-Compile and run the Qt project [examples/canvaswidget/canvaswidget.pro](examples/canvaswidget/canvaswidget.pro)
+Compile and run the Qt project [examples/canvaswidget/canvaswidget.pro](examples/simplewidget/simplewidget.pro)
 
 ![CanvasWidget example](doc/images/canvasExample.png)
 
@@ -28,11 +28,14 @@ void CanvasWidget::paint( MxPainter &painter )
 }
 \endcode
 
-**Drawing a rounded shape**
+**Now, lets modify the app and draw a rounded shape**
 
-Mewa being a OpenGl based framework uses triangles to draw all geometries, from rectangles to rounded shapes.
-Because these triangles have the special ability to draw anti-aliased filled curves inside them 
-let's called them Mewa triangles.
+Mewa being a GPU based framework uses triangles to draw all geometries. 
+We can use 2 filled triangles to draw a filled rectangle. But what if we want to draw a rounded corner rectangle?
+How do we draw the rounded corners?
+
+To draw curves Mewa uses, what we call, Mewa triangles.
+These triangles draw anti-aliased filled curves inside them.
 
 To draw a Mewa triangle we call MxVectorDraw::triangle(). The code below replaces
 the last MxVectorDraw::fillRect() call with a MxVectorDraw::triangle() call.

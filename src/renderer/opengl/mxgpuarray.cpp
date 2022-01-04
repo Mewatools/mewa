@@ -21,7 +21,7 @@ MxGpuArray::MxGpuArray()
 }
 
 
-void MxGpuArray::uploadToVbo( MxRenderer *renderer, char *data, unsigned int size )
+void MxGpuArray::uploadToVbo(MxRenderer *renderer, const char *data, unsigned int size )
 {
 
     if ( pVboId == 0 )

@@ -8,7 +8,7 @@
 
 #include "qmewawindow.h"
 #include "mxapplication.h"
-#include "canvaswidget.h"
+#include "simplewidget.h"
 
 int main(int argc, char *argv[])
 {
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     QMewaWindow glWindow;
 
     ///////////// setup Mx widget ////////////
-    CanvasWidget *canvas =  new CanvasWidget();
+    SimpleWidget *canvas =  new SimpleWidget();
     glWindow.setMainWidget(canvas);
     /////////////////////////////////////////
 

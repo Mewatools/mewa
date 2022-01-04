@@ -44,21 +44,21 @@ void MxPainter::initializeGL(MxRenderer *)
  */
 void MxPainter::prepareRender( MxRenderer &renderer )
 {
-    MxCachedGpuArray *vboBuffer = renderer.newGpuBuffer( MxVectorProgram::getVaoFormat() );
-    vboBuffer->reserveForAppend(9500);
-    pVectorDraw.pArray = vboBuffer;
+    MxBuffer *buffer = renderer.getTemporaryBuffer(9500);
+    pVectorDraw.pArray = buffer;
+    Q_ASSERT( buffer->size() == 0 );
 
-    vboBuffer = renderer.newGpuBuffer( MxShaderProgram::Float_2_2 );
-    vboBuffer->reserveForAppend(4800);
-    pIconDraw[MxPainter::OriginalColor].pArray = vboBuffer;
+    buffer = renderer.getTemporaryBuffer(4800);
+    pIconDraw[MxPainter::OriginalColor].pArray = buffer;
+    Q_ASSERT( buffer->size() == 0 );
 
-    vboBuffer = renderer.newGpuBuffer( MxShaderProgram::Float_2_2 );
-    vboBuffer->reserveForAppend(512);
-    pIconDraw[MxPainter::BlueColor].pArray = vboBuffer;
+    buffer = renderer.getTemporaryBuffer(512);
+    pIconDraw[MxPainter::BlueColor].pArray = buffer;
+    Q_ASSERT( buffer->size() == 0 );
 
-    vboBuffer = renderer.newGpuBuffer( MxShaderProgram::Float_2_2 );
-    vboBuffer->reserveForAppend(512);
-    pIconDraw[MxPainter::LightColor].pArray = vboBuffer;
+    buffer = renderer.getTemporaryBuffer(512);
+    pIconDraw[MxPainter::LightColor].pArray = buffer;
+    Q_ASSERT( buffer->size() == 0 );
 }
 
 
@@ -73,7 +73,6 @@ void MxPainter::render( MxRenderer &renderer )
         svgProgram->draw( pVectorDraw );
         renderer.checkGLError(__FILE__, __LINE__);
 
-        pVectorDraw.pArray->pSize = -1;
         pVectorDraw.pArray = NULL;
     }
 
@@ -91,8 +90,7 @@ void MxPainter::render( MxRenderer &renderer )
             renderer.setBlending( MxRenderer::BlendingImages );
             iconProgram->setModelViewMatrix(renderer.pScreenProjectionMatrix);
             iconProgram->setColorFilter( ifilter[i] );
-            iconProgram->drawRects( pIconDraw[i] );
-            pIconDraw[i].pArray->pSize = -1;
+            iconProgram->draw( pIconDraw[i] );
             pIconDraw[i].pArray = NULL;
         }
     }

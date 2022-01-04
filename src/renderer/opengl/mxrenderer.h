@@ -9,8 +9,9 @@
 #include "mxcolorwheelprogram.h"
 #include "mxvectorprogram.h"
 #include "mxlist.h"
-#include "mxcachedgpuarray.h"
 #include "mxiconprogram.h"
+#include "mxbuffer.h"
+#include "mxgpuarray.h"
 
 
 class MxShaderProgram;
@@ -51,14 +52,31 @@ public:
      void enableDepthTest( bool enable );
      void bindTextureGL(GLuint textureId , GLuint activeSlot = 0 );
 
-    MxCachedGpuArray* newGpuBuffer( MxShaderProgram::VaoFormat format );
-    void clearGpuBuffers();
+    MxGpuArray * uploadToGpu(MxShaderProgram::VaoFormat format, const char *data , unsigned int size);
+    // \TODO make it private
+    MxGpuArray *newGpuArray( MxShaderProgram::VaoFormat format, unsigned int size );
+    //! The returned buffer is automatically deleted after render.
+    MxBuffer *getTemporaryBuffer( int sizeEstimate = 1024 );
+    void recycleALl();
+
+
+
+    struct ReusableVbo
+       {
+           MxGpuArray gpuArray;
+           bool inUse;
+       };
+    MxList<ReusableVbo, MxClassInitializer<ReusableVbo>, 32> pReusableVbos;
+
+    struct ReusableBuffer
+       {
+           MxBuffer buffer;
+           bool inUse;
+       };
+     // \TODO fine tune list allocation
+    MxList<ReusableBuffer, MxClassInitializer<ReusableBuffer>, 32> pReusableMem;
 
     MxAbstractAtlas *pIconAtlas;
-
-    typedef MxList<MxCachedGpuArray, MxClassInitializer<MxCachedGpuArray>, 32> VboList;
-
-    VboList pVboList;
     MxMatrix pScreenProjectionMatrix; // ortho view matrix
 
 protected:

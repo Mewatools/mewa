@@ -5,7 +5,7 @@
 #ifndef MXGPUARRAY_H
 #define MXGPUARRAY_H
 
-#include "mxopengl.h"
+//#include "mxopengl.h"
 #include "mxshaderprogram.h"
 
 
@@ -18,7 +18,7 @@ public:
     MxGpuArray();
 
     // \deprecated
-    void uploadToVbo(MxRenderer *renderer, char *data, unsigned int size );
+    void uploadToVbo(MxRenderer *renderer, const char *data, unsigned int size );
     void upload( MxRenderer *renderer, char *data, int size, GLenum target = GL_ARRAY_BUFFER, GLenum usage = GL_DYNAMIC_DRAW );
     void deleteGL(MxRenderer *renderer);
 

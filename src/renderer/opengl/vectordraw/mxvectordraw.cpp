@@ -1,10 +1,11 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxvectordraw.h"
 #include "mxopengl.h"
 #include "mxrenderer.h"
+#include "mxbuffer.h"
 #include <cmath> // sqrt and pow
 
 
@@ -13,18 +14,13 @@ MxVectorDraw::MxVectorDraw()
 {
 }
 
-MxVectorDraw::MxVectorDraw( MxRenderer &renderer , MxVector2F *translation )
+MxVectorDraw::MxVectorDraw(MxBuffer *buffer , MxVector2F *translation )
 {
-    pArray = renderer.newGpuBuffer( MxShaderProgram::Float2_UChar4_Float2 );
+    pArray = buffer;
     pTranslation = translation;
     Q_ASSERT( pArray->size() == 0 );
 }
 
-MxVectorDraw::MxVectorDraw( MxCachedGpuArray *vbo, MxVector2F *translation )
-{
-    pArray = vbo;
-    pTranslation = translation;
-}
 
 void MxVectorDraw::clear()
 {

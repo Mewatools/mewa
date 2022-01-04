@@ -9,7 +9,7 @@
 #include "mxrect.h"
 
 
-class GpuBuffer;
+class MxBuffer;
 
 
 
@@ -19,10 +19,8 @@ public:
     MxTextDraw();
 
 
-    void drawTextCentered( const char *string, const MxRectF &rect, const MxVector4UC &color );
-
     const MxVector2F *pTranslation;
-    GpuBuffer *pArray;
+    MxBuffer *pArray;
 
     struct Vertex
     {

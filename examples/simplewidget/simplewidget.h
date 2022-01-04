@@ -2,18 +2,18 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#ifndef CANVASWIDGET_H
-#define CANVASWIDGET_H
+#ifndef SIMPLEWIDGET_H
+#define SIMPLEWIDGET_H
 
 #include "mxwidget.h"
 
 
 
-class CanvasWidget : public MxWidget
+class SimpleWidget : public MxWidget
 {
 public:
-    CanvasWidget();
-    virtual ~CanvasWidget();
+    SimpleWidget();
+    virtual ~SimpleWidget();
 
     virtual MxVector2F sizePolicy();
     virtual void sizeChanged();

@@ -3,7 +3,7 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxtextdraw.h"
-#include "mxcachedgpuarray.h"
+
 
 
 MxTextDraw::MxTextDraw()
@@ -11,10 +11,3 @@ MxTextDraw::MxTextDraw()
 {
 }
 
-
-
-void MxTextDraw::drawTextCentered( const char *string, const MxRectF &rect, const MxVector4UC &color )
-{
-
-
-}

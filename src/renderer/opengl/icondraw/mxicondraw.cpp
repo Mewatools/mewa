@@ -15,15 +15,15 @@ MxIconDraw::MxIconDraw()
 }
 
 
-MxIconDraw::MxIconDraw(MxRenderer &renderer, const MxVector2F *translation )
-    : MxQuadDraw(NULL)
+MxIconDraw::MxIconDraw(MxBuffer *buffer, const MxVector2F *translation )
+    : MxQuadDraw(buffer)
 {
-    pArray = renderer.newGpuBuffer( MxShaderProgram::Float_2_2 );
-
     pTranslation = translation;
-
     Q_ASSERT( pArray->size() == 0 );
 }
+
+MxIconDraw::~MxIconDraw()
+{}
 
 void MxIconDraw::clear()
 {

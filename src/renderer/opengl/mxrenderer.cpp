@@ -14,7 +14,6 @@ MxRenderer::MxRenderer()
     pDepthTestEnabled = false;
     pCurrentTexture = 99999; //zero is reserved
     pCurrentActiveTextureSlot = 0;
-    pVboList.reserve(16);
 }
 
 void MxRenderer::discardGLResources()
@@ -23,7 +22,7 @@ void MxRenderer::discardGLResources()
     pColorWheelEffect.discardGLResources();
     pDepthTestEnabled = false;
     pCurrentTexture = 99999; //zero is reserved
-    pCurrentActiveTextureSlot = GL_TEXTURE0;
+    pCurrentActiveTextureSlot = 0;
 
     pIconProgram.discardGLResources();
     pVectorProgram.discardGLResources();
@@ -32,7 +31,7 @@ void MxRenderer::discardGLResources()
 void MxRenderer::initializeGL()
 {
     pIconProgram.init( this );
-    pIconProgram.initializeGL();
+    pIconProgram.initialize();
 
     MxVector4F windowColor = MxThemeColors::clearColor;
     glClearColor( windowColor[0], windowColor[1], windowColor[2], 1.0f );
@@ -153,35 +152,77 @@ void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
     glBindTexture( GL_TEXTURE_2D, pCurrentTexture );
 }
 
-MxCachedGpuArray *MxRenderer::newGpuBuffer( MxShaderProgram::VaoFormat format )
+
+MxGpuArray *MxRenderer::uploadToGpu( MxShaderProgram::VaoFormat format, const char *data, unsigned int size )
+{
+    MxGpuArray *gpuArray = newGpuArray( format, size );
+    gpuArray->uploadToVbo( this, data, size );
+    return gpuArray;
+}
+
+MxGpuArray *MxRenderer::newGpuArray( MxShaderProgram::VaoFormat format, unsigned int size )
 {
     // find first available buffer
-    int vboCount = pVboList.size();
+    int vboCount = pReusableVbos.size();
     for(int i=0; i<vboCount; ++i)
     {
-        MxCachedGpuArray &buffer = pVboList[i];
+        ReusableVbo &reusableEntry = pReusableVbos[i];
+        MxGpuArray &buffer = reusableEntry.gpuArray;
         Q_ASSERT( buffer.pFormat != MxShaderProgram::Unknown );
-        if( buffer.size() == -1 && buffer.pFormat == format )
+        if( !reusableEntry.inUse && buffer.pFormat == format )
         {
-            buffer.pSize = 0; // set as taken
+            //buffer.pSize = 0; // set as taken
+            reusableEntry.inUse = true;
             return &buffer;
         }
     }
 
-    MxCachedGpuArray *buffer = pVboList.appendAndGet();
-    buffer->pFormat = format;
-    Q_ASSERT( buffer->size() == 0 );
-    return buffer;
+    ReusableVbo *newEntry = pReusableVbos.appendAndGet();
+    newEntry->gpuArray.pFormat = format;
+    newEntry->inUse = true;
+    Q_ASSERT( newEntry->gpuArray.pVboSize == 0 );
+    return &(newEntry->gpuArray);
 }
 
-
-void MxRenderer::clearGpuBuffers()
+MxBuffer* MxRenderer::getTemporaryBuffer( int sizeEstimate )
 {
-    int vboCount = pVboList.size();
-    for(int i=0; i<vboCount; ++i)
+    int count = pReusableMem.size();
+    for(int i=0; i<count; ++i)
     {
-        MxCachedGpuArray &buffer = pVboList[i];
-        buffer.pSize = -1;
+        // \TODO find the best size fit
+        ReusableBuffer &entry = pReusableMem[i];
+        if(entry.inUse == false)
+        {
+               Q_ASSERT ( entry.buffer.size() == 0 );
+        entry.inUse = true;
+            return &(entry.buffer);
+        }
+    }
+
+    ReusableBuffer *newEntry = pReusableMem.appendAndGet();
+    newEntry->buffer.reserveForAppend( sizeEstimate );
+    newEntry->inUse = true;
+    return &(newEntry->buffer);
+}
+
+void MxRenderer::recycleALl()
+{
+    int count = pReusableVbos.size();
+    for(int i=0; i<count; ++i)
+    {
+        // \TODO find the best size fit
+        ReusableVbo &vbo = pReusableVbos[i];
+        vbo.inUse = false;
+    }
+
+
+    count = pReusableMem.size();
+    for(int i=0; i<count; ++i)
+    {
+        ReusableBuffer &bufferEntry = pReusableMem[i];
+        bufferEntry.buffer.clear();
+        bufferEntry.inUse = false;
     }
 }
+
 

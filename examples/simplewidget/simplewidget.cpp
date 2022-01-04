@@ -2,34 +2,34 @@
 ** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#include "canvaswidget.h"
+#include "simplewidget.h"
 #include "mxpainter.h"
 #include "mxmouseevent.h"
 
 
 
-CanvasWidget::CanvasWidget()
+SimpleWidget::SimpleWidget()
 {
     pDraggingRect = MxRectF(30.0f, 80.0f, 30.0f, 80.0f );
     pIsHovering  = false;
 }
 
-CanvasWidget::~CanvasWidget()
+SimpleWidget::~SimpleWidget()
 {}
 
 
-MxVector2F CanvasWidget::sizePolicy()
+MxVector2F SimpleWidget::sizePolicy()
 {
     // take whole available area
     return MxVector2F(0.0f, 0.0f);
 }
 
-void CanvasWidget::sizeChanged()
+void SimpleWidget::sizeChanged()
 {
     // called when resizing widget
 }
 
-void CanvasWidget::mousePressEvent( MxMouseEvent &event )
+void SimpleWidget::mousePressEvent( MxMouseEvent &event )
 {
     const MxVector2F &mousePos = event.pos();
     if( pDraggingRect.contains(mousePos) )
@@ -40,7 +40,7 @@ void CanvasWidget::mousePressEvent( MxMouseEvent &event )
     event.accept(this); // this widget will receive all mouse-move events until release
 }
 
-void CanvasWidget::mouseMoveEvent( MxMouseEvent &event )
+void SimpleWidget::mouseMoveEvent( MxMouseEvent &event )
 {
 
     if( event.isAccepted() ) // dragging
@@ -58,11 +58,11 @@ void CanvasWidget::mouseMoveEvent( MxMouseEvent &event )
     }
 }
 
-void CanvasWidget::mouseReleaseEvent( MxMouseEvent &event )
+void SimpleWidget::mouseReleaseEvent( MxMouseEvent &event )
 {
 }
 
-void CanvasWidget::paint( MxPainter &painter )
+void SimpleWidget::paint( MxPainter &painter )
 {
     const MxVector2F &areaSize = size();
     MxRectF areaRect(areaSize);

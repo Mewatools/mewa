@@ -1,20 +1,20 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
-#ifndef MXCACHEDGPUARRAY_H
-#define MXCACHEDGPUARRAY_H
-
-#include "mxgpuarray.h"
+#ifndef MXBUFFER_H
+#define MXBUFFER_H
 
 
-/*! Keeps in RAM a copy of the data stored in vbo (MxGpuArray)
+/*!
+  Holds data to be uploaded to GPU.
+ Buffers created from MxRenderer::getReusableBuffer are valid for one frame render
  */
-class MxCachedGpuArray : public MxGpuArray
+class MxBuffer
 {
 public:
-    MxCachedGpuArray();
-    virtual ~MxCachedGpuArray();
+    MxBuffer();
+    virtual ~MxBuffer();
 
     void reserveForAppend( int size );
     char* alloc( int size, int growBy );
@@ -26,14 +26,11 @@ public:
     const char* data() const;
     char* end();
 
-    void uploadGL(MxRenderer *renderer);
-
 
 
     char *pData;
     int pSize;
     int pAlloc;
-
 };
 
 

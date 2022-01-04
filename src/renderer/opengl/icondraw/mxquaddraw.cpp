@@ -3,13 +3,24 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxquaddraw.h"
+#include "mxbuffer.h"
 
 
+MxQuadDraw::MxQuadDraw()
+{
+    pArray = NULL;
+}
 
-MxQuadDraw::MxQuadDraw( MxCachedGpuArray *buffer )
+MxQuadDraw::MxQuadDraw(MxBuffer *buffer )
 {
     pArray = buffer;
 }
+
+MxQuadDraw::~MxQuadDraw()
+{
+
+}
+
 
 int MxQuadDraw::vertexCount() const
 {

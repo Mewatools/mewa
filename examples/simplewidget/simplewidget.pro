@@ -9,8 +9,8 @@ include(../../src/qtmewa.pri)
 INCLUDEPATH += .
 
 SOURCES += $$PWD/main.cpp \
-           $$PWD/canvaswidget.cpp
+           $$PWD/simplewidget.cpp
 
-HEADERS += $$PWD/canvaswidget.h
+HEADERS += $$PWD/simplewidget.h
 
 

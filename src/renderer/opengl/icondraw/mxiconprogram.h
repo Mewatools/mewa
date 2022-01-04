@@ -25,7 +25,7 @@ public:
     virtual ~MxIconProgram();
 
     void init( MxRenderer *renderer );
-    void initializeGL();
+    void initialize();
 
     void setModelViewMatrix( const MxMatrix &matrix );
     MxMatrix modelViewMatrix() const;
@@ -39,15 +39,10 @@ public:
     };
 
     void setColorFilter(const ColorFilter filter );
-    //void drawTextureRectsArray( GpuBuffer &array );
-    void drawRects(MxIconDraw &rectsArray );
-    void drawTriangleStrip( const GLfloat *textureValues, const GLfloat *destValues, int numPoints );
+    void draw(MxIconDraw &rectsArray );
 
-    static MxShaderProgram::VaoFormat getVaoFormat();
-    virtual VaoFormat vaoFormat(); // \TODO delete this member
-    virtual void enableAttributes(); // \TODO add arg VaoFormat to this member
-    void enableAttributes( VaoFormat format ); // \TODO add arg VaoFormat to this member
-    virtual void disableAttributes();
+    virtual VaoFormat vaoFormat();
+    virtual void enableAttributes();
 
 
 

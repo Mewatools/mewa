@@ -1,17 +1,16 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXVECTORDRAW_H
 #define MXVECTORDRAW_H
 
-#include "mxcachedgpuarray.h"
 #include "mxrect.h"
 
 
 
 class MxRenderer;
-
+class MxBuffer;
 
 
 class MxVectorDraw
@@ -35,8 +34,9 @@ public:
 
 
     MxVectorDraw();
-    MxVectorDraw( MxRenderer &renderer, MxVector2F *translation );
-    MxVectorDraw( MxCachedGpuArray *vbo, MxVector2F *translation );
+    MxVectorDraw( MxBuffer *buffer, MxVector2F *translation );
+
+
 
     void clear();
     int pointCount() const;
@@ -104,7 +104,7 @@ private:
 
 
 public:
-    MxCachedGpuArray *pArray;
+    MxBuffer *pArray;
     MxVector2F *pTranslation;
 
 

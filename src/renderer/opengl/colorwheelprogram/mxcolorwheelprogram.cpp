@@ -219,8 +219,6 @@ void MxColorWheelProgram::setSmoothEdge( float threshold )
 void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
 {
 
-    MxCachedGpuArray *vboBuffer = renderer.newGpuBuffer( vaoFormat() );
-
     GLfloat afVertices[] = {
         rect.left(), rect.bottom(), 0.0f, 0.0f,
         rect.right(),rect.bottom(), 1.0f, 0.0f,
@@ -230,8 +228,11 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
         rect.right(),rect.bottom(), 1.0f, 0.0f
     };
 
-    vboBuffer->uploadToVbo( &renderer, (char*)afVertices, 6*4*sizeof(GLfloat) );
-    enableVao(vboBuffer);
+    // \TODO should avoid uploading the same data everytime ??
+    MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), (char*)afVertices, 6*4*sizeof(GLfloat) );
+
+
+    enableVao(gpuArray);
 
     if( pUpdates & BackgroundColor ) {
         pRenderer->glUniform3fv(pColorUniform, 1, pBackgroundColor.constData());
@@ -246,8 +247,7 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
         pRenderer->glUniformMatrix4fv(pMatrixUniform, 1, GL_FALSE, pModelview.constData());
     }
     pUpdates = 0;
-    glDrawArrays(GL_TRIANGLES, 0, 6);
-    pRenderer->checkGLError(__FILE__, __LINE__);
+    pRenderer->glDrawArrays(GL_TRIANGLES, 0, 6);
     disableVao();
 }
 

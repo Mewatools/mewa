@@ -5,14 +5,17 @@
 #ifndef MXQUADDRAW_H
 #define MXQUADDRAW_H
 
-#include "mxcachedgpuarray.h"
 #include "mxrect.h"
+
+class MxBuffer;
 
 
 class MxQuadDraw
 {
 public:
-    MxQuadDraw( MxCachedGpuArray *buffer );
+    MxQuadDraw();
+    MxQuadDraw( MxBuffer *buffer );
+    virtual ~MxQuadDraw();
 
     int vertexCount() const;
 
@@ -20,7 +23,7 @@ public:
     void drawCustomRect(const MxRectF &worldRect, const MxRectF &indexRect );
 
 
-    MxCachedGpuArray *pArray;
+    MxBuffer *pArray;
 };
 
 #endif // MXQUADDRAW_H

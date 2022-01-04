@@ -27,7 +27,7 @@ void MxIconProgram::init( MxRenderer *renderer )
     pRenderer = renderer;
 }
 
-void MxIconProgram::initializeGL()
+void MxIconProgram::initialize()
 {
     Q_ASSERT( NULL != pRenderer );
 
@@ -121,33 +121,15 @@ void MxIconProgram::setColorFilter( const ColorFilter filter )
     }
 }
 
-void MxIconProgram::drawRects( MxIconDraw &rectsArray )
+void MxIconProgram::draw( MxIconDraw &rectsArray )
 {
-    rectsArray.pArray->uploadGL(pRenderer);
-    enableVao( rectsArray.pArray );
+    MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), rectsArray.pArray->data(), rectsArray.pArray->size() );
+    enableVao( gpuArray );
     updateUniformValues();
     pRenderer->glUniform1i(textureUniform2, 0); // \TODO flag it to avoid setting always
+
     pRenderer->glDrawArrays(GL_TRIANGLES, 0, rectsArray.vertexCount());
     disableVao();
-
-}
-
-/*!
-  Draws a 2D triangle strip. To draw a square only needs 4 points.
-  */
-void MxIconProgram::drawTriangleStrip( const GLfloat *textureValues, const GLfloat *destValues, int numPoints )
-{
-    updateUniformValues();
-    pRenderer->glVertexAttribPointer(vertexAttr2, 2, GL_FLOAT, GL_FALSE, 0, destValues);
-    pRenderer->glVertexAttribPointer(texCoordAttr2, 2, GL_FLOAT, GL_FALSE, 0, textureValues);
-    pRenderer->glUniform1i(textureUniform2, 0);
-    pRenderer->glDrawArrays(GL_TRIANGLE_STRIP, 0, numPoints);
-    pUpdates = 0;
-}
-
-MxShaderProgram::VaoFormat MxIconProgram::getVaoFormat()
-{
-    return MxShaderProgram::Float_2_2;
 }
 
 MxShaderProgram::VaoFormat MxIconProgram::vaoFormat()
@@ -161,22 +143,6 @@ void MxIconProgram::enableAttributes()
     pRenderer->glEnableVertexAttribArray(texCoordAttr2);
     pRenderer->glVertexAttribPointer(vertexAttr2, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), 0);
     pRenderer->glVertexAttribPointer(texCoordAttr2, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (void*)(2*sizeof(GLfloat)));
-}
-
-void MxIconProgram::enableAttributes( VaoFormat format )
-{
-    Q_ASSERT( MxShaderProgram::Float_3_2 == format );
-    pRenderer->glEnableVertexAttribArray(vertexAttr2);
-    pRenderer->glEnableVertexAttribArray(texCoordAttr2);
-    pRenderer->glVertexAttribPointer(vertexAttr2, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), 0);
-    pRenderer->glVertexAttribPointer(texCoordAttr2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)(3*sizeof(GLfloat)));
-}
-
-void MxIconProgram::disableAttributes()
-{
-    pRenderer->glBindBuffer(GL_ARRAY_BUFFER, 0);
-    pRenderer->glDisableVertexAttribArray(vertexAttr2);
-    pRenderer->glDisableVertexAttribArray(texCoordAttr2);
 }
 
 

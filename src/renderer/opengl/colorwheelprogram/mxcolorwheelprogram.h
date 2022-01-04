@@ -6,7 +6,7 @@
 #define MXCOLORWHEELPROGRAM_H
 
 #include "mxdebug.h"
-#include "mxopengl.h"
+//#include "mxopengl.h"
 #include "mxshaderprogram.h"
 #include "mxmatrix.h"
 #include "mxrect.h"

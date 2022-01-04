@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxvectorprogram.h"
@@ -141,8 +141,9 @@ void MxVectorProgram::setMatrix( const MxMatrix &matrix )
 
 void MxVectorProgram::draw( MxVectorDraw &stream )
 {
-    stream.pArray->uploadGL(pRenderer);
-    enableVao( stream.pArray );
+    MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), stream.pArray->data(), stream.pArray->size() );
+
+    enableVao( gpuArray );
     pRenderer->glDrawArrays( GL_TRIANGLES , 0, stream.pointCount() );
     disableVao();
 }

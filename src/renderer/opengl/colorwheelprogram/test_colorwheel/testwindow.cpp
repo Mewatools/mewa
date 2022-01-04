@@ -59,6 +59,6 @@ void TestWindow::paintGL()
     program->setSmoothEdge( 0.0f );
     program->draw( wheelRect, pRenderer );
 
-    pRenderer.clearGpuBuffers();
+    pRenderer.recycleALl();
 
 }
