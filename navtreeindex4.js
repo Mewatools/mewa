@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"namespace_mx_geometry_utils.html#a4d7c69e5970e0af68102c52f6b5b22d6":[2,0,0,7],
 "namespace_mx_geometry_utils.html#a63efb8b5d4ebad5c92aa64f589f1c6d6":[2,0,0,5],
 "namespace_mx_geometry_utils.html#a6b0ff603e8f84b01a299b338f0cda17a":[2,0,0,8],
 "namespace_mx_geometry_utils.html#a7c3e334d36b91a12cb52cb153c781bdb":[2,0,0,6],

@@ -19,6 +19,7 @@ var class_mx_gpu_program =
     [ "enableVao", "class_mx_gpu_program.html#aa6557f7db6e2f76e7b793cf124cc1dfb", null ],
     [ "init", "class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee", null ],
     [ "isInitialized", "class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8", null ],
+    [ "isInitialized", "class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8", null ],
     [ "programId", "class_mx_gpu_program.html#ad9ad3f87b6614ba2cb944ef99f168eb3", null ],
     [ "setToPipeline", "class_mx_gpu_program.html#a313496a383692beda624217ac783a553", null ],
     [ "vaoFormat", "class_mx_gpu_program.html#ab0824743c8509c9a990631553b2e2976", null ],

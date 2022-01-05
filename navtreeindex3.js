@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"dir_ff06f8c973899712029e39f18474ef3f.html":[4,0,0,7,1,0],
 "dir_ffbadbfe2cec8b9fbf400e495e1b4bf5.html":[4,0,0,6,0],
 "direct12_2colorwheelprogram_2mxcolorwheelprogram_8h.html":[4,0,0,7,0,0,0],
 "direct12_2colorwheelprogram_2mxcolorwheelprogram_8h_source.html":[4,0,0,7,0,0,0],
@@ -22,8 +23,8 @@ var NAVTREEINDEX3 =
 "downarrowsvg_8h.html":[4,0,0,8,1],
 "downarrowsvg_8h_source.html":[4,0,0,8,1],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "namespace_mx_geometry_utils.html":[2,0,0],
 "namespace_mx_geometry_utils.html#a08afdd9c820096ed9a3ec73303cc16d2":[2,0,0,13],
 "namespace_mx_geometry_utils.html#a0e44742e6bdd01542b71caf565da1cd6":[2,0,0,9],
-"namespace_mx_geometry_utils.html#a4049e7ac6d4fe47d8053c61796dcd30c":[2,0,0,11],
-"namespace_mx_geometry_utils.html#a4d7c69e5970e0af68102c52f6b5b22d6":[2,0,0,7]
+"namespace_mx_geometry_utils.html#a4049e7ac6d4fe47d8053c61796dcd30c":[2,0,0,11]
 };
