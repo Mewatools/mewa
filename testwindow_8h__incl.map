@@ -1,5 +1,10 @@
 <map id="src/renderer/opengl/colorwheelprogram/test_colorwheel/testwindow.h" name="src/renderer/opengl/colorwheelprogram/test_colorwheel/testwindow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,222,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,109,132,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="157,109,253,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="141,5,311,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="91,109,217,136"/>
+<area shape="rect" id="node3" href="$mxguirenderer_8h.html" title=" " alt="" coords="241,109,355,136"/>
+<area shape="rect" id="node4" href="$mxbuffer_8h.html" title=" " alt="" coords="5,184,87,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="111,184,207,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="232,184,364,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="389,184,509,211"/>
+<area shape="rect" id="node8" href="$mxmatrix_8h.html" title=" " alt="" coords="533,184,617,211"/>
 </map>

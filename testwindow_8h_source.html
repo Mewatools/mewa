@@ -117,34 +117,39 @@ $(document).ready(function(){initNavTree('testwindow_8h_source.html',''); initRe
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QOpenGLWindow&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;mxrenderer.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxguirenderer_8h.html">mxguirenderer.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_test_window.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_test_window.html">TestWindow</a> : <span class="keyword">public</span> QOpenGLWindow</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_test_window.html#a8dba39b6c689a6d9e1b544e164aca605">TestWindow</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_test_window.html#ab1601c24240f6791dbba3e6b75f533a5">~TestWindow</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#a1f78b40468c6dd2dadb9d654b64d1f72">initializeGL</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#a50c23b08a5c15426153228d6159517b6">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#acc2e600edb667ad98306eaf4c4ac6c6f">paintGL</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_color_wheel_program.html">MxColorWheelProgram</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_test_window.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_test_window.html">TestWindow</a> : <span class="keyword">public</span> QOpenGLWindow</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_test_window.html#a8dba39b6c689a6d9e1b544e164aca605">TestWindow</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_test_window.html#ab1601c24240f6791dbba3e6b75f533a5">~TestWindow</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#a1f78b40468c6dd2dadb9d654b64d1f72">initializeGL</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#a50c23b08a5c15426153228d6159517b6">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_window.html#acc2e600edb667ad98306eaf4c4ac6c6f">paintGL</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_test_window.html#a4711feae35568807bf5ac70143deeece">   26</a></span>&#160;    <a class="code" href="class_mx_renderer.html">MxRenderer</a> <a class="code" href="class_test_window.html#a4711feae35568807bf5ac70143deeece">pRenderer</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdoc">The MxRenderer keeps track of the rendering state and resources.</div><div class="ttdef"><b>Definition:</b> mxrenderer.h:34</div></div>
-<div class="ttc" id="aclass_test_window_html"><div class="ttname"><a href="class_test_window.html">TestWindow</a></div><div class="ttdef"><b>Definition:</b> testwindow.h:14</div></div>
-<div class="ttc" id="aclass_test_window_html_a1f78b40468c6dd2dadb9d654b64d1f72"><div class="ttname"><a href="class_test_window.html#a1f78b40468c6dd2dadb9d654b64d1f72">TestWindow::initializeGL</a></div><div class="ttdeci">void initializeGL()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:21</div></div>
-<div class="ttc" id="aclass_test_window_html_a4711feae35568807bf5ac70143deeece"><div class="ttname"><a href="class_test_window.html#a4711feae35568807bf5ac70143deeece">TestWindow::pRenderer</a></div><div class="ttdeci">MxRenderer pRenderer</div><div class="ttdef"><b>Definition:</b> testwindow.h:26</div></div>
-<div class="ttc" id="aclass_test_window_html_a50c23b08a5c15426153228d6159517b6"><div class="ttname"><a href="class_test_window.html#a50c23b08a5c15426153228d6159517b6">TestWindow::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h)</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:34</div></div>
-<div class="ttc" id="aclass_test_window_html_a8dba39b6c689a6d9e1b544e164aca605"><div class="ttname"><a href="class_test_window.html#a8dba39b6c689a6d9e1b544e164aca605">TestWindow::TestWindow</a></div><div class="ttdeci">TestWindow()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:8</div></div>
-<div class="ttc" id="aclass_test_window_html_ab1601c24240f6791dbba3e6b75f533a5"><div class="ttname"><a href="class_test_window.html#ab1601c24240f6791dbba3e6b75f533a5">TestWindow::~TestWindow</a></div><div class="ttdeci">~TestWindow()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:14</div></div>
-<div class="ttc" id="aclass_test_window_html_acc2e600edb667ad98306eaf4c4ac6c6f"><div class="ttname"><a href="class_test_window.html#acc2e600edb667ad98306eaf4c4ac6c6f">TestWindow::paintGL</a></div><div class="ttdeci">void paintGL()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:39</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_test_window.html#acc121e053829a4522c24db4e20c35d96">   27</a></span>&#160;    <a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a> <a class="code" href="class_test_window.html#acc121e053829a4522c24db4e20c35d96">pRenderer</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_test_window.html#acd7c5031f0900da2f14c8b68ac3710fd">   28</a></span>&#160;    <a class="code" href="class_mx_color_wheel_program.html">MxColorWheelProgram</a> *<a class="code" href="class_test_window.html#acd7c5031f0900da2f14c8b68ac3710fd">pColorWheelProgram</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_mx_color_wheel_program_html"><div class="ttname"><a href="class_mx_color_wheel_program.html">MxColorWheelProgram</a></div><div class="ttdef"><b>Definition:</b> mxcolorwheelprogram.h:12</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html"><div class="ttname"><a href="class_mx_gui_renderer.html">MxGuiRenderer</a></div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:19</div></div>
+<div class="ttc" id="aclass_test_window_html"><div class="ttname"><a href="class_test_window.html">TestWindow</a></div><div class="ttdef"><b>Definition:</b> testwindow.h:15</div></div>
+<div class="ttc" id="aclass_test_window_html_a1f78b40468c6dd2dadb9d654b64d1f72"><div class="ttname"><a href="class_test_window.html#a1f78b40468c6dd2dadb9d654b64d1f72">TestWindow::initializeGL</a></div><div class="ttdeci">void initializeGL()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:23</div></div>
+<div class="ttc" id="aclass_test_window_html_a50c23b08a5c15426153228d6159517b6"><div class="ttname"><a href="class_test_window.html#a50c23b08a5c15426153228d6159517b6">TestWindow::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h)</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:32</div></div>
+<div class="ttc" id="aclass_test_window_html_a8dba39b6c689a6d9e1b544e164aca605"><div class="ttname"><a href="class_test_window.html#a8dba39b6c689a6d9e1b544e164aca605">TestWindow::TestWindow</a></div><div class="ttdeci">TestWindow()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:10</div></div>
+<div class="ttc" id="aclass_test_window_html_ab1601c24240f6791dbba3e6b75f533a5"><div class="ttname"><a href="class_test_window.html#ab1601c24240f6791dbba3e6b75f533a5">TestWindow::~TestWindow</a></div><div class="ttdeci">~TestWindow()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:16</div></div>
+<div class="ttc" id="aclass_test_window_html_acc121e053829a4522c24db4e20c35d96"><div class="ttname"><a href="class_test_window.html#acc121e053829a4522c24db4e20c35d96">TestWindow::pRenderer</a></div><div class="ttdeci">MxGuiRenderer pRenderer</div><div class="ttdef"><b>Definition:</b> testwindow.h:27</div></div>
+<div class="ttc" id="aclass_test_window_html_acc2e600edb667ad98306eaf4c4ac6c6f"><div class="ttname"><a href="class_test_window.html#acc2e600edb667ad98306eaf4c4ac6c6f">TestWindow::paintGL</a></div><div class="ttdeci">void paintGL()</div><div class="ttdef"><b>Definition:</b> testwindow.cpp:37</div></div>
+<div class="ttc" id="aclass_test_window_html_acd7c5031f0900da2f14c8b68ac3710fd"><div class="ttname"><a href="class_test_window.html#acd7c5031f0900da2f14c8b68ac3710fd">TestWindow::pColorWheelProgram</a></div><div class="ttdeci">MxColorWheelProgram * pColorWheelProgram</div><div class="ttdef"><b>Definition:</b> testwindow.h:28</div></div>
+<div class="ttc" id="amxguirenderer_8h_html"><div class="ttname"><a href="mxguirenderer_8h.html">mxguirenderer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

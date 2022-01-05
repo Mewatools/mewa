@@ -1,6 +1,7 @@
 <map id="src/gui/mxthemecolors.h" name="src/gui/mxthemecolors.h">
-<area shape="rect" id="node1" title=" " alt="" coords="199,5,361,32"/>
-<area shape="rect" id="node2" href="$opengl_2mxrenderer_8cpp.html" title=" " alt="" coords="5,80,139,121"/>
-<area shape="rect" id="node3" href="$downarrowsvg_8cpp.html" title=" " alt="" coords="163,87,397,114"/>
-<area shape="rect" id="node4" href="$plusminussvg_8cpp.html" title=" " alt="" coords="421,87,651,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="265,5,427,32"/>
+<area shape="rect" id="node2" href="$mxpainter_8cpp.html" title=" " alt="" coords="5,87,151,114"/>
+<area shape="rect" id="node3" href="$opengl_2mxrenderer_8cpp.html" title=" " alt="" coords="175,80,309,121"/>
+<area shape="rect" id="node4" href="$downarrowsvg_8cpp.html" title=" " alt="" coords="333,87,567,114"/>
+<area shape="rect" id="node5" href="$plusminussvg_8cpp.html" title=" " alt="" coords="591,87,821,114"/>
 </map>

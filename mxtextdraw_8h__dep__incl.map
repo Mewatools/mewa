@@ -1,4 +1,10 @@
 <map id="src/gui/mxtextdraw.h" name="src/gui/mxtextdraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="12,5,153,32"/>
-<area shape="rect" id="node2" href="$mxtextdraw_8cpp.html" title=" " alt="" coords="5,80,160,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="338,5,479,32"/>
+<area shape="rect" id="node2" href="$mxpainter_8h.html" title=" " alt="" coords="261,80,391,107"/>
+<area shape="rect" id="node8" href="$mxtextdraw_8cpp.html" title=" " alt="" coords="415,80,570,107"/>
+<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="146,155,322,181"/>
+<area shape="rect" id="node7" href="$mxpainter_8cpp.html" title=" " alt="" coords="347,155,492,181"/>
+<area shape="rect" id="node4" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,237,196,263"/>
+<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="214,319,369,360"/>
+<area shape="rect" id="node6" href="$qmewawindow_8h.html" title=" " alt="" coords="271,229,426,271"/>
 </map>

@@ -13,8 +13,9 @@ var class_mx_painter =
     [ "iconDraw", "class_mx_painter.html#a0eef7d127e15538e025a6280a9a95868", null ],
     [ "initArrays", "class_mx_painter.html#a7e7e15bd8a682daf9318ae1adcf92316", null ],
     [ "initializeGL", "class_mx_painter.html#a2de2995d78c35af7ce52b3b16f5da712", null ],
-    [ "prepareRender", "class_mx_painter.html#a6293e6b56dcc3265b5f922e8dd6a2ce5", null ],
-    [ "render", "class_mx_painter.html#a55bfde75c5dd34998ad72ed53e23f89d", null ],
+    [ "prepareRender", "class_mx_painter.html#a3211e74264038f99bc83b8ae0d6ad8e1", null ],
+    [ "render", "class_mx_painter.html#a9c9366eee7ec63bd6a1edb7931b3e8b1", null ],
     [ "setTranslation", "class_mx_painter.html#ad099fa6407a7cf701cf99d32c3a639b4", null ],
+    [ "textDraw", "class_mx_painter.html#a3d922fae157a3a42984aaa2adf444bf3", null ],
     [ "vectorDraw", "class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e", null ]
 ];

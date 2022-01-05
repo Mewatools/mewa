@@ -5,5 +5,6 @@ var class_test_window =
     [ "initializeGL", "class_test_window.html#a1f78b40468c6dd2dadb9d654b64d1f72", null ],
     [ "paintGL", "class_test_window.html#acc2e600edb667ad98306eaf4c4ac6c6f", null ],
     [ "resizeGL", "class_test_window.html#a50c23b08a5c15426153228d6159517b6", null ],
-    [ "pRenderer", "class_test_window.html#a4711feae35568807bf5ac70143deeece", null ]
+    [ "pColorWheelProgram", "class_test_window.html#acd7c5031f0900da2f14c8b68ac3710fd", null ],
+    [ "pRenderer", "class_test_window.html#acc121e053829a4522c24db4e20c35d96", null ]
 ];

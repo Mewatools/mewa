@@ -154,12 +154,12 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="class_mx_ortho_transform.html" title="The MxOrthoTransform is used to map mouse coordinates to view coordinates and vice-versa.">MxOrthoTransform</a> is used to map mouse coordinates to view coordinates and vice-versa. </p>
 <div class="fragment"><div class="line">pMousePressedPos = <span class="keyword">event</span>.pos();</div>
 <div class="line">pMousePressedPos = pOutputViewTransform.map(pMousePressedPos);</div>
-</div><!-- fragment --><p>To set the projection matrix: </p><div class="fragment"><div class="line"><a class="code" href="mxmatrix_8h.html#a4fbfefdb2fab88ec856ddb19dc4d469a">MxMatrix</a> matrix;</div>
+</div><!-- fragment --><p>To set the projection matrix: </p><div class="fragment"><div class="line"><a class="code" href="class_mx_matrix.html">MxMatrix</a> matrix;</div>
 <div class="line">matrix.setToIdentity();</div>
 <div class="line">matrix.ortho(0.0f, viewSize.width(), 0.0f, viewSize.height(), -1.0, 1.0);</div>
 <div class="line">matrix.scale( pOutputViewTransform.pScale.x(), pOutputViewTransform.pScale.y() );</div>
 <div class="line">matrix.translate( -pOutputViewTransform.pTranslation.x(), -pOutputViewTransform.pTranslation.y() );</div>
-<div class="ttc" id="amxmatrix_8h_html_a4fbfefdb2fab88ec856ddb19dc4d469a"><div class="ttname"><a href="mxmatrix_8h.html#a4fbfefdb2fab88ec856ddb19dc4d469a">MxMatrix</a></div><div class="ttdeci">QMatrix4x4 MxMatrix</div><div class="ttdef"><b>Definition:</b> mxmatrix.h:11</div></div>
+<div class="ttc" id="aclass_mx_matrix_html"><div class="ttname"><a href="class_mx_matrix.html">MxMatrix</a></div><div class="ttdef"><b>Definition:</b> mxmatrix.h:18</div></div>
 </div><!-- fragment --><p>To translate view objects, get the mouse offset and scale it: </p><div class="fragment"><div class="line"><a class="code" href="class_mx_vector.html">MxVector2F</a> mousePosOffset = <span class="keyword">event</span>.globalPos() - pLastMousePos;</div>
 <div class="line">mousePosOffset = mousePosOffset / pOutputViewTransform.pScale;</div>
 <div class="line">pOutputViewTransform.pTranslation -= mousePosOffset;</div>

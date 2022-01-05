@@ -21,18 +21,23 @@ var hierarchy =
     [ "MxGpuProgram", "class_mx_gpu_program.html", [
       [ "MxColorWheelProgram", "class_mx_color_wheel_program.html", null ],
       [ "MxIconProgram", "class_mx_icon_program.html", null ],
+      [ "MxIconProgram", "class_mx_icon_program.html", null ],
+      [ "MxVectorProgram", "class_mx_vector_program.html", null ],
       [ "MxVectorProgram", "class_mx_vector_program.html", null ]
     ] ],
     [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< MxGpuArray >", "class_mx_list.html", null ],
-    [ "MxList< MxRenderer::ReusableBuffer, MxClassInitializer< MxRenderer::ReusableBuffer >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
+    [ "MxList< ReusableBuffer, MxClassInitializer< ReusableBuffer >, 32 >", "class_mx_list.html", null ],
+    [ "MxMatrix", "class_mx_matrix.html", null ],
     [ "MxMouseEvent", "class_mx_mouse_event.html", null ],
     [ "MxOpenGLFunctions", null, [
-      [ "MxRenderer", "class_mx_renderer.html", null ]
+      [ "MxRenderer", "class_mx_renderer.html", [
+        [ "MxGuiRenderer", "class_mx_gui_renderer.html", null ]
+      ] ]
     ] ],
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", null ],
     [ "MxPainter", "class_mx_painter.html", null ],
@@ -61,7 +66,6 @@ var hierarchy =
       [ "QMewaWindow", "class_q_mewa_window.html", null ],
       [ "TestWindow", "class_test_window.html", null ]
     ] ],
-    [ "MxRenderer::ReusableBuffer", "struct_mx_renderer_1_1_reusable_buffer.html", null ],
     [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
     [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ]

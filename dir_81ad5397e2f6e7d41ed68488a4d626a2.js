@@ -14,7 +14,6 @@ var dir_81ad5397e2f6e7d41ed68488a4d626a2 =
     [ "mxrenderer.cpp", "opengl_2mxrenderer_8cpp.html", null ],
     [ "mxrenderer.h", "opengl_2mxrenderer_8h.html", [
       [ "MxRenderer", "class_mx_renderer.html", "class_mx_renderer" ],
-      [ "ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", "struct_mx_renderer_1_1_reusable_vbo" ],
-      [ "ReusableBuffer", "struct_mx_renderer_1_1_reusable_buffer.html", "struct_mx_renderer_1_1_reusable_buffer" ]
+      [ "ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", "struct_mx_renderer_1_1_reusable_vbo" ]
     ] ]
 ];

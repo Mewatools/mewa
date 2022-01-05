@@ -1,18 +1,13 @@
 <map id="MxGpuProgram" name="MxGpuProgram">
-<area shape="rect" id="node1" title=" " alt="" coords="375,180,487,207"/>
-<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1132,317,1223,344"/>
-<area shape="rect" id="node4" href="$class_mx_vector_program.html" title=" " alt="" coords="792,241,919,268"/>
-<area shape="rect" id="node5" href="$class_mx_color_wheel_program.html" title=" " alt="" coords="778,393,933,420"/>
-<area shape="rect" id="node15" href="$class_mx_icon_program.html" title=" " alt="" coords="799,15,912,41"/>
-<area shape="rect" id="node3" title=" " alt="" coords="783,128,928,155"/>
-<area shape="rect" id="node6" href="$class_mx_abstract_atlas.html" title=" " alt="" coords="796,292,915,319"/>
-<area shape="rect" id="node7" href="$class_mx_texture.html" title=" " alt="" coords="814,343,897,369"/>
-<area shape="rect" id="node8" href="$class_mx_list.html" title=" " alt="" coords="778,495,933,521"/>
-<area shape="rect" id="node9" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,622,301,663"/>
-<area shape="rect" id="node11" href="$class_mx_list.html" title=" " alt="" coords="360,577,503,618"/>
-<area shape="rect" id="node14" href="$class_mx_list.html" title=" " alt="" coords="741,552,969,608"/>
-<area shape="rect" id="node16" href="$class_mx_list.html" title=" " alt="" coords="736,632,975,688"/>
-<area shape="rect" id="node10" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,629,109,656"/>
-<area shape="rect" id="node12" href="$class_mx_vector.html" title=" " alt="" coords="792,444,919,471"/>
-<area shape="rect" id="node13" href="$class_mx_vector.html" title=" " alt="" coords="369,408,493,435"/>
+<area shape="rect" id="node1" title=" " alt="" coords="794,13,906,40"/>
+<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1107,127,1197,153"/>
+<area shape="rect" id="node3" title=" " alt="" coords="777,76,923,103"/>
+<area shape="rect" id="node4" href="$class_mx_texture.html" title=" " alt="" coords="809,127,891,153"/>
+<area shape="rect" id="node5" href="$class_mx_list.html" title=" " alt="" coords="773,177,927,204"/>
+<area shape="rect" id="node6" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,211,301,253"/>
+<area shape="rect" id="node8" href="$class_mx_list.html" title=" " alt="" coords="360,211,503,253"/>
+<area shape="rect" id="node11" href="$class_mx_list.html" title=" " alt="" coords="736,232,964,288"/>
+<area shape="rect" id="node7" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,219,109,245"/>
+<area shape="rect" id="node9" href="$class_mx_vector.html" title=" " alt="" coords="787,332,913,359"/>
+<area shape="rect" id="node10" href="$class_mx_vector.html" title=" " alt="" coords="369,352,493,379"/>
 </map>

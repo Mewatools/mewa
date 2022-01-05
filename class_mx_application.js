@@ -16,6 +16,6 @@ var class_mx_application =
     [ "mSizeChanged", "class_mx_application.html#ae2083f83295f320cd954dbb87e05f69d", null ],
     [ "pGuiAggregation", "class_mx_application.html#aadae5fc3bafb78a146e8f75ba3c6f415", null ],
     [ "pPainterBuffer", "class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb", null ],
-    [ "pRenderer", "class_mx_application.html#a0f457141d6de03e289355a1fea9d9e1b", null ],
+    [ "pRenderer", "class_mx_application.html#a19e7dd9bf7a38e3aa96f6a431316994b", null ],
     [ "pWidget", "class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4", null ]
 ];

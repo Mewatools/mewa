@@ -1,4 +1,12 @@
 <map id="src/containers/mxstring.h" name="src/containers/mxstring.h">
-<area shape="rect" id="node1" title=" " alt="" coords="13,5,179,32"/>
-<area shape="rect" id="node2" href="$mxstring_8cpp.html" title=" " alt="" coords="5,80,187,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="233,5,400,32"/>
+<area shape="rect" id="node2" href="$mxstring_8cpp.html" title=" " alt="" coords="134,80,315,107"/>
+<area shape="rect" id="node3" href="$mxtextdraw_8h.html" title=" " alt="" coords="339,80,481,107"/>
+<area shape="rect" id="node4" href="$mxpainter_8h.html" title=" " alt="" coords="261,155,391,181"/>
+<area shape="rect" id="node10" href="$mxtextdraw_8cpp.html" title=" " alt="" coords="415,155,570,181"/>
+<area shape="rect" id="node5" href="$mxapplication_8h.html" title=" " alt="" coords="146,229,322,256"/>
+<area shape="rect" id="node9" href="$mxpainter_8cpp.html" title=" " alt="" coords="347,229,492,256"/>
+<area shape="rect" id="node6" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,311,196,338"/>
+<area shape="rect" id="node7" href="$qmewawindow_8cpp.html" title=" " alt="" coords="214,393,369,435"/>
+<area shape="rect" id="node8" href="$qmewawindow_8h.html" title=" " alt="" coords="271,304,426,345"/>
 </map>

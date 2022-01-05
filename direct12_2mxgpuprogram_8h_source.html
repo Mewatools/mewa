@@ -123,22 +123,25 @@ $(document).ready(function(){initNavTree('direct12_2mxgpuprogram_8h_source.html'
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_mx_gpu_program.html#addee82fa134d15d23f5356c7334a97c7">MxGpuProgram</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">   19</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">setToPipeline</a>(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">init</a>(<a class="code" href="class_mx_renderer.html">MxRenderer</a>* renderer);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8">isInitialized</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">   21</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">setToPipeline</a>(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline) = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">init</a>(<a class="code" href="class_mx_renderer.html">MxRenderer</a>* renderer);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">   24</a></span>&#160;    <a class="code" href="class_mx_renderer.html">MxRenderer</a>* <a class="code" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">pRenderer</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">   26</a></span>&#160;    <a class="code" href="class_mx_renderer.html">MxRenderer</a>* <a class="code" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">pRenderer</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="ttc" id="aclass_mx_gpu_program_html"><div class="ttname"><a href="class_mx_gpu_program.html">MxGpuProgram</a></div><div class="ttdef"><b>Definition:</b> mxgpuprogram.h:15</div></div>
-<div class="ttc" id="aclass_mx_gpu_program_html_a02ff7d81dff918453edbf25a390f72ee"><div class="ttname"><a href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">MxGpuProgram::init</a></div><div class="ttdeci">void init(MxRenderer *renderer)</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:14</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_a02ff7d81dff918453edbf25a390f72ee"><div class="ttname"><a href="class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee">MxGpuProgram::init</a></div><div class="ttdeci">void init(MxRenderer *renderer)</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:19</div></div>
 <div class="ttc" id="aclass_mx_gpu_program_html_a313496a383692beda624217ac783a553"><div class="ttname"><a href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">MxGpuProgram::setToPipeline</a></div><div class="ttdeci">virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC *pipeline)=0</div></div>
-<div class="ttc" id="aclass_mx_gpu_program_html_a37097679f3ed91f475ad74973d0a087c"><div class="ttname"><a href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">MxGpuProgram::pRenderer</a></div><div class="ttdeci">MxRenderer * pRenderer</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.h:24</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_a37097679f3ed91f475ad74973d0a087c"><div class="ttname"><a href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">MxGpuProgram::pRenderer</a></div><div class="ttdeci">MxRenderer * pRenderer</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.h:26</div></div>
+<div class="ttc" id="aclass_mx_gpu_program_html_acd67392c16c3028ef90a744e4a0b50b8"><div class="ttname"><a href="class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8">MxGpuProgram::isInitialized</a></div><div class="ttdeci">bool isInitialized() const</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:14</div></div>
 <div class="ttc" id="aclass_mx_gpu_program_html_addee82fa134d15d23f5356c7334a97c7"><div class="ttname"><a href="class_mx_gpu_program.html#addee82fa134d15d23f5356c7334a97c7">MxGpuProgram::MxGpuProgram</a></div><div class="ttdeci">MxGpuProgram()</div><div class="ttdef"><b>Definition:</b> mxgpuprogram.cpp:9</div></div>
 <div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdoc">The MxRenderer keeps track of the rendering state and resources.</div><div class="ttdef"><b>Definition:</b> mxrenderer.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
