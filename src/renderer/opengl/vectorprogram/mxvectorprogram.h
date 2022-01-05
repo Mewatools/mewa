@@ -18,7 +18,7 @@ public:
     virtual ~MxVectorProgram();
 
     void init( MxRenderer *renderer );
-    void initializeGL();
+    void compile();
 
     virtual void setMatrix( const MxMatrix &matrix );
 

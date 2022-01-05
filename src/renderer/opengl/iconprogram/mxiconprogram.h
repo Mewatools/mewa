@@ -25,7 +25,7 @@ public:
     virtual ~MxIconProgram();
 
     void init( MxRenderer *renderer );
-    void initialize();
+    void compile(); // \TODO make it private??
 
     void setModelViewMatrix( const MxMatrix &matrix );
     MxMatrix modelViewMatrix() const;

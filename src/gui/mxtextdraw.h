@@ -7,7 +7,7 @@
 
 #include "mxvector.h"
 #include "mxrect.h"
-
+#include "mxstring.h"
 
 class MxBuffer;
 
@@ -18,6 +18,7 @@ class MxTextDraw
 public:
     MxTextDraw();
 
+    void drawTextCentered(  const char * string, const MxRectF &rect, const MxVector4UC &color );
 
     const MxVector2F *pTranslation;
     MxBuffer *pArray;

@@ -18,10 +18,6 @@ MxGpuProgram::MxGpuProgram( MxRenderer *renderer )
 MxGpuProgram::~MxGpuProgram()
 {}
 
-void MxGpuProgram::discardGLResources()
-{
-    mProgramId = 0;
-}
 
 void MxGpuProgram::enable()
 {

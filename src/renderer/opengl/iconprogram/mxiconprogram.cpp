@@ -6,6 +6,7 @@
 #include "mxrect.h"
 #include "mxicondraw.h"
 #include "mxrenderer.h"
+#include "mxbuffer.h"
 
 
 /*! Creates a MxIconProgram
@@ -25,9 +26,11 @@ void MxIconProgram::init( MxRenderer *renderer )
 {
     Q_ASSERT( NULL == pRenderer );
     pRenderer = renderer;
+
+    compile();
 }
 
-void MxIconProgram::initialize()
+void MxIconProgram::compile()
 {
     Q_ASSERT( NULL != pRenderer );
 

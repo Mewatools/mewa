@@ -7,8 +7,9 @@
 
 #include <QOpenGLWindow>
 
-#include "mxrenderer.h"
+#include "mxguirenderer.h"
 
+class MxColorWheelProgram;
 
 class TestWindow : public QOpenGLWindow
 {
@@ -23,7 +24,8 @@ public:
 
 
 
-    MxRenderer pRenderer;
+    MxGuiRenderer pRenderer;
+    MxColorWheelProgram *pColorWheelProgram;
 };
 
 #endif

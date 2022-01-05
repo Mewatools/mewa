@@ -1,17 +1,15 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXRENDERER_H
 #define MXRENDERER_H
 
-#include "mxopenglfunctions.h"
-#include "mxcolorwheelprogram.h"
-#include "mxvectorprogram.h"
 #include "mxlist.h"
-#include "mxiconprogram.h"
-#include "mxbuffer.h"
 #include "mxgpuarray.h"
+#include "mxmatrix.h"
+#include "mxopenglfunctions.h"
+#include "mxvector.h"
 
 
 class MxGpuProgram;
@@ -31,9 +29,9 @@ public:
 
     MxRenderer();
 
-    void discardGLResources();
+    virtual void discardGLResources();
 
-    virtual void initializeGL();
+    virtual void initialize();
 
     void setWindowSize( int width, int height );
     MxVector2I windowSize() const;
@@ -43,10 +41,11 @@ public:
 
     void setProgram( MxGpuProgram *effect );
 
-    // shader programs
-    MxColorWheelProgram * colorWheelProgram();
-    MxVectorProgram * setVectorProgram();
-    MxIconProgram * setIconProgram();
+
+    // \TODO
+    void setViewport(int x, int y, unsigned int width, unsigned int height);
+    void setScissor( int x, int y, unsigned int width, unsigned int height );
+    void setTexturesParameters( unsigned int flags );
 
     void setBlending( Blending blend );
      void enableDepthTest( bool enable );
@@ -55,9 +54,9 @@ public:
     MxGpuArray * uploadToGpu(MxGpuProgram::VaoFormat format, const char *data , unsigned int size);
     // \TODO make it private
     MxGpuArray *newGpuArray( MxGpuProgram::VaoFormat format, unsigned int size );
-    //! The returned buffer is automatically deleted after render.
-    MxBuffer *getTemporaryBuffer( int sizeEstimate = 1024 );
-    void recycleALl();
+virtual void renderEnd();
+
+
 
 
 
@@ -68,23 +67,13 @@ public:
        };
     MxList<ReusableVbo, MxClassInitializer<ReusableVbo>, 32> pReusableVbos;
 
-    struct ReusableBuffer
-       {
-           MxBuffer buffer;
-           bool inUse;
-       };
-     // \TODO fine tune list allocation
-    MxList<ReusableBuffer, MxClassInitializer<ReusableBuffer>, 32> pReusableMem;
 
-    MxAbstractAtlas *pIconAtlas;
-    MxMatrix pScreenProjectionMatrix; // ortho view matrix
+
+
 
 protected:
-    MxColorWheelProgram pColorWheelEffect;
-    MxVectorProgram pVectorProgram;
-    MxIconProgram pIconProgram;
 
-    unsigned int pCurrShaderProgram;
+    unsigned int pCurrShaderProgram; // \TODO change to MxGpuProgram*
     MxVector2I pScreenSize;
     Blending pCurrBlend;
     bool pDepthTestEnabled;

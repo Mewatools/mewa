@@ -85,9 +85,11 @@ void MxColorWheelProgram::init( MxRenderer *renderer )
 {
     Q_ASSERT( NULL == pRenderer );
     pRenderer = renderer;
+
+    compile();
 }
 
-void MxColorWheelProgram::initializeGL()
+void MxColorWheelProgram::compile()
 {
     // TODO: change highp with mediump
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);

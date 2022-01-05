@@ -38,7 +38,7 @@ public:
         NoBlending = 0, // default
         BlendingText,
         BlendingImages,
-        CustomBlending
+        CustomBlending // not used
     };
 
     enum Filter {
@@ -59,7 +59,9 @@ public:
     MxRenderer();
     ~MxRenderer();
 
+    void initialize();
 
+    // \TODO rename to setup to not confuse with initialize
     void init(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight);
 
   
@@ -70,10 +72,18 @@ public:
     //! sets \a viewport
     void setViewport(float width, float height);
     void setScissor( const MxVector2I &pos, const MxVector2I &size );
+    void setBlending( Blending blend);
+    // \TODO rename to setDepthTest(bool) ??
+    void enableDepthTest(bool enable);
     MxTexture* newTexture( const MxVector2I& size, MxTexture::PixelFormat format);
     MxGpuArray * getBuffer( UINT64 length );
     void setProgram( MxGpuProgram* program );
     void setTexturesParameters( unsigned int flags );
+    // \TODO chage input argument to MxTexture*
+    void bindTextureGL(unsigned int textureId, unsigned int slot = 0);
+    void checkGLError( const char *fileName, int line );
+    //! triggered at the end of each render (buffer swap)
+    virtual void renderEnd();
     
 
 

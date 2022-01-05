@@ -47,6 +47,11 @@ MxRenderer::MxRenderer()
 MxRenderer::~MxRenderer()
 {}
 
+void MxRenderer::initialize()
+{
+
+}
+
 void MxRenderer::init(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight )
 {
 	Q_ASSERT( NULL == pDevice );
@@ -178,6 +183,16 @@ void MxRenderer::setScissor(const MxVector2I& pos, const MxVector2I& size)
 	pCmdList->RSSetScissorRects(1, &scissorrect);
 }
 
+void MxRenderer::setBlending(MxRenderer::Blending blend)
+{
+
+}
+
+void MxRenderer::enableDepthTest(bool enable)
+{
+
+}
+
 MxTexture* MxRenderer::newTexture(const MxVector2I& size, MxTexture::PixelFormat format)
 {
 	Q_ASSERT(NULL == pTextures[0].pTexBuffer);
@@ -225,6 +240,16 @@ void MxRenderer::setTexturesParameters(unsigned int flags)
 		// changing the root signature is expensive, it triggers pipeline change
 		pPipelineChanged = true;
 	}
+}
+
+void MxRenderer::bindTextureGL(unsigned int textureId, unsigned int slot )
+{
+
+}
+
+void MxRenderer::checkGLError(const char* fileName, int line)
+{
+
 }
 
 void MxRenderer::setupRoot()
@@ -403,3 +428,10 @@ bool MxRenderer::setupPipeline()
 	}
 	return false;
 }
+
+void MxRenderer::renderEnd()
+{
+
+}
+
+

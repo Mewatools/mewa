@@ -34,3 +34,79 @@ void MxIconDraw::clear()
     pArray->clear();
 }
 
+
+void MxIconDraw::drawImageRect( const MxRectF &source, const MxRectF &dest )
+{
+    Q_ASSERT( (NULL != pArray) && (NULL != pTranslation) );
+
+    float *dst = (float*) pArray->lastDataAndIncrement( 24 * sizeof(float) );
+
+    const float texBottom = source.bottom();
+    const float texTop = source.top();
+    const float texLeft = source.left();
+    const float texRight = source.right();
+
+    const float left = dest.left() + (*pTranslation)[0];
+    const float bottom = dest.bottom() + (*pTranslation)[1];
+    const float right  = dest.right() + (*pTranslation)[0];
+    const float top = dest.top() + (*pTranslation)[1];
+
+    // left bottom
+    *dst = left;
+    dst++;
+    *dst = bottom;
+    dst++;
+    *dst = texLeft;
+    dst++;
+    *dst = texBottom;
+    dst++;
+    // right bottom
+    *dst = right;
+    dst++;
+    *dst = bottom;
+    dst++;
+    *dst = texRight;
+    dst++;
+    *dst = texBottom;
+    dst++;
+    // left top
+    *dst = left;
+    dst++;
+    *dst = top;
+    dst++;
+    *dst = texLeft;
+    dst++;
+    *dst = texTop;
+    dst++;
+    // right top
+    *dst = right;
+    dst++;
+    *dst = top;
+    dst++;
+    *dst = texRight;
+    dst++;
+    *dst = texTop;
+    dst++;
+    // left top
+    *dst = left;
+    dst++;
+    *dst = top;
+    dst++;
+    *dst = texLeft;
+    dst++;
+    *dst = texTop;
+    dst++;
+    // right bottom
+    *dst = right;
+    dst++;
+    *dst = bottom;
+    dst++;
+    *dst = texRight;
+    dst++;
+    *dst = texBottom;
+
+    //pVertices += 6;
+}
+
+
+

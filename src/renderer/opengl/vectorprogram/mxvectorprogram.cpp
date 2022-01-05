@@ -4,6 +4,7 @@
 ****************************************************************************/
 #include "mxvectorprogram.h"
 #include "mxrenderer.h"
+#include "mxbuffer.h"
 
 
 MxVectorProgram::MxVectorProgram()
@@ -20,9 +21,11 @@ void MxVectorProgram::init( MxRenderer *renderer )
 {
     Q_ASSERT( NULL == pRenderer );
     pRenderer = renderer;
+
+    compile();
 }
 
-void MxVectorProgram::initializeGL()
+void MxVectorProgram::compile()
 {
 
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);

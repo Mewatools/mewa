@@ -4,6 +4,10 @@
 ****************************************************************************/
 #include "mxtextdraw.h"
 
+void MxTextDraw::drawTextCentered( const char *string, const MxRectF &rect, const MxVector4UC &color )
+{
+
+}
 
 
 MxTextDraw::MxTextDraw()

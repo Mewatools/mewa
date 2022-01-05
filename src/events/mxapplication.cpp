@@ -33,7 +33,7 @@ void MxApplication::init( MxAbstractAtlas *atlas )
 
 void MxApplication::initialize()
 {
-    pRenderer.initializeGL();
+    pRenderer.initialize();
     pPainterBuffer.initializeGL( &pRenderer );
 }
 
@@ -44,11 +44,11 @@ void MxApplication::onRender()
     if(mSizeChanged)
     {
         mSizeChanged = false;
-        onResizeGL();
+        onResizeGL(); // sets viewport
     }
     onDrawGL();
 
-    pRenderer.recycleALl();
+    pRenderer.renderEnd();
 
 }
 
@@ -139,7 +139,7 @@ void MxApplication::onMouseRelease( int x, int y )
 
 void MxApplication::onDrawGL()
 {
-    glClear(0x0);
+    pRenderer.glClear(0x0);
 
     pRenderer.glDisable(GL_CULL_FACE);
 
@@ -157,7 +157,7 @@ void MxApplication::onResizeGL()
 {
     const GLsizei w = mainWidget()->size().width();
     const GLsizei h = mainWidget()->size().height();
-    glViewport(0, 0, w, h);
+    pRenderer.setViewport(0, 0, w, h);
 }
 
 void MxApplication::drawWidgetList()

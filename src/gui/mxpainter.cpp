@@ -5,9 +5,10 @@
 #include "mxpainter.h"
 #include "mxabstractsvg.h"
 #include "mxsvgpainter.h"
-#include "mxrenderer.h"
+#include "mxguirenderer.h"
+#include "mxthemecolors.h"
 #include "mxabstractatlas.h"
-#include "mxiconprogram.h"
+#include "mxvectorprogram.h"
 
 
 MxPainter::MxPainter()
@@ -30,20 +31,16 @@ void MxPainter::discardGLResources()
 
 void MxPainter::initArrays()
 {
-    for( int i=0; i<ColorCount; ++i )
-    {
-        pIconDraw[i].pArray = NULL;
-    }
 }
 
 void MxPainter::initializeGL(MxRenderer *)
 {
 }
 
-/*! \TODO all streams (arrays) should be handled this way.
- * set a vbo on the beggining of each render.
+/*! Called at the beginning of a render
+  to reserve a buffer to store vertex/color data
  */
-void MxPainter::prepareRender( MxRenderer &renderer )
+void MxPainter::prepareRender( MxGuiRenderer &renderer )
 {
     MxBuffer *buffer = renderer.getTemporaryBuffer(9500);
     pVectorDraw.pArray = buffer;
@@ -63,20 +60,19 @@ void MxPainter::prepareRender( MxRenderer &renderer )
 }
 
 
-void MxPainter::render( MxRenderer &renderer )
+void MxPainter::render( MxGuiRenderer &renderer )
 {
     Q_ASSERT( NULL != pVectorDraw.pArray );
     if( pVectorDraw.pArray->size() > 0 ) {
         //renderer.enableDepthTest( false );
         MxVectorProgram * svgProgram = renderer.setVectorProgram();
         renderer.setBlending( MxRenderer::BlendingImages );
-        svgProgram->setMatrix(renderer.pScreenProjectionMatrix);
+        svgProgram->setMatrix( renderer.windowMatrix() );
         svgProgram->draw( pVectorDraw );
         renderer.checkGLError(__FILE__, __LINE__);
 
         pVectorDraw.pArray = NULL;
     }
-
 
     MxIconProgram::ColorFilter ifilter[MxPainter::ColorCount];
     Q_ASSERT( 3 == MxPainter::ColorCount );
@@ -89,13 +85,17 @@ void MxPainter::render( MxRenderer &renderer )
             MxIconProgram *iconProgram = renderer.setIconProgram();
             renderer.bindTextureGL( renderer.pIconAtlas->texture() );
             renderer.setBlending( MxRenderer::BlendingImages );
-            iconProgram->setModelViewMatrix(renderer.pScreenProjectionMatrix);
+            iconProgram->setModelViewMatrix(renderer.windowMatrix());
             iconProgram->setColorFilter( ifilter[i] );
             iconProgram->draw( pIconDraw[i] );
+            //pIconDraw[i].pArray->pSize = -1;
             pIconDraw[i].pArray = NULL;
         }
     }
-    renderer.checkGLError(__FILE__, __LINE__);
+
+
+
+
 }
 
 
@@ -107,8 +107,14 @@ void MxPainter::setTranslation( const MxVector2F &translation )
     {
         Q_ASSERT( pIconDraw[i].pTranslation == &pTranslation );
     }
+
 }
 
+
+MxIconDraw& MxPainter::iconDraw( IconColor color )
+{
+    return pIconDraw[color];
+}
 
 void MxPainter::drawSvg( MxAbstractSvg *svg, const MxRectF &targetRect )
 {
@@ -130,10 +136,11 @@ MxVectorDraw & MxPainter::vectorDraw()
     return pVectorDraw;
 }
 
-MxIconDraw & MxPainter::iconDraw(IconColor color)
+MxTextDraw & MxPainter::textDraw()
 {
- return pIconDraw[color];
+	return pTextDraw;
 }
+
 
 /*MxTextDraw& MxPainter::textDraw()
 {

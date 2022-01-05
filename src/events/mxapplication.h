@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXAPPLICATION_H
@@ -7,7 +7,7 @@
 
 #include "mxdebug.h"
 #include "mxwidgetlist.h"
-#include "mxrenderer.h"
+#include "mxguirenderer.h"
 #include "mxmouseevent.h"
 #include "mxpainter.h"
 #include "mxguiaggregation.h"
@@ -50,7 +50,7 @@ public:
     virtual bool isRedrawNeeded();
 
 
-    MxRenderer pRenderer;
+    MxGuiRenderer pRenderer;
     MxGuiAggregation pGuiAggregation;
     MxWidget *pWidget;
 

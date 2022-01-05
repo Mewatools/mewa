@@ -25,6 +25,8 @@ public:
     virtual ~MxIconDraw();
 
     void clear();
+    
+    void drawImageRect( const MxRectF &source, const MxRectF &dest );
 
 
 

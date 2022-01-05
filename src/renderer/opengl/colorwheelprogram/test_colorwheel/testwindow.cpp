@@ -4,11 +4,13 @@
 ****************************************************************************/
 #include "testwindow.h"
 #include "mxrect.h"
+#include "mxcolorwheelprogram.h"
+
 
 TestWindow::TestWindow()
     : QOpenGLWindow(QOpenGLWindow::PartialUpdateBlit)
 {
-
+pColorWheelProgram = NULL;
 }
 
 TestWindow::~TestWindow()
@@ -21,13 +23,9 @@ TestWindow::~TestWindow()
 void TestWindow::initializeGL()
 {
     pRenderer.initializeOpenGLFunctions();
-    
 
     pRenderer.glEnable(GL_DEPTH_TEST);
     pRenderer.glEnable(GL_CULL_FACE);
-
-    MxColorWheelProgram *program = pRenderer.colorWheelProgram();
-    program->initializeGL();
 
 }
 
@@ -49,16 +47,20 @@ void TestWindow::paintGL()
 
     MxRectF wheelRect( 0.0f, windowSize.width(), 0.0f, windowSize.height() );
 
-    MxColorWheelProgram *program = pRenderer.colorWheelProgram();
-    program->setMatrix(m);
+    if( NULL == pColorWheelProgram ) {
+        pColorWheelProgram = new MxColorWheelProgram();//pRenderer.colorWheelProgram();
+        pColorWheelProgram->init( &pRenderer );
+    }
+    pRenderer.setProgram(pColorWheelProgram);
+    pColorWheelProgram->setMatrix(m);
 
-    program->setBackgroundColor( 0.0f, 0.0f, 0.0f );
+    pColorWheelProgram->setBackgroundColor( 0.0f, 0.0f, 0.0f );
 
     //  try using length as smoothEdge
     // effect->setSmoothEdge( 1.0f / wheelSize.width() );
-    program->setSmoothEdge( 0.0f );
-    program->draw( wheelRect, pRenderer );
+    pColorWheelProgram->setSmoothEdge( 0.0f );
+    pColorWheelProgram->draw( wheelRect, pRenderer );
 
-    pRenderer.recycleALl();
+    pRenderer.renderEnd();
 
 }

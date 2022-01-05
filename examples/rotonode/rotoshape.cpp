@@ -7,7 +7,7 @@
 #include "rototransform.h"
 #include "mxpainter.h"
 #include "shapelockedsvg.h"
-#include "mxaggregation.h"
+#include "mxguiaggregation.h"
 #include "mxabstractatlas.h"
 #include "mxgeometryutils.h"
 
@@ -88,7 +88,7 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
 
     MxIconDraw &iconPainter = painter.iconDraw( MxPainter::LightColor );
     MxIconDraw &bluePainter = painter.iconDraw( MxPainter::BlueColor );
-    const MxAbstractAtlas *atlas = MxAggregation::instance()->iconAtlas();
+    const MxAbstractAtlas *atlas = MxGuiAggregation::instance()->iconAtlas();
 
 
     // draw buttons

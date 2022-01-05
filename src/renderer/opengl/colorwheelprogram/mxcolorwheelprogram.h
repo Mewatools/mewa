@@ -26,7 +26,7 @@ public:
 
     // static ColorWheelEffect* instanceGL();
     void init( MxRenderer *renderer );
-    void initializeGL();
+    void compile();
 
     void setMatrix( const MxMatrix &matrix );
 

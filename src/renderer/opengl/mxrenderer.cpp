@@ -8,7 +8,7 @@
 
 MxRenderer::MxRenderer()
 {
-    pIconAtlas = NULL;
+
     pCurrShaderProgram = 9999; // very high number because 0 is reserved
     pCurrBlend = NoBlending;
     pDepthTestEnabled = false;
@@ -19,20 +19,15 @@ MxRenderer::MxRenderer()
 void MxRenderer::discardGLResources()
 {
     pCurrBlend = NoBlending;
-    pColorWheelEffect.discardGLResources();
     pDepthTestEnabled = false;
     pCurrentTexture = 99999; //zero is reserved
     pCurrentActiveTextureSlot = 0;
-
-    pIconProgram.discardGLResources();
-    pVectorProgram.discardGLResources();
+    
+    
 }
 
-void MxRenderer::initializeGL()
+void MxRenderer::initialize()
 {
-    pIconProgram.init( this );
-    pIconProgram.initialize();
-
     MxVector4F windowColor = MxThemeColors::clearColor;
     glClearColor( windowColor[0], windowColor[1], windowColor[2], 1.0f );
     enableDepthTest( pDepthTestEnabled);
@@ -68,36 +63,20 @@ void MxRenderer::setProgram( MxGpuProgram *effect )
     }
 }
 
-MxColorWheelProgram * MxRenderer::colorWheelProgram()
+void MxRenderer::setViewport( int x, int y, unsigned int width, unsigned int height )
 {
-    if( pColorWheelEffect.programId() == 0 )
-    {
-        pColorWheelEffect.init(this);
-        pColorWheelEffect.initializeGL();
-    }
-
-    setProgram( &pColorWheelEffect );
-    return &pColorWheelEffect;
+    glViewport( x, y, width, height);
 }
 
-
-MxVectorProgram * MxRenderer::setVectorProgram()
+void MxRenderer::setScissor( int x, int y, unsigned int width, unsigned int height )
 {
-    if( pVectorProgram.programId() == 0 )
-    {
-        pVectorProgram.init(this);
-        pVectorProgram.initializeGL();
-    }
-    setProgram( &pVectorProgram );
-    return &pVectorProgram;
+    glScissor( x, y, width, height);
 }
 
-MxIconProgram * MxRenderer::setIconProgram()
+void MxRenderer::setTexturesParameters( unsigned int flags )
 {
-    setProgram( &pIconProgram );
-    return &pIconProgram;
-}
 
+}
 void MxRenderer::setBlending( MxRenderer::Blending blend )
 {
     if( blend == pCurrBlend )
@@ -184,28 +163,8 @@ MxGpuArray *MxRenderer::newGpuArray( MxGpuProgram::VaoFormat format, unsigned in
     return &(newEntry->gpuArray);
 }
 
-MxBuffer* MxRenderer::getTemporaryBuffer( int sizeEstimate )
-{
-    int count = pReusableMem.size();
-    for(int i=0; i<count; ++i)
-    {
-        // \TODO find the best size fit
-        ReusableBuffer &entry = pReusableMem[i];
-        if(entry.inUse == false)
-        {
-               Q_ASSERT ( entry.buffer.size() == 0 );
-        entry.inUse = true;
-            return &(entry.buffer);
-        }
-    }
 
-    ReusableBuffer *newEntry = pReusableMem.appendAndGet();
-    newEntry->buffer.reserveForAppend( sizeEstimate );
-    newEntry->inUse = true;
-    return &(newEntry->buffer);
-}
-
-void MxRenderer::recycleALl()
+void MxRenderer::renderEnd()
 {
     int count = pReusableVbos.size();
     for(int i=0; i<count; ++i)
@@ -213,15 +172,6 @@ void MxRenderer::recycleALl()
         // \TODO find the best size fit
         ReusableVbo &vbo = pReusableVbos[i];
         vbo.inUse = false;
-    }
-
-
-    count = pReusableMem.size();
-    for(int i=0; i<count; ++i)
-    {
-        ReusableBuffer &bufferEntry = pReusableMem[i];
-        bufferEntry.buffer.clear();
-        bufferEntry.inUse = false;
     }
 }
 
