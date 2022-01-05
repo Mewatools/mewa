@@ -33,6 +33,8 @@ public:
     MxGpuProgram( MxRenderer *renderer = NULL );
     virtual ~MxGpuProgram();
 
+    bool isInitialized() const;
+
     virtual void enable();
 
     virtual VaoFormat vaoFormat() { return Unknown; } // \TODO delete this member

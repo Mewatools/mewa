@@ -18,6 +18,11 @@ MxGpuProgram::MxGpuProgram( MxRenderer *renderer )
 MxGpuProgram::~MxGpuProgram()
 {}
 
+bool MxGpuProgram::isInitialized() const
+{
+    return (nullptr != pRenderer);
+}
+
 
 void MxGpuProgram::enable()
 {
