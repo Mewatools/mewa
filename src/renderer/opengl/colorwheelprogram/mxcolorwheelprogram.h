@@ -24,11 +24,10 @@ public:
     MxColorWheelProgram();
     virtual ~MxColorWheelProgram();
 
-    // static ColorWheelEffect* instanceGL();
     void init( MxRenderer *renderer );
     void compile();
 
-    void setMatrix( const MxMatrix &matrix );
+    void setMatrix( const MxMatrix *matrix );
 
     void setBackgroundColor( float r, float g, float b );
 
@@ -49,7 +48,6 @@ private:
 
     enum Update
     {
-        UpdateMatrix = 0x00000001,
         BackgroundColor = 0x00000002,
         UpdateSmoothness = 0x00000004,
         UpdateAll = 0x7FFFFFFF

@@ -52,7 +52,7 @@ void TestWindow::paintGL()
         pColorWheelProgram->init( &pRenderer );
     }
     pRenderer.setProgram(pColorWheelProgram);
-    pColorWheelProgram->setMatrix(m);
+    pColorWheelProgram->setMatrix(&m);
 
     pColorWheelProgram->setBackgroundColor( 0.0f, 0.0f, 0.0f );
 

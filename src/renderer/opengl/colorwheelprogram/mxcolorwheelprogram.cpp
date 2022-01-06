@@ -195,10 +195,9 @@ void MxColorWheelProgram::compile()
     pSmoothnessUniform = pRenderer->glGetUniformLocation(mProgramId, "uSmoothness");
 }
 
-void MxColorWheelProgram::setMatrix( const MxMatrix &matrix )
+void MxColorWheelProgram::setMatrix( const MxMatrix *matrix )
 {
-    pModelview = matrix;
-    pUpdates |= UpdateMatrix;
+    pRenderer->glUniformMatrix4fv(pMatrixUniform, 1, GL_FALSE, matrix->constData());
 }
 
 
@@ -244,10 +243,6 @@ void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
         pRenderer->glUniform1f(pSmoothnessUniform, pSmoothEdge);
     }
 
-    if( pUpdates & UpdateMatrix )
-    {
-        pRenderer->glUniformMatrix4fv(pMatrixUniform, 1, GL_FALSE, pModelview.constData());
-    }
     pUpdates = 0;
     pRenderer->glDrawArrays(GL_TRIANGLES, 0, 6);
     disableVao();
