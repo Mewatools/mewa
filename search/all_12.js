@@ -11,7 +11,7 @@ var searchData=
   ['setindexdata_547',['setIndexData',['../class_mx_gpu_array.html#a2e6f559ac8c8b533da6ba48efe605732',1,'MxGpuArray']]],
   ['setleft_548',['setLeft',['../class_mx_rect.html#a8dc01b593410834bfd0c7569fd0eb8f2',1,'MxRect']]],
   ['setmainwidget_549',['setMainWidget',['../class_mx_application.html#a44e571943a9edfe713d3d0f6e5b31eca',1,'MxApplication::setMainWidget()'],['../class_q_mewa_window.html#a990ca8f241b32a633d5a5c6a15013db8',1,'QMewaWindow::setMainWidget()']]],
-  ['setmatrix_550',['setMatrix',['../class_mx_vector_program.html#a49d07f44bf9928c5de125971766784a3',1,'MxVectorProgram::setMatrix()'],['../class_mx_color_wheel_program.html#a2e7404b874b60e1cac3e0cbf5b83ed9f',1,'MxColorWheelProgram::setMatrix()'],['../class_mx_vector_program.html#a95fbf69e3ee4fd2ab902de4487e648c9',1,'MxVectorProgram::setMatrix()']]],
+  ['setmatrix_550',['setMatrix',['../class_mx_vector_program.html#a49d07f44bf9928c5de125971766784a3',1,'MxVectorProgram::setMatrix()'],['../class_mx_color_wheel_program.html#a4ba56944ffee7ccc5cd389800ba320b9',1,'MxColorWheelProgram::setMatrix()'],['../class_mx_vector_program.html#a95fbf69e3ee4fd2ab902de4487e648c9',1,'MxVectorProgram::setMatrix()']]],
   ['setmodelviewmatrix_551',['setModelViewMatrix',['../class_mx_icon_program.html#a5baacbfcc6882a157ecc3826ea7f561a',1,'MxIconProgram::setModelViewMatrix(const MxMatrix &amp;matrix)'],['../class_mx_icon_program.html#a5baacbfcc6882a157ecc3826ea7f561a',1,'MxIconProgram::setModelViewMatrix(const MxMatrix &amp;matrix)']]],
   ['setparent_552',['setParent',['../class_mx_widget.html#aef3986a2ed391e095d4bfe0e1f5dd830',1,'MxWidget']]],
   ['setpixeldata_553',['setPixelData',['../class_mx_texture.html#a47874cb5a3af3fbc63435d67fbd5df63',1,'MxTexture']]],
