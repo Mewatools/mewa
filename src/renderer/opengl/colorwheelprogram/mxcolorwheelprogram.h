@@ -36,7 +36,7 @@ public:
     void setSmoothEdge( float threshold );
 
     virtual VaoFormat vaoFormat() { return Float_4; }
-    void draw(const MxRectF &rect, MxRenderer &renderer );
+    void draw(const MxRectF &rect );
 
     virtual void enable();
     virtual void disableVao();

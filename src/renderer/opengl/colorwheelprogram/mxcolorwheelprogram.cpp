@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <MxColorWheelProgram@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <MxColorWheelProgram@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxdebug.h"
@@ -217,8 +217,9 @@ void MxColorWheelProgram::setSmoothEdge( float threshold )
     }
 }
 
-void MxColorWheelProgram::draw(const MxRectF &rect , MxRenderer &renderer )
+void MxColorWheelProgram::draw(const MxRectF &rect )
 {
+    Q_ASSERT( isInitialized() );
 
     GLfloat afVertices[] = {
         rect.left(), rect.bottom(), 0.0f, 0.0f,

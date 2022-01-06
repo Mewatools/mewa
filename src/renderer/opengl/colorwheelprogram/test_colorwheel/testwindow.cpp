@@ -59,7 +59,7 @@ void TestWindow::paintGL()
     //  try using length as smoothEdge
     // effect->setSmoothEdge( 1.0f / wheelSize.width() );
     pColorWheelProgram->setSmoothEdge( 0.0f );
-    pColorWheelProgram->draw( wheelRect, pRenderer );
+    pColorWheelProgram->draw( wheelRect );
 
     pRenderer.renderEnd();
 
