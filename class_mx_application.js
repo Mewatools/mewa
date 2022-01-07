@@ -13,7 +13,6 @@ var class_mx_application =
     [ "onResizeWindow", "class_mx_application.html#aa727ae2139a0f47230700ec5d7a8ecf8", null ],
     [ "requestRedraw", "class_mx_application.html#a61826fe709ff4daa1da8051207080632", null ],
     [ "setMainWidget", "class_mx_application.html#a44e571943a9edfe713d3d0f6e5b31eca", null ],
-    [ "mSizeChanged", "class_mx_application.html#ae2083f83295f320cd954dbb87e05f69d", null ],
     [ "pGuiAggregation", "class_mx_application.html#aadae5fc3bafb78a146e8f75ba3c6f415", null ],
     [ "pPainterBuffer", "class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb", null ],
     [ "pRenderer", "class_mx_application.html#a19e7dd9bf7a38e3aa96f6a431316994b", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrap_1298',['Wrap',['../class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50',1,'MxRenderer']]]
+  ['wrap_1304',['Wrap',['../class_mx_texture.html#a67d25515a3ab27486490402ba7066ff9',1,'MxTexture']]]
 ];

@@ -21,19 +21,10 @@ var class_mx_renderer =
       [ "BlendingImages", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be", null ],
       [ "CustomBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b", null ]
     ] ],
-    [ "Filter", "class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dff", [
-      [ "NoFilter", "class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa81eb58011a74ad5ec01cf6c222bd63b4", null ],
-      [ "LinearFilter", "class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa5cab87018dacc03da95a6f0244e37625", null ],
-      [ "MipmapFilter", "class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa19fc67ca8075792660b3f0580bcaf6e2", null ],
-      [ "MipmapLinearFilter", "class_mx_renderer.html#a0b5740c9b8e294252cfe512de27c9dffa6b945324edc7fa7a083231740753321c", null ]
-    ] ],
-    [ "Wrap", "class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50", [
-      [ "ClampWrap", "class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50a35ede1389ba80aaa407dfcf2257437a3", null ],
-      [ "RepeatWrap", "class_mx_renderer.html#aca3c99cd6d7c21fe632599e7e624be50a1dad14caefc7718faca9143ccd929e96", null ]
-    ] ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
     [ "~MxRenderer", "class_mx_renderer.html#a63ae7cec7d163dba565670fc7e0adc03", null ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
+    [ "bindTexture", "class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec", null ],
     [ "bindTextureGL", "class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7", null ],
     [ "bindTextureGL", "class_mx_renderer.html#ac6dd2f8f835647c93190d2df57129338", null ],
     [ "checkGLError", "class_mx_renderer.html#ae84f3c089275c5ada33dc0a09eb4037f", null ],
@@ -48,6 +39,8 @@ var class_mx_renderer =
     [ "newGpuArray", "class_mx_renderer.html#a47e33975e418b850907f9266d34b7872", null ],
     [ "newTexture", "class_mx_renderer.html#a2a702ff56f22eb32f648a237981af814", null ],
     [ "releaseGpuArrays", "class_mx_renderer.html#ae3d50148ded3964181243b56ef928707", null ],
+    [ "renderBegin", "class_mx_renderer.html#af54a47620d1b4175365e2971ae632331", null ],
+    [ "renderBegin", "class_mx_renderer.html#af54a47620d1b4175365e2971ae632331", null ],
     [ "renderEnd", "class_mx_renderer.html#affe123774a9f80a26824011bc86a91c7", null ],
     [ "renderEnd", "class_mx_renderer.html#a675644608fe368d929b4a741cc69c9c4", null ],
     [ "setBlending", "class_mx_renderer.html#a8b871801ae38e47312817cbfea6481b8", null ],
@@ -59,7 +52,7 @@ var class_mx_renderer =
     [ "setTexturesParameters", "class_mx_renderer.html#a25b39b40973b90b300fa60bb74996000", null ],
     [ "setTexturesParameters", "class_mx_renderer.html#a25b39b40973b90b300fa60bb74996000", null ],
     [ "setupPipeline", "class_mx_renderer.html#a01998ea2da5077cf3faa453f4310a4a9", null ],
-    [ "setViewport", "class_mx_renderer.html#a6c2a079dc5508f9ca42feaf387e7b417", null ],
+    [ "setViewport", "class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7", null ],
     [ "setViewport", "class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7", null ],
     [ "setWindowSize", "class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a", null ],
     [ "uploadToGpu", "class_mx_renderer.html#aef1a832211c59ab0bc4bdafe496c8df2", null ],

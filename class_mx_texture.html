@@ -118,6 +118,16 @@ $(document).ready(function(){initNavTree('class_mx_texture.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a9017ad69f789df600bb73240aa426ff0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0">Filter</a> { <a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0ab015338ef84a7244d42134f02e37ea64">NoFilter</a> = 0x1
+, <a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0a4b69657dc9d3ea399e824a1b1db8abb9">LinearFilter</a> = 0x02
+, <a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0afc55c3649d6475b55440ffdf21a8b16d">MipmapFilter</a> = 0x04
+, <a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0a14aa49c3bdac9dc0c04e2697d88b910e">MipmapLinearFilter</a> = 0x08
+ }</td></tr>
+<tr class="separator:a9017ad69f789df600bb73240aa426ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d25515a3ab27486490402ba7066ff9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_texture.html#a67d25515a3ab27486490402ba7066ff9">Wrap</a> { <a class="el" href="class_mx_texture.html#a67d25515a3ab27486490402ba7066ff9ab3910eeba1e486caae04bd4952b4ab37">ClampWrap</a> = 0x10
+, <a class="el" href="class_mx_texture.html#a67d25515a3ab27486490402ba7066ff9ac7e77852486b684f72fa0d77803821d2">RepeatWrap</a> = 0x20
+ }</td></tr>
+<tr class="separator:a67d25515a3ab27486490402ba7066ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95987216b43dd77b5f6b5dcc7b1e7346"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346">PixelFormat</a> { <a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346aedf2b63a9a20e443dddcb6f27e9ba8b6">UChar4</a>
 , <a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346a71104a17eab5617f92268d621b661252">Float4</a>
  }</td></tr>
@@ -148,6 +158,26 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_mx_texture.html">MxTexture</a> abstracts a Gpu texture.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources.">MxRenderer</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9017ad69f789df600bb73240aa426ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9017ad69f789df600bb73240aa426ff0">&#9670;&nbsp;</a></span>Filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_texture.html#a9017ad69f789df600bb73240aa426ff0">MxTexture::Filter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9017ad69f789df600bb73240aa426ff0ab015338ef84a7244d42134f02e37ea64"></a>NoFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9017ad69f789df600bb73240aa426ff0a4b69657dc9d3ea399e824a1b1db8abb9"></a>LinearFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9017ad69f789df600bb73240aa426ff0afc55c3649d6475b55440ffdf21a8b16d"></a>MipmapFilter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9017ad69f789df600bb73240aa426ff0a14aa49c3bdac9dc0c04e2697d88b910e"></a>MipmapLinearFilter&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a95987216b43dd77b5f6b5dcc7b1e7346"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95987216b43dd77b5f6b5dcc7b1e7346">&#9670;&nbsp;</a></span>PixelFormat</h2>
 
@@ -163,6 +193,24 @@ Public Attributes</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a95987216b43dd77b5f6b5dcc7b1e7346aedf2b63a9a20e443dddcb6f27e9ba8b6"></a>UChar4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a95987216b43dd77b5f6b5dcc7b1e7346a71104a17eab5617f92268d621b661252"></a>Float4&#160;</td><td class="fielddoc"><p>8 bit per pixel, RGBA </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a67d25515a3ab27486490402ba7066ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d25515a3ab27486490402ba7066ff9">&#9670;&nbsp;</a></span>Wrap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_texture.html#a67d25515a3ab27486490402ba7066ff9">MxTexture::Wrap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a67d25515a3ab27486490402ba7066ff9ab3910eeba1e486caae04bd4952b4ab37"></a>ClampWrap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a67d25515a3ab27486490402ba7066ff9ac7e77852486b684f72fa0d77803821d2"></a>RepeatWrap&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

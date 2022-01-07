@@ -155,11 +155,13 @@ Public Attributes</h2></td></tr>
 <div class="fragment"><div class="line">pMousePressedPos = <span class="keyword">event</span>.pos();</div>
 <div class="line">pMousePressedPos = pOutputViewTransform.map(pMousePressedPos);</div>
 </div><!-- fragment --><p>To set the projection matrix: </p><div class="fragment"><div class="line"><a class="code" href="class_mx_matrix.html">MxMatrix</a> matrix;</div>
-<div class="line">matrix.setToIdentity();</div>
-<div class="line">matrix.ortho(0.0f, viewSize.width(), 0.0f, viewSize.height(), -1.0, 1.0);</div>
+<div class="line">matrix.<a class="code" href="class_mx_matrix.html#a84900fdac9b5533ac9fcd7cded79d3d8">setToIdentity</a>();</div>
+<div class="line">matrix.<a class="code" href="class_mx_matrix.html#a399434ddbc7725725a46990ae688c904">ortho</a>(0.0f, viewSize.width(), 0.0f, viewSize.height(), -1.0, 1.0);</div>
 <div class="line">matrix.scale( pOutputViewTransform.pScale.x(), pOutputViewTransform.pScale.y() );</div>
 <div class="line">matrix.translate( -pOutputViewTransform.pTranslation.x(), -pOutputViewTransform.pTranslation.y() );</div>
 <div class="ttc" id="aclass_mx_matrix_html"><div class="ttname"><a href="class_mx_matrix.html">MxMatrix</a></div><div class="ttdef"><b>Definition:</b> mxmatrix.h:18</div></div>
+<div class="ttc" id="aclass_mx_matrix_html_a399434ddbc7725725a46990ae688c904"><div class="ttname"><a href="class_mx_matrix.html#a399434ddbc7725725a46990ae688c904">MxMatrix::ortho</a></div><div class="ttdeci">void ortho(float left, float right, float bottom, float top, float near, float far)</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:33</div></div>
+<div class="ttc" id="aclass_mx_matrix_html_a84900fdac9b5533ac9fcd7cded79d3d8"><div class="ttname"><a href="class_mx_matrix.html#a84900fdac9b5533ac9fcd7cded79d3d8">MxMatrix::setToIdentity</a></div><div class="ttdeci">void setToIdentity()</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:13</div></div>
 </div><!-- fragment --><p>To translate view objects, get the mouse offset and scale it: </p><div class="fragment"><div class="line"><a class="code" href="class_mx_vector.html">MxVector2F</a> mousePosOffset = <span class="keyword">event</span>.globalPos() - pLastMousePos;</div>
 <div class="line">mousePosOffset = mousePosOffset / pOutputViewTransform.pScale;</div>
 <div class="line">pOutputViewTransform.pTranslation -= mousePosOffset;</div>
