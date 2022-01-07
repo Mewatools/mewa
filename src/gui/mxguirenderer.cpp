@@ -23,9 +23,27 @@ void MxGuiRenderer::initialize()
     MxRenderer::initialize();
 }
 
-const MxMatrix& MxGuiRenderer::windowMatrix()
+void MxGuiRenderer::setWindowSize( int width, int height )
 {
-    return pScreenProjectionMatrix;
+    pScreenSize = MxVector2I( width, height);
+
+    pScreenProjectionMatrix.setToIdentity();
+    pScreenProjectionMatrix.ortho(0.0f, (float)width, 0.0f, (float)height, -1.0f, 1.0f);
+}
+
+const MxVector2I& MxGuiRenderer::windowSize() const
+{
+    return pScreenSize;
+}
+
+const MxMatrix* MxGuiRenderer::windowMatrix()
+{
+    return &pScreenProjectionMatrix;
+}
+
+void MxGuiRenderer::setViewportToWindow()
+{
+setViewport(0,0, pScreenSize.width(), pScreenSize.height());
 }
 
 MxVectorProgram * MxGuiRenderer::setVectorProgram()

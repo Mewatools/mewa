@@ -159,13 +159,13 @@ void MxRenderer::init(HWND hwnd, unsigned int windowWidth, unsigned int windowHe
 }
 
 
-void MxRenderer::setViewport( float window_width, float window_height)
+void MxRenderer::setViewport( int x, int y, unsigned int width, unsigned int height )
 {
 	D3D12_VIEWPORT viewport = {};
-	viewport.Width = window_width;
-	viewport.Height = window_height;
-	viewport.TopLeftX = 0.0f;
-	viewport.TopLeftY = 0.0f;
+	viewport.Width = (float)width;
+	viewport.Height = (float)height;
+	viewport.TopLeftX = (float)x;
+	viewport.TopLeftY = (float)y;
 	viewport.MaxDepth = 1.0f;
 	viewport.MinDepth = 0.0f;
 
@@ -247,10 +247,29 @@ void MxRenderer::bindTextureGL(unsigned int textureId, unsigned int slot )
 
 }
 
+
+void MxRenderer::bindTexture(MxTexture* texture, unsigned char parameters, int inputIndex)
+{
+
+}
+
 void MxRenderer::checkGLError(const char* fileName, int line)
 {
 
 }
+
+void MxRenderer::renderBegin()
+{
+
+}
+
+void MxRenderer::renderEnd()
+{
+
+}
+
+
+
 
 void MxRenderer::setupRoot()
 {
@@ -428,10 +447,4 @@ bool MxRenderer::setupPipeline()
 	}
 	return false;
 }
-
-void MxRenderer::renderEnd()
-{
-
-}
-
 

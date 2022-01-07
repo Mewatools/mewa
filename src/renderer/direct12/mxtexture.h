@@ -19,6 +19,23 @@ class MxRenderer;
 class MxTexture
 {
 public:
+
+
+	// texture parameters
+	enum Filter {
+		NoFilter = 0x1, // default (nearest filter)
+		LinearFilter = 0x02,
+		MipmapFilter = 0x04,
+		MipmapLinearFilter = 0x08
+	};
+
+	enum Wrap {
+		ClampWrap = 0x10,
+		RepeatWrap = 0x20
+	};
+
+
+
 	enum PixelFormat
 	{
 		UChar4, //! 8 bit per pixel, RGBA

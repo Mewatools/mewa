@@ -38,8 +38,6 @@ public:
     virtual void onMouseRelease( int x, int y );
 
 private:
-    void onDrawGL();
-    void onResizeGL();
     void drawWidgetList();
 
 
@@ -53,8 +51,6 @@ public:
     MxGuiRenderer pRenderer;
     MxGuiAggregation pGuiAggregation;
     MxWidget *pWidget;
-
-    bool mSizeChanged;
     MxPainter pPainterBuffer;
 private:
     bool pRedrawRequested;

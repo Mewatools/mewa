@@ -34,7 +34,7 @@ public:
    
     virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
-    void setModelViewMatrix(const MxMatrix& matrix );
+    void setModelViewMatrix(const MxMatrix* matrix );
     void setColorFilter(const ColorFilter filter );
     void draw(MxIconDraw& rectsArray );
 

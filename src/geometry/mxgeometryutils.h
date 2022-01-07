@@ -80,7 +80,7 @@ inline void lineIntersection( const MxVector2F &ps1, const MxVector2F &pe1, cons
 // used to determine which side to fill
 inline float signedArea( const MxVector2F &a , const MxVector2F &b )
 {
-    return (( a.x() * b.y() ) - (b.x() * a.y() )) * 0.5;
+    return (( a.x() * b.y() ) - (b.x() * a.y() )) * 0.5f;
 }
 
 inline float crossProduct( const MxVector2F &a, const MxVector2F &b, const MxVector2F &c )

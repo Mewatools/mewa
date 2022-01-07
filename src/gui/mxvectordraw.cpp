@@ -46,7 +46,7 @@ void MxVectorDraw::loadingSymbol( const MxVector2F &center, float radius )
     static float sProgressAngle = 0.0f;
 
     MxVector2F triangleCenter = center;
-    float thirdCircleAngle = 2.0944;
+    float thirdCircleAngle = 2.0944f;
     MxVector2F posA = triangleCenter + MxVector2F( radius * cosf(sProgressAngle) , radius * sinf(sProgressAngle) );
     MxVector2F posB = triangleCenter + MxVector2F( radius * cosf(sProgressAngle+thirdCircleAngle) , radius * sinf(sProgressAngle+thirdCircleAngle) );
     MxVector2F posC = triangleCenter + MxVector2F( radius * cosf(sProgressAngle-thirdCircleAngle) , radius * sinf(sProgressAngle-thirdCircleAngle) );
@@ -85,22 +85,22 @@ void MxVectorDraw::roundedRect( const MxRectF &area, float radius, const MxVecto
     MxVector2F p04 = rect.topLeft();
     MxVector2F p03( p04.x() , p04.y() - radius );
     MxVector2F p14( p04.x() + radius, p04.y() );
-    appendTriangle_p( p14, p04, p03, 1.0f, color.constData() );
+    appendTriangle_p( p14, p04, p03, 1, color.constData() );
 
     MxVector2F p01 = rect.bottomLeft();
     MxVector2F p02( p01.x() , p01.y() + radius );
     MxVector2F p11( p01.x() + radius, p01.y() );
-    appendTriangle_p( p02, p01, p11, 1.0f, color.constData() );
+    appendTriangle_p( p02, p01, p11, 1, color.constData() );
 
     MxVector2F p34 = rect.topRight();
     MxVector2F p24( p34.x() - radius, p34.y() );
     MxVector2F p33( p34.x(), p34.y() - radius );
-    appendTriangle_p( p33, p34, p24, 1.0f, color.constData() );
+    appendTriangle_p( p33, p34, p24, 1, color.constData() );
 
     MxVector2F p31 = rect.bottomRight();
     MxVector2F p32( p31.x() , p31.y() + radius );
     MxVector2F p21( p31.x() - radius, p31.y() );
-    appendTriangle_p( p21, p31, p32, 1.0f, color.constData() );
+    appendTriangle_p( p21, p31, p32, 1, color.constData() );
 
 
     // fill rectangles
@@ -142,19 +142,19 @@ void MxVectorDraw::addSquaredCircle( MxVector2F center, const MxVector2F &radius
     top[1] += radius[1];
 
     MxVector2F corner( right.x(), top.y() );
-    appendTriangle_p( top, corner, right, 1.0f, color.constData() );
+    appendTriangle_p( top, corner, right, 1, color.constData() );
     appendFillTriangle_p( top, center, right, color.constData() );
 
     corner = MxVector2F( right.x(), bottom.y() );
-    appendTriangle_p( bottom, corner, right, 1.0f, color.constData() );
+    appendTriangle_p( bottom, corner, right, 1, color.constData() );
     appendFillTriangle_p( bottom, center, right, color.constData() );
 
     corner = MxVector2F( left.x(), bottom.y() );
-    appendTriangle_p( bottom, corner, left, 1.0f, color.constData() );
+    appendTriangle_p( bottom, corner, left, 1, color.constData() );
     appendFillTriangle_p( bottom, center, left, color.constData() );
 
     corner = MxVector2F( left.x(), top.y() );
-    appendTriangle_p( top, corner, left, 1.0f, color.constData() );
+    appendTriangle_p( top, corner, left, 1, color.constData() );
     appendFillTriangle_p( top, center, left, color.constData() );
 
 }
@@ -349,7 +349,7 @@ void MxVectorDraw::triangle(const MxVector2F &posA, const MxVector4UC &colorA,
 
     pArray->reserveForAppend( 3*sizeof(Vertex) );
 
-    float direction = 1.0f;
+    unsigned char direction = 1;
     float uvs[6];
     if( FullFill == fill ) {
         uvs[0] = 0.0f; uvs[1] = 1.0f;
@@ -363,7 +363,7 @@ void MxVectorDraw::triangle(const MxVector2F &posA, const MxVector4UC &colorA,
         uvs[0] = 0.0f; uvs[1] = 0.0f;
         uvs[2] = 0.5f; uvs[3] = 0.0f;
         uvs[4] = 1.0f; uvs[5] = 1.0f;
-        direction = -1.0f;
+        direction = -1;
     }
 
 
@@ -722,7 +722,7 @@ void MxVectorDraw::appendColoredTriangle_p( const MxVector2F &a, const unsigned 
 
     //pArray->reserveForAppend( 3*sizeof(Vertex) );
 
-    const float alpha = 1.0f;
+    const unsigned char alpha = 1;
 
     MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) ); //pArray.appendPointer();
     v->x = a.x();
@@ -755,14 +755,14 @@ void MxVectorDraw::appendColoredTriangle_p( const MxVector2F &a, const unsigned 
     v->a = alpha;
 }
 
-void MxVectorDraw::appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, float direction, const unsigned char *pathColor )
+void MxVectorDraw::appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, unsigned char direction, const unsigned char *pathColor )
 {
     Q_ASSERT( NULL != pArray );
     Q_ASSERT( NULL != pTranslation );
 
     //pArray->reserveForAppend( 3*sizeof(Vertex) );
 
-    const float alpha = pathColor[3] * direction;
+    const unsigned char alpha = pathColor[3] * direction;
 
     MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) ); //pArray.appendPointer();
     v->x = a.x();
@@ -840,8 +840,8 @@ void MxVectorDraw::addCubicArc_p( MxVector2F center, const MxVector2F inPoints[]
     t0.mCoords[1] = l * 0.25 + m + p * 0.5;
     t1.mCoords[1] = l * 0.75 + n + p * 0.5;
 
-    appendTriangle_p( t0.mCoords[0], t0.mCoords[1], t0.mCoords[2], 1.0f, color.constData() );
-    appendTriangle_p( t1.mCoords[0], t1.mCoords[1], t1.mCoords[2], 1.0f, color.constData() );
+    appendTriangle_p( t0.mCoords[0], t0.mCoords[1], t0.mCoords[2], 1, color.constData() );
+    appendTriangle_p( t1.mCoords[0], t1.mCoords[1], t1.mCoords[2], 1, color.constData() );
 
     appendFillTriangle_p( center, t0.mCoords[0], t0.mCoords[2], color.constData() );
     appendFillTriangle_p( center, t1.mCoords[0], t1.mCoords[2], color.constData() );

@@ -41,17 +41,6 @@ public:
         CustomBlending // not used
     };
 
-    enum Filter {
-        NoFilter = 0x0, // default
-        LinearFilter = 0x01,
-        MipmapFilter = 0x02,
-        MipmapLinearFilter = 0x04
-    };
-
-    enum Wrap {
-        ClampWrap = 0x0,
-        RepeatWrap = 0x8
-    };
 
     
 
@@ -70,7 +59,7 @@ public:
     //! Clears the whole window with the given color, for 1 frame only. Used for debug purposes only (to check if display fb is preserved)
     //void clear(float r, float g, float b);
     //! sets \a viewport
-    void setViewport(float width, float height);
+    void setViewport(int x, int y, unsigned int width, unsigned int height);
     void setScissor( const MxVector2I &pos, const MxVector2I &size );
     void setBlending( Blending blend);
     // \TODO rename to setDepthTest(bool) ??
@@ -79,9 +68,15 @@ public:
     MxGpuArray * getBuffer( UINT64 length );
     void setProgram( MxGpuProgram* program );
     void setTexturesParameters( unsigned int flags );
-    // \TODO chage input argument to MxTexture*
+    // \deprecated
     void bindTextureGL(unsigned int textureId, unsigned int slot = 0);
+    /*!The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed,
+     thats because the renderer tries to minimize state changes.
+     Whenever setting data to a texture (MxTexture::setPixelData()), if calling bindTexture() call it afterwards
+    */
+    void bindTexture( MxTexture *texture, unsigned char parameters, int inputIndex );
     void checkGLError( const char *fileName, int line );
+    void renderBegin();
     //! triggered at the end of each render (buffer swap)
     virtual void renderEnd();
     

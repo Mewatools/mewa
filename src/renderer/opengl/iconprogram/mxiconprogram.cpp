@@ -103,16 +103,9 @@ void MxIconProgram::compile()
 
 }
 
-
-MxMatrix MxIconProgram::modelViewMatrix() const
+void MxIconProgram::setModelViewMatrix( const MxMatrix *matrix )
 {
-    return pModelview;
-}
-
-void MxIconProgram::setModelViewMatrix( const MxMatrix &matrix )
-{
-    pModelview = matrix;
-    pUpdates |= UpdateMatrix;
+    pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, matrix->constData());
 }
 
 void MxIconProgram::setColorFilter( const ColorFilter filter )
@@ -151,10 +144,6 @@ void MxIconProgram::enableAttributes()
 
 void MxIconProgram::updateUniformValues()
 {
-    if( pUpdates & UpdateMatrix )
-    {
-        pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, pModelview.constData());
-    }
 
     if( pUpdates & UpdateAlpha )
     {

@@ -54,6 +54,7 @@ public:
     MxGpuArray * uploadToGpu(MxGpuProgram::VaoFormat format, const char *data , unsigned int size);
     // \TODO make it private
     MxGpuArray *newGpuArray( MxGpuProgram::VaoFormat format, unsigned int size );
+    void renderBegin();
 virtual void renderEnd();
 
 

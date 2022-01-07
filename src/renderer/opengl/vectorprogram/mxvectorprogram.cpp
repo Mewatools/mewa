@@ -137,9 +137,9 @@ void MxVectorProgram::compile()
 
 }
 
-void MxVectorProgram::setMatrix( const MxMatrix &matrix )
+void MxVectorProgram::setMatrix( const MxMatrix *matrix )
 {
-    pRenderer->glUniformMatrix4fv(matrixUniform1, 1, GL_FALSE, matrix.constData());
+    pRenderer->glUniformMatrix4fv(matrixUniform1, 1, GL_FALSE, matrix->constData());
 }
 
 void MxVectorProgram::draw( MxVectorDraw &stream )

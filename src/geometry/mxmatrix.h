@@ -20,9 +20,11 @@ public:
 
 
 	MxMatrix();
+	void setToIdentity();
+	void ortho(float left, float right, float bottom, float top, float near, float far);
 
-
-
+private:
+	float pData[4][4];
 };
 
 

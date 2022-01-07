@@ -30,7 +30,7 @@ void RandomTextureApp::intialize()
 
 
 	pRenderer.setProgram( &pProgram );
-	pRenderer.setTexturesParameters(MxRenderer::MipmapFilter | MxRenderer::RepeatWrap);
+	pRenderer.setTexturesParameters(MxTexture::MipmapFilter | MxTexture::RepeatWrap);
 
 
 
@@ -92,7 +92,7 @@ void RandomTextureApp::onRender()
 	pTexture->setPixelData((const char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::UChar4);
 
 
-	pRenderer.setViewport((float)pWindowWidth, (float)pWindowHeight);
+	pRenderer.setViewport(0,0, pWindowWidth, pWindowHeight);
 	pRenderer.setScissor(MxVector2I(0, 0), MxVector2I(pWindowWidth, pWindowHeight));
 
 

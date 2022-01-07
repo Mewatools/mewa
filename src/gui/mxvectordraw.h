@@ -94,7 +94,7 @@ private:
     // no translation added, should be only used internally by this class
     void appendFillTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, const unsigned char *pathColor);
     void appendColoredTriangle_p( const MxVector2F &a, const unsigned char *colorA, const MxVector2F &b, const unsigned char *colorB, const MxVector2F &c, const unsigned char *colorC );
-    void appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, float direction, const unsigned char *pathColor );
+    void appendTriangle_p(const MxVector2F &a, const MxVector2F &b, const MxVector2F &c, unsigned char direction, const unsigned char *pathColor );
     void appendRect_p(const MxVector2F &leftBottom, const MxVector2F &rightBottom, const MxVector2F &topLeft, const MxVector2F &topRight, const MxVector4UC &color );
 
 

@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxdebug.h"
@@ -10,7 +10,6 @@
 
 MxApplication::MxApplication()
 {
-    mSizeChanged = false;
     pRedrawRequested = false;
     pWidgetInFocus = NULL;
     pPainterBuffer.initArrays();
@@ -41,13 +40,18 @@ void MxApplication::onRender()
 {
     pRedrawRequested = false;
 
-    if(mSizeChanged)
-    {
-        mSizeChanged = false;
-        onResizeGL(); // sets viewport
-    }
-    onDrawGL();
 
+    pRenderer.renderBegin();
+
+
+
+    mainWidget()->collectDirtyWidgets( pWidgetsToUpdate );
+    if( pWidgetsToUpdate.size() > 0 )
+    {
+
+        drawWidgetList();
+        pWidgetsToUpdate.clear();
+    }
     pRenderer.renderEnd();
 
 }
@@ -56,10 +60,7 @@ void MxApplication::onResizeWindow( int width, int height )
 {
     if(width > 0 && height > 0)
     {
-        mSizeChanged = true;
         pRenderer.setWindowSize( width, height );
-        pRenderer.pScreenProjectionMatrix.setToIdentity();
-        pRenderer.pScreenProjectionMatrix.ortho(0.0, width, 0.0, height, -1.0, 1.0);
         mainWidget()->setPos( MxVector2F(0.0f, 0.0f ) );
         mainWidget()->setSize( MxVector2F(width, height));
         mainWidget()->update();
@@ -100,7 +101,7 @@ void MxApplication::onMousePress( int x, int y, unsigned int button, unsigned in
 void MxApplication::onMouseMove( int x, int y, unsigned int modifiers )
 {
     int openGLY = pRenderer.windowSize().height() - y;
-    MxVector2F screenPos( (float)x, openGLY );
+    MxVector2F screenPos( (float)x, (float)openGLY );
     if( pMouseEvent.isAccepted()  )
     {
         // overwrite only global pos
@@ -136,29 +137,6 @@ void MxApplication::onMouseRelease( int x, int y )
     }
 }
 
-
-void MxApplication::onDrawGL()
-{
-    pRenderer.glClear(0x0);
-
-    pRenderer.glDisable(GL_CULL_FACE);
-
-    mainWidget()->collectDirtyWidgets( pWidgetsToUpdate );
-    if( pWidgetsToUpdate.size() > 0 )
-    {
-
-        drawWidgetList();
-        pWidgetsToUpdate.clear();
-    }
-}
-
-
-void MxApplication::onResizeGL()
-{
-    const GLsizei w = mainWidget()->size().width();
-    const GLsizei h = mainWidget()->size().height();
-    pRenderer.setViewport(0, 0, w, h);
-}
 
 void MxApplication::drawWidgetList()
 {

@@ -24,8 +24,11 @@ public:
     virtual void initialize();
 
 
+    void setWindowSize( int width, int height );
+    const MxVector2I &windowSize() const;
     //! ortho matrix that maps to application window
-    const MxMatrix& windowMatrix();
+    const MxMatrix* windowMatrix();
+    void setViewportToWindow();
 
     // shader programs
     MxVectorProgram * setVectorProgram();
@@ -38,13 +41,12 @@ public:
 
     MxAbstractAtlas *pIconAtlas;
     
+protected:
+    MxVector2I pScreenSize;
+    MxMatrix pScreenProjectionMatrix; // ortho view matrix
 private:
     MxVectorProgram pVectorProgram;
     MxIconProgram pIconProgram;
-
-
-    friend class MxApplication;
-    MxMatrix pScreenProjectionMatrix; // ortho view matrix
 
 
     struct ReusableBuffer

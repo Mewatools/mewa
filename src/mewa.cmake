@@ -1,6 +1,8 @@
 
 
 if (UNIX)
+    message(STATUS "OpenGL renderer")
+    add_compile_definitions(MX_OPENGL_RENDERER)
     include_directories(
         ${CMAKE_CURRENT_LIST_DIR}/platformabstraction/linux
     )
@@ -8,6 +10,7 @@ endif (UNIX)
 
 if (MSVC) # or should it be WIN32 ??
     message(STATUS "DirectX 12 renderer")
+    add_compile_definitions(MX_DIRECTX12_RENDERER)
     include_directories(
         ${CMAKE_CURRENT_LIST_DIR}/platformabstraction/windows
         ${CMAKE_CURRENT_LIST_DIR}/renderer/direct12
@@ -40,6 +43,7 @@ list(APPEND SOURCE
     ${CMAKE_CURRENT_LIST_DIR}/events/mxapplication.cpp
     ${CMAKE_CURRENT_LIST_DIR}/events/mxmouseevent.cpp
     ${CMAKE_CURRENT_LIST_DIR}/geometry/mxmatrix.cpp
+     ${CMAKE_CURRENT_LIST_DIR}/iconatlas/mxabstractatlas.cpp
 ###### GUI #######
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxbuffer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxguiaggregation.cpp

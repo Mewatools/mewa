@@ -164,6 +164,13 @@ MxGpuArray *MxRenderer::newGpuArray( MxGpuProgram::VaoFormat format, unsigned in
 }
 
 
+
+void MxRenderer::renderBegin()
+{
+    glClear(0x0);
+    glDisable(GL_CULL_FACE);
+}
+
 void MxRenderer::renderEnd()
 {
     int count = pReusableVbos.size();

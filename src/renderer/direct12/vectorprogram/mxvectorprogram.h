@@ -25,7 +25,7 @@ public:
   
     void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
-    void setMatrix(const MxMatrix& matrix);
+    void setMatrix(const MxMatrix* matrix);
     void draw(MxVectorDraw& stream);
 
 };

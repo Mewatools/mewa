@@ -20,7 +20,7 @@ public:
     void init( MxRenderer *renderer );
     void compile();
 
-    virtual void setMatrix( const MxMatrix &matrix );
+    virtual void setMatrix( const MxMatrix *matrix );
 
     void draw( MxVectorDraw &stream );
 

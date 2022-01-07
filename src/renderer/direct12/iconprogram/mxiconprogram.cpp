@@ -20,7 +20,7 @@ void MxIconProgram::setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline)
 }
 
 
-    void MxIconProgram::setModelViewMatrix(const MxMatrix& matrix)
+    void MxIconProgram::setModelViewMatrix(const MxMatrix* matrix)
     {}
 
     void MxIconProgram::setColorFilter(const ColorFilter filter )

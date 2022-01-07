@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxiconatlas.h"
@@ -34,6 +34,17 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
         MxVector2I texSize = textureSize();
         if( texSize.width() > 0 && texSize.height() > 0 )
         {
+            const unsigned char* pixelData = pAtlasImage.bits();
+            Q_ASSERT(NULL != pixelData);
+
+#ifdef MX_DIRECTX12_RENDERER
+            pTexture = renderer.newTexture(texSize, MxTexture::UChar4);
+            pTexture.setPixelData(pixelData, texSize, MxTexture::UChar4);
+
+            // \TODO allow RepeatWrap
+            renderer.bindTexture(pTexture, NoFilter | ClampWrap);
+            
+#else
             Q_ASSERT( 0 == pTexture );
             renderer.glGenTextures(1, &pTexture );
             renderer.glBindTexture( GL_TEXTURE_2D, pTexture );
@@ -43,9 +54,9 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
             renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
             renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-            const unsigned char *pixelData = pAtlasImage.bits();
-            Q_ASSERT( NULL != pixelData );
+            
             renderer.glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, texSize[0], texSize[1], 0, GL_RGBA, GL_UNSIGNED_BYTE, pixelData );
+#endif
 
             renderer.checkGLError(__FILE__, __LINE__);
         }

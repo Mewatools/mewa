@@ -17,7 +17,7 @@ void MxVectorProgram::setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline
 }
 
 
-void MxVectorProgram::setMatrix(const MxMatrix& matrix)
+void MxVectorProgram::setMatrix(const MxMatrix* matrix)
 {}
 
 void MxVectorProgram::draw(MxVectorDraw& stream )

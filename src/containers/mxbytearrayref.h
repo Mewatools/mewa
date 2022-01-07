@@ -158,7 +158,7 @@ public:
 
     bool startsWith( const char *str )
     {
-        int strSize = strlen(str) - 1;
+        int strSize = (int)(strlen(str) - 1);
         while( *(pStringStart+strSize) == *(str+strSize)
                && strSize > 0
                )
@@ -184,7 +184,7 @@ private:
         pSize = newSize;
     }
    
-    int pSize; 
+    int pSize; // \TODO if never set -1 change to unsigned int
     char *pStringStart;
 };
 

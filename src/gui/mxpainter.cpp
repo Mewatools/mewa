@@ -64,7 +64,8 @@ void MxPainter::render( MxGuiRenderer &renderer )
 {
     Q_ASSERT( NULL != pVectorDraw.pArray );
     if( pVectorDraw.pArray->size() > 0 ) {
-        //renderer.enableDepthTest( false );
+        renderer.setViewportToWindow();
+        renderer.enableDepthTest( false );
         MxVectorProgram * svgProgram = renderer.setVectorProgram();
         renderer.setBlending( MxRenderer::BlendingImages );
         svgProgram->setMatrix( renderer.windowMatrix() );
@@ -81,6 +82,7 @@ void MxPainter::render( MxGuiRenderer &renderer )
     ifilter[2] = MxIconProgram::LightGrayFilter;
     for(int i=0; i < MxPainter::ColorCount; ++i) {
         if( renderer.pIconAtlas->isLoaded() && pIconDraw[i].pArray->size() > 0 ) {
+            renderer.setViewportToWindow();
             renderer.enableDepthTest( false );
             MxIconProgram *iconProgram = renderer.setIconProgram();
             renderer.bindTextureGL( renderer.pIconAtlas->texture() );

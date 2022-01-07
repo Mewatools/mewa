@@ -25,10 +25,10 @@ public:
     virtual ~MxIconProgram();
 
     void init( MxRenderer *renderer );
-    void compile(); // \TODO make it private??
+    void compile(); // \TODO make it private
 
-    void setModelViewMatrix( const MxMatrix &matrix );
-    MxMatrix modelViewMatrix() const;
+    void setModelViewMatrix( const MxMatrix *matrix );
+
 
     enum ColorFilter {
         IdentityFilter,
@@ -58,16 +58,9 @@ public:
         UpdateAll = 0x7FFFFFFF
     };
 
-    // GLuint pProgram;
-    //QGLShaderProgram pProgram;
 
-    MxMatrix pModelview;
-    //QMatrix4x4 pModelview;
-
-
-    //QxVector4F pAlpha;
     ColorFilter pColorFilter;
-    //QxVector4F pColor;
+
     int pUpdates;
 public:
     // gl
