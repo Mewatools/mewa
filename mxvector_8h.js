@@ -3,6 +3,7 @@ var mxvector_8h =
     [ "MxVector", "class_mx_vector.html", "class_mx_vector" ],
     [ "MxVector2F", "mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24", null ],
     [ "MxVector2I", "mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7", null ],
+    [ "MxVector2UI", "mxvector_8h.html#a9fbdc2da1d4520d0f61355ea9e848073", null ],
     [ "MxVector3F", "mxvector_8h.html#aadfd7acf3efe126f6a07538d927b3fef", null ],
     [ "MxVector3I", "mxvector_8h.html#a9ee80cc298c0807abe550bf45acc3cf1", null ],
     [ "MxVector3UC", "mxvector_8h.html#ad1fee14793587302aa67a029c29ad9c2", null ],

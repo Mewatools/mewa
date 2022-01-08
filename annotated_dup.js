@@ -1,7 +1,23 @@
 var annotated_dup =
 [
+    [ "BPMLists", "struct_b_p_m_lists.html", "struct_b_p_m_lists" ],
+    [ "BPMNode", "struct_b_p_m_node.html", "struct_b_p_m_node" ],
+    [ "ColorTree", "struct_color_tree.html", "struct_color_tree" ],
     [ "DownArrowSvg", "class_down_arrow_svg.html", "class_down_arrow_svg" ],
+    [ "Hash", "struct_hash.html", "struct_hash" ],
     [ "HeartSvg", "class_heart_svg.html", "class_heart_svg" ],
+    [ "HuffmanTree", "struct_huffman_tree.html", "struct_huffman_tree" ],
+    [ "LodePNGBitReader", "struct_lode_p_n_g_bit_reader.html", "struct_lode_p_n_g_bit_reader" ],
+    [ "LodePNGBitWriter", "struct_lode_p_n_g_bit_writer.html", "struct_lode_p_n_g_bit_writer" ],
+    [ "LodePNGColorMode", "struct_lode_p_n_g_color_mode.html", "struct_lode_p_n_g_color_mode" ],
+    [ "LodePNGColorStats", "struct_lode_p_n_g_color_stats.html", "struct_lode_p_n_g_color_stats" ],
+    [ "LodePNGCompressSettings", "struct_lode_p_n_g_compress_settings.html", "struct_lode_p_n_g_compress_settings" ],
+    [ "LodePNGDecoderSettings", "struct_lode_p_n_g_decoder_settings.html", "struct_lode_p_n_g_decoder_settings" ],
+    [ "LodePNGDecompressSettings", "struct_lode_p_n_g_decompress_settings.html", "struct_lode_p_n_g_decompress_settings" ],
+    [ "LodePNGEncoderSettings", "struct_lode_p_n_g_encoder_settings.html", "struct_lode_p_n_g_encoder_settings" ],
+    [ "LodePNGInfo", "struct_lode_p_n_g_info.html", "struct_lode_p_n_g_info" ],
+    [ "LodePNGState", "struct_lode_p_n_g_state.html", "struct_lode_p_n_g_state" ],
+    [ "LodePNGTime", "struct_lode_p_n_g_time.html", "struct_lode_p_n_g_time" ],
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", "class_mx_abstract_atlas" ],
     [ "MxAbstractSvg", "class_mx_abstract_svg.html", "class_mx_abstract_svg" ],
     [ "MxApplication", "class_mx_application.html", "class_mx_application" ],
@@ -39,5 +55,7 @@ var annotated_dup =
     [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ],
     [ "PlusMinusSvg", "class_plus_minus_svg.html", "class_plus_minus_svg" ],
     [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ],
-    [ "TestWindow", "class_test_window.html", "class_test_window" ]
+    [ "TestWindow", "class_test_window.html", "class_test_window" ],
+    [ "ucvector", "structucvector.html", "structucvector" ],
+    [ "uivector", "structuivector.html", "structuivector" ]
 ];

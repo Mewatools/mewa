@@ -1,0 +1,10 @@
+<map id="LodePNGState" name="LodePNGState">
+<area shape="rect" id="node1" title=" " alt="" coords="238,184,349,211"/>
+<area shape="rect" id="node2" href="$struct_lode_p_n_g_info.html" title=" " alt="" coords="90,95,193,121"/>
+<area shape="rect" id="node3" href="$struct_lode_p_n_g_time.html" title=" " alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node4" href="$struct_lode_p_n_g_color_mode.html" title=" " alt="" coords="139,5,282,32"/>
+<area shape="rect" id="node5" href="$struct_lode_p_n_g_decoder_settings.html" title=" " alt="" coords="319,95,495,121"/>
+<area shape="rect" id="node6" href="$struct_lode_p_n_g_decompress_settings.html" title=" " alt="" coords="306,5,507,32"/>
+<area shape="rect" id="node7" href="$struct_lode_p_n_g_encoder_settings.html" title=" " alt="" coords="529,95,703,121"/>
+<area shape="rect" id="node8" href="$struct_lode_p_n_g_compress_settings.html" title=" " alt="" coords="532,5,719,32"/>
+</map>

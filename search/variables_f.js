@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['v_1264',['v',['../struct_mx_text_draw_1_1_vertex.html#a66123e3a3360f51ccd425335da999b32',1,'MxTextDraw::Vertex::v()'],['../struct_mx_vector_draw_1_1_vertex.html#a65170e7e5754b022dafec29e394c5310',1,'MxVectorDraw::Vertex::v()']]],
-  ['vertexattr2_1265',['vertexAttr2',['../class_mx_icon_program.html#aa353a90fc42ab66f6d3165f6082778a1',1,'MxIconProgram']]],
-  ['vertexbufferview_1266',['vertexBufferView',['../union_mx_gpu_array_1_1_buffer_view.html#a4718309285b8b64fb8ecb17a8c6b23f6',1,'MxGpuArray::BufferView']]]
+  ['r_2069',['r',['../struct_mx_text_draw_1_1_vertex.html#ad7ee352c2d7fdf211bcd34a7c5b89db2',1,'MxTextDraw::Vertex::r()'],['../struct_mx_vector_draw_1_1_vertex.html#aa311f0e69687c0dcba1bb3a398ad494f',1,'MxVectorDraw::Vertex::r()']]],
+  ['read_5ftext_5fchunks_2070',['read_text_chunks',['../struct_lode_p_n_g_decoder_settings.html#aa1212905c3f73d9fffef2c04a220d951',1,'LodePNGDecoderSettings']]],
+  ['refcounter_2071',['refCounter',['../struct_mx_generic_static_data.html#adbd3532e8d1761be4297de5733583ae9',1,'MxGenericStaticData::refCounter()'],['../class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3',1,'MxRefCounter::refCounter()']]],
+  ['remember_5funknown_5fchunks_2072',['remember_unknown_chunks',['../struct_lode_p_n_g_decoder_settings.html#a8775e4fc539dc457916720f52b442f27',1,'LodePNGDecoderSettings']]]
 ];

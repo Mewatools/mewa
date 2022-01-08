@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['imagedata_674',['ImageData',['../struct_mx_image_1_1_image_data.html',1,'MxImage']]]
+  ['hash_1115',['Hash',['../struct_hash.html',1,'']]],
+  ['heartsvg_1116',['HeartSvg',['../class_heart_svg.html',1,'']]],
+  ['huffmantree_1117',['HuffmanTree',['../struct_huffman_tree.html',1,'']]]
 ];

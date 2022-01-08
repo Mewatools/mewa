@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['g_1180',['g',['../struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c',1,'MxTextDraw::Vertex::g()'],['../struct_mx_vector_draw_1_1_vertex.html#ae53faea88ed1c928fc7154144192728b',1,'MxVectorDraw::Vertex::g()']]],
-  ['gpuarray_1181',['gpuArray',['../struct_mx_renderer_1_1_reusable_vbo.html#aec3240f4d4824b06f75055112ba8988c',1,'MxRenderer::ReusableVbo']]]
+  ['filter_5fmethod_1923',['filter_method',['../struct_lode_p_n_g_info.html#a5098d6e8aa528d5197f51914439633b9',1,'LodePNGInfo']]],
+  ['filter_5fpalette_5fzero_1924',['filter_palette_zero',['../struct_lode_p_n_g_encoder_settings.html#a0d82e8f2fabcb6cebbc54b80922945f1',1,'LodePNGEncoderSettings']]],
+  ['filter_5fstrategy_1925',['filter_strategy',['../struct_lode_p_n_g_encoder_settings.html#a5e18e4eb941763a2e3e6c65ee9f0729c',1,'LodePNGEncoderSettings']]],
+  ['force_5fpalette_1926',['force_palette',['../struct_lode_p_n_g_encoder_settings.html#a04dc9622ccd1d7c74c56291409aa512a',1,'LodePNGEncoderSettings']]],
+  ['freelist_1927',['freelist',['../struct_b_p_m_lists.html#a60b8d594291b80d962e9bfedbe90f372',1,'BPMLists']]]
 ];

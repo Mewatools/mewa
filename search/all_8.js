@@ -1,10 +1,26 @@
 var searchData=
 [
-  ['hasbackground_157',['HasBackground',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63aa04032a1e4b281e84c8f33120448ef52',1,'MxWidget']]],
-  ['haschildren_158',['hasChildren',['../class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1',1,'MxWidget']]],
-  ['hastransparency_159',['HasTransparency',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63a6a4bcc0e2ed7bd45bfc688773287b0ed',1,'MxWidget']]],
-  ['heartsvg_160',['HeartSvg',['../class_heart_svg.html',1,'HeartSvg'],['../class_heart_svg.html#a8f5553149724f6e90eeb0e7fe1d0001a',1,'HeartSvg::HeartSvg()']]],
-  ['heartsvg_2ecpp_161',['heartsvg.cpp',['../heartsvg_8cpp.html',1,'']]],
-  ['heartsvg_2eh_162',['heartsvg.h',['../heartsvg_8h.html',1,'']]],
-  ['height_163',['height',['../class_mx_rect.html#ac7a858af7f65e27c94b3c816c3ddf443',1,'MxRect::height()'],['../class_mx_vector.html#a3053e19e48ecc577ddb677d8024dcbd3',1,'MxVector::height()'],['../class_mx_image.html#ace19acaa73683e2a7534790779f91530',1,'MxImage::height()']]]
+  ['hasbackground_285',['HasBackground',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63aa04032a1e4b281e84c8f33120448ef52',1,'MxWidget']]],
+  ['haschildren_286',['hasChildren',['../class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1',1,'MxWidget']]],
+  ['hash_287',['Hash',['../lodepng_8cpp.html#abe8fc99d29c0275271cbacd81d67ee07',1,'Hash():&#160;lodepng.cpp'],['../struct_hash.html',1,'Hash']]],
+  ['hash_5fbit_5fmask_288',['HASH_BIT_MASK',['../lodepng_8cpp.html#ad83bc0b043b99c890126a1b224ca3e1a',1,'lodepng.cpp']]],
+  ['hash_5fcleanup_289',['hash_cleanup',['../lodepng_8cpp.html#a42a60458dc0338a8995e04eb17085291',1,'lodepng.cpp']]],
+  ['hash_5finit_290',['hash_init',['../lodepng_8cpp.html#af0c3ddc6fb0114714f7e87a485f0403a',1,'lodepng.cpp']]],
+  ['hash_5fnum_5fvalues_291',['HASH_NUM_VALUES',['../lodepng_8cpp.html#a6138ec84bf29d2550a29a7cd835a9710',1,'lodepng.cpp']]],
+  ['hastransparency_292',['HasTransparency',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63a6a4bcc0e2ed7bd45bfc688773287b0ed',1,'MxWidget']]],
+  ['head_293',['head',['../struct_hash.html#a0977cf12b1d8e6bbc784b5e0877926f5',1,'Hash']]],
+  ['headz_294',['headz',['../struct_hash.html#a3ed8f51297a858686e11a1a295a3a39c',1,'Hash']]],
+  ['heartsvg_295',['HeartSvg',['../class_heart_svg.html#a8f5553149724f6e90eeb0e7fe1d0001a',1,'HeartSvg::HeartSvg()'],['../class_heart_svg.html',1,'HeartSvg']]],
+  ['heartsvg_2ecpp_296',['heartsvg.cpp',['../heartsvg_8cpp.html',1,'']]],
+  ['heartsvg_2eh_297',['heartsvg.h',['../heartsvg_8h.html',1,'']]],
+  ['height_298',['height',['../class_mx_rect.html#ac7a858af7f65e27c94b3c816c3ddf443',1,'MxRect::height()'],['../class_mx_vector.html#a3053e19e48ecc577ddb677d8024dcbd3',1,'MxVector::height()'],['../class_mx_image.html#ace19acaa73683e2a7534790779f91530',1,'MxImage::height()']]],
+  ['hour_299',['hour',['../struct_lode_p_n_g_time.html#ac99cb7f3ce16a85f9f505b7f5f6e0aa7',1,'LodePNGTime']]],
+  ['huffmandecodesymbol_300',['huffmanDecodeSymbol',['../lodepng_8cpp.html#ae88e1a3f2626aba4940af8753d4b9811',1,'lodepng.cpp']]],
+  ['huffmantree_301',['HuffmanTree',['../struct_huffman_tree.html',1,'HuffmanTree'],['../lodepng_8cpp.html#a3bcdfe56aa79c67e8f745020ecd3bbf8',1,'HuffmanTree():&#160;lodepng.cpp']]],
+  ['huffmantree_5fcleanup_302',['HuffmanTree_cleanup',['../lodepng_8cpp.html#a3228e11a4562c70c9fb78931eb6eb44a',1,'lodepng.cpp']]],
+  ['huffmantree_5finit_303',['HuffmanTree_init',['../lodepng_8cpp.html#a37cb427b175e04defdc48569b76a375c',1,'lodepng.cpp']]],
+  ['huffmantree_5fmakefromfrequencies_304',['HuffmanTree_makeFromFrequencies',['../lodepng_8cpp.html#a24e41d5a8d40a77fa34914e2bc030446',1,'lodepng.cpp']]],
+  ['huffmantree_5fmakefromlengths_305',['HuffmanTree_makeFromLengths',['../lodepng_8cpp.html#aba97231d47c3cb5538a30bb0cd4be7e9',1,'lodepng.cpp']]],
+  ['huffmantree_5fmakefromlengths2_306',['HuffmanTree_makeFromLengths2',['../lodepng_8cpp.html#a6dd288bb82383b61cb04855b6a38680a',1,'lodepng.cpp']]],
+  ['huffmantree_5fmaketable_307',['HuffmanTree_makeTable',['../lodepng_8cpp.html#a6c1a9e05f73f4a6a5c61e65b56a6df9f',1,'lodepng.cpp']]]
 ];
