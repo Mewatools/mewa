@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXICONATLAS_H
@@ -22,7 +22,7 @@ public:
     MxIconAtlas();
 
     virtual const MxRectF& iconRect( int name ) const;
-    virtual const MxVector2I & iconSize( int name ) const;
+    virtual const MxVector2I &iconSize( int name ) const;
     void loadGL( MxRenderer& renderer );
     bool isLoaded() const;
 
@@ -45,7 +45,8 @@ private:
     {
         MxRectF textureRect;
         MxVector2I iconSize;
-        QImage image;
+       // QImage image;
+        unsigned char* rgba;
     };
 
     ImageDetails pImageList[MxThemeIcons::ImageCount];

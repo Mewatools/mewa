@@ -9,3 +9,4 @@ include($$PWD/renderer/opengl/renderer_opengl.pri)
 include($$PWD/svg-drawings/svg-drawings.pri)
 include($$PWD/iconatlas/iconatlas.pri)
 
+include($$PWD/3rdparty/lodepng/lodepng.pri)

@@ -43,7 +43,7 @@ list(APPEND SOURCE
     ${CMAKE_CURRENT_LIST_DIR}/events/mxapplication.cpp
     ${CMAKE_CURRENT_LIST_DIR}/events/mxmouseevent.cpp
     ${CMAKE_CURRENT_LIST_DIR}/geometry/mxmatrix.cpp
-     ${CMAKE_CURRENT_LIST_DIR}/iconatlas/mxabstractatlas.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/iconatlas/mxabstractatlas.cpp
 ###### GUI #######
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxbuffer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxguiaggregation.cpp

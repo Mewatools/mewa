@@ -4,6 +4,7 @@
 ****************************************************************************/
 #include "mxiconatlas.h"
 #include "mxmathutils.h"
+#include "lodepng.h"
 
 MxIconAtlas::MxIconAtlas()
 {
@@ -11,7 +12,7 @@ MxIconAtlas::MxIconAtlas()
 
     for(int i=0; i<MxThemeIcons::ImageCount; ++i) {
         pImageList[i].iconSize = MxVector2I(0,0);
-        pImageList[i].image = QImage();
+        pImageList[i].rgba = NULL;
     }
 }
 
@@ -59,6 +60,12 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
 #endif
 
             renderer.checkGLError(__FILE__, __LINE__);
+
+            // delete icons
+            for(int i=0; i<MxThemeIcons::ImageCount; ++i) {
+               free( pImageList[i].rgba );
+            }
+
         }
         else
         {
@@ -76,12 +83,14 @@ void MxIconAtlas::setIcon( MxThemeIcons::IconName name, const char *imageFileNam
 {
     Q_ASSERT( name >= 0 && name < MxThemeIcons::ImageCount );
 
-    QImage iconImg(imageFileName);
-    iconImg = iconImg.convertToFormat(QImage::Format_RGBA8888);
-
     ImageDetails &details = pImageList[name];
-    details.image = iconImg;
-    details.iconSize = MxVector2I( iconImg.width(), iconImg.height() );
+    unsigned int outWidth, outHeight;
+    unsigned error = lodepng_decode32_file( &(details.rgba), &outWidth, &outHeight, imageFileName);
+    if(error) {
+        qDebug("decoder error %u: %s", error, lodepng_error_text(error));
+    }
+
+    details.iconSize = MxVector2I( outWidth, outHeight );
 }
 
 bool MxIconAtlas::build()
@@ -112,12 +121,11 @@ bool MxIconAtlas::build()
     MxVector2I pastePos(0, 0);
     for(int i=0; i < MxThemeIcons::ImageCount; ++i) {
         ImageDetails &details = pImageList[i];
+        unsigned char* iconImg = details.rgba;
+        if( iconImg ) {
+            const MxVector2I &imgSize = details.iconSize;
 
-        const QImage &iconImg = details.image;
-        if( ! iconImg.isNull() ) {
-            const QSize &imgSize = iconImg.size();
-            Q_ASSERT( iconImg.format() == QImage::Format_RGBA8888 );
-            pAtlasImage.pasteImageAtPos( pastePos, iconImg.constBits(), iconImg.width(), iconImg.height() );
+            pAtlasImage.pasteImageAtPos( pastePos, iconImg, imgSize.width(), imgSize.height() );
 
             float texX = (float)pastePos.x() / (float)textureSize.width();
             float texY = (float)pastePos.y() / (float)textureSize.height();
