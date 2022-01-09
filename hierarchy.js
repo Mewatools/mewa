@@ -46,6 +46,7 @@ var hierarchy =
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< MxGpuArray >", "class_mx_list.html", null ],
     [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
+    [ "MxList< MxRenderer::StoredRootSignature >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxList< ReusableBuffer, MxClassInitializer< ReusableBuffer >, 32 >", "class_mx_list.html", null ],
     [ "MxMatrix", "class_mx_matrix.html", null ],
@@ -83,6 +84,7 @@ var hierarchy =
       [ "TestWindow", "class_test_window.html", null ]
     ] ],
     [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
+    [ "MxRenderer::StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", null ],
     [ "ucvector", "structucvector.html", null ],
     [ "uivector", "structuivector.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],

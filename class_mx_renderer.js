@@ -1,6 +1,7 @@
 var class_mx_renderer =
 [
     [ "ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", "struct_mx_renderer_1_1_reusable_vbo" ],
+    [ "StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", "struct_mx_renderer_1_1_stored_root_signature" ],
     [ "Blending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88", [
       [ "NoBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92", null ],
       [ "BlendingText", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1", null ],
@@ -78,6 +79,7 @@ var class_mx_renderer =
     [ "pPipelineChanged", "class_mx_renderer.html#ad829500928d7b5fb06c854361c3e000b", null ],
     [ "pPipelinestate", "class_mx_renderer.html#ab448a78cc9928e7b2c36e2a8430b721c", null ],
     [ "pReusableVbos", "class_mx_renderer.html#a08b829a0080f473f57b1a2369d4d86c2", null ],
+    [ "pRootInputList", "class_mx_renderer.html#a4d603259323730c604fe65741317ea4b", null ],
     [ "pRootSignature", "class_mx_renderer.html#a29342acd4c1a93f01e98e610a0299cfb", null ],
     [ "pRootSignatureChanged", "class_mx_renderer.html#a7e633213f93926fd6a6e5b086d83edf3", null ],
     [ "pRtvHeaps", "class_mx_renderer.html#a811c86bbc3c5d8dd3620ca41122a658d", null ],

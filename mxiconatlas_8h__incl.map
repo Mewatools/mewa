@@ -1,17 +1,16 @@
 <map id="src/iconatlas/mxiconatlas.h" name="src/iconatlas/mxiconatlas.h">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,441,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="97,80,165,107"/>
-<area shape="rect" id="node3" href="$mxabstractatlas_8h.html" title=" " alt="" coords="467,80,591,107"/>
-<area shape="rect" id="node8" href="$mxlist_8h.html" title=" " alt="" coords="189,80,256,107"/>
-<area shape="rect" id="node13" title=" " alt="" coords="347,80,443,107"/>
-<area shape="rect" id="node14" href="$mximage_8h.html" title=" " alt="" coords="402,155,486,181"/>
-<area shape="rect" id="node15" href="$mxthemeicons_8h.html" title=" " alt="" coords="615,80,731,107"/>
-<area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="510,155,581,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="399,304,483,331"/>
-<area shape="rect" id="node6" href="$mxvector_8h.html" title=" " alt="" coords="399,229,484,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="508,229,583,256"/>
-<area shape="rect" id="node9" href="$mxrefcounter_8h.html" title=" " alt="" coords="271,155,377,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="23,155,86,181"/>
-<area shape="rect" id="node11" title=" " alt="" coords="111,155,175,181"/>
-<area shape="rect" id="node12" title=" " alt="" coords="199,155,246,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="290,5,468,32"/>
+<area shape="rect" id="node2" href="$mxabstractatlas_8h.html" title=" " alt="" coords="452,80,576,107"/>
+<area shape="rect" id="node7" href="$mxlist_8h.html" title=" " alt="" coords="124,80,191,107"/>
+<area shape="rect" id="node12" title=" " alt="" coords="331,80,427,107"/>
+<area shape="rect" id="node13" href="$mximage_8h.html" title=" " alt="" coords="222,80,306,107"/>
+<area shape="rect" id="node14" href="$mxthemeicons_8h.html" title=" " alt="" coords="600,80,716,107"/>
+<area shape="rect" id="node3" href="$mxrect_8h.html" title=" " alt="" coords="478,155,549,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="368,304,452,331"/>
+<area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="367,229,452,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="476,229,551,256"/>
+<area shape="rect" id="node8" href="$mxrefcounter_8h.html" title=" " alt="" coords="272,155,379,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="25,155,88,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="112,155,176,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="201,155,248,181"/>
 </map>

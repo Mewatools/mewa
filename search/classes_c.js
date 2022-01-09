@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertex_1179',['Vertex',['../struct_mx_text_draw_1_1_vertex.html',1,'MxTextDraw::Vertex'],['../struct_mx_vector_draw_1_1_vertex.html',1,'MxVectorDraw::Vertex']]]
+  ['ucvector_1184',['ucvector',['../structucvector.html',1,'']]],
+  ['uivector_1185',['uivector',['../structuivector.html',1,'']]]
 ];

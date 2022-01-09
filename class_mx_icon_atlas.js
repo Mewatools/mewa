@@ -7,6 +7,5 @@ var class_mx_icon_atlas =
     [ "isLoaded", "class_mx_icon_atlas.html#a8af8ab08675061932f216182182e0c6e", null ],
     [ "loadGL", "class_mx_icon_atlas.html#a4d5d5990bd7862cd41226145153caa03", null ],
     [ "setIcon", "class_mx_icon_atlas.html#ad70c2799c9e6bce5c27633d702299bf7", null ],
-    [ "texture", "class_mx_icon_atlas.html#a9d9dab33bc58ce5f6d7679622564900f", null ],
     [ "textureSize", "class_mx_icon_atlas.html#ab7f03c34068242001b0bbb39747ef899", null ]
 ];

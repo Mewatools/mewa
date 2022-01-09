@@ -129,13 +129,15 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1447" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1447" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_stored_root_signature.html">StoredRootSignature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -258,6 +260,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7e633213f93926fd6a6e5b086d83edf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616b7bbbe3b36217da5fcc503c387396"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a616b7bbbe3b36217da5fcc503c387396">pCurrInputTextureFlags</a></td></tr>
 <tr class="separator:a616b7bbbe3b36217da5fcc503c387396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d603259323730c604fe65741317ea4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="struct_mx_renderer_1_1_stored_root_signature.html">StoredRootSignature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a4d603259323730c604fe65741317ea4b">pRootInputList</a></td></tr>
+<tr class="separator:a4d603259323730c604fe65741317ea4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e882389140ecdb5c9de259e8a642aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6e882389140ecdb5c9de259e8a642aa3">pBufferViews</a></td></tr>
 <tr class="separator:a6e882389140ecdb5c9de259e8a642aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962">pTextures</a> [1]</td></tr>
@@ -443,7 +447,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed, thats because the renderer tries to minimize state changes. Whenever setting data to a texture (<a class="el" href="class_mx_texture.html#a47874cb5a3af3fbc63435d67fbd5df63" title="Set the given pixel data to this texture.">MxTexture::setPixelData()</a>), if calling <a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture()</a> call it afterwards </p>
+<p>The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed, thats because the renderer tries to minimize state changes. Whenever setting data to a texture (<a class="el" href="class_mx_texture.html#a8f44f5c0dbc554e35943235c65546ea8" title="Set the given pixel data to this texture.">MxTexture::setPixelData()</a>), if calling <a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture()</a> call it afterwards </p>
 
 </div>
 </div>
@@ -1563,6 +1567,20 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a>, <a class="el" href="struct_mx_class_initializer.html">MxClassInitializer</a>&lt;<a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a>&gt;, 32&gt; MxRenderer::pReusableVbos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d603259323730c604fe65741317ea4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d603259323730c604fe65741317ea4b">&#9670;&nbsp;</a></span>pRootInputList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="struct_mx_renderer_1_1_stored_root_signature.html">StoredRootSignature</a>&gt; MxRenderer::pRootInputList</td>
         </tr>
       </table>
 </div><div class="memdoc">

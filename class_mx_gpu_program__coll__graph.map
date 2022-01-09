@@ -1,13 +1,14 @@
 <map id="MxGpuProgram" name="MxGpuProgram">
-<area shape="rect" id="node1" title=" " alt="" coords="794,13,906,40"/>
-<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1107,127,1197,153"/>
-<area shape="rect" id="node3" title=" " alt="" coords="777,76,923,103"/>
-<area shape="rect" id="node4" href="$class_mx_texture.html" title=" " alt="" coords="809,127,891,153"/>
-<area shape="rect" id="node5" href="$class_mx_list.html" title=" " alt="" coords="773,177,927,204"/>
-<area shape="rect" id="node6" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,211,301,253"/>
-<area shape="rect" id="node8" href="$class_mx_list.html" title=" " alt="" coords="360,211,503,253"/>
-<area shape="rect" id="node11" href="$class_mx_list.html" title=" " alt="" coords="736,232,964,288"/>
-<area shape="rect" id="node7" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,219,109,245"/>
-<area shape="rect" id="node9" href="$class_mx_vector.html" title=" " alt="" coords="787,332,913,359"/>
-<area shape="rect" id="node10" href="$class_mx_vector.html" title=" " alt="" coords="369,352,493,379"/>
+<area shape="rect" id="node1" title=" " alt="" coords="794,15,906,41"/>
+<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1107,155,1197,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="777,77,923,104"/>
+<area shape="rect" id="node4" href="$class_mx_texture.html" title=" " alt="" coords="809,128,891,155"/>
+<area shape="rect" id="node5" href="$class_mx_list.html" title=" " alt="" coords="773,179,927,205"/>
+<area shape="rect" id="node6" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,151,301,193"/>
+<area shape="rect" id="node8" href="$class_mx_list.html" title=" " alt="" coords="360,233,503,274"/>
+<area shape="rect" id="node9" href="$class_mx_list.html" title=" " alt="" coords="771,309,929,350"/>
+<area shape="rect" id="node12" href="$class_mx_list.html" title=" " alt="" coords="736,229,964,285"/>
+<area shape="rect" id="node7" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,159,109,185"/>
+<area shape="rect" id="node10" href="$class_mx_vector.html" title=" " alt="" coords="787,396,913,423"/>
+<area shape="rect" id="node11" href="$class_mx_vector.html" title=" " alt="" coords="369,419,493,445"/>
 </map>
