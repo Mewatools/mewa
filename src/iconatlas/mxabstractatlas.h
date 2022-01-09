@@ -7,6 +7,10 @@
 
 #include "mxrect.h"
 
+#ifdef MX_DIRECTX12_RENDERER
+class MxTexture;
+#endif
+
 
 class MxAbstractAtlas
 {
@@ -24,13 +28,22 @@ public:
 
 
     void getPixelSize( MxVector2F *pixelSize ) const;
-    
+#ifdef MX_DIRECTX12_RENDERER
+    MxTexture* texture();
+#else
     unsigned int texture() const;
+#endif
      bool isLoaded() const;
     void discardGLResources();
 
 protected:
+
+#ifdef MX_DIRECTX12_RENDERER
+    MxTexture* pTexture;
+#else
+
     unsigned int pTexture;
+#endif
 
 };
 

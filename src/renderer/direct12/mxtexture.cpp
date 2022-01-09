@@ -56,7 +56,7 @@ void MxTexture::init( MxRenderer *renderer, int imgWidth, int imgHeight)
 }
 
 
-void MxTexture::setPixelData(const char* pixels, const MxVector2I& size, MxTexture::PixelFormat format )
+void MxTexture::setPixelData(const unsigned char* pixels, const MxVector2I& size, MxTexture::PixelFormat format )
 {
 	Q_ASSERT( MxTexture::UChar4 == format );
 	int bpp = 4 * sizeof(unsigned char);

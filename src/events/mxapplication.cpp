@@ -78,7 +78,7 @@ void MxApplication::onMousePress( int x, int y, unsigned int button, unsigned in
      because all widgets, including the main window, can use bottom left
      corner has reference.
     */
-    float openGLY = pRenderer.windowSize().height() - y;
+    float openGLY = (float)(pRenderer.windowSize().height() - y);
     MxVector2F mousePos( (float)x, openGLY);
 
     pMouseEvent.pMousePressedPos = mousePos;

@@ -5,8 +5,6 @@
 #ifndef MXICONATLAS_H
 #define MXICONATLAS_H
 
-#include <QImage>
-
 #include "mxabstractatlas.h"
 #include "mxlist.h"
 #include "mxrenderer.h"
@@ -33,7 +31,6 @@ public:
 
 
 private:
-    virtual unsigned int texture() const;
     virtual const MxVector2I& textureSize() const;
 
 
@@ -45,7 +42,6 @@ private:
     {
         MxRectF textureRect;
         MxVector2I iconSize;
-       // QImage image;
         unsigned char* rgba;
     };
 

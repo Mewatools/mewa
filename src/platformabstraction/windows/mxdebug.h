@@ -32,8 +32,8 @@ inline void DebugOutputFormatString(const char* format, ...) {
 	va_end(valist);
 #endif
 }
-//#define qDebug DebugOutputFormatString
+#define qDebug DebugOutputFormatString
 
-#define qDebug OutputDebugStringA
+//#define qDebug OutputDebugStringA
 
 #endif

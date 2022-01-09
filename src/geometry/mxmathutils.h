@@ -47,7 +47,7 @@ inline int nextPowerOfTwo(int value)
     if ( value < 2 )
         return 0;
 
-    const float ONE_OVER_M_LN2 = 1.442695040888963407;
+    const float ONE_OVER_M_LN2 = 1.442695040888963407f;
     int log2scale = log((float)value) * ONE_OVER_M_LN2;
     int result = 1 << log2scale;
 

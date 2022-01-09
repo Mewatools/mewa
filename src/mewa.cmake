@@ -36,7 +36,9 @@ include_directories(
     ${CMAKE_CURRENT_LIST_DIR}/events
     ${CMAKE_CURRENT_LIST_DIR}/gui
     ${CMAKE_CURRENT_LIST_DIR}/iconatlas
+    ${CMAKE_CURRENT_LIST_DIR}/image
     ${CMAKE_CURRENT_LIST_DIR}/geometry
+    ${CMAKE_CURRENT_LIST_DIR}/3rdparty/lodepng
 )
 
 list(APPEND SOURCE
@@ -44,6 +46,9 @@ list(APPEND SOURCE
     ${CMAKE_CURRENT_LIST_DIR}/events/mxmouseevent.cpp
     ${CMAKE_CURRENT_LIST_DIR}/geometry/mxmatrix.cpp
     ${CMAKE_CURRENT_LIST_DIR}/iconatlas/mxabstractatlas.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/iconatlas/mxiconatlas.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/image/mximage.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/3rdparty/lodepng/lodepng.cpp
 ###### GUI #######
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxbuffer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/gui/mxguiaggregation.cpp

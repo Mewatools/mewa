@@ -100,7 +100,14 @@ public:
     bool pPipelineChanged;
     MxGpuProgram* pCurrProgram;
     bool pRootSignatureChanged;
-    unsigned int pCurrInputTextureFlags;
+    unsigned int pCurrInputTextureFlags; // up to 4 inputs
+    struct StoredRootSignature
+    {
+        unsigned int inputFlags;
+        ID3D12RootSignature* rootSignature;
+    };
+    MxList<StoredRootSignature> pRootInputList;
+
 
     // \TODO is there a better way to reuse buffers ??
    MxList<MxGpuArray> pBufferViews;

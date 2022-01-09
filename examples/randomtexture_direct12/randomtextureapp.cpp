@@ -56,7 +56,7 @@ void RandomTextureApp::intialize()
 	
 
 	pTexture = pRenderer.newTexture(texSize, MxTexture::UChar4);
-	pTexture->setPixelData((const char*)texturedata.data(), texSize, MxTexture::UChar4);
+	pTexture->setPixelData((const unsigned char*)texturedata.data(), texSize, MxTexture::UChar4);
 
 	pProgram.setInputTexture(pTexture);
 }
@@ -89,7 +89,7 @@ void RandomTextureApp::onRender()
 
 
 
-	pTexture->setPixelData((const char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::UChar4);
+	pTexture->setPixelData((const unsigned char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::UChar4);
 
 
 	pRenderer.setViewport(0,0, pWindowWidth, pWindowHeight);

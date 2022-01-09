@@ -6,6 +6,10 @@
 #include "mxmathutils.h"
 #include "lodepng.h"
 
+#ifdef MX_DIRECTX12_RENDERER
+#include "mxtexture.h"
+#endif
+
 MxIconAtlas::MxIconAtlas()
 {
     pTexture = 0;
@@ -39,11 +43,12 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
             Q_ASSERT(NULL != pixelData);
 
 #ifdef MX_DIRECTX12_RENDERER
+            Q_ASSERT( NULL == pTexture);
             pTexture = renderer.newTexture(texSize, MxTexture::UChar4);
-            pTexture.setPixelData(pixelData, texSize, MxTexture::UChar4);
+            pTexture->setPixelData(pixelData, texSize, MxTexture::UChar4);
 
             // \TODO allow RepeatWrap
-            renderer.bindTexture(pTexture, NoFilter | ClampWrap);
+            //renderer.bindTexture(pTexture, (MxTexture::NoFilter | MxTexture::ClampWrap), 0);
             
 #else
             Q_ASSERT( 0 == pTexture );
@@ -69,7 +74,7 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
         }
         else
         {
-            qDebug() << "No icons set, don't load icon atlas";
+            qDebug( "No icons set, don't load icon atlas" );
         }
     }
 }
@@ -143,10 +148,7 @@ bool MxIconAtlas::build()
     return true;
 }
 
-unsigned int MxIconAtlas::texture() const
-{
-    return pTexture;
-}
+
 
 const MxVector2I& MxIconAtlas::textureSize() const
 {

@@ -48,7 +48,7 @@ public:
 	void init( MxRenderer* renderer, int imgWidth, int imgHeight );
 
 	//! Set the given pixel data to this texture
-	void setPixelData( const char* pixels, const MxVector2I& size, PixelFormat format);
+	void setPixelData( const unsigned char* pixels, const MxVector2I& size, PixelFormat format);
 
 
 

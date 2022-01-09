@@ -84,8 +84,14 @@ void MxPainter::render( MxGuiRenderer &renderer )
         if( renderer.pIconAtlas->isLoaded() && pIconDraw[i].pArray->size() > 0 ) {
             renderer.setViewportToWindow();
             renderer.enableDepthTest( false );
+
             MxIconProgram *iconProgram = renderer.setIconProgram();
-            renderer.bindTextureGL( renderer.pIconAtlas->texture() );
+#ifdef MX_DIRECTX12_RENDERER
+            renderer.bindTexture(renderer.pIconAtlas->texture(), MxTexture::NoFilter | MxTexture::ClampWrap, 0);
+#else
+            renderer.bindTextureGL(renderer.pIconAtlas->texture());
+#endif
+            
             renderer.setBlending( MxRenderer::BlendingImages );
             iconProgram->setModelViewMatrix(renderer.windowMatrix());
             iconProgram->setColorFilter( ifilter[i] );
