@@ -120,8 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aef52e37c8dce65f1cb246446043a5b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84900fdac9b5533ac9fcd7cded79d3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_matrix.html#a84900fdac9b5533ac9fcd7cded79d3d8">setToIdentity</a> ()</td></tr>
 <tr class="separator:a84900fdac9b5533ac9fcd7cded79d3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399434ddbc7725725a46990ae688c904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_matrix.html#a399434ddbc7725725a46990ae688c904">ortho</a> (float left, float right, float bottom, float top, float near, float far)</td></tr>
-<tr class="separator:a399434ddbc7725725a46990ae688c904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b14e3ba4e781f15a02ef6cf9ea392e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_matrix.html#a5b14e3ba4e781f15a02ef6cf9ea392e8">ortho</a> (float left, float right, float bottom, float top, float near=-1.0f, float far=1.0f)</td></tr>
+<tr class="separator:a5b14e3ba4e781f15a02ef6cf9ea392e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d18366c604d3c888c5167a6cfa3262b"><td class="memItemLeft" align="right" valign="top">const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_matrix.html#a7d18366c604d3c888c5167a6cfa3262b">data</a> () const</td></tr>
+<tr class="separator:a7d18366c604d3c888c5167a6cfa3262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef52e37c8dce65f1cb246446043a5b42"></a>
@@ -142,8 +144,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a399434ddbc7725725a46990ae688c904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a399434ddbc7725725a46990ae688c904">&#9670;&nbsp;</a></span>ortho()</h2>
+<a id="a7d18366c604d3c888c5167a6cfa3262b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d18366c604d3c888c5167a6cfa3262b">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float * MxMatrix::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b14e3ba4e781f15a02ef6cf9ea392e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b14e3ba4e781f15a02ef6cf9ea392e8">&#9670;&nbsp;</a></span>ortho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,13 +195,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>near</em>, </td>
+          <td class="paramname"><em>near</em> = <code>-1.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>far</em>&#160;</td>
+          <td class="paramname"><em>far</em> = <code>1.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

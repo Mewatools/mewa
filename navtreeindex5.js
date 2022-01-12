@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102":[4,0,0,0,0,1,28],
 "lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a002c3ac8ce7ee8560249f034a3949c4c":[4,0,0,0,0,1,28,2],
 "lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a47e389fe1e3e64ed4a22964d5e151894":[4,0,0,0,0,1,28,1],
 "lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a57b93d657f1794967620870e03643a6b":[4,0,0,0,0,1,28,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a5220cb53702bc2b8db25f6ba97467d09":[2,0,3,0,1],
 "namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a545a58c42e473f0619e3fe2ade40de34":[2,0,3,0,2],
 "namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a7f0334d14f76fdce4559e22ef750f8ff":[2,0,3,0,5],
-"namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a968842c72b0ffdf787153e1ac6098ccd":[2,0,3,0,6],
-"namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861acb6cca8d34a2a546da95b06f9f9dfbb1":[2,0,3,0,4]
+"namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a968842c72b0ffdf787153e1ac6098ccd":[2,0,3,0,6]
 };

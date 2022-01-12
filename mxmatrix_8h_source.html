@@ -131,20 +131,23 @@ $(document).ready(function(){initNavTree('mxmatrix_8h_source.html',''); initResi
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_mx_matrix.html#aef52e37c8dce65f1cb246446043a5b42">MxMatrix</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_matrix.html#a84900fdac9b5533ac9fcd7cded79d3d8">setToIdentity</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_matrix.html#a399434ddbc7725725a46990ae688c904">ortho</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right, <span class="keywordtype">float</span> bottom, <span class="keywordtype">float</span> top, <span class="keywordtype">float</span> near, <span class="keywordtype">float</span> far);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_matrix.html#a5b14e3ba4e781f15a02ef6cf9ea392e8">ortho</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right, <span class="keywordtype">float</span> bottom, <span class="keywordtype">float</span> top, <span class="keywordtype">float</span> near = -1.0f, <span class="keywordtype">float</span> far = 1.0f );</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> pData[4][4];</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* <a class="code" href="class_mx_matrix.html#a7d18366c604d3c888c5167a6cfa3262b">data</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">float</span> pData[4][4];</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_mx_matrix_html"><div class="ttname"><a href="class_mx_matrix.html">MxMatrix</a></div><div class="ttdef"><b>Definition:</b> mxmatrix.h:18</div></div>
-<div class="ttc" id="aclass_mx_matrix_html_a399434ddbc7725725a46990ae688c904"><div class="ttname"><a href="class_mx_matrix.html#a399434ddbc7725725a46990ae688c904">MxMatrix::ortho</a></div><div class="ttdeci">void ortho(float left, float right, float bottom, float top, float near, float far)</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:33</div></div>
+<div class="ttc" id="aclass_mx_matrix_html_a5b14e3ba4e781f15a02ef6cf9ea392e8"><div class="ttname"><a href="class_mx_matrix.html#a5b14e3ba4e781f15a02ef6cf9ea392e8">MxMatrix::ortho</a></div><div class="ttdeci">void ortho(float left, float right, float bottom, float top, float near=-1.0f, float far=1.0f)</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:33</div></div>
+<div class="ttc" id="aclass_mx_matrix_html_a7d18366c604d3c888c5167a6cfa3262b"><div class="ttname"><a href="class_mx_matrix.html#a7d18366c604d3c888c5167a6cfa3262b">MxMatrix::data</a></div><div class="ttdeci">const float * data() const</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:46</div></div>
 <div class="ttc" id="aclass_mx_matrix_html_a84900fdac9b5533ac9fcd7cded79d3d8"><div class="ttname"><a href="class_mx_matrix.html#a84900fdac9b5533ac9fcd7cded79d3d8">MxMatrix::setToIdentity</a></div><div class="ttdeci">void setToIdentity()</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:13</div></div>
 <div class="ttc" id="aclass_mx_matrix_html_aef52e37c8dce65f1cb246446043a5b42"><div class="ttname"><a href="class_mx_matrix.html#aef52e37c8dce65f1cb246446043a5b42">MxMatrix::MxMatrix</a></div><div class="ttdeci">MxMatrix()</div><div class="ttdef"><b>Definition:</b> mxmatrix.cpp:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
