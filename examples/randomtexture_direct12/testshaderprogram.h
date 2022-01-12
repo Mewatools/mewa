@@ -12,6 +12,8 @@
 
 
 class MxTexture;
+class MxMatrix;
+
 
 
 class TestShaderProgram : public MxGpuProgram
@@ -31,10 +33,9 @@ public:
 	virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
 
-
 	// sets texture to the correct shader input
 	void setInputTexture(MxTexture* texture);
-	void draw(TestShaderProgram::Vertex* vtx, UINT vtxLength, unsigned short* idx, UINT idxLength);
+	void draw(const MxMatrix* matrix );
 
 
 

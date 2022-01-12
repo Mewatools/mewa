@@ -21,7 +21,9 @@ public:
 
 	MxMatrix();
 	void setToIdentity();
-	void ortho(float left, float right, float bottom, float top, float near, float far);
+	void ortho(float left, float right, float bottom, float top, float near = -1.0f, float far = 1.0f );
+
+	const float* data() const;
 
 private:
 	float pData[4][4];

@@ -30,7 +30,7 @@ void MxMatrix::setToIdentity()
     pData[3][3] = 1.0f;
 }
 
-void MxMatrix::ortho(float left, float right, float bottom, float top, float near, float far)
+void MxMatrix::ortho(float left, float right, float bottom, float top, float near , float far )
 {
     Q_ASSERT(left != right && bottom != top);
     float width = right - left;
@@ -43,4 +43,8 @@ void MxMatrix::ortho(float left, float right, float bottom, float top, float nea
 	pData[3][1] = -(top + bottom) / invheight;
 }
 
+const float* MxMatrix::data() const
+{
+    return &(pData[0][0]);
+}
 

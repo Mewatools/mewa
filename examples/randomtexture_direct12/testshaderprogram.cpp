@@ -6,6 +6,7 @@
 #include "mxdebug.h"
 #include "mxrenderer.h"
 #include "mxtexture.h"
+#include "mxmatrix.h"
 
 #include<d3dcompiler.h>
 
@@ -101,6 +102,8 @@ void TestShaderProgram::setToPipeline( D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipel
 }
 
 
+
+
 void TestShaderProgram::setInputTexture(MxTexture* texture)
 {
 	// changing descriptor heaps is a heavy operation 
@@ -125,34 +128,66 @@ void TestShaderProgram::setInputTexture(MxTexture* texture)
 	);
 }
 
-void TestShaderProgram::draw(TestShaderProgram::Vertex *vtx, UINT vtxLength,
-	unsigned short *idx, UINT idxLength )
+void TestShaderProgram::draw(const MxMatrix* matrix )
 {
 	pRenderer->prepareToDraw();
 
+
+
+
+	// 1 matrix = 16 float
+	pRenderer->pCmdList->SetGraphicsRoot32BitConstants(0, 16, matrix->data(), 0);
+
+
+
+
+
+
+	float x0 = 50.0f;
+	float x1 = 500.0f;
+	float y0 = 50.0f;
+	float y1 = 500.0f;
+
 	Vertex vertices[] = {
-		{{-0.5f,-0.9f,0.0f},{0.0f,1.0f} },
-		{{-0.5f,0.9f,0.0f} ,{0.0f,0.0f}},
-		{{0.5f,-0.9f,0.0f} ,{1.0f,1.0f}},
-		{{0.5f,0.9f,0.0f} ,{1.0f,0.0f}},
+		{{x0, y0,   0.0f},{0.0f,1.0f} },
+		{{x0, y1,   0.0f} ,{0.0f,0.0f}},
+		{{x1, y0,   0.0f} ,{1.0f,1.0f}},
+
+
+		{{x1, y1,   0.0f} ,{1.0f,0.0f}},
+		{{x0, y1,   0.0f} ,{0.0f,0.0f}},
+		{{x1, y0,   0.0f} ,{1.0f,1.0f}},
 	};
+	
+	UINT arrayLength = 6 * sizeof(Vertex);
 
-	MxGpuArray * vertArray = pRenderer->getBuffer(vtxLength);
-	vertArray->setVertexData((char*)vtx, vtxLength, sizeof(Vertex));
+	MxGpuArray * vertArray = pRenderer->getBuffer(arrayLength);
+	vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
 
-	MxGpuArray* idxArray = pRenderer->getBuffer(idxLength);
-	idxArray->setIndexData((char*)idx, idxLength);
+	//MxGpuArray* idxArray = pRenderer->getBuffer(idxLength);
+	//idxArray->setIndexData((char*)idx, idxLength);
 
 	pRenderer->pCmdList->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 	pRenderer->pCmdList->IASetVertexBuffers(0, 1, &(vertArray->pView.vertexBufferView));
-	pRenderer->pCmdList->IASetIndexBuffer(&(idxArray->pView.indexBufferView));
+	//pRenderer->pCmdList->IASetIndexBuffer(&(idxArray->pView.indexBufferView));
 
 	// descriptorHeaps are called after allocating all textures
 	pRenderer->pCmdList->SetDescriptorHeaps(1, &(pRenderer->pTexDescHeap));
-	pRenderer->pCmdList->SetGraphicsRootDescriptorTable(0, pRenderer->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
+	pRenderer->pCmdList->SetGraphicsRootDescriptorTable(1, pRenderer->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
 
 
-	pRenderer->pCmdList->DrawIndexedInstanced(6, 1, 0, 0, 0);
+
+
+
+	//pRenderer->pCmdList->DrawIndexedInstanced(6, 1, 0, 0, 0);
+	UINT vertexCountPerInstance = 6;
+	UINT instanceCount = 1;
+		UINT startVertexLocation = 0;
+	UINT startInstanceLocation = 0;
+	pRenderer->pCmdList->DrawInstanced(vertexCountPerInstance, 
+		instanceCount, 
+		startVertexLocation, 
+		startInstanceLocation);
 }
 
 

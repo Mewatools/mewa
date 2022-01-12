@@ -97,18 +97,10 @@ void RandomTextureApp::onRender()
 
 
 
-
-
-	TestShaderProgram::Vertex vertices[] = {
-	{{-0.5f ,-0.9f,0.0f},{0.0f,1.0f} },
-	{{-0.5f ,0.9f,0.0f} ,{0.0f,0.0f}},
-	{{0.5f ,-0.9f,0.0f} ,{1.0f,1.0f}},
-	{{0.5f ,0.9f,0.0f} ,{1.0f,0.0f}},
-	};
-
-	unsigned short indices[] = { 0,1,2, 2,1,3 };
-
-	pProgram.draw(vertices, sizeof(vertices), indices, sizeof(indices));
+	MxMatrix m;
+	m.setToIdentity();
+	m.ortho(0.0f, pWindowWidth, 0.0f, pWindowHeight);
+	pProgram.draw(&m);
 
 
 }

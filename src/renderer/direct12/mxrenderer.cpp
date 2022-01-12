@@ -289,6 +289,14 @@ void MxRenderer::setupRoot()
 		D3D12_ROOT_SIGNATURE_DESC rootSignatureDesc = {};
 		rootSignatureDesc.Flags = D3D12_ROOT_SIGNATURE_FLAG_ALLOW_INPUT_ASSEMBLER_INPUT_LAYOUT;
 
+
+
+
+
+
+
+
+
 		D3D12_DESCRIPTOR_RANGE descTblRange = {};
 		descTblRange.NumDescriptors = 1;
 		descTblRange.RangeType = D3D12_DESCRIPTOR_RANGE_TYPE_SRV;
@@ -296,14 +304,23 @@ void MxRenderer::setupRoot()
 		descTblRange.OffsetInDescriptorsFromTableStart = D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND;
 
 
-		D3D12_ROOT_PARAMETER rootparam = {};
-		rootparam.ParameterType = D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE;
-		rootparam.DescriptorTable.pDescriptorRanges = &descTblRange;
-		rootparam.DescriptorTable.NumDescriptorRanges = 1;
-		rootparam.ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+		// Matrix uniform
+		D3D12_ROOT_PARAMETER rootparam[2]; // = {};
+		rootparam[0].ParameterType = D3D12_ROOT_PARAMETER_TYPE_32BIT_CONSTANTS;
+		rootparam[0].Constants.Num32BitValues = 16; // matrix
+		rootparam[0].Constants.ShaderRegister = 0; //b0
+		rootparam[0].Constants.RegisterSpace = 0;
+		rootparam[0].ShaderVisibility = D3D12_SHADER_VISIBILITY_VERTEX;
 
-		rootSignatureDesc.pParameters = &rootparam;
-		rootSignatureDesc.NumParameters = 1;
+		rootparam[1].ParameterType = D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE;
+		rootparam[1].DescriptorTable.pDescriptorRanges = &descTblRange;
+		rootparam[1].DescriptorTable.NumDescriptorRanges = 1;
+		rootparam[1].ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+
+		rootSignatureDesc.pParameters = rootparam;
+		rootSignatureDesc.NumParameters = 2;
+
+
 
 		D3D12_STATIC_SAMPLER_DESC samplerDesc = {};
 		samplerDesc.AddressU = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
