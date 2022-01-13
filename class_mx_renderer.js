@@ -22,6 +22,9 @@ var class_mx_renderer =
       [ "BlendingImages", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be", null ],
       [ "CustomBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b", null ]
     ] ],
+    [ "Limits", "class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854", [
+      [ "MaxBoundTextures", "class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991", null ]
+    ] ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
     [ "~MxRenderer", "class_mx_renderer.html#a63ae7cec7d163dba565670fc7e0adc03", null ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
@@ -59,6 +62,8 @@ var class_mx_renderer =
     [ "uploadToGpu", "class_mx_renderer.html#aef1a832211c59ab0bc4bdafe496c8df2", null ],
     [ "windowSize", "class_mx_renderer.html#acb68f80c171c622673324dcd1acf7297", null ],
     [ "pBackBuffers", "class_mx_renderer.html#ae800adc152ac32f36b7088ac90e9896b", null ],
+    [ "pBoundTextureCount", "class_mx_renderer.html#a4272d1f468c221a151576a57f0cb1d3f", null ],
+    [ "pBoundTextures", "class_mx_renderer.html#a804f6b627c2567c5e41d8c0c96b12c23", null ],
     [ "pBufferViews", "class_mx_renderer.html#a6e882389140ecdb5c9de259e8a642aa3", null ],
     [ "pCmdAllocator", "class_mx_renderer.html#a9fa697fd88d192e4f2883c4277a842b4", null ],
     [ "pCmdList", "class_mx_renderer.html#affa68309e4b0cfb272c9dc1999190d38", null ],
@@ -85,6 +90,5 @@ var class_mx_renderer =
     [ "pRtvHeaps", "class_mx_renderer.html#a811c86bbc3c5d8dd3620ca41122a658d", null ],
     [ "pScreenSize", "class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2", null ],
     [ "pSwapchain", "class_mx_renderer.html#a84c72be3a9927e4766ad4c53fa07c5e1", null ],
-    [ "pTexDescHeap", "class_mx_renderer.html#aedcafca82f9926f3c5144348ced4b2c4", null ],
     [ "pTextures", "class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962", null ]
 ];

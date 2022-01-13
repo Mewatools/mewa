@@ -1,6 +1,7 @@
 <map id="MxGpuProgram" name="MxGpuProgram">
-<area shape="rect" id="node1" title=" " alt="" coords="185,5,297,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="257,5,369,32"/>
 <area shape="rect" id="node2" href="$class_mx_color_wheel_program.html" title=" " alt="" coords="5,80,160,107"/>
 <area shape="rect" id="node3" href="$class_mx_icon_program.html" title=" " alt="" coords="185,80,298,107"/>
 <area shape="rect" id="node4" href="$class_mx_vector_program.html" title=" " alt="" coords="322,80,449,107"/>
+<area shape="rect" id="node5" href="$class_test_shader_program.html" title=" " alt="" coords="473,80,612,107"/>
 </map>

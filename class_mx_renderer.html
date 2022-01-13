@@ -129,7 +129,7 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1447" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1450" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -155,6 +155,9 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2748b643db9e16f5bb45d338b74854"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854">Limits</a> { <a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991">MaxBoundTextures</a> = 2
+ }</td></tr>
+<tr class="separator:a5a2748b643db9e16f5bb45d338b74854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42b5ea733f1ea54d3ebec2bfc13ca88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88">Blending</a> { <br />
 &#160;&#160;<a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92">NoBlending</a> = 0
 , <a class="el" href="class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1">BlendingText</a>
@@ -266,6 +269,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6e882389140ecdb5c9de259e8a642aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962">pTextures</a> [1]</td></tr>
 <tr class="separator:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804f6b627c2567c5e41d8c0c96b12c23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a804f6b627c2567c5e41d8c0c96b12c23">pBoundTextures</a> [<a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991">MaxBoundTextures</a>]</td></tr>
+<tr class="separator:a804f6b627c2567c5e41d8c0c96b12c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4272d1f468c221a151576a57f0cb1d3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a4272d1f468c221a151576a57f0cb1d3f">pBoundTextureCount</a></td></tr>
+<tr class="separator:a4272d1f468c221a151576a57f0cb1d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeee5698eb962d9fb1d34f03ac940983"><td class="memItemLeft" align="right" valign="top">ID3D12Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adeee5698eb962d9fb1d34f03ac940983">pDevice</a></td></tr>
 <tr class="separator:adeee5698eb962d9fb1d34f03ac940983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1a781a0eaca3d2d538720726ef860d"><td class="memItemLeft" align="right" valign="top">IDXGIFactory6 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ace1a781a0eaca3d2d538720726ef860d">pDxgiFactory</a></td></tr>
@@ -286,8 +293,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9bb52a38bba23b8427ff6827d91bdb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29342acd4c1a93f01e98e610a0299cfb"><td class="memItemLeft" align="right" valign="top">ID3D12RootSignature *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a29342acd4c1a93f01e98e610a0299cfb">pRootSignature</a></td></tr>
 <tr class="separator:a29342acd4c1a93f01e98e610a0299cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedcafca82f9926f3c5144348ced4b2c4"><td class="memItemLeft" align="right" valign="top">ID3D12DescriptorHeap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aedcafca82f9926f3c5144348ced4b2c4">pTexDescHeap</a></td></tr>
-<tr class="separator:aedcafca82f9926f3c5144348ced4b2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae800adc152ac32f36b7088ac90e9896b"><td class="memItemLeft" align="right" valign="top">ID3D12Resource *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae800adc152ac32f36b7088ac90e9896b">pBackBuffers</a> [2]</td></tr>
 <tr class="separator:ae800adc152ac32f36b7088ac90e9896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab448a78cc9928e7b2c36e2a8430b721c"><td class="memItemLeft" align="right" valign="top">ID3D12PipelineState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ab448a78cc9928e7b2c36e2a8430b721c">pPipelinestate</a></td></tr>
@@ -359,6 +364,23 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1"></a>BlendingText&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be"></a>BlendingImages&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae42b5ea733f1ea54d3ebec2bfc13ca88a8c99ed07a8f3892f695c99fd900e422b"></a>CustomBlending&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5a2748b643db9e16f5bb45d338b74854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2748b643db9e16f5bb45d338b74854">&#9670;&nbsp;</a></span>Limits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854">MxRenderer::Limits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991"></a>MaxBoundTextures&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1253,6 +1275,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4272d1f468c221a151576a57f0cb1d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4272d1f468c221a151576a57f0cb1d3f">&#9670;&nbsp;</a></span>pBoundTextureCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MxRenderer::pBoundTextureCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a804f6b627c2567c5e41d8c0c96b12c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804f6b627c2567c5e41d8c0c96b12c23">&#9670;&nbsp;</a></span>pBoundTextures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a>* MxRenderer::pBoundTextures[<a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991">MaxBoundTextures</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6e882389140ecdb5c9de259e8a642aa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e882389140ecdb5c9de259e8a642aa3">&#9670;&nbsp;</a></span>pBufferViews</h2>
 
@@ -1659,20 +1709,6 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">IDXGISwapChain4* MxRenderer::pSwapchain</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aedcafca82f9926f3c5144348ced4b2c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedcafca82f9926f3c5144348ced4b2c4">&#9670;&nbsp;</a></span>pTexDescHeap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ID3D12DescriptorHeap* MxRenderer::pTexDescHeap</td>
         </tr>
       </table>
 </div><div class="memdoc">

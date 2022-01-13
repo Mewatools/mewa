@@ -1,12 +1,12 @@
 <map id="MxApplication" name="MxApplication">
-<area shape="rect" id="node1" title=" " alt="" coords="1695,227,1797,253"/>
-<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="1283,44,1361,71"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1697,227,1800,253"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="1285,44,1364,71"/>
 <area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="781,59,919,85"/>
 <area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="369,112,493,139"/>
 <area shape="rect" id="node14" href="$class_mx_vector.html" title=" " alt="" coords="787,113,913,140"/>
-<area shape="rect" id="node5" href="$class_mx_gui_renderer.html" title=" " alt="" coords="1427,201,1538,228"/>
-<area shape="rect" id="node6" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1121,193,1211,220"/>
-<area shape="rect" id="node16" href="$class_mx_gpu_program.html" title=" " alt="" coords="1427,120,1539,147"/>
+<area shape="rect" id="node5" href="$class_mx_gui_renderer.html" title=" " alt="" coords="1430,201,1541,228"/>
+<area shape="rect" id="node6" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1123,193,1214,220"/>
+<area shape="rect" id="node16" href="$class_mx_gpu_program.html" title=" " alt="" coords="1429,120,1541,147"/>
 <area shape="rect" id="node7" title=" " alt="" coords="777,231,923,257"/>
 <area shape="rect" id="node8" href="$class_mx_texture.html" title=" " alt="" coords="809,361,891,388"/>
 <area shape="rect" id="node9" href="$class_mx_list.html" title=" " alt="" coords="773,412,927,439"/>
@@ -15,8 +15,8 @@
 <area shape="rect" id="node13" href="$class_mx_list.html" title=" " alt="" coords="771,165,929,206"/>
 <area shape="rect" id="node15" href="$class_mx_list.html" title=" " alt="" coords="736,281,964,337"/>
 <area shape="rect" id="node11" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,277,109,304"/>
-<area shape="rect" id="node17" href="$class_mx_abstract_atlas.html" title=" " alt="" coords="1107,244,1225,271"/>
-<area shape="rect" id="node18" href="$class_mx_matrix.html" title=" " alt="" coords="1129,295,1203,321"/>
-<area shape="rect" id="node19" href="$class_mx_painter.html" title="Holder to the different painters." alt="" coords="1443,252,1523,279"/>
-<area shape="rect" id="node20" href="$class_mx_gui_aggregation.html" title="The MxGuiAggregation class aggregates UI related data members to allow its access from one place." alt="" coords="1419,303,1547,329"/>
+<area shape="rect" id="node17" href="$class_mx_abstract_atlas.html" title=" " alt="" coords="1109,244,1228,271"/>
+<area shape="rect" id="node18" href="$class_mx_matrix.html" title=" " alt="" coords="1131,295,1206,321"/>
+<area shape="rect" id="node19" href="$class_mx_painter.html" title="Holder to the different painters." alt="" coords="1445,252,1525,279"/>
+<area shape="rect" id="node20" href="$class_mx_gui_aggregation.html" title="The MxGuiAggregation class aggregates UI related data members to allow its access from one place." alt="" coords="1421,303,1549,329"/>
 </map>

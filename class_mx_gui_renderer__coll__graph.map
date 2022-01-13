@@ -1,7 +1,7 @@
 <map id="MxGuiRenderer" name="MxGuiRenderer">
-<area shape="rect" id="node1" title=" " alt="" coords="1419,332,1530,359"/>
-<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1121,165,1211,192"/>
-<area shape="rect" id="node13" href="$class_mx_gpu_program.html" title=" " alt="" coords="1419,165,1531,192"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1422,332,1533,359"/>
+<area shape="rect" id="node2" href="$class_mx_renderer.html" title="The MxRenderer keeps track of the rendering state and resources." alt="" coords="1123,165,1214,192"/>
+<area shape="rect" id="node13" href="$class_mx_gpu_program.html" title=" " alt="" coords="1421,165,1533,192"/>
 <area shape="rect" id="node3" title=" " alt="" coords="777,5,923,32"/>
 <area shape="rect" id="node4" href="$class_mx_texture.html" title=" " alt="" coords="809,56,891,83"/>
 <area shape="rect" id="node5" href="$class_mx_list.html" title=" " alt="" coords="773,107,927,133"/>
@@ -12,6 +12,6 @@
 <area shape="rect" id="node7" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,144,109,171"/>
 <area shape="rect" id="node10" href="$class_mx_vector.html" title=" " alt="" coords="787,303,913,329"/>
 <area shape="rect" id="node11" href="$class_mx_vector.html" title=" " alt="" coords="369,343,493,369"/>
-<area shape="rect" id="node14" href="$class_mx_abstract_atlas.html" title=" " alt="" coords="1107,363,1225,389"/>
-<area shape="rect" id="node15" href="$class_mx_matrix.html" title=" " alt="" coords="1129,413,1203,440"/>
+<area shape="rect" id="node14" href="$class_mx_abstract_atlas.html" title=" " alt="" coords="1109,363,1228,389"/>
+<area shape="rect" id="node15" href="$class_mx_matrix.html" title=" " alt="" coords="1131,413,1206,440"/>
 </map>
