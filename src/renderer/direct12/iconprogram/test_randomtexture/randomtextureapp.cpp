@@ -13,6 +13,9 @@ RandomTextureApp::RandomTextureApp()
 {
 	pImgWidth = 230;
 	pImgHeight = 250;
+
+	pBuffer.reserveForAppend(256);
+
 }
 
 
@@ -58,7 +61,7 @@ void RandomTextureApp::intialize()
 	pTexture = pRenderer.newTexture(texSize, MxTexture::UChar4);
 	pTexture->setPixelData((const unsigned char*)texturedata.data(), texSize, MxTexture::UChar4);
 
-	pProgram.setInputTexture(pTexture);
+
 }
 
 void RandomTextureApp::onRender()
@@ -88,7 +91,7 @@ void RandomTextureApp::onRender()
 	}
 
 
-
+	pRenderer.bindTexture(pTexture, MxTexture::NoFilter | MxTexture::ClampWrap, 0);
 	pTexture->setPixelData((const unsigned char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::UChar4);
 
 
@@ -99,8 +102,15 @@ void RandomTextureApp::onRender()
 
 	MxMatrix m;
 	m.setToIdentity();
-	m.ortho(0.0f, pWindowWidth, 0.0f, pWindowHeight);
-	pProgram.draw(&m);
+	m.ortho(0.0f, (float)pWindowWidth, 0.0f, (float)pWindowHeight);
+
+	pBuffer.clear();
+	MxIconDraw icondraw(&pBuffer);
+	MxRectF texRect(0.0f, 1.0f, 0.0f, 1.0f);
+	MxRectF viewRect(30.0f, 500.0f, 30.0f, 500.0f);
+	icondraw.drawImageRect(texRect, viewRect);
+
+	pProgram.draw(icondraw, &m);
 
 
 }

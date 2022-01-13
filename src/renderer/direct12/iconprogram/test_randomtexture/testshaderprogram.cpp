@@ -7,6 +7,8 @@
 #include "mxrenderer.h"
 #include "mxtexture.h"
 #include "mxmatrix.h"
+#include "mxicondraw.h"
+#include "mxbuffer.h"
 
 #include<d3dcompiler.h>
 
@@ -22,7 +24,7 @@ TestShaderProgram::TestShaderProgram()
     pPixelShader = nullptr;
 
 	pInputLayout[0] =
-	{ "POSITION",0,DXGI_FORMAT_R32G32B32_FLOAT,0,D3D12_APPEND_ALIGNED_ELEMENT,D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA,0 };
+	{ "POSITION",0,DXGI_FORMAT_R32G32_FLOAT,0,D3D12_APPEND_ALIGNED_ELEMENT,D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA,0 };
    
 	pInputLayout[1] = 
 	{ "TEXCOORD",0,DXGI_FORMAT_R32G32_FLOAT,0,D3D12_APPEND_ALIGNED_ELEMENT,D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA,0 };
@@ -104,65 +106,44 @@ void TestShaderProgram::setToPipeline( D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipel
 
 
 
-void TestShaderProgram::setInputTexture(MxTexture* texture)
-{
-	// changing descriptor heaps is a heavy operation 
-	D3D12_DESCRIPTOR_HEAP_DESC descHeapDesc = {};
-	descHeapDesc.Flags = D3D12_DESCRIPTOR_HEAP_FLAG_SHADER_VISIBLE;
-	descHeapDesc.NodeMask = 0;
-	descHeapDesc.NumDescriptors = 1;
-	descHeapDesc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV;
-	Q_ASSERT( NULL != pRenderer );
-	HRESULT result = pRenderer->pDevice->CreateDescriptorHeap(&descHeapDesc, IID_PPV_ARGS(&(pRenderer->pTexDescHeap)));
 
-	D3D12_SHADER_RESOURCE_VIEW_DESC srvDesc = {};
-	srvDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-	srvDesc.Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING;
-	srvDesc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2D;
-	srvDesc.Texture2D.MipLevels = 1;
-
-	// set texture at t0
-	pRenderer->pDevice->CreateShaderResourceView(texture->pTexBuffer,
-		&srvDesc,
-		pRenderer->pTexDescHeap->GetCPUDescriptorHandleForHeapStart()
-	);
-}
-
-void TestShaderProgram::draw(const MxMatrix* matrix )
+void TestShaderProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 {
 	pRenderer->prepareToDraw();
 
+	Q_ASSERT(pRenderer->pBoundTextureCount == 1);
 
 
-
-	// 1 matrix = 16 float
+	// 1 matrix = 16 floats
 	pRenderer->pCmdList->SetGraphicsRoot32BitConstants(0, 16, matrix->data(), 0);
 
 
 
 
 
-
+	/*
 	float x0 = 50.0f;
 	float x1 = 500.0f;
 	float y0 = 50.0f;
 	float y1 = 500.0f;
 
 	Vertex vertices[] = {
-		{{x0, y0,   0.0f},{0.0f,1.0f} },
-		{{x0, y1,   0.0f} ,{0.0f,0.0f}},
-		{{x1, y0,   0.0f} ,{1.0f,1.0f}},
+		{{x0, y0},{0.0f,1.0f} },
+		{{x0, y1} ,{0.0f,0.0f}},
+		{{x1, y0} ,{1.0f,1.0f}},
 
 
-		{{x1, y1,   0.0f} ,{1.0f,0.0f}},
-		{{x0, y1,   0.0f} ,{0.0f,0.0f}},
-		{{x1, y0,   0.0f} ,{1.0f,1.0f}},
+		{{x1, y1} ,{1.0f,0.0f}},
+		{{x0, y1} ,{0.0f,0.0f}},
+		{{x1, y0} ,{1.0f,1.0f}},
 	};
 	
-	UINT arrayLength = 6 * sizeof(Vertex);
+	UINT arrayLength = 6 * sizeof(Vertex);*/
+	UINT arrayLength = rectsArray.pArray->size();
 
 	MxGpuArray * vertArray = pRenderer->getBuffer(arrayLength);
-	vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
+	//vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
+	vertArray->setVertexData((char*)rectsArray.pArray->data(), arrayLength, sizeof(Vertex));
 
 	//MxGpuArray* idxArray = pRenderer->getBuffer(idxLength);
 	//idxArray->setIndexData((char*)idx, idxLength);
@@ -170,10 +151,6 @@ void TestShaderProgram::draw(const MxMatrix* matrix )
 	pRenderer->pCmdList->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 	pRenderer->pCmdList->IASetVertexBuffers(0, 1, &(vertArray->pView.vertexBufferView));
 	//pRenderer->pCmdList->IASetIndexBuffer(&(idxArray->pView.indexBufferView));
-
-	// descriptorHeaps are called after allocating all textures
-	pRenderer->pCmdList->SetDescriptorHeaps(1, &(pRenderer->pTexDescHeap));
-	pRenderer->pCmdList->SetGraphicsRootDescriptorTable(1, pRenderer->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
 
 
 

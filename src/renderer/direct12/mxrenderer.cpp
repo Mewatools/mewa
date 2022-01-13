@@ -25,6 +25,7 @@ MxRenderer::MxRenderer()
 	pCurrProgram = NULL;
 	pRootSignatureChanged = true;
     pCurrInputTextureFlags = 0;
+	pBoundTextureCount = 0;
 
 	pDevice = nullptr;
 	pDxgiFactory = nullptr;
@@ -40,7 +41,7 @@ MxRenderer::MxRenderer()
 	pPipeline.pRootSignature = nullptr;
 
 	pRootSignature = nullptr;
-	pTexDescHeap = nullptr;
+
 	pPipelinestate = nullptr;
 }
 
@@ -250,7 +251,9 @@ void MxRenderer::bindTextureGL(unsigned int textureId, unsigned int slot )
 
 void MxRenderer::bindTexture(MxTexture* texture, unsigned char parameters, int inputIndex)
 {
-
+	Q_ASSERT(inputIndex == pBoundTextureCount);
+	pBoundTextures[pBoundTextureCount] = texture;
+	 pBoundTextureCount++;
 }
 
 void MxRenderer::checkGLError(const char* fileName, int line)
@@ -266,6 +269,8 @@ void MxRenderer::renderBegin()
 void MxRenderer::renderEnd()
 {
 
+
+	pBoundTextureCount = 0;
 }
 
 
@@ -356,6 +361,12 @@ void MxRenderer::prepareToDraw()
 
 	pCmdList->SetGraphicsRootSignature(pRootSignature);
 	pCmdList->SetPipelineState(pPipelinestate);
+
+
+	// descriptorHeaps are called after allocating all textures
+	pCmdList->SetDescriptorHeaps(1, &(pBoundTextures[0]->pTexDescHeap));
+	pCmdList->SetGraphicsRootDescriptorTable(1, pBoundTextures[0]->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
+
 
 }
 

@@ -82,7 +82,7 @@ public:
     
 
 
-
+  
     /// @private
     void setupRoot();
     /// @private
@@ -112,9 +112,16 @@ public:
     // \TODO is there a better way to reuse buffers ??
    MxList<MxGpuArray> pBufferViews;
    
+   enum Limits
+   {
+       MaxBoundTextures = 2,
+   };
 
     // \TODO make it a list of textures
     MxTexture pTextures[1];
+    // \TODO change to MxStack
+    MxTexture* pBoundTextures[MaxBoundTextures];
+    int pBoundTextureCount;
 
     ID3D12Device* pDevice;
     IDXGIFactory6* pDxgiFactory;
@@ -128,7 +135,7 @@ public:
     D3D12_GRAPHICS_PIPELINE_STATE_DESC pPipeline;
     ID3D12RootSignature* pRootSignature;
 
-    ID3D12DescriptorHeap* pTexDescHeap;
+
     ID3D12Resource* pBackBuffers[2];
     ID3D12PipelineState* pPipelinestate;
 };

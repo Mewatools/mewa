@@ -7,11 +7,13 @@
 
 #include "mxgpuprogram.h"
 
+
 #include<d3d12.h>
 
 
 
 class MxTexture;
+class MxIconDraw;
 class MxMatrix;
 
 
@@ -21,7 +23,7 @@ class TestShaderProgram : public MxGpuProgram
 public:
 
 	struct Vertex {
-		float pos[3];
+		float pos[2];
 		float uv[2];
 	};
 
@@ -32,10 +34,7 @@ public:
 	bool compile();
 	virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
-
-	// sets texture to the correct shader input
-	void setInputTexture(MxTexture* texture);
-	void draw(const MxMatrix* matrix );
+	void draw( const MxIconDraw& rectsArray, const MxMatrix* matrix );
 
 
 

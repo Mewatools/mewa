@@ -21,7 +21,7 @@ class MxIconDraw : public MxQuadDraw
 {
 public:
     MxIconDraw();
-    MxIconDraw( MxBuffer *buffer, const MxVector2F *translation );
+    MxIconDraw( MxBuffer *buffer, const MxVector2F *translation = 0 );
     virtual ~MxIconDraw();
 
     void clear();

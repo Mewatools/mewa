@@ -35,6 +35,8 @@ public:
 	MxTexture* pTexture;
 
 
+	MxBuffer pBuffer;
+
 
 };
 

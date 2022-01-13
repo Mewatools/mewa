@@ -37,7 +37,7 @@ void MxIconDraw::clear()
 
 void MxIconDraw::drawImageRect( const MxRectF &source, const MxRectF &dest )
 {
-    Q_ASSERT( (NULL != pArray) && (NULL != pTranslation) );
+    Q_ASSERT( NULL != pArray );
 
     float *dst = (float*) pArray->lastDataAndIncrement( 24 * sizeof(float) );
 
@@ -46,10 +46,18 @@ void MxIconDraw::drawImageRect( const MxRectF &source, const MxRectF &dest )
     const float texLeft = source.left();
     const float texRight = source.right();
 
-    const float left = dest.left() + (*pTranslation)[0];
-    const float bottom = dest.bottom() + (*pTranslation)[1];
-    const float right  = dest.right() + (*pTranslation)[0];
-    const float top = dest.top() + (*pTranslation)[1];
+    float left, bottom, right, top;
+    left = dest.left();
+    bottom = dest.bottom();
+    right = dest.right();
+    top = dest.top();
+    if (pTranslation) {
+        left += (*pTranslation)[0];
+        bottom += (*pTranslation)[1];
+        right += (*pTranslation)[0];
+        top += (*pTranslation)[1];
+    }
+
 
     // left bottom
     *dst = left;

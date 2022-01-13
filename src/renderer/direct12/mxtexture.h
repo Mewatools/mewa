@@ -54,10 +54,10 @@ public:
 
 
 
-
 	D3D12_HEAP_PROPERTIES pHeapProp;
 	D3D12_RESOURCE_DESC pResDesc;
 	ID3D12Resource* pTexBuffer;
+	ID3D12DescriptorHeap* pTexDescHeap;
 };
 
 #endif

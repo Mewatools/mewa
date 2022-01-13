@@ -211,6 +211,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			WaitForSingleObject(event, INFINITE);
 			CloseHandle(event);
 		}
+		renderer->renderEnd();
 		renderer->pCmdAllocator->Reset();
 		renderer->pCmdList->Reset(renderer->pCmdAllocator, renderer->pPipelinestate);
 
