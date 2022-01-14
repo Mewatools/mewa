@@ -41,10 +41,10 @@ var hierarchy =
       [ "MxIconProgram", "class_mx_icon_program.html", null ],
       [ "MxIconProgram", "class_mx_icon_program.html", null ],
       [ "MxVectorProgram", "class_mx_vector_program.html", null ],
-      [ "MxVectorProgram", "class_mx_vector_program.html", null ],
-      [ "TestShaderProgram", "class_test_shader_program.html", null ]
+      [ "MxVectorProgram", "class_mx_vector_program.html", null ]
     ] ],
     [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
+    [ "MxIconDraw", "class_mx_icon_draw.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< MxGpuArray >", "class_mx_list.html", null ],
@@ -62,9 +62,7 @@ var hierarchy =
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", null ],
     [ "MxPainter", "class_mx_painter.html", null ],
     [ "MxPodInitializer< T >", "struct_mx_pod_initializer.html", null ],
-    [ "MxQuadDraw", "class_mx_quad_draw.html", [
-      [ "MxIconDraw", "class_mx_icon_draw.html", null ]
-    ] ],
+    [ "MxQuadDraw", "class_mx_quad_draw.html", null ],
     [ "MxRect< T >", "class_mx_rect.html", null ],
     [ "MxRect< float >", "class_mx_rect.html", null ],
     [ "MxRefCounter", "class_mx_ref_counter.html", [
@@ -80,6 +78,7 @@ var hierarchy =
     [ "MxVector< 2, float >", "class_mx_vector.html", null ],
     [ "MxVector< 2, int >", "class_mx_vector.html", null ],
     [ "MxVector< 3, float >", "class_mx_vector.html", null ],
+    [ "MxVector< 4, unsigned char >", "class_mx_vector.html", null ],
     [ "MxVectorDraw", "class_mx_vector_draw.html", null ],
     [ "MxWidget", "class_mx_widget.html", null ],
     [ "QOpenGLWindow", null, [
@@ -91,7 +90,8 @@ var hierarchy =
     [ "RandomTextureApp::TexRGBA", "struct_random_texture_app_1_1_tex_r_g_b_a.html", null ],
     [ "ucvector", "structucvector.html", null ],
     [ "uivector", "structuivector.html", null ],
+    [ "MxIconDraw::Vertex", "struct_mx_icon_draw_1_1_vertex.html", null ],
+    [ "MxIconProgram::Vertex", "struct_mx_icon_program_1_1_vertex.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
-    [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ],
-    [ "TestShaderProgram::Vertex", "struct_test_shader_program_1_1_vertex.html", null ]
+    [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ]
 ];

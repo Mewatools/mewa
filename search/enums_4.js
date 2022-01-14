@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['iconcolor_2215',['IconColor',['../class_mx_painter.html#a52fe83fb1cd78b72713cdc8c0923836f',1,'MxPainter']]],
-  ['iconname_2216',['IconName',['../namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861',1,'MxThemeIcons']]]
+  ['limits_2180',['Limits',['../class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854',1,'MxRenderer']]],
+  ['lodepngcolortype_2181',['LodePNGColorType',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102',1,'lodepng.h']]],
+  ['lodepngfilterstrategy_2182',['LodePNGFilterStrategy',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f',1,'lodepng.h']]]
 ];

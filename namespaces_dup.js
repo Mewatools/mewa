@@ -25,6 +25,8 @@ var namespaces_dup =
       [ "clearColor", "namespace_mx_theme_colors.html#af1025fd41b9bfbf2cd2f8f9056ca8299", null ],
       [ "darkText", "namespace_mx_theme_colors.html#a34fd8f0bed4760541f0b3641be1c6f9c", null ],
       [ "dialogWindowBackground", "namespace_mx_theme_colors.html#a69e865f9b894fac555dee7e13421a7e0", null ],
+      [ "iconBlue", "namespace_mx_theme_colors.html#af0ec85ba99f27020b6ccc0e235f53897", null ],
+      [ "iconLight", "namespace_mx_theme_colors.html#a125b05541c393fe0b254420bfa47d1eb", null ],
       [ "mainWindowBackground", "namespace_mx_theme_colors.html#acf41e4a6e6d44c4d5011b217d8387372", null ],
       [ "nodePanelBackground", "namespace_mx_theme_colors.html#a899e161c39db35c9c2fa4cafc3731df4", null ],
       [ "outputWindowBackground", "namespace_mx_theme_colors.html#adbea9c5ca842224e69a65ad2e7e37089", null ],

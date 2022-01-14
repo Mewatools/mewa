@@ -17,7 +17,8 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     ] ],
     [ "mxicondraw.cpp", "mxicondraw_8cpp.html", null ],
     [ "mxicondraw.h", "mxicondraw_8h.html", [
-      [ "MxIconDraw", "class_mx_icon_draw.html", "class_mx_icon_draw" ]
+      [ "MxIconDraw", "class_mx_icon_draw.html", "class_mx_icon_draw" ],
+      [ "Vertex", "struct_mx_icon_draw_1_1_vertex.html", "struct_mx_icon_draw_1_1_vertex" ]
     ] ],
     [ "mxorthotransform.h", "mxorthotransform_8h.html", [
       [ "MxOrthoTransform", "class_mx_ortho_transform.html", "class_mx_ortho_transform" ]

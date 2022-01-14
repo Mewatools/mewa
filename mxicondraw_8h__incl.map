@@ -1,9 +1,8 @@
 <map id="src/gui/mxicondraw.h" name="src/gui/mxicondraw.h">
-<area shape="rect" id="node1" title=" " alt="" coords="82,5,226,32"/>
-<area shape="rect" id="node2" href="$mxquaddraw_8h.html" title=" " alt="" coords="35,80,140,107"/>
-<area shape="rect" id="node7" href="$mxthemeicons_8h.html" title=" " alt="" coords="164,80,280,107"/>
-<area shape="rect" id="node3" href="$mxrect_8h.html" title=" " alt="" coords="52,155,123,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,304,89,331"/>
-<area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="45,229,130,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="154,229,229,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="50,5,194,32"/>
+<area shape="rect" id="node2" href="$mxthemeicons_8h.html" title=" " alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node3" href="$mxrect_8h.html" title=" " alt="" coords="145,80,216,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="99,229,183,256"/>
+<area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="138,155,223,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="247,155,322,181"/>
 </map>

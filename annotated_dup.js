@@ -56,7 +56,6 @@ var annotated_dup =
     [ "PlusMinusSvg", "class_plus_minus_svg.html", "class_plus_minus_svg" ],
     [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ],
     [ "RandomTextureApp", "class_random_texture_app.html", "class_random_texture_app" ],
-    [ "TestShaderProgram", "class_test_shader_program.html", "class_test_shader_program" ],
     [ "TestWindow", "class_test_window.html", "class_test_window" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
     [ "uivector", "structuivector.html", "structuivector" ]

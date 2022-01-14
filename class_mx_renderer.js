@@ -30,7 +30,7 @@ var class_mx_renderer =
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
     [ "bindTexture", "class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec", null ],
     [ "bindTextureGL", "class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7", null ],
-    [ "bindTextureGL", "class_mx_renderer.html#ac6dd2f8f835647c93190d2df57129338", null ],
+    [ "bindTextureGL", "class_mx_renderer.html#a8146385407893665fdfa287f33830025", null ],
     [ "checkGLError", "class_mx_renderer.html#ae84f3c089275c5ada33dc0a09eb4037f", null ],
     [ "checkGLError", "class_mx_renderer.html#a40a5255a8935c102021f0891401b96aa", null ],
     [ "discardGLResources", "class_mx_renderer.html#aa82e135865d27cbebc0feeabd1977141", null ],

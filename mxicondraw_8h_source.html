@@ -109,58 +109,76 @@ $(document).ready(function(){initNavTree('mxicondraw_8h_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="mxicondraw_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Copyright (C) 2020-2021 Mewatools &lt;hugo@mewatools.com&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Copyright (C) 2020-2022 Mewatools &lt;hugo@mewatools.com&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** SPDX-License-Identifier: MIT License</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">****************************************************************************/</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MXICONDRAW_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MXICONDRAW_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxquaddraw_8h.html">mxquaddraw.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxthemeicons_8h.html">mxthemeicons.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxrect_8h.html">mxrect.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QxRenderer;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_buffer.html">MxBuffer</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_mx_icon_draw.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_icon_draw.html">MxIconDraw</a> : <span class="keyword">public</span> <a class="code" href="class_mx_quad_draw.html">MxQuadDraw</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_mx_icon_draw.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_icon_draw.html">MxIconDraw</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_mx_icon_draw.html#a9aa36b08e4e7cd54420336919d24c500">MxIconDraw</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_mx_icon_draw.html#a9aa36b08e4e7cd54420336919d24c500">MxIconDraw</a>( <a class="code" href="class_mx_buffer.html">MxBuffer</a> *buffer, <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> *translation = 0 );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_mx_icon_draw.html#a9aa36b08e4e7cd54420336919d24c500">MxIconDraw</a>( <a class="code" href="class_mx_buffer.html">MxBuffer</a> *buffer, <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> *translation );</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_mx_icon_draw.html#a2d4237aee5baebe687742cb4b38f7c78">~MxIconDraw</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_icon_draw.html#aa1eff170c2971c6b66822be0ffc54cb2">clear</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_icon_draw.html#a06488ec3611f6db77a2d8288751ed8e9">drawImageRect</a>( <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;source, <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;dest );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mx_icon_draw.html#a480cd3a434509f61d2f7508f81d1631e">vertexCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_icon_draw.html#a3ad5ebcb6c61cbc4aa5a6f0dd5664290">drawImageRectColored</a>( <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;source, <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;dest, <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector4UC</a> &amp;color );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_icon_draw.html#a06488ec3611f6db77a2d8288751ed8e9">drawImageRect</a>( <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;source, <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;dest );</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">   35</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> *<a class="code" href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">pTranslation</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html">   35</a></span>&#160;   <span class="keyword">struct </span><a class="code" href="struct_mx_icon_draw_1_1_vertex.html">Vertex</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html#ad55cb0b9b59a8265e0cb96bf30762a92">   37</a></span>&#160;       <span class="keywordtype">float</span> <a class="code" href="struct_mx_icon_draw_1_1_vertex.html#ad55cb0b9b59a8265e0cb96bf30762a92">x</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html#a32469d008823cf729fb37d33d8f8af8a">   38</a></span>&#160;       <span class="keywordtype">float</span> <a class="code" href="struct_mx_icon_draw_1_1_vertex.html#a32469d008823cf729fb37d33d8f8af8a">y</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html#a0dc6ab6aa20ed8460d78b5de05da9d81">   40</a></span>&#160;      <a class="code" href="class_mx_vector.html">MxVector4UC</a> <a class="code" href="struct_mx_icon_draw_1_1_vertex.html#a0dc6ab6aa20ed8460d78b5de05da9d81">color</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXICONDRAW_H</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html#a2bdf2321b7e10030223b8a09ecd9f306">   43</a></span>&#160;       <span class="keywordtype">float</span> <a class="code" href="struct_mx_icon_draw_1_1_vertex.html#a2bdf2321b7e10030223b8a09ecd9f306">u</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_mx_icon_draw_1_1_vertex.html#ae45ffdf22470af262154615e0074fe8c">   44</a></span>&#160;       <span class="keywordtype">float</span> <a class="code" href="struct_mx_icon_draw_1_1_vertex.html#ae45ffdf22470af262154615e0074fe8c">v</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">   48</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> *<a class="code" href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">pTranslation</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_mx_icon_draw.html#ad8bb4b3dd9f850a350f551f71ab461da">   49</a></span>&#160;    <a class="code" href="class_mx_buffer.html">MxBuffer</a> *<a class="code" href="class_mx_icon_draw.html#ad8bb4b3dd9f850a350f551f71ab461da">pArray</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXICONDRAW_H</span></div>
 <div class="ttc" id="aclass_mx_abstract_atlas_html"><div class="ttname"><a href="class_mx_abstract_atlas.html">MxAbstractAtlas</a></div><div class="ttdef"><b>Definition:</b> mxabstractatlas.h:16</div></div>
 <div class="ttc" id="aclass_mx_buffer_html"><div class="ttname"><a href="class_mx_buffer.html">MxBuffer</a></div><div class="ttdef"><b>Definition:</b> mxbuffer.h:14</div></div>
 <div class="ttc" id="aclass_mx_icon_draw_html"><div class="ttname"><a href="class_mx_icon_draw.html">MxIconDraw</a></div><div class="ttdoc">The MxIconDraw class draws icons from a atlas.</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:21</div></div>
-<div class="ttc" id="aclass_mx_icon_draw_html_a06488ec3611f6db77a2d8288751ed8e9"><div class="ttname"><a href="class_mx_icon_draw.html#a06488ec3611f6db77a2d8288751ed8e9">MxIconDraw::drawImageRect</a></div><div class="ttdeci">void drawImageRect(const MxRectF &amp;source, const MxRectF &amp;dest)</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:38</div></div>
+<div class="ttc" id="aclass_mx_icon_draw_html_a06488ec3611f6db77a2d8288751ed8e9"><div class="ttname"><a href="class_mx_icon_draw.html#a06488ec3611f6db77a2d8288751ed8e9">MxIconDraw::drawImageRect</a></div><div class="ttdeci">void drawImageRect(const MxRectF &amp;source, const MxRectF &amp;dest)</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:108</div></div>
 <div class="ttc" id="aclass_mx_icon_draw_html_a2d4237aee5baebe687742cb4b38f7c78"><div class="ttname"><a href="class_mx_icon_draw.html#a2d4237aee5baebe687742cb4b38f7c78">MxIconDraw::~MxIconDraw</a></div><div class="ttdeci">virtual ~MxIconDraw()</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:26</div></div>
-<div class="ttc" id="aclass_mx_icon_draw_html_a471f28769af41776545d2101c8f29233"><div class="ttname"><a href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">MxIconDraw::pTranslation</a></div><div class="ttdeci">const MxVector2F * pTranslation</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:35</div></div>
+<div class="ttc" id="aclass_mx_icon_draw_html_a3ad5ebcb6c61cbc4aa5a6f0dd5664290"><div class="ttname"><a href="class_mx_icon_draw.html#a3ad5ebcb6c61cbc4aa5a6f0dd5664290">MxIconDraw::drawImageRectColored</a></div><div class="ttdeci">void drawImageRectColored(const MxRectF &amp;source, const MxRectF &amp;dest, const MxVector4UC &amp;color)</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:44</div></div>
+<div class="ttc" id="aclass_mx_icon_draw_html_a471f28769af41776545d2101c8f29233"><div class="ttname"><a href="class_mx_icon_draw.html#a471f28769af41776545d2101c8f29233">MxIconDraw::pTranslation</a></div><div class="ttdeci">const MxVector2F * pTranslation</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:48</div></div>
+<div class="ttc" id="aclass_mx_icon_draw_html_a480cd3a434509f61d2f7508f81d1631e"><div class="ttname"><a href="class_mx_icon_draw.html#a480cd3a434509f61d2f7508f81d1631e">MxIconDraw::vertexCount</a></div><div class="ttdeci">int vertexCount() const</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:37</div></div>
 <div class="ttc" id="aclass_mx_icon_draw_html_a9aa36b08e4e7cd54420336919d24c500"><div class="ttname"><a href="class_mx_icon_draw.html#a9aa36b08e4e7cd54420336919d24c500">MxIconDraw::MxIconDraw</a></div><div class="ttdeci">MxIconDraw()</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:12</div></div>
 <div class="ttc" id="aclass_mx_icon_draw_html_aa1eff170c2971c6b66822be0ffc54cb2"><div class="ttname"><a href="class_mx_icon_draw.html#aa1eff170c2971c6b66822be0ffc54cb2">MxIconDraw::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> mxicondraw.cpp:29</div></div>
-<div class="ttc" id="aclass_mx_quad_draw_html"><div class="ttname"><a href="class_mx_quad_draw.html">MxQuadDraw</a></div><div class="ttdef"><b>Definition:</b> mxquaddraw.h:14</div></div>
+<div class="ttc" id="aclass_mx_icon_draw_html_ad8bb4b3dd9f850a350f551f71ab461da"><div class="ttname"><a href="class_mx_icon_draw.html#ad8bb4b3dd9f850a350f551f71ab461da">MxIconDraw::pArray</a></div><div class="ttdeci">MxBuffer * pArray</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:49</div></div>
 <div class="ttc" id="aclass_mx_rect_html"><div class="ttname"><a href="class_mx_rect.html">MxRect&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclass_mx_vector_html"><div class="ttname"><a href="class_mx_vector.html">MxVector&lt; 2, float &gt;</a></div></div>
-<div class="ttc" id="amxquaddraw_8h_html"><div class="ttname"><a href="mxquaddraw_8h.html">mxquaddraw.h</a></div></div>
+<div class="ttc" id="amxrect_8h_html"><div class="ttname"><a href="mxrect_8h.html">mxrect.h</a></div></div>
 <div class="ttc" id="amxthemeicons_8h_html"><div class="ttname"><a href="mxthemeicons_8h.html">mxthemeicons.h</a></div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html">MxIconDraw::Vertex</a></div><div class="ttdef"><b>Definition:</b> mxicondraw.h:36</div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html_a0dc6ab6aa20ed8460d78b5de05da9d81"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html#a0dc6ab6aa20ed8460d78b5de05da9d81">MxIconDraw::Vertex::color</a></div><div class="ttdeci">MxVector4UC color</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:40</div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html_a2bdf2321b7e10030223b8a09ecd9f306"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html#a2bdf2321b7e10030223b8a09ecd9f306">MxIconDraw::Vertex::u</a></div><div class="ttdeci">float u</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:43</div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html_a32469d008823cf729fb37d33d8f8af8a"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html#a32469d008823cf729fb37d33d8f8af8a">MxIconDraw::Vertex::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:38</div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html_ad55cb0b9b59a8265e0cb96bf30762a92"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html#ad55cb0b9b59a8265e0cb96bf30762a92">MxIconDraw::Vertex::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:37</div></div>
+<div class="ttc" id="astruct_mx_icon_draw_1_1_vertex_html_ae45ffdf22470af262154615e0074fe8c"><div class="ttname"><a href="struct_mx_icon_draw_1_1_vertex.html#ae45ffdf22470af262154615e0074fe8c">MxIconDraw::Vertex::v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
