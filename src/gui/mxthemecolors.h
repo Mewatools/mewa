@@ -28,6 +28,10 @@ MxVector4UC const mainWindowBackground = {72, 72, 72, 255};
 MxVector4UC const nodePanelBackground = {61, 61, 61, 255};
 MxVector4UC const outputWindowBackground = {61, 61, 61, 255};
 MxVector4UC const dialogWindowBackground = {61, 61, 61, 255};
+
+// used in widget icons
+MxVector4UC const iconLight = {179, 179, 179, 128};
+MxVector4UC const iconBlue = {62, 149, 249, 128};
 }
 
 

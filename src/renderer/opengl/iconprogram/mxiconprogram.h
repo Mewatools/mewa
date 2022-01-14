@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXICONPROGRAM_H
@@ -27,47 +27,21 @@ public:
     void init( MxRenderer *renderer );
     void compile(); // \TODO make it private
 
-    void setModelViewMatrix( const MxMatrix *matrix );
 
 
-    enum ColorFilter {
-        IdentityFilter,
-        LightGrayFilter,
-        BlueFilter,
-        DarkGrayFilter,
 
-    };
-
-    void setColorFilter(const ColorFilter filter );
-    void draw(MxIconDraw &rectsArray );
+    void draw(MxIconDraw &rectsArray, const MxMatrix *matrix );
 
     virtual VaoFormat vaoFormat();
     virtual void enableAttributes();
 
 
-
-public:
-    void updateUniformValues();
-
-
-
-    enum Update
-    {
-        UpdateMatrix = 0x00000001,
-        UpdateAlpha = 0x00000002,
-        UpdateAll = 0x7FFFFFFF
-    };
-
-
-    ColorFilter pColorFilter;
-
-    int pUpdates;
-public:
+private:
     // gl
     GLint vertexAttr2;
     GLint texCoordAttr2;
     GLint matrixUniform2;
-    GLint pColorUniform;
+    GLint mColorAttrib;
     GLint textureUniform2;
 
 };

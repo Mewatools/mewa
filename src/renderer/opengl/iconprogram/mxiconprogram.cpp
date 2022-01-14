@@ -13,8 +13,6 @@
 */
 MxIconProgram::MxIconProgram()
 {
-    pColorFilter = IdentityFilter;
-    pUpdates = UpdateAll;
 }
 
 
@@ -40,19 +38,22 @@ void MxIconProgram::compile()
     const char *vsrc =
             "attribute vec4 vertex;\n"
             "attribute vec4 texcoord;\n"
+            "attribute  vec4 color;\n"
             "uniform mat4 matrix;\n"
-            "varying vec4 qt_TexCoord0;\n"
+            "varying vec4 vTexCoord;\n"
+            "varying  vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
             "    gl_Position = matrix * vertex;\n"
-            "    qt_TexCoord0 = texcoord;\n"
+            "    vColor = color;\n"
+            "    vTexCoord = texcoord;\n"
             "}\n";
     pRenderer->glShaderSource(vshader, 1, &vsrc, NULL);
     pRenderer->glCompileShader(vshader);
     GLint compiled;
     pRenderer->glGetShaderiv(vshader, GL_COMPILE_STATUS, &compiled);
 
-    qDebug("MxAlphaTexture vertex shader compiled: %d\n", compiled);
+    qDebug("MxIconProgram vertex shader compiled: %d\n", compiled);
 
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
@@ -61,18 +62,18 @@ void MxIconProgram::compile()
             "precision mediump float;\n"
         #endif
             "uniform sampler2D tex;\n"
-            "uniform  vec4 color;\n"
-            "varying  vec4 qt_TexCoord0;\n"
+            "varying  vec4 vTexCoord;\n"
+            "varying  vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
-            "    vec4 pixel = texture2D(tex, qt_TexCoord0.st);\n"
-            "    gl_FragColor = pixel * color;\n"
+            "    vec4 pixel = texture2D(tex, vTexCoord.st);\n"
+            "    gl_FragColor = pixel * vColor;\n"
             "}\n";
 
     pRenderer->glShaderSource(fshader, 1, &fsrc, NULL);
     pRenderer->glCompileShader(fshader);
     pRenderer->glGetShaderiv(fshader, GL_COMPILE_STATUS, &compiled);
-    qDebug("MxAlphaTexture fragment shader compiled: %d\n", compiled);
+    qDebug("MxIconProgram fragment shader compiled: %d\n", compiled);
 
 
     mProgramId = pRenderer->glCreateProgram();
@@ -98,71 +99,43 @@ void MxIconProgram::compile()
     vertexAttr2 = pRenderer->glGetAttribLocation(mProgramId, "vertex");
     texCoordAttr2 = pRenderer->glGetAttribLocation(mProgramId, "texcoord");
     matrixUniform2 = pRenderer->glGetUniformLocation(mProgramId, "matrix");
-    pColorUniform = pRenderer->glGetUniformLocation(mProgramId, "color");
+    mColorAttrib = pRenderer->glGetAttribLocation(mProgramId, "color");
     textureUniform2 = pRenderer->glGetUniformLocation(mProgramId, "tex");
 
 }
 
-void MxIconProgram::setModelViewMatrix( const MxMatrix *matrix )
-{
-    pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, matrix->constData());
-}
 
-void MxIconProgram::setColorFilter( const ColorFilter filter )
-{
-    if( filter != pColorFilter )
-    {
-        pColorFilter = filter;
-        pUpdates |= UpdateAlpha;
-    }
-}
 
-void MxIconProgram::draw( MxIconDraw &rectsArray )
+
+void MxIconProgram::draw( MxIconDraw &rectsArray, const MxMatrix *matrix )
 {
     MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), rectsArray.pArray->data(), rectsArray.pArray->size() );
     enableVao( gpuArray );
-    updateUniformValues();
+
+    pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, matrix->constData());
+
     pRenderer->glUniform1i(textureUniform2, 0); // \TODO flag it to avoid setting always
 
     pRenderer->glDrawArrays(GL_TRIANGLES, 0, rectsArray.vertexCount());
     disableVao();
 }
 
+
 MxGpuProgram::VaoFormat MxIconProgram::vaoFormat()
 {
-    return MxGpuProgram::Float_2_2;
+    return MxGpuProgram::Float2_UChar4_Float2;
 }
 
 void MxIconProgram::enableAttributes()
 {
     pRenderer->glEnableVertexAttribArray(vertexAttr2);
     pRenderer->glEnableVertexAttribArray(texCoordAttr2);
-    pRenderer->glVertexAttribPointer(vertexAttr2, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), 0);
-    pRenderer->glVertexAttribPointer(texCoordAttr2, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (void*)(2*sizeof(GLfloat)));
-}
+    pRenderer->glEnableVertexAttribArray(mColorAttrib);
 
-
-void MxIconProgram::updateUniformValues()
-{
-
-    if( pUpdates & UpdateAlpha )
-    {
-
-        if( pColorFilter == IdentityFilter ) {
-            GLfloat identityMultiplier[] = {1.0f, 1.0f, 1.0f, 1.0f};
-            pRenderer->glUniform4fv(pColorUniform, 1, identityMultiplier);
-        } else if( pColorFilter == BlueFilter ) {
-            GLfloat blueMultiplier[] = {0.243f, 0.584f, 0.973f, 0.5f};
-            pRenderer->glUniform4fv(pColorUniform, 1, blueMultiplier);
-        } else if( pColorFilter == LightGrayFilter ) {
-            GLfloat lightGrayMultiplier[] = {0.7f, 0.7f, 0.7f, 0.5f};
-            pRenderer->glUniform4fv(pColorUniform, 1, lightGrayMultiplier);
-        } else {
-            Q_ASSERT( pColorFilter == DarkGrayFilter );
-            // values taken from https://www.tutorialspoint.com/dip/grayscale_to_rgb_conversion.htm
-            GLfloat grayMultiplier[] = { 0.3f, 0.59f, 0.11f, 1.0f };
-            pRenderer->glUniform4fv(pColorUniform, 1, grayMultiplier);
-        }
-
-    }
+    uintptr_t offset = 0;
+    pRenderer->glVertexAttribPointer(vertexAttr2, 2, GL_FLOAT, GL_FALSE, sizeof(MxIconDraw::Vertex), (void *)offset);
+    offset += (2*sizeof(GLfloat));
+    pRenderer->glVertexAttribPointer(mColorAttrib, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(MxIconDraw::Vertex), (void *)offset);
+    offset += (4*sizeof(GLubyte));
+    pRenderer->glVertexAttribPointer(texCoordAttr2, 2, GL_FLOAT, GL_FALSE,  sizeof(MxIconDraw::Vertex), (void *)offset);
 }

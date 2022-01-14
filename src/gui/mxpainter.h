@@ -7,9 +7,9 @@
 
 #include "mxdebug.h"
 #include "mxvectordraw.h"
-#include "mxicondraw.h"
 #include "mxlist.h"
 #include "mxtextdraw.h"
+#include "mxicondraw.h"
 
 
 class MxWidget;
@@ -20,17 +20,9 @@ class MxGuiRenderer;
 class MxPainter
 {
 public:
-    enum IconColor {
-        OriginalColor = 0,
-        BlueColor,
-        LightColor,
-        ColorCount
-    };
-
     MxPainter();
     ~MxPainter();
 
-    void discardGLResources();
     void initArrays();
     void initializeGL( MxRenderer *renderer );
 
@@ -38,7 +30,7 @@ public:
     void render(MxGuiRenderer &renderer );
 
     void setTranslation( const MxVector2F &translation );
-    MxIconDraw &iconDraw(IconColor color );
+    MxIconDraw &iconDraw();
     void drawSvg(MxAbstractSvg *svg , const MxRectF &targetRect);
     MxVectorDraw & vectorDraw();
     MxTextDraw & textDraw();
@@ -48,7 +40,7 @@ public:
 
 private:
     MxVectorDraw pVectorDraw;
-    MxIconDraw pIconDraw[ColorCount];
+    MxIconDraw pIconDraw;
 
 
     MxTextDraw pTextDraw; // colored text

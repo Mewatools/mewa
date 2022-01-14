@@ -5,42 +5,42 @@
 #ifndef MXICONPROGRAM_H
 #define MXICONPROGRAM_H
 
-
 #include "mxgpuprogram.h"
 
 
-class MxMatrix;
+#include<d3d12.h>
+
+
 class MxIconDraw;
-class MxRenderer;
+class MxMatrix;
 
 
-// \TODO
+
 class MxIconProgram : public MxGpuProgram
 {
 public:
 
-    enum ColorFilter {
-        IdentityFilter,
-        LightGrayFilter,
-        BlueFilter,
-        DarkGrayFilter,
+	struct Vertex {
+		float pos[2];
+		unsigned char color[4];
+		float uv[2];
+	};
 
-    };
+	MxIconProgram();
+	virtual ~MxIconProgram();
 
 
-    MxIconProgram();
-    virtual ~MxIconProgram();
+	bool compile();
+	virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
-   
-    virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
-
-    void setModelViewMatrix(const MxMatrix* matrix );
-    void setColorFilter(const ColorFilter filter );
-    void draw(MxIconDraw& rectsArray );
+	void draw( const MxIconDraw& rectsArray, const MxMatrix* matrix );
 
 
 
+private:
+	ID3DBlob* pVertexShader;
+	ID3DBlob* pPixelShader;
+	D3D12_INPUT_ELEMENT_DESC pInputLayout[3]; // inputs POSITION , COLOR and TEXTURE
 };
-
 
 #endif

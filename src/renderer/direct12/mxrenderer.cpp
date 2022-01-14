@@ -243,7 +243,7 @@ void MxRenderer::setTexturesParameters(unsigned int flags)
 	}
 }
 
-void MxRenderer::bindTextureGL(unsigned int textureId, unsigned int slot )
+void MxRenderer::bindTextureGL( MxTexture *texture )
 {
 
 }

@@ -69,7 +69,7 @@ public:
     void setProgram( MxGpuProgram* program );
     void setTexturesParameters( unsigned int flags );
     // \deprecated
-    void bindTextureGL(unsigned int textureId, unsigned int slot = 0);
+    void bindTextureGL( MxTexture* texture );
     /*!The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed,
      thats because the renderer tries to minimize state changes.
      Whenever setting data to a texture (MxTexture::setPixelData()), if calling bindTexture() call it afterwards

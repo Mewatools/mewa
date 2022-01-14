@@ -14,23 +14,19 @@
 MxPainter::MxPainter()
 {
     pVectorDraw.pTranslation = &pTranslation;
-    for( int i=0; i<ColorCount; ++i )
-    {
-        new (&(pIconDraw[i])) MxIconDraw(); // call ctor because it has inherited class
-        pIconDraw[i].pTranslation = &pTranslation;
-    }
+
+    new (&pIconDraw) MxIconDraw(); // call ctor because it has inherited class
+    pIconDraw.pTranslation = &pTranslation;
 }
 
 MxPainter::~MxPainter()
 {
 }
 
-void MxPainter::discardGLResources()
-{
-}
-
 void MxPainter::initArrays()
 {
+    pVectorDraw.pArray = NULL;
+    pIconDraw.pArray = NULL;
 }
 
 void MxPainter::initializeGL(MxRenderer *)
@@ -46,17 +42,10 @@ void MxPainter::prepareRender( MxGuiRenderer &renderer )
     pVectorDraw.pArray = buffer;
     Q_ASSERT( buffer->size() == 0 );
 
-    buffer = renderer.getTemporaryBuffer(4800);
-    pIconDraw[MxPainter::OriginalColor].pArray = buffer;
+    buffer = renderer.getTemporaryBuffer(8192);
+    pIconDraw.pArray = buffer;
     Q_ASSERT( buffer->size() == 0 );
 
-    buffer = renderer.getTemporaryBuffer(512);
-    pIconDraw[MxPainter::BlueColor].pArray = buffer;
-    Q_ASSERT( buffer->size() == 0 );
-
-    buffer = renderer.getTemporaryBuffer(512);
-    pIconDraw[MxPainter::LightColor].pArray = buffer;
-    Q_ASSERT( buffer->size() == 0 );
 }
 
 
@@ -74,36 +63,15 @@ void MxPainter::render( MxGuiRenderer &renderer )
 
         pVectorDraw.pArray = NULL;
     }
-
-    MxIconProgram::ColorFilter ifilter[MxPainter::ColorCount];
-    Q_ASSERT( 3 == MxPainter::ColorCount );
-    ifilter[0] = MxIconProgram::IdentityFilter;
-    ifilter[1] = MxIconProgram::BlueFilter;
-    ifilter[2] = MxIconProgram::LightGrayFilter;
-    for(int i=0; i < MxPainter::ColorCount; ++i) {
-        if( renderer.pIconAtlas->isLoaded() && pIconDraw[i].pArray->size() > 0 ) {
-            renderer.setViewportToWindow();
-            renderer.enableDepthTest( false );
-
-            MxIconProgram *iconProgram = renderer.setIconProgram();
-#ifdef MX_DIRECTX12_RENDERER
-            renderer.bindTexture(renderer.pIconAtlas->texture(), MxTexture::NoFilter | MxTexture::ClampWrap, 0);
-#else
-            renderer.bindTextureGL(renderer.pIconAtlas->texture());
-#endif
-            
-            renderer.setBlending( MxRenderer::BlendingImages );
-            iconProgram->setModelViewMatrix(renderer.windowMatrix());
-            iconProgram->setColorFilter( ifilter[i] );
-            iconProgram->draw( pIconDraw[i] );
-            //pIconDraw[i].pArray->pSize = -1;
-            pIconDraw[i].pArray = NULL;
-        }
+    if( renderer.pIconAtlas->isLoaded() && pIconDraw.pArray->size() > 0 ) {
+        renderer.setViewportToWindow();
+        renderer.enableDepthTest( false );
+        MxIconProgram *iconProgram = renderer.setIconProgram();
+        renderer.bindTextureGL( renderer.pIconAtlas->texture() );
+        renderer.setBlending( MxRenderer::BlendingImages );
+        iconProgram->draw( pIconDraw, renderer.windowMatrix() );
+        pIconDraw.pArray = NULL;
     }
-
-
-
-
 }
 
 
@@ -111,17 +79,15 @@ void MxPainter::setTranslation( const MxVector2F &translation )
 {
     pTranslation = translation;
 
-    for( int i=0; i<ColorCount; ++i )
-    {
-        Q_ASSERT( pIconDraw[i].pTranslation == &pTranslation );
-    }
+    Q_ASSERT( pIconDraw.pTranslation == &pTranslation );
+
 
 }
 
 
-MxIconDraw& MxPainter::iconDraw( IconColor color )
+MxIconDraw& MxPainter::iconDraw()
 {
-    return pIconDraw[color];
+    return pIconDraw;
 }
 
 void MxPainter::drawSvg( MxAbstractSvg *svg, const MxRectF &targetRect )

@@ -3,7 +3,11 @@ cmake_minimum_required(VERSION 3.10)
 project("RandomTexture")
 
 
-file(GLOB_RECURSE RES_FILES  ${CMAKE_CURRENT_LIST_DIR}/*.hlsl*) 
+file(GLOB_RECURSE RES_FILES  ${CMAKE_CURRENT_LIST_DIR}/*.hlsl*)
+#include(${CMAKE_CURRENT_LIST_DIR}/../iconprogram.cmake)
+
+
+
 SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_LIST_DIR})
 
 
@@ -13,7 +17,6 @@ include(${MEWA_SRC_DIR}/mewa.cmake)
 
 add_executable(RandomTexture 
     randomtextureapp.cpp
-    testshaderprogram.cpp 
     main.cpp 
     ${SOURCE}
 )

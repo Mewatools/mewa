@@ -5,7 +5,7 @@
 #ifndef RANDOMTEXTUREAPP_H
 #define RANDOMTEXTUREAPP_H
 
-#include "testshaderprogram.h"
+#include "mxiconprogram.h"
 #include "mxapplication.h"
 
 
@@ -31,7 +31,7 @@ public:
 	int pWindowWidth;
 	int pWindowHeight;
 
-	TestShaderProgram pProgram;
+	MxIconProgram pProgram;
 	MxTexture* pTexture;
 
 

@@ -10,6 +10,7 @@
 #include "mxguiaggregation.h"
 #include "mxabstractatlas.h"
 #include "mxgeometryutils.h"
+#include "mxthemecolors.h"
 
 
 #define ARROW_COLUMN_WIDTH 12.0f
@@ -85,9 +86,10 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     // draw  text
 
 
+const MxVector4UC &iconLightColor = MxThemeColors::iconLight;
+const MxVector4UC &iconBlueColor = MxThemeColors::iconBlue;
 
-    MxIconDraw &iconPainter = painter.iconDraw( MxPainter::LightColor );
-    MxIconDraw &bluePainter = painter.iconDraw( MxPainter::BlueColor );
+MxIconDraw &iconPainter = painter.iconDraw();
     const MxAbstractAtlas *atlas = MxGuiAggregation::instance()->iconAtlas();
 
 
@@ -112,7 +114,7 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     const MxRectF &lockIconRect = atlas->iconRect( lockIconName );
     // because the icon is smaller than the buttonRect, we center the icon inside buttonRect
     MxRectF centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( lockIconName ) );
-    iconPainter.drawImageRect( lockIconRect, centeredIconRect );
+    iconPainter.drawImageRectColored( lockIconRect, centeredIconRect, iconLightColor );
 
 
 
@@ -131,7 +133,7 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     }
     const MxRectF &visIconRect = atlas->iconRect( visIconName );
     centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( visIconName ) );
-    bluePainter.drawImageRect( visIconRect, centeredIconRect );
+    iconPainter.drawImageRectColored( visIconRect, centeredIconRect, iconBlueColor );
 
     // invert button
     buttonRect.setRight(buttonLeft);
@@ -145,7 +147,7 @@ void RotoShape::paint(MxPainter &painter, DrawData &drawData ) const
     }
     const MxRectF &invTextureRect = atlas->iconRect( invertIconName );
     centeredIconRect = MxGeometryUtils::centeredRect( buttonRect, atlas->iconSize( invertIconName ) );
-    iconPainter.drawImageRect( invTextureRect, centeredIconRect );
+    iconPainter.drawImageRectColored( invTextureRect, centeredIconRect, iconLightColor );
 
 
     drawData.rowIndex++;
