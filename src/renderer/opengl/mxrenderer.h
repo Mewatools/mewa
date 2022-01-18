@@ -14,6 +14,7 @@
 
 class MxGpuProgram;
 class MxAbstractAtlas;
+class MxTexture;
 
 
 class MxRenderer : public MxOpenGLFunctions
@@ -50,6 +51,8 @@ public:
     void setBlending( Blending blend );
      void enableDepthTest( bool enable );
      void bindTextureGL(GLuint textureId , GLuint activeSlot = 0 );
+     void bindTexture( MxTexture *texture, unsigned char parameters = 0xFF, int inputIndex = 0 );
+
 
     MxGpuArray * uploadToGpu(MxGpuProgram::VaoFormat format, const char *data , unsigned int size);
     // \TODO make it private
@@ -74,6 +77,15 @@ virtual void renderEnd();
 
 protected:
 
+    struct Viewport
+    {
+        int x;
+        int y;
+        unsigned int width;
+        unsigned int height;
+    };
+    Viewport pViewport;
+    
     unsigned int pCurrShaderProgram; // \TODO change to MxGpuProgram*
     MxVector2I pScreenSize;
     Blending pCurrBlend;

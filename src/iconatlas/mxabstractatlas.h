@@ -1,15 +1,12 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXABSTRACTATLAS_H
 #define MXABSTRACTATLAS_H
 
 #include "mxrect.h"
-
-#ifdef MX_DIRECTX12_RENDERER
-class MxTexture;
-#endif
+#include "mxtexture.h"
 
 
 class MxAbstractAtlas
@@ -28,22 +25,14 @@ public:
 
 
     void getPixelSize( MxVector2F *pixelSize ) const;
-#ifdef MX_DIRECTX12_RENDERER
-    MxTexture* texture();
-#else
-    unsigned int texture() const;
-#endif
+    
+   MxTexture* texture();
      bool isLoaded() const;
-    void discardGLResources();
+
 
 protected:
+    MxTexture pTexture;
 
-#ifdef MX_DIRECTX12_RENDERER
-    MxTexture* pTexture;
-#else
-
-    unsigned int pTexture;
-#endif
 
 };
 

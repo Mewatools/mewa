@@ -7,7 +7,6 @@
 
 MxAbstractAtlas::MxAbstractAtlas()
 {
-    pTexture = 0;
 }
 
 MxAbstractAtlas::~MxAbstractAtlas()
@@ -22,18 +21,13 @@ void MxAbstractAtlas::getPixelSize( MxVector2F *pixelSize ) const
     (*pixelSize) = MxVector2I(w, h);
 }
 
-#ifdef MX_DIRECTX12_RENDERER
-MxTexture * MxAbstractAtlas::texture()
-#else
-unsigned int MxAbstractAtlas::texture() const
-#endif
+MxTexture* MxAbstractAtlas::texture()
 {
-    return pTexture;
+    return &pTexture;
 }
-
 
  bool MxAbstractAtlas::isLoaded() const
  {
-     return pTexture > 0;
+     return (! pTexture.isNull());
  }
 

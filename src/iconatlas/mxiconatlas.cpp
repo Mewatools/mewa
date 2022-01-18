@@ -12,8 +12,6 @@
 
 MxIconAtlas::MxIconAtlas()
 {
-    pTexture = 0;
-
     for(int i=0; i<MxThemeIcons::ImageCount; ++i) {
         pImageList[i].iconSize = MxVector2I(0,0);
         pImageList[i].rgba = NULL;
@@ -42,27 +40,21 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
             const unsigned char* pixelData = pAtlasImage.bits();
             Q_ASSERT(NULL != pixelData);
 
-#ifdef MX_DIRECTX12_RENDERER
+/*
             Q_ASSERT( NULL == pTexture);
             pTexture = renderer.newTexture(texSize, MxTexture::UChar4);
             pTexture->setPixelData(pixelData, texSize, MxTexture::UChar4);
 
             // \TODO allow RepeatWrap
             //renderer.bindTexture(pTexture, (MxTexture::NoFilter | MxTexture::ClampWrap), 0);
-            
-#else
-            Q_ASSERT( 0 == pTexture );
-            renderer.glGenTextures(1, &pTexture );
-            renderer.glBindTexture( GL_TEXTURE_2D, pTexture );
+            */
 
-            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-            renderer.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-            
-            renderer.glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, texSize[0], texSize[1], 0, GL_RGBA, GL_UNSIGNED_BYTE, pixelData );
-#endif
+
+
+
+            pTexture.create( &renderer, texSize, MxTexture::RGBA8, pixelData );
+
 
             renderer.checkGLError(__FILE__, __LINE__);
 
@@ -77,11 +69,6 @@ void MxIconAtlas::loadGL( MxRenderer& renderer )
             qDebug( "No icons set, don't load icon atlas" );
         }
     }
-}
-
-bool MxIconAtlas::isLoaded() const
-{
-    return pTexture > 0;
 }
 
 void MxIconAtlas::setIcon( MxThemeIcons::IconName name, const char *imageFileName )

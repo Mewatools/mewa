@@ -34,6 +34,7 @@ public:
 private:
     MxIconAtlas pIconAtlas;
     MxApplication pApp;
+    bool pFirstTime;
 };
 
 #endif

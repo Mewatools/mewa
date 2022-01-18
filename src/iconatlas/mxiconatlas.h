@@ -22,7 +22,7 @@ public:
     virtual const MxRectF& iconRect( int name ) const;
     virtual const MxVector2I &iconSize( int name ) const;
     void loadGL( MxRenderer& renderer );
-    bool isLoaded() const;
+
 
 
     void setIcon( MxThemeIcons::IconName name, const char *imageFileName );
@@ -42,7 +42,7 @@ private:
     {
         MxRectF textureRect;
         MxVector2I iconSize;
-        unsigned char* rgba;
+        unsigned char* rgba; // must be unsigned char* because of lodepng
     };
 
     ImageDetails pImageList[MxThemeIcons::ImageCount];

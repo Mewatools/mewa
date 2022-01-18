@@ -4,10 +4,16 @@
 ****************************************************************************/
 #include "mxrenderer.h"
 #include "mxthemecolors.h"
+#include "mxtexture.h"
 
 
 MxRenderer::MxRenderer()
 {
+    pViewport.x = 0;
+  pViewport.y = 0;
+   pViewport.width = 0;
+   pViewport.height = 0;
+
 
     pCurrShaderProgram = 9999; // very high number because 0 is reserved
     pCurrBlend = NoBlending;
@@ -65,7 +71,18 @@ void MxRenderer::setProgram( MxGpuProgram *effect )
 
 void MxRenderer::setViewport( int x, int y, unsigned int width, unsigned int height )
 {
-    glViewport( x, y, width, height);
+    if(  pViewport.width != width ||
+         pViewport.height != height ||
+         pViewport.x != x ||
+         pViewport.y != y )
+    {
+        pViewport.x = x;
+        pViewport.y = y;
+        pViewport.width = width;
+        pViewport.height = height;
+
+        glViewport( x, y, width, height);
+    }
 }
 
 void MxRenderer::setScissor( int x, int y, unsigned int width, unsigned int height )
@@ -131,6 +148,14 @@ void MxRenderer::bindTextureGL( GLuint textureId, GLuint activeSlot )
     glBindTexture( GL_TEXTURE_2D, pCurrentTexture );
 }
 
+void MxRenderer::bindTexture( MxTexture *texture, unsigned char parameters, int inputIndex )
+{
+    Q_ASSERT( ! texture->isNull() );
+    Q_ASSERT( texture->mTextureId > 0 );
+    bindTextureGL( texture->mTextureId, inputIndex );
+
+    texture->setParameters(this, parameters);
+}
 
 MxGpuArray *MxRenderer::uploadToGpu( MxGpuProgram::VaoFormat format, const char *data, unsigned int size )
 {

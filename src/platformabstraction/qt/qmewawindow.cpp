@@ -13,6 +13,7 @@
 QMewaWindow::QMewaWindow()
     : QOpenGLWindow(QOpenGLWindow::PartialUpdateBlit)
 {
+    pFirstTime = true;
     pApp.init( &pIconAtlas );
 }
 
@@ -25,9 +26,7 @@ void QMewaWindow::initializeGL()
 {
     MxApplication *app = MxGuiAggregation::instance()->application();
     app->pRenderer.initializeOpenGLFunctions();
-    app->initialize();
 
-    pIconAtlas.loadGL( app->pRenderer );
 }
 
 void QMewaWindow::resizeGL(int w, int h)
@@ -37,6 +36,12 @@ void QMewaWindow::resizeGL(int w, int h)
 
 void QMewaWindow::paintGL()
 {
+    if( pFirstTime ) { // for unknown reason initializeGL() looses bounded textures, so load textures here!
+        pFirstTime = false;
+        MxApplication *app = MxGuiAggregation::instance()->application();
+        app->initialize();
+        pIconAtlas.loadGL( app->pRenderer );
+    }
     MxGuiAggregation::instance()->application()->onRender();
 }
 

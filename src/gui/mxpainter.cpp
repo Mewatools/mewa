@@ -63,11 +63,13 @@ void MxPainter::render( MxGuiRenderer &renderer )
 
         pVectorDraw.pArray = NULL;
     }
+
     if( renderer.pIconAtlas->isLoaded() && pIconDraw.pArray->size() > 0 ) {
         renderer.setViewportToWindow();
         renderer.enableDepthTest( false );
         MxIconProgram *iconProgram = renderer.setIconProgram();
-        renderer.bindTextureGL( renderer.pIconAtlas->texture() );
+        MxTexture *atlasTexture = renderer.pIconAtlas->texture();
+        renderer.bindTexture( atlasTexture, MxTexture::NoFilter | MxTexture::ClampWrap, 0 );
         renderer.setBlending( MxRenderer::BlendingImages );
         iconProgram->draw( pIconDraw, renderer.windowMatrix() );
         pIconDraw.pArray = NULL;
