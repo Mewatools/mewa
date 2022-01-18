@@ -129,7 +129,7 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1450" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1450" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -138,6 +138,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_reusable_vbo.html">ReusableVbo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_stored_root_signature.html">StoredRootSignature</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mx_renderer_1_1_viewport.html">Viewport</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -240,6 +242,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0138bfde2825b1931721b737bc0696c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab00857e2355d54f93fd1c34d9debd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7">bindTextureGL</a> (<a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> textureId, <a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> activeSlot=0)</td></tr>
 <tr class="separator:a0ab00857e2355d54f93fd1c34d9debd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13704cc3320aaef3b2525917e6cd1d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#af13704cc3320aaef3b2525917e6cd1d5">bindTexture</a> (<a class="el" href="class_mx_texture.html">MxTexture</a> *texture, unsigned char parameters=0xFF, int inputIndex=0)</td></tr>
+<tr class="separator:af13704cc3320aaef3b2525917e6cd1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef1a832211c59ab0bc4bdafe496c8df2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#aef1a832211c59ab0bc4bdafe496c8df2">uploadToGpu</a> (<a class="el" href="class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7">MxGpuProgram::VaoFormat</a> format, const char *data, unsigned int size)</td></tr>
 <tr class="separator:aef1a832211c59ab0bc4bdafe496c8df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e33975e418b850907f9266d34b7872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a47e33975e418b850907f9266d34b7872">newGpuArray</a> (<a class="el" href="class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7">MxGpuProgram::VaoFormat</a> format, unsigned int size)</td></tr>
@@ -302,6 +306,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:ae1daef51b3de0a256f7b0443fe6391d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_mx_renderer_1_1_viewport.html">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae1daef51b3de0a256f7b0443fe6391d6">pViewport</a></td></tr>
+<tr class="separator:ae1daef51b3de0a256f7b0443fe6391d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd6fbdd1d214efd87d0614a9c878bd74"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#acd6fbdd1d214efd87d0614a9c878bd74">pCurrShaderProgram</a></td></tr>
 <tr class="separator:acd6fbdd1d214efd87d0614a9c878bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21abd63b3d8fa87467632bac904faad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2">pScreenSize</a></td></tr>
@@ -439,7 +445,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae533639f6914e0db8c60aca44c807dec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae533639f6914e0db8c60aca44c807dec">&#9670;&nbsp;</a></span>bindTexture()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae533639f6914e0db8c60aca44c807dec">&#9670;&nbsp;</a></span>bindTexture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,6 +476,40 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed, thats because the renderer tries to minimize state changes. Whenever setting data to a texture (<a class="el" href="class_mx_texture.html#a8f44f5c0dbc554e35943235c65546ea8" title="Set the given pixel data to this texture.">MxTexture::setPixelData()</a>), if calling <a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture()</a> call it afterwards </p>
+
+</div>
+</div>
+<a id="af13704cc3320aaef3b2525917e6cd1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13704cc3320aaef3b2525917e6cd1d5">&#9670;&nbsp;</a></span>bindTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::bindTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>parameters</em> = <code>0xFF</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1715,6 +1755,28 @@ Protected Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a> MxRenderer::pTextures[1]</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1daef51b3de0a256f7b0443fe6391d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1daef51b3de0a256f7b0443fe6391d6">&#9670;&nbsp;</a></span>pViewport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_mx_renderer_1_1_viewport.html">Viewport</a> MxRenderer::pViewport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

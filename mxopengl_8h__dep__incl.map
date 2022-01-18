@@ -1,11 +1,13 @@
 <map id="src/platformabstraction/qt/mxopengl.h" name="src/platformabstraction/qt/mxopengl.h">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,333,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="231,5,385,47"/>
 <area shape="rect" id="node2" href="$opengl_2iconprogram_2mxiconprogram_8h.html" title=" " alt="" coords="17,95,215,136"/>
-<area shape="rect" id="node4" href="$opengl_2mxgpuarray_8cpp.html" title=" " alt="" coords="188,363,321,404"/>
-<area shape="rect" id="node5" href="$opengl_2mxgpuprogram_8h.html" title=" " alt="" coords="345,95,479,136"/>
+<area shape="rect" id="node4" href="$opengl_2mxgpuarray_8cpp.html" title=" " alt="" coords="187,363,320,404"/>
+<area shape="rect" id="node5" href="$opengl_2mxgpuprogram_8h.html" title=" " alt="" coords="293,95,427,136"/>
+<area shape="rect" id="node11" href="$opengl_2mxtexture_8h.html" title=" " alt="" coords="605,273,739,315"/>
 <area shape="rect" id="node3" href="$opengl_2iconprogram_2mxiconprogram_8cpp.html" title=" " alt="" coords="5,184,219,225"/>
 <area shape="rect" id="node6" href="$opengl_2mxgpuarray_8h.html" title=" " alt="" coords="345,184,479,225"/>
-<area shape="rect" id="node7" href="$opengl_2mxgpuprogram_8cpp.html" title=" " alt="" coords="503,363,638,404"/>
-<area shape="rect" id="node8" href="$opengl_2mxrenderer_8h.html" title=" " alt="" coords="345,273,479,315"/>
-<area shape="rect" id="node9" href="$opengl_2mxrenderer_8cpp.html" title=" " alt="" coords="345,363,479,404"/>
+<area shape="rect" id="node7" href="$opengl_2mxgpuprogram_8cpp.html" title=" " alt="" coords="345,363,479,404"/>
+<area shape="rect" id="node8" href="$opengl_2mxrenderer_8h.html" title=" " alt="" coords="448,273,581,315"/>
+<area shape="rect" id="node9" href="$opengl_2mxrenderer_8cpp.html" title=" " alt="" coords="661,363,795,404"/>
+<area shape="rect" id="node10" href="$opengl_2mxtexture_8cpp.html" title=" " alt="" coords="504,363,637,404"/>
 </map>

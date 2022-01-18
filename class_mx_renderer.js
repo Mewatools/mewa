@@ -2,6 +2,7 @@ var class_mx_renderer =
 [
     [ "ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", "struct_mx_renderer_1_1_reusable_vbo" ],
     [ "StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", "struct_mx_renderer_1_1_stored_root_signature" ],
+    [ "Viewport", "struct_mx_renderer_1_1_viewport.html", "struct_mx_renderer_1_1_viewport" ],
     [ "Blending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88", [
       [ "NoBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a43b4a71816d622754a8a7050b63f9c92", null ],
       [ "BlendingText", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1", null ],
@@ -29,6 +30,7 @@ var class_mx_renderer =
     [ "~MxRenderer", "class_mx_renderer.html#a63ae7cec7d163dba565670fc7e0adc03", null ],
     [ "MxRenderer", "class_mx_renderer.html#a832bbe97a39dc52e59e0f89089c288d5", null ],
     [ "bindTexture", "class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec", null ],
+    [ "bindTexture", "class_mx_renderer.html#af13704cc3320aaef3b2525917e6cd1d5", null ],
     [ "bindTextureGL", "class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7", null ],
     [ "bindTextureGL", "class_mx_renderer.html#a8146385407893665fdfa287f33830025", null ],
     [ "checkGLError", "class_mx_renderer.html#ae84f3c089275c5ada33dc0a09eb4037f", null ],
@@ -90,5 +92,6 @@ var class_mx_renderer =
     [ "pRtvHeaps", "class_mx_renderer.html#a811c86bbc3c5d8dd3620ca41122a658d", null ],
     [ "pScreenSize", "class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2", null ],
     [ "pSwapchain", "class_mx_renderer.html#a84c72be3a9927e4766ad4c53fa07c5e1", null ],
-    [ "pTextures", "class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962", null ]
+    [ "pTextures", "class_mx_renderer.html#a2bfc3208487c8b99b85f0d43fe85d962", null ],
+    [ "pViewport", "class_mx_renderer.html#ae1daef51b3de0a256f7b0443fe6391d6", null ]
 ];

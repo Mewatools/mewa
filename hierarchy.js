@@ -93,5 +93,6 @@ var hierarchy =
     [ "MxIconDraw::Vertex", "struct_mx_icon_draw_1_1_vertex.html", null ],
     [ "MxIconProgram::Vertex", "struct_mx_icon_program_1_1_vertex.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
-    [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ]
+    [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ],
+    [ "MxRenderer::Viewport", "struct_mx_renderer_1_1_viewport.html", null ]
 ];
