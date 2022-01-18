@@ -19,7 +19,12 @@ class MxRenderer;
 class MxTexture
 {
 public:
-
+	enum PixelFormat
+	{
+		Uninitialized = 0,
+		RGBA8, //! 8 bit per pixel, RGBA
+		RGBAFloat,
+	};
 
 	// texture parameters
 	enum Filter {
@@ -36,19 +41,16 @@ public:
 
 
 
-	enum PixelFormat
-	{
-		UChar4, //! 8 bit per pixel, RGBA
-		Float4,
-	};
 
 	MxTexture();
 	~MxTexture();
 
-	void init( MxRenderer* renderer, int imgWidth, int imgHeight );
+	void create( MxRenderer* renderer, const MxVector2I& size, PixelFormat format, const void* pixels);
+
+	bool isNull() const;
 
 	//! Set the given pixel data to this texture
-	void setPixelData( const unsigned char* pixels, const MxVector2I& size, PixelFormat format);
+	void setData( const void* pixels, const MxVector2I& size, PixelFormat format);
 
 
 

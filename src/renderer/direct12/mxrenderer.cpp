@@ -25,7 +25,7 @@ MxRenderer::MxRenderer()
 	pCurrProgram = NULL;
 	pRootSignatureChanged = true;
     pCurrInputTextureFlags = 0;
-	pBoundTextureCount = 0;
+
 
 	pDevice = nullptr;
 	pDxgiFactory = nullptr;
@@ -194,14 +194,14 @@ void MxRenderer::enableDepthTest(bool enable)
 
 }
 
-MxTexture* MxRenderer::newTexture(const MxVector2I& size, MxTexture::PixelFormat format)
+/*MxTexture* MxRenderer::newTexture(const MxVector2I& size, MxTexture::PixelFormat format)
 {
 	Q_ASSERT(NULL == pTextures[0].pTexBuffer);
 
 	pTextures[0].init(this, size.width(), size.height());
 	Q_ASSERT(NULL != pTextures[0].pTexBuffer);
 	return &(pTextures[0]);
-}
+}*/
 
 MxGpuArray* MxRenderer::getBuffer( UINT64 length)
 {
@@ -243,17 +243,13 @@ void MxRenderer::setTexturesParameters(unsigned int flags)
 	}
 }
 
-void MxRenderer::bindTextureGL( MxTexture *texture )
-{
 
-}
 
 
 void MxRenderer::bindTexture(MxTexture* texture, unsigned char parameters, int inputIndex)
 {
-	Q_ASSERT(inputIndex == pBoundTextureCount);
-	pBoundTextures[pBoundTextureCount] = texture;
-	 pBoundTextureCount++;
+	Q_ASSERT(inputIndex == 0);
+	pBoundTextures[inputIndex] = texture;
 }
 
 void MxRenderer::checkGLError(const char* fileName, int line)
@@ -268,9 +264,9 @@ void MxRenderer::renderBegin()
 
 void MxRenderer::renderEnd()
 {
-
-
-	pBoundTextureCount = 0;
+	for (int i = 0; i < MxRenderer::MaxBoundTextures; ++i) {
+		pBoundTextures[i] = NULL;
+	}
 }
 
 

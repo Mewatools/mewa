@@ -32,7 +32,7 @@ public:
 	int pWindowHeight;
 
 	MxIconProgram pProgram;
-	MxTexture* pTexture;
+	MxTexture pTexture;
 
 
 	MxBuffer pBuffer;

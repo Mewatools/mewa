@@ -58,8 +58,9 @@ void RandomTextureApp::intialize()
 
 	
 
-	pTexture = pRenderer.newTexture(texSize, MxTexture::UChar4);
-	pTexture->setPixelData((const unsigned char*)texturedata.data(), texSize, MxTexture::UChar4);
+	//pTexture = pRenderer.newTexture(texSize, MxTexture::RGBA8);
+	//pTexture->setPixelData((const unsigned char*)texturedata.data(), texSize, MxTexture::UChar4);
+	pTexture.create( &pRenderer, texSize, MxTexture::RGBA8, texturedata.data());
 
 
 }
@@ -91,8 +92,8 @@ void RandomTextureApp::onRender()
 	}
 
 
-	pRenderer.bindTexture(pTexture, MxTexture::NoFilter | MxTexture::ClampWrap, 0);
-	pTexture->setPixelData((const unsigned char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::UChar4);
+	pRenderer.bindTexture(&pTexture, MxTexture::NoFilter | MxTexture::ClampWrap, 0);
+	pTexture.setData((const unsigned char*)texturedata.data(), MxVector2I(pImgWidth, pImgHeight) , MxTexture::RGBA8);
 
 
 	pRenderer.setViewport(0,0, pWindowWidth, pWindowHeight);

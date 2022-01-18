@@ -113,7 +113,7 @@ void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 {
 	pRenderer->prepareToDraw();
 
-	Q_ASSERT(pRenderer->pBoundTextureCount == 1);
+	Q_ASSERT(pRenderer->pBoundTextures[0] != NULL );
 
 
 	// 1 matrix = 16 floats

@@ -64,12 +64,10 @@ public:
     void setBlending( Blending blend);
     // \TODO rename to setDepthTest(bool) ??
     void enableDepthTest(bool enable);
-    MxTexture* newTexture( const MxVector2I& size, MxTexture::PixelFormat format);
     MxGpuArray * getBuffer( UINT64 length );
     void setProgram( MxGpuProgram* program );
     void setTexturesParameters( unsigned int flags );
-    // \deprecated
-    void bindTextureGL( MxTexture* texture );
+
     /*!The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed,
      thats because the renderer tries to minimize state changes.
      Whenever setting data to a texture (MxTexture::setPixelData()), if calling bindTexture() call it afterwards
@@ -120,8 +118,8 @@ public:
     // \TODO make it a list of textures
     MxTexture pTextures[1];
     // \TODO change to MxStack
-    MxTexture* pBoundTextures[MaxBoundTextures];
-    int pBoundTextureCount;
+    MxTexture* pBoundTextures[MaxBoundTextures]; // bound textures in its slots
+
 
     ID3D12Device* pDevice;
     IDXGIFactory6* pDxgiFactory;

@@ -21,7 +21,7 @@ MxTexture::~MxTexture()
 {}
 
 
-void MxTexture::init( MxRenderer *renderer, int imgWidth, int imgHeight)
+void MxTexture::create(MxRenderer* renderer, const MxVector2I& size, MxTexture::PixelFormat format, const void* pixels )
 {
 	// init D3D12_HEAP_PROPERTIES
 	pHeapProp = {};
@@ -34,8 +34,8 @@ void MxTexture::init( MxRenderer *renderer, int imgWidth, int imgHeight)
 	// init D3D12_RESOURCE_DESC
 	pResDesc = {};
 	pResDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-	pResDesc.Width = imgWidth;
-	pResDesc.Height = imgHeight;
+	pResDesc.Width = size.width();
+	pResDesc.Height = size.height();
 	pResDesc.DepthOrArraySize = 1;
 	pResDesc.SampleDesc.Count = 1;
 	pResDesc.SampleDesc.Quality = 0;
@@ -81,12 +81,20 @@ void MxTexture::init( MxRenderer *renderer, int imgWidth, int imgHeight)
 		&srvDesc,
 		pTexDescHeap->GetCPUDescriptorHandleForHeapStart()
 	);
+
+
+	setData(pixels, size,  format);
+
 }
 
-
-void MxTexture::setPixelData(const unsigned char* pixels, const MxVector2I& size, MxTexture::PixelFormat format )
+bool MxTexture::isNull() const
 {
-	Q_ASSERT( MxTexture::UChar4 == format );
+	return pTexBuffer == NULL;
+}
+
+void MxTexture::setData(const void* pixels, const MxVector2I& size, MxTexture::PixelFormat format )
+{
+	Q_ASSERT( MxTexture::RGBA8 == format );
 	int bpp = 4 * sizeof(unsigned char);
 
 	Q_ASSERT( NULL != pTexBuffer);
