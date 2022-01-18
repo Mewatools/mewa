@@ -9,7 +9,7 @@ var class_random_texture_app =
     [ "pImgHeight", "class_random_texture_app.html#a49b6be919967e7ab53c0996dd1915b5f", null ],
     [ "pImgWidth", "class_random_texture_app.html#a039bfc537aad2e37d190744eb0bccf77", null ],
     [ "pProgram", "class_random_texture_app.html#a3253897b4e83f96cde109730846d2169", null ],
-    [ "pTexture", "class_random_texture_app.html#ab9468c4fb81d7e029f7e9640b5eca37a", null ],
+    [ "pTexture", "class_random_texture_app.html#a7ee0ecca89c750285d8107ad39c9ccab", null ],
     [ "pWindowHeight", "class_random_texture_app.html#af5666403a6ad0f161cd0ebf4fd3ffc0c", null ],
     [ "pWindowWidth", "class_random_texture_app.html#ab6c67009ef0b78d443fca19598267218", null ]
 ];

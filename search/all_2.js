@@ -8,7 +8,7 @@ var searchData=
   ['background_5fr_69',['background_r',['../struct_lode_p_n_g_info.html#a98b59c3760bda184bb16c9713b430bc3',1,'LodePNGInfo']]],
   ['begin_70',['begin',['../struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f',1,'MxList::Data']]],
   ['bindtexture_71',['bindTexture',['../class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec',1,'MxRenderer::bindTexture(MxTexture *texture, unsigned char parameters, int inputIndex)'],['../class_mx_renderer.html#af13704cc3320aaef3b2525917e6cd1d5',1,'MxRenderer::bindTexture(MxTexture *texture, unsigned char parameters=0xFF, int inputIndex=0)']]],
-  ['bindtexturegl_72',['bindTextureGL',['../class_mx_renderer.html#a8146385407893665fdfa287f33830025',1,'MxRenderer::bindTextureGL(MxTexture *texture)'],['../class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7',1,'MxRenderer::bindTextureGL(GLuint textureId, GLuint activeSlot=0)']]],
+  ['bindtexturegl_72',['bindTextureGL',['../class_mx_renderer.html#a0ab00857e2355d54f93fd1c34d9debd7',1,'MxRenderer']]],
   ['bitdepth_73',['bitdepth',['../struct_lode_p_n_g_color_mode.html#ad20010b9561980f65281bc17f7848253',1,'LodePNGColorMode']]],
   ['bits_74',['bits',['../class_mx_image.html#acc4f8ccce5612676f854b4c17ffa7bc7',1,'MxImage::bits()'],['../struct_lode_p_n_g_color_stats.html#a8db59a808dc9f57ccaba638be2a2946d',1,'LodePNGColorStats::bits()']]],
   ['bitsize_75',['bitsize',['../struct_lode_p_n_g_bit_reader.html#a21318b6b3c4a8c84abf75719aa19152f',1,'LodePNGBitReader']]],

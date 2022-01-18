@@ -193,16 +193,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b871801ae38e47312817cbfea6481b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0138bfde2825b1931721b737bc0696c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a0138bfde2825b1931721b737bc0696c5">enableDepthTest</a> (bool enable)</td></tr>
 <tr class="separator:a0138bfde2825b1931721b737bc0696c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a702ff56f22eb32f648a237981af814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a2a702ff56f22eb32f648a237981af814">newTexture</a> (const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;size, <a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346">MxTexture::PixelFormat</a> format)</td></tr>
-<tr class="separator:a2a702ff56f22eb32f648a237981af814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1e497a235b266aa66e89220f9673b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gpu_array.html">MxGpuArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#af1e497a235b266aa66e89220f9673b10">getBuffer</a> (UINT64 length)</td></tr>
 <tr class="separator:af1e497a235b266aa66e89220f9673b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9e7141aa0428738fc2139800961345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#afa9e7141aa0428738fc2139800961345">setProgram</a> (<a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a> *program)</td></tr>
 <tr class="separator:afa9e7141aa0428738fc2139800961345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b39b40973b90b300fa60bb74996000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a25b39b40973b90b300fa60bb74996000">setTexturesParameters</a> (unsigned int flags)</td></tr>
 <tr class="separator:a25b39b40973b90b300fa60bb74996000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8146385407893665fdfa287f33830025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a8146385407893665fdfa287f33830025">bindTextureGL</a> (<a class="el" href="class_mx_texture.html">MxTexture</a> *texture)</td></tr>
-<tr class="separator:a8146385407893665fdfa287f33830025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae533639f6914e0db8c60aca44c807dec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture</a> (<a class="el" href="class_mx_texture.html">MxTexture</a> *texture, unsigned char parameters, int inputIndex)</td></tr>
 <tr class="separator:ae533639f6914e0db8c60aca44c807dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae84f3c089275c5ada33dc0a09eb4037f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae84f3c089275c5ada33dc0a09eb4037f">checkGLError</a> (const char *fileName, int line)</td></tr>
@@ -275,8 +271,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2bfc3208487c8b99b85f0d43fe85d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804f6b627c2567c5e41d8c0c96b12c23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a804f6b627c2567c5e41d8c0c96b12c23">pBoundTextures</a> [<a class="el" href="class_mx_renderer.html#a5a2748b643db9e16f5bb45d338b74854a2fe423f5e2d0754c62f6667a9e22f991">MaxBoundTextures</a>]</td></tr>
 <tr class="separator:a804f6b627c2567c5e41d8c0c96b12c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4272d1f468c221a151576a57f0cb1d3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a4272d1f468c221a151576a57f0cb1d3f">pBoundTextureCount</a></td></tr>
-<tr class="separator:a4272d1f468c221a151576a57f0cb1d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeee5698eb962d9fb1d34f03ac940983"><td class="memItemLeft" align="right" valign="top">ID3D12Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adeee5698eb962d9fb1d34f03ac940983">pDevice</a></td></tr>
 <tr class="separator:adeee5698eb962d9fb1d34f03ac940983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1a781a0eaca3d2d538720726ef860d"><td class="memItemLeft" align="right" valign="top">IDXGIFactory6 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ace1a781a0eaca3d2d538720726ef860d">pDxgiFactory</a></td></tr>
@@ -475,7 +469,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed, thats because the renderer tries to minimize state changes. Whenever setting data to a texture (<a class="el" href="class_mx_texture.html#a8f44f5c0dbc554e35943235c65546ea8" title="Set the given pixel data to this texture.">MxTexture::setPixelData()</a>), if calling <a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture()</a> call it afterwards </p>
+<p>The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed, thats because the renderer tries to minimize state changes. Whenever setting data to a texture (MxTexture::setPixelData()), if calling <a class="el" href="class_mx_renderer.html#ae533639f6914e0db8c60aca44c807dec">bindTexture()</a> call it afterwards </p>
 
 </div>
 </div>
@@ -514,7 +508,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a0ab00857e2355d54f93fd1c34d9debd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab00857e2355d54f93fd1c34d9debd7">&#9670;&nbsp;</a></span>bindTextureGL() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab00857e2355d54f93fd1c34d9debd7">&#9670;&nbsp;</a></span>bindTextureGL()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,24 +529,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8146385407893665fdfa287f33830025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8146385407893665fdfa287f33830025">&#9670;&nbsp;</a></span>bindTextureGL() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxRenderer::bindTextureGL </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_mx_texture.html">MxTexture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -789,34 +765,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a702ff56f22eb32f648a237981af814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a702ff56f22eb32f648a237981af814">&#9670;&nbsp;</a></span>newTexture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mx_texture.html">MxTexture</a> * MxRenderer::newTexture </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_mx_texture.html#a95987216b43dd77b5f6b5dcc7b1e7346">MxTexture::PixelFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1299,20 +1247,6 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ID3D12Resource* MxRenderer::pBackBuffers[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4272d1f468c221a151576a57f0cb1d3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4272d1f468c221a151576a57f0cb1d3f">&#9670;&nbsp;</a></span>pBoundTextureCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int MxRenderer::pBoundTextureCount</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -74,7 +74,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078",
-"class_mx_renderer.html#ae1daef51b3de0a256f7b0443fe6391d6",
+"class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88",
 "class_test_window.html#acd7c5031f0900da2f14c8b68ac3710fd",
 "lodepng_8cpp.html#a36f7494abb7d8fa1ed4c00495ccc69b9",
 "lodepng_8h.html#a533d58c161de45096b83c44bbaa95e93",
