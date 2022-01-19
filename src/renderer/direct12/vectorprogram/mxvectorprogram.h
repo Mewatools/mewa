@@ -8,26 +8,31 @@
 #include "mxgpuprogram.h"
 
 
+#include<d3d12.h>
+
 class MxMatrix;
 class MxVectorDraw;
 class MxRenderer;
 
 
-// \TODO
+
 class MxVectorProgram : public MxGpuProgram
 {
 public:
 
     MxVectorProgram();
 
-
-
   
-    void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
+    void enable(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
+    void draw( const MxVectorDraw& stream, const MxMatrix* matrix);
 
-    void setMatrix(const MxMatrix* matrix);
-    void draw(MxVectorDraw& stream);
 
+protected:
+    virtual bool compile();
+
+    ID3DBlob* pVertexShader;
+    ID3DBlob* pPixelShader;
+    D3D12_INPUT_ELEMENT_DESC pInputLayout[3];
 };
 
 

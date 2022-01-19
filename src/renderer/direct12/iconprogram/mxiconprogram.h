@@ -30,12 +30,13 @@ public:
 	virtual ~MxIconProgram();
 
 
-	bool compile();
-	virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
+	void setViewMatrix( const MxMatrix* matrix );
+    void draw( const MxIconDraw& rectsArray, const MxMatrix* matrix);
 
-	void draw( const MxIconDraw& rectsArray, const MxMatrix* matrix );
+	virtual void enable(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline);
 
-
+protected:
+	virtual bool compile();
 
 private:
 	ID3DBlob* pVertexShader;

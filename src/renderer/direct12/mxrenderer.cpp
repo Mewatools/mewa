@@ -413,7 +413,7 @@ bool MxRenderer::setupPipeline()
 		
 		Q_ASSERT(NULL != pCurrProgram);
 
-		pCurrProgram->setToPipeline(&pPipeline);
+		pCurrProgram->enable(&pPipeline);
 
 
 

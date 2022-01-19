@@ -20,6 +20,8 @@ void MxGpuProgram::init(MxRenderer* renderer)
 {
     Q_ASSERT(NULL == pRenderer);
     pRenderer = renderer;
+
+    compile();
 }
 
 

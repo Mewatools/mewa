@@ -57,8 +57,8 @@ void MxPainter::render( MxGuiRenderer &renderer )
         renderer.enableDepthTest( false );
         MxVectorProgram * svgProgram = renderer.setVectorProgram();
         renderer.setBlending( MxRenderer::BlendingImages );
-        svgProgram->setMatrix( renderer.windowMatrix() );
-        svgProgram->draw( pVectorDraw );
+        //svgProgram->setMatrix( renderer.windowMatrix() );
+        svgProgram->draw( pVectorDraw, renderer.windowMatrix());
         renderer.checkGLError(__FILE__, __LINE__);
 
         pVectorDraw.pArray = NULL;

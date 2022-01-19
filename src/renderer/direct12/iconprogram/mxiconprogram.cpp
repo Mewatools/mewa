@@ -40,74 +40,10 @@ MxIconProgram::~MxIconProgram()
 }
 
 
-bool MxIconProgram::compile()
+void MxIconProgram::setViewMatrix(const MxMatrix* matrix)
 {
-    Q_ASSERT( NULL != pRenderer );
-  
 
-
-	const wchar_t  *vtxShaderFilename = L"BasicVertexShader.hlsl";
-	HRESULT result = D3DCompileFromFile(vtxShaderFilename,
-		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
-		"BasicVS", "vs_5_0",
-		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
-		0, &pVertexShader, &(pRenderer->pErrorBlob) );
-
-	if (FAILED(result)) {
-		if (result == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND)) {
-			//::OutputDebugStringA("MxIconProgram VS shader file not found");
-			qDebug("MxIconProgram VS shader file not found");
-		}
-		else {
-			std::string errstr;
-			errstr.resize(pRenderer->pErrorBlob->GetBufferSize());
-			std::copy_n((char*)pRenderer->pErrorBlob->GetBufferPointer(), pRenderer->pErrorBlob->GetBufferSize(), errstr.begin());
-			errstr += "\n";
-			qDebug(errstr.c_str());
-		}
-		return false;
-	}
-	result = D3DCompileFromFile(L"BasicPixelShader.hlsl",
-		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
-		"BasicPS", "ps_5_0",
-		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
-		0, &pPixelShader, &(pRenderer->pErrorBlob));
-	if (FAILED(result)) {
-		if (result == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND)) {
-			//::OutputDebugStringA("MxIconProgram PS shader file not found");
-			qDebug("MxIconProgram PS shader file not found");
-		}
-		else {
-			std::string errstr;
-			errstr.resize(pRenderer->pErrorBlob->GetBufferSize());
-			std::copy_n((char*)pRenderer->pErrorBlob->GetBufferPointer(), pRenderer->pErrorBlob->GetBufferSize(), errstr.begin());
-			errstr += "\n";
-			qDebug(errstr.c_str());
-		}
-		return false;
-	}
-
-	return true;
 }
-
-
-void MxIconProgram::setToPipeline( D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline )
-{
-	
-
-	pipeline->VS.pShaderBytecode = pVertexShader->GetBufferPointer();
-	pipeline->VS.BytecodeLength = pVertexShader->GetBufferSize();
-	pipeline->PS.pShaderBytecode = pPixelShader->GetBufferPointer();
-	pipeline->PS.BytecodeLength = pPixelShader->GetBufferSize();
-
-	pipeline->InputLayout.pInputElementDescs = pInputLayout;
-	Q_ASSERT(3 == _countof(pInputLayout));
-	pRenderer->pPipeline.InputLayout.NumElements = _countof(pInputLayout);
-}
-
-
-
-
 
 void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 {
@@ -174,6 +110,78 @@ void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 		instanceCount, 
 		startVertexLocation, 
 		startInstanceLocation);
+}
+
+
+
+
+void MxIconProgram::enable(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline)
+{
+	pipeline->VS.pShaderBytecode = pVertexShader->GetBufferPointer();
+	pipeline->VS.BytecodeLength = pVertexShader->GetBufferSize();
+	pipeline->PS.pShaderBytecode = pPixelShader->GetBufferPointer();
+	pipeline->PS.BytecodeLength = pPixelShader->GetBufferSize();
+
+	pipeline->InputLayout.pInputElementDescs = pInputLayout;
+	Q_ASSERT(3 == _countof(pInputLayout));
+	pRenderer->pPipeline.InputLayout.NumElements = _countof(pInputLayout);
+
+
+	
+}
+
+
+
+
+
+bool MxIconProgram::compile()
+{
+	Q_ASSERT(NULL != pRenderer);
+
+
+
+	const wchar_t* vtxShaderFilename = L"BasicVertexShader.hlsl";
+	HRESULT result = D3DCompileFromFile(vtxShaderFilename,
+		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
+		"BasicVS", "vs_5_0",
+		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
+		0, &pVertexShader, &(pRenderer->pErrorBlob));
+
+	if (FAILED(result)) {
+		if (result == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND)) {
+			//::OutputDebugStringA("MxIconProgram VS shader file not found");
+			qDebug("MxIconProgram VS shader file not found");
+		}
+		else {
+			std::string errstr;
+			errstr.resize(pRenderer->pErrorBlob->GetBufferSize());
+			std::copy_n((char*)pRenderer->pErrorBlob->GetBufferPointer(), pRenderer->pErrorBlob->GetBufferSize(), errstr.begin());
+			errstr += "\n";
+			qDebug(errstr.c_str());
+		}
+		return false;
+	}
+	result = D3DCompileFromFile(L"BasicPixelShader.hlsl",
+		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
+		"BasicPS", "ps_5_0",
+		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
+		0, &pPixelShader, &(pRenderer->pErrorBlob));
+	if (FAILED(result)) {
+		if (result == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND)) {
+			//::OutputDebugStringA("MxIconProgram PS shader file not found");
+			qDebug("MxIconProgram PS shader file not found");
+		}
+		else {
+			std::string errstr;
+			errstr.resize(pRenderer->pErrorBlob->GetBufferSize());
+			std::copy_n((char*)pRenderer->pErrorBlob->GetBufferPointer(), pRenderer->pErrorBlob->GetBufferSize(), errstr.begin());
+			errstr += "\n";
+			qDebug(errstr.c_str());
+		}
+		return false;
+	}
+
+	return true;
 }
 
 

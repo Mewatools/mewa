@@ -18,9 +18,12 @@ public:
 
 	bool isInitialized() const;
 
-	virtual void setToPipeline(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline) = 0;
+	virtual void enable(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline) = 0;
 	void init(MxRenderer* renderer);
 
+
+protected:
+	virtual bool compile() = 0;
 
 
 	MxRenderer* pRenderer;
