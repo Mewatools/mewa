@@ -44,7 +44,7 @@ var searchData=
   ['intersected_353',['intersected',['../class_mx_rect.html#aba0443b345d24d6224bd3a63176cc356',1,'MxRect']]],
   ['intersects_354',['intersects',['../class_mx_rect.html#a8233f903bcacb38bf27ee623a8f42d5a',1,'MxRect']]],
   ['intfromstring_355',['intFromString',['../class_mx_generic_sub_string.html#a18330f0fff8c844fae0d45b60d24bc68',1,'MxGenericSubString']]],
-  ['intialize_356',['intialize',['../class_random_texture_app.html#abffcca7f39b5a5ff71171853e6ee56a7',1,'RandomTextureApp']]],
+  ['intialize_356',['intialize',['../class_triangle_app.html#ab0ac74af6bab216d927ef74ca26b1f12',1,'TriangleApp::intialize()'],['../class_random_texture_app.html#abffcca7f39b5a5ff71171853e6ee56a7',1,'RandomTextureApp::intialize()']]],
   ['inuse_357',['inUse',['../struct_mx_renderer_1_1_reusable_vbo.html#a9915f6a1a1dcd8247a2da7c48423a160',1,'MxRenderer::ReusableVbo']]],
   ['invalidsymbol_358',['INVALIDSYMBOL',['../lodepng_8cpp.html#a68354bb4c37be9fee001a151698a7c7f',1,'lodepng.cpp']]],
   ['inverted_359',['Inverted',['../namespace_mx_theme_icons.html#ad5f6dd0d4c4dabfa0ddb896289f90861a5220cb53702bc2b8db25f6ba97467d09',1,'MxThemeIcons']]],

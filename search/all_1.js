@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_1',['a',['../struct_mx_vector_draw_1_1_vertex.html#a8368cfafddbd352f42f2cb47050f76e4',1,'MxVectorDraw::Vertex::a()'],['../struct_mx_text_draw_1_1_vertex.html#a5430a55eb493889ea73811da13367ab3',1,'MxTextDraw::Vertex::a()']]],
-  ['a_2',['A',['../struct_random_texture_app_1_1_tex_r_g_b_a.html#a46669830f1347b5ce448688ad6efef4b',1,'RandomTextureApp::TexRGBA']]],
+  ['a_2',['A',['../struct_triangle_app_1_1_tex_r_g_b_a.html#a192111c9e949707d341e55d7fd0010e3',1,'TriangleApp::TexRGBA::A()'],['../struct_random_texture_app_1_1_tex_r_g_b_a.html#a46669830f1347b5ce448688ad6efef4b',1,'RandomTextureApp::TexRGBA::A()']]],
   ['accept_3',['accept',['../class_mx_mouse_event.html#a22790554a4b745c4c504f27ec394686a',1,'MxMouseEvent']]],
   ['accepteditem_4',['acceptedItem',['../class_mx_mouse_event.html#ab4b9ec573e9a8985c5fdc8141df3d841',1,'MxMouseEvent']]],
   ['adam7_5fdeinterlace_5',['Adam7_deinterlace',['../lodepng_8cpp.html#abc9c979fbcf3d9913e29a057a308aa7d',1,'lodepng.cpp']]],
@@ -41,7 +41,7 @@ var searchData=
   ['adler32_39',['adler32',['../lodepng_8cpp.html#aaff8570a8cd87fb288946c4465077c8d',1,'lodepng.cpp']]],
   ['advance_40',['advance',['../class_mx_generic_sub_string.html#afdc1d6369c34fd957345148614c6c0a5',1,'MxGenericSubString::advance()'],['../class_mx_byte_array_ref.html#a64532d781c020dcf6392fa9db8a73d04',1,'MxByteArrayRef::advance()']]],
   ['advancebits_41',['advanceBits',['../lodepng_8cpp.html#acc18fbdfdc14c3406b5fe58cab1465be',1,'lodepng.cpp']]],
-  ['alloc_42',['alloc',['../struct_mx_generic_string_1_1_dynamic_data.html#a63c02436cb1b18eec4b7a2f95b38b4b9',1,'MxGenericString::DynamicData::alloc()'],['../struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703',1,'MxList::Data::alloc()'],['../class_mx_image.html#a6ee9bca77a4b00c86bb759f79e1a5891',1,'MxImage::alloc()'],['../class_mx_buffer.html#a55cf2c5222e57b410fff1a4c22c9b53a',1,'MxBuffer::alloc()']]],
+  ['alloc_42',['alloc',['../struct_mx_generic_string_1_1_dynamic_data.html#a63c02436cb1b18eec4b7a2f95b38b4b9',1,'MxGenericString::DynamicData::alloc()'],['../class_mx_image.html#a6ee9bca77a4b00c86bb759f79e1a5891',1,'MxImage::alloc()'],['../class_mx_buffer.html#a55cf2c5222e57b410fff1a4c22c9b53a',1,'MxBuffer::alloc()'],['../struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703',1,'MxList::Data::alloc()']]],
   ['alloc_5fstring_43',['alloc_string',['../lodepng_8cpp.html#a8812e8a5a42aa70b39d79c5ac38d7d18',1,'lodepng.cpp']]],
   ['alloc_5fstring_5fsized_44',['alloc_string_sized',['../lodepng_8cpp.html#a385d4d46306a6a1a52d9b6555dd9354a',1,'lodepng.cpp']]],
   ['allocend_45',['allocEnd',['../class_mx_list.html#a7633d5bfcb6508dfa7905a4f69a58985',1,'MxList']]],
@@ -49,7 +49,7 @@ var searchData=
   ['allow_5fgreyscale_47',['allow_greyscale',['../struct_lode_p_n_g_color_stats.html#a97c2e4db5de999cd92c1eabcdf80d431',1,'LodePNGColorStats']]],
   ['allow_5fpalette_48',['allow_palette',['../struct_lode_p_n_g_color_stats.html#ad6de0a38622538aace50a99ff5f63854',1,'LodePNGColorStats']]],
   ['alpha_49',['alpha',['../struct_lode_p_n_g_color_stats.html#af81e4a84aa3d94849736b6689643c101',1,'LodePNGColorStats']]],
-  ['append_50',['append',['../class_mx_list.html#ad17baa57329c1ffebe374a40d6b01a4d',1,'MxList::append()'],['../class_mx_generic_string.html#a9ccd65c37f16ec2f0f459427368338ce',1,'MxGenericString::append(T character)'],['../class_mx_generic_string.html#af483545cbc87b9208d83094e47bfeceb',1,'MxGenericString::append(const MxGenericString&lt; T &gt; &amp;other)'],['../class_mx_generic_string.html#abeec5c12d71e76502af220c3aa0c16b4',1,'MxGenericString::append(const T *str)'],['../class_mx_generic_string.html#a92b4245f3b877d24c5e1e526b3155f80',1,'MxGenericString::append(const char *str)'],['../class_mx_buffer.html#ac6cf4e552bdd5cb5234e4c9182c6f6db',1,'MxBuffer::append()'],['../class_mx_list.html#a1c6fdd463455969f6a51776dc00e2ef5',1,'MxList::append()'],['../class_mx_generic_string.html#a5b3e15d59ecea38e398c572caf186d32',1,'MxGenericString::append()']]],
+  ['append_50',['append',['../class_mx_generic_string.html#a5b3e15d59ecea38e398c572caf186d32',1,'MxGenericString::append(const T *str, int size)'],['../class_mx_generic_string.html#a9ccd65c37f16ec2f0f459427368338ce',1,'MxGenericString::append(T character)'],['../class_mx_generic_string.html#af483545cbc87b9208d83094e47bfeceb',1,'MxGenericString::append(const MxGenericString&lt; T &gt; &amp;other)'],['../class_mx_generic_string.html#a92b4245f3b877d24c5e1e526b3155f80',1,'MxGenericString::append(const char *str)'],['../class_mx_buffer.html#ac6cf4e552bdd5cb5234e4c9182c6f6db',1,'MxBuffer::append()'],['../class_mx_list.html#a1c6fdd463455969f6a51776dc00e2ef5',1,'MxList::append(const T *vector, int count)'],['../class_mx_list.html#ad17baa57329c1ffebe374a40d6b01a4d',1,'MxList::append(const T &amp;t)'],['../class_mx_generic_string.html#abeec5c12d71e76502af220c3aa0c16b4',1,'MxGenericString::append()']]],
   ['appendandget_51',['appendAndGet',['../class_mx_list.html#a0a7c250277cfff98a77cb216afe71217',1,'MxList']]],
   ['appendascii_52',['appendAscii',['../class_mx_generic_string.html#ad65349ae507a767272ffc8bbf1f588a6',1,'MxGenericString']]],
   ['appendchaplinhat_53',['appendChaplinHat',['../class_mx_vector_draw.html#a6156bcab763548a8dd77a5a8d9bd5305',1,'MxVectorDraw']]],

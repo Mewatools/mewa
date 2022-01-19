@@ -57,6 +57,7 @@ var annotated_dup =
     [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ],
     [ "RandomTextureApp", "class_random_texture_app.html", "class_random_texture_app" ],
     [ "TestWindow", "class_test_window.html", "class_test_window" ],
+    [ "TriangleApp", "class_triangle_app.html", "class_triangle_app" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
     [ "uivector", "structuivector.html", "structuivector" ]
 ];

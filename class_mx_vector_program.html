@@ -107,6 +107,8 @@ $(document).ready(function(){initNavTree('class_mx_vector_program.html',''); ini
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_mx_vector_program-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MxVectorProgram Class Reference</div>  </div>
@@ -131,12 +133,10 @@ Collaboration diagram for MxVectorProgram:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a86b11ecea509239a3dcffc19ab14a56d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a86b11ecea509239a3dcffc19ab14a56d">MxVectorProgram</a> ()</td></tr>
 <tr class="separator:a86b11ecea509239a3dcffc19ab14a56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e480b1dec2427b2115e8f56531ab6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a33e480b1dec2427b2115e8f56531ab6f">setToPipeline</a> (D3D12_GRAPHICS_PIPELINE_STATE_DESC *pipeline)</td></tr>
-<tr class="separator:a33e480b1dec2427b2115e8f56531ab6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01fc03fb7a23e1fcd6cc2ab7c80baa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#aa01fc03fb7a23e1fcd6cc2ab7c80baa0">setMatrix</a> (const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *matrix)</td></tr>
-<tr class="separator:aa01fc03fb7a23e1fcd6cc2ab7c80baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398a82211a58ad178712de390c0f6abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a398a82211a58ad178712de390c0f6abb">draw</a> (<a class="el" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp;stream)</td></tr>
-<tr class="separator:a398a82211a58ad178712de390c0f6abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e02aca32b8b0ea51d1e97c15c54cc4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a0e02aca32b8b0ea51d1e97c15c54cc4a">enable</a> (D3D12_GRAPHICS_PIPELINE_STATE_DESC *pipeline)</td></tr>
+<tr class="separator:a0e02aca32b8b0ea51d1e97c15c54cc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65af509b8a0b673dae08368e611e41be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a65af509b8a0b673dae08368e611e41be">draw</a> (const <a class="el" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp;stream, const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *matrix)</td></tr>
+<tr class="separator:a65af509b8a0b673dae08368e611e41be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b11ecea509239a3dcffc19ab14a56d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a86b11ecea509239a3dcffc19ab14a56d">MxVectorProgram</a> ()</td></tr>
 <tr class="separator:a86b11ecea509239a3dcffc19ab14a56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b012b53bc3b85a077a2e382f8c63e71"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a2b012b53bc3b85a077a2e382f8c63e71">~MxVectorProgram</a> ()</td></tr>
@@ -145,8 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a320147fb11afe91146e3cf3b3882e997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40b0e23af172e573724e3f50f6c0426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#ac40b0e23af172e573724e3f50f6c0426">compile</a> ()</td></tr>
 <tr class="separator:ac40b0e23af172e573724e3f50f6c0426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4eefac6129e7c21ef86f081ba197d07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#ad4eefac6129e7c21ef86f081ba197d07">setMatrix</a> (const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *matrix)</td></tr>
-<tr class="separator:ad4eefac6129e7c21ef86f081ba197d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01fc03fb7a23e1fcd6cc2ab7c80baa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#aa01fc03fb7a23e1fcd6cc2ab7c80baa0">setMatrix</a> (const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *matrix)</td></tr>
+<tr class="separator:aa01fc03fb7a23e1fcd6cc2ab7c80baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398a82211a58ad178712de390c0f6abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a398a82211a58ad178712de390c0f6abb">draw</a> (<a class="el" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp;stream)</td></tr>
 <tr class="separator:a398a82211a58ad178712de390c0f6abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b9d30d416577b245c9f621d803572c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7">MxGpuProgram::VaoFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a79b9d30d416577b245c9f621d803572c">vaoFormat</a> ()</td></tr>
@@ -183,6 +183,25 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abafcc8f1e0f531848343e1cea65013de"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7">MxGpuProgram::VaoFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#abafcc8f1e0f531848343e1cea65013de">getVaoFormat</a> ()</td></tr>
 <tr class="separator:abafcc8f1e0f531848343e1cea65013de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac40b0e23af172e573724e3f50f6c0426"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#ac40b0e23af172e573724e3f50f6c0426">compile</a> ()</td></tr>
+<tr class="separator:ac40b0e23af172e573724e3f50f6c0426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae2c2a313c9111876d6dc1a028d4285a9"><td class="memItemLeft" align="right" valign="top">ID3DBlob *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#ae2c2a313c9111876d6dc1a028d4285a9">pVertexShader</a></td></tr>
+<tr class="separator:ae2c2a313c9111876d6dc1a028d4285a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6d7288a9693b5421763edba61fcd79"><td class="memItemLeft" align="right" valign="top">ID3DBlob *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#a0f6d7288a9693b5421763edba61fcd79">pPixelShader</a></td></tr>
+<tr class="separator:a0f6d7288a9693b5421763edba61fcd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda77eb7e271f52e596cc13719bf01f5"><td class="memItemLeft" align="right" valign="top">D3D12_INPUT_ELEMENT_DESC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_vector_program.html#adda77eb7e271f52e596cc13719bf01f5">pInputLayout</a> [3]</td></tr>
+<tr class="separator:adda77eb7e271f52e596cc13719bf01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_mx_gpu_program"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_mx_gpu_program')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a></td></tr>
+<tr class="memitem:a37097679f3ed91f475ad74973d0a087c inherit pro_attribs_class_mx_gpu_program"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_renderer.html">MxRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">pRenderer</a></td></tr>
+<tr class="separator:a37097679f3ed91f475ad74973d0a087c inherit pro_attribs_class_mx_gpu_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c413913c9eda0edf112d6f1ebe85d4c inherit pro_attribs_class_mx_gpu_program"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_program.html#a0c413913c9eda0edf112d6f1ebe85d4c">mProgramId</a></td></tr>
+<tr class="separator:a0c413913c9eda0edf112d6f1ebe85d4c inherit pro_attribs_class_mx_gpu_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_mx_gpu_program"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_mx_gpu_program')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a></td></tr>
@@ -198,12 +217,6 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aa004cac02e56f96822e66dfd46fc4eb7 inherit pub_types_class_mx_gpu_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_mx_gpu_program"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_mx_gpu_program')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a></td></tr>
-<tr class="memitem:a37097679f3ed91f475ad74973d0a087c inherit pub_attribs_class_mx_gpu_program"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_renderer.html">MxRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c">pRenderer</a></td></tr>
-<tr class="separator:a37097679f3ed91f475ad74973d0a087c inherit pub_attribs_class_mx_gpu_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_mx_gpu_program"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_mx_gpu_program')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a></td></tr>
-<tr class="memitem:a0c413913c9eda0edf112d6f1ebe85d4c inherit pro_attribs_class_mx_gpu_program"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_gpu_program.html#a0c413913c9eda0edf112d6f1ebe85d4c">mProgramId</a></td></tr>
-<tr class="separator:a0c413913c9eda0edf112d6f1ebe85d4c inherit pro_attribs_class_mx_gpu_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a86b11ecea509239a3dcffc19ab14a56d"></a>
@@ -267,10 +280,13 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac40b0e23af172e573724e3f50f6c0426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac40b0e23af172e573724e3f50f6c0426">&#9670;&nbsp;</a></span>compile()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40b0e23af172e573724e3f50f6c0426">&#9670;&nbsp;</a></span>compile() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MxVectorProgram::compile </td>
@@ -279,7 +295,41 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mx_gpu_program.html#a26f6170639ef72ba0eaa3c9a35e1bc6e">MxGpuProgram</a>.</p>
+
+</div>
+</div>
+<a id="ac40b0e23af172e573724e3f50f6c0426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40b0e23af172e573724e3f50f6c0426">&#9670;&nbsp;</a></span>compile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxVectorProgram::compile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mx_gpu_program.html#a26f6170639ef72ba0eaa3c9a35e1bc6e">MxGpuProgram</a>.</p>
 
 </div>
 </div>
@@ -310,8 +360,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a398a82211a58ad178712de390c0f6abb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a398a82211a58ad178712de390c0f6abb">&#9670;&nbsp;</a></span>draw() <span class="overload">[1/2]</span></h2>
+<a id="a65af509b8a0b673dae08368e611e41be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65af509b8a0b673dae08368e611e41be">&#9670;&nbsp;</a></span>draw() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,9 +369,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void MxVectorProgram::draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -343,6 +403,34 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e02aca32b8b0ea51d1e97c15c54cc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e02aca32b8b0ea51d1e97c15c54cc4a">&#9670;&nbsp;</a></span>enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxVectorProgram::enable </td>
+          <td>(</td>
+          <td class="paramtype">D3D12_GRAPHICS_PIPELINE_STATE_DESC *&#160;</td>
+          <td class="paramname"><em>pipeline</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mx_gpu_program.html#ada2774438ec5f00ca20dd8144a4ee759">MxGpuProgram</a>.</p>
 
 </div>
 </div>
@@ -417,10 +505,13 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa01fc03fb7a23e1fcd6cc2ab7c80baa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01fc03fb7a23e1fcd6cc2ab7c80baa0">&#9670;&nbsp;</a></span>setMatrix() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01fc03fb7a23e1fcd6cc2ab7c80baa0">&#9670;&nbsp;</a></span>setMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MxVectorProgram::setMatrix </td>
@@ -430,61 +521,12 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad4eefac6129e7c21ef86f081ba197d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4eefac6129e7c21ef86f081ba197d07">&#9670;&nbsp;</a></span>setMatrix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MxVectorProgram::setMatrix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *&#160;</td>
-          <td class="paramname"><em>matrix</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a33e480b1dec2427b2115e8f56531ab6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e480b1dec2427b2115e8f56531ab6f">&#9670;&nbsp;</a></span>setToPipeline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxVectorProgram::setToPipeline </td>
-          <td>(</td>
-          <td class="paramtype">D3D12_GRAPHICS_PIPELINE_STATE_DESC *&#160;</td>
-          <td class="paramname"><em>pipeline</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_mx_gpu_program.html#a313496a383692beda624217ac783a553">MxGpuProgram</a>.</p>
 
 </div>
 </div>
@@ -512,6 +554,73 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_mx_gpu_program.html#ab0824743c8509c9a990631553b2e2976">MxGpuProgram</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adda77eb7e271f52e596cc13719bf01f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda77eb7e271f52e596cc13719bf01f5">&#9670;&nbsp;</a></span>pInputLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3D12_INPUT_ELEMENT_DESC MxVectorProgram::pInputLayout[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f6d7288a9693b5421763edba61fcd79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6d7288a9693b5421763edba61fcd79">&#9670;&nbsp;</a></span>pPixelShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3DBlob* MxVectorProgram::pPixelShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2c2a313c9111876d6dc1a028d4285a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c2a313c9111876d6dc1a028d4285a9">&#9670;&nbsp;</a></span>pVertexShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3DBlob* MxVectorProgram::pVertexShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

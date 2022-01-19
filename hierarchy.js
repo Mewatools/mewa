@@ -27,7 +27,8 @@ var hierarchy =
       [ "PlusMinusSvg", "class_plus_minus_svg.html", null ]
     ] ],
     [ "MxApplication", "class_mx_application.html", [
-      [ "RandomTextureApp", "class_random_texture_app.html", null ]
+      [ "RandomTextureApp", "class_random_texture_app.html", null ],
+      [ "TriangleApp", "class_triangle_app.html", null ]
     ] ],
     [ "MxBuffer", "class_mx_buffer.html", null ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", null ],
@@ -88,6 +89,7 @@ var hierarchy =
     [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
     [ "MxRenderer::StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", null ],
     [ "RandomTextureApp::TexRGBA", "struct_random_texture_app_1_1_tex_r_g_b_a.html", null ],
+    [ "TriangleApp::TexRGBA", "struct_triangle_app_1_1_tex_r_g_b_a.html", null ],
     [ "ucvector", "structucvector.html", null ],
     [ "uivector", "structuivector.html", null ],
     [ "MxIconDraw::Vertex", "struct_mx_icon_draw_1_1_vertex.html", null ],

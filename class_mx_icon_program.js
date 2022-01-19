@@ -9,8 +9,9 @@ var class_mx_icon_program =
     [ "compile", "class_mx_icon_program.html#a95b756bd4860f4e5aac10214eaedeead", null ],
     [ "draw", "class_mx_icon_program.html#a98e3bc8b115b508a425afef921953c77", null ],
     [ "draw", "class_mx_icon_program.html#a2f9362cd067a949ddb1a411eeeea4097", null ],
+    [ "enable", "class_mx_icon_program.html#ac7897de6521bde4c29e0b92fb6d52f07", null ],
     [ "enableAttributes", "class_mx_icon_program.html#a72409af10ba36fa19e7c94395c99a95d", null ],
     [ "init", "class_mx_icon_program.html#af72a3a4fcf0a7ec8620527ad32f48d06", null ],
-    [ "setToPipeline", "class_mx_icon_program.html#a1736ce6285da362675df5489eba1295a", null ],
+    [ "setViewMatrix", "class_mx_icon_program.html#ac3d69e556a7ed79ded6d14e3e57850bf", null ],
     [ "vaoFormat", "class_mx_icon_program.html#a93e8828f127bbab3f706d0355740b4b8", null ]
 ];
