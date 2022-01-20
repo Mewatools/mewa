@@ -1,12 +1,13 @@
 <map id="src/renderer/direct12/iconprogram/test_randomtexture/main.cpp" name="src/renderer/direct12/iconprogram/test_randomtexture/main.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="195,5,407,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="73,109,159,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="183,109,244,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="268,109,335,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="359,109,463,136"/>
-<area shape="rect" id="node6" href="$randomtextureapp_8h.html" title=" " alt="" coords="487,109,622,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="529,5,741,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="407,109,492,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="516,109,577,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="601,109,668,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="692,109,796,136"/>
+<area shape="rect" id="node6" href="$randomtextureapp_8h.html" title=" " alt="" coords="821,109,955,136"/>
 <area shape="rect" id="node7" title=" " alt="" coords="5,333,125,360"/>
 <area shape="rect" id="node8" href="$mxapplication_8h.html" title=" " alt="" coords="833,184,943,211"/>
+<area shape="rect" id="node36" title=" " alt="" coords="968,184,1056,211"/>
 <area shape="rect" id="node9" title=" " alt="" coords="1202,632,1286,659"/>
 <area shape="rect" id="node10" href="$mxwidgetlist_8h.html" title=" " alt="" coords="635,259,739,285"/>
 <area shape="rect" id="node16" href="$mxguirenderer_8h.html" title=" " alt="" coords="346,259,459,285"/>

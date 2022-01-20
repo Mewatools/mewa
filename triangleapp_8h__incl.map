@@ -1,7 +1,8 @@
 <map id="src/renderer/direct12/vectorprogram/test_triangle/triangleapp.h" name="src/renderer/direct12/vectorprogram/test_triangle/triangleapp.h">
-<area shape="rect" id="node1" title=" " alt="" coords="277,5,461,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="797,5,981,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,259,137,285"/>
 <area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="833,109,944,136"/>
+<area shape="rect" id="node31" title=" " alt="" coords="969,109,1057,136"/>
 <area shape="rect" id="node4" title=" " alt="" coords="1203,557,1287,584"/>
 <area shape="rect" id="node5" href="$mxwidgetlist_8h.html" title=" " alt="" coords="635,184,739,211"/>
 <area shape="rect" id="node11" href="$mxguirenderer_8h.html" title=" " alt="" coords="349,184,463,211"/>
@@ -17,15 +18,15 @@
 <area shape="rect" id="node13" title=" " alt="" coords="162,259,258,285"/>
 <area shape="rect" id="node14" title=" " alt="" coords="282,259,402,285"/>
 <area shape="rect" id="node15" href="$mxmatrix_8h.html" title=" " alt="" coords="427,259,511,285"/>
-<area shape="rect" id="node17" href="$mxvector_8h.html" title=" " alt="" coords="1051,408,1137,435"/>
+<area shape="rect" id="node17" href="$mxvector_8h.html" title=" " alt="" coords="1054,408,1139,435"/>
 <area shape="rect" id="node18" title=" " alt="" coords="691,259,875,285"/>
 <area shape="rect" id="node20" href="$mxvectordraw_8h.html" title=" " alt="" coords="1124,259,1237,285"/>
 <area shape="rect" id="node23" href="$mxtextdraw_8h.html" title=" " alt="" coords="1001,259,1099,285"/>
 <area shape="rect" id="node28" href="$mxicondraw_8h.html" title=" " alt="" coords="1262,259,1363,285"/>
-<area shape="rect" id="node21" href="$mxrect_8h.html" title=" " alt="" coords="1148,333,1219,360"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1161,408,1235,435"/>
-<area shape="rect" id="node24" href="$mxstring_8h.html" title=" " alt="" coords="924,333,1005,360"/>
-<area shape="rect" id="node25" href="$mxgenericstring_8h.html" title=" " alt="" coords="903,408,1026,435"/>
+<area shape="rect" id="node21" href="$mxrect_8h.html" title=" " alt="" coords="1149,333,1220,360"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1163,408,1238,435"/>
+<area shape="rect" id="node24" href="$mxstring_8h.html" title=" " alt="" coords="927,333,1008,360"/>
+<area shape="rect" id="node25" href="$mxgenericstring_8h.html" title=" " alt="" coords="906,408,1029,435"/>
 <area shape="rect" id="node26" href="$mxbytearrayref_8h.html" title=" " alt="" coords="825,483,941,509"/>
 <area shape="rect" id="node27" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="1118,483,1262,509"/>
 <area shape="rect" id="node29" href="$mxthemeicons_8h.html" title=" " alt="" coords="1247,333,1363,360"/>

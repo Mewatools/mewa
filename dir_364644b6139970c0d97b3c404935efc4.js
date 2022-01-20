@@ -15,7 +15,8 @@ var dir_364644b6139970c0d97b3c404935efc4 =
     [ "mxrenderer.cpp", "direct12_2mxrenderer_8cpp.html", null ],
     [ "mxrenderer.h", "direct12_2mxrenderer_8h.html", [
       [ "MxRenderer", "class_mx_renderer.html", "class_mx_renderer" ],
-      [ "StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", "struct_mx_renderer_1_1_stored_root_signature" ]
+      [ "StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", "struct_mx_renderer_1_1_stored_root_signature" ],
+      [ "Texture_p", "struct_mx_renderer_1_1_texture__p.html", "struct_mx_renderer_1_1_texture__p" ]
     ] ],
     [ "mxtexture.cpp", "direct12_2mxtexture_8cpp.html", null ],
     [ "mxtexture.h", "direct12_2mxtexture_8h.html", [

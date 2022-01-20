@@ -1,12 +1,13 @@
 <map id="src/renderer/direct12/vectorprogram/test_triangle/main.cpp" name="src/renderer/direct12/vectorprogram/test_triangle/main.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="231,5,415,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="95,109,181,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="205,109,266,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="290,109,357,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="381,109,485,136"/>
-<area shape="rect" id="node6" href="$triangleapp_8h.html" title=" " alt="" coords="509,109,604,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="563,5,747,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="427,109,513,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="537,109,598,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="622,109,689,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="713,109,817,136"/>
+<area shape="rect" id="node6" href="$triangleapp_8h.html" title=" " alt="" coords="841,109,936,136"/>
 <area shape="rect" id="node7" title=" " alt="" coords="5,333,137,360"/>
 <area shape="rect" id="node8" href="$mxapplication_8h.html" title=" " alt="" coords="833,184,944,211"/>
+<area shape="rect" id="node36" title=" " alt="" coords="969,184,1057,211"/>
 <area shape="rect" id="node9" title=" " alt="" coords="1203,632,1287,659"/>
 <area shape="rect" id="node10" href="$mxwidgetlist_8h.html" title=" " alt="" coords="635,259,739,285"/>
 <area shape="rect" id="node16" href="$mxguirenderer_8h.html" title=" " alt="" coords="349,259,463,285"/>

@@ -89,12 +89,13 @@ var hierarchy =
     [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
     [ "MxRenderer::StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", null ],
     [ "RandomTextureApp::TexRGBA", "struct_random_texture_app_1_1_tex_r_g_b_a.html", null ],
-    [ "TriangleApp::TexRGBA", "struct_triangle_app_1_1_tex_r_g_b_a.html", null ],
+    [ "MxRenderer::Texture_p", "struct_mx_renderer_1_1_texture__p.html", null ],
     [ "ucvector", "structucvector.html", null ],
     [ "uivector", "structuivector.html", null ],
     [ "MxIconDraw::Vertex", "struct_mx_icon_draw_1_1_vertex.html", null ],
     [ "MxIconProgram::Vertex", "struct_mx_icon_program_1_1_vertex.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
     [ "MxVectorDraw::Vertex", "struct_mx_vector_draw_1_1_vertex.html", null ],
+    [ "MxVectorProgram::Vertex", "struct_mx_vector_program_1_1_vertex.html", null ],
     [ "MxRenderer::Viewport", "struct_mx_renderer_1_1_viewport.html", null ]
 ];

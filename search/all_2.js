@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_64',['B',['../struct_random_texture_app_1_1_tex_r_g_b_a.html#a7576dfa517e6fe21836768d42100461c',1,'RandomTextureApp::TexRGBA::B()'],['../struct_triangle_app_1_1_tex_r_g_b_a.html#afd8d8dce54dcb783934469b9dfb71277',1,'TriangleApp::TexRGBA::B()']]],
-  ['b_65',['b',['../struct_mx_text_draw_1_1_vertex.html#a61cb1dbabea1c7078aa98597ff0b82a9',1,'MxTextDraw::Vertex::b()'],['../struct_mx_vector_draw_1_1_vertex.html#aabbb7fc2f33f5d3a3c2af52182fb8f08',1,'MxVectorDraw::Vertex::b()']]],
+  ['b_64',['b',['../struct_mx_text_draw_1_1_vertex.html#a61cb1dbabea1c7078aa98597ff0b82a9',1,'MxTextDraw::Vertex::b()'],['../struct_mx_vector_draw_1_1_vertex.html#aabbb7fc2f33f5d3a3c2af52182fb8f08',1,'MxVectorDraw::Vertex::b()']]],
+  ['b_65',['B',['../struct_random_texture_app_1_1_tex_r_g_b_a.html#a7576dfa517e6fe21836768d42100461c',1,'RandomTextureApp::TexRGBA']]],
   ['background_5fb_66',['background_b',['../struct_lode_p_n_g_info.html#a994de0c74ef1092f056ff534e00dfa0d',1,'LodePNGInfo']]],
   ['background_5fdefined_67',['background_defined',['../struct_lode_p_n_g_info.html#aa94c65344af02472adb9c71eae2e765f',1,'LodePNGInfo']]],
   ['background_5fg_68',['background_g',['../struct_lode_p_n_g_info.html#abf638e191edaeaa2b02c371a381e3a89',1,'LodePNGInfo']]],

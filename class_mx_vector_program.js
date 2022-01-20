@@ -1,5 +1,6 @@
 var class_mx_vector_program =
 [
+    [ "Vertex", "struct_mx_vector_program_1_1_vertex.html", "struct_mx_vector_program_1_1_vertex" ],
     [ "MxVectorProgram", "class_mx_vector_program.html#a86b11ecea509239a3dcffc19ab14a56d", null ],
     [ "MxVectorProgram", "class_mx_vector_program.html#a86b11ecea509239a3dcffc19ab14a56d", null ],
     [ "~MxVectorProgram", "class_mx_vector_program.html#a2b012b53bc3b85a077a2e382f8c63e71", null ],
