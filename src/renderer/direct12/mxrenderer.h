@@ -6,7 +6,6 @@
 #define MXRENDERER_H
 
 #include "mxvector.h"
-#include "mxtexture.h"
 #include "mxgpuarray.h"
 #include "mxlist.h"
 
@@ -15,7 +14,7 @@
 #include<dxgi1_6.h>
 
 
-
+class MxTexture;
 class MxGpuArray;
 class MxGpuProgram;
 
@@ -66,7 +65,7 @@ public:
     void enableDepthTest(bool enable);
     MxGpuArray * getBuffer( UINT64 length );
     void setProgram( MxGpuProgram* program );
-    void setTexturesParameters( unsigned int flags );
+    //void setTexturesParameters( unsigned int flags );
 
     /*!The parameters are the Filterand Wrap bits alloed.Note that multiple options are allowed,
      thats because the renderer tries to minimize state changes.
@@ -77,22 +76,28 @@ public:
     void renderBegin();
     //! triggered at the end of each render (buffer swap)
     virtual void renderEnd();
+    void resetBoundTextures();
     
 
 
   
     /// @private
-    void setupRoot();
+    void prepareRootSignature();
     /// @private
     void prepareToDraw();
     /// @private
     void allocResource(MxGpuArray* newArray, UINT64 length);
     void releaseGpuArrays();
     bool setupPipeline();
+    void connectInputTextures( int count );
   
-
-
-
+    enum PipelineFlag
+    {
+        DepthTestEnabled = 0x01,
+        StencilEnabled = 0x02,
+    };
+    unsigned int pPipelineEnabled;
+    Blending pBlendOption;
     bool pEnableSRGB;
     bool pFirstTime;
     bool pPipelineChanged;
@@ -115,10 +120,15 @@ public:
        MaxBoundTextures = 2,
    };
 
-    // \TODO make it a list of textures
-    MxTexture pTextures[1];
+   struct Texture_p
+   {
+       MxTexture* texture;
+       unsigned char parameters;
+    };
     // \TODO change to MxStack
-    MxTexture* pBoundTextures[MaxBoundTextures]; // bound textures in its slots
+   Texture_p pBoundTextures[MaxBoundTextures]; // bound textures in its slots
+   
+   D3D12_STATIC_SAMPLER_DESC pSamplerDesc[MaxBoundTextures];
 
 
     ID3D12Device* pDevice;

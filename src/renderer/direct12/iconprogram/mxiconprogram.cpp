@@ -47,9 +47,11 @@ void MxIconProgram::setViewMatrix(const MxMatrix* matrix)
 
 void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 {
-	pRenderer->prepareToDraw();
+	
 
-	Q_ASSERT(pRenderer->pBoundTextures[0] != NULL );
+	Q_ASSERT(pRenderer->pBoundTextures[0].texture != NULL );
+
+	pRenderer->connectInputTextures(1);
 
 
 	// 1 matrix = 16 floats

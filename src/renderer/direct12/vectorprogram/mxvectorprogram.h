@@ -19,6 +19,12 @@ class MxRenderer;
 class MxVectorProgram : public MxGpuProgram
 {
 public:
+    struct Vertex {
+        float pos[2];
+        unsigned char color[4];
+        float uv[2];
+    };
+
 
     MxVectorProgram();
 

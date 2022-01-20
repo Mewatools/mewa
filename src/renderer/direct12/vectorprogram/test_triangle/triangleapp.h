@@ -7,6 +7,7 @@
 
 #include "mxvectorprogram.h"
 #include "mxapplication.h"
+#include "mxtexture.h"
 
 
 
@@ -21,9 +22,6 @@ public:
 
 
 
-	struct TexRGBA {
-		unsigned char R, G, B, A;
-	};
 
 	int pImgWidth;
 	int pImgHeight;
@@ -32,7 +30,7 @@ public:
 	int pWindowHeight;
 
 	MxVectorProgram pProgram;
-	MxTexture pTexture;
+	
 
 
 	MxBuffer pBuffer;

@@ -5,6 +5,7 @@
 #include "mxrenderer.h"
 #include "mxgpuprogram.h"
 #include "mxdebug.h"
+#include "mxtexture.h"
 
 #include <d3d12.h>
 
@@ -19,14 +20,14 @@
 
 MxRenderer::MxRenderer()
 {
+	pPipelineEnabled = 0;
+	pBlendOption = MxRenderer::NoBlending;
 	pEnableSRGB = false;
 	pFirstTime = true;
 	pPipelineChanged = true;
 	pCurrProgram = NULL;
 	pRootSignatureChanged = true;
     pCurrInputTextureFlags = 0;
-
-
 	pDevice = nullptr;
 	pDxgiFactory = nullptr;
 	pCmdAllocator = nullptr;
@@ -43,6 +44,8 @@ MxRenderer::MxRenderer()
 	pRootSignature = nullptr;
 
 	pPipelinestate = nullptr;
+
+	resetBoundTextures();
 }
 
 MxRenderer::~MxRenderer()
@@ -186,6 +189,10 @@ void MxRenderer::setScissor(const MxVector2I& pos, const MxVector2I& size)
 
 void MxRenderer::setBlending(MxRenderer::Blending blend)
 {
+	if (blend != pBlendOption) {
+		pBlendOption = blend;
+		pPipelineChanged = true;
+	}
 
 }
 
@@ -233,7 +240,7 @@ void MxRenderer::setProgram(MxGpuProgram* program)
 	}
 }
 
-void MxRenderer::setTexturesParameters(unsigned int flags)
+/*void MxRenderer::setTexturesParameters(unsigned int flags)
 {
 	if (pCurrInputTextureFlags != flags) {
 		pCurrInputTextureFlags = flags;
@@ -241,15 +248,36 @@ void MxRenderer::setTexturesParameters(unsigned int flags)
 		// changing the root signature is expensive, it triggers pipeline change
 		pPipelineChanged = true;
 	}
-}
+}*/
 
 
 
 
 void MxRenderer::bindTexture(MxTexture* texture, unsigned char parameters, int inputIndex)
 {
+	Q_ASSERT( NULL != texture );
 	Q_ASSERT(inputIndex == 0);
-	pBoundTextures[inputIndex] = texture;
+
+	Texture_p& t = pBoundTextures[inputIndex];
+	 t.texture = texture;
+	 t.parameters = parameters;
+
+	 Q_ASSERT(inputIndex >= 0 && inputIndex < MxRenderer::MaxBoundTextures);
+	 D3D12_STATIC_SAMPLER_DESC& samplerDesc = pSamplerDesc[inputIndex];
+	 samplerDesc.Filter = D3D12_FILTER_MIN_MAG_MIP_POINT;
+	 samplerDesc.AddressU = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
+	 samplerDesc.AddressV = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
+	 samplerDesc.AddressW = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
+	 samplerDesc.MipLODBias = 0.0f;
+	 samplerDesc.MaxAnisotropy = 1;
+     samplerDesc.ComparisonFunc = D3D12_COMPARISON_FUNC_NEVER;
+	 samplerDesc.BorderColor = D3D12_STATIC_BORDER_COLOR_TRANSPARENT_BLACK;
+	 samplerDesc.MinLOD = 0.0f;
+	 samplerDesc.MaxLOD = D3D12_FLOAT32_MAX;
+	 samplerDesc.ShaderRegister = 0;
+	 samplerDesc.RegisterSpace = 0;
+	 samplerDesc.ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+
 }
 
 void MxRenderer::checkGLError(const char* fileName, int line)
@@ -264,15 +292,19 @@ void MxRenderer::renderBegin()
 
 void MxRenderer::renderEnd()
 {
+	resetBoundTextures();
+}
+
+void MxRenderer::resetBoundTextures()
+{
 	for (int i = 0; i < MxRenderer::MaxBoundTextures; ++i) {
-		pBoundTextures[i] = NULL;
+		pBoundTextures[i].texture = NULL;
 	}
 }
 
 
 
-
-void MxRenderer::setupRoot()
+void MxRenderer::prepareRootSignature()
 {
 	Q_ASSERT(NULL != pDevice);
 
@@ -281,8 +313,8 @@ void MxRenderer::setupRoot()
 
 		pRootSignatureChanged = false;
 
-		
-		Q_ASSERT( pPipelineChanged == true );
+
+		Q_ASSERT(pPipelineChanged == true);
 
 		// \TODO can pRootSignature be overwritten or needs to be deleted ??
 		Q_ASSERT(pRootSignature == NULL);
@@ -298,11 +330,6 @@ void MxRenderer::setupRoot()
 
 
 
-		D3D12_DESCRIPTOR_RANGE descTblRange = {};
-		descTblRange.NumDescriptors = 1;
-		descTblRange.RangeType = D3D12_DESCRIPTOR_RANGE_TYPE_SRV;
-		descTblRange.BaseShaderRegister = 0;
-		descTblRange.OffsetInDescriptorsFromTableStart = D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND;
 
 
 		// Matrix uniform
@@ -313,29 +340,40 @@ void MxRenderer::setupRoot()
 		rootparam[0].Constants.RegisterSpace = 0;
 		rootparam[0].ShaderVisibility = D3D12_SHADER_VISIBILITY_VERTEX;
 
-		rootparam[1].ParameterType = D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE;
-		rootparam[1].DescriptorTable.pDescriptorRanges = &descTblRange;
-		rootparam[1].DescriptorTable.NumDescriptorRanges = 1;
-		rootparam[1].ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
 
-		rootSignatureDesc.pParameters = rootparam;
-		rootSignatureDesc.NumParameters = 2;
+		if (pBoundTextures[0].texture) // if textures add descriptor tables to be used as shader inputs
+		{
+			// shader texture input range. Note that these need to match the heap set on SetGraphicsRootDescriptorTable
+			D3D12_DESCRIPTOR_RANGE descTblRange = {};
+			descTblRange.NumDescriptors = 1;
+			descTblRange.RangeType = D3D12_DESCRIPTOR_RANGE_TYPE_SRV;
+			descTblRange.BaseShaderRegister = 0;
+			descTblRange.OffsetInDescriptorsFromTableStart = D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND;
+
+			rootparam[1].ParameterType = D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE;
+			rootparam[1].DescriptorTable.pDescriptorRanges = &descTblRange;
+			rootparam[1].DescriptorTable.NumDescriptorRanges = 1;
+			rootparam[1].ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+
+			rootSignatureDesc.pParameters = rootparam;
+			rootSignatureDesc.NumParameters = 2;
+
+
+			rootSignatureDesc.pStaticSamplers = pSamplerDesc;
+			rootSignatureDesc.NumStaticSamplers = 1;
+		}
+		else 
+		{
+			rootSignatureDesc.pParameters = rootparam;
+			rootSignatureDesc.NumParameters = 1;
+			rootSignatureDesc.NumStaticSamplers = 0;
+		}
 
 
 
-		D3D12_STATIC_SAMPLER_DESC samplerDesc = {};
-		samplerDesc.AddressU = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
-		samplerDesc.AddressV = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
-		samplerDesc.AddressW = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
-		samplerDesc.BorderColor = D3D12_STATIC_BORDER_COLOR_TRANSPARENT_BLACK;
-		samplerDesc.Filter = D3D12_FILTER_MIN_MAG_MIP_POINT;
-		samplerDesc.MaxLOD = D3D12_FLOAT32_MAX;
-		samplerDesc.MinLOD = 0.0f;
-		samplerDesc.ComparisonFunc = D3D12_COMPARISON_FUNC_NEVER;
-		samplerDesc.ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
 
-		rootSignatureDesc.pStaticSamplers = &samplerDesc;
-		rootSignatureDesc.NumStaticSamplers = 1;
+
+	
 
 		ID3DBlob* rootSigBlob = nullptr;
 		HRESULT result = D3D12SerializeRootSignature(&rootSignatureDesc, D3D_ROOT_SIGNATURE_VERSION_1_0, &rootSigBlob, &pErrorBlob);
@@ -348,7 +386,7 @@ void MxRenderer::setupRoot()
 
 void MxRenderer::prepareToDraw()
 {
-	setupRoot();
+	prepareRootSignature();
 
 	bool changed = setupPipeline();
 	if (changed) {
@@ -359,9 +397,7 @@ void MxRenderer::prepareToDraw()
 	pCmdList->SetPipelineState(pPipelinestate);
 
 
-	// descriptorHeaps are called after allocating all textures
-	pCmdList->SetDescriptorHeaps(1, &(pBoundTextures[0]->pTexDescHeap));
-	pCmdList->SetGraphicsRootDescriptorTable(1, pBoundTextures[0]->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
+
 
 
 }
@@ -425,10 +461,28 @@ bool MxRenderer::setupPipeline()
 
 		D3D12_RENDER_TARGET_BLEND_DESC renderTargetBlendDesc = {};
 
-		renderTargetBlendDesc.BlendEnable = false;
-		renderTargetBlendDesc.RenderTargetWriteMask = D3D12_COLOR_WRITE_ENABLE_ALL;
+		if (MxRenderer::NoBlending == pBlendOption) // No blending
+		{
+			renderTargetBlendDesc.BlendEnable = false;
+			renderTargetBlendDesc.LogicOpEnable = false;
+			renderTargetBlendDesc.RenderTargetWriteMask = D3D12_COLOR_WRITE_ENABLE_ALL;
+			
+		}
+		else 
+		{ // glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
+			renderTargetBlendDesc.BlendEnable = true;
+			renderTargetBlendDesc.LogicOpEnable = false;
+			renderTargetBlendDesc.SrcBlend = D3D12_BLEND::D3D12_BLEND_SRC_ALPHA;
+			renderTargetBlendDesc.DestBlend = D3D12_BLEND::D3D12_BLEND_ONE;
+			renderTargetBlendDesc.BlendOp = D3D12_BLEND_OP::D3D12_BLEND_OP_ADD;
+			renderTargetBlendDesc.SrcBlendAlpha = D3D12_BLEND::D3D12_BLEND_ONE;
+			renderTargetBlendDesc.DestBlendAlpha = D3D12_BLEND::D3D12_BLEND_ZERO;
+			renderTargetBlendDesc.BlendOpAlpha = D3D12_BLEND_OP::D3D12_BLEND_OP_ADD;
+			renderTargetBlendDesc.LogicOp = D3D12_LOGIC_OP::D3D12_LOGIC_OP_NOOP;
+			renderTargetBlendDesc.RenderTargetWriteMask = D3D12_COLOR_WRITE_ENABLE::D3D12_COLOR_WRITE_ENABLE_ALL;
 
-		renderTargetBlendDesc.LogicOpEnable = false;
+		}
+
 
 		pPipeline.BlendState.RenderTarget[0] = renderTargetBlendDesc;
 
@@ -445,7 +499,7 @@ bool MxRenderer::setupPipeline()
 		pPipeline.RasterizerState.ForcedSampleCount = 0;
 		pPipeline.RasterizerState.ConservativeRaster = D3D12_CONSERVATIVE_RASTERIZATION_MODE_OFF;
 
-
+		Q_ASSERT(pPipelineEnabled == 0); // \TODO
 		pPipeline.DepthStencilState.DepthEnable = false;
 		pPipeline.DepthStencilState.StencilEnable = false;
 
@@ -470,5 +524,17 @@ bool MxRenderer::setupPipeline()
 		return true;
 	}
 	return false;
+}
+
+void MxRenderer::connectInputTextures(int count)
+{
+
+	Q_ASSERT( 1 == count ); // \TODO
+
+		// descriptorHeaps are called after allocating all textures
+		Q_ASSERT(NULL != pBoundTextures[0].texture);
+		pCmdList->SetDescriptorHeaps(1, &(pBoundTextures[0].texture->pTexDescHeap));
+		pCmdList->SetGraphicsRootDescriptorTable(1, pBoundTextures[0].texture->pTexDescHeap->GetGPUDescriptorHandleForHeapStart());
+	
 }
 

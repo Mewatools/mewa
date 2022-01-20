@@ -5,6 +5,7 @@
 #include "mxvectorprogram.h"
 #include "mxdebug.h"
 #include "mxrenderer.h"
+#include "mxmatrix.h"
 
 #include<d3dcompiler.h>
 
@@ -43,6 +44,69 @@ void MxVectorProgram::enable(D3D12_GRAPHICS_PIPELINE_STATE_DESC* pipeline)
 void MxVectorProgram::draw( const MxVectorDraw& stream , const MxMatrix* matrix)
 {
 
+	Q_ASSERT(pRenderer->pBoundTextures[0].texture == NULL);
+
+	
+
+
+	// 1 matrix = 16 floats
+	pRenderer->pCmdList->SetGraphicsRoot32BitConstants(0, 16, matrix->data(), 0);
+
+
+
+
+#if 1
+
+	float x0 = 50.0f;
+	float x1 = 500.0f;
+	float y0 = 50.0f;
+	float y1 = 500.0f;
+	const unsigned char color = 128;
+	const unsigned char alpha = 255;
+
+	Vertex vertices[] = {
+		{{x0, y0}, {255,color,color,alpha}  ,{0.0f,0.0f} },
+		{{x0, y1},{255,color,color,alpha}  ,{0.5f,0.0f}},
+		{{x1, y0},{255,color,color,alpha} ,{1.0f,1.0f}},
+
+		{{x1, y1},{255,color,color,alpha}  ,{0.0f,0.0f}},
+		{{x0, y1},{255,color,color,alpha}  ,{0.5f,0.0f}},
+		{{x1, y0},{255,color,color,alpha}  ,{1.0f,1.0f}},
+	};
+
+	UINT arrayLength = 6 * sizeof(Vertex);
+	MxGpuArray* vertArray = pRenderer->getBuffer(arrayLength);
+	vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
+
+#else
+	UINT arrayLength = rectsArray.pArray->size();
+
+	MxGpuArray* vertArray = pRenderer->getBuffer(arrayLength);
+	//vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
+	vertArray->setVertexData((char*)rectsArray.pArray->data(), arrayLength, sizeof(Vertex));
+#endif
+
+
+	//MxGpuArray* idxArray = pRenderer->getBuffer(idxLength);
+	//idxArray->setIndexData((char*)idx, idxLength);
+
+	pRenderer->pCmdList->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	pRenderer->pCmdList->IASetVertexBuffers(0, 1, &(vertArray->pView.vertexBufferView));
+	//pRenderer->pCmdList->IASetIndexBuffer(&(idxArray->pView.indexBufferView));
+
+
+
+
+
+	//pRenderer->pCmdList->DrawIndexedInstanced(6, 1, 0, 0, 0);
+	UINT vertexCountPerInstance = 6;
+	UINT instanceCount = 1;
+	UINT startVertexLocation = 0;
+	UINT startInstanceLocation = 0;
+	pRenderer->pCmdList->DrawInstanced(vertexCountPerInstance,
+		instanceCount,
+		startVertexLocation,
+		startInstanceLocation);
 }
 
 

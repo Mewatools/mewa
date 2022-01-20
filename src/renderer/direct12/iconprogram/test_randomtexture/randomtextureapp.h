@@ -7,7 +7,7 @@
 
 #include "mxiconprogram.h"
 #include "mxapplication.h"
-
+#include "mxtexture.h"
 
 
 class RandomTextureApp : public MxApplication

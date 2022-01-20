@@ -4,6 +4,7 @@
 ****************************************************************************/
 #include "randomtextureapp.h"
 
+
 #include<vector>
 
 
@@ -25,8 +26,7 @@ void RandomTextureApp::intialize()
 	pProgram.init( &pRenderer );
 	
 	
-	pRenderer.setProgram( &pProgram );
-	pRenderer.setTexturesParameters(MxTexture::MipmapFilter | MxTexture::RepeatWrap);
+
 
 
 	MxVector2I texSize(pImgWidth, pImgHeight);
@@ -57,7 +57,7 @@ void RandomTextureApp::intialize()
 
 void RandomTextureApp::onRender()
 {
-
+	
 
 	std::vector<TexRGBA> texturedata(pImgWidth * pImgHeight);
 	for (int i = 0; i < pImgHeight; ++i)
@@ -89,7 +89,13 @@ void RandomTextureApp::onRender()
 	pRenderer.setViewport(0,0, pWindowWidth, pWindowHeight);
 	pRenderer.setScissor(MxVector2I(0, 0), MxVector2I(pWindowWidth, pWindowHeight));
 
-	//pRenderer.setProgram( &pProgram );
+
+
+	pRenderer.setProgram(&pProgram);
+	//pRenderer.setTexturesParameters(MxTexture::MipmapFilter | MxTexture::RepeatWrap);
+
+
+	
 
 	MxMatrix m;
 	m.setToIdentity();
@@ -100,6 +106,13 @@ void RandomTextureApp::onRender()
 	MxRectF texRect(0.0f, 1.0f, 0.0f, 1.0f);
 	MxRectF viewRect(30.0f, 500.0f, 30.0f, 500.0f);
 	//icondraw.drawImageRect(texRect, viewRect);
+
+
+
+	
+	pRenderer.prepareToDraw();
+
+	
 
 	pProgram.draw(icondraw, &m);
 

@@ -162,31 +162,18 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		rtvH.ptr += bbIdx * renderer->pDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_RTV);
 		renderer->pCmdList->OMSetRenderTargets(1, &rtvH, false, nullptr);
 
-		
-		
 
-		
-		// test if display buffer is preserved through fb swap
-		if ((frame % 60) == 0) 
-		{
-			float r, g, b;
-			if (tmp % 2 == 0)
-			{
-				r = 0.1f;
-				g = 0.1f;
-				b = 1.0f;
-			}
-			else {
-				r = 1.0f;
-				g = 0.2f;
-				b = 0.2f;
-			}
-			tmp++;
-			float clearColor[] = { r,g,b,1.0f };
-			
-			renderer->pCmdList->ClearRenderTargetView(rtvH, clearColor, 0, nullptr);
-		}
-		
+
+
+		float r, g, b;
+		r = 0.1f;
+		g = 0.1f;
+		b = 1.0f;
+		float clearColor[] = { r,g,b,1.0f };
+
+		renderer->pCmdList->ClearRenderTargetView(rtvH, clearColor, 0, nullptr);
+
+
 		++frame;
 
 		app->onRender();

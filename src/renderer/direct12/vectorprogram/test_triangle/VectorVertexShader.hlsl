@@ -1,4 +1,4 @@
-#include"BasicType.hlsli"
+#include"VectorType.hlsli"
 
 cbuffer cbuff0 : register(b0) {
 	matrix mat;
