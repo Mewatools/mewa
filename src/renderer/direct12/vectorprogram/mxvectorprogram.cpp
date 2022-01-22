@@ -115,7 +115,9 @@ bool MxVectorProgram::compile()
 {
 	Q_ASSERT(NULL != pRenderer);
 
-	const wchar_t* vtxShaderFilename = L"VectorVertexShader.hlsl";
+#define MX_HLSL_DIR L"hlsl\\"
+
+	const wchar_t* vtxShaderFilename = MX_HLSL_DIR L"VectorVertexShader.hlsl";
 	HRESULT result = D3DCompileFromFile(vtxShaderFilename,
 		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
 		"BasicVS", "vs_5_0",
@@ -136,7 +138,7 @@ bool MxVectorProgram::compile()
 		}
 		return false;
 	}
-	result = D3DCompileFromFile(L"VectorPixelShader.hlsl",
+	result = D3DCompileFromFile(MX_HLSL_DIR L"VectorPixelShader.hlsl",
 		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
 		"BasicPS", "ps_5_0",
 		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
