@@ -110,7 +110,7 @@ void RandomTextureApp::onRender()
 
 
 	
-	pRenderer.prepareToDraw();
+	
 
 	
 

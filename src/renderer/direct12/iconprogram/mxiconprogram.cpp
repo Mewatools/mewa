@@ -51,7 +51,10 @@ void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 
 	Q_ASSERT(pRenderer->pBoundTextures[0].texture != NULL );
 
+	pRenderer->prepareToDraw();
+
 	pRenderer->connectInputTextures(1);
+
 
 
 	// 1 matrix = 16 floats
@@ -142,10 +145,10 @@ bool MxIconProgram::compile()
 
 
 
-	const wchar_t* vtxShaderFilename = L"BasicVertexShader.hlsl";
+	const wchar_t* vtxShaderFilename = L"hlsl\\IconVertexShader.hlsl";
 	HRESULT result = D3DCompileFromFile(vtxShaderFilename,
 		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
-		"BasicVS", "vs_5_0",
+		"IconVS", "vs_5_0",
 		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
 		0, &pVertexShader, &(pRenderer->pErrorBlob));
 
@@ -163,9 +166,9 @@ bool MxIconProgram::compile()
 		}
 		return false;
 	}
-	result = D3DCompileFromFile(L"BasicPixelShader.hlsl",
+	result = D3DCompileFromFile(L"hlsl\\IconPixelShader.hlsl",
 		nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
-		"BasicPS", "ps_5_0",
+		"IconPS", "ps_5_0",
 		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
 		0, &pPixelShader, &(pRenderer->pErrorBlob));
 	if (FAILED(result)) {
