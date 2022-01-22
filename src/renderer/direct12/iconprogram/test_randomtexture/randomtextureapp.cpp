@@ -102,17 +102,14 @@ void RandomTextureApp::onRender()
 	m.ortho(0.0f, (float)pWindowWidth, 0.0f, (float)pWindowHeight);
 
 	pBuffer.clear();
-	MxIconDraw icondraw(&pBuffer, NULL);
+
+	MxVector2F tx(0.0f, 0.0f);
+	MxIconDraw icondraw(&pBuffer, &tx);
 	MxRectF texRect(0.0f, 1.0f, 0.0f, 1.0f);
 	MxRectF viewRect(30.0f, 500.0f, 30.0f, 500.0f);
-	//icondraw.drawImageRect(texRect, viewRect);
+	icondraw.drawImageRect(texRect, viewRect);
 
 
-
-	
-	
-
-	
 
 	pProgram.draw(icondraw, &m);
 

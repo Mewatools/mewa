@@ -102,7 +102,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// \TODO needs refactoring
 	MxRenderer* renderer = &(app->pRenderer);
-	renderer->init(hwnd, window_width, window_height );
+	renderer->setupDirectX(hwnd, window_width, window_height );
 	app->intialize();
 	app->onResizeWindow(window_width, window_height);
 

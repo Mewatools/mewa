@@ -47,10 +47,11 @@ public:
     MxRenderer();
     ~MxRenderer();
 
+    // used by the OpenGL renderer
     void initialize();
 
-    // \TODO rename to setup to not confuse with initialize
-    void init(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight);
+    // \TODO rename to setupDirectX to not confuse with initialize
+    void setupDirectX(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight);
 
   
 

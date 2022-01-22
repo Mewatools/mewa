@@ -56,7 +56,7 @@ void MxRenderer::initialize()
 
 }
 
-void MxRenderer::init(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight )
+void MxRenderer::setupDirectX(HWND hwnd, unsigned int windowWidth, unsigned int windowHeight )
 {
 	Q_ASSERT( NULL == pDevice );
 

@@ -63,7 +63,7 @@ void MxIconProgram::draw( const MxIconDraw& rectsArray, const MxMatrix* matrix )
 
 
 
-#if 1
+#if 0
 	
 	float x0 = 50.0f;
 	float x1 = 500.0f;
