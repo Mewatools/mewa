@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"lodepng_8cpp.html#a18aff167f1895955ac0f831555e9cff3":[4,0,0,0,0,0,36],
 "lodepng_8cpp.html#a19ca99a53f06c1a4626f12e0a0f01776":[4,0,0,0,0,0,180],
 "lodepng_8cpp.html#a1a19edd9e11f7964566f21982ce6e224":[4,0,0,0,0,0,229],
 "lodepng_8cpp.html#a1b43483ceff3b6b47fed551b43a10640":[4,0,0,0,0,0,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "lodepng_8cpp.html#afdcea819eafadadf01f355df29bcb8b9":[4,0,0,0,0,0,246],
 "lodepng_8cpp.html#afe11debcddf1fb4337e09407aedb50f9":[4,0,0,0,0,0,240],
 "lodepng_8cpp.html#afff6d2d37364f0329eba8b54c380b1ff":[4,0,0,0,0,0,84],
-"lodepng_8h.html":[4,0,0,0,0,1],
-"lodepng_8h.html#a009ac38098765fcae32c9d91770b94df":[4,0,0,0,0,1,76]
+"lodepng_8h.html":[4,0,0,0,0,1]
 };

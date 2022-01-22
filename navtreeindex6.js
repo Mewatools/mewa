@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"mxvector_8h.html#a89ecef5772c5d1e69772d46b8526fb69":[4,0,0,3,5,8],
 "mxvector_8h.html#a9ee80cc298c0807abe550bf45acc3cf1":[4,0,0,3,5,5],
 "mxvector_8h.html#a9fbdc2da1d4520d0f61355ea9e848073":[4,0,0,3,5,3],
 "mxvector_8h.html#aadfd7acf3efe126f6a07538d927b3fef":[4,0,0,3,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_lode_p_n_g_info.html#ae9f9f594e63c910d467a14f550960837":[3,0,15,24],
 "struct_lode_p_n_g_info.html#afcfedb61356a1c9b328e4098f03216af":[3,0,15,7],
 "struct_lode_p_n_g_info.html#afd1e6f7f1fe1c473774a64148dfed25a":[3,0,15,17],
-"struct_lode_p_n_g_state.html":[3,0,16],
-"struct_lode_p_n_g_state.html#a08d9ac43c995fcf34d72b1d37047b6fa":[3,0,16,3]
+"struct_lode_p_n_g_state.html":[3,0,16]
 };
