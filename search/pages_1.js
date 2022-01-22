@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getting_20started_2373',['Getting started',['../starter_page.html',1,'']]]
+  ['getting_20started_2371',['Getting started',['../starter_page.html',1,'']]]
 ];
