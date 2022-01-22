@@ -188,8 +188,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63ae7cec7d163dba565670fc7e0adc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31aeb37875bd617831c34609eb415ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a31aeb37875bd617831c34609eb415ae4">initialize</a> ()</td></tr>
 <tr class="separator:a31aeb37875bd617831c34609eb415ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23cde5e659854cbe46076843b63b0c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a23cde5e659854cbe46076843b63b0c46">init</a> (HWND hwnd, unsigned int windowWidth, unsigned int windowHeight)</td></tr>
-<tr class="separator:a23cde5e659854cbe46076843b63b0c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6741ca3e11f18a7e010073605a0abe42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a6741ca3e11f18a7e010073605a0abe42">setupDirectX</a> (HWND hwnd, unsigned int windowWidth, unsigned int windowHeight)</td></tr>
+<tr class="separator:a6741ca3e11f18a7e010073605a0abe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbb708cc819987831543ee1b6bda1c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7">setViewport</a> (int x, int y, unsigned int width, unsigned int height)</td></tr>
 <tr class="memdesc:acbbb708cc819987831543ee1b6bda1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the whole window with the given color, for 1 frame only. Used for debug purposes only (to check if display fb is preserved)  <a href="class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7">More...</a><br /></td></tr>
 <tr class="separator:acbbb708cc819987831543ee1b6bda1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -718,40 +718,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a23cde5e659854cbe46076843b63b0c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23cde5e659854cbe46076843b63b0c46">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MxRenderer::init </td>
-          <td>(</td>
-          <td class="paramtype">HWND&#160;</td>
-          <td class="paramname"><em>hwnd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>windowWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>windowHeight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a31aeb37875bd617831c34609eb415ae4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31aeb37875bd617831c34609eb415ae4">&#9670;&nbsp;</a></span>initialize() <span class="overload">[1/2]</span></h2>
 
@@ -1100,6 +1066,40 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>flags</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6741ca3e11f18a7e010073605a0abe42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6741ca3e11f18a7e010073605a0abe42">&#9670;&nbsp;</a></span>setupDirectX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxRenderer::setupDirectX </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>hwnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>windowWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>windowHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
