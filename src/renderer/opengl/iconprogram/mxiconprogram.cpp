@@ -104,15 +104,16 @@ void MxIconProgram::compile()
 
 }
 
-
-
-
 void MxIconProgram::draw( MxIconDraw &rectsArray, const MxMatrix *matrix )
 {
+     pRenderer->setBlending( MxRenderer::BlendingImages );
+
     MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), rectsArray.pArray->data(), rectsArray.pArray->size() );
     enableVao( gpuArray );
 
-    pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, matrix->constData());
+    if(matrix) {
+       pRenderer->glUniformMatrix4fv(matrixUniform2, 1, GL_FALSE, matrix->constData());
+    }
 
     pRenderer->glUniform1i(textureUniform2, 0); // \TODO flag it to avoid setting always
 

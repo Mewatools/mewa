@@ -6,6 +6,8 @@
 #include "mxdebug.h"
 #include "mxrenderer.h"
 #include "mxmatrix.h"
+#include "mxvectordraw.h"
+#include "mxbuffer.h"
 
 #include<d3dcompiler.h>
 
@@ -46,7 +48,9 @@ void MxVectorProgram::draw( const MxVectorDraw& stream , const MxMatrix* matrix)
 
 	Q_ASSERT(pRenderer->pBoundTextures[0].texture == NULL);
 
-	
+	pRenderer->setBlending(MxRenderer::BlendingImages);
+
+	pRenderer->prepareToDraw();
 
 
 	// 1 matrix = 16 floats
@@ -55,7 +59,7 @@ void MxVectorProgram::draw( const MxVectorDraw& stream , const MxMatrix* matrix)
 
 
 
-#if 1
+#if 0
 
 	float x0 = 50.0f;
 	float x1 = 500.0f;
@@ -79,11 +83,11 @@ void MxVectorProgram::draw( const MxVectorDraw& stream , const MxMatrix* matrix)
 	vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
 
 #else
-	UINT arrayLength = rectsArray.pArray->size();
+	UINT arrayLength = stream.pArray->size();
 
 	MxGpuArray* vertArray = pRenderer->getBuffer(arrayLength);
 	//vertArray->setVertexData((char*)vertices, arrayLength, sizeof(Vertex));
-	vertArray->setVertexData((char*)rectsArray.pArray->data(), arrayLength, sizeof(Vertex));
+	vertArray->setVertexData((char*)stream.pArray->data(), arrayLength, sizeof(Vertex));
 #endif
 
 
@@ -99,7 +103,7 @@ void MxVectorProgram::draw( const MxVectorDraw& stream , const MxMatrix* matrix)
 
 
 	//pRenderer->pCmdList->DrawIndexedInstanced(6, 1, 0, 0, 0);
-	UINT vertexCountPerInstance = 6;
+	UINT vertexCountPerInstance = stream.pointCount();
 	UINT instanceCount = 1;
 	UINT startVertexLocation = 0;
 	UINT startInstanceLocation = 0;

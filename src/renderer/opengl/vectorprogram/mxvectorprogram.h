@@ -20,12 +20,9 @@ public:
     void init( MxRenderer *renderer );
     void compile();
 
-    virtual void setMatrix( const MxMatrix *matrix );
-
-    void draw( MxVectorDraw &stream );
+    void draw( MxVectorDraw &stream, const MxMatrix *matrix );
 
 
-    static MxGpuProgram::VaoFormat getVaoFormat();
     virtual MxGpuProgram::VaoFormat vaoFormat();
     virtual void enableAttributes();
     virtual void disableAttributes();

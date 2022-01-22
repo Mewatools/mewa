@@ -56,8 +56,8 @@ void MxPainter::render( MxGuiRenderer &renderer )
         renderer.setViewportToWindow();
         renderer.enableDepthTest( false );
         MxVectorProgram * svgProgram = renderer.setVectorProgram();
-        renderer.setBlending( MxRenderer::BlendingImages );
-        //svgProgram->setMatrix( renderer.windowMatrix() );
+
+
         svgProgram->draw( pVectorDraw, renderer.windowMatrix());
         renderer.checkGLError(__FILE__, __LINE__);
 
@@ -70,7 +70,7 @@ void MxPainter::render( MxGuiRenderer &renderer )
         MxIconProgram *iconProgram = renderer.setIconProgram();
         MxTexture *atlasTexture = renderer.pIconAtlas->texture();
         renderer.bindTexture( atlasTexture, MxTexture::NoFilter | MxTexture::ClampWrap, 0 );
-        renderer.setBlending( MxRenderer::BlendingImages );
+
         iconProgram->draw( pIconDraw, renderer.windowMatrix() );
         pIconDraw.pArray = NULL;
     }

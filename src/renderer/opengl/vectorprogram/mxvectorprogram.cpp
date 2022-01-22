@@ -137,24 +137,23 @@ void MxVectorProgram::compile()
 
 }
 
-void MxVectorProgram::setMatrix( const MxMatrix *matrix )
+void MxVectorProgram::draw( MxVectorDraw &stream, const MxMatrix *matrix )
 {
-    pRenderer->glUniformMatrix4fv(matrixUniform1, 1, GL_FALSE, matrix->constData());
-}
+     pRenderer->setBlending( MxRenderer::BlendingImages );
 
-void MxVectorProgram::draw( MxVectorDraw &stream )
-{
+
     MxGpuArray *gpuArray = pRenderer->uploadToGpu( vaoFormat(), stream.pArray->data(), stream.pArray->size() );
 
     enableVao( gpuArray );
+
+    if(matrix) {
+       pRenderer->glUniformMatrix4fv(matrixUniform1, 1, GL_FALSE, matrix->constData());
+    }
+
     pRenderer->glDrawArrays( GL_TRIANGLES , 0, stream.pointCount() );
     disableVao();
 }
 
-MxGpuProgram::VaoFormat MxVectorProgram::getVaoFormat()
-{
-    return MxGpuProgram::Float2_UChar4_Float2;
-}
 
 MxGpuProgram::VaoFormat MxVectorProgram::vaoFormat()
 {
