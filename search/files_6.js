@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['plusminussvg_2ecpp_1315',['plusminussvg.cpp',['../plusminussvg_8cpp.html',1,'']]],
-  ['plusminussvg_2eh_1316',['plusminussvg.h',['../plusminussvg_8h.html',1,'']]]
+  ['qmewawindow_2ecpp_860',['qmewawindow.cpp',['../qmewawindow_8cpp.html',1,'']]],
+  ['qmewawindow_2eh_861',['qmewawindow.h',['../qmewawindow_8h.html',1,'']]]
 ];

@@ -49,7 +49,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -58,12 +58,10 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -76,10 +74,8 @@ var NAVTREEINDEX =
 "class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c",
 "class_mx_renderer.html#ace1a781a0eaca3d2d538720726ef860d",
 "class_random_texture_app.html#adf40f89afbebcb0eebf8347dcaecb45e",
-"lodepng_8cpp.html#a1a19edd9e11f7964566f21982ce6e224",
-"lodepng_8h.html#a02091d970921c7b94c4e63821785f97a",
-"mxvector_8h.html#a9fbdc2da1d4520d0f61355ea9e848073",
-"struct_lode_p_n_g_state.html#a597bc08de787147474d43adf8b6ceacf"
+"mxstring_8h_source.html",
+"windows_2mxmouseeventabstraction_8h.html#af38e06d34500d68cc882fcc458c79ddc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

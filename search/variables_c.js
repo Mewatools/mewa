@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['nextfree_2066',['nextfree',['../struct_b_p_m_lists.html#a2b4910e1d17b09862e8455fe37f733d9',1,'BPMLists']]],
-  ['nicematch_2067',['nicematch',['../struct_lode_p_n_g_compress_settings.html#a70bc37e21eeffead6e9c8d67e163a591',1,'LodePNGCompressSettings']]],
-  ['nodepanelbackground_2068',['nodePanelBackground',['../namespace_mx_theme_colors.html#a899e161c39db35c9c2fa4cafc3731df4',1,'MxThemeColors']]],
-  ['numcodes_2069',['numcodes',['../struct_huffman_tree.html#a608df5a24f60d1077a5cde19d5149e1f',1,'HuffmanTree']]],
-  ['numcolors_2070',['numcolors',['../struct_lode_p_n_g_color_stats.html#aa63f09d5c0252962f3739cf296678bce',1,'LodePNGColorStats']]],
-  ['numfree_2071',['numfree',['../struct_b_p_m_lists.html#a3d91f7f393d455c28f0172557d050544',1,'BPMLists']]],
-  ['numpixels_2072',['numpixels',['../struct_lode_p_n_g_color_stats.html#a9919718b21a89c1c8cb7f393ff80f696',1,'LodePNGColorStats']]]
+  ['r_1355',['r',['../struct_mx_text_draw_1_1_vertex.html#ad7ee352c2d7fdf211bcd34a7c5b89db2',1,'MxTextDraw::Vertex::r()'],['../struct_mx_vector_draw_1_1_vertex.html#aa311f0e69687c0dcba1bb3a398ad494f',1,'MxVectorDraw::Vertex::r()']]],
+  ['r_1356',['R',['../struct_random_texture_app_1_1_tex_r_g_b_a.html#ac78a82cf431be27b9f8d48d1a8799475',1,'RandomTextureApp::TexRGBA']]],
+  ['refcounter_1357',['refCounter',['../struct_mx_generic_static_data.html#adbd3532e8d1761be4297de5733583ae9',1,'MxGenericStaticData::refCounter()'],['../class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3',1,'MxRefCounter::refCounter()']]],
+  ['rootsignature_1358',['rootSignature',['../struct_mx_renderer_1_1_stored_root_signature.html#a4dbcb38cba725ec7f4d2dfe975e4b19e',1,'MxRenderer::StoredRootSignature']]]
 ];

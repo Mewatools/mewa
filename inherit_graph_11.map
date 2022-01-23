@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_lode_p_n_g_decompress_settings.html" title=" " alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node1" href="$class_mx_gpu_program.html" title=" " alt="" coords="5,56,117,83"/>
+<area shape="rect" id="node2" href="$class_mx_color_wheel_program.html" title=" " alt="" coords="165,5,320,32"/>
+<area shape="rect" id="node3" href="$class_mx_icon_program.html" title=" " alt="" coords="186,56,299,83"/>
+<area shape="rect" id="node4" href="$class_mx_vector_program.html" title=" " alt="" coords="179,107,306,133"/>
 </map>

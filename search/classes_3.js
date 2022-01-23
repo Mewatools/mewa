@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['hash_1160',['Hash',['../struct_hash.html',1,'']]],
-  ['heartsvg_1161',['HeartSvg',['../class_heart_svg.html',1,'']]],
-  ['huffmantree_1162',['HuffmanTree',['../struct_huffman_tree.html',1,'']]]
+  ['imagedata_721',['ImageData',['../struct_mx_image_1_1_image_data.html',1,'MxImage']]]
 ];

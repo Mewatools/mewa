@@ -1,23 +1,7 @@
 var hierarchy =
 [
-    [ "BPMLists", "struct_b_p_m_lists.html", null ],
-    [ "BPMNode", "struct_b_p_m_node.html", null ],
     [ "MxGpuArray::BufferView", "union_mx_gpu_array_1_1_buffer_view.html", null ],
-    [ "ColorTree", "struct_color_tree.html", null ],
-    [ "Hash", "struct_hash.html", null ],
-    [ "HuffmanTree", "struct_huffman_tree.html", null ],
     [ "MxImage::ImageData", "struct_mx_image_1_1_image_data.html", null ],
-    [ "LodePNGBitReader", "struct_lode_p_n_g_bit_reader.html", null ],
-    [ "LodePNGBitWriter", "struct_lode_p_n_g_bit_writer.html", null ],
-    [ "LodePNGColorMode", "struct_lode_p_n_g_color_mode.html", null ],
-    [ "LodePNGColorStats", "struct_lode_p_n_g_color_stats.html", null ],
-    [ "LodePNGCompressSettings", "struct_lode_p_n_g_compress_settings.html", null ],
-    [ "LodePNGDecoderSettings", "struct_lode_p_n_g_decoder_settings.html", null ],
-    [ "LodePNGDecompressSettings", "struct_lode_p_n_g_decompress_settings.html", null ],
-    [ "LodePNGEncoderSettings", "struct_lode_p_n_g_encoder_settings.html", null ],
-    [ "LodePNGInfo", "struct_lode_p_n_g_info.html", null ],
-    [ "LodePNGState", "struct_lode_p_n_g_state.html", null ],
-    [ "LodePNGTime", "struct_lode_p_n_g_time.html", null ],
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", [
       [ "MxIconAtlas", "class_mx_icon_atlas.html", null ]
     ] ],
@@ -90,8 +74,6 @@ var hierarchy =
     [ "MxRenderer::StoredRootSignature", "struct_mx_renderer_1_1_stored_root_signature.html", null ],
     [ "RandomTextureApp::TexRGBA", "struct_random_texture_app_1_1_tex_r_g_b_a.html", null ],
     [ "MxRenderer::Texture_p", "struct_mx_renderer_1_1_texture__p.html", null ],
-    [ "ucvector", "structucvector.html", null ],
-    [ "uivector", "structuivector.html", null ],
     [ "MxIconDraw::Vertex", "struct_mx_icon_draw_1_1_vertex.html", null ],
     [ "MxIconProgram::Vertex", "struct_mx_icon_program_1_1_vertex.html", null ],
     [ "MxTextDraw::Vertex", "struct_mx_text_draw_1_1_vertex.html", null ],
