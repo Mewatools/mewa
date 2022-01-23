@@ -1,8 +1,9 @@
 <map id="src/iconatlas/mxabstractatlas.h" name="src/iconatlas/mxabstractatlas.h">
-<area shape="rect" id="node1" title=" " alt="" coords="38,5,241,32"/>
-<area shape="rect" id="node2" href="$mxrect_8h.html" title=" " alt="" coords="52,80,123,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="147,80,235,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,229,89,256"/>
-<area shape="rect" id="node4" href="$mxvector_8h.html" title=" " alt="" coords="45,155,130,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="154,155,229,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="9,5,212,32"/>
+<area shape="rect" id="node2" href="$mxrect_8h.html" title=" " alt="" coords="23,80,94,107"/>
+<area shape="rect" id="node6" href="$mxtexture_8h.html" title=" " alt="" coords="118,80,206,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="31,229,115,256"/>
+<area shape="rect" id="node4" href="$mxvector_8h.html" title=" " alt="" coords="120,155,205,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="21,155,96,181"/>
+<area shape="rect" id="node7" href="$mxopengl_8h.html" title=" " alt="" coords="230,155,316,181"/>
 </map>

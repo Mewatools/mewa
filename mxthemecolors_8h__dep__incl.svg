@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="opengl_2mxrenderer_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="mxrenderer_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="127.5,-0.5 127.5,-30.5 227.5,-30.5 227.5,-0.5 127.5,-0.5"/>
 <text text-anchor="start" x="135.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/renderer/opengl</text>
 <text text-anchor="middle" x="177.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/mxrenderer.cpp</text>

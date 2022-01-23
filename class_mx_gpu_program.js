@@ -9,21 +9,16 @@ var class_mx_gpu_program =
       [ "Float_4", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a6030046d3cb11e2e4a82144b5e27e0d4", null ],
       [ "Float2_UChar4_Float2", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a93cd1ac875ac30f9444f749aa9f0af6f", null ]
     ] ],
-    [ "MxGpuProgram", "class_mx_gpu_program.html#addee82fa134d15d23f5356c7334a97c7", null ],
     [ "MxGpuProgram", "class_mx_gpu_program.html#a1b4cb20d33c2d05695f488dbd5f58c0d", null ],
     [ "~MxGpuProgram", "class_mx_gpu_program.html#a281143d51c5e3662a9f1c0524b35fbae", null ],
-    [ "compile", "class_mx_gpu_program.html#a26f6170639ef72ba0eaa3c9a35e1bc6e", null ],
     [ "disableAttributes", "class_mx_gpu_program.html#a12d74d8c65db89f5751ce25911cedef1", null ],
     [ "disableVao", "class_mx_gpu_program.html#a00d3f698733cbe989b9c61ac4f6cbe9a", null ],
     [ "enable", "class_mx_gpu_program.html#a0c6c157a3791b710d95c20425a8ff58b", null ],
-    [ "enable", "class_mx_gpu_program.html#ada2774438ec5f00ca20dd8144a4ee759", null ],
     [ "enableAttributes", "class_mx_gpu_program.html#ae236bcbcd3503e7758646fdc559b4a4c", null ],
     [ "enableVao", "class_mx_gpu_program.html#aa6557f7db6e2f76e7b793cf124cc1dfb", null ],
-    [ "init", "class_mx_gpu_program.html#a02ff7d81dff918453edbf25a390f72ee", null ],
-    [ "isInitialized", "class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8", null ],
     [ "isInitialized", "class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8", null ],
     [ "programId", "class_mx_gpu_program.html#ad9ad3f87b6614ba2cb944ef99f168eb3", null ],
     [ "vaoFormat", "class_mx_gpu_program.html#ab0824743c8509c9a990631553b2e2976", null ],
     [ "mProgramId", "class_mx_gpu_program.html#a0c413913c9eda0edf112d6f1ebe85d4c", null ],
-    [ "pRenderer", "class_mx_gpu_program.html#a37097679f3ed91f475ad74973d0a087c", null ]
+    [ "pRenderer", "class_mx_gpu_program.html#a26c014ae9bee51fc1b9929243979d4b9", null ]
 ];

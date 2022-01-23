@@ -38,8 +38,5 @@ var annotated_dup =
     [ "MxVectorProgram", "class_mx_vector_program.html", "class_mx_vector_program" ],
     [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ],
     [ "PlusMinusSvg", "class_plus_minus_svg.html", "class_plus_minus_svg" ],
-    [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ],
-    [ "RandomTextureApp", "class_random_texture_app.html", "class_random_texture_app" ],
-    [ "TestWindow", "class_test_window.html", "class_test_window" ],
-    [ "TriangleApp", "class_triangle_app.html", "class_triangle_app" ]
+    [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['blendingimages_1408',['BlendingImages',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88aa42a4e694b46c8048a4a5ff10b83e4be',1,'MxRenderer']]],
-  ['blendingtext_1409',['BlendingText',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88ad5a820d7a29fddfadda365a503bec3b1',1,'MxRenderer']]]
+  ['blendingimages_1210',['BlendingImages',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a4afca41b3d8e402e680efc975a3d4c55',1,'MxRenderer']]],
+  ['blendingtext_1211',['BlendingText',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a5b6d2c6df4659d6ba7dc3dccce7a538a',1,'MxRenderer']]]
 ];
