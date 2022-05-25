@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"struct_mx_text_draw_1_1_vertex.html#a6d2fa2d321f504c478b01d6886c5e293":[3,0,31,0,4],
 "struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c":[3,0,31,0,2],
 "struct_mx_text_draw_1_1_vertex.html#abd4b0f9a168403179274d36c021db8b9":[3,0,31,0,6],
 "struct_mx_text_draw_1_1_vertex.html#ad7ee352c2d7fdf211bcd34a7c5b89db2":[3,0,31,0,3],

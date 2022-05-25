@@ -25,7 +25,7 @@ var class_mx_renderer =
     [ "setViewport", "class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7", null ],
     [ "setWindowSize", "class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a", null ],
     [ "uploadToGpu", "class_mx_renderer.html#aef1a832211c59ab0bc4bdafe496c8df2", null ],
-    [ "windowSize", "class_mx_renderer.html#acb68f80c171c622673324dcd1acf7297", null ],
+    [ "windowSize", "class_mx_renderer.html#a7f73893c03ccbee5b34df1b6c1d1e2c9", null ],
     [ "pCurrBlend", "class_mx_renderer.html#a2956fc7a9af844322a25cc29257239e5", null ],
     [ "pCurrentActiveTextureSlot", "class_mx_renderer.html#a2c16478414c1c06d00d36377ec7d83ca", null ],
     [ "pCurrentTexture", "class_mx_renderer.html#a3aa495028b59e091122185af06505bca", null ],

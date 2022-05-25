@@ -212,6 +212,7 @@ var NAVTREEINDEX0 =
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a1f3161b0ca3bae6fc2c0fef5a82ea8cf":[3,0,13,0,4],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a6030046d3cb11e2e4a82144b5e27e0d4":[3,0,13,0,5],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a61eadb4de9341df64c1a760f2047ccc6":[3,0,13,0,2],
+"class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a8eced551c2c2347b24160eedac776710":[3,0,13,0,7],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a93cd1ac875ac30f9444f749aa9f0af6f":[3,0,13,0,6],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7ae03ddbf157d3d30082632d21d59f8f20":[3,0,13,0,3],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7af9ac3016d1c15f3508443750fd9558ec":[3,0,13,0,0],
@@ -233,13 +234,11 @@ var NAVTREEINDEX0 =
 "class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c":[3,0,15,6],
 "class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078":[3,0,15,8],
 "class_mx_gui_renderer.html#a62a13981fb0e65fc75ef6beea09b116a":[3,0,15,3],
-"class_mx_gui_renderer.html#a83cdc3842b87da2704bb63be36b4b807":[3,0,15,13],
-"class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc":[3,0,15,11],
-"class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce":[3,0,15,12],
+"class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc":[3,0,15,10],
+"class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce":[3,0,15,11],
 "class_mx_gui_renderer.html#a9fbf2cb0585d40405d049aefae55dbf7":[3,0,15,0],
 "class_mx_gui_renderer.html#abf4a4b7ad2c0aae6f43e047760024e58":[3,0,15,1],
 "class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44":[3,0,15,2],
-"class_mx_gui_renderer.html#ae840073a444d1e610ebf892cc43aad61":[3,0,15,10],
 "class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd":[3,0,15,5],
 "class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03":[3,0,15,7],
 "class_mx_icon_atlas.html":[3,0,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "class_mx_icon_atlas.html#ab7f03c34068242001b0bbb39747ef899":[3,0,16,6],
 "class_mx_icon_atlas.html#ad70c2799c9e6bce5c27633d702299bf7":[3,0,16,5],
 "class_mx_icon_atlas.html#ae2e1d7cd2c62597d2d7b767259ab1e4f":[3,0,16,1],
-"class_mx_icon_atlas.html#af76cb2de4c47f75e8ddb56c5afefe0be":[3,0,16,2]
+"class_mx_icon_atlas.html#af76cb2de4c47f75e8ddb56c5afefe0be":[3,0,16,2],
+"class_mx_icon_draw.html":[3,0,17]
 };

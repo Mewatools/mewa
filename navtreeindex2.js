@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_mx_vector.html#a358ccd3da5bc13641f6434a60bc81ddd":[3,0,33,6],
 "class_mx_vector.html#a363c69dca2f07e6f2793c299caacf118":[3,0,33,7],
 "class_mx_vector.html#a3dac388704793344389e92a933eecea5":[3,0,33,18],
 "class_mx_vector.html#a57c4433aa894b4f0ce3c4b359c7b0626":[3,0,33,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "mxgeometryutils_8h.html#a8e535891532693896f084105e7c22db1":[4,0,0,2,0,3],
 "mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f":[4,0,0,2,0,1],
 "mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b":[4,0,0,2,0,14],
-"mxgeometryutils_8h.html#ad299d94d41d1401a7bb9e10c3f557bce":[4,0,0,2,0,10]
+"mxgeometryutils_8h.html#ad299d94d41d1401a7bb9e10c3f557bce":[4,0,0,2,0,10],
+"mxgeometryutils_8h.html#adc0c3d3dd6d6ebb92e9b77c805761314":[4,0,0,2,0,12]
 };
