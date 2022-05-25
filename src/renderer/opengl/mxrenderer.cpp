@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxrenderer.h"
@@ -10,9 +10,9 @@
 MxRenderer::MxRenderer()
 {
     pViewport.x = 0;
-  pViewport.y = 0;
-   pViewport.width = 0;
-   pViewport.height = 0;
+    pViewport.y = 0;
+    pViewport.width = 0;
+    pViewport.height = 0;
 
 
     pCurrShaderProgram = 9999; // very high number because 0 is reserved
@@ -45,7 +45,7 @@ void MxRenderer::setWindowSize( int width, int height )
     pScreenSize = MxVector2I( width, height);
 }
 
-MxVector2I MxRenderer::windowSize() const
+const MxVector2I& MxRenderer::windowSize() const
 {
     return pScreenSize;
 }

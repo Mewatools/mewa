@@ -17,6 +17,7 @@ public:
     virtual ~MxBuffer();
 
     void reserveForAppend( int size );
+    // \TODO where is it used? deprecated??
     char* alloc( int size, int growBy );
     void clear();
     void append( char *data, int size );

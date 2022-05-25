@@ -31,10 +31,7 @@ void MxGuiRenderer::setWindowSize( int width, int height )
     pScreenProjectionMatrix.ortho(0.0f, (float)width, 0.0f, (float)height, -1.0f, 1.0f);
 }
 
-const MxVector2I& MxGuiRenderer::windowSize() const
-{
-    return pScreenSize;
-}
+
 
 const MxMatrix* MxGuiRenderer::windowMatrix()
 {

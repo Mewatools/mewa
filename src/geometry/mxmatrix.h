@@ -23,6 +23,7 @@ public:
 	void setToIdentity();
 	void ortho(float left, float right, float bottom, float top, float near = -1.0f, float far = 1.0f );
 
+// \TODO rename to constData()
 	const float* data() const;
 
 private:

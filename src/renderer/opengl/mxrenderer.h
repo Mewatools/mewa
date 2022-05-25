@@ -35,7 +35,7 @@ public:
     virtual void initialize();
 
     void setWindowSize( int width, int height );
-    MxVector2I windowSize() const;
+    const MxVector2I& windowSize() const;
 
 
     void checkGLError(const char *fileName, int lineNumber);

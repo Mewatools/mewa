@@ -24,8 +24,8 @@ public:
     virtual void initialize();
 
 
-    void setWindowSize( int width, int height );
-    const MxVector2I &windowSize() const;
+   virtual void setWindowSize( int width, int height );
+
     //! ortho matrix that maps to application window
     const MxMatrix* windowMatrix();
     void setViewportToWindow();
@@ -42,7 +42,7 @@ public:
     MxAbstractAtlas *pIconAtlas;
     
 protected:
-    MxVector2I pScreenSize;
+
     MxMatrix pScreenProjectionMatrix; // ortho view matrix
 private:
     MxVectorProgram pVectorProgram;
