@@ -3,7 +3,6 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxrenderer.h"
-#include "mxthemecolors.h"
 #include "mxtexture.h"
 
 
@@ -34,9 +33,6 @@ void MxRenderer::discardGLResources()
 
 void MxRenderer::initialize()
 {
-    MxVector4F windowColor = MxThemeColors::clearColor;
-    glClearColor( windowColor[0], windowColor[1], windowColor[2], 1.0f );
-    enableDepthTest( pDepthTestEnabled);
 }
 
 

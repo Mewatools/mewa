@@ -3,7 +3,7 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxguirenderer.h"
-
+#include "mxthemecolors.h"
 
 
 MxGuiRenderer::MxGuiRenderer()
@@ -19,6 +19,10 @@ MxGuiRenderer::~MxGuiRenderer()
 void MxGuiRenderer::initialize()
 {
     pIconProgram.init( this );
+
+    MxVector4F windowColor = MxThemeColors::clearColor;
+    glClearColor(windowColor[0], windowColor[1], windowColor[2], 1.0f);
+    enableDepthTest( false );
 
     MxRenderer::initialize();
 }
