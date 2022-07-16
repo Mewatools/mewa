@@ -64,9 +64,17 @@ public:
     const MxVector2F & globalPos() const { return pGlobalPos; }
 
 
-
+    /*
+    Call grabLeaveEvent() inside mouseMoveEvent() before its accepted.
+    If it returns true call enterEvent.
+    The order in which enter/leave events are called is: mouseMove, enterEvent, leaveEvent, mouseRelease
+    Once leaveEvent() is called the events are disabled.
+    */
+    bool grabLeaveEvent( MxWidget *widget );
 
     ////////// Internal API ///////
+    void checkLeaveEvent(const MxVector2F &globalPos );
+
     void setPos( const MxVector2F &pos ){ pPos = pos; }
 
     MouseButton pButton;

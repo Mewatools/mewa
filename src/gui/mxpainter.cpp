@@ -86,6 +86,10 @@ void MxPainter::setTranslation( const MxVector2F &translation )
 
 }
 
+const MxFont *MxPainter::font()
+{
+    return &pFont;
+}
 
 MxIconDraw& MxPainter::iconDraw()
 {

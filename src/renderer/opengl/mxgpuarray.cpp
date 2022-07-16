@@ -14,9 +14,7 @@ MxGpuArray::MxGpuArray()
 {
     pVboId = 0;
     pVboSize = 0;
-#ifndef QX_OPENGL_ES_2_0
     pVaoObject = 0;
-#endif
     pFormat = MxGpuProgram::Unknown;
 }
 
