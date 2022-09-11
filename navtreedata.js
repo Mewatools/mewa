@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Mewa Framework", "index.html", [
-    [ "What is Mewa", "index.html", [
+    [ "What is Mewa", "index.html#autotoc_md0", [
       [ "Vector based Animations", "index.html#autotoc_md1", null ],
       [ "Video compositing", "index.html#autotoc_md2", null ],
       [ "Mewa Framework", "index.html#autotoc_md3", null ]
