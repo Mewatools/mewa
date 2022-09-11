@@ -25,12 +25,17 @@
 var NAVTREE =
 [
   [ "Mewa Framework", "index.html", [
+    [ "What is Mewa", "index.html", [
+      [ "Vector based Animations", "index.html#autotoc_md1", null ],
+      [ "Video compositing", "index.html#autotoc_md2", null ],
+      [ "Mewa Framework", "index.html#autotoc_md3", null ]
+    ] ],
     [ "Contributing", "contrib_page.html", [
-      [ "About the Mewa framework", "contrib_page.html#autotoc_md1", null ],
-      [ "Development", "contrib_page.html#autotoc_md2", null ]
+      [ "About the Mewa framework", "contrib_page.html#autotoc_md4", null ],
+      [ "Development", "contrib_page.html#autotoc_md5", null ]
     ] ],
     [ "Getting started", "starter_page.html", [
-      [ "Basic widget example", "starter_page.html#autotoc_md3", null ]
+      [ "Basic widget example", "starter_page.html#autotoc_md6", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -72,8 +77,8 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_mx_icon_draw.html#a06488ec3611f6db77a2d8288751ed8e9",
 "class_mx_vector.html#a363c69dca2f07e6f2793c299caacf118",
-"mxgeometryutils_8h.html#ae164a97bc449bcfa397ea2e8bba48441",
-"struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c"
+"mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f",
+"struct_mx_text_draw_1_1_vertex.html#a5430a55eb493889ea73811da13367ab3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
