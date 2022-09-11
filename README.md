@@ -1,4 +1,8 @@
 
+[![Discord](https://img.shields.io/discord/827792740359340103)](https://disboard.org/server/827792740359340103)
+
+[![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
+[![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
 
 # What is Mewa
 
@@ -47,8 +51,4 @@ To know more about the Mewa framework check the [developers page](https://mewato
 
 
 
-[![Discord](https://img.shields.io/discord/827792740359340103)](https://disboard.org/server/827792740359340103)
-
-[![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
-[![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
 
