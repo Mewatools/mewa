@@ -40,15 +40,15 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
       [ "MxTextDraw", "class_mx_text_draw.html", "class_mx_text_draw" ],
       [ "Vertex", "struct_mx_text_draw_1_1_vertex.html", "struct_mx_text_draw_1_1_vertex" ]
     ] ],
-    [ "mxthemecolors.h", "mxthemecolors_8h.html", "mxthemecolors_8h" ],
+    [ "mxthemecolors.h", "gui_2mxthemecolors_8h.html", "gui_2mxthemecolors_8h" ],
     [ "mxvectordraw.cpp", "mxvectordraw_8cpp.html", null ],
     [ "mxvectordraw.h", "mxvectordraw_8h.html", [
       [ "MxVectorDraw", "class_mx_vector_draw.html", "class_mx_vector_draw" ],
       [ "Vertex", "struct_mx_vector_draw_1_1_vertex.html", "struct_mx_vector_draw_1_1_vertex" ]
     ] ],
-    [ "mxwidget.cpp", "mxwidget_8cpp.html", null ],
-    [ "mxwidget.h", "mxwidget_8h.html", [
+    [ "mxwidget.cpp", "gui_2mxwidget_8cpp.html", null ],
+    [ "mxwidget.h", "gui_2mxwidget_8h.html", [
       [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ]
     ] ],
-    [ "mxwidgetlist.h", "mxwidgetlist_8h.html", "mxwidgetlist_8h" ]
+    [ "mxwidgetlist.h", "gui_2mxwidgetlist_8h.html", "gui_2mxwidgetlist_8h" ]
 ];

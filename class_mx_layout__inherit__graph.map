@@ -1,0 +1,5 @@
+<map id="MxLayout" name="MxLayout">
+<area shape="rect" id="node1" title="The MxLayout class is the base class for layout widgets." alt="" coords="23,80,102,107"/>
+<area shape="rect" id="node3" href="$class_mx_linear_layout.html" title="Vertical/Horizontal layout." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="23,5,102,32"/>
+</map>

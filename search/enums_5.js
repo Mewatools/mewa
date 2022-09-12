@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['symbol_1206',['Symbol',['../class_plus_minus_svg.html#a154503f923a9a9de5b30bac7e5dfa6f1',1,'PlusMinusSvg']]]
+  ['orientation_1508',['Orientation',['../class_mx_linear_layout.html#ab6c661ab5cb7e5fada767757d0fb0000',1,'MxLinearLayout']]]
 ];

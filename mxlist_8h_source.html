@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_mx_pod_initializer.html#a5de8d068cc8af1ba1bfc18a5f3f7dfb6">   73</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="struct_mx_pod_initializer.html#a5de8d068cc8af1ba1bfc18a5f3f7dfb6">copy</a>(T *from, T *to, T *src)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(src != from &amp;&amp; to - from &gt; 0);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(src != from &amp;&amp; to - from &gt; 0);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        memcpy(from, src, (to - from) * <span class="keyword">sizeof</span>(T));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
@@ -275,13 +275,13 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="class_mx_list.html#ab76a00290c560549e31bcbc518b4c494">  174</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html#ab76a00290c560549e31bcbc518b4c494">resize</a>( <span class="keywordtype">int</span> <a class="code" href="class_mx_list.html#a71c640e2970e45fcf7697ab82c15ac36">size</a> )</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a> != NULL );</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a> != NULL );</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> = <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> + <a class="code" href="class_mx_list.html#a71c640e2970e45fcf7697ab82c15ac36">size</a>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_mx_list.html#a9c89b4e95679b97f707fa8a64fac0018">  180</a></span>&#160;    T* <a class="code" href="class_mx_list.html#a9c89b4e95679b97f707fa8a64fac0018">data</a>()</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1 );</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1 );</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + <a class="code" href="class_mx_list.html#ad8bca7bc77c28aa85e72163d32596c41">d</a>-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
@@ -369,7 +369,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_mx_list.html#a3eef5cd28348fc9eb6a4678e60272c03">  268</a></span>&#160;<span class="keyword">const</span> T&amp; <a class="code" href="class_mx_list.html#a3eef5cd28348fc9eb6a4678e60272c03">MxList&lt;T,Initializer,Prealloc&gt;::at</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::at&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::at&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> *(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> + i);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
@@ -443,8 +443,8 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="class_mx_list.html#a1c6fdd463455969f6a51776dc00e2ef5">  342</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html#ad17baa57329c1ffebe374a40d6b01a4d">MxList&lt;T,Initializer,Prealloc&gt;::append</a>(<span class="keyword">const</span> T *vector, <span class="keywordtype">int</span> count)</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d != NULL);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( (d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> - d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>) + count &lt;= d-&gt;alloc );</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d != NULL);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( (d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> - d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>) + count &lt;= d-&gt;alloc );</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    memcpy(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a>, vector, count*<span class="keyword">sizeof</span>(T));</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> += count;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
@@ -452,7 +452,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="class_mx_list.html#aba72f96250ea6d4aceda4453dd521a79">  351</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html#aba72f96250ea6d4aceda4453dd521a79">MxList&lt;T,Initializer,Prealloc&gt;::removeAt</a>(<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(i &gt;= 0 &amp;&amp; i &lt; size());</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(i &gt;= 0 &amp;&amp; i &lt; size());</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">//detach();</span></div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    node_destruct(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> + i);</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    p_remove(i);</div>
@@ -461,22 +461,22 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="class_mx_list.html#a354d76da553cdf66e535f2b964b642cc">  360</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html#a354d76da553cdf66e535f2b964b642cc">MxList&lt;T,Initializer,Prealloc&gt;::removeFirst</a>()</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>++;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="class_mx_list.html#a8fbd2739192485f6604963e7ee1a8732">  367</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html#a8fbd2739192485f6604963e7ee1a8732">MxList&lt;T,Initializer,Prealloc&gt;::removeLast</a>()</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a>--;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="class_mx_list.html#a2808c0b946381558078db80457d82501">  374</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_list.html#a2808c0b946381558078db80457d82501">MxList&lt;T,Initializer,Prealloc&gt;::takeFirst</a>()</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(size() &gt; 0);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(size() &gt; 0);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    T first = *(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    node_destruct(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>++;</div>
@@ -486,8 +486,8 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="class_mx_list.html#a49781fa20b3839b58c69a0e622d267d6">  385</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="class_mx_list.html#a49781fa20b3839b58c69a0e622d267d6">MxList&lt;T,Initializer,Prealloc&gt;::takeLast</a>()</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(size() &gt; 0);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(size() &gt; 0);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    T *lastPtr = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> - 1;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    T last = *lastPtr;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    node_destruct(lastPtr);</div>
@@ -498,7 +498,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="class_mx_list.html#a327e565841c3b4997197524e2f3cd2ca">  397</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_mx_list.html#a327e565841c3b4997197524e2f3cd2ca">MxList&lt;T,Initializer,Prealloc&gt;::indexOf</a>( <span class="keyword">const</span> T &amp;t, <span class="keywordtype">int</span> from )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(from &gt;= 0);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(from &gt;= 0);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    T *n = p_at(from -1);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    T *e = p_end();</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">while</span> (++n != e)</div>
@@ -542,14 +542,14 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00441"></a><span class="lineno"><a class="line" href="class_mx_list.html#ae6ed015546d6c1c0c975a9d42aa4bd66">  441</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> T &amp; <a class="code" href="class_mx_list.html#ae6ed015546d6c1c0c975a9d42aa4bd66">MxList&lt;T,Initializer,Prealloc&gt;::operator[]</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::operator[]&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::operator[]&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordflow">return</span> *p_at(i);</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;}</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="class_mx_list.html#a6d88cb0552f5dba90e97b2605acbe987">  448</a></span>&#160;<span class="keyword">inline</span> T &amp; <a class="code" href="class_mx_list.html#ae6ed015546d6c1c0c975a9d42aa4bd66">MxList&lt;T,Initializer,Prealloc&gt;::operator[]</a>(<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;{</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::operator[]&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a>(i &gt;= 0 &amp;&amp; i &lt; size(), <span class="stringliteral">&quot;MxList&lt;T&gt;::operator[]&quot;</span>, <span class="stringliteral">&quot;index out of range&quot;</span>);</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">return</span> *p_at(i);</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;}</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
@@ -573,7 +573,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;T* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_append</a>(<span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;{</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1);</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordtype">int</span> e = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a>;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">if</span> (e + n &gt; d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a>) {</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordtype">int</span> b = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>;</div>
@@ -594,7 +594,7 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;T* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_prepend</a>()</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;{</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> == 1);</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordflow">if</span> (d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> == 0) {</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">if</span> (d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> &gt;= d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> / 3)</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            grow(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> + 1);</div>
@@ -660,149 +660,148 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::node_destruct</a>(T *n)</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;{</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="comment">//if (QxTypeInfo&lt;T&gt;::isClass) reinterpret_cast&lt;T*&gt;(n)-&gt;~T();</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    Initializer::destroy(n);</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;}</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::node_copy</a>(T *from, T *to, T *src)</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;{</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    Initializer::copy(from, to, src);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;}</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::node_destruct</a>(T *from, T *to)</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;{</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    Initializer::destroyArray(from,to);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;}</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::init</a>(<span class="keywordtype">int</span> alloc)</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;{</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 0 == d );</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    d = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> = 1;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> = alloc;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> = 0;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> = 0;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;}</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    Initializer::destroy(n);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;}</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160; </div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::node_copy</a>(T *from, T *to, T *src)</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;{</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    Initializer::copy(from, to, src);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;}</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::node_destruct</a>(T *from, T *to)</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;{</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    Initializer::destroyArray(from,to);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::init</a>(<span class="keywordtype">int</span> alloc)</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;{</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( 0 == d );</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    d = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(d);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> = 1;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> = alloc;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> = 0;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> = 0;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;}</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code" href="struct_mx_list_1_1_data.html">MxList&lt;T,Initializer,Prealloc&gt;::Data</a>* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::detach</a>(<span class="keywordtype">int</span> alloc)</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;{</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    Data *x = d;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    Data* t = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(t);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    t-&gt;refCounter = 1;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    t-&gt;alloc = alloc;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordflow">if</span> (!alloc) {</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        t-&gt;begin = 0;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        t-&gt;end = 0;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        t-&gt;begin = x-&gt;begin;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        t-&gt;end   = x-&gt;end;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    }</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    d = t;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160; </div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code" href="struct_mx_list_1_1_data.html">MxList&lt;T,Initializer,Prealloc&gt;::Data</a>* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::detach</a>(<span class="keywordtype">int</span> alloc)</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;{</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    Data *x = d;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    Data* t = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(t);</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    t-&gt;refCounter = 1;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    t-&gt;alloc = alloc;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordflow">if</span> (!alloc) {</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        t-&gt;begin = 0;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        t-&gt;end = 0;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        t-&gt;begin = x-&gt;begin;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        t-&gt;end   = x-&gt;end;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    d = t;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;}</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::grow</a>(<span class="keywordtype">int</span> alloc)</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( d != NULL &amp;&amp; d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> &gt; 0 );</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    Data *x = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(realloc(d, DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <a class="code" href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(x);</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    d = x;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> = alloc;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;}</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::grow</a>(<span class="keywordtype">int</span> alloc)</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;{</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>( d != NULL &amp;&amp; d-&gt;<a class="code" href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">refCounter</a> &gt; 0 );</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    Data *x = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(realloc(d, DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a>(x);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    d = x;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> = alloc;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;}</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code" href="struct_mx_list_1_1_data.html">MxList&lt;T,Initializer,Prealloc&gt;::Data</a>* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_detach_grow</a>(<span class="keywordtype">int</span> *idx, <span class="keywordtype">int</span> num)</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;{</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    Data *x = d;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">int</span> l = x-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> - x-&gt;begin;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">int</span> nl = l + num;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keywordtype">int</span> alloc = grow(nl);</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    Data* t = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    t-&gt;refCounter = 1;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    t-&gt;alloc = alloc;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="comment">// The space reservation algorithm&#39;s optimization is biased towards appending:</span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="comment">// Something which looks like an append will put the data at the beginning,</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="comment">// while something which looks like a prepend will put it in the middle</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="comment">// instead of at the end. That&#39;s based on the assumption that prepending</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="comment">// is uncommon and even an initial prepend will eventually be followed by</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="comment">// at least some appends.</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordtype">int</span> bg;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span> (*idx &lt; 0) {</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        *idx = 0;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        bg = (alloc - nl) &gt;&gt; 1;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*idx &gt; l) {</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        *idx = l;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        bg = 0;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*idx &lt; (l &gt;&gt; 1)) {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        bg = (alloc - nl) &gt;&gt; 1;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        bg = 0;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    }</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    t-&gt;begin = bg;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    t-&gt;end = bg + nl;</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    d = t;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;}</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::dealloc</a>(Data *data)</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;{</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    node_destruct(data-&gt;array + data-&gt;begin,</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                  data-&gt;array + data-&gt;end);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    free(data);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;}</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="comment">// ensures that enough space is available to append 1 element</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;T* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_reserveSpaceForAppend</a>()</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;{</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordflow">if</span>(d)</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    {</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordtype">int</span> e = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a>;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        <span class="keywordflow">if</span> (e + 1 &gt; d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a>) {</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            <span class="keywordtype">int</span> b = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            <span class="keywordflow">if</span> (b - 1 &gt;= 2 * d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> / 3) {</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                <span class="comment">// we have enough space. Just not at the end -&gt; move it.</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                e -= b;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                memcpy((<span class="keywordtype">void</span>*)d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a>, (<span class="keywordtype">void</span>*)(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + b), e * <span class="keyword">sizeof</span>(T));</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> = 0;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> = e;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                grow(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> + Prealloc);</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            }</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        }</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">return</span> d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + e;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    {</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        init(Prealloc);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordflow">return</span> d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a>;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    }</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;}</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code" href="struct_mx_list_1_1_data.html">MxList&lt;T,Initializer,Prealloc&gt;::Data</a>* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_detach_grow</a>(<span class="keywordtype">int</span> *idx, <span class="keywordtype">int</span> num)</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;{</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    Data *x = d;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">int</span> l = x-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> - x-&gt;begin;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">int</span> nl = l + num;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">int</span> alloc = grow(nl);</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    Data* t = <span class="keyword">static_cast&lt;</span>Data *<span class="keyword">&gt;</span>(malloc(DataHeaderSize + alloc * <span class="keyword">sizeof</span>(T)));</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    t-&gt;refCounter = 1;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    t-&gt;alloc = alloc;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="comment">// The space reservation algorithm&#39;s optimization is biased towards appending:</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="comment">// Something which looks like an append will put the data at the beginning,</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="comment">// while something which looks like a prepend will put it in the middle</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="comment">// instead of at the end. That&#39;s based on the assumption that prepending</span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="comment">// is uncommon and even an initial prepend will eventually be followed by</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="comment">// at least some appends.</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordtype">int</span> bg;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordflow">if</span> (*idx &lt; 0) {</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        *idx = 0;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        bg = (alloc - nl) &gt;&gt; 1;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*idx &gt; l) {</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        *idx = l;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        bg = 0;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*idx &lt; (l &gt;&gt; 1)) {</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        bg = (alloc - nl) &gt;&gt; 1;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        bg = 0;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    }</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    t-&gt;begin = bg;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    t-&gt;end = bg + nl;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    d = t;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160; </div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;}</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::dealloc</a>(Data *data)</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;{</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    node_destruct(data-&gt;array + data-&gt;begin,</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                  data-&gt;array + data-&gt;end);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    free(data);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;}</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="comment">// ensures that enough space is available to append 1 element</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Initializer, <span class="keywordtype">int</span> Prealloc&gt;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;T* <a class="code" href="class_mx_list.html">MxList&lt;T,Initializer,Prealloc&gt;::p_reserveSpaceForAppend</a>()</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;{</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">if</span>(d)</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    {</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="keywordtype">int</span> e = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a>;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">if</span> (e + 1 &gt; d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a>) {</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            <span class="keywordtype">int</span> b = d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a>;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            <span class="keywordflow">if</span> (b - 1 &gt;= 2 * d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> / 3) {</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                <span class="comment">// we have enough space. Just not at the end -&gt; move it.</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                e -= b;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                memcpy((<span class="keywordtype">void</span>*)d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a>, (<span class="keywordtype">void</span>*)(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + b), e * <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f">begin</a> = 0;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5ef5d2610831ad604a76374bf3af1e2a">end</a> = e;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                grow(d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a149c73b030ae27ad07de74dac0c52703">alloc</a> + Prealloc);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            }</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        }</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">return</span> d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a> + e;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    }</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    {</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        init(Prealloc);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">return</span> d-&gt;<a class="code" href="struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d">array</a>;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;}</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160; </div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160; </div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160; </div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160; </div>
 <div class="ttc" id="aclass_mx_list_html"><div class="ttname"><a href="class_mx_list.html">MxList</a></div><div class="ttdef"><b>Definition:</b> mxlist.h:90</div></div>
 <div class="ttc" id="aclass_mx_list_html_a03bb1d6dc1cdd0daca50cef9f96e22ff"><div class="ttname"><a href="class_mx_list.html#a03bb1d6dc1cdd0daca50cef9f96e22ff">MxList::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdef"><b>Definition:</b> mxlist.h:126</div></div>
 <div class="ttc" id="aclass_mx_list_html_a0a49ebe7a3ec657a914976c3cd77e9a0"><div class="ttname"><a href="class_mx_list.html#a0a49ebe7a3ec657a914976c3cd77e9a0">MxList::isNull</a></div><div class="ttdeci">bool isNull() const</div><div class="ttdef"><b>Definition:</b> mxlist.h:127</div></div>
@@ -842,6 +841,8 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="ttc" id="aclass_mx_ref_counter_html_a19f2d0cd7ad64ea3eaaef54ac3ce4db9"><div class="ttname"><a href="class_mx_ref_counter.html#a19f2d0cd7ad64ea3eaaef54ac3ce4db9">MxRefCounter::decRefCounter</a></div><div class="ttdeci">bool decRefCounter()</div><div class="ttdef"><b>Definition:</b> mxrefcounter.h:20</div></div>
 <div class="ttc" id="aclass_mx_ref_counter_html_a29cc5e92d3ec40643a94594aeea063fd"><div class="ttname"><a href="class_mx_ref_counter.html#a29cc5e92d3ec40643a94594aeea063fd">MxRefCounter::incRefCounter</a></div><div class="ttdeci">void incRefCounter()</div><div class="ttdef"><b>Definition:</b> mxrefcounter.h:15</div></div>
 <div class="ttc" id="aclass_mx_ref_counter_html_a5af60d4996698197c5a3fa8516087fe3"><div class="ttname"><a href="class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3">MxRefCounter::refCounter</a></div><div class="ttdeci">int refCounter</div><div class="ttdef"><b>Definition:</b> mxrefcounter.h:13</div></div>
+<div class="ttc" id="alinux_2mxdebug_8h_html_a2c9a16e97bc3d9f0322dc570a48c8514"><div class="ttname"><a href="linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a></div><div class="ttdeci">#define Q_ASSERT_X(cond, where, what)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:19</div></div>
+<div class="ttc" id="alinux_2mxdebug_8h_html_ac29a7ecc02f777dfeb2b68a051561c35"><div class="ttname"><a href="linux_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a></div><div class="ttdeci">#define Q_ASSERT(cond)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:18</div></div>
 <div class="ttc" id="amxrefcounter_8h_html"><div class="ttname"><a href="mxrefcounter_8h.html">mxrefcounter.h</a></div></div>
 <div class="ttc" id="astruct_mx_class_initializer_html"><div class="ttname"><a href="struct_mx_class_initializer.html">MxClassInitializer</a></div><div class="ttdef"><b>Definition:</b> mxlist.h:22</div></div>
 <div class="ttc" id="astruct_mx_class_initializer_html_a004d27778df2131915a99c7942491c30"><div class="ttname"><a href="struct_mx_class_initializer.html#a004d27778df2131915a99c7942491c30">MxClassInitializer::destroy</a></div><div class="ttdeci">static void destroy(T *n)</div><div class="ttdef"><b>Definition:</b> mxlist.h:33</div></div>
@@ -860,8 +861,6 @@ $(document).ready(function(){initNavTree('mxlist_8h_source.html',''); initResiza
 <div class="ttc" id="astruct_mx_pod_initializer_html_a6d5f15fc3ae45cb7e506a391c9c6d61f"><div class="ttname"><a href="struct_mx_pod_initializer.html#a6d5f15fc3ae45cb7e506a391c9c6d61f">MxPodInitializer::empty_construct</a></div><div class="ttdeci">static void empty_construct(T *)</div><div class="ttdef"><b>Definition:</b> mxlist.h:63</div></div>
 <div class="ttc" id="astruct_mx_pod_initializer_html_a70654f434cbae77f4d2a8d5d30333c81"><div class="ttname"><a href="struct_mx_pod_initializer.html#a70654f434cbae77f4d2a8d5d30333c81">MxPodInitializer::construct</a></div><div class="ttdeci">static void construct(T *n, const T &amp;t)</div><div class="ttdef"><b>Definition:</b> mxlist.h:58</div></div>
 <div class="ttc" id="astruct_mx_pod_initializer_html_af1c3dab57be92a29f5b17ff1d1b58eb9"><div class="ttname"><a href="struct_mx_pod_initializer.html#af1c3dab57be92a29f5b17ff1d1b58eb9">MxPodInitializer::destroy</a></div><div class="ttdeci">static void destroy(T *)</div><div class="ttdef"><b>Definition:</b> mxlist.h:67</div></div>
-<div class="ttc" id="awindows_2mxdebug_8h_html_a2c9a16e97bc3d9f0322dc570a48c8514"><div class="ttname"><a href="windows_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514">Q_ASSERT_X</a></div><div class="ttdeci">#define Q_ASSERT_X(cond, where, what)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:24</div></div>
-<div class="ttc" id="awindows_2mxdebug_8h_html_ac29a7ecc02f777dfeb2b68a051561c35"><div class="ttname"><a href="windows_2mxdebug_8h.html#ac29a7ecc02f777dfeb2b68a051561c35">Q_ASSERT</a></div><div class="ttdeci">#define Q_ASSERT(cond)</div><div class="ttdef"><b>Definition:</b> mxdebug.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

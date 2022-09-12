@@ -1,0 +1,5 @@
+<map id="MxButton" name="MxButton">
+<area shape="rect" id="node1" title="Base class for buttons." alt="" coords="18,80,95,107"/>
+<area shape="rect" id="node3" href="$class_mx_text_button.html" title=" " alt="" coords="5,155,108,181"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="17,5,96,32"/>
+</map>

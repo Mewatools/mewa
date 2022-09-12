@@ -118,37 +118,42 @@ $(document).ready(function(){initNavTree('mxguiaggregation_8h_source.html',''); 
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_application.html">MxApplication</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_font.html">MxFont</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_mx_gui_aggregation.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_mx_gui_aggregation.html#ad5ec87d521c8ffa94ff5b82336bda6d7">MxGuiAggregation</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a>* <a class="code" href="class_mx_gui_aggregation.html#a822ac3f1dac9250fe66e18051f28a11d">instance</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_mx_gui_aggregation.html#a10fcad6af2aabc1a57a9e1c173626a13">displayScale</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> * <a class="code" href="class_mx_gui_aggregation.html#a6e76ab108b724d53fca9463b095b6a64">iconAtlas</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_mx_application.html">MxApplication</a> * <a class="code" href="class_mx_gui_aggregation.html#a064c379d2e38df84962c8a81e137cf5a">application</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_mx_gui_aggregation.html#a0904fd965923916efbe49b2535834b1f">   28</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_mx_application.html">MxApplication</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_mx_gui_aggregation.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_mx_gui_aggregation.html#ad5ec87d521c8ffa94ff5b82336bda6d7">MxGuiAggregation</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a>* <a class="code" href="class_mx_gui_aggregation.html#a822ac3f1dac9250fe66e18051f28a11d">instance</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_mx_gui_aggregation.html#a10fcad6af2aabc1a57a9e1c173626a13">displayScale</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> * <a class="code" href="class_mx_gui_aggregation.html#a6e76ab108b724d53fca9463b095b6a64">iconAtlas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_mx_application.html">MxApplication</a> * <a class="code" href="class_mx_gui_aggregation.html#a064c379d2e38df84962c8a81e137cf5a">application</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_font.html">MxFont</a> * <a class="code" href="class_mx_gui_aggregation.html#a2479178ab7203b76238adb447151c027">font</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *pIconAtlas;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_mx_application.html">MxApplication</a> *pApplication;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a> * sAggregation;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXAGGREGATION_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_mx_gui_aggregation.html#a0904fd965923916efbe49b2535834b1f">   31</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_mx_application.html">MxApplication</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *pIconAtlas;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mx_application.html">MxApplication</a> *pApplication;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_mx_gui_aggregation.html">MxGuiAggregation</a> * sAggregation;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MXAGGREGATION_H</span></div>
 <div class="ttc" id="aclass_mx_abstract_atlas_html"><div class="ttname"><a href="class_mx_abstract_atlas.html">MxAbstractAtlas</a></div><div class="ttdef"><b>Definition:</b> mxabstractatlas.h:13</div></div>
-<div class="ttc" id="aclass_mx_application_html"><div class="ttname"><a href="class_mx_application.html">MxApplication</a></div><div class="ttdef"><b>Definition:</b> mxapplication.h:20</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html"><div class="ttname"><a href="class_mx_gui_aggregation.html">MxGuiAggregation</a></div><div class="ttdoc">The MxGuiAggregation class aggregates UI related data members to allow its access from one place.</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.h:17</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html_a064c379d2e38df84962c8a81e137cf5a"><div class="ttname"><a href="class_mx_gui_aggregation.html#a064c379d2e38df84962c8a81e137cf5a">MxGuiAggregation::application</a></div><div class="ttdeci">MxApplication * application() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:34</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html_a10fcad6af2aabc1a57a9e1c173626a13"><div class="ttname"><a href="class_mx_gui_aggregation.html#a10fcad6af2aabc1a57a9e1c173626a13">MxGuiAggregation::displayScale</a></div><div class="ttdeci">float displayScale() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:23</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html_a6e76ab108b724d53fca9463b095b6a64"><div class="ttname"><a href="class_mx_gui_aggregation.html#a6e76ab108b724d53fca9463b095b6a64">MxGuiAggregation::iconAtlas</a></div><div class="ttdeci">const MxAbstractAtlas * iconAtlas() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:28</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html_a822ac3f1dac9250fe66e18051f28a11d"><div class="ttname"><a href="class_mx_gui_aggregation.html#a822ac3f1dac9250fe66e18051f28a11d">MxGuiAggregation::instance</a></div><div class="ttdeci">static MxGuiAggregation * instance()</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:17</div></div>
-<div class="ttc" id="aclass_mx_gui_aggregation_html_ad5ec87d521c8ffa94ff5b82336bda6d7"><div class="ttname"><a href="class_mx_gui_aggregation.html#ad5ec87d521c8ffa94ff5b82336bda6d7">MxGuiAggregation::MxGuiAggregation</a></div><div class="ttdeci">MxGuiAggregation()</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:11</div></div>
+<div class="ttc" id="aclass_mx_application_html"><div class="ttname"><a href="class_mx_application.html">MxApplication</a></div><div class="ttdef"><b>Definition:</b> mxapplication.h:21</div></div>
+<div class="ttc" id="aclass_mx_font_html"><div class="ttname"><a href="class_mx_font.html">MxFont</a></div><div class="ttdef"><b>Definition:</b> mxfont.h:17</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html"><div class="ttname"><a href="class_mx_gui_aggregation.html">MxGuiAggregation</a></div><div class="ttdoc">The MxGuiAggregation class aggregates UI related data members to allow its access from one place.</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.h:19</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_a064c379d2e38df84962c8a81e137cf5a"><div class="ttname"><a href="class_mx_gui_aggregation.html#a064c379d2e38df84962c8a81e137cf5a">MxGuiAggregation::application</a></div><div class="ttdeci">MxApplication * application() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:36</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_a10fcad6af2aabc1a57a9e1c173626a13"><div class="ttname"><a href="class_mx_gui_aggregation.html#a10fcad6af2aabc1a57a9e1c173626a13">MxGuiAggregation::displayScale</a></div><div class="ttdeci">float displayScale() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:25</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_a2479178ab7203b76238adb447151c027"><div class="ttname"><a href="class_mx_gui_aggregation.html#a2479178ab7203b76238adb447151c027">MxGuiAggregation::font</a></div><div class="ttdeci">const MxFont * font()</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:42</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_a6e76ab108b724d53fca9463b095b6a64"><div class="ttname"><a href="class_mx_gui_aggregation.html#a6e76ab108b724d53fca9463b095b6a64">MxGuiAggregation::iconAtlas</a></div><div class="ttdeci">const MxAbstractAtlas * iconAtlas() const</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:30</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_a822ac3f1dac9250fe66e18051f28a11d"><div class="ttname"><a href="class_mx_gui_aggregation.html#a822ac3f1dac9250fe66e18051f28a11d">MxGuiAggregation::instance</a></div><div class="ttdeci">static MxGuiAggregation * instance()</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:19</div></div>
+<div class="ttc" id="aclass_mx_gui_aggregation_html_ad5ec87d521c8ffa94ff5b82336bda6d7"><div class="ttname"><a href="class_mx_gui_aggregation.html#ad5ec87d521c8ffa94ff5b82336bda6d7">MxGuiAggregation::MxGuiAggregation</a></div><div class="ttdeci">MxGuiAggregation()</div><div class="ttdef"><b>Definition:</b> mxguiaggregation.cpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plussymbol_1246',['PlusSymbol',['../class_plus_minus_svg.html#a154503f923a9a9de5b30bac7e5dfa6f1a2bb5f6eb4f436881ba93a5903376ed18',1,'PlusMinusSvg']]]
+  ['outtercurvefill_1564',['OutterCurveFill',['../class_mx_vector_draw.html#a4126e7de0fd2a6a428ab814b86cb2e0baa929364076237f3c37dcf77a8d4878e9',1,'MxVectorDraw']]]
 ];

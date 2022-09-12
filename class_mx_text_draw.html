@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('class_mx_text_draw.html',''); initResi
 <div class="dynheader">
 Collaboration diagram for MxTextDraw:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_text_draw__coll__graph.svg" width="232" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_text_draw__coll__graph.svg" width="322" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -131,8 +131,18 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a94e322e60f33f3f5d920b9238ced6dc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#a94e322e60f33f3f5d920b9238ced6dc2">MxTextDraw</a> ()</td></tr>
 <tr class="separator:a94e322e60f33f3f5d920b9238ced6dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb3f43fe7b16a3a58366a700e9adfa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#acfb3f43fe7b16a3a58366a700e9adfa9">drawTextCentered</a> (const char *string, const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;rect, const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;color)</td></tr>
-<tr class="separator:acfb3f43fe7b16a3a58366a700e9adfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32ab7afc6aadb3a4248aab5e75bd207"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#ac32ab7afc6aadb3a4248aab5e75bd207">vertexCount</a> () const</td></tr>
+<tr class="separator:ac32ab7afc6aadb3a4248aab5e75bd207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b03d54113b4ad6c715fdc96299f070"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#ae0b03d54113b4ad6c715fdc96299f070">clear</a> ()</td></tr>
+<tr class="separator:ae0b03d54113b4ad6c715fdc96299f070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dfb8d27ee847b007ad08fd9f383d00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#af2dfb8d27ee847b007ad08fd9f383d00">drawText</a> (const char *ascii, int size, const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;pos, const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;color)</td></tr>
+<tr class="separator:af2dfb8d27ee847b007ad08fd9f383d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677063bef95f1145fbdcd8d324542978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#a677063bef95f1145fbdcd8d324542978">drawTextCentered</a> (const <a class="el" href="mxstring_8h.html#a0f04cc3f9d07ea637b0321fa1fd3b645">MxString</a> &amp;string, const <a class="el" href="mxrect_8h.html#a1d6e9e1ac12a98aec3eff0403756bd59">MxRectF</a> &amp;rect, const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;color)</td></tr>
+<tr class="separator:a677063bef95f1145fbdcd8d324542978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ded5f5ff94a431f1f0ccd852f2069f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#a6ded5f5ff94a431f1f0ccd852f2069f8">drawElidedLineText</a> (const char *text, int stringSize, const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;pos, const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;color, float textMaxLength)</td></tr>
+<tr class="separator:a6ded5f5ff94a431f1f0ccd852f2069f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecb43c0181a5c018731a49710f9d4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#a0ecb43c0181a5c018731a49710f9d4ed">drawElidedLineText</a> (const <a class="el" href="mxstring_8h.html#a0f04cc3f9d07ea637b0321fa1fd3b645">MxString</a> &amp;text, const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;pos, const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;color, float textMaxLength)</td></tr>
+<tr class="separator:a0ecb43c0181a5c018731a49710f9d4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -140,6 +150,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a50a4b2592bc72224b4e2b772a3756e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5fa4b3d5304356b7ddb24e9a18d8fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_buffer.html">MxBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#ab5fa4b3d5304356b7ddb24e9a18d8fd7">pArray</a></td></tr>
 <tr class="separator:ab5fa4b3d5304356b7ddb24e9a18d8fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa642980ab30247775f03fb9de7a3cacb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_font.html">MxFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_text_draw.html#aa642980ab30247775f03fb9de7a3cacb">pFont</a></td></tr>
+<tr class="separator:aa642980ab30247775f03fb9de7a3cacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94e322e60f33f3f5d920b9238ced6dc2"></a>
@@ -160,8 +172,151 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acfb3f43fe7b16a3a58366a700e9adfa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfb3f43fe7b16a3a58366a700e9adfa9">&#9670;&nbsp;</a></span>drawTextCentered()</h2>
+<a id="ae0b03d54113b4ad6c715fdc96299f070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b03d54113b4ad6c715fdc96299f070">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxTextDraw::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ded5f5ff94a431f1f0ccd852f2069f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ded5f5ff94a431f1f0ccd852f2069f8">&#9670;&nbsp;</a></span>drawElidedLineText() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxTextDraw::drawElidedLineText </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stringSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>textMaxLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ecb43c0181a5c018731a49710f9d4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecb43c0181a5c018731a49710f9d4ed">&#9670;&nbsp;</a></span>drawElidedLineText() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxTextDraw::drawElidedLineText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mxstring_8h.html#a0f04cc3f9d07ea637b0321fa1fd3b645">MxString</a> &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>textMaxLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2dfb8d27ee847b007ad08fd9f383d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2dfb8d27ee847b007ad08fd9f383d00">&#9670;&nbsp;</a></span>drawText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxTextDraw::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a677063bef95f1145fbdcd8d324542978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677063bef95f1145fbdcd8d324542978">&#9670;&nbsp;</a></span>drawTextCentered()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +324,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void MxTextDraw::drawTextCentered </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const <a class="el" href="mxstring_8h.html#a0f04cc3f9d07ea637b0321fa1fd3b645">MxString</a> &amp;&#160;</td>
           <td class="paramname"><em>string</em>, </td>
         </tr>
         <tr>
@@ -194,6 +349,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac32ab7afc6aadb3a4248aab5e75bd207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32ab7afc6aadb3a4248aab5e75bd207">&#9670;&nbsp;</a></span>vertexCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MxTextDraw::vertexCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ab5fa4b3d5304356b7ddb24e9a18d8fd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5fa4b3d5304356b7ddb24e9a18d8fd7">&#9670;&nbsp;</a></span>pArray</h2>
@@ -203,6 +375,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_mx_buffer.html">MxBuffer</a>* MxTextDraw::pArray</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa642980ab30247775f03fb9de7a3cacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa642980ab30247775f03fb9de7a3cacb">&#9670;&nbsp;</a></span>pFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_font.html">MxFont</a>* MxTextDraw::pFont</td>
         </tr>
       </table>
 </div><div class="memdoc">

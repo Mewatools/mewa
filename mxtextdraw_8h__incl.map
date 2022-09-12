@@ -1,14 +1,14 @@
 <map id="src/gui/mxtextdraw.h" name="src/gui/mxtextdraw.h">
 <area shape="rect" id="node1" title=" " alt="" coords="91,5,232,32"/>
 <area shape="rect" id="node2" href="$mxvector_8h.html" title=" " alt="" coords="119,155,204,181"/>
-<area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="38,80,109,107"/>
-<area shape="rect" id="node6" href="$mxstring_8h.html" title=" " alt="" coords="253,80,334,107"/>
+<area shape="rect" id="node4" href="$mxstring_8h.html" title=" " alt="" coords="253,80,334,107"/>
+<area shape="rect" id="node11" href="$mxrect_8h.html" title=" " alt="" coords="38,80,109,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="42,304,126,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="20,155,95,181"/>
-<area shape="rect" id="node7" href="$mxgenericstring_8h.html" title=" " alt="" coords="287,155,410,181"/>
-<area shape="rect" id="node8" href="$mxrefcounter_8h.html" title=" " alt="" coords="431,229,538,256"/>
-<area shape="rect" id="node9" href="$mxbytearrayref_8h.html" title=" " alt="" coords="290,229,406,256"/>
-<area shape="rect" id="node10" title=" " alt="" coords="364,304,426,331"/>
-<area shape="rect" id="node11" title=" " alt="" coords="546,304,610,331"/>
-<area shape="rect" id="node12" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="122,229,266,256"/>
+<area shape="rect" id="node5" href="$mxgenericstring_8h.html" title=" " alt="" coords="287,155,410,181"/>
+<area shape="rect" id="node6" href="$mxrefcounter_8h.html" title=" " alt="" coords="431,229,538,256"/>
+<area shape="rect" id="node7" href="$mxbytearrayref_8h.html" title=" " alt="" coords="290,229,406,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="364,304,426,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="546,304,610,331"/>
+<area shape="rect" id="node10" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="122,229,266,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="20,155,95,181"/>
 </map>

@@ -1,0 +1,10 @@
+<map id="MxWidget" name="MxWidget">
+<area shape="rect" id="node1" title=" " alt="" coords="215,5,293,32"/>
+<area shape="rect" id="node2" href="$class_mx_button.html" title="Base class for buttons." alt="" coords="18,80,95,107"/>
+<area shape="rect" id="node4" href="$class_mx_label.html" title=" " alt="" coords="120,80,191,107"/>
+<area shape="rect" id="node5" href="$class_mx_layout.html" title="The MxLayout class is the base class for layout widgets." alt="" coords="215,80,293,107"/>
+<area shape="rect" id="node7" href="$class_mx_line_edit.html" title="Widget for editing one&#45;line of text." alt="" coords="317,80,404,107"/>
+<area shape="rect" id="node8" href="$class_mx_spacer.html" title=" " alt="" coords="429,80,509,107"/>
+<area shape="rect" id="node3" href="$class_mx_text_button.html" title=" " alt="" coords="5,155,108,181"/>
+<area shape="rect" id="node6" href="$class_mx_linear_layout.html" title="Vertical/Horizontal layout." alt="" coords="197,155,311,181"/>
+</map>

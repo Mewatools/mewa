@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "MxFont::CharDetails", "struct_mx_font_1_1_char_details.html", null ],
     [ "MxImage::ImageData", "struct_mx_image_1_1_image_data.html", null ],
     [ "MxAbstractAtlas", "class_mx_abstract_atlas.html", [
       [ "MxIconAtlas", "class_mx_icon_atlas.html", null ]
@@ -13,8 +14,15 @@ var hierarchy =
     [ "MxBuffer", "class_mx_buffer.html", null ],
     [ "MxByteArrayRef", "class_mx_byte_array_ref.html", null ],
     [ "MxClassInitializer< T >", "struct_mx_class_initializer.html", null ],
+    [ "MxClippedWidget", "struct_mx_clipped_widget.html", null ],
+    [ "MxEventHandler", "class_mx_event_handler.html", null ],
+    [ "MxFillBackgroundInterface", "class_mx_fill_background_interface.html", null ],
+    [ "MxFont", "class_mx_font.html", [
+      [ "MxStaticFont", "class_mx_static_font.html", null ]
+    ] ],
     [ "MxGenericStaticData< T, N >", "struct_mx_generic_static_data.html", null ],
     [ "MxGenericString< T >", "class_mx_generic_string.html", null ],
+    [ "MxGenericString< char32_t >", "class_mx_generic_string.html", null ],
     [ "MxGenericSubString< T >", "class_mx_generic_sub_string.html", null ],
     [ "MxGpuArray", "class_mx_gpu_array.html", null ],
     [ "MxGpuProgram", "class_mx_gpu_program.html", [
@@ -26,9 +34,12 @@ var hierarchy =
     [ "MxIconDraw", "class_mx_icon_draw.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
+    [ "MxList< float, MxPodInitializer< float > >", "class_mx_list.html", null ],
+    [ "MxList< MxClippedWidget, MxPodInitializer< MxClippedWidget > >", "class_mx_list.html", null ],
     [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxList< ReusableBuffer, MxClassInitializer< ReusableBuffer >, 32 >", "class_mx_list.html", null ],
+    [ "MxListStaticData< T, Initializer, N >", "struct_mx_list_static_data.html", null ],
     [ "MxMatrix", "class_mx_matrix.html", null ],
     [ "MxMouseEvent", "class_mx_mouse_event.html", null ],
     [ "MxOpenGLFunctions", null, [
@@ -38,6 +49,7 @@ var hierarchy =
     ] ],
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", null ],
     [ "MxPainter", "class_mx_painter.html", null ],
+    [ "MxPlatformAbstraction", "class_mx_platform_abstraction.html", null ],
     [ "MxPodInitializer< T >", "struct_mx_pod_initializer.html", null ],
     [ "MxQuadDraw", "class_mx_quad_draw.html", null ],
     [ "MxRect< T >", "class_mx_rect.html", null ],
@@ -57,7 +69,17 @@ var hierarchy =
     [ "MxVector< 3, float >", "class_mx_vector.html", null ],
     [ "MxVector< 4, unsigned char >", "class_mx_vector.html", null ],
     [ "MxVectorDraw", "class_mx_vector_draw.html", null ],
-    [ "MxWidget", "class_mx_widget.html", null ],
+    [ "MxWidget", "class_mx_widget.html", [
+      [ "MxButton", "class_mx_button.html", [
+        [ "MxTextButton", "class_mx_text_button.html", null ]
+      ] ],
+      [ "MxLabel", "class_mx_label.html", null ],
+      [ "MxLayout", "class_mx_layout.html", [
+        [ "MxLinearLayout", "class_mx_linear_layout.html", null ]
+      ] ],
+      [ "MxLineEdit", "class_mx_line_edit.html", null ],
+      [ "MxSpacer", "class_mx_spacer.html", null ]
+    ] ],
     [ "QOpenGLWindow", null, [
       [ "QMewaWindow", "class_q_mewa_window.html", null ]
     ] ],

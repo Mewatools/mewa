@@ -22,12 +22,17 @@ var namespaces_dup =
       [ "nextPowerOfTwo", "namespace_mx_math_utils.html#aa96e1d542c067545f69e9699e464bd58", null ]
     ] ],
     [ "MxThemeColors", "namespace_mx_theme_colors.html", [
+      [ "brightRed", "namespace_mx_theme_colors.html#aaf54a1bd7d30e6209c23e121de2d1162", null ],
       [ "clearColor", "namespace_mx_theme_colors.html#af1025fd41b9bfbf2cd2f8f9056ca8299", null ],
+      [ "darkRed", "namespace_mx_theme_colors.html#aedc47e9c541b62c2c8c7dbd9c150810e", null ],
       [ "darkText", "namespace_mx_theme_colors.html#a34fd8f0bed4760541f0b3641be1c6f9c", null ],
       [ "dialogWindowBackground", "namespace_mx_theme_colors.html#a69e865f9b894fac555dee7e13421a7e0", null ],
+      [ "disabledText", "namespace_mx_theme_colors.html#acef3068f7e8e94d4c80bedcfa70dc87a", null ],
       [ "iconBlue", "namespace_mx_theme_colors.html#af0ec85ba99f27020b6ccc0e235f53897", null ],
       [ "iconLight", "namespace_mx_theme_colors.html#a125b05541c393fe0b254420bfa47d1eb", null ],
+      [ "imageViewBackground", "namespace_mx_theme_colors.html#a3586a70d3f33e1d6a802c4050d4b3a36", null ],
       [ "mainWindowBackground", "namespace_mx_theme_colors.html#acf41e4a6e6d44c4d5011b217d8387372", null ],
+      [ "nodeInnerBody", "namespace_mx_theme_colors.html#ac3d755d539fba7e91a045ca17aea18a4", null ],
       [ "nodePanelBackground", "namespace_mx_theme_colors.html#a899e161c39db35c9c2fa4cafc3731df4", null ],
       [ "outputWindowBackground", "namespace_mx_theme_colors.html#adbea9c5ca842224e69a65ad2e7e37089", null ],
       [ "whiteText", "namespace_mx_theme_colors.html#aba7c1fbd78df6053856816fcd2b259d8", null ],

@@ -18,6 +18,8 @@ var class_mx_vector =
     [ "operator[]", "class_mx_vector.html#ac1fc16a2e8054c4ed98e154f0865cc8e", null ],
     [ "operator[]", "class_mx_vector.html#ac70877c2d9b35840b08c7739de21379b", null ],
     [ "rotateBy", "class_mx_vector.html#a9c9bd6863eebe7ed1f357002940eb794", null ],
+    [ "setHeight", "class_mx_vector.html#ad1484172c0cefd6b6b661362c586a9e0", null ],
+    [ "setWidth", "class_mx_vector.html#a0a783772ba5c185279f66e59f9c0dae5", null ],
     [ "width", "class_mx_vector.html#a3dac388704793344389e92a933eecea5", null ],
     [ "x", "class_mx_vector.html#a6c2ed0c18c53556b1d38a0ccad216174", null ],
     [ "y", "class_mx_vector.html#aa21c4e0bd734958d01f707398bb6a5f7", null ],

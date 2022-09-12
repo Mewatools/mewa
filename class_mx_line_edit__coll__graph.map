@@ -1,0 +1,14 @@
+<map id="MxLineEdit" name="MxLineEdit">
+<area shape="rect" id="node1" title="Widget for editing one&#45;line of text." alt="" coords="1160,161,1247,188"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="805,44,883,71"/>
+<area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="419,21,556,48"/>
+<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="168,21,292,48"/>
+<area shape="rect" id="node5" href="$class_mx_generic_string.html" title=" " alt="" coords="749,128,939,155"/>
+<area shape="rect" id="node6" href="$struct_mx_generic_string_1_1_data.html" title=" " alt="" coords="161,117,299,158"/>
+<area shape="rect" id="node8" href="$class_mx_generic_string.html" title=" " alt="" coords="413,135,561,161"/>
+<area shape="rect" id="node7" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,157,109,184"/>
+<area shape="rect" id="node11" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,182,301,223"/>
+<area shape="rect" id="node9" href="$class_mx_event_handler.html" title=" " alt="" coords="785,245,903,272"/>
+<area shape="rect" id="node10" href="$class_mx_list.html" title=" " alt="" coords="747,179,941,221"/>
+<area shape="rect" id="node12" href="$class_mx_list.html" title=" " alt="" coords="416,249,559,290"/>
+</map>

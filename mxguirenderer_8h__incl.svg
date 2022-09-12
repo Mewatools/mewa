@@ -257,8 +257,8 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="mxopengl_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="694.42,-0.5 694.42,-19.5 759.42,-19.5 759.42,-0.5 694.42,-0.5"/>
+<g id="a_node12"><a xlink:title=" ">
+<polygon fill="none" stroke="#bfbfbf" points="694.42,-0.5 694.42,-19.5 759.42,-19.5 759.42,-0.5 694.42,-0.5"/>
 <text text-anchor="middle" x="726.92" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mxopengl.h</text>
 </a>
 </g>

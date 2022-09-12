@@ -1,0 +1,11 @@
+<map id="MxLinearLayout" name="MxLinearLayout">
+<area shape="rect" id="node1" title="Vertical/Horizontal layout." alt="" coords="1241,73,1356,100"/>
+<area shape="rect" id="node2" href="$class_mx_layout.html" title="The MxLayout class is the base class for layout widgets." alt="" coords="1113,73,1192,100"/>
+<area shape="rect" id="node3" href="$class_mx_widget.html" title=" " alt="" coords="849,44,928,71"/>
+<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="416,44,553,71"/>
+<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="168,44,292,71"/>
+<area shape="rect" id="node6" href="$class_mx_list.html" title=" " alt="" coords="781,95,996,137"/>
+<area shape="rect" id="node7" href="$struct_mx_list_1_1_data.html" title="these members are public to allow unions" alt="" coords="159,119,301,161"/>
+<area shape="rect" id="node9" href="$class_mx_list.html" title=" " alt="" coords="413,161,556,202"/>
+<area shape="rect" id="node8" href="$class_mx_ref_counter.html" title=" " alt="" coords="5,127,109,153"/>
+</map>

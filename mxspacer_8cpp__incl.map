@@ -1,0 +1,29 @@
+<map id="src/widgets/mxspacer.cpp" name="src/widgets/mxspacer.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="646,5,819,32"/>
+<area shape="rect" id="node2" href="$mxspacer_8h.html" title=" " alt="" coords="505,80,593,107"/>
+<area shape="rect" id="node15" href="$mxfillbackgroundinterface_8h.html" title=" " alt="" coords="879,80,1058,107"/>
+<area shape="rect" id="node16" href="$mxpainter_8h.html" title=" " alt="" coords="689,80,777,107"/>
+<area shape="rect" id="node3" href="$widgets_2mxwidget_8h.html" title=" " alt="" coords="395,155,481,181"/>
+<area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="407,304,477,331"/>
+<area shape="rect" id="node6" href="$mxvector_8h.html" title=" " alt="" coords="842,379,927,405"/>
+<area shape="rect" id="node8" href="$widgets_2mxwidgetlist_8h.html" title=" " alt="" coords="149,229,253,256"/>
+<area shape="rect" id="node14" href="$mxclippedwidget_8h.html" title=" " alt="" coords="277,229,405,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="683,528,767,555"/>
+<area shape="rect" id="node7" title=" " alt="" coords="357,379,431,405"/>
+<area shape="rect" id="node9" href="$mxlist_8h.html" title=" " alt="" coords="122,379,189,405"/>
+<area shape="rect" id="node10" href="$mxrefcounter_8h.html" title=" " alt="" coords="178,453,285,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="272,528,335,555"/>
+<area shape="rect" id="node12" title=" " alt="" coords="359,528,423,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,453,52,480"/>
+<area shape="rect" id="node17" href="$mxvectordraw_8h.html" title=" " alt="" coords="505,155,619,181"/>
+<area shape="rect" id="node18" href="$mxtextdraw_8h.html" title=" " alt="" coords="773,229,871,256"/>
+<area shape="rect" id="node23" href="$mxicondraw_8h.html" title=" " alt="" coords="643,155,745,181"/>
+<area shape="rect" id="node25" href="$mxstaticfont_8h.html" title=" " alt="" coords="868,155,971,181"/>
+<area shape="rect" id="node19" href="$mxstring_8h.html" title=" " alt="" coords="691,304,772,331"/>
+<area shape="rect" id="node20" href="$mxgenericstring_8h.html" title=" " alt="" coords="455,379,578,405"/>
+<area shape="rect" id="node21" href="$mxbytearrayref_8h.html" title=" " alt="" coords="411,453,527,480"/>
+<area shape="rect" id="node22" href="$mxgenericsubstring_8h.html" title=" " alt="" coords="653,453,797,480"/>
+<area shape="rect" id="node24" href="$mxthemeicons_8h.html" title=" " alt="" coords="632,229,748,256"/>
+<area shape="rect" id="node26" href="$mxfont_8h.html" title=" " alt="" coords="896,229,967,256"/>
+<area shape="rect" id="node27" title=" " alt="" coords="899,304,985,331"/>
+</map>

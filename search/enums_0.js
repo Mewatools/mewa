@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blending_1199',['Blending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88',1,'MxRenderer']]]
+  ['alignment_1500',['Alignment',['../class_mx_label.html#aa0b233deda124a76456008114dcbff0c',1,'MxLabel']]]
 ];

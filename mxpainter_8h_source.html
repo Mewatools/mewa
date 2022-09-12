@@ -120,68 +120,78 @@ $(document).ready(function(){initNavTree('mxpainter_8h_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxlist_8h.html">mxlist.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxtextdraw_8h.html">mxtextdraw.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxicondraw_8h.html">mxicondraw.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxstaticfont_8h.html">mxstaticfont.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_widget.html">MxWidget</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_svg.html">MxAbstractSvg</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_widget.html">MxWidget</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_svg.html">MxAbstractSvg</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_mx_painter.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_painter.html">MxPainter</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_mx_painter.html#a511a8fa282edf4151a5151090fd984e5">MxPainter</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_mx_painter.html#a7f469db4994a61b20c7eeb1cfd3c2b20">~MxPainter</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a7e7e15bd8a682daf9318ae1adcf92316">initArrays</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a2de2995d78c35af7ce52b3b16f5da712">initializeGL</a>( <a class="code" href="class_mx_renderer.html">MxRenderer</a> *renderer );</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a3211e74264038f99bc83b8ae0d6ad8e1">prepareRender</a>(<a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a> &amp;renderer );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a9c9366eee7ec63bd6a1edb7931b3e8b1">render</a>(<a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a> &amp;renderer );</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#ad099fa6407a7cf701cf99d32c3a639b4">setTranslation</a>( <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> &amp;translation );</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_mx_icon_draw.html">MxIconDraw</a> &amp;<a class="code" href="class_mx_painter.html#a2570d1b704b399015346b00ea536ef7b">iconDraw</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#aa39e97b6b85c20cd73bca557e27ed8fe">drawSvg</a>(<a class="code" href="class_mx_abstract_svg.html">MxAbstractSvg</a> *svg , <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;targetRect);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp; <a class="code" href="class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e">vectorDraw</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_mx_text_draw.html">MxTextDraw</a> &amp; <a class="code" href="class_mx_painter.html#a3d922fae157a3a42984aaa2adf444bf3">textDraw</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_mx_painter.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_painter.html">MxPainter</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_mx_painter.html#a511a8fa282edf4151a5151090fd984e5">MxPainter</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_mx_painter.html#a7f469db4994a61b20c7eeb1cfd3c2b20">~MxPainter</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a7e7e15bd8a682daf9318ae1adcf92316">initArrays</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a2de2995d78c35af7ce52b3b16f5da712">initializeGL</a>( <a class="code" href="class_mx_renderer.html">MxRenderer</a> *renderer );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a3211e74264038f99bc83b8ae0d6ad8e1">prepareRender</a>(<a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a> &amp;renderer );</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#a9c9366eee7ec63bd6a1edb7931b3e8b1">render</a>(<a class="code" href="class_mx_gui_renderer.html">MxGuiRenderer</a> &amp;renderer );</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#ad099fa6407a7cf701cf99d32c3a639b4">setTranslation</a>( <span class="keyword">const</span> <a class="code" href="class_mx_vector.html">MxVector2F</a> &amp;translation );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_font.html">MxFont</a> * <a class="code" href="class_mx_painter.html#aeefab2e29180123386251ad20826a4cd">font</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mx_icon_draw.html">MxIconDraw</a> &amp;<a class="code" href="class_mx_painter.html#a2570d1b704b399015346b00ea536ef7b">iconDraw</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_painter.html#aa39e97b6b85c20cd73bca557e27ed8fe">drawSvg</a>(<a class="code" href="class_mx_abstract_svg.html">MxAbstractSvg</a> *svg , <span class="keyword">const</span> <a class="code" href="class_mx_rect.html">MxRectF</a> &amp;targetRect);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_mx_vector_draw.html">MxVectorDraw</a> &amp; <a class="code" href="class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e">vectorDraw</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_mx_text_draw.html">MxTextDraw</a> &amp; <a class="code" href="class_mx_painter.html#a3d922fae157a3a42984aaa2adf444bf3">textDraw</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_mx_vector_draw.html">MxVectorDraw</a> pVectorDraw;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_mx_icon_draw.html">MxIconDraw</a> pIconDraw;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_mx_text_draw.html">MxTextDraw</a> pTextDraw; <span class="comment">// colored text</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_mx_vector.html">MxVector2F</a> pTranslation;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// QXPAINTERBUFFER_H</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_mx_vector_draw.html">MxVectorDraw</a> pVectorDraw;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_mx_icon_draw.html">MxIconDraw</a> pIconDraw;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_mx_text_draw.html">MxTextDraw</a> pTextDraw; <span class="comment">// colored text</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_mx_painter.html#a684457adc2f0201afd1dce6f28f34f05">   50</a></span>&#160;    <a class="code" href="class_mx_vector.html">MxVector2F</a> <a class="code" href="class_mx_painter.html#a684457adc2f0201afd1dce6f28f34f05">pTranslation</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_mx_static_font.html">MxStaticFont</a> pFont;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// QXPAINTERBUFFER_H</span></div>
 <div class="ttc" id="aclass_mx_abstract_svg_html"><div class="ttname"><a href="class_mx_abstract_svg.html">MxAbstractSvg</a></div><div class="ttdef"><b>Definition:</b> mxabstractsvg.h:28</div></div>
+<div class="ttc" id="aclass_mx_font_html"><div class="ttname"><a href="class_mx_font.html">MxFont</a></div><div class="ttdef"><b>Definition:</b> mxfont.h:17</div></div>
 <div class="ttc" id="aclass_mx_gui_renderer_html"><div class="ttname"><a href="class_mx_gui_renderer.html">MxGuiRenderer</a></div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:19</div></div>
 <div class="ttc" id="aclass_mx_icon_draw_html"><div class="ttname"><a href="class_mx_icon_draw.html">MxIconDraw</a></div><div class="ttdoc">The MxIconDraw class draws icons from a atlas.</div><div class="ttdef"><b>Definition:</b> mxicondraw.h:21</div></div>
-<div class="ttc" id="aclass_mx_painter_html"><div class="ttname"><a href="class_mx_painter.html">MxPainter</a></div><div class="ttdoc">Holder to the different painters.</div><div class="ttdef"><b>Definition:</b> mxpainter.h:21</div></div>
-<div class="ttc" id="aclass_mx_painter_html_a2570d1b704b399015346b00ea536ef7b"><div class="ttname"><a href="class_mx_painter.html#a2570d1b704b399015346b00ea536ef7b">MxPainter::iconDraw</a></div><div class="ttdeci">MxIconDraw &amp; iconDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:90</div></div>
+<div class="ttc" id="aclass_mx_painter_html"><div class="ttname"><a href="class_mx_painter.html">MxPainter</a></div><div class="ttdoc">Holder to the different painters.</div><div class="ttdef"><b>Definition:</b> mxpainter.h:22</div></div>
+<div class="ttc" id="aclass_mx_painter_html_a2570d1b704b399015346b00ea536ef7b"><div class="ttname"><a href="class_mx_painter.html#a2570d1b704b399015346b00ea536ef7b">MxPainter::iconDraw</a></div><div class="ttdeci">MxIconDraw &amp; iconDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:94</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a2de2995d78c35af7ce52b3b16f5da712"><div class="ttname"><a href="class_mx_painter.html#a2de2995d78c35af7ce52b3b16f5da712">MxPainter::initializeGL</a></div><div class="ttdeci">void initializeGL(MxRenderer *renderer)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:32</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a3211e74264038f99bc83b8ae0d6ad8e1"><div class="ttname"><a href="class_mx_painter.html#a3211e74264038f99bc83b8ae0d6ad8e1">MxPainter::prepareRender</a></div><div class="ttdeci">void prepareRender(MxGuiRenderer &amp;renderer)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:39</div></div>
-<div class="ttc" id="aclass_mx_painter_html_a3d922fae157a3a42984aaa2adf444bf3"><div class="ttname"><a href="class_mx_painter.html#a3d922fae157a3a42984aaa2adf444bf3">MxPainter::textDraw</a></div><div class="ttdeci">MxTextDraw &amp; textDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:115</div></div>
-<div class="ttc" id="aclass_mx_painter_html_a3e3f2d8002d9e79ae57a2f0849e2c61e"><div class="ttname"><a href="class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e">MxPainter::vectorDraw</a></div><div class="ttdeci">MxVectorDraw &amp; vectorDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:110</div></div>
+<div class="ttc" id="aclass_mx_painter_html_a3d922fae157a3a42984aaa2adf444bf3"><div class="ttname"><a href="class_mx_painter.html#a3d922fae157a3a42984aaa2adf444bf3">MxPainter::textDraw</a></div><div class="ttdeci">MxTextDraw &amp; textDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:119</div></div>
+<div class="ttc" id="aclass_mx_painter_html_a3e3f2d8002d9e79ae57a2f0849e2c61e"><div class="ttname"><a href="class_mx_painter.html#a3e3f2d8002d9e79ae57a2f0849e2c61e">MxPainter::vectorDraw</a></div><div class="ttdeci">MxVectorDraw &amp; vectorDraw()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:114</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a511a8fa282edf4151a5151090fd984e5"><div class="ttname"><a href="class_mx_painter.html#a511a8fa282edf4151a5151090fd984e5">MxPainter::MxPainter</a></div><div class="ttdeci">MxPainter()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:14</div></div>
+<div class="ttc" id="aclass_mx_painter_html_a684457adc2f0201afd1dce6f28f34f05"><div class="ttname"><a href="class_mx_painter.html#a684457adc2f0201afd1dce6f28f34f05">MxPainter::pTranslation</a></div><div class="ttdeci">MxVector2F pTranslation</div><div class="ttdef"><b>Definition:</b> mxpainter.h:50</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a7e7e15bd8a682daf9318ae1adcf92316"><div class="ttname"><a href="class_mx_painter.html#a7e7e15bd8a682daf9318ae1adcf92316">MxPainter::initArrays</a></div><div class="ttdeci">void initArrays()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:26</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a7f469db4994a61b20c7eeb1cfd3c2b20"><div class="ttname"><a href="class_mx_painter.html#a7f469db4994a61b20c7eeb1cfd3c2b20">MxPainter::~MxPainter</a></div><div class="ttdeci">~MxPainter()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:22</div></div>
 <div class="ttc" id="aclass_mx_painter_html_a9c9366eee7ec63bd6a1edb7931b3e8b1"><div class="ttname"><a href="class_mx_painter.html#a9c9366eee7ec63bd6a1edb7931b3e8b1">MxPainter::render</a></div><div class="ttdeci">void render(MxGuiRenderer &amp;renderer)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:52</div></div>
-<div class="ttc" id="aclass_mx_painter_html_aa39e97b6b85c20cd73bca557e27ed8fe"><div class="ttname"><a href="class_mx_painter.html#aa39e97b6b85c20cd73bca557e27ed8fe">MxPainter::drawSvg</a></div><div class="ttdeci">void drawSvg(MxAbstractSvg *svg, const MxRectF &amp;targetRect)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:95</div></div>
+<div class="ttc" id="aclass_mx_painter_html_aa39e97b6b85c20cd73bca557e27ed8fe"><div class="ttname"><a href="class_mx_painter.html#aa39e97b6b85c20cd73bca557e27ed8fe">MxPainter::drawSvg</a></div><div class="ttdeci">void drawSvg(MxAbstractSvg *svg, const MxRectF &amp;targetRect)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:99</div></div>
 <div class="ttc" id="aclass_mx_painter_html_ad099fa6407a7cf701cf99d32c3a639b4"><div class="ttname"><a href="class_mx_painter.html#ad099fa6407a7cf701cf99d32c3a639b4">MxPainter::setTranslation</a></div><div class="ttdeci">void setTranslation(const MxVector2F &amp;translation)</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:80</div></div>
+<div class="ttc" id="aclass_mx_painter_html_aeefab2e29180123386251ad20826a4cd"><div class="ttname"><a href="class_mx_painter.html#aeefab2e29180123386251ad20826a4cd">MxPainter::font</a></div><div class="ttdeci">const MxFont * font()</div><div class="ttdef"><b>Definition:</b> mxpainter.cpp:89</div></div>
 <div class="ttc" id="aclass_mx_rect_html"><div class="ttname"><a href="class_mx_rect.html">MxRect&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdef"><b>Definition:</b> mxrenderer.h:21</div></div>
-<div class="ttc" id="aclass_mx_text_draw_html"><div class="ttname"><a href="class_mx_text_draw.html">MxTextDraw</a></div><div class="ttdef"><b>Definition:</b> mxtextdraw.h:17</div></div>
+<div class="ttc" id="aclass_mx_static_font_html"><div class="ttname"><a href="class_mx_static_font.html">MxStaticFont</a></div><div class="ttdef"><b>Definition:</b> mxstaticfont.h:14</div></div>
+<div class="ttc" id="aclass_mx_text_draw_html"><div class="ttname"><a href="class_mx_text_draw.html">MxTextDraw</a></div><div class="ttdef"><b>Definition:</b> mxtextdraw.h:18</div></div>
 <div class="ttc" id="aclass_mx_vector_draw_html"><div class="ttname"><a href="class_mx_vector_draw.html">MxVectorDraw</a></div><div class="ttdoc">Draw Mewa triangles.</div><div class="ttdef"><b>Definition:</b> mxvectordraw.h:17</div></div>
 <div class="ttc" id="aclass_mx_vector_html"><div class="ttname"><a href="class_mx_vector.html">MxVector&lt; 2, float &gt;</a></div></div>
 <div class="ttc" id="aclass_mx_widget_html"><div class="ttname"><a href="class_mx_widget.html">MxWidget</a></div><div class="ttdef"><b>Definition:</b> mxwidget.h:21</div></div>
 <div class="ttc" id="amxicondraw_8h_html"><div class="ttname"><a href="mxicondraw_8h.html">mxicondraw.h</a></div></div>
 <div class="ttc" id="amxlist_8h_html"><div class="ttname"><a href="mxlist_8h.html">mxlist.h</a></div></div>
+<div class="ttc" id="amxstaticfont_8h_html"><div class="ttname"><a href="mxstaticfont_8h.html">mxstaticfont.h</a></div></div>
 <div class="ttc" id="amxtextdraw_8h_html"><div class="ttname"><a href="mxtextdraw_8h.html">mxtextdraw.h</a></div></div>
 <div class="ttc" id="amxvectordraw_8h_html"><div class="ttname"><a href="mxvectordraw_8h.html">mxvectordraw.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
