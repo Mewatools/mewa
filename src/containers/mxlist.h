@@ -558,7 +558,6 @@ inline void MxList<T,Initializer,Prealloc>::node_construct(T *n, const T &t)
 template <typename T, typename Initializer, int Prealloc>
 inline void MxList<T,Initializer,Prealloc>::node_destruct(T *n)
 {
-    //if (QxTypeInfo<T>::isClass) reinterpret_cast<T*>(n)->~T();
     Initializer::destroy(n);
 }
 

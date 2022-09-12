@@ -158,13 +158,6 @@ void MxVectorDraw::addSquaredCircle( MxVector2F center, const MxVector2F &radius
     appendFillTriangle_p( top, center, left, color.constData() );
 
 }
-/*
-void LoopBlinnTrianglesArray::addRect( const QxRectF &rect, const QxVector4UC &color )
-{
-    addRect( rect.bottomLeft(), rect.bottomRight(), rect.topLeft(), rect.topRight(), color );
-}*/
-
-
 
 void MxVectorDraw::stroke( const MxVector2F &p1, const MxVector2F &p2, float thickness, const MxVector4UC &color )
 {
@@ -191,20 +184,6 @@ void MxVectorDraw::stroke( const MxVector2F &p1, const MxVector2F &p2, float thi
 
     appendFillTriangle_p( pAX, pAY, pBY, &(color[0]) );
     appendFillTriangle_p( pBY, pBX, pAX, &(color[0]) );
-
-
-    /*
-    QxVector2F from = p1 ;//+ (*pTranslation);
-    QxVector2F to = p2 ;//+ (*pTranslation);
-
-    QxVector2F dir = to - from;
-    QxVector2F perpendicular( dir.y(), dir.x() );
-    float length = sqrt( pow(perpendicular.x(),2) + pow(perpendicular.y(),2) );
-    perpendicular /= length;
-
-    QxVector2F c = from + (perpendicular * (thickness/2.0f));
-
-    appendFillTriangle( c, from, to, color.constData() );*/
 }
 
 void MxVectorDraw::strokeRect( MxRectF outerRect, float innerThickness, const MxVector4UC &color )
@@ -292,54 +271,6 @@ void MxVectorDraw::circle( MxVector2F center, float radius, const MxVector4UC &c
 
 }
 
-
-/*
-void LoopBlinnTrianglesArray::uploadGL()
-{
-    Q_ASSERT( NULL != pArray );
-    Q_ASSERT( NULL != pTranslation );
-
-    if ( pArray->pVbo == 0 )
-    {
-        glGenBuffers( 1,&(pArray->pVbo) );
-        Q_ASSERT(pArray->pVbo);
-    }
-
-    //QX_CHECK_GLERROR();
-
-    // make sure the buffer is bound, don't perform any checks because size may be zero
-    glBindBuffer(GL_ARRAY_BUFFER, pArray->pVbo);
-
-    //QX_CHECK_GLERROR();
-
-
-    // if the buffer has already been created, just update the data providing it fits
-    if ( pArray->pVboSize > 0 )
-    {
-        // if the data will fit in the existing buffer, just update it
-        if( pArray->pSize <= pArray->pVboSize )
-        {
-            glBufferSubData(GL_ARRAY_BUFFER,0, pArray->pSize, pArray->data() );
-        }
-        else
-        {
-            // create a new buffer of the larger size,
-            // gl should automatically deallocate the old buffer
-            glBufferData(GL_ARRAY_BUFFER, pArray->pSize, pArray->data(), GL_DYNAMIC_DRAW);
-            pArray->pVboSize = pArray->pSize;
-        }
-    }
-    else
-    {
-        // create the buffer
-        glBufferData(GL_ARRAY_BUFFER, pArray->pSize, pArray->data(), GL_DYNAMIC_DRAW);
-        pArray->pVboSize = pArray->pSize;
-    }
-
-    QX_CHECK_GLERROR();
-
-}*/
-
 void MxVectorDraw::triangle(const MxVector2F &posA, const MxVector4UC &colorA,
                             const MxVector2F &posB, const MxVector4UC &colorB,
                             const MxVector2F &posC, const MxVector4UC &colorC, TriangleFill fill )
@@ -405,13 +336,6 @@ void MxVectorDraw::fillRect( const MxRectF &rect, const MxVector4UC &color )
     Q_ASSERT( NULL != pTranslation );
 
     pArray->reserveForAppend( 6*sizeof(Vertex) );
-    /*
-    float fColor[4];
-    fColor[0] = color[0] / 255.0f;
-    fColor[1] = color[1] / 255.0f;
-    fColor[2] = color[2] / 255.0f;
-    fColor[3] = color[3] / 255.0f;
-*/
 
     MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 6*sizeof(Vertex) );
     v->x = rect.left() + pTranslation->x();
@@ -682,8 +606,6 @@ void MxVectorDraw::appendFillTriangle_p( const MxVector2F &a, const MxVector2F &
     Q_ASSERT( NULL != pArray );
     Q_ASSERT( NULL != pTranslation );
 
-    //pArray->reserveForAppend( 3*sizeof(Vertex) );
-
     MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) );//pArray.appendPointer();
     v->x = a.x();
     v->y = a.y();
@@ -720,11 +642,9 @@ void MxVectorDraw::appendColoredTriangle_p( const MxVector2F &a, const unsigned 
     Q_ASSERT( NULL != pArray );
     Q_ASSERT( NULL != pTranslation );
 
-    //pArray->reserveForAppend( 3*sizeof(Vertex) );
-
     const unsigned char alpha = 1;
 
-    MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) ); //pArray.appendPointer();
+    MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) );
     v->x = a.x();
     v->y = a.y();
     v->u = 0.0f;
@@ -760,11 +680,9 @@ void MxVectorDraw::appendTriangle_p(const MxVector2F &a, const MxVector2F &b, co
     Q_ASSERT( NULL != pArray );
     Q_ASSERT( NULL != pTranslation );
 
-    //pArray->reserveForAppend( 3*sizeof(Vertex) );
-
     const unsigned char alpha = pathColor[3] * direction;
 
-    MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) ); //pArray.appendPointer();
+    MxVectorDraw::Vertex *v = (MxVectorDraw::Vertex*)pArray->lastDataAndIncrement( 3*sizeof(Vertex) );
     v->x = a.x();
     v->y = a.y();
     v->u = 0.0f;

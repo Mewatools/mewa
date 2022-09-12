@@ -10,6 +10,7 @@
 #include "mxlist.h"
 #include "mxtextdraw.h"
 #include "mxicondraw.h"
+#include "mxstaticfont.h"
 
 
 class MxWidget;
@@ -30,6 +31,7 @@ public:
     void render(MxGuiRenderer &renderer );
 
     void setTranslation( const MxVector2F &translation );
+    const MxFont * font();
     MxIconDraw &iconDraw();
     void drawSvg(MxAbstractSvg *svg , const MxRectF &targetRect);
     MxVectorDraw & vectorDraw();
@@ -44,7 +46,10 @@ private:
 
 
     MxTextDraw pTextDraw; // colored text
+public:
     MxVector2F pTranslation;
+private:
+    MxStaticFont pFont;
 
 };
 

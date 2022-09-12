@@ -9,7 +9,7 @@
 #include "mxthemeicons.h"
 #include "mxrect.h"
 
-class QxRenderer;
+
 class MxAbstractAtlas;
 class MxBuffer;
 

@@ -4,6 +4,8 @@
 ****************************************************************************/
 #include "mxguiaggregation.h"
 #include "mxdebug.h"
+#include "mxapplication.h"
+
 
 MxGuiAggregation * MxGuiAggregation::sAggregation = 0;
 
@@ -36,3 +38,10 @@ MxApplication * MxGuiAggregation::application() const
     Q_ASSERT( NULL != pApplication );
     return pApplication;
 }
+
+const MxFont * MxGuiAggregation::font()
+{
+    return pApplication->pPainterBuffer.font();
+}
+
+

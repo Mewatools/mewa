@@ -11,6 +11,7 @@
 #include "mxmouseevent.h"
 #include "mxpainter.h"
 #include "mxguiaggregation.h"
+#include "mxclippedwidget.h"
 
 
 class MxIconAtlas;
@@ -38,7 +39,7 @@ public:
     virtual void onMouseRelease( int x, int y );
 
 private:
-    void drawWidgetList();
+    void drawWidgetList(MxClippedWidget *widgetList, int listSize);
 
 
 public:
@@ -56,8 +57,8 @@ private:
     bool pRedrawRequested;
 
     MxWidget *pWidgetInFocus;
-    MxWidgetList pWidgetsToUpdate;
-    MxWidgetList pQueueToRedrawLater;
+    MxClippedWidgetList pWidgetsToUpdate;
+    //MxWidgetList pQueueToRedrawLater;
 
 
 

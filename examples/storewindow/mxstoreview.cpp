@@ -31,7 +31,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
     // \TODO set button border thickness and color
 
     MxVectorDraw &geometryPainter = painter.vectorDraw();
-    MxTextDraw &textPainter = painter.textDraw();
+
 
     MxRectF buttonsRects[3];
     calcButtonsRects( rect, buttonsRects );
@@ -57,7 +57,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
     const float currW = buttonRect.width();
     bool showIconsOnly = currW < textInButtonsW;
 
-
+    MxTextDraw &whiteTextArray = painter.textDraw();
 
     if( entry.isInstalling() ) // draw progress cursor
     {
@@ -73,7 +73,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
     {
 
 
-        if( buttonUnderMouse == MxStoreView::InstallButton )
+        if( buttonUnderMouse == MxStoreView::InstallButton ) //pRowIndexUnderMouse == entry && pButtonUnderMouse == StoreListView::InstallButton )
         {
             if( isMousePressed ) {
                 MxVector4UC colors[4];
@@ -132,8 +132,8 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
                 if( ! showIconsOnly ) {
                     MxRectF textRect = buttonRect;
                     textRect.setRight( iconRect.left() );
-                    const char *uninstallStr = "Uninstall";
-                    textPainter.drawTextCentered(uninstallStr, textRect, MxThemeColors::whiteText );
+                    MX_STATIC_STRING(uninstallStr, "Uninstall");
+                    whiteTextArray.drawTextCentered(uninstallStr, textRect, MxThemeColors::whiteText );
                 }
             }
             else
@@ -143,8 +143,8 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
                 if( ! showIconsOnly ) {
                     MxRectF textRect = buttonRect;
                     textRect.setRight( iconRect.left() );
-                    const char *installStr = "Install";
-                    textPainter.drawTextCentered(installStr, textRect, MxThemeColors::whiteText);
+                    MX_STATIC_STRING(installStr, "Install");
+                    whiteTextArray.drawTextCentered(installStr, textRect, MxThemeColors::whiteText);
                 }
             }
         }
@@ -200,6 +200,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
             colors[3] = MxVector4UC(76, 51, 168, 255);
 
             geometryPainter.roundedRectV4Gradient( buttonsRects[UpdateButton], radius, colors  );*/
+            
             geometryPainter.roundedRect( buttonRect, outerRadius, contourColor);
             buttonRect.adjust(border, -border, border, -border);
             geometryPainter.roundedRect( buttonRect, innerRadius, updateColor);
@@ -214,8 +215,8 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
             if( ! showIconsOnly ) {
                 MxRectF textRect = buttonRect;
                 textRect.setRight( iconRect.left() );
-                const char *updateStr = "Update";
-                textPainter.drawTextCentered(updateStr, textRect, MxThemeColors::whiteText);
+                MX_STATIC_STRING(updateStr, "Update");
+                whiteTextArray.drawTextCentered(updateStr, textRect, MxThemeColors::whiteText);
             }
         }
     }
@@ -225,7 +226,9 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
 
 
 
-
+// disable like buttons
+//#define ENABLE_LIKE_BUTTON
+#ifdef ENABLE_LIKE_BUTTON
     MxRectF &likeButtonRect = buttonsRects[LikeButton];
     geometryPainter.roundedRect( likeButtonRect, outerRadius, contourColor);
     likeButtonRect.adjust(border, -border, border, -border);
@@ -242,7 +245,7 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
     }
     else if( buttonUnderMouse == MxStoreView::LikeButton )
     {
-        //fillColor = MxVector4UC(60, 20, 200, 255);
+
     } else {
         MxRectF heartRect = buttonsRects[LikeButton];
         float middleX = heartRect.center().x();
@@ -270,9 +273,9 @@ void MxStoreView::drawButtons(const MxRectF &rect, MxPainter &painter, const MxS
         char valueStr[8];
         sprintf(valueStr, "%d", entry.totalLikes() );
 
-        //textPainter.drawText( valueStr, MxVector2F(heartRect.right(), textY, MxThemeColors::whiteText ) );
+        whiteTextArray.drawText( valueStr, MxVector2F(heartRect.right(), textY ) );
     }
-
+#endif
 
 }
 

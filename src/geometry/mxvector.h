@@ -24,6 +24,9 @@ public:
     T width() const;
     T height() const;
 
+    inline void setWidth( T width ){ pVector[0] = width; }
+    inline void setHeight( T height ){ pVector[1] = height; }
+
 
     // compatibility with Qt API
     const T * constData() const;
