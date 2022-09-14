@@ -35,7 +35,6 @@ var hierarchy =
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< float, MxPodInitializer< float > >", "class_mx_list.html", null ],
-    [ "MxList< MxClippedWidget, MxPodInitializer< MxClippedWidget > >", "class_mx_list.html", null ],
     [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
     [ "MxList< MxWidget *, MxPodInitializer< MxWidget * > >", "class_mx_list.html", null ],
     [ "MxList< ReusableBuffer, MxClassInitializer< ReusableBuffer >, 32 >", "class_mx_list.html", null ],

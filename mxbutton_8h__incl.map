@@ -1,10 +1,10 @@
 <map id="src/widgets/mxbutton.h" name="src/widgets/mxbutton.h">
 <area shape="rect" id="node1" title=" " alt="" coords="516,5,672,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="475,379,559,405"/>
-<area shape="rect" id="node3" href="$widgets_2mxwidget_8h.html" title=" " alt="" coords="439,80,525,107"/>
+<area shape="rect" id="node3" href="$mxwidget_8h.html" title=" " alt="" coords="439,80,525,107"/>
 <area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="520,229,591,256"/>
 <area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="434,304,519,331"/>
-<area shape="rect" id="node7" href="$widgets_2mxwidgetlist_8h.html" title=" " alt="" coords="189,155,293,181"/>
+<area shape="rect" id="node7" href="$mxwidgetlist_8h.html" title=" " alt="" coords="189,155,293,181"/>
 <area shape="rect" id="node13" href="$mxclippedwidget_8h.html" title=" " alt="" coords="317,155,445,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="594,304,669,331"/>
 <area shape="rect" id="node8" href="$mxlist_8h.html" title=" " alt="" coords="207,229,274,256"/>

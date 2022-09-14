@@ -4,7 +4,7 @@ var class_mx_renderer =
     [ "Viewport", "struct_mx_renderer_1_1_viewport.html", "struct_mx_renderer_1_1_viewport" ],
     [ "Blending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88", [
       [ "NoBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a82dbc41ef5c3ef459c6c5c59fc7edfde", null ],
-      [ "BlendingText", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a5b6d2c6df4659d6ba7dc3dccce7a538a", null ],
+      [ "BlendingPremultiplied", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a41bae0222d54ef5403f879531c4812bc", null ],
       [ "BlendingImages", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a4afca41b3d8e402e680efc975a3d4c55", null ],
       [ "CustomBlending", "class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712", null ]
     ] ],

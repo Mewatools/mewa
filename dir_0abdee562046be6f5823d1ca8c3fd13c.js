@@ -36,9 +36,9 @@ var dir_0abdee562046be6f5823d1ca8c3fd13c =
       [ "MxTextButton", "class_mx_text_button.html", "class_mx_text_button" ]
     ] ],
     [ "mxthemecolors.h", "widgets_2mxthemecolors_8h.html", "widgets_2mxthemecolors_8h" ],
-    [ "mxwidget.cpp", "widgets_2mxwidget_8cpp.html", null ],
-    [ "mxwidget.h", "widgets_2mxwidget_8h.html", [
+    [ "mxwidget.cpp", "mxwidget_8cpp.html", null ],
+    [ "mxwidget.h", "mxwidget_8h.html", [
       [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ]
     ] ],
-    [ "mxwidgetlist.h", "widgets_2mxwidgetlist_8h.html", "widgets_2mxwidgetlist_8h" ]
+    [ "mxwidgetlist.h", "mxwidgetlist_8h.html", "mxwidgetlist_8h" ]
 ];

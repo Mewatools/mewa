@@ -7,6 +7,7 @@ var class_mx_gpu_program =
       [ "Float_3", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7ae03ddbf157d3d30082632d21d59f8f20", null ],
       [ "Float_3_2", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a1f3161b0ca3bae6fc2c0fef5a82ea8cf", null ],
       [ "Float_4", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a6030046d3cb11e2e4a82144b5e27e0d4", null ],
+      [ "Float_2_4_2", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7aa27f90beb51a386baaf69414c66af15e", null ],
       [ "Float2_UChar4_Float2", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a93cd1ac875ac30f9444f749aa9f0af6f", null ],
       [ "Custom", "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a8eced551c2c2347b24160eedac776710", null ]
     ] ],

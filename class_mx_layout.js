@@ -3,7 +3,7 @@ var class_mx_layout =
     [ "MxLayout", "class_mx_layout.html#a57183a47a83f2873462c2e89e9fb30b7", null ],
     [ "~MxLayout", "class_mx_layout.html#a7df94a48e9fd968623bb8eea6b8eb810", null ],
     [ "childWidgets", "class_mx_layout.html#a95fbd98da9af944d08e3819605e75744", null ],
-    [ "collectDirtyWidgets", "class_mx_layout.html#aa5edf5b735c8f9f4b033507104a98f9d", null ],
+    [ "collectDirtyWidgets", "class_mx_layout.html#a1ec7629a74a16a8b3ecf24f08c1a4b92", null ],
     [ "count", "class_mx_layout.html#ab95a7dde7fd57c1c878214433d4d554a", null ],
     [ "dirtyCollidingWidgets", "class_mx_layout.html#ae3b1514395d4560dee4f81ec1c6b3de8", null ],
     [ "hasChildren", "class_mx_layout.html#ae8e10c1bbe7921f559171b82933d0fa5", null ],

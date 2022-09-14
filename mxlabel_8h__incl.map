@@ -1,11 +1,11 @@
 <map id="src/widgets/mxlabel.h" name="src/widgets/mxlabel.h">
 <area shape="rect" id="node1" title=" " alt="" coords="185,5,332,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="334,528,418,555"/>
-<area shape="rect" id="node3" href="$widgets_2mxwidget_8h.html" title=" " alt="" coords="730,80,817,107"/>
+<area shape="rect" id="node3" href="$mxwidget_8h.html" title=" " alt="" coords="730,80,817,107"/>
 <area shape="rect" id="node14" href="$mxpainter_8h.html" title=" " alt="" coords="215,80,303,107"/>
 <area shape="rect" id="node4" href="$mxrect_8h.html" title=" " alt="" coords="535,229,606,256"/>
 <area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="361,304,447,331"/>
-<area shape="rect" id="node7" href="$widgets_2mxwidgetlist_8h.html" title=" " alt="" coords="912,229,1016,256"/>
+<area shape="rect" id="node7" href="$mxwidgetlist_8h.html" title=" " alt="" coords="912,229,1016,256"/>
 <area shape="rect" id="node13" href="$mxclippedwidget_8h.html" title=" " alt="" coords="709,155,837,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="471,304,545,331"/>
 <area shape="rect" id="node8" href="$mxlist_8h.html" title=" " alt="" coords="931,379,997,405"/>

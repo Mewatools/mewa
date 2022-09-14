@@ -1,9 +1,9 @@
 <map id="src/widgets/mxspacer.h" name="src/widgets/mxspacer.h">
 <area shape="rect" id="node1" title=" " alt="" coords="102,5,261,32"/>
-<area shape="rect" id="node2" href="$widgets_2mxwidget_8h.html" title=" " alt="" coords="138,80,225,107"/>
+<area shape="rect" id="node2" href="$mxwidget_8h.html" title=" " alt="" coords="138,80,225,107"/>
 <area shape="rect" id="node3" href="$mxrect_8h.html" title=" " alt="" coords="95,229,166,256"/>
 <area shape="rect" id="node5" href="$mxvector_8h.html" title=" " alt="" coords="5,304,91,331"/>
-<area shape="rect" id="node7" href="$widgets_2mxwidgetlist_8h.html" title=" " alt="" coords="323,155,427,181"/>
+<area shape="rect" id="node7" href="$mxwidgetlist_8h.html" title=" " alt="" coords="323,155,427,181"/>
 <area shape="rect" id="node13" href="$mxclippedwidget_8h.html" title=" " alt="" coords="168,155,296,181"/>
 <area shape="rect" id="node4" title=" " alt="" coords="86,379,170,405"/>
 <area shape="rect" id="node6" title=" " alt="" coords="165,304,240,331"/>

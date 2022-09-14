@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="widgets_2mxwidget_8h.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="mxwidget_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="325,-224.5 325,-243.5 390,-243.5 390,-224.5 325,-224.5"/>
 <text text-anchor="middle" x="357.5" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">mxwidget.h</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="widgets_2mxwidgetlist_8h.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="mxwidgetlist_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="137.5,-168.5 137.5,-187.5 215.5,-187.5 215.5,-168.5 137.5,-168.5"/>
 <text text-anchor="middle" x="176.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">mxwidgetlist.h</text>
 </a>

@@ -1,5 +1,11 @@
 var namespaces_dup =
 [
+    [ "MxFuzzy", "namespace_mx_fuzzy.html", [
+      [ "fuzzyCompare", "namespace_mx_fuzzy.html#aed37a5b355c04c3758e1ab47eadef57a", null ],
+      [ "fuzzyCompare", "namespace_mx_fuzzy.html#a871d5baeb386c0cbfb1349e197190ceb", null ],
+      [ "fuzzyIsNull", "namespace_mx_fuzzy.html#aff240c5145f5ddd770e00b20bd36b39b", null ],
+      [ "fuzzyIsNull", "namespace_mx_fuzzy.html#afe4c9f140dd24a1d6014ac1fa0fffc29", null ]
+    ] ],
     [ "MxGeometryUtils", "namespace_mx_geometry_utils.html", [
       [ "centeredRect", "namespace_mx_geometry_utils.html#ae164a97bc449bcfa397ea2e8bba48441", null ],
       [ "centeredRect", "namespace_mx_geometry_utils.html#ab11ed9060ac8703979c081045f3db07f", null ],
