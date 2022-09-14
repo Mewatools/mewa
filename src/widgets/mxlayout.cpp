@@ -137,15 +137,10 @@ void MxLayout::dirtyCollidingWidgets(const MxRectF &collidingRect )
 }
 
 
-void MxLayout::collectDirtyWidgets( MxClippedWidgetList &list, const MxRectF &clipRect, bool clean )
+void MxLayout::collectDirtyWidgets( MxWidgetList &list, bool clean )
 {
-Q_ASSERT( ! (pAttributes & MxWidget::ClipPaint) );
-
     if( isDirty() ) {
-        MxClippedWidget *clip = list.appendAndGet();
-        clip->widget = this;
-        clip->clipRect = clipRect;
-
+        list.append(this);
         if (clean) {
             resetDirtyFlag();
         }
@@ -156,7 +151,7 @@ Q_ASSERT( ! (pAttributes & MxWidget::ClipPaint) );
     for(int i=0; i<listSize; ++i)
     {
         MxWidget *item = widgetAt(i);
-        item->collectDirtyWidgets(list, clipRect, clean);
+        item->collectDirtyWidgets(list, clean);
     }
 }
 

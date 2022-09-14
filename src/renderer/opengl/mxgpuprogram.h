@@ -26,6 +26,7 @@ public:
         Float_3,
         Float_3_2,
         Float_4,
+        Float_2_4_2,
         Float2_UChar4_Float2,
         Custom
     };

@@ -174,21 +174,10 @@ void MxWidget::textInputEvent( const char *text, int count )
 }
 
 
-void MxWidget::collectDirtyWidgets( MxClippedWidgetList &list, const MxRectF &clipRect, bool clean )
+void MxWidget::collectDirtyWidgets( MxWidgetList &list, bool clean )
 {
-    MxRectF c = clipRect;
-    if( pAttributes & MxWidget::ClipPaint ) {
-        Q_ASSERT( c.isNull() ); // if asserts here do a rect intersection with clipRect
-        MxVector2F thisPos;
-        getGlobalPos( &thisPos );
-        c.setRectFromPointAndSize(thisPos, size());
-    }
-
     if( isDirty() ) {
-       MxClippedWidget *clip = list.appendAndGet();
-       clip->widget = this;
-       clip->clipRect = c;
-
+        list.append(this);
         if (clean) {
             resetDirtyFlag();
         }

@@ -52,7 +52,7 @@ public:
 
     virtual void dirtyCollidingWidgets(const MxRectF &collidingRect);
 
-    virtual void collectDirtyWidgets( MxClippedWidgetList &list, const MxRectF &clipRect, bool clean );
+    virtual void collectDirtyWidgets( MxWidgetList &list, bool clean);
     virtual void resetDirtyFlag();
 
     MxWidgetList & childWidgets();

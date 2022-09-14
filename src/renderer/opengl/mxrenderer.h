@@ -23,7 +23,7 @@ public:
 
     enum Blending {
         NoBlending, // default
-        BlendingText,
+        BlendingPremultiplied,
         BlendingImages,
         CustomBlending
     };

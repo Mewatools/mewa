@@ -90,7 +90,7 @@ public:
     /*! Implement it to use a custom MxShaderProgram. */
     virtual void render( MxRenderer &/*renderer*/ ){}
 
-    virtual void collectDirtyWidgets(MxClippedWidgetList &list, const MxRectF &clipRect, bool clean);
+    virtual void collectDirtyWidgets( MxWidgetList &list, bool clean );
     virtual void resetDirtyFlag();
     virtual bool isDirty() const;
 

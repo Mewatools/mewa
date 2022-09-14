@@ -100,7 +100,7 @@ void MxRenderer::setBlending( MxRenderer::Blending blend )
     case NoBlending:
         glDisable(GL_BLEND);
         break;
-    case BlendingText:
+    case BlendingPremultiplied:
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA); // see http://stackoverflow.com/questions/4771224/iphone-opengl-es-alpha-blending-i-have-black-color-in-edge
         break;

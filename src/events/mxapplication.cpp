@@ -44,12 +44,11 @@ void MxApplication::onRender()
     pRenderer.renderBegin();
 
 
-    const MxRectF clip(0.0f, 0.0f, 0.0f, 0.0f);
-    mainWidget()->collectDirtyWidgets( pWidgetsToUpdate, clip, true );
+    mainWidget()->collectDirtyWidgets(pWidgetsToUpdate, true);
     if( pWidgetsToUpdate.size() > 0 )
     {
 
-        drawWidgetList( pWidgetsToUpdate.data(), pWidgetsToUpdate.size() );
+        drawWidgetList();
         pWidgetsToUpdate.clear();
     }
     pRenderer.renderEnd();
@@ -138,17 +137,19 @@ void MxApplication::onMouseRelease( int x, int y )
 }
 
 
-void MxApplication::drawWidgetList( MxClippedWidget* widgetList, int listSize )
+void MxApplication::drawWidgetList()
 {
+    int listSize = pWidgetsToUpdate.size();
+
     // store points to array
     pPainterBuffer.prepareRender(pRenderer);
     MxVector2F screenPos;
     for(int i=0; i < listSize; i++)
     {
-        MxClippedWidget &drawWidget = widgetList[i];
-        drawWidget.widget->getGlobalPos(&screenPos);
+        MxWidget *widget = pWidgetsToUpdate[i];
+        widget->getGlobalPos(&screenPos);
         pPainterBuffer.setTranslation(screenPos);
-        drawWidget.widget->paint(pPainterBuffer);
+        widget->paint(pPainterBuffer);
     }
     pPainterBuffer.render( pRenderer );
 }
