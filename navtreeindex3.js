@@ -72,8 +72,8 @@ var NAVTREEINDEX3 =
 "functions_enum.html":[4,3,3],
 "functions_eval.html":[4,3,4],
 "functions_f.html":[4,3,0,5],
-"functions_func.html":[4,3,1],
 "functions_func.html":[4,3,1,0],
+"functions_func.html":[4,3,1],
 "functions_func_b.html":[4,3,1,1],
 "functions_func_c.html":[4,3,1,2],
 "functions_func_d.html":[4,3,1,3],
@@ -216,7 +216,7 @@ var NAVTREEINDEX3 =
 "mxgenericsubstring_8h.html#a2839e13cede91579e684d5287d52f925":[5,0,0,0,5,2],
 "mxgenericsubstring_8h_source.html":[5,0,0,0,5],
 "mxgeometryutils_8h.html":[5,0,0,3,1],
-"mxgeometryutils_8h.html#a08afdd9c820096ed9a3ec73303cc16d2":[5,0,0,3,1,13],
+"mxgeometryutils_8h.html#a08afdd9c820096ed9a3ec73303cc16d2":[5,0,0,3,1,14],
 "mxgeometryutils_8h.html#a0e44742e6bdd01542b71caf565da1cd6":[5,0,0,3,1,9],
 "mxgeometryutils_8h.html#a4049e7ac6d4fe47d8053c61796dcd30c":[5,0,0,3,1,11],
 "mxgeometryutils_8h.html#a4d7c69e5970e0af68102c52f6b5b22d6":[5,0,0,3,1,7],
@@ -227,7 +227,8 @@ var NAVTREEINDEX3 =
 "mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808":[5,0,0,3,1,2],
 "mxgeometryutils_8h.html#a8e535891532693896f084105e7c22db1":[5,0,0,3,1,3],
 "mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f":[5,0,0,3,1,1],
-"mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b":[5,0,0,3,1,14],
+"mxgeometryutils_8h.html#ab64770cf6e25313ece2eb3cecf711892":[5,0,0,3,1,13],
+"mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b":[5,0,0,3,1,15],
 "mxgeometryutils_8h.html#ad299d94d41d1401a7bb9e10c3f557bce":[5,0,0,3,1,10],
 "mxgeometryutils_8h.html#adc0c3d3dd6d6ebb92e9b77c805761314":[5,0,0,3,1,12],
 "mxgeometryutils_8h.html#ae164a97bc449bcfa397ea2e8bba48441":[5,0,0,3,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "mxiconatlas_8h.html":[5,0,0,5,3],
 "mxiconatlas_8h_source.html":[5,0,0,5,3],
 "mxicondraw_8cpp.html":[5,0,0,4,7],
-"mxicondraw_8h.html":[5,0,0,4,8],
-"mxicondraw_8h_source.html":[5,0,0,4,8]
+"mxicondraw_8h.html":[5,0,0,4,8]
 };

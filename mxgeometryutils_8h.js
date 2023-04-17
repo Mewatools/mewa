@@ -13,6 +13,7 @@ var mxgeometryutils_8h =
     [ "lineIntersection", "mxgeometryutils_8h.html#ad299d94d41d1401a7bb9e10c3f557bce", null ],
     [ "rotatePoint", "mxgeometryutils_8h.html#a4049e7ac6d4fe47d8053c61796dcd30c", null ],
     [ "scaleSizeKeepingAspectRatio", "mxgeometryutils_8h.html#adc0c3d3dd6d6ebb92e9b77c805761314", null ],
+    [ "sgn", "mxgeometryutils_8h.html#ab64770cf6e25313ece2eb3cecf711892", null ],
     [ "signedArea", "mxgeometryutils_8h.html#a08afdd9c820096ed9a3ec73303cc16d2", null ],
     [ "solveLineY", "mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b", null ]
 ];
