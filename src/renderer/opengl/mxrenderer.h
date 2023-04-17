@@ -34,7 +34,7 @@ public:
 
     virtual void initialize();
 
-    void setWindowSize( int width, int height );
+    virtual void setWindowSize( int width, int height );
     const MxVector2I& windowSize() const;
 
 

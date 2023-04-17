@@ -18,7 +18,9 @@
 namespace MxGeometryUtils
 {
 
-
+inline int sgn(float val) {
+    return (float(0) < val) - (val < float(0));
+}
 
 inline float dot( const MxVector3F & a, const MxVector3F & b )
 {
