@@ -126,7 +126,7 @@ Inheritance diagram for MxRenderer:</div>
 <div class="dynheader">
 Collaboration diagram for MxRenderer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1203" height="275"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_renderer__coll__graph.svg" width="1254" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -158,6 +158,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace2f77359adc444a6084fdd4dc5cd15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f73893c03ccbee5b34df1b6c1d1e2c9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="mxvector_8h.html#a25ae14b6c3cfbcd1e2d72f68b5ffcda7">MxVector2I</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a7f73893c03ccbee5b34df1b6c1d1e2c9">windowSize</a> () const</td></tr>
 <tr class="separator:a7f73893c03ccbee5b34df1b6c1d1e2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976b5f6d3d9abe3179aa91298af38c9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_mx_matrix.html">MxMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a976b5f6d3d9abe3179aa91298af38c9c">windowMatrix</a> ()</td></tr>
+<tr class="separator:a976b5f6d3d9abe3179aa91298af38c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a5255a8935c102021f0891401b96aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a40a5255a8935c102021f0891401b96aa">checkGLError</a> (const char *fileName, int lineNumber)</td></tr>
 <tr class="separator:a40a5255a8935c102021f0891401b96aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aa04adbb7b6a2d11b4492a473eaccd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#a3aa04adbb7b6a2d11b4492a473eaccd9">setProgram</a> (<a class="el" href="class_mx_gpu_program.html">MxGpuProgram</a> *effect)</td></tr>
@@ -192,6 +194,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:adf40cf1e02f64dd6be7f1dc4126c379d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_matrix.html">MxMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#adf40cf1e02f64dd6be7f1dc4126c379d">pScreenProjectionMatrix</a></td></tr>
+<tr class="memdesc:adf40cf1e02f64dd6be7f1dc4126c379d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ortho matrix that maps to application window  <a href="class_mx_renderer.html#adf40cf1e02f64dd6be7f1dc4126c379d">More...</a><br /></td></tr>
+<tr class="separator:adf40cf1e02f64dd6be7f1dc4126c379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1daef51b3de0a256f7b0443fe6391d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_mx_renderer_1_1_viewport.html">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#ae1daef51b3de0a256f7b0443fe6391d6">pViewport</a></td></tr>
 <tr class="separator:ae1daef51b3de0a256f7b0443fe6391d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd6fbdd1d214efd87d0614a9c878bd74"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_renderer.html#acd6fbdd1d214efd87d0614a9c878bd74">pCurrShaderProgram</a></td></tr>
@@ -647,8 +652,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078">MxGuiRenderer</a>.</p>
-
 </div>
 </div>
 <a id="aef1a832211c59ab0bc4bdafe496c8df2"></a>
@@ -679,6 +682,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a976b5f6d3d9abe3179aa91298af38c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976b5f6d3d9abe3179aa91298af38c9c">&#9670;&nbsp;</a></span>windowMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_mx_matrix.html">MxMatrix</a> * MxRenderer::windowMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -824,6 +844,30 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf40cf1e02f64dd6be7f1dc4126c379d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf40cf1e02f64dd6be7f1dc4126c379d">&#9670;&nbsp;</a></span>pScreenProjectionMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_matrix.html">MxMatrix</a> MxRenderer::pScreenProjectionMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ortho matrix that maps to application window </p>
 
 </div>
 </div>

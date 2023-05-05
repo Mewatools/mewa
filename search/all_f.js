@@ -61,7 +61,7 @@ var searchData=
   ['programid_559',['programId',['../class_mx_gpu_program.html#ad9ad3f87b6614ba2cb944ef99f168eb3',1,'MxGpuProgram']]],
   ['propertyflag_560',['PropertyFlag',['../class_mx_widget.html#a502fdd1c3b88c77361a6566b561d9d63',1,'MxWidget']]],
   ['pscale_561',['pScale',['../class_mx_ortho_transform.html#a342f44823e082304fb83235c76d21429',1,'MxOrthoTransform']]],
-  ['pscreenprojectionmatrix_562',['pScreenProjectionMatrix',['../class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce',1,'MxGuiRenderer']]],
+  ['pscreenprojectionmatrix_562',['pScreenProjectionMatrix',['../class_mx_renderer.html#adf40cf1e02f64dd6be7f1dc4126c379d',1,'MxRenderer']]],
   ['pscreensize_563',['pScreenSize',['../class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2',1,'MxRenderer']]],
   ['psize_564',['pSize',['../class_mx_buffer.html#ae2a369662125fba06288049a8b5df4fb',1,'MxBuffer::pSize()'],['../class_mx_widget.html#a98eb67160efeffc5e43782c8f5be4a72',1,'MxWidget::pSize()'],['../class_mx_generic_sub_string.html#a24c63c700ec662bb612f4d8426375009',1,'MxGenericSubString::pSize()']]],
   ['pspacing_565',['pSpacing',['../class_mx_linear_layout.html#a3d648804e4ff4617a1d09df226df7994',1,'MxLinearLayout']]],

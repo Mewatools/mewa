@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('mxguirenderer_8h_source.html',''); ini
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxrenderer_8h.html">mxrenderer.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxvectorprogram_8h.html">mxvectorprogram.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxiconprogram_8h.html">mxiconprogram.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mxmatrix_8h.html">mxmatrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a>;</div>
@@ -133,63 +133,52 @@ $(document).ready(function(){initNavTree('mxguirenderer_8h_source.html',''); ini
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#a62a13981fb0e65fc75ef6beea09b116a">initialize</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078">setWindowSize</a>( <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height );</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mx_matrix.html">MxMatrix</a>* <a class="code" href="class_mx_gui_renderer.html#a3b797bfb7a81250f90d4fb5a1dd3c0c2">windowMatrix</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03">setViewportToWindow</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03">setViewportToWindow</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// shader programs</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_mx_vector_program.html">MxVectorProgram</a> * <a class="code" href="class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c">setVectorProgram</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_mx_icon_program.html">MxIconProgram</a> * <a class="code" href="class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd">setIconProgram</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// shader programs</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_mx_vector_program.html">MxVectorProgram</a> * <a class="code" href="class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c">setVectorProgram</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mx_icon_program.html">MxIconProgram</a> * <a class="code" href="class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd">setIconProgram</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_mx_buffer.html">MxBuffer</a> *<a class="code" href="class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44">getTemporaryBuffer</a>( <span class="keywordtype">int</span> sizeEstimate = 1024 );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#a0174bc45ee33b8e7f4f197ea093dbdcd">renderEnd</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_mx_buffer.html">MxBuffer</a> *<a class="code" href="class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44">getTemporaryBuffer</a>( <span class="keywordtype">int</span> sizeEstimate = 1024 );</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_mx_gui_renderer.html#a0174bc45ee33b8e7f4f197ea093dbdcd">renderEnd</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">   42</a></span>&#160;    <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *<a class="code" href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">pIconAtlas</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce">   46</a></span>&#160;    <a class="code" href="class_mx_matrix.html">MxMatrix</a> <a class="code" href="class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce">pScreenProjectionMatrix</a>; <span class="comment">// ortho view matrix</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_mx_vector_program.html">MxVectorProgram</a> pVectorProgram;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_mx_icon_program.html">MxIconProgram</a> pIconProgram;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">struct </span>ReusableBuffer</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;       {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;           <a class="code" href="class_mx_buffer.html">MxBuffer</a> buffer;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;           <span class="keywordtype">bool</span> inUse;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;       };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <span class="comment">// \TODO fine tune list allocation</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_mx_list.html">MxList&lt;ReusableBuffer, MxClassInitializer&lt;ReusableBuffer&gt;</a>, 32&gt; pReusableMem;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">   37</a></span>&#160;    <a class="code" href="class_mx_abstract_atlas.html">MxAbstractAtlas</a> *<a class="code" href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">pIconAtlas</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_mx_vector_program.html">MxVectorProgram</a> pVectorProgram;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_mx_icon_program.html">MxIconProgram</a> pIconProgram;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">struct </span>ReusableBuffer</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;       {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;           <a class="code" href="class_mx_buffer.html">MxBuffer</a> buffer;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;           <span class="keywordtype">bool</span> inUse;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;       };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="comment">// \TODO fine tune list allocation</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_mx_list.html">MxList&lt;ReusableBuffer, MxClassInitializer&lt;ReusableBuffer&gt;</a>, 32&gt; pReusableMem;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_mx_abstract_atlas_html"><div class="ttname"><a href="class_mx_abstract_atlas.html">MxAbstractAtlas</a></div><div class="ttdef"><b>Definition:</b> mxabstractatlas.h:13</div></div>
 <div class="ttc" id="aclass_mx_buffer_html"><div class="ttname"><a href="class_mx_buffer.html">MxBuffer</a></div><div class="ttdef"><b>Definition:</b> mxbuffer.h:14</div></div>
 <div class="ttc" id="aclass_mx_gui_renderer_html"><div class="ttname"><a href="class_mx_gui_renderer.html">MxGuiRenderer</a></div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:19</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a0174bc45ee33b8e7f4f197ea093dbdcd"><div class="ttname"><a href="class_mx_gui_renderer.html#a0174bc45ee33b8e7f4f197ea093dbdcd">MxGuiRenderer::renderEnd</a></div><div class="ttdeci">virtual void renderEnd()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:89</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a3b797bfb7a81250f90d4fb5a1dd3c0c2"><div class="ttname"><a href="class_mx_gui_renderer.html#a3b797bfb7a81250f90d4fb5a1dd3c0c2">MxGuiRenderer::windowMatrix</a></div><div class="ttdeci">const MxMatrix * windowMatrix()</div><div class="ttdoc">ortho matrix that maps to application window</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:40</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a42edbfbfb7bab3966cf6b6bc016b587c"><div class="ttname"><a href="class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c">MxGuiRenderer::setVectorProgram</a></div><div class="ttdeci">MxVectorProgram * setVectorProgram()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:50</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a59e4fb6d265a13835f9dbdafe1525078"><div class="ttname"><a href="class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078">MxGuiRenderer::setWindowSize</a></div><div class="ttdeci">virtual void setWindowSize(int width, int height)</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:30</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_a0174bc45ee33b8e7f4f197ea093dbdcd"><div class="ttname"><a href="class_mx_gui_renderer.html#a0174bc45ee33b8e7f4f197ea093dbdcd">MxGuiRenderer::renderEnd</a></div><div class="ttdeci">virtual void renderEnd()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:74</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_a42edbfbfb7bab3966cf6b6bc016b587c"><div class="ttname"><a href="class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c">MxGuiRenderer::setVectorProgram</a></div><div class="ttdeci">MxVectorProgram * setVectorProgram()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:35</div></div>
 <div class="ttc" id="aclass_mx_gui_renderer_html_a62a13981fb0e65fc75ef6beea09b116a"><div class="ttname"><a href="class_mx_gui_renderer.html#a62a13981fb0e65fc75ef6beea09b116a">MxGuiRenderer::initialize</a></div><div class="ttdeci">virtual void initialize()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:19</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a858d0721fdc0f9452c3d15ddce2490dc"><div class="ttname"><a href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">MxGuiRenderer::pIconAtlas</a></div><div class="ttdeci">MxAbstractAtlas * pIconAtlas</div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:42</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_a948994c1151661d9066f6d3d7a7ac8ce"><div class="ttname"><a href="class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce">MxGuiRenderer::pScreenProjectionMatrix</a></div><div class="ttdeci">MxMatrix pScreenProjectionMatrix</div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:46</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_a858d0721fdc0f9452c3d15ddce2490dc"><div class="ttname"><a href="class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc">MxGuiRenderer::pIconAtlas</a></div><div class="ttdeci">MxAbstractAtlas * pIconAtlas</div><div class="ttdef"><b>Definition:</b> mxguirenderer.h:37</div></div>
 <div class="ttc" id="aclass_mx_gui_renderer_html_a9fbf2cb0585d40405d049aefae55dbf7"><div class="ttname"><a href="class_mx_gui_renderer.html#a9fbf2cb0585d40405d049aefae55dbf7">MxGuiRenderer::MxGuiRenderer</a></div><div class="ttdeci">MxGuiRenderer()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:9</div></div>
 <div class="ttc" id="aclass_mx_gui_renderer_html_abf4a4b7ad2c0aae6f43e047760024e58"><div class="ttname"><a href="class_mx_gui_renderer.html#abf4a4b7ad2c0aae6f43e047760024e58">MxGuiRenderer::~MxGuiRenderer</a></div><div class="ttdeci">virtual ~MxGuiRenderer()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:14</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_acc9e50bc87a56e045bdad2e8b2cd2d44"><div class="ttname"><a href="class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44">MxGuiRenderer::getTemporaryBuffer</a></div><div class="ttdeci">MxBuffer * getTemporaryBuffer(int sizeEstimate=1024)</div><div class="ttdoc">The returned buffer is automatically deleted after render.</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:66</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_af724bce178e89df6638bf611516ee0bd"><div class="ttname"><a href="class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd">MxGuiRenderer::setIconProgram</a></div><div class="ttdeci">MxIconProgram * setIconProgram()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:60</div></div>
-<div class="ttc" id="aclass_mx_gui_renderer_html_afbe25c1853aa6158e5378a351d99cd03"><div class="ttname"><a href="class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03">MxGuiRenderer::setViewportToWindow</a></div><div class="ttdeci">void setViewportToWindow()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:45</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_acc9e50bc87a56e045bdad2e8b2cd2d44"><div class="ttname"><a href="class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44">MxGuiRenderer::getTemporaryBuffer</a></div><div class="ttdeci">MxBuffer * getTemporaryBuffer(int sizeEstimate=1024)</div><div class="ttdoc">The returned buffer is automatically deleted after render.</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:51</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_af724bce178e89df6638bf611516ee0bd"><div class="ttname"><a href="class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd">MxGuiRenderer::setIconProgram</a></div><div class="ttdeci">MxIconProgram * setIconProgram()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:45</div></div>
+<div class="ttc" id="aclass_mx_gui_renderer_html_afbe25c1853aa6158e5378a351d99cd03"><div class="ttname"><a href="class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03">MxGuiRenderer::setViewportToWindow</a></div><div class="ttdeci">void setViewportToWindow()</div><div class="ttdef"><b>Definition:</b> mxguirenderer.cpp:30</div></div>
 <div class="ttc" id="aclass_mx_icon_program_html"><div class="ttname"><a href="class_mx_icon_program.html">MxIconProgram</a></div><div class="ttdef"><b>Definition:</b> mxiconprogram.h:22</div></div>
 <div class="ttc" id="aclass_mx_list_html"><div class="ttname"><a href="class_mx_list.html">MxList</a></div><div class="ttdef"><b>Definition:</b> mxlist.h:90</div></div>
-<div class="ttc" id="aclass_mx_matrix_html"><div class="ttname"><a href="class_mx_matrix.html">MxMatrix</a></div><div class="ttdef"><b>Definition:</b> mxmatrix.h:18</div></div>
-<div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdef"><b>Definition:</b> mxrenderer.h:21</div></div>
+<div class="ttc" id="aclass_mx_renderer_html"><div class="ttname"><a href="class_mx_renderer.html">MxRenderer</a></div><div class="ttdef"><b>Definition:</b> mxrenderer.h:22</div></div>
 <div class="ttc" id="aclass_mx_vector_program_html"><div class="ttname"><a href="class_mx_vector_program.html">MxVectorProgram</a></div><div class="ttdef"><b>Definition:</b> mxvectorprogram.h:14</div></div>
 <div class="ttc" id="amxbuffer_8h_html"><div class="ttname"><a href="mxbuffer_8h.html">mxbuffer.h</a></div></div>
 <div class="ttc" id="amxiconprogram_8h_html"><div class="ttname"><a href="mxiconprogram_8h.html">mxiconprogram.h</a></div></div>
-<div class="ttc" id="amxmatrix_8h_html"><div class="ttname"><a href="mxmatrix_8h.html">mxmatrix.h</a></div></div>
 <div class="ttc" id="amxrenderer_8h_html"><div class="ttname"><a href="mxrenderer_8h.html">mxrenderer.h</a></div></div>
 <div class="ttc" id="amxvectorprogram_8h_html"><div class="ttname"><a href="mxvectorprogram_8h.html">mxvectorprogram.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

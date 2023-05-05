@@ -25,6 +25,7 @@ var class_mx_renderer =
     [ "setViewport", "class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7", null ],
     [ "setWindowSize", "class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a", null ],
     [ "uploadToGpu", "class_mx_renderer.html#aef1a832211c59ab0bc4bdafe496c8df2", null ],
+    [ "windowMatrix", "class_mx_renderer.html#a976b5f6d3d9abe3179aa91298af38c9c", null ],
     [ "windowSize", "class_mx_renderer.html#a7f73893c03ccbee5b34df1b6c1d1e2c9", null ],
     [ "pCurrBlend", "class_mx_renderer.html#a2956fc7a9af844322a25cc29257239e5", null ],
     [ "pCurrentActiveTextureSlot", "class_mx_renderer.html#a2c16478414c1c06d00d36377ec7d83ca", null ],
@@ -32,6 +33,7 @@ var class_mx_renderer =
     [ "pCurrShaderProgram", "class_mx_renderer.html#acd6fbdd1d214efd87d0614a9c878bd74", null ],
     [ "pDepthTestEnabled", "class_mx_renderer.html#ac306982a1bc165480911ecd724207300", null ],
     [ "pReusableVbos", "class_mx_renderer.html#a08b829a0080f473f57b1a2369d4d86c2", null ],
+    [ "pScreenProjectionMatrix", "class_mx_renderer.html#adf40cf1e02f64dd6be7f1dc4126c379d", null ],
     [ "pScreenSize", "class_mx_renderer.html#a21abd63b3d8fa87467632bac904faad2", null ],
     [ "pViewport", "class_mx_renderer.html#ae1daef51b3de0a256f7b0443fe6391d6", null ]
 ];

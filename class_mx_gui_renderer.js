@@ -8,8 +8,5 @@ var class_mx_gui_renderer =
     [ "setIconProgram", "class_mx_gui_renderer.html#af724bce178e89df6638bf611516ee0bd", null ],
     [ "setVectorProgram", "class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c", null ],
     [ "setViewportToWindow", "class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03", null ],
-    [ "setWindowSize", "class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078", null ],
-    [ "windowMatrix", "class_mx_gui_renderer.html#a3b797bfb7a81250f90d4fb5a1dd3c0c2", null ],
-    [ "pIconAtlas", "class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc", null ],
-    [ "pScreenProjectionMatrix", "class_mx_gui_renderer.html#a948994c1151661d9066f6d3d7a7ac8ce", null ]
+    [ "pIconAtlas", "class_mx_gui_renderer.html#a858d0721fdc0f9452c3d15ddce2490dc", null ]
 ];

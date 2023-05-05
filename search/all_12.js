@@ -44,7 +44,7 @@ var searchData=
   ['setviewport_672',['setViewport',['../class_mx_renderer.html#acbbb708cc819987831543ee1b6bda1c7',1,'MxRenderer']]],
   ['setviewporttowindow_673',['setViewportToWindow',['../class_mx_gui_renderer.html#afbe25c1853aa6158e5378a351d99cd03',1,'MxGuiRenderer']]],
   ['setwidth_674',['setWidth',['../class_mx_vector.html#a0a783772ba5c185279f66e59f9c0dae5',1,'MxVector']]],
-  ['setwindowsize_675',['setWindowSize',['../class_mx_gui_renderer.html#a59e4fb6d265a13835f9dbdafe1525078',1,'MxGuiRenderer::setWindowSize()'],['../class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a',1,'MxRenderer::setWindowSize()']]],
+  ['setwindowsize_675',['setWindowSize',['../class_mx_renderer.html#ace2f77359adc444a6084fdd4dc5cd15a',1,'MxRenderer']]],
   ['sgn_676',['sgn',['../namespace_mx_geometry_utils.html#ab64770cf6e25313ece2eb3cecf711892',1,'MxGeometryUtils']]],
   ['shiftmodifier_677',['ShiftModifier',['../class_mx_mouse_event.html#a75d1e13fbf29abdd6945ff89dce72d51ac8a52c4ff3495259a165513965c54897',1,'MxMouseEvent']]],
   ['signedarea_678',['signedArea',['../namespace_mx_geometry_utils.html#a08afdd9c820096ed9a3ec73303cc16d2',1,'MxGeometryUtils']]],
