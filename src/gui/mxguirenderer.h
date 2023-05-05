@@ -9,7 +9,7 @@
 #include "mxrenderer.h"
 #include "mxvectorprogram.h"
 #include "mxiconprogram.h"
-#include "mxmatrix.h"
+
 
 
 class MxAbstractAtlas;
@@ -23,11 +23,6 @@ public:
 
     virtual void initialize();
 
-
-   virtual void setWindowSize( int width, int height );
-
-    //! ortho matrix that maps to application window
-    const MxMatrix* windowMatrix();
     void setViewportToWindow();
 
     // shader programs
@@ -41,9 +36,7 @@ public:
 
     MxAbstractAtlas *pIconAtlas;
     
-protected:
 
-    MxMatrix pScreenProjectionMatrix; // ortho view matrix
 private:
     MxVectorProgram pVectorProgram;
     MxIconProgram pIconProgram;

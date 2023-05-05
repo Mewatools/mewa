@@ -77,7 +77,7 @@ int MxBuffer::size() const
 
 void MxBuffer::addToSize( int amount )
 {
-    Q_ASSERT( (pSize + amount) < pAlloc );
+    Q_ASSERT( (pSize + amount) <= pAlloc );
     pSize += amount;
 }
 

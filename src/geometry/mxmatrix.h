@@ -6,7 +6,7 @@
 #define MXMATRIX_H
 
 // \TODO remove all Qt dependencies
-#if QT_VERSION >= 0x040100
+#if MX_QT
 #include <QMatrix4x4>
 
 // \TODO use glm::mat4
@@ -17,14 +17,13 @@ typedef QMatrix4x4 MxMatrix;
 class MxMatrix
 {
 public:
-
-
 	MxMatrix();
 	void setToIdentity();
 	void ortho(float left, float right, float bottom, float top, float near = -1.0f, float far = 1.0f );
 
-// \TODO rename to constData()
-	const float* data() const;
+// used by player
+    const float* constData() const;
+    float* data();
 
 private:
 	float pData[4][4];
