@@ -1,5 +1,6 @@
 
 TEMPLATE = app
+QT += opengl
 
 CONFIG += debug
 

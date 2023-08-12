@@ -30,12 +30,13 @@ void MxVectorProgram::compile()
 
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
     const char *vsrc1 =
-            "attribute  vec2 vertex;\n"
-            "attribute  vec2 aUVT;\n"
-            "attribute  vec4 color;\n"
+            "#version 300 es\n"
+            "layout(location = 0) in  vec2 vertex;\n"
+            "layout(location = 1) in  vec2 aUVT;\n"
+            "layout(location = 2) in  vec4 color;\n"
             "uniform  mat4 matrix;\n"
-            "varying  vec2 fsUVT;\n"
-            "varying  vec4 vColor;\n"
+            "out  vec2 fsUVT;\n"
+            "out  vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
             "   fsUVT = aUVT;\n"
@@ -56,9 +57,12 @@ void MxVectorProgram::compile()
         #ifdef MX_OPENGL_ES
             "#extension GL_OES_standard_derivatives : enable\n"
             "precision highp float;\n"
+        #else
+            "#version 300 es\n"
         #endif
-            "varying  vec2 fsUVT;\n"
-            "varying  vec4 vColor;\n"
+            "in  vec2 fsUVT;\n"
+            "in  vec4 vColor;\n"
+            "out highp vec4 fragColor;\n"
             "void main()\n"
             "{\n"
             "  float inside = sign(vColor.a - 0.5);\n" // + to draw outside, - to draw inside
@@ -69,14 +73,15 @@ void MxVectorProgram::compile()
             "  float fy = (2.0*fsUVT.x)*dy.x - dy.y;\n"
             "  float sdf = (fsUVT.x*fsUVT.x - fsUVT.y)/sqrt(fx*fx + fy*fy);\n"
             "  float alpha = smoothstep(inside, -inside, sdf);"
-            "  gl_FragColor = vColor;\n"
+            "  fragColor = vColor;\n"
             //"  gl_FragColor.a = min(alphaValue, alpha);"
-            "  gl_FragColor.a = alpha;"
+            "  fragColor.a = alpha;"
             "}\n";
 
     pRenderer->glShaderSource(fshader, 1, &fsrc_with_dev, NULL);
     pRenderer->glCompileShader(fshader);
     pRenderer->glGetShaderiv(fshader, GL_COMPILE_STATUS, &compiled);
+     pRenderer->checkGLError(__FILE__, __LINE__);
     if (compiled != GL_TRUE)
     {
         // \TODO use https://stackoverflow.com/questions/22442304/glsl-es-dfdx-dfdy-analog
@@ -95,6 +100,7 @@ void MxVectorProgram::compile()
         pRenderer->glShaderSource(fshader, 1, &fsrc, NULL);
         pRenderer->glCompileShader(fshader);
         pRenderer->glGetShaderiv(fshader, GL_COMPILE_STATUS, &compiled);
+         pRenderer->checkGLError(__FILE__, __LINE__);
     }
 
 

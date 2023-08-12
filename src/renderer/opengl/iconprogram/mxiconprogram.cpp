@@ -36,12 +36,13 @@ void MxIconProgram::compile()
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
 
     const char *vsrc =
-            "attribute vec4 vertex;\n"
-            "attribute vec4 texcoord;\n"
-            "attribute  vec4 color;\n"
+            "#version 300 es\n"
+            "layout(location = 0) in vec4 vertex;\n"
+            "layout(location = 1) in vec4 texcoord;\n"
+            "layout(location = 2) in  vec4 color;\n"
             "uniform mat4 matrix;\n"
-            "varying vec4 vTexCoord;\n"
-            "varying  vec4 vColor;\n"
+            "out vec4 vTexCoord;\n"
+            "out  vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
             "    gl_Position = matrix * vertex;\n"
@@ -60,14 +61,17 @@ void MxIconProgram::compile()
     const char *fsrc =
         #ifdef QX_OPENGL_ES_3
             "precision mediump float;\n"
+        #else
+            "#version 300 es\n"
         #endif
             "uniform sampler2D tex;\n"
-            "varying  vec4 vTexCoord;\n"
-            "varying  vec4 vColor;\n"
+            "in highp  vec4 vTexCoord;\n"
+            "in highp  vec4 vColor;\n"
+            "out highp vec4 fragColor;\n"
             "void main(void)\n"
             "{\n"
-            "    vec4 pixel = texture2D(tex, vTexCoord.st);\n"
-            "    gl_FragColor = pixel * vColor;\n"
+            "    vec4 pixel = texture(tex, vTexCoord.st);\n"
+            "    fragColor = pixel * vColor;\n"
             "}\n";
 
     pRenderer->glShaderSource(fshader, 1, &fsrc, NULL);
