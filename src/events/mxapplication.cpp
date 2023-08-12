@@ -44,8 +44,7 @@ void MxApplication::onRender()
     pRenderer.renderBegin();
 
 
-
-    mainWidget()->collectDirtyWidgets( pWidgetsToUpdate );
+    mainWidget()->collectDirtyWidgets(pWidgetsToUpdate, true);
     if( pWidgetsToUpdate.size() > 0 )
     {
 
@@ -140,16 +139,15 @@ void MxApplication::onMouseRelease( int x, int y )
 
 void MxApplication::drawWidgetList()
 {
-    //pRenderer.pPainterBuffer.pDrawingOverlay = overlay;
     int listSize = pWidgetsToUpdate.size();
 
     // store points to array
     pPainterBuffer.prepareRender(pRenderer);
     MxVector2F screenPos;
-    for(int i=0; i < listSize; ++i)
+    for(int i=0; i < listSize; i++)
     {
         MxWidget *widget = pWidgetsToUpdate[i];
-        widget->getGlobalPos(screenPos);
+        widget->getGlobalPos(&screenPos);
         pPainterBuffer.setTranslation(screenPos);
         widget->paint(pPainterBuffer);
     }

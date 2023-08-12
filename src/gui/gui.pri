@@ -11,8 +11,7 @@ SOURCES += $$PWD/mxbuffer.cpp \
            $$PWD/mxsvgpainter.cpp \
            $$PWD/mxtextdraw.cpp \
            $$PWD/mxvectordraw.cpp \
-           $$PWD/mxicondraw.cpp \
-           $$PWD/mxwidget.cpp
+           $$PWD/mxicondraw.cpp
 
 
 HEADERS += $$PWD/mxguirenderer.h \
@@ -25,8 +24,6 @@ HEADERS += $$PWD/mxguirenderer.h \
            $$PWD/mxtextdraw.h \
            $$PWD/mxvectordraw.h \
            $$PWD/mxicondraw.h \
-           $$PWD/mxwidget.h \
-           $$PWD/mxwidgetlist.h \
            $$PWD/mxthemecolors.h
    
 

@@ -4,6 +4,7 @@ INCLUDEPATH += $$PWD
 HEADERS += $$PWD/mxbytearrayref.h \
            $$PWD/mxgenericstring.h \
            $$PWD/mxgenericsubstring.h \
+           $$PWD/mxfixedsizelist.h \
            $$PWD/mxlist.h \
            $$PWD/mxrefcounter.h \
            $$PWD/mxstring.h

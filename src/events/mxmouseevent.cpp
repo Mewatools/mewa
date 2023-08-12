@@ -55,3 +55,16 @@ MxVector2F MxMouseEvent::pressedGlobalPos() const
 {
     return pMousePressedPos;
 }
+
+
+bool MxMouseEvent::grabLeaveEvent(MxWidget *widget)
+{
+
+    return false;
+}
+
+void MxMouseEvent::checkLeaveEvent( const MxVector2F &globalPos )
+{
+
+}
+

@@ -1,13 +1,13 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxwidget.h"
-
+#include "mxfillbackgroundinterface.h"
 
 
 MxWidget::MxWidget()
-    :pParent(NULL), pProperties(DirtyFlag)
+    :pParent(NULL), pAttributes(DirtyFlag)
 {}
 
 /*! Destroys the widget. */
@@ -53,12 +53,10 @@ const MxVector2F & MxWidget::size() const
 }
 
 /*!
-Returns the parent of this QxWidget. The parent of a QxWidget
-is the layout where the widget was added. Top level widgets
-return QxPainter as parent. QxPainter is the root of all
-widgets.
-
-The parent is set when a widget is added to a layout.
+Returns the parent of this MxWidget. 
+The parent of a MxWidget
+is usually an MxLayout where the widget was added.
+The parent is set to the widget when the widget is added to a layout.
 */
 MxWidget* MxWidget::parent() const
 {
@@ -71,9 +69,9 @@ void MxWidget::setParent( MxWidget *widget )
     pParent = widget;
 }
 
-void MxWidget::getGlobalPos( MxVector2F &global_pos ) const
+void MxWidget::getGlobalPos( MxVector2F *global_pos ) const
 {
-    global_pos = pPos;
+    *global_pos = pPos;
     MxWidget *item_parent = pParent;
 
     if( item_parent == NULL ) {
@@ -82,7 +80,7 @@ void MxWidget::getGlobalPos( MxVector2F &global_pos ) const
 
     while(item_parent->pParent)
     {
-        global_pos += item_parent->pPos;
+        *global_pos += item_parent->pPos;
         item_parent = item_parent->pParent;
     }
 }
@@ -116,7 +114,7 @@ MxVector2F MxWidget::mapFromGlobal( const MxVector2F &globalPos ) //const
 
 /*! Maps \a pos relative to this widget coordinates to a position
   relative to the display. Usefull for drag and drop actions.
-Use globalOriginOffset instead. */
+*/
 void MxWidget::mapToGlobal( MxVector2F *pos ) const
 {
     MxVector2F mappedPos = pPos;
@@ -132,8 +130,7 @@ void MxWidget::mapToGlobal( MxVector2F *pos ) const
 
 void MxWidget::update()
 {
-    //updateWidget( this );
-    pProperties |= DirtyFlag;//pDirty = true;
+    pAttributes |= DirtyFlag;
     childNeedsUpdate();
 }
 
@@ -142,7 +139,7 @@ void MxWidget::dirtyCollidingWidgets(const MxRectF &collidingRect)
     MxRectF thisRect;
     getRect( &thisRect );
     if( collidingRect.intersects( thisRect ) ) {
-        pProperties |= DirtyFlag;
+        pAttributes |= DirtyFlag;
     }
 }
 
@@ -158,7 +155,7 @@ void MxWidget::mouseReleaseEvent( MxMouseEvent &event )
 {
 }
 
-// propagate the event up to mainwindow
+// propagate the event up to the root widget (MxApplication::mainWidget)
 void MxWidget::keyEvent( int key, int modifiers )
 {
 #if defined(QX_DEBUG)
@@ -177,23 +174,40 @@ void MxWidget::textInputEvent( const char *text, int count )
 }
 
 
-void MxWidget::collectDirtyWidgets( MxWidgetList &list )
+void MxWidget::collectDirtyWidgets( MxWidgetList &list, bool clean )
 {
     if( isDirty() ) {
         list.append(this);
-        resetDirtyFlag();
+        if (clean) {
+            resetDirtyFlag();
+        }
         return;
     }
 }
 
 void MxWidget::resetDirtyFlag()
 {
-    pProperties &= ~(DirtyFlag);
+    pAttributes &= ~(DirtyFlag);
 }
 
 bool MxWidget::isDirty() const
 {
-    return (pProperties & DirtyFlag);
+    return (pAttributes & DirtyFlag);
+}
+
+MxWidget* MxWidget::firstParentWithAttribute( int flag ) const
+{
+    MxWidget* parentWidget = parent();
+    while( parentWidget != NULL)
+    {
+
+        if( parentWidget->pAttributes & flag )
+        {
+            return parentWidget;
+        }
+        parentWidget = parentWidget->parent();
+    }
+    return NULL;
 }
 
 MxWidget* MxWidget::rootParent() const
@@ -210,3 +224,20 @@ void MxWidget::childNeedsUpdate()
 {
 
 }
+
+const MxVector4UC& MxWidget::parentBackgroundColor()
+{
+    MxWidget *parentWidget = this;
+    if( ! (parentWidget->pAttributes & MxWidget::HasBackground) ) {
+
+        parentWidget = firstParentWithAttribute( MxWidget::HasBackground );
+        Q_ASSERT( NULL != parentWidget );
+        Q_ASSERT( parentWidget->pAttributes & MxWidget::HasBackground );
+    }
+    Q_ASSERT( NULL != parentWidget );
+    MxFillBackgroundInterface *widgetWithBgd = dynamic_cast<MxFillBackgroundInterface*>(parentWidget);
+    const MxVector4UC& backColor = widgetWithBgd->backgroundColor();
+    return backColor;
+}
+
+

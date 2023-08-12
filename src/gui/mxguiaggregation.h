@@ -8,6 +8,8 @@
 
 class MxAbstractAtlas;
 class MxApplication;
+class MxFont;
+
 
 
 /*!
@@ -23,6 +25,7 @@ public:
     float displayScale() const;
     const MxAbstractAtlas * iconAtlas() const;
     MxApplication * application() const;
+    const MxFont * font();
 
 private:
     friend class MxApplication;

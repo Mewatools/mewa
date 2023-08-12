@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2022 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2023 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXRENDERER_H
@@ -10,6 +10,7 @@
 #include "mxmatrix.h"
 #include "mxopenglfunctions.h"
 #include "mxvector.h"
+#include "mxmatrix.h"
 
 
 class MxGpuProgram;
@@ -23,7 +24,7 @@ public:
 
     enum Blending {
         NoBlending, // default
-        BlendingText,
+        BlendingPremultiplied,
         BlendingImages,
         CustomBlending
     };
@@ -34,8 +35,9 @@ public:
 
     virtual void initialize();
 
-    void setWindowSize( int width, int height );
+    virtual void setWindowSize( int width, int height );
     const MxVector2I& windowSize() const;
+    const MxMatrix* windowMatrix();
 
 
     void checkGLError(const char *fileName, int lineNumber);
@@ -73,7 +75,9 @@ virtual void renderEnd();
 
 
 
-
+protected:
+ //! ortho matrix that maps to application window
+    MxMatrix pScreenProjectionMatrix;
 
 protected:
 

@@ -43,8 +43,12 @@ void MxMatrix::ortho(float left, float right, float bottom, float top, float nea
 	pData[3][1] = -(top + bottom) / invheight;
 }
 
-const float* MxMatrix::data() const
+const float* MxMatrix::constData() const
 {
     return &(pData[0][0]);
 }
 
+ float* MxMatrix::data()
+ {
+     return &(pData[0][0]);
+ }

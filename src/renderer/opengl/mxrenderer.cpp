@@ -39,6 +39,9 @@ void MxRenderer::initialize()
 void MxRenderer::setWindowSize( int width, int height )
 {
     pScreenSize = MxVector2I( width, height);
+
+    pScreenProjectionMatrix.setToIdentity();
+    pScreenProjectionMatrix.ortho(0.0f, (float)width, 0.0f, (float)height, -1.0f, 1.0f);
 }
 
 const MxVector2I& MxRenderer::windowSize() const
@@ -46,6 +49,10 @@ const MxVector2I& MxRenderer::windowSize() const
     return pScreenSize;
 }
 
+const MxMatrix* MxRenderer::windowMatrix()
+{
+    return &pScreenProjectionMatrix;
+}
 
 void MxRenderer::checkGLError( const char *fileName, int lineNumber )
 {
@@ -100,7 +107,7 @@ void MxRenderer::setBlending( MxRenderer::Blending blend )
     case NoBlending:
         glDisable(GL_BLEND);
         break;
-    case BlendingText:
+    case BlendingPremultiplied:
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA); // see http://stackoverflow.com/questions/4771224/iphone-opengl-es-alpha-blending-i-have-black-color-in-edge
         break;

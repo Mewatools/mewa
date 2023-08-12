@@ -13,6 +13,7 @@
 #include "mxguiaggregation.h"
 
 
+
 class MxIconAtlas;
 
 
@@ -57,7 +58,7 @@ private:
 
     MxWidget *pWidgetInFocus;
     MxWidgetList pWidgetsToUpdate;
-    MxWidgetList pQueueToRedrawLater;
+    //MxWidgetList pQueueToRedrawLater;
 
 
 

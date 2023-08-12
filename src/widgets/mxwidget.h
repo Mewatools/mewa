@@ -9,6 +9,7 @@
 #include "mxrect.h"
 #include "mxvector.h"
 #include "mxwidgetlist.h"
+#include "mxclippedwidget.h"
 
 
 class MxPainter;
@@ -24,6 +25,9 @@ public:
         DirtyFlag = 0x01,
         HasBackground = 0x400, // used to draw child background without the need to ask parent to redraw itself
         HasTransparency = 0x800, // set it to popup widgets when these have tranparency and need background to be redrawn
+        Layout = 0x40000,
+        ClipPaint = 0x80000, //! clip painter drawing on itself and all its children
+
     };
 
     MxWidget();
@@ -39,7 +43,7 @@ public:
     const MxVector2F & size() const;
     MxWidget* parent() const;
     virtual void setParent( MxWidget *widget );
-    void getGlobalPos( MxVector2F &pos ) const;
+    void getGlobalPos(MxVector2F *pos ) const;
     virtual bool hasChildren() const { return false; }
     /*!
         needs to be overwritten if has child widgets
@@ -86,17 +90,20 @@ public:
     /*! Implement it to use a custom MxShaderProgram. */
     virtual void render( MxRenderer &/*renderer*/ ){}
 
-    virtual void collectDirtyWidgets( MxWidgetList &list );
+    virtual void collectDirtyWidgets( MxWidgetList &list, bool clean );
     virtual void resetDirtyFlag();
     virtual bool isDirty() const;
 
+    MxWidget* firstParentWithAttribute( int flag ) const;
 
     MxWidget* rootParent() const;
     virtual void childNeedsUpdate();
 
+    const MxVector4UC& parentBackgroundColor();
+
 
     MxWidget *pParent;
-    int pProperties;
+    int pAttributes;
     MxVector2F pSize;
     MxVector2F pPos;
 
