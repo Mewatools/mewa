@@ -54,12 +54,7 @@ void MxVectorProgram::compile()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc_with_dev =
-        #ifdef MX_OPENGL_ES
-            "#extension GL_OES_standard_derivatives : enable\n"
-            "precision highp float;\n"
-        #else
             "#version 300 es\n"
-        #endif
             "in  vec2 fsUVT;\n"
             "in  vec4 vColor;\n"
             "out highp vec4 fragColor;\n"
