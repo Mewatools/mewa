@@ -6,7 +6,7 @@
 
 # What is Mewa
 
-Mewa is a software solution for digital artists dedicated at simplifying the chaotic world of motion graphics.
+Mewa is a framework used to create software solutions dedicated to simplifying the chaotic world of motion graphics for artists.
 
 ## Vector based Animations
 
