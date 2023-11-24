@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_mx_widget.html#a7080ef15eada79a1ce80b1b661226dd8":[4,0,51,8],
 "class_mx_widget.html#a711abb7f532e1fdad51fcfaeb01f4228":[4,0,51,36],
 "class_mx_widget.html#a716f9dfbd9011213fc56717e36b863ae":[4,0,51,20],
 "class_mx_widget.html#a74a8be47feef141f9f043c26c77085cc":[4,0,51,24],
@@ -78,8 +79,8 @@ var NAVTREEINDEX3 =
 "functions_enum.html":[4,3,3],
 "functions_eval.html":[4,3,4],
 "functions_f.html":[4,3,0,5],
-"functions_func.html":[4,3,1],
 "functions_func.html":[4,3,1,0],
+"functions_func.html":[4,3,1],
 "functions_func_b.html":[4,3,1,1],
 "functions_func_c.html":[4,3,1,2],
 "functions_func_d.html":[4,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "mxguiaggregation_8cpp.html":[5,0,0,4,3],
 "mxguiaggregation_8h.html":[5,0,0,4,4],
 "mxguiaggregation_8h_source.html":[5,0,0,4,4],
-"mxguirenderer_8cpp.html":[5,0,0,4,5],
-"mxguirenderer_8h.html":[5,0,0,4,6]
+"mxguirenderer_8cpp.html":[5,0,0,4,5]
 };

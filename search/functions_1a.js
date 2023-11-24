@@ -23,7 +23,8 @@ var searchData=
   ['_7emxstaticfont_1382',['~MxStaticFont',['../class_mx_static_font.html#a9d8c3cd1cf07c9c9d62755c47ef6a929',1,'MxStaticFont']]],
   ['_7emxtextbutton_1383',['~MxTextButton',['../class_mx_text_button.html#ac74703fcc5cbf7a63234ca7eab191f8c',1,'MxTextButton']]],
   ['_7emxtexture_1384',['~MxTexture',['../class_mx_texture.html#a4322c14cfb760fb53035431e649ba3f7',1,'MxTexture']]],
-  ['_7emxvectorprogram_1385',['~MxVectorProgram',['../class_mx_vector_program.html#a2b012b53bc3b85a077a2e382f8c63e71',1,'MxVectorProgram']]],
-  ['_7emxwidget_1386',['~MxWidget',['../class_mx_widget.html#a69050977778d33ad82abae9e3ff06a44',1,'MxWidget']]],
-  ['_7eqmewawindow_1387',['~QMewaWindow',['../class_q_mewa_window.html#a020704e08329d8abf05193f4537d738b',1,'QMewaWindow']]]
+  ['_7emxuisettings_1385',['~MxUiSettings',['../class_mx_ui_settings.html#a12157dfeb3ccec6bbc98466defe67501',1,'MxUiSettings']]],
+  ['_7emxvectorprogram_1386',['~MxVectorProgram',['../class_mx_vector_program.html#a2b012b53bc3b85a077a2e382f8c63e71',1,'MxVectorProgram']]],
+  ['_7emxwidget_1387',['~MxWidget',['../class_mx_widget.html#a69050977778d33ad82abae9e3ff06a44',1,'MxWidget']]],
+  ['_7eqmewawindow_1388',['~QMewaWindow',['../class_q_mewa_window.html#a020704e08329d8abf05193f4537d738b',1,'QMewaWindow']]]
 ];

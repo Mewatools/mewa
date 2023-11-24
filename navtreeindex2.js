@@ -156,9 +156,10 @@ var NAVTREEINDEX2 =
 "class_mx_texture.html#aeec98e9f4b035c01bf347d6d832d1160ab015338ef84a7244d42134f02e37ea64":[4,0,46,0,0],
 "class_mx_texture.html#af8f3ceb09a10742974fb42d89994d877":[4,0,46,7],
 "class_mx_ui_settings.html":[4,0,47],
-"class_mx_ui_settings.html#a132a8cb5363552ceb10a6a691c77db7a":[4,0,47,1],
+"class_mx_ui_settings.html#a12157dfeb3ccec6bbc98466defe67501":[4,0,47,1],
+"class_mx_ui_settings.html#a132a8cb5363552ceb10a6a691c77db7a":[4,0,47,2],
 "class_mx_ui_settings.html#a1abab03cdb71a3341de61c10b1487481":[4,0,47,0],
-"class_mx_ui_settings.html#a717b022799c51983cd05a240cefb9242":[4,0,47,2],
+"class_mx_ui_settings.html#a717b022799c51983cd05a240cefb9242":[4,0,47,3],
 "class_mx_vector.html":[4,0,48],
 "class_mx_vector.html#a0a783772ba5c185279f66e59f9c0dae5":[4,0,48,19],
 "class_mx_vector.html#a0fa206b0f80a4b5de411b6fd8615fcbc":[4,0,48,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "class_mx_widget.html#a5217c5c2e19ff9fb5721516f8fd018b5":[4,0,51,21],
 "class_mx_widget.html#a67987e17d25cb460f11fd63482a1d1b7":[4,0,51,7],
 "class_mx_widget.html#a69050977778d33ad82abae9e3ff06a44":[4,0,51,2],
-"class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1":[4,0,51,9],
-"class_mx_widget.html#a7080ef15eada79a1ce80b1b661226dd8":[4,0,51,8]
+"class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1":[4,0,51,9]
 };
