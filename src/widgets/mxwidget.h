@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2023 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXWIDGET_H
@@ -16,6 +16,7 @@ class MxPainter;
 class MxRenderer;
 class MxMouseEvent;
 class MxWheelEvent;
+class MxUiSettings;
 
 
 class MxWidget
@@ -100,8 +101,11 @@ public:
     virtual void childNeedsUpdate();
 
     const MxVector4UC& parentBackgroundColor();
+    MxUiSettings& uiSettings();
 
 
+
+    static MxUiSettings *sUiSettings;
     MxWidget *pParent;
     int pAttributes;
     MxVector2F pSize;

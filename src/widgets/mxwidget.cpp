@@ -4,6 +4,11 @@
 ****************************************************************************/
 #include "mxwidget.h"
 #include "mxfillbackgroundinterface.h"
+#include "mxuisettings.h"
+
+
+MxUiSettings * MxWidget::sUiSettings = nullptr;
+
 
 
 MxWidget::MxWidget()
@@ -238,6 +243,20 @@ const MxVector4UC& MxWidget::parentBackgroundColor()
     MxFillBackgroundInterface *widgetWithBgd = dynamic_cast<MxFillBackgroundInterface*>(parentWidget);
     const MxVector4UC& backColor = widgetWithBgd->backgroundColor();
     return backColor;
+}
+
+/*!
+ Share application wide constansts with MxUiSettings.
+ Set your own UI settings before any call to uiSettings() to prevent
+ creating the default MxUiSettings().
+ */
+MxUiSettings& MxWidget::uiSettings()
+{
+    if( ! sUiSettings )
+    {
+        sUiSettings = new MxUiSettings();
+    }
+    return *sUiSettings;
 }
 
 

@@ -10,6 +10,7 @@ SOURCES += $$PWD/mxbutton.cpp \
            $$PWD/mxlinearlayout.cpp \
            $$PWD/mxspacer.cpp \
            $$PWD/mxtextbutton.cpp \
+           $$PWD/mxuisettings.cpp \
            $$PWD/mxwidget.cpp
 
 
@@ -21,6 +22,7 @@ HEADERS += $$PWD/mxbutton.h \
            $$PWD/mxlinearlayout.h \
            $$PWD/mxspacer.h \
            $$PWD/mxtextbutton.h \
+           $$PWD/mxuisettings.h \
            $$PWD/mxwidget.h \
            $$PWD/mxthemecolors.h \
            $$PWD/mxclippedwidget.h \
