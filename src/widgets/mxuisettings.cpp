@@ -9,6 +9,11 @@ MxUiSettings::MxUiSettings()
 
 }
 
+MxUiSettings::~MxUiSettings()
+{
+
+}
+
 /*! Returns 1 on desktop, higher values on mobile devices */
 float MxUiSettings::pixelRatio() const
 {

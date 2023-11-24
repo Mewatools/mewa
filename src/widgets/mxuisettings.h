@@ -10,6 +10,7 @@ class MxUiSettings
 {
 public:
     MxUiSettings();
+    virtual ~MxUiSettings();
 
     float pixelRatio() const;
     float textHeight() const;
