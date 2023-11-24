@@ -1,6 +1,7 @@
 <map id="MxSpacer" name="MxSpacer">
-<area shape="rect" id="node1" title=" " alt="" coords="34,275,114,301"/>
-<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="35,199,113,225"/>
-<area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="12,5,136,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="77,275,157,301"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="77,199,156,225"/>
+<area shape="rect" id="node3" href="$class_mx_ui_settings.html" title=" " alt="" coords="5,95,105,121"/>
+<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="129,95,267,121"/>
+<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="136,5,260,32"/>
 </map>

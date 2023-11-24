@@ -1,7 +1,8 @@
 <map id="MxButton" name="MxButton">
-<area shape="rect" id="node1" title="Base class for buttons." alt="" coords="133,288,210,315"/>
-<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="35,199,113,225"/>
-<area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="12,5,136,32"/>
-<area shape="rect" id="node5" href="$class_mx_event_handler.html" title=" " alt="" coords="211,199,329,225"/>
+<area shape="rect" id="node1" title="Base class for buttons." alt="" coords="165,288,242,315"/>
+<area shape="rect" id="node2" href="$class_mx_widget.html" title=" " alt="" coords="67,199,145,225"/>
+<area shape="rect" id="node3" href="$class_mx_ui_settings.html" title=" " alt="" coords="5,95,105,121"/>
+<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="129,95,267,121"/>
+<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="136,5,260,32"/>
+<area shape="rect" id="node6" href="$class_mx_event_handler.html" title=" " alt="" coords="243,199,361,225"/>
 </map>

@@ -1,12 +1,13 @@
 <map id="MxTextButton" name="MxTextButton">
-<area shape="rect" id="node1" title=" " alt="" coords="288,392,391,419"/>
-<area shape="rect" id="node2" href="$class_mx_button.html" title="Base class for buttons." alt="" coords="222,303,299,329"/>
-<area shape="rect" id="node3" href="$class_mx_widget.html" title=" " alt="" coords="35,213,113,240"/>
-<area shape="rect" id="node4" href="$class_mx_vector.html" title=" " alt="" coords="5,102,143,129"/>
-<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="12,5,136,32"/>
-<area shape="rect" id="node6" href="$class_mx_event_handler.html" title=" " alt="" coords="211,213,329,240"/>
-<area shape="rect" id="node7" href="$class_mx_generic_string.html" title=" " alt="" coords="324,303,515,329"/>
-<area shape="rect" id="node8" href="$struct_mx_generic_string_1_1_data.html" title=" " alt="" coords="380,95,517,136"/>
-<area shape="rect" id="node10" href="$class_mx_generic_string.html" title=" " alt="" coords="447,213,595,240"/>
-<area shape="rect" id="node9" href="$class_mx_ref_counter.html" title=" " alt="" coords="397,5,501,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="340,392,443,419"/>
+<area shape="rect" id="node2" href="$class_mx_button.html" title="Base class for buttons." alt="" coords="274,303,351,329"/>
+<area shape="rect" id="node3" href="$class_mx_widget.html" title=" " alt="" coords="87,213,165,240"/>
+<area shape="rect" id="node4" href="$class_mx_ui_settings.html" title=" " alt="" coords="5,102,105,129"/>
+<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="129,102,267,129"/>
+<area shape="rect" id="node6" href="$class_mx_vector.html" title=" " alt="" coords="136,5,260,32"/>
+<area shape="rect" id="node7" href="$class_mx_event_handler.html" title=" " alt="" coords="263,213,381,240"/>
+<area shape="rect" id="node8" href="$class_mx_generic_string.html" title=" " alt="" coords="376,303,567,329"/>
+<area shape="rect" id="node9" href="$struct_mx_generic_string_1_1_data.html" title=" " alt="" coords="432,95,569,136"/>
+<area shape="rect" id="node11" href="$class_mx_generic_string.html" title=" " alt="" coords="499,213,647,240"/>
+<area shape="rect" id="node10" href="$class_mx_ref_counter.html" title=" " alt="" coords="449,5,553,32"/>
 </map>

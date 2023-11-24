@@ -62,6 +62,7 @@ var hierarchy =
     [ "MxSvgPainter", "class_mx_svg_painter.html", null ],
     [ "MxTextDraw", "class_mx_text_draw.html", null ],
     [ "MxTexture", "class_mx_texture.html", null ],
+    [ "MxUiSettings", "class_mx_ui_settings.html", null ],
     [ "MxVector< N, T >", "class_mx_vector.html", null ],
     [ "MxVector< 2, float >", "class_mx_vector.html", null ],
     [ "MxVector< 2, int >", "class_mx_vector.html", null ],

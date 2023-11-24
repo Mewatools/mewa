@@ -77,9 +77,9 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_mx_gpu_program.html#a1b4cb20d33c2d05695f488dbd5f58c0d",
 "class_mx_quad_draw.html#ab6a3a05e4823dd29c0bd2002b441b485",
-"class_mx_widget.html#aa65ba5e8dd5592d941ed4788fda24c74",
-"mxicondraw_8h_source.html",
-"struct_mx_list_1_1_data.html#a05b3cad603c7dc907c63e14b0ce0075f"
+"class_mx_widget.html#a711abb7f532e1fdad51fcfaeb01f4228",
+"mxguirenderer_8h_source.html",
+"struct_mx_icon_draw_1_1_vertex.html#a0dc6ab6aa20ed8460d78b5de05da9d81"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -47,6 +47,7 @@ var annotated_dup =
     [ "MxTextButton", "class_mx_text_button.html", "class_mx_text_button" ],
     [ "MxTextDraw", "class_mx_text_draw.html", "class_mx_text_draw" ],
     [ "MxTexture", "class_mx_texture.html", "class_mx_texture" ],
+    [ "MxUiSettings", "class_mx_ui_settings.html", "class_mx_ui_settings" ],
     [ "MxVector", "class_mx_vector.html", "class_mx_vector" ],
     [ "MxVectorDraw", "class_mx_vector_draw.html", "class_mx_vector_draw" ],
     [ "MxVectorProgram", "class_mx_vector_program.html", "class_mx_vector_program" ],

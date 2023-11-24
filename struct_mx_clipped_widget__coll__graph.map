@@ -1,8 +1,9 @@
 <map id="MxClippedWidget" name="MxClippedWidget">
-<area shape="rect" id="node1" title=" " alt="" coords="61,288,184,315"/>
-<area shape="rect" id="node2" href="$class_mx_rect.html" title=" " alt="" coords="8,199,120,225"/>
-<area shape="rect" id="node3" href="$class_mx_rect.html" title=" " alt="" coords="5,95,101,121"/>
-<area shape="rect" id="node4" href="$class_mx_widget.html" title=" " alt="" coords="150,199,229,225"/>
-<area shape="rect" id="node5" href="$class_mx_vector.html" title=" " alt="" coords="126,95,263,121"/>
-<area shape="rect" id="node6" href="$class_mx_vector.html" title=" " alt="" coords="133,5,257,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="59,288,181,315"/>
+<area shape="rect" id="node2" href="$class_mx_rect.html" title=" " alt="" coords="5,199,117,225"/>
+<area shape="rect" id="node3" href="$class_mx_rect.html" title=" " alt="" coords="12,95,108,121"/>
+<area shape="rect" id="node4" href="$class_mx_widget.html" title=" " alt="" coords="143,199,222,225"/>
+<area shape="rect" id="node5" href="$class_mx_ui_settings.html" title=" " alt="" coords="133,95,233,121"/>
+<area shape="rect" id="node6" href="$class_mx_vector.html" title=" " alt="" coords="257,95,394,121"/>
+<area shape="rect" id="node7" href="$class_mx_vector.html" title=" " alt="" coords="263,5,387,32"/>
 </map>

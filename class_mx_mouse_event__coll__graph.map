@@ -1,6 +1,7 @@
 <map id="MxMouseEvent" name="MxMouseEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="19,305,129,332"/>
-<area shape="rect" id="node2" href="$class_mx_vector.html" title=" " alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node4" href="$class_mx_widget.html" title=" " alt="" coords="195,207,273,234"/>
-<area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="12,5,136,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="81,305,192,332"/>
+<area shape="rect" id="node2" href="$class_mx_vector.html" title=" " alt="" coords="139,95,276,121"/>
+<area shape="rect" id="node4" href="$class_mx_widget.html" title=" " alt="" coords="16,207,95,234"/>
+<area shape="rect" id="node3" href="$class_mx_vector.html" title=" " alt="" coords="145,5,269,32"/>
+<area shape="rect" id="node5" href="$class_mx_ui_settings.html" title=" " alt="" coords="5,95,105,121"/>
 </map>

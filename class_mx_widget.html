@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('class_mx_widget.html',''); initResizab
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_mx_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MxWidget Class Reference</div>  </div>
@@ -124,7 +125,7 @@ Inheritance diagram for MxWidget:</div>
 <div class="dynheader">
 Collaboration diagram for MxWidget:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_widget__coll__graph.svg" width="192" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_widget__coll__graph.svg" width="272" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -214,6 +215,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3dc697dd8945d95b34d423be5dbea0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5217c5c2e19ff9fb5721516f8fd018b5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="mxvector_8h.html#af7ddbdda7866c363edbd2891bc6012d0">MxVector4UC</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_widget.html#a5217c5c2e19ff9fb5721516f8fd018b5">parentBackgroundColor</a> ()</td></tr>
 <tr class="separator:a5217c5c2e19ff9fb5721516f8fd018b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8563c64e6df50cd454343603fdd480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_ui_settings.html">MxUiSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_widget.html#a3c8563c64e6df50cd454343603fdd480">uiSettings</a> ()</td></tr>
+<tr class="separator:a3c8563c64e6df50cd454343603fdd480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -225,6 +228,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a98eb67160efeffc5e43782c8f5be4a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e1eacee403698b531d54bc1ed889f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_widget.html#ab7e1eacee403698b531d54bc1ed889f7">pPos</a></td></tr>
 <tr class="separator:ab7e1eacee403698b531d54bc1ed889f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a41390e0e4ea57ac804de28aa6abefc9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mx_ui_settings.html">MxUiSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_widget.html#a41390e0e4ea57ac804de28aa6abefc9c">sUiSettings</a> = nullptr</td></tr>
+<tr class="separator:a41390e0e4ea57ac804de28aa6abefc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a502fdd1c3b88c77361a6566b561d9d63"></a>
@@ -1070,6 +1078,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c8563c64e6df50cd454343603fdd480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8563c64e6df50cd454343603fdd480">&#9670;&nbsp;</a></span>uiSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_ui_settings.html">MxUiSettings</a> &amp; MxWidget::uiSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Share application wide constansts with <a class="el" href="class_mx_ui_settings.html">MxUiSettings</a>. Set your own UI settings before any call to <a class="el" href="class_mx_widget.html#a3c8563c64e6df50cd454343603fdd480">uiSettings()</a> to prevent creating the default <a class="el" href="class_mx_ui_settings.html">MxUiSettings()</a>. </p>
+
+</div>
+</div>
 <a id="a4c69ab1d6dec1a6f29eb32520b6ca281"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c69ab1d6dec1a6f29eb32520b6ca281">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -1168,6 +1194,28 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> MxWidget::pSize</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41390e0e4ea57ac804de28aa6abefc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41390e0e4ea57ac804de28aa6abefc9c">&#9670;&nbsp;</a></span>sUiSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_ui_settings.html">MxUiSettings</a> * MxWidget::sUiSettings = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
