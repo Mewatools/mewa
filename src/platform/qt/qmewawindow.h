@@ -5,36 +5,55 @@
 #ifndef QMEWAWINDOW_H
 #define QMEWAWINDOW_H
 
-#include <QOpenGLWindow>
+#include <QWindow>
 
 #include "mxiconatlas.h"
 #include "mxapplication.h"
 
+
 class MxWidget;
 
 
-class QMewaWindow : public QOpenGLWindow
+
+class QMewaWindow : public QWindow
 {
-   
+    Q_OBJECT
 public:
-    QMewaWindow();
-    ~QMewaWindow();
+    explicit QMewaWindow(QWindow *parent = nullptr);
+     ~QMewaWindow();
 
-    void initializeGL();
-    void resizeGL(int w, int h);
-    void paintGL();
 
-    void mousePressEvent( QMouseEvent * event );
-    void mouseMoveEvent( QMouseEvent * event );
-    void mouseReleaseEvent( QMouseEvent * event );
+
+    virtual void initialize();
+
+
+    void mousePressEvent( QMouseEvent * event ) override;
+    void mouseMoveEvent( QMouseEvent * event ) override;
+    void mouseReleaseEvent( QMouseEvent * event ) override;
 
     void setMainWidget( MxWidget *widget );
     void setIcon( MxThemeIcons::IconName name, const char *imageFileName );
 
+
+    void setAnimating(bool animating);
+
+
+public slots:
+    void renderLater();
+    void renderNow();
+
+protected:
+    bool event(QEvent *event) override;
+
+    void exposeEvent(QExposeEvent *event) override;
+
 private:
+    bool m_animating = false;
+
+    QOpenGLContext *m_context = nullptr;
+
     MxIconAtlas pIconAtlas;
     MxApplication pApp;
-    bool pFirstTime;
 };
 
 #endif

@@ -30,13 +30,12 @@ void MxVectorProgram::compile()
 
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
     const char *vsrc1 =
-            "#version 300 es\n"
-            "layout(location = 0) in  vec2 vertex;\n"
-            "layout(location = 1) in  vec2 aUVT;\n"
-            "layout(location = 2) in  vec4 color;\n"
+            "attribute vec2 vertex;\n"
+            "attribute vec2 aUVT;\n"
+            "attribute vec4 color;\n"
             "uniform  mat4 matrix;\n"
-            "out  vec2 fsUVT;\n"
-            "out  vec4 vColor;\n"
+            "varying vec2 fsUVT;\n"
+            "varying vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
             "   fsUVT = aUVT;\n"
@@ -54,10 +53,13 @@ void MxVectorProgram::compile()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc_with_dev =
-            "#version 300 es\n"
-            "in  vec2 fsUVT;\n"
-            "in  vec4 vColor;\n"
-            "out highp vec4 fragColor;\n"
+        #ifdef MX_OPENGL_ES
+            "#extension GL_OES_standard_derivatives : enable\n"
+            "precision highp float;\n"
+        #endif
+            "attribute vec2 fsUVT;\n"
+            "attribute vec4 vColor;\n"
+            "varying vec4 fragColor;\n"
             "void main()\n"
             "{\n"
             "  float inside = sign(vColor.a - 0.5);\n" // + to draw outside, - to draw inside
@@ -68,9 +70,9 @@ void MxVectorProgram::compile()
             "  float fy = (2.0*fsUVT.x)*dy.x - dy.y;\n"
             "  float sdf = (fsUVT.x*fsUVT.x - fsUVT.y)/sqrt(fx*fx + fy*fy);\n"
             "  float alpha = smoothstep(inside, -inside, sdf);"
-            "  fragColor = vColor;\n"
+            "  gl_FragColor = vColor;\n"
             //"  gl_FragColor.a = min(alphaValue, alpha);"
-            "  fragColor.a = alpha;"
+            "  gl_FragColor.a = alpha;"
             "}\n";
 
     pRenderer->glShaderSource(fshader, 1, &fsrc_with_dev, NULL);
@@ -83,7 +85,9 @@ void MxVectorProgram::compile()
 
         qDebug("extension GL_OES_standard_derivatives not supported, falling to aliased shader...\n");
         const char *fsrc =
+            #ifdef MX_OPENGL_ES
                 "precision highp float;\n"
+            #endif
                 "varying  vec2 fsUVT;\n"
                 "varying  vec4 vColor;\n"
                 "void main()\n"

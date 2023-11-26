@@ -7,39 +7,27 @@
 #include <QOpenGLContext>
 
 #include "qmewawindow.h"
-#include "mxapplication.h"
 #include "simplewidget.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    QSurfaceFormat fmt;
-    fmt.setDepthBufferSize(24);
+    QSurfaceFormat format;
+    format.setSamples(16);
 
-    // Request OpenGL 3.3 core or OpenGL ES 3.0.
-    if (QOpenGLContext::openGLModuleType() == QOpenGLContext::LibGL) {
-        qDebug("Requesting 3.3 core context");
-        fmt.setVersion(3, 3);
-        fmt.setProfile(QSurfaceFormat::CoreProfile);
-    } else {
-        qDebug("Requesting 3.0 context");
-        fmt.setVersion(3, 0);
-    }
+    QMewaWindow window;
+    window.setFormat(format);
+    window.resize(640, 480);
+    window.show();
 
-    QSurfaceFormat::setDefaultFormat(fmt);
-
-
-    QMewaWindow glWindow;
+    window.setAnimating(true);
 
     ///////////// setup Mx widget ////////////
     SimpleWidget *canvas =  new SimpleWidget();
-    glWindow.setMainWidget(canvas);
+    window.setMainWidget(canvas);
     /////////////////////////////////////////
 
-    //glWindow.showMaximized();
-    glWindow.setMinimumSize( QSize(300, 300) );
-    glWindow.showNormal();
 
     return app.exec();
 }
