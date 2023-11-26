@@ -21,16 +21,16 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="768,-392.5 768,-411.5 863,-411.5 863,-392.5 768,-392.5"/>
-<text text-anchor="middle" x="815.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">QOpenGLWindow</text>
+<polygon fill="none" stroke="#bfbfbf" points="804,-392.5 804,-411.5 863,-411.5 863,-392.5 804,-392.5"/>
+<text text-anchor="middle" x="833.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">QWindow</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M905.31,-448.32C888.15,-439.66 861.55,-426.24 841.75,-416.25"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="843.15,-413.04 832.65,-411.65 840,-419.28 843.15,-413.04"/>
+<path fill="none" stroke="midnightblue" d="M908.2,-448.32C894.32,-439.9 873.01,-426.97 856.7,-417.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="858.13,-413.85 847.76,-411.65 854.5,-419.83 858.13,-413.85"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">

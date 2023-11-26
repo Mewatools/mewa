@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"mxguiaggregation_8h.html":[5,0,0,4,4],
+"mxguiaggregation_8h_source.html":[5,0,0,4,4],
+"mxguirenderer_8cpp.html":[5,0,0,4,5],
 "mxguirenderer_8h.html":[5,0,0,4,6],
 "mxguirenderer_8h_source.html":[5,0,0,4,6],
 "mxiconatlas_8cpp.html":[5,0,0,5,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "struct_mx_generic_static_data.html#ad6311aedff6274a05a19104edf67014c":[4,0,14,3],
 "struct_mx_generic_static_data.html#adbd3532e8d1761be4297de5733583ae9":[4,0,14,2],
 "struct_mx_generic_string_1_1_data.html":[4,0,15,0],
-"struct_mx_generic_string_1_1_data.html#a59aa85f90761714ee405d36a3f70dabf":[4,0,15,0,1],
-"struct_mx_generic_string_1_1_data.html#a70a8467cae3b74dca27489d9d50fc5e3":[4,0,15,0,0],
-"struct_mx_generic_string_1_1_dynamic_data.html":[4,0,15,1],
-"struct_mx_generic_string_1_1_dynamic_data.html#a63c02436cb1b18eec4b7a2f95b38b4b9":[4,0,15,1,0]
+"struct_mx_generic_string_1_1_data.html#a59aa85f90761714ee405d36a3f70dabf":[4,0,15,0,1]
 };

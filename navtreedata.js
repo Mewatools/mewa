@@ -78,8 +78,8 @@ var NAVTREEINDEX =
 "class_mx_gpu_program.html#a1b4cb20d33c2d05695f488dbd5f58c0d",
 "class_mx_quad_draw.html#ab6a3a05e4823dd29c0bd2002b441b485",
 "class_mx_widget.html#a7080ef15eada79a1ce80b1b661226dd8",
-"mxguirenderer_8h.html",
-"struct_mx_icon_draw_1_1_vertex.html"
+"mxguiaggregation_8h.html",
+"struct_mx_generic_string_1_1_data.html#a70a8467cae3b74dca27489d9d50fc5e3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

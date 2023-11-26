@@ -80,7 +80,7 @@ var hierarchy =
       [ "MxLineEdit", "class_mx_line_edit.html", null ],
       [ "MxSpacer", "class_mx_spacer.html", null ]
     ] ],
-    [ "QOpenGLWindow", null, [
+    [ "QWindow", null, [
       [ "QMewaWindow", "class_q_mewa_window.html", null ]
     ] ],
     [ "MxRenderer::ReusableVbo", "struct_mx_renderer_1_1_reusable_vbo.html", null ],
