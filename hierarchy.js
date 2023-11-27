@@ -30,7 +30,6 @@ var hierarchy =
       [ "MxIconProgram", "class_mx_icon_program.html", null ],
       [ "MxVectorProgram", "class_mx_vector_program.html", null ]
     ] ],
-    [ "MxGuiAggregation", "class_mx_gui_aggregation.html", null ],
     [ "MxIconDraw", "class_mx_icon_draw.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
@@ -62,7 +61,6 @@ var hierarchy =
     [ "MxSvgPainter", "class_mx_svg_painter.html", null ],
     [ "MxTextDraw", "class_mx_text_draw.html", null ],
     [ "MxTexture", "class_mx_texture.html", null ],
-    [ "MxUiSettings", "class_mx_ui_settings.html", null ],
     [ "MxVector< N, T >", "class_mx_vector.html", null ],
     [ "MxVector< 2, float >", "class_mx_vector.html", null ],
     [ "MxVector< 2, int >", "class_mx_vector.html", null ],

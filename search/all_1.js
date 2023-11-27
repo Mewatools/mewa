@@ -28,7 +28,7 @@ var searchData=
   ['appendnumber_26',['appendNumber',['../class_mx_generic_string.html#a88010bf49740db4a39cfd681623d50d2',1,'MxGenericString']]],
   ['appendpointer_27',['appendPointer',['../class_mx_generic_string.html#aed2ac5b2445320f88e78d935a3e398bd',1,'MxGenericString']]],
   ['appendtoproundedrect_28',['appendTopRoundedRect',['../class_mx_vector_draw.html#a90279bf3919ab2bd02eae9911e1a189d',1,'MxVectorDraw']]],
-  ['application_29',['application',['../class_mx_gui_aggregation.html#a064c379d2e38df84962c8a81e137cf5a',1,'MxGuiAggregation']]],
+  ['application_29',['application',['../class_mx_widget.html#ab0c5cb58425fad96cfd2420fc2a62d83',1,'MxWidget']]],
   ['array_30',['array',['../struct_mx_list_static_data.html#a703e08fc1c7e34725e5db07d2c7a42bc',1,'MxListStaticData::array()'],['../struct_mx_generic_static_data.html#a07d5d82911b17c227da04f8b34d01d36',1,'MxGenericStaticData::array()'],['../struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d',1,'MxList::Data::array()']]],
   ['ascender_31',['Ascender',['../class_mx_font.html#a50daf076ac87503ad2e17a4168b44ae5a6926c7ff80697c8bd05acd913f4456f5',1,'MxFont']]],
   ['at_32',['at',['../class_mx_list.html#a3eef5cd28348fc9eb6a4678e60272c03',1,'MxList']]]

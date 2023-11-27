@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_mx_vector_draw.html" title="Draw Mewa triangles." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" href="$class_mx_widget.html" title=" " alt="" coords="5,107,84,133"/>
+<area shape="rect" id="node2" href="$class_mx_button.html" title="Base class for buttons." alt="" coords="137,5,214,32"/>
+<area shape="rect" id="node4" href="$class_mx_label.html" title=" " alt="" coords="140,56,211,83"/>
+<area shape="rect" id="node5" href="$class_mx_layout.html" title="The MxLayout class is the base class for layout widgets." alt="" coords="136,107,215,133"/>
+<area shape="rect" id="node7" href="$class_mx_line_edit.html" title="Widget for editing one&#45;line of text." alt="" coords="132,157,219,184"/>
+<area shape="rect" id="node8" href="$class_mx_spacer.html" title=" " alt="" coords="135,208,215,235"/>
+<area shape="rect" id="node3" href="$class_mx_text_button.html" title=" " alt="" coords="273,5,375,32"/>
+<area shape="rect" id="node6" href="$class_mx_linear_layout.html" title="Vertical/Horizontal layout." alt="" coords="267,107,381,133"/>
 </map>

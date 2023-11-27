@@ -1,12 +1,14 @@
 <map id="src/renderer/opengl/iconprogram/mxiconprogram.h" name="src/renderer/opengl/iconprogram/mxiconprogram.h">
-<area shape="rect" id="node1" title=" " alt="" coords="584,5,783,47"/>
-<area shape="rect" id="node2" href="$mxguirenderer_8h.html" title=" " alt="" coords="501,102,657,129"/>
-<area shape="rect" id="node10" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="682,95,895,136"/>
-<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="294,184,470,211"/>
-<area shape="rect" id="node8" href="$mxguirenderer_8cpp.html" title=" " alt="" coords="494,184,665,211"/>
-<area shape="rect" id="node9" href="$mxpainter_8cpp.html" title=" " alt="" coords="689,184,835,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="681,5,880,47"/>
+<area shape="rect" id="node2" href="$mxguirenderer_8h.html" title=" " alt="" coords="599,102,755,129"/>
+<area shape="rect" id="node12" href="$mxiconprogram_8cpp.html" title=" " alt="" coords="779,95,993,136"/>
+<area shape="rect" id="node3" href="$mxapplication_8h.html" title=" " alt="" coords="391,184,567,211"/>
+<area shape="rect" id="node10" href="$mxguirenderer_8cpp.html" title=" " alt="" coords="591,184,762,211"/>
+<area shape="rect" id="node11" href="$mxpainter_8cpp.html" title=" " alt="" coords="787,184,932,211"/>
 <area shape="rect" id="node4" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,259,196,285"/>
-<area shape="rect" id="node5" href="$mxguiaggregation_8cpp.html" title=" " alt="" coords="220,259,411,285"/>
-<area shape="rect" id="node6" href="$qmewawindow_8cpp.html" title=" " alt="" coords="409,333,629,360"/>
-<area shape="rect" id="node7" href="$qmewawindow_8h.html" title=" " alt="" coords="487,259,693,285"/>
+<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="195,333,415,360"/>
+<area shape="rect" id="node6" href="$qmewawindow_8h.html" title=" " alt="" coords="272,259,479,285"/>
+<area shape="rect" id="node7" href="$mxlabel_8cpp.html" title=" " alt="" coords="503,259,664,285"/>
+<area shape="rect" id="node8" href="$mxlineedit_8cpp.html" title=" " alt="" coords="688,259,863,285"/>
+<area shape="rect" id="node9" href="$mxtextbutton_8cpp.html" title=" " alt="" coords="887,259,1077,285"/>
 </map>

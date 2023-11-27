@@ -7,10 +7,6 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "mxbuffer.h", "mxbuffer_8h.html", [
       [ "MxBuffer", "class_mx_buffer.html", "class_mx_buffer" ]
     ] ],
-    [ "mxguiaggregation.cpp", "mxguiaggregation_8cpp.html", null ],
-    [ "mxguiaggregation.h", "mxguiaggregation_8h.html", [
-      [ "MxGuiAggregation", "class_mx_gui_aggregation.html", "class_mx_gui_aggregation" ]
-    ] ],
     [ "mxguirenderer.cpp", "mxguirenderer_8cpp.html", null ],
     [ "mxguirenderer.h", "mxguirenderer_8h.html", [
       [ "MxGuiRenderer", "class_mx_gui_renderer.html", "class_mx_gui_renderer" ]

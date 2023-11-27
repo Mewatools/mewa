@@ -1,10 +1,12 @@
 <map id="src/gui/mxguirenderer.h" name="src/gui/mxguirenderer.h">
-<area shape="rect" id="node1" title=" " alt="" coords="501,5,657,32"/>
-<area shape="rect" id="node2" href="$mxapplication_8h.html" title=" " alt="" coords="294,80,470,107"/>
-<area shape="rect" id="node7" href="$mxguirenderer_8cpp.html" title=" " alt="" coords="494,80,665,107"/>
-<area shape="rect" id="node8" href="$mxpainter_8cpp.html" title=" " alt="" coords="689,80,835,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="599,5,755,32"/>
+<area shape="rect" id="node2" href="$mxapplication_8h.html" title=" " alt="" coords="391,80,567,107"/>
+<area shape="rect" id="node9" href="$mxguirenderer_8cpp.html" title=" " alt="" coords="591,80,762,107"/>
+<area shape="rect" id="node10" href="$mxpainter_8cpp.html" title=" " alt="" coords="787,80,932,107"/>
 <area shape="rect" id="node3" href="$mxapplication_8cpp.html" title=" " alt="" coords="5,155,196,181"/>
-<area shape="rect" id="node4" href="$mxguiaggregation_8cpp.html" title=" " alt="" coords="220,155,411,181"/>
-<area shape="rect" id="node5" href="$qmewawindow_8cpp.html" title=" " alt="" coords="409,229,629,256"/>
-<area shape="rect" id="node6" href="$qmewawindow_8h.html" title=" " alt="" coords="487,155,693,181"/>
+<area shape="rect" id="node4" href="$qmewawindow_8cpp.html" title=" " alt="" coords="195,229,415,256"/>
+<area shape="rect" id="node5" href="$qmewawindow_8h.html" title=" " alt="" coords="272,155,479,181"/>
+<area shape="rect" id="node6" href="$mxlabel_8cpp.html" title=" " alt="" coords="503,155,664,181"/>
+<area shape="rect" id="node7" href="$mxlineedit_8cpp.html" title=" " alt="" coords="688,155,863,181"/>
+<area shape="rect" id="node8" href="$mxtextbutton_8cpp.html" title=" " alt="" coords="887,155,1077,181"/>
 </map>

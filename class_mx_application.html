@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('class_mx_application.html',''); initRe
 <div class="dynheader">
 Collaboration diagram for MxApplication:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_application__coll__graph.svg" width="1802" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mx_application__coll__graph.svg" width="1971" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -149,13 +149,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a61826fe709ff4daa1da8051207080632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33966db670df8738c240449e7f120e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#ae33966db670df8738c240449e7f120e0">isRedrawNeeded</a> ()</td></tr>
 <tr class="separator:ae33966db670df8738c240449e7f120e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa963cd85337715d43dc655469d763bf2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#aa963cd85337715d43dc655469d763bf2">pixelRatio</a> () const</td></tr>
+<tr class="separator:aa963cd85337715d43dc655469d763bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a19e7dd9bf7a38e3aa96f6a431316994b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gui_renderer.html">MxGuiRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a19e7dd9bf7a38e3aa96f6a431316994b">pRenderer</a></td></tr>
 <tr class="separator:a19e7dd9bf7a38e3aa96f6a431316994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadae5fc3bafb78a146e8f75ba3c6f415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_gui_aggregation.html">MxGuiAggregation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#aadae5fc3bafb78a146e8f75ba3c6f415">pGuiAggregation</a></td></tr>
-<tr class="separator:aadae5fc3bafb78a146e8f75ba3c6f415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf958607f428b0ae3ec9a17d8409b6f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_widget.html">MxWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4">pWidget</a></td></tr>
 <tr class="separator:adf958607f428b0ae3ec9a17d8409b6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf4ffb6cf061185c7a8c3da7ce174fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_painter.html">MxPainter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb">pPainterBuffer</a></td></tr>
@@ -477,6 +477,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa963cd85337715d43dc655469d763bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa963cd85337715d43dc655469d763bf2">&#9670;&nbsp;</a></span>pixelRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MxApplication::pixelRatio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns 1 on desktop, higher values on mobile devices </p>
+
+</div>
+</div>
 <a id="a61826fe709ff4daa1da8051207080632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61826fe709ff4daa1da8051207080632">&#9670;&nbsp;</a></span>requestRedraw()</h2>
 
@@ -513,20 +531,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aadae5fc3bafb78a146e8f75ba3c6f415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadae5fc3bafb78a146e8f75ba3c6f415">&#9670;&nbsp;</a></span>pGuiAggregation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mx_gui_aggregation.html">MxGuiAggregation</a> MxApplication::pGuiAggregation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9bf4ffb6cf061185c7a8c3da7ce174fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bf4ffb6cf061185c7a8c3da7ce174fb">&#9670;&nbsp;</a></span>pPainterBuffer</h2>
 

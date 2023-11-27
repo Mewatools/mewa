@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_798',['Data',['../struct_mx_generic_string_1_1_data.html',1,'MxGenericString&lt; T &gt;::Data'],['../struct_mx_list_1_1_data.html',1,'MxList&lt; T, Initializer, Prealloc &gt;::Data']]],
-  ['downarrowsvg_799',['DownArrowSvg',['../class_down_arrow_svg.html',1,'']]],
-  ['dynamicdata_800',['DynamicData',['../struct_mx_generic_string_1_1_dynamic_data.html',1,'MxGenericString']]]
+  ['data_789',['Data',['../struct_mx_generic_string_1_1_data.html',1,'MxGenericString&lt; T &gt;::Data'],['../struct_mx_list_1_1_data.html',1,'MxList&lt; T, Initializer, Prealloc &gt;::Data']]],
+  ['downarrowsvg_790',['DownArrowSvg',['../class_down_arrow_svg.html',1,'']]],
+  ['dynamicdata_791',['DynamicData',['../struct_mx_generic_string_1_1_dynamic_data.html',1,'MxGenericString']]]
 ];

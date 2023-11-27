@@ -11,9 +11,9 @@ var class_mx_application =
     [ "onMouseRelease", "class_mx_application.html#a73db6725797f874602cb9a0008b9e4ef", null ],
     [ "onRender", "class_mx_application.html#a9a56fc9a6e85643e29f677ce34ca1a3d", null ],
     [ "onResizeWindow", "class_mx_application.html#aa727ae2139a0f47230700ec5d7a8ecf8", null ],
+    [ "pixelRatio", "class_mx_application.html#aa963cd85337715d43dc655469d763bf2", null ],
     [ "requestRedraw", "class_mx_application.html#a61826fe709ff4daa1da8051207080632", null ],
     [ "setMainWidget", "class_mx_application.html#a44e571943a9edfe713d3d0f6e5b31eca", null ],
-    [ "pGuiAggregation", "class_mx_application.html#aadae5fc3bafb78a146e8f75ba3c6f415", null ],
     [ "pPainterBuffer", "class_mx_application.html#a9bf4ffb6cf061185c7a8c3da7ce174fb", null ],
     [ "pRenderer", "class_mx_application.html#a19e7dd9bf7a38e3aa96f6a431316994b", null ],
     [ "pWidget", "class_mx_application.html#adf958607f428b0ae3ec9a17d8409b6f4", null ]

@@ -9,6 +9,7 @@ var class_mx_widget =
     ] ],
     [ "MxWidget", "class_mx_widget.html#a28ed6f3b8aefad0d17c59d5ac3d5fc79", null ],
     [ "~MxWidget", "class_mx_widget.html#a69050977778d33ad82abae9e3ff06a44", null ],
+    [ "application", "class_mx_widget.html#ab0c5cb58425fad96cfd2420fc2a62d83", null ],
     [ "childNeedsUpdate", "class_mx_widget.html#a3dc697dd8945d95b34d423be5dbea0b1", null ],
     [ "collectDirtyWidgets", "class_mx_widget.html#a17b4d360bb59817096b6de3e401ae2cc", null ],
     [ "dirtyCollidingWidgets", "class_mx_widget.html#aa65ba5e8dd5592d941ed4788fda24c74", null ],
@@ -40,12 +41,11 @@ var class_mx_widget =
     [ "sizeChanged", "class_mx_widget.html#afd4f28ebc22f1bf44de740fa6a174a7b", null ],
     [ "sizePolicy", "class_mx_widget.html#afdb2c091e26770dd5ffd5b2a3b1c684e", null ],
     [ "textInputEvent", "class_mx_widget.html#abb60df42de6a79a4bdc0e32d510d4f99", null ],
-    [ "uiSettings", "class_mx_widget.html#a3c8563c64e6df50cd454343603fdd480", null ],
     [ "update", "class_mx_widget.html#a4c69ab1d6dec1a6f29eb32520b6ca281", null ],
     [ "wheelEvent", "class_mx_widget.html#a711abb7f532e1fdad51fcfaeb01f4228", null ],
     [ "pAttributes", "class_mx_widget.html#a11bee64f3ac925d291de9686ad40aac2", null ],
     [ "pParent", "class_mx_widget.html#a0df85d170164cc287e1757ce22540f7d", null ],
     [ "pPos", "class_mx_widget.html#ab7e1eacee403698b531d54bc1ed889f7", null ],
     [ "pSize", "class_mx_widget.html#a98eb67160efeffc5e43782c8f5be4a72", null ],
-    [ "sUiSettings", "class_mx_widget.html#a41390e0e4ea57ac804de28aa6abefc9c", null ]
+    [ "sApplication", "class_mx_widget.html#a9ba941101c4d24500a72e56fde9639ae", null ]
 ];
