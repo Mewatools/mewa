@@ -7,7 +7,7 @@
 
 #include "qmewawindow.h"
 #include "mxapplication.h"
-
+#include "mxwidget.h"
 
 
 
@@ -28,7 +28,7 @@ QMewaWindow::~QMewaWindow()
 
 void QMewaWindow::initialize()
 {
-    MxApplication *app = MxGuiAggregation::instance()->application();
+    MxApplication *app = MxWidget::application();
     app->initialize();
     pIconAtlas.loadGL( app->pRenderer );
 }
@@ -36,27 +36,27 @@ void QMewaWindow::initialize()
 void QMewaWindow::mousePressEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxGuiAggregation::instance()->application()->onMousePress(p.x(), p.y(), event->button(), event->modifiers() | event->buttons() );
+    MxWidget::application()->onMousePress(p.x(), p.y(), event->button(), event->modifiers() | event->buttons() );
     requestUpdate();
 }
 
 void QMewaWindow::mouseMoveEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxGuiAggregation::instance()->application()->onMouseMove(p.x(), p.y(), event->modifiers() | event->buttons() );
+    MxWidget::application()->onMouseMove(p.x(), p.y(), event->modifiers() | event->buttons() );
     requestUpdate();
 }
 
 void QMewaWindow::mouseReleaseEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    MxGuiAggregation::instance()->application()->onMouseRelease(p.x(), p.y());
+    MxWidget::application()->onMouseRelease(p.x(), p.y());
     requestUpdate();
 }
 
 void QMewaWindow::setMainWidget( MxWidget *widget )
 {
-    MxGuiAggregation::instance()->application()->setMainWidget( widget );
+    MxWidget::application()->setMainWidget( widget );
 }
 
 void QMewaWindow::setIcon( MxThemeIcons::IconName name, const char *imageFileName )
@@ -76,7 +76,7 @@ bool QMewaWindow::event(QEvent *event)
     {
         QResizeEvent *resizeEvent = dynamic_cast<QResizeEvent*>(event);
         const QSize &newSize = resizeEvent->size();
-        MxGuiAggregation::instance()->application()->onResizeWindow( newSize.width(), newSize.height() );
+        MxWidget::application()->onResizeWindow( newSize.width(), newSize.height() );
         renderNow();
         return true;
     }
@@ -93,7 +93,6 @@ void QMewaWindow::exposeEvent(QExposeEvent *event)
     Q_UNUSED(event);
 
     if (isExposed()) {
-
         renderNow();
     }
 }
@@ -116,13 +115,12 @@ void QMewaWindow::renderNow()
     m_context->makeCurrent(this);
 
     if (needsInitialize) {
-        MxApplication *app = MxGuiAggregation::instance()->application();
+        MxApplication *app = MxWidget::application();
         app->pRenderer.initializeOpenGLFunctions();
-        //m_renderer.initializeOpenGLFunctions();
         initialize();
     }
 
-    MxGuiAggregation::instance()->application()->onRender();
+    MxWidget::application()->onRender();
 
     m_context->swapBuffers(this);
 

@@ -10,7 +10,6 @@
 #include "mxguirenderer.h"
 #include "mxmouseevent.h"
 #include "mxpainter.h"
-#include "mxguiaggregation.h"
 
 
 
@@ -47,10 +46,10 @@ public:
     MxWidget* mainWidget();
     void requestRedraw();
     virtual bool isRedrawNeeded();
+    float pixelRatio() const;
 
 
     MxGuiRenderer pRenderer;
-    MxGuiAggregation pGuiAggregation;
     MxWidget *pWidget;
     MxPainter pPainterBuffer;
 private:

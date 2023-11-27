@@ -36,13 +36,12 @@ void MxIconProgram::compile()
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
 
     const char *vsrc =
-            "#version 300 es\n"
-            "layout(location = 0) in vec4 vertex;\n"
-            "layout(location = 1) in vec4 texcoord;\n"
-            "layout(location = 2) in  vec4 color;\n"
+            "attribute vec4 vertex;\n"
+            "attribute vec4 texcoord;\n"
+            "attribute vec4 color;\n"
             "uniform mat4 matrix;\n"
-            "out vec4 vTexCoord;\n"
-            "out  vec4 vColor;\n"
+            "varying vec4 vTexCoord;\n"
+            "varying vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
             "    gl_Position = matrix * vertex;\n"
@@ -59,25 +58,30 @@ void MxIconProgram::compile()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc =
-        #ifdef QX_OPENGL_ES_3
+        #ifdef MX_OPENGL_ES
             "precision mediump float;\n"
-        #else
-            "#version 300 es\n"
         #endif
             "uniform sampler2D tex;\n"
-            "in highp  vec4 vTexCoord;\n"
-            "in highp  vec4 vColor;\n"
-            "out highp vec4 fragColor;\n"
+            "varying vec4 vTexCoord;\n"
+            "varying vec4 vColor;\n"
             "void main(void)\n"
             "{\n"
-            "    vec4 pixel = texture(tex, vTexCoord.st);\n"
-            "    fragColor = pixel * vColor;\n"
+            "    vec4 pixel = texture2D(tex, vTexCoord.st);\n"
+            "    gl_FragColor = pixel * vColor;\n"
             "}\n";
 
     pRenderer->glShaderSource(fshader, 1, &fsrc, NULL);
     pRenderer->glCompileShader(fshader);
     pRenderer->glGetShaderiv(fshader, GL_COMPILE_STATUS, &compiled);
     qDebug("MxIconProgram fragment shader compiled: %d\n", compiled);
+    if( ! compiled )
+      {
+          char str[90];
+          GLsizei str_length = 0;
+          pRenderer->glGetShaderInfoLog(fshader,90, &str_length, str);
+          //qDebug() << str;
+          qDebug("glGetProgramInfoLog: %s", str);
+      }
 
 
     mProgramId = pRenderer->glCreateProgram();
@@ -94,9 +98,9 @@ void MxIconProgram::compile()
       {
           char str[90];
           GLsizei str_length = 0;
-          glGetProgramInfoLog(pProgram,90, &str_length, str);
+          pRenderer->glGetProgramInfoLog(mProgramId,90, &str_length, str);
           //qDebug() << str;
-          LOGI("glGetProgramInfoLog: %s", str);
+          qDebug("glGetProgramInfoLog: %s", str);
       }*/
 
 

@@ -3,7 +3,7 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "mxlabel.h"
-#include "mxguiaggregation.h"
+#include "mxapplication.h"
 #include "mxfillbackgroundinterface.h"
 
 MxLabel::MxLabel()
@@ -30,7 +30,7 @@ void MxLabel::setAlignment( int alignmentFlags )
 
 MxVector2F MxLabel::sizePolicy()
 {
-    const MxFont *f = MxGuiAggregation::instance()->font();
+    const MxFont *f = MxWidget::application()->pPainterBuffer.font();
     float h = f->metric(MxFont::Height);
     float w = 1.0f;
     if( ! pText.isNull() ) {

@@ -16,7 +16,7 @@ class MxPainter;
 class MxRenderer;
 class MxMouseEvent;
 class MxWheelEvent;
-class MxUiSettings;
+class MxApplication;
 
 
 class MxWidget
@@ -101,16 +101,17 @@ public:
     virtual void childNeedsUpdate();
 
     const MxVector4UC& parentBackgroundColor();
-    MxUiSettings& uiSettings();
+
+    static MxApplication* application();
 
 
 
-    static MxUiSettings *sUiSettings;
     MxWidget *pParent;
     int pAttributes;
     MxVector2F pSize;
     MxVector2F pPos;
 
+    static MxApplication *sApplication;
 };
 
 

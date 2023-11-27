@@ -11,6 +11,14 @@ typedef unsigned int GLenum;
 typedef int GLint;
 typedef unsigned int GLuint;
 typedef float GLfloat;
+typedef signed long int GLsizeiptr;
+typedef signed long int GLintptr;
+
+
+
+#define 	GL_LINE_LOOP   0x0002
+#define 	GL_LINE_STRIP   0x0003
+#define 	GL_TRIANGLE_FAN   0x0006
 
 
 // taken from https://www.khronos.org/registry/OpenGL/api/GL/glext.h

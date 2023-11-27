@@ -4,7 +4,6 @@ INCLUDEPATH += $$PWD
 
 
 SOURCES += $$PWD/mxbuffer.cpp \
-           $$PWD/mxguiaggregation.cpp \
            $$PWD/mxpainter.cpp \
            $$PWD/mxguirenderer.cpp \
            $$PWD/mxquaddraw.cpp \
@@ -16,7 +15,6 @@ SOURCES += $$PWD/mxbuffer.cpp \
 
 HEADERS += $$PWD/mxguirenderer.h \
            $$PWD/mxbuffer.h \
-           $$PWD/mxguiaggregation.h \
            $$PWD/mxorthotransform.h \
            $$PWD/mxpainter.h \
            $$PWD/mxquaddraw.h \

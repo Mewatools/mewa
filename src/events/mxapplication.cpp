@@ -10,6 +10,8 @@
 
 MxApplication::MxApplication()
 {
+    MxWidget::sApplication = this;
+
     pRedrawRequested = false;
     pWidgetInFocus = NULL;
     pPainterBuffer.initArrays();
@@ -24,10 +26,7 @@ MxApplication::~MxApplication()
 
 void MxApplication::init( MxAbstractAtlas *atlas )
 {
-    pGuiAggregation.pIconAtlas = atlas;
-    pGuiAggregation.pApplication = this;
     pRenderer.pIconAtlas = atlas;
-    MxGuiAggregation::sAggregation = &(pGuiAggregation);
 }
 
 void MxApplication::initialize()
@@ -175,7 +174,11 @@ bool MxApplication::isRedrawNeeded()
     return pRedrawRequested;
 }
 
-
+/*! Returns 1 on desktop, higher values on mobile devices */
+float MxApplication::pixelRatio() const
+{
+    return 1.0f;
+}
 
 
 

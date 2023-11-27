@@ -7,7 +7,7 @@
 #include "mxfont.h"
 #include "mxmouseevent.h"
 #include "mxeventhandler.h"
-#include "mxguiaggregation.h"
+#include "mxapplication.h"
 #include "mxthemecolors.h"
 
 
@@ -27,7 +27,7 @@ void MxTextButton::setText( const MxString &text )
 
 MxVector2F MxTextButton::sizePolicy()
 {
-    const MxFont *f = MxGuiAggregation::instance()->font();
+    const MxFont *f = MxWidget::application()->pPainterBuffer.font();
 
     float w = f->width( pText );
     // height of the buttons depend on the size of the text

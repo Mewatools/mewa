@@ -6,7 +6,7 @@
 #include "mxmouseevent.h"
 #include "mxfont.h"
 #include "mxeventhandler.h"
-#include "mxguiaggregation.h"
+#include "mxapplication.h"
 #include "mxpainter.h"
 #include "mxthemecolors.h"
 
@@ -84,7 +84,7 @@ widget can grow above its minimum size. The minimum size is the absolute value.
 MxVector2F MxLineEdit::sizePolicy()
 {
 // minimum width enough for 20 characters
-    const MxFont *f = MxGuiAggregation::instance()->font();
+    const MxFont *f = MxWidget::application()->pPainterBuffer.font();
     float w = 20 * f->metric( MxFont::SpaceAdvance );
     float h = f->metric( MxFont::Height );
     MxVector2F policy(-w, h + 6.0f);
@@ -166,7 +166,7 @@ void MxLineEdit::updateCursorPosArray()
         pGlyphPositions.reserve(count+1);
         pGlyphPositions.resize(count+1);
 
-         const MxFont *f = MxGuiAggregation::instance()->font();
+         const MxFont *f = MxWidget::application()->pPainterBuffer.font();
         float currX = MXLINEEDIT_BORDER_LEFT;
         for(int i=0; i<count; ++i)
         {
