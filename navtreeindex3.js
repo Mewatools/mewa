@@ -34,8 +34,8 @@ var NAVTREEINDEX3 =
 "class_q_mewa_window.html#af6c23c79d4511636d9a34a73e4c47eef":[4,0,51,6],
 "classes.html":[4,1],
 "contrib_page.html":[1],
-"contrib_page.html#autotoc_md4":[1,0],
-"contrib_page.html#autotoc_md5":[1,1],
+"contrib_page.html#autotoc_md6":[1,0],
+"contrib_page.html#autotoc_md7":[1,1],
 "dir_0abdee562046be6f5823d1ca8c3fd13c.html":[5,0,0,10],
 "dir_0b61c55142250c0cc363383afd8075a4.html":[5,0,0,0],
 "dir_14e1e259e8275dc0c459acef3bbf05ae.html":[5,0,0,1],
@@ -142,7 +142,9 @@ var NAVTREEINDEX3 =
 "index.html#autotoc_md0":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md2":[0,1],
-"index.html#autotoc_md3":[0,2],
+"index.html#autotoc_md3":[0,1,0],
+"index.html#autotoc_md4":[0,1,1],
+"index.html#autotoc_md5":[0,1,2],
 "linux_2mxdebug_8h.html":[5,0,0,7,0,0],
 "linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514":[5,0,0,7,0,0,2],
 "linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c":[5,0,0,7,0,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "mxicondraw_8h_source.html":[5,0,0,4,6],
 "mxiconprogram_8cpp.html":[5,0,0,8,0,1,0],
 "mxiconprogram_8h.html":[5,0,0,8,0,1,1],
-"mxiconprogram_8h_source.html":[5,0,0,8,0,1,1],
-"mximage_8cpp.html":[5,0,0,6,0],
-"mximage_8h.html":[5,0,0,6,1]
+"mxiconprogram_8h_source.html":[5,0,0,8,0,1,1]
 };
