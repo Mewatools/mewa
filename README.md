@@ -6,9 +6,30 @@
 
 # What is Mewa
 
-Mewa is a framework used to create software solutions dedicated to simplifying the chaotic world of motion graphics for artists.
+It's a software framework built on C++ and OpenGL, providing high performance on desktop and mobile. 
 
-## Vector based Animations
+The framework includes reusable classes that form the foundation of Mewa applications.
+
+## Framework
+
+Mewa source is organized into modules so that each module can be tested and developed independently from the whole application.
+Each module can be worked on as a self contained Qt application. Current modules and respective Qt application are as follows:
+
+| Module | Location | Notes |
+|--------|----------| ----- |
+| Simple Widget | [solutions/simplewidget](solutions/simplewidget) | Basic widget using Mewa Framework |
+| Color Wheel | [src/renderer/opengl/colorwheelprogram/test_colorwheel](src/renderer/opengl/colorwheelprogram/test_colorwheel) | N/A |
+| Store Window | [solutions/storewindow/test_storebuttons](solutions/storewindow/test_storebuttons) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
+| Roto Node Tree View | [solutions/rotonode/test_rototreeview](solutions/rotonode/test_rototreeview) | Tree view showing the hierarchy of shapes |
+
+To know more about the Mewa framework check the [developers page](https://mewatools.github.io/mewa/).
+
+
+## Applications
+
+Mewa applications are designed to simplify motion graphics for artists.
+
+### Vector based Animations
 
 With CSS dn SVG animations becoming more common through websites and mobile apps, the need for smoother and richer animations keeps growing.
 
@@ -24,9 +45,9 @@ Mewa Animations offer:
 - javascript API : for programmable user interaction (something XML and JSON do not)
 - Portable across mobile, desktop and web
 
-![mewa-draw-singleapp](https://user-images.githubusercontent.com/8775959/189542488-ed60a32b-fcdf-473b-b77b-3ac0d48d7a4d.png)
+[![video showing how to create a shape animation](https://img.youtube.com/vi/PUa01c3YIYY/0.jpg)](https://www.youtube.com/watch?v=PUa01c3YIYY)
 
-## Video compositing
+### Video compositing
 
 With an underlying node-graph interface, Mewa aims to offer compositing capabilities with:
 
@@ -38,17 +59,12 @@ With an underlying node-graph interface, Mewa aims to offer compositing capabili
   - Guaranteed UI responsiveness
   - Easier extensibility and customizability
 
+[![video showing compositing app](https://img.youtube.com/vi/re_owHkXqW0/0.jpg)](https://www.youtube.com/watch?v=re_owHkXqW0)
+
+### Other Screenshots
+
+![mewa-draw-singleapp](https://user-images.githubusercontent.com/8775959/189542488-ed60a32b-fcdf-473b-b77b-3ac0d48d7a4d.png)
+
 ![mewa-draw-nodegraph](https://user-images.githubusercontent.com/8775959/189543145-f6ebf97f-510e-41a7-b9e7-daa0a0cb4c3a.png)
-
-
-## Mewa Framework
-
-Mewa framework is a C++ OpenGL based UI framework designed from ground-up to deliver higher performance applications across desktop and mobile devices.
-
-It holds a whole collection of reusable classes on which the Mewa application is built on.
-
-To know more about the Mewa framework check the [developers page](https://mewatools.github.io/mewa/).
-
-
 
 
