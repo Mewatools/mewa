@@ -17,10 +17,10 @@ Each module can be worked on as a self contained Qt application. Current modules
 
 | Module | Location | Notes |
 |--------|----------| ----- |
-| Simple Widget | [solutions/simplewidget](solutions/simplewidget) | Basic widget using Mewa Framework |
-| Color Wheel | [src/renderer/opengl/colorwheelprogram/test_colorwheel](src/renderer/opengl/colorwheelprogram/test_colorwheel) | N/A |
-| Store Window | [solutions/storewindow/test_storebuttons](solutions/storewindow/test_storebuttons) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
-| Roto Node Tree View | [solutions/rotonode/test_rototreeview](solutions/rotonode/test_rototreeview) | Tree view showing the hierarchy of shapes |
+| Simple Widget | [simplewidget.pro](solutions/simplewidget/simplewidget.pro) | Basic widget using Mewa Framework |
+| Color Wheel | [colorselector.pro](src/renderer/opengl/colorwheelprogram/test_colorwheel/colorselector.pro) | N/A |
+| Store Window | [test_storebuttons.pro](solutions/storewindow/test_storebuttons/test_storebuttons.pro) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [mxstoreview.cpp](solutions/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
+| Roto Node Tree View | [test_rototreeview.pro](solutions/rotonode/test_rototreeview/test_rototreeview.pro) | Tree view showing the hierarchy of shapes |
 
 To know more about the Mewa framework check the [developers page](https://mewatools.github.io/mewa/).
 
@@ -59,7 +59,7 @@ With an underlying node-graph interface, Mewa aims to offer compositing capabili
   - Guaranteed UI responsiveness
   - Easier extensibility and customizability
 
-[![video showing compositing app](https://img.youtube.com/vi/re_owHkXqW0/0.jpg)](https://www.youtube.com/watch?v=re_owHkXqW0)
+[![video showing compositing app](https://img.youtube.com/vi/re_owHkXqW0/1.jpg)](https://www.youtube.com/watch?v=re_owHkXqW0)
 
 ### Other Screenshots
 
