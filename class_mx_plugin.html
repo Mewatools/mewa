@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cd6094e7e69f7e8d5307973568b5e47"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_plugin.html#a8cd6094e7e69f7e8d5307973568b5e47">getOpacity</a> (float time) const =0</td></tr>
 <tr class="separator:a8cd6094e7e69f7e8d5307973568b5e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c299ee2f8dcc6b02427d99ae5fa0d6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_plugin.html#a14c299ee2f8dcc6b02427d99ae5fa0d6">render</a> (<a class="el" href="class_mx_renderer.html">MxRenderer</a> &amp;renderer, const <a class="el" href="class_mx_inputs.html">MxInputs</a> &amp;inputs)=0</td></tr>
-<tr class="memdesc:a14c299ee2f8dcc6b02427d99ae5fa0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">render  <a href="class_mx_plugin.html#a14c299ee2f8dcc6b02427d99ae5fa0d6">More...</a><br /></td></tr>
+<tr class="memdesc:a14c299ee2f8dcc6b02427d99ae5fa0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">renders the plugin output  <a href="class_mx_plugin.html#a14c299ee2f8dcc6b02427d99ae5fa0d6">More...</a><br /></td></tr>
 <tr class="separator:a14c299ee2f8dcc6b02427d99ae5fa0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -293,33 +293,24 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>render </p>
+<p>renders the plugin output </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">renderer</td><td></td></tr>
-    <tr><td class="paramname">inputs</td><td>Shaders are compiled in initialize() function. <div class="fragment"><div class="line"><span class="keywordflow">if</span>( ! pProgram.isInitialized() )</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordtype">bool</span> ok = pProgram.initialize(&amp;renderer);</div>
-<div class="line">    <span class="keywordflow">if</span>( !ok )</div>
-<div class="line">    {</div>
-<div class="line">        <a class="code" href="linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c">qDebug</a>(<span class="stringliteral">&quot;shader compilation failed&quot;</span>);</div>
-<div class="line">        <span class="keywordflow">return</span>;</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line">renderer.setProgram(&amp;pProgram);</div>
-<div class="ttc" id="alinux_2mxdebug_8h_html_a6302269a60af155d118361dc6d86fd2c"><div class="ttname"><a href="linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c">qDebug</a></div><div class="ttdeci">#define qDebug</div><div class="ttdef"><b>Definition:</b> mxdebug.h:14</div></div>
-</div><!-- fragment --></td></tr>
+    <tr><td class="paramname">renderer</td><td>Rendering functions </td></tr>
+    <tr><td class="paramname">inputs</td><td>Input data needed to render the plugin output</td></tr>
   </table>
   </dd>
 </dl>
-<p><a class="el" href="class_mx_renderer.html#a3aa04adbb7b6a2d11b4492a473eaccd9">MxRenderer::setProgram()</a> calls initialize(). In that case check if shaders were compiled after setProgram().</p>
+<p>Shaders are compiled in the initialize() function.</p>
+<p><a class="el" href="class_mx_renderer.html#a3aa04adbb7b6a2d11b4492a473eaccd9">MxRenderer::setProgram()</a> calls initialize(), but the initialize() can be called before <a class="el" href="class_mx_renderer.html#a3aa04adbb7b6a2d11b4492a473eaccd9">MxRenderer::setProgram()</a>.</p>
+<p>Use <a class="el" href="class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8">MxGpuProgram::isInitialized()</a> to check if a shader was compiled successfully after setProgram().</p>
 <div class="fragment"><div class="line">renderer.setProgram(&amp;pProgram);</div>
 <div class="line"><span class="keywordflow">if</span>( ! pProgram.isInitialized() )</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c">qDebug</a>(<span class="stringliteral">&quot;shader compilation failed&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">}</div>
+<div class="ttc" id="alinux_2mxdebug_8h_html_a6302269a60af155d118361dc6d86fd2c"><div class="ttname"><a href="linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c">qDebug</a></div><div class="ttdeci">#define qDebug</div><div class="ttdef"><b>Definition:</b> mxdebug.h:14</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
