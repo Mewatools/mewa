@@ -1,10 +1,10 @@
 <map id="src/renderer/opengl/colorwheelprogram/mxcolorwheelprogram.h" name="src/renderer/opengl/colorwheelprogram/mxcolorwheelprogram.h">
-<area shape="rect" id="node1" title=" " alt="" coords="10,5,285,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="93,244,177,271"/>
-<area shape="rect" id="node3" href="$mxgpuprogram_8h.html" title=" " alt="" coords="26,95,143,121"/>
-<area shape="rect" id="node5" href="$mxmatrix_8h.html" title=" " alt="" coords="168,95,252,121"/>
-<area shape="rect" id="node6" href="$mxrect_8h.html" title=" " alt="" coords="276,95,347,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="92,169,179,196"/>
-<area shape="rect" id="node7" href="$mxvector_8h.html" title=" " alt="" coords="254,169,339,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="363,169,438,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,280,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="151,244,235,271"/>
+<area shape="rect" id="node3" href="$mxgpuprogram_8h.html" title=" " alt="" coords="21,95,139,121"/>
+<area shape="rect" id="node5" href="$mxmatrix_8h.html" title=" " alt="" coords="163,95,247,121"/>
+<area shape="rect" id="node6" href="$mxrect_8h.html" title=" " alt="" coords="271,95,342,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="37,169,123,196"/>
+<area shape="rect" id="node7" href="$mxvector_8h.html" title=" " alt="" coords="231,169,316,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="340,169,415,196"/>
 </map>

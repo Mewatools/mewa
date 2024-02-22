@@ -1,8 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f":[5,0,0,3,1,1],
-"mxgeometryutils_8h.html#ab64770cf6e25313ece2eb3cecf711892":[5,0,0,3,1,13],
-"mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b":[5,0,0,3,1,15],
 "mxgeometryutils_8h.html#ad299d94d41d1401a7bb9e10c3f557bce":[5,0,0,3,1,10],
 "mxgeometryutils_8h.html#adc0c3d3dd6d6ebb92e9b77c805761314":[5,0,0,3,1,12],
 "mxgeometryutils_8h.html#ae164a97bc449bcfa397ea2e8bba48441":[5,0,0,3,1,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX4 =
 "starter_page.html":[2],
 "starter_page.html#autotoc_md8":[2,0],
 "struct_mx_class_initializer.html":[4,0,8],
-"struct_mx_class_initializer.html#a004d27778df2131915a99c7942491c30":[4,0,8,2]
+"struct_mx_class_initializer.html#a004d27778df2131915a99c7942491c30":[4,0,8,2],
+"struct_mx_class_initializer.html#a3cb46a648eebf3e418e8f7bcac29d30d":[4,0,8,0],
+"struct_mx_class_initializer.html#a86028f8f469a405f6ca92daba96874b0":[4,0,8,4],
+"struct_mx_class_initializer.html#a97c319d5a7b95a1ab4c61d9bbb58526d":[4,0,8,1]
 };

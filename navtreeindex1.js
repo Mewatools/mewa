@@ -1,8 +1,6 @@
 var NAVTREEINDEX1 =
 {
-"class_mx_gpu_program.html#a1b4cb20d33c2d05695f488dbd5f58c0d":[4,0,18,1],
-"class_mx_gpu_program.html#a26c014ae9bee51fc1b9929243979d4b9":[4,0,18,12],
-"class_mx_gpu_program.html#a281143d51c5e3662a9f1c0524b35fbae":[4,0,18,2],
+"class_mx_gpu_program.html#a2929723013c20404e70fdbc54600544a":[4,0,18,1],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7":[4,0,18,0],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a1393a0b167aca3793587b41f7ff7cfed":[4,0,18,0,1],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a1f3161b0ca3bae6fc2c0fef5a82ea8cf":[4,0,18,0,4],
@@ -13,11 +11,11 @@ var NAVTREEINDEX1 =
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7aa27f90beb51a386baaf69414c66af15e":[4,0,18,0,6],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7ae03ddbf157d3d30082632d21d59f8f20":[4,0,18,0,3],
 "class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7af9ac3016d1c15f3508443750fd9558ec":[4,0,18,0,0],
-"class_mx_gpu_program.html#aa6557f7db6e2f76e7b793cf124cc1dfb":[4,0,18,7],
-"class_mx_gpu_program.html#ab0824743c8509c9a990631553b2e2976":[4,0,18,10],
-"class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8":[4,0,18,8],
-"class_mx_gpu_program.html#ad9ad3f87b6614ba2cb944ef99f168eb3":[4,0,18,9],
-"class_mx_gpu_program.html#ae236bcbcd3503e7758646fdc559b4a4c":[4,0,18,6],
+"class_mx_gpu_program.html#aa6557f7db6e2f76e7b793cf124cc1dfb":[4,0,18,5],
+"class_mx_gpu_program.html#ab0824743c8509c9a990631553b2e2976":[4,0,18,9],
+"class_mx_gpu_program.html#acd67392c16c3028ef90a744e4a0b50b8":[4,0,18,7],
+"class_mx_gpu_program.html#ad9ad3f87b6614ba2cb944ef99f168eb3":[4,0,18,8],
+"class_mx_gpu_program.html#ae236bcbcd3503e7758646fdc559b4a4c":[4,0,18,4],
 "class_mx_gui_renderer.html":[4,0,19],
 "class_mx_gui_renderer.html#a0174bc45ee33b8e7f4f197ea093dbdcd":[4,0,19,4],
 "class_mx_gui_renderer.html#a42edbfbfb7bab3966cf6b6bc016b587c":[4,0,19,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "class_mx_plugin.html#a14c299ee2f8dcc6b02427d99ae5fa0d6":[4,0,37,5],
 "class_mx_plugin.html#a15b3da62060b3e8e520e766fb08df1aa":[4,0,37,3],
 "class_mx_plugin.html#a3feef7bdfa0fe5649e476dc975fd6c1f":[4,0,37,0],
-"class_mx_plugin.html#a4c083b7e9e06a3732ca56b89ad2903f6":[4,0,37,4]
+"class_mx_plugin.html#a4c083b7e9e06a3732ca56b89ad2903f6":[4,0,37,4],
+"class_mx_plugin.html#a7c0a49e5b153072cafb9622076d55a8a":[4,0,37,2],
+"class_mx_plugin.html#a8cd6094e7e69f7e8d5307973568b5e47":[4,0,37,1]
 };
