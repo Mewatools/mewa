@@ -24,27 +24,15 @@ public:
     virtual float getOpacity(float time) const = 0;
 
     /*!
-     * \brief render
-     * \param renderer
-     * \param inputs
+     * \brief renders the plugin output
+     * \param renderer Rendering functions
+     * \param inputs Input data needed to render the plugin output
      *
-     * Shaders are compiled in initialize() function.
-     * \code
-    if( ! pProgram.isInitialized() )
-    {
-        bool ok = pProgram.initialize(&renderer);
-        if( !ok )
-        {
-            qDebug("shader compilation failed");
-            return;
-        }
-    }
-
-    renderer.setProgram(&pProgram);
-     * \endcode
+     * Shaders are compiled in the initialize() function.
      *
-     * MxRenderer::setProgram() calls initialize(). In that case
-     * check if shaders were compiled after setProgram().
+     * MxRenderer::setProgram() calls initialize(), but the initialize() can be called before MxRenderer::setProgram().
+	 *
+	 * Use MxGpuProgram::isInitialized() to check if a shader was compiled successfully after setProgram().
      *
      * \code
     renderer.setProgram(&pProgram);
