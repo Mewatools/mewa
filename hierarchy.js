@@ -32,6 +32,7 @@ var hierarchy =
     ] ],
     [ "MxIconDraw", "class_mx_icon_draw.html", null ],
     [ "MxImage", "class_mx_image.html", null ],
+    [ "MxInputs", "class_mx_inputs.html", null ],
     [ "MxList< T, Initializer, Prealloc >", "class_mx_list.html", null ],
     [ "MxList< float, MxPodInitializer< float > >", "class_mx_list.html", null ],
     [ "MxList< MxRenderer::ReusableVbo, MxClassInitializer< MxRenderer::ReusableVbo >, 32 >", "class_mx_list.html", null ],
@@ -47,7 +48,9 @@ var hierarchy =
     ] ],
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", null ],
     [ "MxPainter", "class_mx_painter.html", null ],
+    [ "MxParameter", "class_mx_parameter.html", null ],
     [ "MxPlatformAbstraction", "class_mx_platform_abstraction.html", null ],
+    [ "MxPlugin", "class_mx_plugin.html", null ],
     [ "MxPodInitializer< T >", "struct_mx_pod_initializer.html", null ],
     [ "MxQuadDraw", "class_mx_quad_draw.html", null ],
     [ "MxRect< T >", "class_mx_rect.html", null ],
@@ -77,6 +80,9 @@ var hierarchy =
       ] ],
       [ "MxLineEdit", "class_mx_line_edit.html", null ],
       [ "MxSpacer", "class_mx_spacer.html", null ]
+    ] ],
+    [ "QOpenGLWindow", null, [
+      [ "QMewaPluginWindow", "class_q_mewa_plugin_window.html", null ]
     ] ],
     [ "QWindow", null, [
       [ "QMewaWindow", "class_q_mewa_window.html", null ]

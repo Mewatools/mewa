@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['chardetails_788',['CharDetails',['../struct_mx_font_1_1_char_details.html',1,'MxFont']]]
+  ['chardetails_811',['CharDetails',['../struct_mx_font_1_1_char_details.html',1,'MxFont']]]
 ];

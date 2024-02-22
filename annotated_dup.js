@@ -24,6 +24,7 @@ var annotated_dup =
     [ "MxIconDraw", "class_mx_icon_draw.html", "class_mx_icon_draw" ],
     [ "MxIconProgram", "class_mx_icon_program.html", "class_mx_icon_program" ],
     [ "MxImage", "class_mx_image.html", "class_mx_image" ],
+    [ "MxInputs", "class_mx_inputs.html", "class_mx_inputs" ],
     [ "MxLabel", "class_mx_label.html", "class_mx_label" ],
     [ "MxLayout", "class_mx_layout.html", "class_mx_layout" ],
     [ "MxLinearLayout", "class_mx_linear_layout.html", "class_mx_linear_layout" ],
@@ -34,7 +35,9 @@ var annotated_dup =
     [ "MxMouseEvent", "class_mx_mouse_event.html", "class_mx_mouse_event" ],
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", "class_mx_ortho_transform" ],
     [ "MxPainter", "class_mx_painter.html", "class_mx_painter" ],
+    [ "MxParameter", "class_mx_parameter.html", "class_mx_parameter" ],
     [ "MxPlatformAbstraction", "class_mx_platform_abstraction.html", "class_mx_platform_abstraction" ],
+    [ "MxPlugin", "class_mx_plugin.html", "class_mx_plugin" ],
     [ "MxPodInitializer", "struct_mx_pod_initializer.html", "struct_mx_pod_initializer" ],
     [ "MxQuadDraw", "class_mx_quad_draw.html", "class_mx_quad_draw" ],
     [ "MxRect", "class_mx_rect.html", "class_mx_rect" ],
@@ -51,5 +54,6 @@ var annotated_dup =
     [ "MxVectorProgram", "class_mx_vector_program.html", "class_mx_vector_program" ],
     [ "MxWidget", "class_mx_widget.html", "class_mx_widget" ],
     [ "PlusMinusSvg", "class_plus_minus_svg.html", "class_plus_minus_svg" ],
+    [ "QMewaPluginWindow", "class_q_mewa_plugin_window.html", "class_q_mewa_plugin_window" ],
     [ "QMewaWindow", "class_q_mewa_window.html", "class_q_mewa_window" ]
 ];
