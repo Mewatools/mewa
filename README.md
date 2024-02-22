@@ -18,6 +18,7 @@ Each module can be worked on as a self contained Qt application. Current modules
 | Module | Location | Notes |
 |--------|----------| ----- |
 | Simple Widget | [simplewidget.pro](solutions/simplewidget/simplewidget.pro) | Basic widget using Mewa Framework |
+| Triangle Plugin | [test_triangle.pro](solutions/triangleplugin/test_triangle/test_triangle.pro) | Example of a Mewa plugin |
 | Color Wheel | [colorselector.pro](src/renderer/opengl/colorwheelprogram/test_colorwheel/colorselector.pro) | N/A |
 | Store Window | [test_storebuttons.pro](solutions/storewindow/test_storebuttons/test_storebuttons.pro) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [mxstoreview.cpp](solutions/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
 | Roto Node Tree View | [test_rototreeview.pro](solutions/rotonode/test_rototreeview/test_rototreeview.pro) | Tree view showing the hierarchy of shapes |
