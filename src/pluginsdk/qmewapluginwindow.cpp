@@ -22,15 +22,12 @@ QMewaPluginWindow::~QMewaPluginWindow()
 
 void QMewaPluginWindow::initializeGL()
 {
-    //MxApplication *app = MxGuiAggregation::instance()->application();
-    //app->pRenderer.initializeOpenGLFunctions();
     pRenderer.initializeOpenGLFunctions();
 
 }
 
 void QMewaPluginWindow::resizeGL(int w, int h)
 {
-   // MxGuiAggregation::instance()->application()->onResizeWindow( w, h );
     pRenderer.setWindowSize( w, h );
 }
 
@@ -39,17 +36,12 @@ void QMewaPluginWindow::paintGL()
     if( pFirstTime ) { // for unknown reason initializeGL() looses bounded textures, so load textures here!
         pFirstTime = false;
 
-
-
         pRenderer.initialize();
-
 
         pRenderer.glClearColor(102.0f / 255.0f, 102.0f / 255.0f, 102.0f / 255.0f, 1.0f);
         pRenderer.enableDepthTest(false);
 
-        //pDrawView.pParticlesProgram.pushElement(pDrawView.pLayer.pElementsBuffer, rect2);
     }
-  //  MxGuiAggregation::instance()->application()->onRender();
 
     pRenderer.glClear( GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
@@ -82,8 +74,6 @@ inputs.pTime = 1.0f;
 
 
 
-//pRenderer.renderEnd();
-
 update();
 
 }
@@ -91,25 +81,22 @@ update();
 void QMewaPluginWindow::mousePressEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    //MxGuiAggregation::instance()->application()->onMousePress(p.x(), p.y(), event->button(), event->modifiers() | event->buttons() );
-   // update();
 }
 
 void QMewaPluginWindow::mouseMoveEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-    //MxGuiAggregation::instance()->application()->onMouseMove(p.x(), p.y(), event->modifiers() | event->buttons() );
-   // update();
 }
 
 void QMewaPluginWindow::mouseReleaseEvent( QMouseEvent * event )
 {
     QPoint p = event->pos();
-   //MxGuiAggregation::instance()->application()->onMouseRelease(p.x(), p.y());
-   // update();
-
-
-  //  pDrawView.startExport("test.webm", MxVector2I(512, 512), 60 );
-
 }
 
+
+/*! \class QMewaPluginWindow
+    \brief Qt widget used to test Mewa plugins
+
+
+    \sa MxPlugin, MxInputs and MxParameter
+*/

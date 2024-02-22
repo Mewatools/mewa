@@ -2,7 +2,7 @@
 
 # Basic widget example
 
-Compile and run the Qt project [examples/canvaswidget/canvaswidget.pro](examples/simplewidget/simplewidget.pro)
+Compile and run the Qt project [simplewidget.pro](https://github.com/Mewatools/mewa/blob/master/solutions/simplewidget/simplewidget.pro)
 
 ![CanvasWidget example](doc/images/canvasExample.png)
 
