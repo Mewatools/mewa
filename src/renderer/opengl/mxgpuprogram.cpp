@@ -20,7 +20,7 @@ MxGpuProgram::~MxGpuProgram()
 
 bool MxGpuProgram::isInitialized() const
 {
-    return (nullptr != pRenderer);
+    return (0 != mProgramId);
 }
 
 
@@ -48,13 +48,5 @@ void MxGpuProgram::enableVao( MxGpuArray *buffer )
     Q_ASSERT( (buffer->pFormat != MxGpuProgram::Unknown) && (buffer->pFormat == vaoFormat()) );
 
     pRenderer->checkGLError(__FILE__, __LINE__);
-}
-
-
-void MxGpuProgram::disableVao()
-{
-
-    // glBindVertexArray(0);
-
 }
 

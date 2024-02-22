@@ -48,8 +48,7 @@ void TestWindow::paintGL()
     MxRectF wheelRect( 0.0f, windowSize.width(), 0.0f, windowSize.height() );
 
     if( NULL == pColorWheelProgram ) {
-        pColorWheelProgram = new MxColorWheelProgram();//pRenderer.colorWheelProgram();
-        pColorWheelProgram->init( &pRenderer );
+        pColorWheelProgram = new MxColorWheelProgram();
     }
     pRenderer.setProgram(pColorWheelProgram);
     pColorWheelProgram->setMatrix(&m);

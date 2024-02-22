@@ -6,9 +6,9 @@ QT += opengl
 CONFIG += debug
 
 
-include(/home/hugo/github/mewa/src/qtmewa.pri)
-include(pluginsdk.pri)
-include(triangleplugin.pri)
+include($$PWD/../../../src/qtmewa.pri)
+include($$PWD/../../../src/pluginsdk/pluginsdk.pri)
+include($$PWD/../triangleplugin.pri)
 
 
 SOURCES += $$PWD/main.cpp

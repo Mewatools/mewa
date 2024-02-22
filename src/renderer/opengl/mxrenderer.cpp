@@ -67,6 +67,10 @@ void MxRenderer::setProgram( MxGpuProgram *effect )
     Q_ASSERT( NULL != effect );
     if( effect->programId() != pCurrShaderProgram )
     {
+        if( effect->programId() == 0 )
+        {
+             effect->initialize(this);
+        }
         effect->enable();
         pCurrShaderProgram = effect->programId();
     }

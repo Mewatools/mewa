@@ -81,12 +81,12 @@ MxColorWheelProgram::MxColorWheelProgram()
 MxColorWheelProgram::~MxColorWheelProgram()
 {}
 
-void MxColorWheelProgram::init( MxRenderer *renderer )
+bool MxColorWheelProgram::initialize( MxRenderer *renderer )
 {
     Q_ASSERT( NULL == pRenderer );
     pRenderer = renderer;
-
     compile();
+    return true;
 }
 
 void MxColorWheelProgram::compile()
@@ -219,7 +219,7 @@ void MxColorWheelProgram::setSmoothEdge( float threshold )
 
 void MxColorWheelProgram::draw(const MxRectF &rect )
 {
-    Q_ASSERT( isInitialized() );
+    Q_ASSERT( programId() != 0 );
 
     GLfloat afVertices[] = {
         rect.left(), rect.bottom(), 0.0f, 0.0f,
@@ -269,8 +269,3 @@ void MxColorWheelProgram::enableAttributes()
     pRenderer->glVertexAttribPointer(pVertexAttrib, 4, GL_FLOAT, GL_FALSE, 0, 0);
 }
 
-void MxColorWheelProgram::disableAttributes()
-{
-    pRenderer->glBindBuffer(GL_ARRAY_BUFFER, 0);
-    pRenderer->glDisableVertexAttribArray(pVertexAttrib);
-}

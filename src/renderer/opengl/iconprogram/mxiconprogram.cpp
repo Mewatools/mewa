@@ -126,7 +126,6 @@ void MxIconProgram::draw( MxIconDraw &rectsArray, const MxMatrix *matrix )
     pRenderer->glUniform1i(textureUniform2, 0); // \TODO flag it to avoid setting always
 
     pRenderer->glDrawArrays(GL_TRIANGLES, 0, rectsArray.vertexCount());
-    disableVao();
 }
 
 

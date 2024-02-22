@@ -1,5 +1,5 @@
 /****************************************************************************
-** Copyright (C) 2020-2021 Mewatools <hugo@mewatools.com>
+** Copyright (C) 2020-2024 Mewatools <hugo@mewatools.com>
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #ifndef MXVECTORPROGRAM_H
@@ -17,20 +17,17 @@ public:
     MxVectorProgram();
     virtual ~MxVectorProgram();
 
-    void init( MxRenderer *renderer );
+    virtual bool initialize( MxRenderer *renderer );
     void compile();
 
     void draw( MxVectorDraw &stream, const MxMatrix *matrix );
 
-
     virtual MxGpuProgram::VaoFormat vaoFormat();
     virtual void enableAttributes();
-    virtual void disableAttributes();
 
 private:
     MxMatrix pModelview;
 
-    // gl
     GLint mVertexAttrib;
     GLint mUvAttrib;
     GLint mColorAttrib;

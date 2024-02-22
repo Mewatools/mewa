@@ -24,7 +24,7 @@ public:
     MxColorWheelProgram();
     virtual ~MxColorWheelProgram();
 
-    void init( MxRenderer *renderer );
+    virtual bool initialize( MxRenderer *renderer );
     void compile();
 
     void setMatrix( const MxMatrix *matrix );
@@ -41,7 +41,6 @@ public:
     virtual void enable();
     virtual void disableVao();
     virtual void enableAttributes();
-    virtual void disableAttributes();
 
 
 private:

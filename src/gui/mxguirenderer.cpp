@@ -34,10 +34,6 @@ setViewport(0,0, pScreenSize.width(), pScreenSize.height());
 
 MxVectorProgram * MxGuiRenderer::setVectorProgram()
 {
-    if( ! pVectorProgram.isInitialized() )
-    {
-        pVectorProgram.init(this);
-    }
     setProgram( &pVectorProgram );
     return &pVectorProgram;
 }

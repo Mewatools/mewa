@@ -17,12 +17,12 @@ MxVectorProgram::~MxVectorProgram()
 }
 
 
-void MxVectorProgram::init( MxRenderer *renderer )
+bool MxVectorProgram::initialize( MxRenderer *renderer )
 {
     Q_ASSERT( NULL == pRenderer );
     pRenderer = renderer;
-
     compile();
+    return true;
 }
 
 void MxVectorProgram::compile()
@@ -156,7 +156,6 @@ void MxVectorProgram::draw( MxVectorDraw &stream, const MxMatrix *matrix )
     }
 
     pRenderer->glDrawArrays( GL_TRIANGLES , 0, stream.pointCount() );
-    disableVao();
 }
 
 
@@ -179,12 +178,3 @@ void MxVectorProgram::enableAttributes()
     offset += (4*sizeof(GLubyte));
     pRenderer->glVertexAttribPointer(mUvAttrib , 2, GL_FLOAT, GL_FALSE, sizeof(MxVectorDraw::Vertex), (void *)offset);
 }
-
-void MxVectorProgram::disableAttributes()
-{
-    pRenderer->glBindBuffer(GL_ARRAY_BUFFER, 0); // \TODO needed ??
-    pRenderer->glDisableVertexAttribArray(mVertexAttrib);
-    pRenderer->glDisableVertexAttribArray(mUvAttrib);
-    pRenderer->glDisableVertexAttribArray(mColorAttrib);
-}
-
