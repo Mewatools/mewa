@@ -1,6 +1,0 @@
-<map id="MxTextDraw" name="MxTextDraw">
-<area shape="rect" id="node1" title=" " alt="" coords="139,95,233,121"/>
-<area shape="rect" id="node2" href="$class_mx_vector.html" title=" " alt="" coords="5,5,129,32"/>
-<area shape="rect" id="node3" href="$class_mx_font.html" title=" " alt="" coords="153,5,219,32"/>
-<area shape="rect" id="node4" href="$class_mx_buffer.html" title=" " alt="" coords="243,5,316,32"/>
-</map>

@@ -31,8 +31,9 @@ var searchData=
   ['copy_78',['copy',['../struct_mx_pod_initializer.html#a5de8d068cc8af1ba1bfc18a5f3f7dfb6',1,'MxPodInitializer::copy()'],['../struct_mx_class_initializer.html#a97c319d5a7b95a1ab4c61d9bbb58526d',1,'MxClassInitializer::copy()']]],
   ['count_79',['count',['../class_mx_layout.html#ab95a7dde7fd57c1c878214433d4d554a',1,'MxLayout::count()'],['../class_mx_generic_string.html#a23259f41d066b8a52f33aadba56c840c',1,'MxGenericString::count()']]],
   ['create_80',['create',['../class_mx_texture.html#a29fb8847b7a838ea05fff279a00b8c00',1,'MxTexture']]],
-  ['cross_81',['cross',['../namespace_mx_geometry_utils.html#a8e535891532693896f084105e7c22db1',1,'MxGeometryUtils']]],
-  ['crossproduct_82',['crossProduct',['../namespace_mx_geometry_utils.html#a80cf42e5a92c2559ef8c4014ae9aa37d',1,'MxGeometryUtils']]],
-  ['custom_83',['Custom',['../class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a8eced551c2c2347b24160eedac776710',1,'MxGpuProgram']]],
-  ['customblending_84',['CustomBlending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712',1,'MxRenderer']]]
+  ['creating_20plugins_81',['Creating Plugins',['../plugins_page.html',1,'']]],
+  ['cross_82',['cross',['../namespace_mx_geometry_utils.html#a8e535891532693896f084105e7c22db1',1,'MxGeometryUtils']]],
+  ['crossproduct_83',['crossProduct',['../namespace_mx_geometry_utils.html#a80cf42e5a92c2559ef8c4014ae9aa37d',1,'MxGeometryUtils']]],
+  ['custom_84',['Custom',['../class_mx_gpu_program.html#aa004cac02e56f96822e66dfd46fc4eb7a8eced551c2c2347b24160eedac776710',1,'MxGpuProgram']]],
+  ['customblending_85',['CustomBlending',['../class_mx_renderer.html#ae42b5ea733f1ea54d3ebec2bfc13ca88a65f83e2f7aba2f4cdfe795aa5b30c712',1,'MxRenderer']]]
 ];
