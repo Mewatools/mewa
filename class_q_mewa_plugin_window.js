@@ -8,5 +8,5 @@ var class_q_mewa_plugin_window =
     [ "mouseReleaseEvent", "class_q_mewa_plugin_window.html#a3492699f47aecf3d7f7611c076241849", null ],
     [ "paintGL", "class_q_mewa_plugin_window.html#a5291c8efbbe17bffaa9804d35362a0b3", null ],
     [ "resizeGL", "class_q_mewa_plugin_window.html#a1613e89ad18d364c7628e3ed9ff57220", null ],
-    [ "pPlugin", "class_q_mewa_plugin_window.html#a428dc3071ed8317273f6108813e8613c", null ]
+    [ "setPlugin", "class_q_mewa_plugin_window.html#a228ecffd7429a0bd8836814fe5ad996f", null ]
 ];

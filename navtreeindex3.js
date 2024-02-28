@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_mx_widget.html#a74a8be47feef141f9f043c26c77085cc":[5,0,52,25],
 "class_mx_widget.html#a7517c3a69b34ad7c4630fe143b2d573b":[5,0,52,14],
 "class_mx_widget.html#a7942b218135dfffc820b0cfb0dbd959d":[5,0,52,31],
 "class_mx_widget.html#a98eb67160efeffc5e43782c8f5be4a72":[5,0,52,40],
@@ -31,9 +32,9 @@ var NAVTREEINDEX3 =
 "class_plus_minus_svg.html#af906b71dfe21cdaa3c34d37983a3d3f7":[5,0,53,3],
 "class_q_mewa_plugin_window.html":[5,0,54],
 "class_q_mewa_plugin_window.html#a1613e89ad18d364c7628e3ed9ff57220":[5,0,54,7],
+"class_q_mewa_plugin_window.html#a228ecffd7429a0bd8836814fe5ad996f":[5,0,54,8],
 "class_q_mewa_plugin_window.html#a3492699f47aecf3d7f7611c076241849":[5,0,54,5],
 "class_q_mewa_plugin_window.html#a4017da3ff31ff7e610a0666cb6df18c7":[5,0,54,0],
-"class_q_mewa_plugin_window.html#a428dc3071ed8317273f6108813e8613c":[5,0,54,8],
 "class_q_mewa_plugin_window.html#a5291c8efbbe17bffaa9804d35362a0b3":[5,0,54,6],
 "class_q_mewa_plugin_window.html#aa6ae655f0d2a33ac52335ae2f8a4db20":[5,0,54,3],
 "class_q_mewa_plugin_window.html#abb72fc42dc697de9cb8d5bb7f1904ce2":[5,0,54,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808":[6,0,0,3,1,2],
 "mxgeometryutils_8h.html#a8e535891532693896f084105e7c22db1":[6,0,0,3,1,3],
 "mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f":[6,0,0,3,1,1],
-"mxgeometryutils_8h.html#ab64770cf6e25313ece2eb3cecf711892":[6,0,0,3,1,13],
-"mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b":[6,0,0,3,1,15]
+"mxgeometryutils_8h.html#ab64770cf6e25313ece2eb3cecf711892":[6,0,0,3,1,13]
 };

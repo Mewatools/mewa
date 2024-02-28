@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plusminussvg_879',['PlusMinusSvg',['../class_plus_minus_svg.html',1,'']]]
+  ['plusminussvg_880',['PlusMinusSvg',['../class_plus_minus_svg.html',1,'']]]
 ];

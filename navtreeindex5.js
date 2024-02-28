@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"struct_mx_class_initializer.html#a86028f8f469a405f6ca92daba96874b0":[5,0,8,4],
 "struct_mx_class_initializer.html#a97c319d5a7b95a1ab4c61d9bbb58526d":[5,0,8,1],
 "struct_mx_class_initializer.html#ab833b56b0258a1ccf1e65bfc4d809d4e":[5,0,8,3],
 "struct_mx_clipped_widget.html":[5,0,9],

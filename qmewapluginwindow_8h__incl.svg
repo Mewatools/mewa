@@ -12,8 +12,8 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="293,-224.5 293,-243.5 468,-243.5 468,-224.5 293,-224.5"/>
-<text text-anchor="middle" x="380.5" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/pluginsdk/qmewapluginwindow.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="242,-224.5 242,-243.5 417,-243.5 417,-224.5 242,-224.5"/>
+<text text-anchor="middle" x="329.5" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/pluginsdk/qmewapluginwindow.h</text>
 </a>
 </g>
 </g>
@@ -29,8 +29,8 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M364.11,-224.32C347.83,-215.7 322.63,-202.36 303.78,-192.39"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="305.32,-189.24 294.85,-187.65 302.05,-195.43 305.32,-189.24"/>
+<path fill="none" stroke="midnightblue" d="M321.08,-224.08C313.65,-216.22 302.65,-204.57 293.69,-195.08"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="296.18,-192.62 286.76,-187.75 291.09,-197.42 296.18,-192.62"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -44,23 +44,8 @@
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M380.5,-224.08C380.5,-217.01 380.5,-206.86 380.5,-197.99"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="384,-197.75 380.5,-187.75 377,-197.75 384,-197.75"/>
-</g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="435,-168.5 435,-187.5 516,-187.5 516,-168.5 435,-168.5"/>
-<text text-anchor="middle" x="475.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">triangleplugin.h</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node17 -->
-<g id="edge17" class="edge">
-<title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M395.76,-224.32C410.72,-215.82 433.75,-202.73 451.23,-192.8"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="453.31,-195.64 460.27,-187.65 449.85,-189.55 453.31,-195.64"/>
+<path fill="none" stroke="midnightblue" d="M337.92,-224.08C345.35,-216.22 356.35,-204.57 365.31,-195.08"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="367.91,-197.42 372.24,-187.75 362.82,-192.62 367.91,-197.42"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">

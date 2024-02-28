@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_mx_plugin.html#a8cd6094e7e69f7e8d5307973568b5e47":[5,0,37,1],
 "class_mx_quad_draw.html":[5,0,39],
 "class_mx_quad_draw.html#a121c079f3cf5e3f614e4b2a3e29c6830":[5,0,39,4],
 "class_mx_quad_draw.html#a481a22dbd05acb3defeae0584e8e3be1":[5,0,39,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1":[5,0,52,10],
 "class_mx_widget.html#a7080ef15eada79a1ce80b1b661226dd8":[5,0,52,9],
 "class_mx_widget.html#a711abb7f532e1fdad51fcfaeb01f4228":[5,0,52,36],
-"class_mx_widget.html#a716f9dfbd9011213fc56717e36b863ae":[5,0,52,21],
-"class_mx_widget.html#a74a8be47feef141f9f043c26c77085cc":[5,0,52,25]
+"class_mx_widget.html#a716f9dfbd9011213fc56717e36b863ae":[5,0,52,21]
 };
