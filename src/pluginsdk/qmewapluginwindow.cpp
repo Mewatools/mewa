@@ -78,3 +78,9 @@ void QMewaPluginWindow::mouseReleaseEvent( QMouseEvent * event )
     QPoint p = event->pos();
 }
 
+
+/*! \class QMewaPluginWindow
+    \brief Qt widget used to test Mewa plugins
+
+    \sa MxPlugin, MxInputs and MxParameter
+*/

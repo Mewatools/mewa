@@ -14,8 +14,9 @@ Each test/example app is a self-contained Qt application.
 
 | App | Location | Notes |
 |--------|----------| ----- |
-| Canvas Widget | [examples/simplewidget](examples/simplewidget) | Example of a MxWidget drawing a rectangle. See MxWidget::paint() for more information about widget painting |
-| Color Wheel | [src/renderer/opengl/colorwheelprogram/test_colorwheel](src/renderer/opengl/colorwheelprogram/test_colorwheel) | OpenGL app to test the ColorWheel shader |
-| Store Buttons | [examples/storewindow/test_storebuttons/](examples/storewindow/test_storebuttons/) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
-| Roto Tree View | [examples/rotonode/test_rototreeview](examples/rotonode/test_rototreeview) | Test-app running roto's tree view, part of the Roto node parameters. The code that performs all the drawing is located in rotoshape.cpp, RotoShape::paint() function |
+| Simple Widget | [simplewidget.pro](https://github.com/Mewatools/mewa/blob/master/solutions/simplewidget/simplewidget.pro) | Example of a MxWidget drawing a rectangle. See MxWidget::paint() for more information about widget painting |
+| Triangle Plugin | [test_triangle.pro](https://github.com/Mewatools/mewa/blob/master/solutions/triangleplugin/test_triangle/test_triangle.pro) | Example of a Mewa plugin |
+| Color Wheel | [colorselector.pro](https://github.com/Mewatools/mewa/blob/master/src/renderer/opengl/colorwheelprogram/test_colorwheel/colorselector.pro) | OpenGL app to test the ColorWheel shader |
+| Store Buttons | [test_storebuttons.pro](https://github.com/Mewatools/mewa/blob/master/solutions/storewindow/test_storebuttons/test_storebuttons.pro) | **1)** This app renders only the Store buttons (currently without text). **2)** Button rendering code is within `drawButtons()` function in file [src/storewindow/mxstoreview.cpp](src/storewindow/mxstoreview.cpp). **3)** The Store buttons Look&Feel still needs work: [store buttons discussion](https://github.com/Mewatools/mewa-artwork/discussions/5) |
+| Roto Tree View | [test_rototreeview.pro](https://github.com/Mewatools/mewa/blob/master/solutions/rotonode/test_rototreeview/test_rototreeview.pro) | Test-app running roto's tree view, part of the Roto node parameters. The code that performs all the drawing is located in rotoshape.cpp, RotoShape::paint() function |
 

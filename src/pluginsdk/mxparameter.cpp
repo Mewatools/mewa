@@ -8,3 +8,15 @@ MxParameter::MxParameter()
 {
 
 }
+
+
+
+
+/*! \class MxParameter
+    \brief Holds a plugin parameter value
+
+    MxPlugin renders an image based on given inputs. Some inputs are plugin parameters hold by the MxParameter class.
+
+
+    \sa MxInputs and MxPlugin
+*/
