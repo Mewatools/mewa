@@ -9,13 +9,17 @@ MxInputs::MxInputs()
 
 }
 
- float MxInputs::time() const
- {
-     return pTime;
- }
+float MxInputs::time() const
+{
+    return pTime;
+}
 
- float MxInputs::opacity() const
- {
-     return pOpacity;
- }
+float MxInputs::opacity() const
+{
+    return pOpacity;
+}
 
+const MxVector2F& MxInputs::outputSize() const
+{
+    return pOutputResolution;
+}

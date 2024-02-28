@@ -15,6 +15,7 @@ public:
 
     float time() const;
     float opacity() const;
+    const MxVector2F& outputSize() const;
 
 
 private:

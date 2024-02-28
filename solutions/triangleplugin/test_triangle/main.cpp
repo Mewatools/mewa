@@ -7,6 +7,9 @@
 #include <QOpenGLContext>
 
 #include "qmewapluginwindow.h"
+#include "triangleplugin.h"
+
+
 
 int main(int argc, char *argv[])
 {
@@ -29,7 +32,8 @@ int main(int argc, char *argv[])
 
 
     QMewaPluginWindow window;
-
+    TrianglePlugin plugin;
+    window.setPlugin(&plugin);
 
     int windowWidth = 640;
     int windowHeight = 480;
