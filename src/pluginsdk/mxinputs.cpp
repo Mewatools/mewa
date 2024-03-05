@@ -6,7 +6,6 @@
 
 MxInputs::MxInputs()
 {
-
 }
 
 float MxInputs::time() const
@@ -14,16 +13,15 @@ float MxInputs::time() const
     return pTime;
 }
 
-float MxInputs::opacity() const
-{
-    return pOpacity;
-}
-
-const MxVector2F& MxInputs::outputSize() const
+const MxVector2F& MxInputs::outputResolution() const
 {
     return pOutputResolution;
 }
 
+ bool MxInputs::isDrawingThumbnail() const
+ {
+     return false;
+ }
 
 /*! \class MxInputs
     \brief Holds the data provided to a plugin

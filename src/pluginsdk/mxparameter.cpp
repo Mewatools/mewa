@@ -4,12 +4,15 @@
 ****************************************************************************/
 #include "mxparameter.h"
 
-MxParameter::MxParameter()
+MxParameter::MxParameter( float value, float transitionTime )
 {
 
 }
 
-
+float MxParameter::value(  const MxInputs &inputs  ) const
+{
+return 0.88;
+}
 
 
 /*! \class MxParameter

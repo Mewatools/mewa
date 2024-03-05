@@ -7,7 +7,7 @@
 
 #include <QOpenGLWindow>
 
-#include "mxrenderer.h"
+#include "mxguirenderer.h"
 
 class MxPlugin;
 
@@ -36,7 +36,7 @@ public:
 
 private:
     MxPlugin *pPlugin;
-    MxRenderer pRenderer;
+    MxGuiRenderer pRenderer;
 
     bool pFirstTime;
 };

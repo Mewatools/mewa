@@ -22,8 +22,8 @@ public:
     virtual MxParameter* parameter( int );
     virtual int parameterCount() const;
     virtual const char* name() const;
-    virtual float getOpacity(float time) const;
-    virtual void render( MxRenderer &renderer, const MxInputs& inputs );
+    virtual void render( MxGuiRenderer &renderer, const MxInputs& inputs );
+    virtual void populateParametersWindow( MxParametersPanel *window );
 
 private:
 

@@ -3,7 +3,7 @@
 ** SPDX-License-Identifier: MIT License
 ****************************************************************************/
 #include "triangleplugin.h"
-#include "mxrenderer.h"
+#include "mxguirenderer.h"
 #include "mxparameter.h"
 
 
@@ -30,12 +30,7 @@ const char* TrianglePlugin::name() const
     return "Triangle";
 }
 
-float TrianglePlugin::getOpacity(float time) const
-{
-    return 1.0f;
-}
-
-void TrianglePlugin::render( MxRenderer &renderer, const MxInputs& inputs  )
+void TrianglePlugin::render(MxGuiRenderer &renderer, const MxInputs& inputs  )
 {
     renderer.setProgram(&pProgram);
     Q_ASSERT( pProgram.isInitialized() );
@@ -47,4 +42,9 @@ void TrianglePlugin::render( MxRenderer &renderer, const MxInputs& inputs  )
     renderer.glDrawArrays(GL_TRIANGLES, 0, 3);
 
     renderer.checkGLError(__FILE__, __LINE__);
+}
+
+void TrianglePlugin::populateParametersWindow( MxParametersPanel *window )
+{
+
 }

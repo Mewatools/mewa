@@ -14,15 +14,15 @@ public:
     MxInputs();
 
     float time() const;
-    float opacity() const;
-    const MxVector2F& outputSize() const;
+    const MxVector2F& outputResolution() const;
+    bool isDrawingThumbnail() const;
+
 
 
 private:
     friend class QMewaPluginWindow;
 
     float pTime;
-    float pOpacity;
     MxVector2F pOutputResolution;
 
 };

@@ -7,9 +7,9 @@
 
 
 class MxParameter;
-class MxRenderer;
+class MxGuiRenderer;
 class MxInputs;
-
+class MxParametersPanel;
 
 
 
@@ -21,7 +21,6 @@ public:
     virtual MxParameter* parameter( int ) = 0;
     virtual int parameterCount() const = 0;
     virtual const char* name() const = 0;
-    virtual float getOpacity(float time) const = 0;
 
     /*!
      * \brief renders the plugin output
@@ -44,7 +43,9 @@ public:
      * \endcode
      *
      */
-    virtual void render( MxRenderer &renderer, const MxInputs& inputs ) = 0;
+    virtual void render( MxGuiRenderer &renderer, const MxInputs& inputs ) = 0;
+
+    virtual void populateParametersWindow( MxParametersPanel *window ) = 0;
 };
 
 #endif // VJLAYER_H

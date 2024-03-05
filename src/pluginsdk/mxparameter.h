@@ -5,11 +5,21 @@
 #ifndef MXPARAMETER_H
 #define MXPARAMETER_H
 
+class MxInputs;
+
 
 class MxParameter
 {
 public:
-    MxParameter();
+    /*!
+     * \brief MxParameter holds the input parameter value
+     * \param value Default parameter value
+     * \param transitionTime Default transition time
+     */
+    MxParameter( float value, float transitionTime );
+
+     float value(  const MxInputs &inputs  ) const;
+
 };
 
 #endif // MXPARAMETER_H
