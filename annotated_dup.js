@@ -36,6 +36,7 @@ var annotated_dup =
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", "class_mx_ortho_transform" ],
     [ "MxPainter", "class_mx_painter.html", "class_mx_painter" ],
     [ "MxParameter", "class_mx_parameter.html", "class_mx_parameter" ],
+    [ "MxParametersPanel", "class_mx_parameters_panel.html", "class_mx_parameters_panel" ],
     [ "MxPlatformAbstraction", "class_mx_platform_abstraction.html", "class_mx_platform_abstraction" ],
     [ "MxPlugin", "class_mx_plugin.html", "class_mx_plugin" ],
     [ "MxPodInitializer", "struct_mx_pod_initializer.html", "struct_mx_pod_initializer" ],

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['g_164',['g',['../struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c',1,'MxTextDraw::Vertex::g()'],['../struct_mx_vector_draw_1_1_vertex.html#ae53faea88ed1c928fc7154144192728b',1,'MxVectorDraw::Vertex::g()']]],
-  ['getcontentsmargins_165',['getContentsMargins',['../class_mx_linear_layout.html#a29bfd5e090a3aa8eab095b4ad35cc1b2',1,'MxLinearLayout']]],
-  ['getglobalpos_166',['getGlobalPos',['../class_mx_widget.html#a67987e17d25cb460f11fd63482a1d1b7',1,'MxWidget']]],
-  ['getint_167',['getInt',['../class_mx_generic_sub_string.html#a30f4e6d54b791fb6164e5cb923582aa7',1,'MxGenericSubString']]],
-  ['getnormal_168',['getNormal',['../namespace_mx_geometry_utils.html#a4d7c69e5970e0af68102c52f6b5b22d6',1,'MxGeometryUtils']]],
-  ['getopacity_169',['getOpacity',['../class_mx_plugin.html#a8cd6094e7e69f7e8d5307973568b5e47',1,'MxPlugin']]],
+  ['g_165',['g',['../struct_mx_text_draw_1_1_vertex.html#a744086d2605b037233f72edb8c8eb15c',1,'MxTextDraw::Vertex::g()'],['../struct_mx_vector_draw_1_1_vertex.html#ae53faea88ed1c928fc7154144192728b',1,'MxVectorDraw::Vertex::g()']]],
+  ['getcontentsmargins_166',['getContentsMargins',['../class_mx_linear_layout.html#a29bfd5e090a3aa8eab095b4ad35cc1b2',1,'MxLinearLayout']]],
+  ['getglobalpos_167',['getGlobalPos',['../class_mx_widget.html#a67987e17d25cb460f11fd63482a1d1b7',1,'MxWidget']]],
+  ['getint_168',['getInt',['../class_mx_generic_sub_string.html#a30f4e6d54b791fb6164e5cb923582aa7',1,'MxGenericSubString']]],
+  ['getnormal_169',['getNormal',['../namespace_mx_geometry_utils.html#a4d7c69e5970e0af68102c52f6b5b22d6',1,'MxGeometryUtils']]],
   ['getpixelsize_170',['getPixelSize',['../class_mx_abstract_atlas.html#a2059e813e24451b4be268df1cf16e582',1,'MxAbstractAtlas']]],
   ['getrect_171',['getRect',['../class_mx_widget.html#a7080ef15eada79a1ce80b1b661226dd8',1,'MxWidget']]],
   ['gettemporarybuffer_172',['getTemporaryBuffer',['../class_mx_gui_renderer.html#acc9e50bc87a56e045bdad2e8b2cd2d44',1,'MxGuiRenderer']]],

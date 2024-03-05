@@ -80,10 +80,10 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_mx_gpu_program.html#a2929723013c20404e70fdbc54600544a",
-"class_mx_plugin.html#a8cd6094e7e69f7e8d5307973568b5e47",
-"class_mx_widget.html#a74a8be47feef141f9f043c26c77085cc",
-"mxgeometryutils_8h.html#ab8d274a31f2e0cf720a7caf71bfe146b",
-"struct_mx_class_initializer.html#a86028f8f469a405f6ca92daba96874b0"
+"class_mx_plugin.html#a3feef7bdfa0fe5649e476dc975fd6c1f",
+"class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1",
+"mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808",
+"qt_2mxopengl_8h.html#ae68051766a8a965311ad2baa7267262c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

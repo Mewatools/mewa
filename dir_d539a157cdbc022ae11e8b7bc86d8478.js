@@ -8,6 +8,10 @@ var dir_d539a157cdbc022ae11e8b7bc86d8478 =
     [ "mxparameter.h", "mxparameter_8h.html", [
       [ "MxParameter", "class_mx_parameter.html", "class_mx_parameter" ]
     ] ],
+    [ "mxparameterspanel.cpp", "mxparameterspanel_8cpp.html", null ],
+    [ "mxparameterspanel.h", "mxparameterspanel_8h.html", [
+      [ "MxParametersPanel", "class_mx_parameters_panel.html", "class_mx_parameters_panel" ]
+    ] ],
     [ "mxplugin.cpp", "mxplugin_8cpp.html", null ],
     [ "mxplugin.h", "mxplugin_8h.html", [
       [ "MxPlugin", "class_mx_plugin.html", "class_mx_plugin" ]

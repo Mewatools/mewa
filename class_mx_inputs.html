@@ -124,10 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee43df6f944a87b1eaf880436f06c7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad767af29f5faeb16e3d9621503fed061"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_inputs.html#ad767af29f5faeb16e3d9621503fed061">time</a> () const</td></tr>
 <tr class="separator:ad767af29f5faeb16e3d9621503fed061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac74359633799eb1eef03210eb3a395"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_inputs.html#acac74359633799eb1eef03210eb3a395">opacity</a> () const</td></tr>
-<tr class="separator:acac74359633799eb1eef03210eb3a395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3914234bf71aa1eef346431f7d6c2081"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_inputs.html#a3914234bf71aa1eef346431f7d6c2081">outputSize</a> () const</td></tr>
-<tr class="separator:a3914234bf71aa1eef346431f7d6c2081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8dc22fade129b67d5f3c7b47c74705"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_inputs.html#ade8dc22fade129b67d5f3c7b47c74705">outputResolution</a> () const</td></tr>
+<tr class="separator:ade8dc22fade129b67d5f3c7b47c74705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b05c54e8afc6822b7976c5eca92cd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_inputs.html#a08b05c54e8afc6822b7976c5eca92cd5">isDrawingThumbnail</a> () const</td></tr>
+<tr class="separator:a08b05c54e8afc6822b7976c5eca92cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -136,7 +136,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds the data provided to a plugin. </p>
-<p><a class="el" href="class_mx_plugin.html" title="Interface class to plugins.">MxPlugin</a> renders an image based on given inputs. Some inputs are plugin parameters hold by the <a class="el" href="class_mx_parameter.html" title="Holds a plugin parameter value.">MxParameter</a> class. Other inputs are acccessed through <a class="el" href="class_mx_inputs.html" title="Holds the data provided to a plugin.">MxInputs</a> provided as argument to <a class="el" href="class_mx_plugin.html#a14c299ee2f8dcc6b02427d99ae5fa0d6" title="renders the plugin output">MxPlugin::render()</a>.</p>
+<p><a class="el" href="class_mx_plugin.html" title="Interface class to plugins.">MxPlugin</a> renders an image based on given inputs. Some inputs are plugin parameters hold by the <a class="el" href="class_mx_parameter.html" title="Holds a plugin parameter value.">MxParameter</a> class. Other inputs are acccessed through <a class="el" href="class_mx_inputs.html" title="Holds the data provided to a plugin.">MxInputs</a> provided as argument to <a class="el" href="class_mx_plugin.html#abf64764877a964e1c2f11aa9dfae59e2" title="renders the plugin output">MxPlugin::render()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mx_parameter.html" title="Holds a plugin parameter value.">MxParameter</a> and <a class="el" href="class_mx_plugin.html" title="Interface class to plugins.">MxPlugin</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aee43df6f944a87b1eaf880436f06c7e7"></a>
@@ -157,14 +157,14 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acac74359633799eb1eef03210eb3a395"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac74359633799eb1eef03210eb3a395">&#9670;&nbsp;</a></span>opacity()</h2>
+<a id="a08b05c54e8afc6822b7976c5eca92cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b05c54e8afc6822b7976c5eca92cd5">&#9670;&nbsp;</a></span>isDrawingThumbnail()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float MxInputs::opacity </td>
+          <td class="memname">bool MxInputs::isDrawingThumbnail </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -174,14 +174,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a3914234bf71aa1eef346431f7d6c2081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3914234bf71aa1eef346431f7d6c2081">&#9670;&nbsp;</a></span>outputSize()</h2>
+<a id="ade8dc22fade129b67d5f3c7b47c74705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8dc22fade129b67d5f3c7b47c74705">&#9670;&nbsp;</a></span>outputResolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp; MxInputs::outputSize </td>
+          <td class="memname">const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp; MxInputs::outputResolution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

@@ -24,12 +24,13 @@ var searchData=
   ['appendandget_22',['appendAndGet',['../class_mx_list.html#a0a7c250277cfff98a77cb216afe71217',1,'MxList']]],
   ['appendascii_23',['appendAscii',['../class_mx_generic_string.html#ad65349ae507a767272ffc8bbf1f588a6',1,'MxGenericString']]],
   ['appendchaplinhat_24',['appendChaplinHat',['../class_mx_vector_draw.html#a6156bcab763548a8dd77a5a8d9bd5305',1,'MxVectorDraw']]],
-  ['appendnull_25',['appendNull',['../class_mx_generic_string.html#ad7f7e477fcf9249891a8c0cb2f6b78d7',1,'MxGenericString']]],
-  ['appendnumber_26',['appendNumber',['../class_mx_generic_string.html#a88010bf49740db4a39cfd681623d50d2',1,'MxGenericString']]],
-  ['appendpointer_27',['appendPointer',['../class_mx_generic_string.html#aed2ac5b2445320f88e78d935a3e398bd',1,'MxGenericString']]],
-  ['appendtoproundedrect_28',['appendTopRoundedRect',['../class_mx_vector_draw.html#a90279bf3919ab2bd02eae9911e1a189d',1,'MxVectorDraw']]],
-  ['application_29',['application',['../class_mx_widget.html#ab0c5cb58425fad96cfd2420fc2a62d83',1,'MxWidget']]],
-  ['array_30',['array',['../struct_mx_list_static_data.html#a703e08fc1c7e34725e5db07d2c7a42bc',1,'MxListStaticData::array()'],['../struct_mx_generic_static_data.html#a07d5d82911b17c227da04f8b34d01d36',1,'MxGenericStaticData::array()'],['../struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d',1,'MxList::Data::array()']]],
-  ['ascender_31',['Ascender',['../class_mx_font.html#a50daf076ac87503ad2e17a4168b44ae5a6926c7ff80697c8bd05acd913f4456f5',1,'MxFont']]],
-  ['at_32',['at',['../class_mx_list.html#a3eef5cd28348fc9eb6a4678e60272c03',1,'MxList']]]
+  ['appendfloat_25',['appendFloat',['../class_mx_parameters_panel.html#a4744f2ae189db9c2be8f59ebd9f567a1',1,'MxParametersPanel']]],
+  ['appendnull_26',['appendNull',['../class_mx_generic_string.html#ad7f7e477fcf9249891a8c0cb2f6b78d7',1,'MxGenericString']]],
+  ['appendnumber_27',['appendNumber',['../class_mx_generic_string.html#a88010bf49740db4a39cfd681623d50d2',1,'MxGenericString']]],
+  ['appendpointer_28',['appendPointer',['../class_mx_generic_string.html#aed2ac5b2445320f88e78d935a3e398bd',1,'MxGenericString']]],
+  ['appendtoproundedrect_29',['appendTopRoundedRect',['../class_mx_vector_draw.html#a90279bf3919ab2bd02eae9911e1a189d',1,'MxVectorDraw']]],
+  ['application_30',['application',['../class_mx_widget.html#ab0c5cb58425fad96cfd2420fc2a62d83',1,'MxWidget']]],
+  ['array_31',['array',['../struct_mx_list_static_data.html#a703e08fc1c7e34725e5db07d2c7a42bc',1,'MxListStaticData::array()'],['../struct_mx_generic_static_data.html#a07d5d82911b17c227da04f8b34d01d36',1,'MxGenericStaticData::array()'],['../struct_mx_list_1_1_data.html#a5862c9359d6a8039ff61ad1b9b9a3e6d',1,'MxList::Data::array()']]],
+  ['ascender_32',['Ascender',['../class_mx_font.html#a50daf076ac87503ad2e17a4168b44ae5a6926c7ff80697c8bd05acd913f4456f5',1,'MxFont']]],
+  ['at_33',['at',['../class_mx_list.html#a3eef5cd28348fc9eb6a4678e60272c03',1,'MxList']]]
 ];

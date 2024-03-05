@@ -49,6 +49,7 @@ var hierarchy =
     [ "MxOrthoTransform", "class_mx_ortho_transform.html", null ],
     [ "MxPainter", "class_mx_painter.html", null ],
     [ "MxParameter", "class_mx_parameter.html", null ],
+    [ "MxParametersPanel", "class_mx_parameters_panel.html", null ],
     [ "MxPlatformAbstraction", "class_mx_platform_abstraction.html", null ],
     [ "MxPlugin", "class_mx_plugin.html", null ],
     [ "MxPodInitializer< T >", "struct_mx_pod_initializer.html", null ],
