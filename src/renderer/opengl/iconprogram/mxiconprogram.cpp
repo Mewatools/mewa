@@ -36,6 +36,7 @@ void MxIconProgram::compile()
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
 
     const char *vsrc =
+        "#version 120\n"
             "attribute vec4 vertex;\n"
             "attribute vec4 texcoord;\n"
             "attribute vec4 color;\n"
@@ -58,6 +59,7 @@ void MxIconProgram::compile()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc =
+             "#version 120\n"
         #ifdef MX_OPENGL_ES
             "precision mediump float;\n"
         #endif

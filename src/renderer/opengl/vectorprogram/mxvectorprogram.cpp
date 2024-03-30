@@ -30,6 +30,7 @@ void MxVectorProgram::compile()
 
     GLuint vshader = pRenderer->glCreateShader(GL_VERTEX_SHADER);
     const char *vsrc1 =
+             "#version 120\n"
             "attribute vec2 vertex;\n"
             "attribute vec2 aUVT;\n"
             "attribute vec4 color;\n"
@@ -53,6 +54,7 @@ void MxVectorProgram::compile()
 
     GLuint fshader = pRenderer->glCreateShader(GL_FRAGMENT_SHADER);
     const char *fsrc_with_dev =
+            "#version 120\n"
         #ifdef MX_OPENGL_ES
             "#extension GL_OES_standard_derivatives : enable\n"
             "precision highp float;\n"

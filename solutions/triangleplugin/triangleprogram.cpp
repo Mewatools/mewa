@@ -21,12 +21,14 @@ bool TriangleProgram::initialize( MxRenderer *renderer )
 
 
     const char * gVertexShader =
+            "#version 120\n"
             "attribute vec2 vPosition;\n"
             "void main() {\n"
             "  gl_Position = vec4(vPosition.x, vPosition.y, 0.0, 1.0);\n"
             "}\n";
 
     const char * gFragmentShader =
+            "#version 120\n"
         #ifdef MX_OPENGL_ES
             "precision mediump float;\n"
         #endif
