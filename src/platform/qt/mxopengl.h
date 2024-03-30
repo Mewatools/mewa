@@ -11,8 +11,8 @@ typedef unsigned int GLenum;
 typedef int GLint;
 typedef unsigned int GLuint;
 typedef float GLfloat;
-typedef signed long int GLsizeiptr;
-typedef signed long int GLintptr;
+//typedef signed long int GLsizeiptr;
+//typedef signed long int GLintptr;
 
 
 
