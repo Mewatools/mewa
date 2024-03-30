@@ -19,13 +19,11 @@ var searchData=
   ['glfloat_181',['GLfloat',['../qt_2mxopengl_8h.html#a31aeedaeef29442c9c015ab355c8f5ab',1,'mxopengl.h']]],
   ['glformat_182',['glFormat',['../class_mx_texture.html#af8f3ceb09a10742974fb42d89994d877',1,'MxTexture']]],
   ['glint_183',['GLint',['../qt_2mxopengl_8h.html#a5ac0f3c4d7fafd42b284b5487a791017',1,'mxopengl.h']]],
-  ['glintptr_184',['GLintptr',['../qt_2mxopengl_8h.html#a69626c63f229ec9d7666e3242ed348ab',1,'mxopengl.h']]],
-  ['globalpos_185',['globalPos',['../class_mx_mouse_event.html#ac53c80be5b64567b32d3532fc05f8bab',1,'MxMouseEvent']]],
-  ['glsizeiptr_186',['GLsizeiptr',['../qt_2mxopengl_8h.html#ae68051766a8a965311ad2baa7267262c',1,'mxopengl.h']]],
-  ['gltype_187',['glType',['../class_mx_texture.html#a95d356dfd98b80f8e016d4e2acec63c2',1,'MxTexture']]],
-  ['gluint_188',['GLuint',['../qt_2mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b',1,'mxopengl.h']]],
-  ['goto_189',['goTo',['../class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788',1,'MxByteArrayRef']]],
-  ['gpuarray_190',['gpuArray',['../struct_mx_renderer_1_1_reusable_vbo.html#aec3240f4d4824b06f75055112ba8988c',1,'MxRenderer::ReusableVbo']]],
-  ['grableaveevent_191',['grabLeaveEvent',['../class_mx_mouse_event.html#a5b2f528ef7bdb2bc19339f171e6d370b',1,'MxMouseEvent']]],
-  ['gradientrect_192',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
+  ['globalpos_184',['globalPos',['../class_mx_mouse_event.html#ac53c80be5b64567b32d3532fc05f8bab',1,'MxMouseEvent']]],
+  ['gltype_185',['glType',['../class_mx_texture.html#a95d356dfd98b80f8e016d4e2acec63c2',1,'MxTexture']]],
+  ['gluint_186',['GLuint',['../qt_2mxopengl_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b',1,'mxopengl.h']]],
+  ['goto_187',['goTo',['../class_mx_byte_array_ref.html#a4a5b9cd856c2976f95d40213ac039788',1,'MxByteArrayRef']]],
+  ['gpuarray_188',['gpuArray',['../struct_mx_renderer_1_1_reusable_vbo.html#aec3240f4d4824b06f75055112ba8988c',1,'MxRenderer::ReusableVbo']]],
+  ['grableaveevent_189',['grabLeaveEvent',['../class_mx_mouse_event.html#a5b2f528ef7bdb2bc19339f171e6d370b',1,'MxMouseEvent']]],
+  ['gradientrect_190',['gradientRect',['../class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200',1,'MxVectorDraw']]]
 ];

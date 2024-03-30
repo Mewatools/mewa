@@ -83,7 +83,7 @@ var NAVTREEINDEX =
 "class_mx_plugin.html#a3feef7bdfa0fe5649e476dc975fd6c1f",
 "class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1",
 "mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808",
-"qt_2mxopengl_8h.html#ae68051766a8a965311ad2baa7267262c"
+"starter_page.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
