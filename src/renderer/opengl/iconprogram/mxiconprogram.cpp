@@ -92,10 +92,10 @@ void MxIconProgram::compile()
     pRenderer->glLinkProgram(mProgramId);
     GLint value;
     pRenderer->glGetProgramiv(mProgramId, GL_LINK_STATUS, &value);
-    qDebug("MxAlphaTexture shader program linked: %d\n", value);
+    qDebug("MxIconProgram shader program linked: %d\n", value);
     value = 0;
     pRenderer->glGetProgramiv(mProgramId, GL_INFO_LOG_LENGTH, &value);
-    qDebug("MxAlphaTexture program GL_INFO_LOG_LENGTH: %d\n", value);
+    qDebug("MxIconProgram program GL_INFO_LOG_LENGTH: %d\n", value);
     /*if(value > 0)
       {
           char str[90];
