@@ -5,6 +5,7 @@
 #include "triangleplugin.h"
 #include "mxguirenderer.h"
 #include "mxparameter.h"
+#include "mxinputs.h"
 
 
 TrianglePlugin::TrianglePlugin()
@@ -35,7 +36,10 @@ void TrianglePlugin::render(MxGuiRenderer &renderer, const MxInputs& inputs  )
     renderer.setProgram(&pProgram);
     Q_ASSERT( pProgram.isInitialized() );
 
-    const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f };
+    float t = inputs.time();
+    float triangleTop = 0.5f * sin(t) + 0.25;
+
+    const GLfloat gTriangleVertices[] = { 0.0f, triangleTop, -0.5f, -0.5f, 0.5f, -0.5f };
     MxGpuArray *gpuArray = renderer.uploadToGpu( pProgram.vaoFormat(), (char*)gTriangleVertices, 6*sizeof(GLfloat) );
     pProgram.enableVao( gpuArray );
 

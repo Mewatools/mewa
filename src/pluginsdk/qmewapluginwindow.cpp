@@ -29,6 +29,7 @@ void QMewaPluginWindow::initializeGL()
 {
     pRenderer.initializeOpenGLFunctions();
 
+    pTimer.start();
 }
 
 void QMewaPluginWindow::resizeGL(int w, int h)
@@ -54,7 +55,7 @@ void QMewaPluginWindow::paintGL()
 
     MxInputs inputs;
     inputs.pOutputResolution = screen;
-    inputs.pTime = 1.0f;
+    inputs.pTime = pTimer.elapsed() / 1000.0f;
     pPlugin->render( pRenderer, inputs);
 
     pRenderer.checkGLError(__FILE__, __LINE__);

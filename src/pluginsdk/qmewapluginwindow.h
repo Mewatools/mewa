@@ -6,6 +6,7 @@
 #define QMEWAPLUGINWINDOW_H
 
 #include <QOpenGLWindow>
+#include <QElapsedTimer>
 
 #include "mxguirenderer.h"
 
@@ -39,6 +40,7 @@ private:
     MxGuiRenderer pRenderer;
 
     bool pFirstTime;
+    QElapsedTimer pTimer;
 };
 
 #endif
