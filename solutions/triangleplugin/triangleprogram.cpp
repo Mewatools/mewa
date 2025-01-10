@@ -10,7 +10,6 @@ TriangleProgram::TriangleProgram()
     mPositionAttrib = 0;
 }
 
-
 TriangleProgram::~TriangleProgram()
 {}
 

@@ -10,12 +10,11 @@
 
 
 
-// \TODO rename to BallPlugin
 class TrianglePlugin : public MxPlugin
 {
 public:
     TrianglePlugin();
-     virtual ~TrianglePlugin();
+    virtual ~TrianglePlugin();
 
 
     /////// VjLayer API /////
@@ -27,9 +26,9 @@ public:
 
 private:
 
-TriangleProgram pProgram;
+    TriangleProgram pProgram;
 
 
 };
 
-#endif // FRACTALLAYER_H
+#endif // TRIANGLEPLUGIN_H

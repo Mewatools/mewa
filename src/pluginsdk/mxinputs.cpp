@@ -6,6 +6,7 @@
 
 MxInputs::MxInputs()
 {
+    pTime = 0.0f;
 }
 
 float MxInputs::time() const

@@ -17,6 +17,7 @@ public:
      * \param transitionTime Default transition time
      */
     MxParameter( float value, float transitionTime );
+  //  MxParameter();
 
      float value(  const MxInputs &inputs  ) const;
 

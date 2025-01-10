@@ -8,6 +8,7 @@
 #include <QOpenGLWindow>
 
 #include "mxguirenderer.h"
+#include "mxinputs.h"
 
 class MxPlugin;
 
@@ -35,6 +36,7 @@ public:
 
 
 private:
+    MxInputs pInputs;
     MxPlugin *pPlugin;
     MxGuiRenderer pRenderer;
 

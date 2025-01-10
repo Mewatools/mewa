@@ -6,8 +6,10 @@
 
 MxParameter::MxParameter( float value, float transitionTime )
 {
-
 }
+/*
+MxParameter::MxParameter()
+{}*/
 
 float MxParameter::value(  const MxInputs &inputs  ) const
 {

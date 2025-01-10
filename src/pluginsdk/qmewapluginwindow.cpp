@@ -5,7 +5,6 @@
 #include <QMouseEvent>
 
 #include "qmewapluginwindow.h"
-#include "mxinputs.h"
 #include "mxplugin.h"
 
 
@@ -52,10 +51,10 @@ void QMewaPluginWindow::paintGL()
     pRenderer.setViewport(0, 0, screen.width(), screen.height());
     
 
-    MxInputs inputs;
-    inputs.pOutputResolution = screen;
-    inputs.pTime = 1.0f;
-    pPlugin->render( pRenderer, inputs);
+
+    pInputs.pOutputResolution = screen;
+    pInputs.pTime += (1.0f/60.f); // 60 fps
+    pPlugin->render( pRenderer, pInputs);
 
     pRenderer.checkGLError(__FILE__, __LINE__);
 
