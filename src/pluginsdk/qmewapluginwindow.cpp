@@ -28,6 +28,7 @@ void QMewaPluginWindow::initializeGL()
 {
     pRenderer.initializeOpenGLFunctions();
 
+    pTimer.start();
 }
 
 void QMewaPluginWindow::resizeGL(int w, int h)
@@ -49,8 +50,6 @@ void QMewaPluginWindow::paintGL()
 
     const MxVector2I& screen = pRenderer.windowSize();
     pRenderer.setViewport(0, 0, screen.width(), screen.height());
-    
-
 
     pInputs.pOutputResolution = screen;
     pInputs.pTime += (1.0f/60.f); // 60 fps

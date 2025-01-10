@@ -2,15 +2,45 @@
 
 # About the Mewa framework
 
-The Mewa framework is the framework on which the application [Mewa](https://www.mewatools.com/) is being developed.
-Initially, Mewa was developed using the Qt framework, but due to specific performance and usability requirements, and as we adapted Qt to match our needs, we realized that we would greatly benefit from a specialized framework solution.
 
-# Development
+The Mewa framework is the framework on which the application [Mewa](https://www.mewa.app/) is being developed.
 
-Mewa's source code contains various example apps, some of them only purpose is to test single functionalities of the Mewa application.
-This approach allows us to test and develop single functionalities independently from the whole application.
+Mewa is built on C++ and OpenGL, providing high performance on desktop and mobile. 
 
-Each test/example app is a self-contained Qt application.
+
+## Directory Structure
+
+<pre>
+mewa/
+├── framework/                        # Core utilities and base classes shared across modules
+│   ├── containers/                   # Container classes
+│   ├── scripting/                    # Scripting engine components
+│   └── ...                           # Other framework-level components
+├── modules/                          # All individual modules
+│   ├── imagesequencenode/            # Nodegraph's Image node
+│   ├── storewindow/                  # Store Window module
+│   │   ├── src.pri                   # Qt project input file
+│   │   ├── storewindow.cpp           # Module source file
+│   │   ├── ...                       # Module source files
+│   │   ├── icons/                    # Module icons
+│   │   └── test/                     # Test app for the Store Window
+│   │       ├── test-storewindow.pro  # Qt project file
+│   │       ├── main.cpp              # Test app entry point
+│   │       └── ...                   # Other test app resources
+│   └── ...                           # Other modules
+└── docs/                             # Documentation for the project
+</pre>
+
+The framework includes reusable classes that can be reused across modules.
+
+Each module has a test-app with the role of verifying the module functionality.
+
+
+# Modules
+
+Mewa source is organized into modules so that each module can be tested and developed independently from the whole application.
+Each module can be worked on as a self contained Qt application. Current modules and respective Qt application are as follows:
+
 
 | App | Location | Notes |
 |--------|----------| ----- |
