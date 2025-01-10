@@ -4,11 +4,45 @@
 [![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
 [![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
 
-# What is Mewa
+# What is Mewa 
 
-It's a software framework built on C++ and OpenGL, providing high performance on desktop and mobile. 
+Mewa is a reimagined creative platform that puts **scripting** at the heart of the experience. 
+Users write scripts to configure advanced UI components like node graphs and curve editors, 
+empowering them to create workflows, automate tasks, and interact seamlessly with AI.
 
-The framework includes reusable classes that form the foundation of Mewa applications.
+The result? A platform where every project is saved as an easy-to-read script, 
+enabling modification by either a human or AI for ultimate flexibility and adaptability.
+
+
+## Directory Structure
+
+Mewa is built on C++ and OpenGL, providing high performance on desktop and mobile. 
+
+<pre>
+mewa/
+├── framework/                        # Core utilities and base classes shared across modules
+│   ├── containers/                   # Container classes
+│   ├── scripting/                    # Scripting engine components
+│   └── ...                           # Other framework-level components
+├── modules/                          # All individual modules
+│   ├── imagesequencenode/            # Nodegraph's Image node
+│   ├── storewindow/                  # Store Window module
+│   │   ├── src.pri                   # Qt project input file
+│   │   ├── storewindow.cpp           # Module source file
+│   │   ├── ...                       # Module source files
+│   │   ├── icons/                    # Module icons
+│   │   └── test/                     # Test app for the Store Window
+│   │       ├── test-storewindow.pro  # Qt project file
+│   │       ├── main.cpp              # Test app entry point
+│   │       └── ...                   # Other test app resources
+│   └── ...                           # Other modules
+└── docs/                             # Documentation for the project
+</pre>
+
+The framework includes reusable classes that can be reused across modules.
+
+Each module has a test-app with the role of verifying the module functionality.
+
 
 ## Framework
 
