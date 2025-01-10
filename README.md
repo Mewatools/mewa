@@ -7,6 +7,7 @@
 # Mewa 
 
 Mewa is a next-generation creative app designed for handling complex image workflows and animations, built with flexibility and modularity at its core. 
+
 Mewa combines a powerful **nodegraph-based compositor** with **integrated scripting** to provide a cutting-edge solution 
 for image and video editing, automation, and AI integration.
 
@@ -23,6 +24,6 @@ for image and video editing, automation, and AI integration.
 
 ## Contributing
 
-Mewa is developed openly, and we welcome contributions from the community! To get started:
+Mewa is developed openly, and we welcome contributions from the community!
 
-Please check out our (Contribution Guidelines)(https://mewatools.github.io/mewa/) for more details.
+Please check out our [developers page](https://mewatools.github.io/mewa/) for more details.
