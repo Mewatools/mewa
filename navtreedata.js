@@ -25,21 +25,18 @@
 var NAVTREE =
 [
   [ "Mewa Framework", "index.html", [
-    [ "What is Mewa", "index.html#autotoc_md0", [
-      [ "Directory Structure", "index.html#autotoc_md1", null ],
-      [ "Framework", "index.html#autotoc_md2", null ],
-      [ "Applications", "index.html#autotoc_md3", [
-        [ "Vector based Animations", "index.html#autotoc_md4", null ],
-        [ "Video compositing", "index.html#autotoc_md5", null ],
-        [ "Other Screenshots", "index.html#autotoc_md6", null ]
-      ] ]
+    [ "Mewa", "index.html#autotoc_md0", [
+      [ "Features", "index.html#autotoc_md1", null ],
+      [ "Contributing", "index.html#autotoc_md2", null ]
     ] ],
     [ "Contributing", "contrib_page.html", [
-      [ "About the Mewa framework", "contrib_page.html#autotoc_md7", null ],
-      [ "Development", "contrib_page.html#autotoc_md8", null ]
+      [ "About the Mewa framework", "contrib_page.html#autotoc_md3", [
+        [ "Directory Structure", "contrib_page.html#autotoc_md4", null ]
+      ] ],
+      [ "Modules", "contrib_page.html#autotoc_md5", null ]
     ] ],
     [ "Getting started", "starter_page.html", [
-      [ "Basic widget example", "starter_page.html#autotoc_md9", null ]
+      [ "Basic widget example", "starter_page.html#autotoc_md6", null ]
     ] ],
     [ "Creating Plugins", "plugins_page.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -83,8 +80,8 @@ var NAVTREEINDEX =
 "class_mx_gpu_program.html#a2929723013c20404e70fdbc54600544a",
 "class_mx_plugin.html#a3feef7bdfa0fe5649e476dc975fd6c1f",
 "class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1",
-"mxgeometryutils_8h.html#a80cf42e5a92c2559ef8c4014ae9aa37d",
-"qt_2mxopengl_8h_source.html"
+"mxgeometryutils_8h.html#ab11ed9060ac8703979c081045f3db07f",
+"struct_mx_class_initializer.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

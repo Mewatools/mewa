@@ -60,8 +60,9 @@ var NAVTREEINDEX3 =
 "class_q_mewa_window.html#af6c23c79d4511636d9a34a73e4c47eef":[5,0,56,6],
 "classes.html":[5,1],
 "contrib_page.html":[1],
-"contrib_page.html#autotoc_md7":[1,0],
-"contrib_page.html#autotoc_md8":[1,1],
+"contrib_page.html#autotoc_md3":[1,0],
+"contrib_page.html#autotoc_md4":[1,0,0],
+"contrib_page.html#autotoc_md5":[1,1],
 "dir_0abdee562046be6f5823d1ca8c3fd13c.html":[6,0,0,11],
 "dir_0b61c55142250c0cc363383afd8075a4.html":[6,0,0,0],
 "dir_14e1e259e8275dc0c459acef3bbf05ae.html":[6,0,0,1],
@@ -169,10 +170,6 @@ var NAVTREEINDEX3 =
 "index.html#autotoc_md0":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md2":[0,1],
-"index.html#autotoc_md3":[0,2],
-"index.html#autotoc_md4":[0,2,0],
-"index.html#autotoc_md5":[0,2,1],
-"index.html#autotoc_md6":[0,2,2],
 "linux_2mxdebug_8h.html":[6,0,0,7,0,0],
 "linux_2mxdebug_8h.html#a2c9a16e97bc3d9f0322dc570a48c8514":[6,0,0,7,0,0,2],
 "linux_2mxdebug_8h.html#a6302269a60af155d118361dc6d86fd2c":[6,0,0,7,0,0,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "mxgeometryutils_8h.html#a4d7c69e5970e0af68102c52f6b5b22d6":[6,0,0,3,1,7],
 "mxgeometryutils_8h.html#a63efb8b5d4ebad5c92aa64f589f1c6d6":[6,0,0,3,1,5],
 "mxgeometryutils_8h.html#a6b0ff603e8f84b01a299b338f0cda17a":[6,0,0,3,1,8],
-"mxgeometryutils_8h.html#a7c3e334d36b91a12cb52cb153c781bdb":[6,0,0,3,1,6]
+"mxgeometryutils_8h.html#a7c3e334d36b91a12cb52cb153c781bdb":[6,0,0,3,1,6],
+"mxgeometryutils_8h.html#a80cf42e5a92c2559ef8c4014ae9aa37d":[6,0,0,3,1,4],
+"mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808":[6,0,0,3,1,2],
+"mxgeometryutils_8h.html#a8e535891532693896f084105e7c22db1":[6,0,0,3,1,3]
 };
