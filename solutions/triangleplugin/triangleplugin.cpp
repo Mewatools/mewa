@@ -7,6 +7,8 @@
 #include "mxparameter.h"
 #include "mxinputs.h"
 
+#include "math.h"
+
 
 TrianglePlugin::TrianglePlugin()
 {
