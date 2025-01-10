@@ -26,19 +26,20 @@ var NAVTREE =
 [
   [ "Mewa Framework", "index.html", [
     [ "What is Mewa", "index.html#autotoc_md0", [
-      [ "Framework", "index.html#autotoc_md1", null ],
-      [ "Applications", "index.html#autotoc_md2", [
-        [ "Vector based Animations", "index.html#autotoc_md3", null ],
-        [ "Video compositing", "index.html#autotoc_md4", null ],
-        [ "Other Screenshots", "index.html#autotoc_md5", null ]
+      [ "Directory Structure", "index.html#autotoc_md1", null ],
+      [ "Framework", "index.html#autotoc_md2", null ],
+      [ "Applications", "index.html#autotoc_md3", [
+        [ "Vector based Animations", "index.html#autotoc_md4", null ],
+        [ "Video compositing", "index.html#autotoc_md5", null ],
+        [ "Other Screenshots", "index.html#autotoc_md6", null ]
       ] ]
     ] ],
     [ "Contributing", "contrib_page.html", [
-      [ "About the Mewa framework", "contrib_page.html#autotoc_md6", null ],
-      [ "Development", "contrib_page.html#autotoc_md7", null ]
+      [ "About the Mewa framework", "contrib_page.html#autotoc_md7", null ],
+      [ "Development", "contrib_page.html#autotoc_md8", null ]
     ] ],
     [ "Getting started", "starter_page.html", [
-      [ "Basic widget example", "starter_page.html#autotoc_md8", null ]
+      [ "Basic widget example", "starter_page.html#autotoc_md9", null ]
     ] ],
     [ "Creating Plugins", "plugins_page.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -82,8 +83,8 @@ var NAVTREEINDEX =
 "class_mx_gpu_program.html#a2929723013c20404e70fdbc54600544a",
 "class_mx_plugin.html#a3feef7bdfa0fe5649e476dc975fd6c1f",
 "class_mx_widget.html#a6b6b3b6672d465300323db3f612a03a1",
-"mxgeometryutils_8h.html#a85cbb3532ae32a1d3f92a8124c222808",
-"starter_page.html"
+"mxgeometryutils_8h.html#a80cf42e5a92c2559ef8c4014ae9aa37d",
+"qt_2mxopengl_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

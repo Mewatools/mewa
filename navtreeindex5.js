@@ -1,7 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"qt_2mxopengl_8h_source.html":[6,0,0,7,1,2],
 "starter_page.html":[2],
-"starter_page.html#autotoc_md8":[2,0],
+"starter_page.html#autotoc_md9":[2,0],
 "struct_mx_class_initializer.html":[5,0,8],
 "struct_mx_class_initializer.html#a004d27778df2131915a99c7942491c30":[5,0,8,2],
 "struct_mx_class_initializer.html#a3cb46a648eebf3e418e8f7bcac29d30d":[5,0,8,0],
