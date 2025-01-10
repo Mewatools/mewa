@@ -4,7 +4,7 @@
 [![mewa](https://snapcraft.io/mewa/badge.svg)](https://snapcraft.io/mewa)
 [![mewa](https://snapcraft.io/mewa/trending.svg?name=0)](https://snapcraft.io/mewa)
 
-# Mewa 
+# What is Mewa 
 
 Mewa is a next-generation creative app designed for handling complex image workflows and animations, built with flexibility and modularity at its core. 
 
@@ -22,7 +22,7 @@ for image and video editing, automation, and AI integration.
 - **AI-Ready**: The scriptable design makes Mewa a perfect companion for AI-assisted creativity and automation.
 
 
-## Contributing
+## Development
 
 Mewa is developed openly, and we welcome contributions from the community!
 
