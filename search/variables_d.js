@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['sapplication_1534',['sApplication',['../class_mx_widget.html#a9ba941101c4d24500a72e56fde9639ae',1,'MxWidget']]],
-  ['size_1535',['size',['../struct_mx_generic_static_data.html#ad6311aedff6274a05a19104edf67014c',1,'MxGenericStaticData::size()'],['../struct_mx_generic_string_1_1_data.html#a59aa85f90761714ee405d36a3f70dabf',1,'MxGenericString::Data::size()'],['../struct_mx_image_1_1_image_data.html#a792279b218fca5f03bcc100810a4b8b2',1,'MxImage::ImageData::size()']]]
+  ['r_1580',['r',['../struct_mx_text_draw_1_1_vertex.html#ad7ee352c2d7fdf211bcd34a7c5b89db2',1,'MxTextDraw::Vertex::r()'],['../struct_mx_vector_draw_1_1_vertex.html#aa311f0e69687c0dcba1bb3a398ad494f',1,'MxVectorDraw::Vertex::r()']]],
+  ['refcount_1581',['refcount',['../struct_mx_list_static_data.html#a5b8060d7caf7921e99425f13e8052413',1,'MxListStaticData']]],
+  ['refcounter_1582',['refCounter',['../struct_mx_generic_static_data.html#adbd3532e8d1761be4297de5733583ae9',1,'MxGenericStaticData::refCounter()'],['../class_mx_ref_counter.html#a5af60d4996698197c5a3fa8516087fe3',1,'MxRefCounter::refCounter()']]]
 ];

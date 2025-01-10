@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['textureheight_1536',['textureHeight',['../struct_mx_font_1_1_char_details.html#a99b42889f11ac4432154e5c1488a5d1b',1,'MxFont::CharDetails']]],
-  ['texturewidth_1537',['textureWidth',['../struct_mx_font_1_1_char_details.html#ac5f7191ac88741b5fceeaf482d619991',1,'MxFont::CharDetails']]],
-  ['texturex_1538',['textureX',['../struct_mx_font_1_1_char_details.html#ac40f9238a2d988eb1f896b5eaf2f5a6a',1,'MxFont::CharDetails']]],
-  ['texturey_1539',['textureY',['../struct_mx_font_1_1_char_details.html#a9fd71b344664cb1bcb4af51eacc9cb5c',1,'MxFont::CharDetails']]]
+  ['sapplication_1583',['sApplication',['../class_mx_widget.html#a9ba941101c4d24500a72e56fde9639ae',1,'MxWidget']]],
+  ['size_1584',['size',['../struct_mx_generic_static_data.html#ad6311aedff6274a05a19104edf67014c',1,'MxGenericStaticData::size()'],['../struct_mx_generic_string_1_1_data.html#a59aa85f90761714ee405d36a3f70dabf',1,'MxGenericString::Data::size()'],['../struct_mx_image_1_1_image_data.html#a792279b218fca5f03bcc100810a4b8b2',1,'MxImage::ImageData::size()']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['x_1547',['x',['../struct_mx_icon_draw_1_1_vertex.html#ad55cb0b9b59a8265e0cb96bf30762a92',1,'MxIconDraw::Vertex::x()'],['../struct_mx_text_draw_1_1_vertex.html#abd4b0f9a168403179274d36c021db8b9',1,'MxTextDraw::Vertex::x()'],['../struct_mx_vector_draw_1_1_vertex.html#a4f3256af9906a09bb9f5ea1f25566183',1,'MxVectorDraw::Vertex::x()'],['../struct_mx_renderer_1_1_viewport.html#ac7436fc390a6f810aeac103f5ad62f60',1,'MxRenderer::Viewport::x()']]],
-  ['xadvance_1548',['xAdvance',['../struct_mx_font_1_1_char_details.html#a89a24a022bcddc0abf3548e13a31e29f',1,'MxFont::CharDetails']]],
-  ['xoffset_1549',['xOffset',['../struct_mx_font_1_1_char_details.html#a7370c53c07cff26e70caaa0fe2b63d31',1,'MxFont::CharDetails']]]
+  ['whitetext_1592',['whiteText',['../namespace_mx_theme_colors.html#aba7c1fbd78df6053856816fcd2b259d8',1,'MxThemeColors']]],
+  ['widget_1593',['widget',['../struct_mx_clipped_widget.html#a189304da17749f69d8fc7088d8d94913',1,'MxClippedWidget']]],
+  ['width_1594',['width',['../struct_mx_font_1_1_char_details.html#a2a1548ff6a798528eef2710975b5ee45',1,'MxFont::CharDetails::width()'],['../struct_mx_renderer_1_1_viewport.html#afc2f9820d023676ba2fd601e99f9c203',1,'MxRenderer::Viewport::width()']]],
+  ['windowbackground_1595',['windowBackground',['../namespace_mx_theme_colors.html#af23f8b540f4b2c4eb155bf9fbc2013b3',1,'MxThemeColors']]]
 ];

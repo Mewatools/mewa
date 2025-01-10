@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['offset_1468',['offset',['../struct_mx_generic_static_data.html#ad40b63a70152f89895bcb69cb85a7462',1,'MxGenericStaticData::offset()'],['../struct_mx_generic_string_1_1_data.html#a70a8467cae3b74dca27489d9d50fc5e3',1,'MxGenericString::Data::offset()']]],
-  ['outputwindowbackground_1469',['outputWindowBackground',['../namespace_mx_theme_colors.html#adbea9c5ca842224e69a65ad2e7e37089',1,'MxThemeColors']]]
+  ['nodeinnerbody_1515',['nodeInnerBody',['../namespace_mx_theme_colors.html#ac3d755d539fba7e91a045ca17aea18a4',1,'MxThemeColors']]],
+  ['nodepanelbackground_1516',['nodePanelBackground',['../namespace_mx_theme_colors.html#a899e161c39db35c9c2fa4cafc3731df4',1,'MxThemeColors']]]
 ];
