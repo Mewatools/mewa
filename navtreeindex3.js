@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"class_mx_vector_draw.html#ac48eda6e5596ef93e7e405e7d27cb5d8":[5,0,51,21],
+"class_mx_vector_draw.html#ac914a9ba3d3a523d4013979dfe9bedde":[5,0,51,19],
 "class_mx_vector_draw.html#aedb1b3a66d6eb3a0ed987acc116b61c9":[5,0,51,11],
 "class_mx_vector_draw.html#af609e00e9b5197ef3bd7134559bfb200":[5,0,51,14],
 "class_mx_vector_program.html":[5,0,52],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "mxeventhandler_8h_source.html":[6,0,0,11,3],
 "mxfillbackgroundinterface_8h.html":[6,0,0,11,4],
 "mxfillbackgroundinterface_8h_source.html":[6,0,0,11,4],
-"mxfixedsizelist_8h.html":[6,0,0,0,2],
-"mxfixedsizelist_8h.html#a025dd45bb7347ae5e8dc3839d5855215":[6,0,0,0,2,5],
-"mxfixedsizelist_8h.html#a519d9b77ba57607c64dc3d7370c113e4":[6,0,0,0,2,1]
+"mxfixedsizelist_8h.html":[6,0,0,0,2]
 };

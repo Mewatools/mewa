@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9c9366eee7ec63bd6a1edb7931b3e8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad099fa6407a7cf701cf99d32c3a639b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#ad099fa6407a7cf701cf99d32c3a639b4">setTranslation</a> (const <a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> &amp;translation)</td></tr>
 <tr class="separator:ad099fa6407a7cf701cf99d32c3a639b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee478031f207cfe2c0a6b05612b8934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#aeee478031f207cfe2c0a6b05612b8934">callCustomRender</a> (<a class="el" href="class_mx_widget.html">MxWidget</a> *widget)</td></tr>
+<tr class="separator:aeee478031f207cfe2c0a6b05612b8934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefab2e29180123386251ad20826a4cd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_mx_font.html">MxFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#aeefab2e29180123386251ad20826a4cd">font</a> ()</td></tr>
 <tr class="separator:aeefab2e29180123386251ad20826a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2570d1b704b399015346b00ea536ef7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_icon_draw.html">MxIconDraw</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#a2570d1b704b399015346b00ea536ef7b">iconDraw</a> ()</td></tr>
@@ -149,6 +151,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a684457adc2f0201afd1dce6f28f34f05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#a684457adc2f0201afd1dce6f28f34f05">pTranslation</a></td></tr>
 <tr class="separator:a684457adc2f0201afd1dce6f28f34f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d76af3a9883d1231944193e8ae89db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mx_list.html">MxList</a>&lt; <a class="el" href="class_mx_widget.html">MxWidget</a> *, <a class="el" href="struct_mx_pod_initializer.html">MxPodInitializer</a>&lt; <a class="el" href="class_mx_widget.html">MxWidget</a> * &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mx_painter.html#a2d76af3a9883d1231944193e8ae89db5">pWidgetsToCallRender</a></td></tr>
+<tr class="separator:a2d76af3a9883d1231944193e8ae89db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holder to the different painters. </p>
@@ -190,6 +194,24 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeee478031f207cfe2c0a6b05612b8934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee478031f207cfe2c0a6b05612b8934">&#9670;&nbsp;</a></span>callCustomRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MxPainter::callCustomRender </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mx_widget.html">MxWidget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa39e97b6b85c20cd73bca557e27ed8fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa39e97b6b85c20cd73bca557e27ed8fe">&#9670;&nbsp;</a></span>drawSvg()</h2>
 
@@ -385,6 +407,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="mxvector_8h.html#a7c4a28539a82489f5ec5d00d374b1b24">MxVector2F</a> MxPainter::pTranslation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d76af3a9883d1231944193e8ae89db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d76af3a9883d1231944193e8ae89db5">&#9670;&nbsp;</a></span>pWidgetsToCallRender</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mx_list.html">MxList</a>&lt;<a class="el" href="class_mx_widget.html">MxWidget</a>*, <a class="el" href="struct_mx_pod_initializer.html">MxPodInitializer</a>&lt;<a class="el" href="class_mx_widget.html">MxWidget</a>*&gt;, 4 &gt; MxPainter::pWidgetsToCallRender</td>
         </tr>
       </table>
 </div><div class="memdoc">
