@@ -86,6 +86,12 @@ void MxPainter::setTranslation( const MxVector2F &translation )
 
 }
 
+void MxPainter::callCustomRender( MxWidget *widget )
+{
+    Q_ASSERT( pWidgetsToCallRender.contains(widget) == false );
+    pWidgetsToCallRender.append(widget);
+}
+
 const MxFont *MxPainter::font()
 {
     return &pFont;

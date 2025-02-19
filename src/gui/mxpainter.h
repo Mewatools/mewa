@@ -31,6 +31,7 @@ public:
     void render(MxGuiRenderer &renderer );
 
     void setTranslation( const MxVector2F &translation );
+    void callCustomRender( MxWidget *widget );
     const MxFont * font();
     MxIconDraw &iconDraw();
     void drawSvg(MxAbstractSvg *svg , const MxRectF &targetRect);
@@ -48,7 +49,10 @@ private:
     MxTextDraw pTextDraw; // colored text
 public:
     MxVector2F pTranslation;
+    MxList<MxWidget*, MxPodInitializer<MxWidget*>, 4 > pWidgetsToCallRender;
 private:
+
+
     MxStaticFont pFont;
 
 };

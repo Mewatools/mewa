@@ -151,6 +151,17 @@ void MxApplication::drawWidgetList()
         widget->paint(pPainterBuffer);
     }
     pPainterBuffer.render( pRenderer );
+
+    // OpenGL drawing
+    listSize = pPainterBuffer.pWidgetsToCallRender.size();
+    for(int i=0; i < listSize; ++i)
+    {
+        MxWidget *widget = pPainterBuffer.pWidgetsToCallRender[i];
+
+        // viewport is set inside render()
+        widget->render(pRenderer);
+    }
+    pPainterBuffer.pWidgetsToCallRender.clear();
 }
 
 void MxApplication::setMainWidget( MxWidget *widget )
