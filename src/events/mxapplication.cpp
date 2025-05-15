@@ -12,6 +12,7 @@ MxApplication::MxApplication()
 {
     MxWidget::sApplication = this;
 
+    pWidget = nullptr;
     pRedrawRequested = false;
     pWidgetInFocus = NULL;
     pPainterBuffer.initArrays();
@@ -56,13 +57,13 @@ void MxApplication::onRender()
 
 void MxApplication::onResizeWindow( int width, int height )
 {
-    if(width > 0 && height > 0)
-    {
-        pRenderer.setWindowSize( width, height );
-        mainWidget()->setPos( MxVector2F(0.0f, 0.0f ) );
-        mainWidget()->setSize( MxVector2F(width, height));
-        mainWidget()->update();
-    }
+    Q_ASSERT(width > 0 && height > 0);
+    pRenderer.setWindowSize( width, height );
+    MxWidget *w = mainWidget();
+    w->setPos( MxVector2F(0.0f, 0.0f ) );
+    w->setSize( MxVector2F(width, height));
+    w->update();
+
 }
 
 void MxApplication::onMousePress( int x, int y, unsigned int button, unsigned int modifiers )

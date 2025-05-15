@@ -15,8 +15,7 @@ QMewaWindow::QMewaWindow(QWindow *parent)
     : QWindow(parent)
 {
     setSurfaceType(QWindow::OpenGLSurface);
-
-        pApp.init( &pIconAtlas );
+    pApp.init( &pIconAtlas );
 }
 
 
@@ -75,9 +74,13 @@ bool QMewaWindow::event(QEvent *event)
     case QEvent::Resize:
     {
         QResizeEvent *resizeEvent = dynamic_cast<QResizeEvent*>(event);
+        MxWidget *w = MxWidget::application()->mainWidget();
+        if(w)
+        {
         const QSize &newSize = resizeEvent->size();
         MxWidget::application()->onResizeWindow( newSize.width(), newSize.height() );
         renderNow();
+        }
         return true;
     }
     case QEvent::UpdateRequest:
@@ -117,7 +120,9 @@ void QMewaWindow::renderNow()
     if (needsInitialize) {
         MxApplication *app = MxWidget::application();
         app->pRenderer.initializeOpenGLFunctions();
+
         initialize();
+
     }
 
     MxWidget::application()->onRender();

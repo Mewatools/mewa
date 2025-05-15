@@ -33,6 +33,7 @@ void MxRenderer::discardGLResources()
 
 void MxRenderer::initialize()
 {
+
 }
 
 
